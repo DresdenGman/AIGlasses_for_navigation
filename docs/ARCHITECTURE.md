@@ -261,3 +261,4 @@ ESP32 IMU → WebSocket → app_main.py → Pose Estimation
 - MediaPipe: https://mediapipe.dev/
 - FastAPI: https://fastapi.tiangolo.com/
 - DashScope: https://dashscope.aliyun.com/
+

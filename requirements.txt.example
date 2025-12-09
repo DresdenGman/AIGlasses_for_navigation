@@ -44,3 +44,4 @@ pydantic-settings>=2.1.0
 # Optional: GPU acceleration
 # torch>=2.1.0
 # torchvision>=0.16.0
+

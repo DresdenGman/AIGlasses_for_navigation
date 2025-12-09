@@ -54,3 +54,4 @@ shoppingbest5.pt filter=lfs diff=lfs merge=lfs -text
 
 3Dmodel.dae filter=lfs diff=lfs merge=lfs -text
 3dmodel.obj filter=lfs diff=lfs merge=lfs -text
+
