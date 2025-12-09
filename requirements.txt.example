@@ -1,0 +1,46 @@
+# Core Dependencies
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+websockets>=12.0
+python-multipart>=0.0.6
+
+# Computer Vision
+opencv-python>=4.8.0
+numpy>=1.24.0
+pillow>=10.0.0
+ultralytics>=8.0.0  # YOLO models
+
+# Audio Processing
+pyaudio>=0.2.13
+wave>=0.0.2
+soundfile>=0.12.1
+
+# AI/ML Services
+dashscope>=1.14.0  # Alibaba Cloud DashScope
+openai>=1.3.0  # If needed for other services
+
+# MediaPipe for hand detection
+mediapipe>=0.10.0
+
+# Web and UI
+jinja2>=3.1.2
+aiofiles>=23.2.0
+
+# Data Processing
+pandas>=2.1.0
+scipy>=1.11.0
+
+# Utilities
+python-dotenv>=1.0.0
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+
+# Optional: Development tools
+# pytest>=7.4.0
+# pytest-cov>=4.1.0
+# black>=23.11.0
+# flake8>=6.1.0
+
+# Optional: GPU acceleration
+# torch>=2.1.0
+# torchvision>=0.16.0
