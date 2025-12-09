@@ -8,8 +8,7 @@
 
 An intelligent navigation and assistance system for visually impaired individuals, integrating features such as blind path navigation, crosswalk assistance, object recognition, and real-time voice interaction. This project is for communication and learning purposes only and should not be used directly by visually impaired people.
 
-**Code Repository**: https://github.com/AI-FanGe/OpenAIglasses_for_Navigation.git  
-**ModelScope**: https://modelscope.cn/models/archifancy/AIGlasses_for_navigation/summary
+**Code Repository**: https://github.com/AI-FanGe/OpenAIglasses_for_Navigation.git
 
 </div>
 
@@ -113,52 +112,17 @@ Please refer to the [NVIDIA CUDA Toolkit Installation Guide](https://developer.n
 
 ### 3. Download Model Files
 
-#### Option 1: Download from ModelScope (Recommended)
-
-We recommend using the ModelScope SDK to download models. First install ModelScope:
-
-```bash
-pip install modelscope
-```
-
-**Command Line Download:**
-
-Download the full model repository:
-```bash
-modelscope download --model archifancy/AIGlasses_for_navigation
-```
-
-Download a single file to a specified local folder:
-```bash
-modelscope download --model archifancy/AIGlasses_for_navigation README.md --local_dir ./dir
-```
-
-**SDK Download:**
-
-```python
-from modelscope import snapshot_download
-model_dir = snapshot_download('archifancy/AIGlasses_for_navigation')
-```
-
-**Git Download:**
-
-Ensure Git LFS is installed:
-```bash
-git lfs install
-git clone https://www.modelscope.cn/archifancy/AIGlasses_for_navigation.git
-```
-
-#### Option 2: Manual Download
-
 Place the following model files in the `model/` directory:
 
-| Model File | Purpose | Size | Download Link |
-|------------|---------|------|---------------|
-| `yolo-seg.pt` | Blind path segmentation | ~50MB | [ModelScope](https://modelscope.cn/models/archifancy/AIGlasses_for_navigation) |
-| `yoloe-11l-seg.pt` | Open vocabulary detection | ~80MB | [ModelScope](https://modelscope.cn/models/archifancy/AIGlasses_for_navigation) |
-| `shoppingbest5.pt` | Object recognition | ~30MB | [ModelScope](https://modelscope.cn/models/archifancy/AIGlasses_for_navigation) |
-| `trafficlight.pt` | Traffic light detection | ~20MB | [ModelScope](https://modelscope.cn/models/archifancy/AIGlasses_for_navigation) |
-| `hand_landmarker.task` | Hand detection | ~15MB | [MediaPipe Models](https://developers.google.com/mediapipe/solutions/vision/hand_landmarker#models) |
+| Model File | Purpose | Size |
+|------------|---------|------|
+| `yolo-seg.pt` | Blind path segmentation | ~50MB |
+| `yoloe-11l-seg.pt` | Open vocabulary detection | ~80MB |
+| `shoppingbest5.pt` | Object recognition | ~30MB |
+| `trafficlight.pt` | Traffic light detection | ~20MB |
+| `hand_landmarker.task` | Hand detection | ~15MB |
+
+**Note**: Model files are not included in this repository. Please obtain the required model files separately and place them in the `model/` directory. The `hand_landmarker.task` file can be downloaded from [MediaPipe Models](https://developers.google.com/mediapipe/solutions/vision/hand_landmarker#models).
 
 ### 4. Configure API Keys
 
@@ -528,18 +492,6 @@ python test_traffic_light.py
 python test_recorder.py
 ```
 
-## 📦 Model Download
-
-### ModelScope Download
-
-The models are hosted on ModelScope. For detailed download instructions, please refer to [MODEL_DOWNLOAD.md](docs/MODEL_DOWNLOAD.md).
-
-Quick download:
-```bash
-pip install modelscope
-modelscope download --model archifancy/AIGlasses_for_navigation
-```
-
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
@@ -553,7 +505,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - YOLO models from Ultralytics
 - MediaPipe for hand detection
 - Alibaba Cloud DashScope for ASR and multimodal AI services
-- ModelScope for model hosting
 
 ## 📧 Contact
 
