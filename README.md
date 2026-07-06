@@ -1,9 +1,5 @@
 # AI Intelligent Blind Glasses System 🤖👓
 
-<img width="2481" height="1708" alt="System Overview" src="https://github.com/user-attachments/assets/e8dec4a6-8fa6-4d94-bd66-4e9864b67daf" />
-<img width="2480" height="1708" alt="Navigation Interface" src="https://github.com/user-attachments/assets/bc7d1aac-a9e9-4ef8-9d67-224708d0c9fd" />
-<img width="2481" height="1708" alt="Object Detection" src="https://github.com/user-attachments/assets/6dd19750-57af-4560-a007-9a7059956b53" />
-
 <div align="center">
 
 An intelligent navigation and assistance system for visually impaired individuals, integrating features such as blind path navigation, crosswalk assistance, object recognition, and real-time voice interaction. This project is for communication and learning purposes only and should not be used directly by visually impaired people.
