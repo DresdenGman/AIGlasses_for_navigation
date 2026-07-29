@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-glasses-navigation-prototype"
+version = "0.1.0"
+description = "A hardware-free, safety-conscious AI glasses navigation prototype"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.110,<1.0",
+    "python-dotenv>=1.0,<2.0",
+    "uvicorn[standard]>=0.27,<1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "httpx>=0.27,<1.0",
+    "pytest>=8.0,<9.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["aiglasses*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

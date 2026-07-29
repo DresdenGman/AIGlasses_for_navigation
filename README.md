@@ -30,7 +30,7 @@ python main.py
 运行测试：
 
 ```bash
-pytest
+python -m pytest
 ```
 
 ## 演示 API
