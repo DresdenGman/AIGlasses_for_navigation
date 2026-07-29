@@ -10,6 +10,7 @@ from pydantic import BaseModel, Field
 from .config import Settings
 from .guidance import GuidanceEngine, Observation
 from .telemetry import EventLog
+from .ratelimit import SlidingWindowRateLimiter
 
 
 class ObservationPayload(BaseModel):
@@ -24,6 +25,7 @@ def create_app(settings: Settings) -> FastAPI:
     app = FastAPI(title="AI Glasses Prototype", version="0.1.0")
     engine = GuidanceEngine()
     events = EventLog()
+    device_limiter = SlidingWindowRateLimiter(settings.device_max_requests_per_minute)
     static_dir = Path(__file__).resolve().parent.parent / "static"
     app.mount("/static", StaticFiles(directory=static_dir), name="static")
 
@@ -58,11 +60,16 @@ def create_app(settings: Settings) -> FastAPI:
     def device_observe(
         payload: ObservationPayload,
         x_device_token: str | None = Header(default=None),
+        x_device_id: str | None = Header(default=None, min_length=3, max_length=64),
     ) -> dict:
         if settings.mode != "hardware":
             raise HTTPException(status_code=403, detail="Device ingestion is disabled in demo mode")
         if not settings.device_ingest_token or x_device_token != settings.device_ingest_token:
             raise HTTPException(status_code=401, detail="Invalid device token")
+        if not x_device_id:
+            raise HTTPException(status_code=400, detail="Missing device identifier")
+        if not device_limiter.allow(x_device_id):
+            raise HTTPException(status_code=429, detail="Device observation rate limit exceeded")
         observation = Observation(**payload.model_dump())
         guidance = engine.assess(observation)
         return {**guidance.__dict__, "event": events.record(observation, guidance).__dict__}

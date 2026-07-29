@@ -16,6 +16,7 @@ class Settings:
     port: int = 8081
     dashscope_api_key: str | None = None
     device_ingest_token: str | None = None
+    device_max_requests_per_minute: int = 120
 
     @property
     def cloud_voice_enabled(self) -> bool:
@@ -34,4 +35,5 @@ def load_settings() -> Settings:
         port=int(os.getenv("AIGLASSES_PORT", "8081")),
         dashscope_api_key=os.getenv("DASHSCOPE_API_KEY") or None,
         device_ingest_token=os.getenv("DEVICE_INGEST_TOKEN") or None,
+        device_max_requests_per_minute=int(os.getenv("DEVICE_MAX_REQUESTS_PER_MINUTE", "120")),
     )
