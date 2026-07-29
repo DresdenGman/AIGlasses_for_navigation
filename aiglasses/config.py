@@ -15,6 +15,7 @@ class Settings:
     host: str = "127.0.0.1"
     port: int = 8081
     dashscope_api_key: str | None = None
+    device_ingest_token: str | None = None
 
     @property
     def cloud_voice_enabled(self) -> bool:
@@ -32,4 +33,5 @@ def load_settings() -> Settings:
         host=os.getenv("AIGLASSES_HOST", "127.0.0.1"),
         port=int(os.getenv("AIGLASSES_PORT", "8081")),
         dashscope_api_key=os.getenv("DASHSCOPE_API_KEY") or None,
+        device_ingest_token=os.getenv("DEVICE_INGEST_TOKEN") or None,
     )

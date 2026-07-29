@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from fastapi import FastAPI, Query, WebSocket, WebSocketDisconnect
+from fastapi import FastAPI, Header, HTTPException, Query, WebSocket, WebSocketDisconnect
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
@@ -50,6 +50,19 @@ def create_app(settings: Settings) -> FastAPI:
 
     @app.post("/api/observations")
     def observe(payload: ObservationPayload) -> dict:
+        observation = Observation(**payload.model_dump())
+        guidance = engine.assess(observation)
+        return {**guidance.__dict__, "event": events.record(observation, guidance).__dict__}
+
+    @app.post("/api/device/observations")
+    def device_observe(
+        payload: ObservationPayload,
+        x_device_token: str | None = Header(default=None),
+    ) -> dict:
+        if settings.mode != "hardware":
+            raise HTTPException(status_code=403, detail="Device ingestion is disabled in demo mode")
+        if not settings.device_ingest_token or x_device_token != settings.device_ingest_token:
+            raise HTTPException(status_code=401, detail="Invalid device token")
         observation = Observation(**payload.model_dump())
         guidance = engine.assess(observation)
         return {**guidance.__dict__, "event": events.record(observation, guidance).__dict__}
