@@ -29,6 +29,16 @@ def test_observation_endpoint_returns_conservative_guidance():
     assert response.status_code == 200
     assert response.json()["level"] == "urgent"
     assert response.json()["actionable"] is True
+    assert response.json()["event"]["kind"] == "traffic_light"
+
+
+def test_events_are_bounded_metadata_without_raw_media():
+    demo = client()
+    demo.post("/api/observations", json={"kind": "crosswalk", "confidence": 0.85})
+    response = demo.get("/api/events?limit=1")
+    assert response.status_code == 200
+    assert response.json()[0]["kind"] == "crosswalk"
+    assert "frame" not in response.json()[0]
 
 
 def test_invalid_observation_is_rejected_before_guidance():

@@ -13,5 +13,6 @@ button:hover:not(:disabled) { border-color: #83b8ff; background: #153c75; transf
 button strong, button small { display: block; } button strong { font-size: 1.08rem; } button small { margin-top: 7px; color: #a6bad5; }
 .result { margin-top: 18px; padding: 30px; border: 1px solid #304b73; border-radius: 18px; background: rgba(3, 11, 25, .72); } .result h2 { margin: 10px 0; font-size: clamp(1.4rem, 3.5vw, 2rem); } .result p:last-child { margin-bottom: 0; color: #b8c8dd; }
 .result.urgent { border-color: #f0916f; background: rgba(104, 32, 31, .48); } .result.urgent .label { color: #ffb19a; } .result.navigation { border-color: #72b7ff; } .result.status { display: block; }
+.history { margin-top: 18px; padding: 24px 30px; border: 1px solid #213a60; border-radius: 18px; background: rgba(3, 11, 25, .48); } .history ol { margin: 13px 0 0; padding-left: 20px; color: #b8c8dd; } .history li + li { margin-top: 8px; }
 footer { display: flex; gap: 10px; margin-top: 26px; color: #8ba0bb; font-size: .9rem; } a { color: #a9d0ff; }
 @media (max-width: 600px) { main { padding-top: 44px; } .grid { grid-template-columns: 1fr; } }

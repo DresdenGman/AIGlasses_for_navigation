@@ -2,13 +2,14 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from fastapi import FastAPI, WebSocket, WebSocketDisconnect
+from fastapi import FastAPI, Query, WebSocket, WebSocketDisconnect
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 from .config import Settings
 from .guidance import GuidanceEngine, Observation
+from .telemetry import EventLog
 
 
 class ObservationPayload(BaseModel):
@@ -22,6 +23,7 @@ class ObservationPayload(BaseModel):
 def create_app(settings: Settings) -> FastAPI:
     app = FastAPI(title="AI Glasses Prototype", version="0.1.0")
     engine = GuidanceEngine()
+    events = EventLog()
     static_dir = Path(__file__).resolve().parent.parent / "static"
     app.mount("/static", StaticFiles(directory=static_dir), name="static")
 
@@ -48,8 +50,13 @@ def create_app(settings: Settings) -> FastAPI:
 
     @app.post("/api/observations")
     def observe(payload: ObservationPayload) -> dict:
-        guidance = engine.assess(Observation(**payload.model_dump()))
-        return guidance.__dict__
+        observation = Observation(**payload.model_dump())
+        guidance = engine.assess(observation)
+        return {**guidance.__dict__, "event": events.record(observation, guidance).__dict__}
+
+    @app.get("/api/events")
+    def recent_events(limit: int = Query(default=20, ge=1, le=100)) -> list[dict]:
+        return events.recent(limit)
 
     @app.websocket("/ws/observations")
     async def observation_socket(ws: WebSocket) -> None:
@@ -57,8 +64,9 @@ def create_app(settings: Settings) -> FastAPI:
         try:
             while True:
                 payload = ObservationPayload.model_validate(await ws.receive_json())
-                guidance = engine.assess(Observation(**payload.model_dump()))
-                await ws.send_json(guidance.__dict__)
+                observation = Observation(**payload.model_dump())
+                guidance = engine.assess(observation)
+                await ws.send_json({**guidance.__dict__, "event": events.record(observation, guidance).__dict__})
         except WebSocketDisconnect:
             return
 
