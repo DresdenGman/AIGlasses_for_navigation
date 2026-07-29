@@ -1,7 +1,10 @@
 from __future__ import annotations
 
+from pathlib import Path
+
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
-from fastapi.responses import HTMLResponse
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 from .config import Settings
@@ -19,10 +22,12 @@ class ObservationPayload(BaseModel):
 def create_app(settings: Settings) -> FastAPI:
     app = FastAPI(title="AI Glasses Prototype", version="0.1.0")
     engine = GuidanceEngine()
+    static_dir = Path(__file__).resolve().parent.parent / "static"
+    app.mount("/static", StaticFiles(directory=static_dir), name="static")
 
-    @app.get("/", response_class=HTMLResponse)
-    def root() -> str:
-        return "<h1>AI Glasses Prototype</h1><p>Use <code>/docs</code> or <code>/api/health</code>.</p>"
+    @app.get("/", include_in_schema=False)
+    def root() -> FileResponse:
+        return FileResponse(static_dir / "index.html")
 
     @app.get("/api/health")
     def health() -> dict:

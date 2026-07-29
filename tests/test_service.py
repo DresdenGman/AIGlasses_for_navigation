@@ -15,6 +15,12 @@ def test_health_advertises_hardware_free_demo_mode():
     assert response.json()["hardware_required"] is False
 
 
+def test_root_serves_the_browser_demo_page():
+    response = client().get("/")
+    assert response.status_code == 200
+    assert "安全提示演示台" in response.text
+
+
 def test_observation_endpoint_returns_conservative_guidance():
     response = client().post(
         "/api/observations",
