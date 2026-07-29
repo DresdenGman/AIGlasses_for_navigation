@@ -1,0 +1,4 @@
+{"kind":"traffic_light","confidence":0.96,"light_state":"red"}
+{"kind":"obstacle","confidence":0.89,"distance_m":1.1,"label":"路障"}
+{"kind":"crosswalk","confidence":0.85}
+{"kind":"obstacle","confidence":0.40,"distance_m":0.5,"label":"不明物体"}

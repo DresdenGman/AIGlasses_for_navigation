@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Glasses · Demo</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">AI GLASSES · RESEARCH PROTOTYPE</p>
+      <h1>安全提示演示台</h1>
+      <p class="lead">无硬件模拟模式。选择一个视觉观察结果，查看系统如何优先处理不确定性与安全风险。</p>
+      <section class="status" aria-label="系统状态">
+        <span id="status-dot"></span><span id="status-text">正在检查服务…</span>
+        <code id="mode"></code>
+      </section>
+      <section class="grid" aria-label="演示场景">
+        <button data-payload='{"kind":"traffic_light","confidence":0.96,"light_state":"red"}'>
+          <strong>红灯</strong><small>高置信度 · 停止提醒</small>
+        </button>
+        <button data-payload='{"kind":"obstacle","confidence":0.89,"distance_m":1.1,"label":"路障"}'>
+          <strong>近距离障碍物</strong><small>1.1 m · 避让提醒</small>
+        </button>
+        <button data-payload='{"kind":"crosswalk","confidence":0.85}'>
+          <strong>人行横道</strong><small>方向保持与信号确认</small>
+        </button>
+        <button data-payload='{"kind":"obstacle","confidence":0.40,"distance_m":0.5,"label":"不明物体"}'>
+          <strong>低置信度</strong><small>不会被表述为确定指令</small>
+        </button>
+      </section>
+      <section id="result" class="result neutral" aria-live="polite">
+        <p class="label">等待观察结果</p><h2>请选择一个场景</h2><p>所有输出仅用于研发演示，不能代替使用者判断。</p>
+      </section>
+      <section class="history" aria-label="事件历史">
+        <p class="label">会话内事件历史</p><ol id="history"><li>尚无提示事件</li></ol>
+      </section>
+      <footer><a href="/docs">API 文档</a><span>·</span><a href="/api/demo/scenarios">演示数据</a></footer>
+    </main>
+    <script src="/static/app.js"></script>
+  </body>
+</html>

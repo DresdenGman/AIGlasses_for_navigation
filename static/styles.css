@@ -1,0 +1,18 @@
+:root { color-scheme: dark; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; background: #061020; color: #ecf4ff; }
+* { box-sizing: border-box; }
+body { min-height: 100vh; margin: 0; display: grid; place-items: center; background: radial-gradient(circle at 20% 15%, #12366e 0, transparent 32%), radial-gradient(circle at 85% 85%, #123c54 0, transparent 28%), #061020; }
+main { width: min(920px, calc(100% - 40px)); padding: 72px 0 44px; }
+.eyebrow, .label { margin: 0; color: #83b8ff; font-size: .75rem; letter-spacing: .13em; font-weight: 700; }
+h1 { margin: 12px 0; font-size: clamp(2.1rem, 7vw, 4.8rem); letter-spacing: -.055em; }
+.lead { width: min(650px, 100%); color: #b8c8dd; line-height: 1.7; }
+.status { display: flex; align-items: center; gap: 9px; margin: 32px 0 22px; color: #b8c8dd; font-size: .9rem; }
+#status-dot { width: 9px; height: 9px; border-radius: 50%; background: #52e1ad; box-shadow: 0 0 16px #52e1ad; } #mode { margin-left: auto; color: #83b8ff; }
+.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+button { padding: 24px; border: 1px solid #26456f; border-radius: 16px; background: rgba(11, 30, 58, .78); color: #ecf4ff; cursor: pointer; text-align: left; transition: .18s ease; }
+button:hover:not(:disabled) { border-color: #83b8ff; background: #153c75; transform: translateY(-2px); } button:disabled { opacity: .55; }
+button strong, button small { display: block; } button strong { font-size: 1.08rem; } button small { margin-top: 7px; color: #a6bad5; }
+.result { margin-top: 18px; padding: 30px; border: 1px solid #304b73; border-radius: 18px; background: rgba(3, 11, 25, .72); } .result h2 { margin: 10px 0; font-size: clamp(1.4rem, 3.5vw, 2rem); } .result p:last-child { margin-bottom: 0; color: #b8c8dd; }
+.result.urgent { border-color: #f0916f; background: rgba(104, 32, 31, .48); } .result.urgent .label { color: #ffb19a; } .result.navigation { border-color: #72b7ff; } .result.status { display: block; }
+.history { margin-top: 18px; padding: 24px 30px; border: 1px solid #213a60; border-radius: 18px; background: rgba(3, 11, 25, .48); } .history ol { margin: 13px 0 0; padding-left: 20px; color: #b8c8dd; } .history li + li { margin-top: 8px; }
+footer { display: flex; gap: 10px; margin-top: 26px; color: #8ba0bb; font-size: .9rem; } a { color: #a9d0ff; }
+@media (max-width: 600px) { main { padding-top: 44px; } .grid { grid-template-columns: 1fr; } }

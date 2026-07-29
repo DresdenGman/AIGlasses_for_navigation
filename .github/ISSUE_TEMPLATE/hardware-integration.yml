@@ -1,0 +1,41 @@
+name: Hardware integration proposal
+description: Propose a bounded camera, ESP32, or inference adapter integration.
+title: "[Hardware]: "
+labels: ["hardware"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Hardware work must not bypass the guidance engine or turn this research
+        prototype into an autonomous mobility device. Never include credentials,
+        raw recordings, or private network details.
+  - type: textarea
+    id: interface
+    attributes:
+      label: Proposed adapter interface
+      description: Explain what normalized observation it sends and how it validates output.
+    validations:
+      required: true
+  - type: textarea
+    id: safety
+    attributes:
+      label: Safety and failure behavior
+      description: Explain low-confidence, missing-network, and stale-data handling.
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation plan
+      description: List deterministic tests and consented test data needed before integration.
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundaries
+    attributes:
+      label: Boundary confirmation
+      options:
+        - label: This proposal sends structured observations, not raw media, to the prototype service.
+          required: true
+        - label: This proposal does not claim autonomous navigation or road-crossing safety.
+          required: true
