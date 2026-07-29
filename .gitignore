@@ -42,6 +42,11 @@ venv.bak/
 .env
 .env.local
 .env.*.local
+.envrc
+
+# Local runtime configuration and generated demo assets
+config/local.yaml
+demo_output/
 
 # Model files (should use LFS, but ignore if not configured)
 *.pt
@@ -54,6 +59,10 @@ model/*.pt
 model/*.pth
 model/*.onnx
 !model/.gitkeep
+model/*.obj
+model/*.mtl
+model/*.blend
+model/versions/
 
 # Logs
 logs/
@@ -88,4 +97,3 @@ Thumbs.db
 *.tmp
 *.temp
 *.cache
-
