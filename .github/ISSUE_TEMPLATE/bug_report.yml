@@ -1,0 +1,41 @@
+name: Bug report
+description: Report a reproducible defect in the prototype or its documentation.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is an assistive-technology research prototype. Do not include API
+        keys, raw video/audio, location traces, faces, or other personal data.
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the actual and expected behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      placeholder: |
+        1. Install with ...
+        2. Run ...
+        3. Send this sanitized observation ...
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: macOS 15, Python 3.12, demo mode
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I removed secrets and personally identifying media or location data.
+          required: true
