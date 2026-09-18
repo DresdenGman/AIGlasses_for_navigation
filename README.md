@@ -1,54 +1,99 @@
+<div align="center">
+
 # AI Glasses for Navigation
+### Lower-cost hardware. Shared know-how. Community-oriented design.
 
-一个面向视障辅助研发的智能眼镜原型。项目当前提供一个**无需硬件即可运行**的安全演示服务：它接收视觉观察结果，并用保守规则生成红绿灯、障碍物与人行横道提示。
+[中文介绍](docs/README.zh-CN.md) · [3D files](design/v0.4/README.md) · [Render gallery](docs/GALLERY.md) · [Run the demo](#run-the-demo)
 
-> 研发原型，不得作为独立的安全导航设备或代替白杖、导盲犬、本人判断与交通规则。
+![Continuous Facets v0.4 — three-quarter studio render](assets/renders/01_hero.png)
 
-## 当前版本
+**CONTINUOUS FACETS / DESIGN v0.4**<br>
+A new lensless wraparound enclosure with a straighter brow, clipped corners and integrated temple surfaces.
 
-- `main.py` 是正式入口：可在 `demo` 模式下运行，无需 ESP32、摄像头、模型文件或云端密钥。
-- `/docs` 提供交互式 API；`/api/demo/scenarios` 提供可复现的演示输入。
-- 根路径 `/` 提供可直接点击的中文演示台；[回放说明](docs/DEMO.md) 展示如何离线复现提示决策。
-- 原先的 `app_main.py` 与相关脚本被保留为硬件探索原型；它们依赖尚未整理入仓库的模块和模型，不是本版本的启动入口。
-- 3D 资产仅用于研发展示。请参阅 [模型资产规范](docs/MODEL_ASSETS.md)。
+*Digital prototype rendered from the included Blender model. Not a photograph of a manufactured product.*
 
-## 快速开始
+</div>
+
+## Community first
+
+| **4 communities** | **Nearly 100 people** | **3 communities** |
+|:---:|:---:|:---:|
+| Engaged through outreach | Blind or visually impaired people reached | Received practical making instruction |
+
+The project creator reports reaching nearly 100 blind or visually impaired people across four communities. In three communities, the creator provided explanations of how to make the device, aiming to let local participants continue without ongoing funding or material donations from the creator.
+
+The focus is both **affordable hardware and knowledge that communities can retain**. These are creator-reported outreach figures, not device-delivery counts or measured mobility outcomes. [Read the community story and reporting scope →](docs/COMMUNITY_AND_COST.md)
+
+## Affordability by design
+
+**Under US$20 in China · Estimated under US$30 in the US — hardware only.**
+
+The earlier prototype cost under US$20 in hardware when the creator built it in China. The creator currently estimates under US$30 for a US build. Phone/computer, cloud services, tools, labor and other non-hardware costs are excluded. The new v0.4 enclosure has not yet been separately fabricated or costed. [Cost context →](docs/COMMUNITY_AND_COST.md#hardware-cost)
+
+## A new, continuous exterior
+
+<table>
+<tr><td><img src="assets/renders/02_front.png" alt="Front view of v0.4 with the camera aperture and nose supports" /></td><td><img src="assets/renders/03_side.png" alt="Side view showing the broad faceted temple" /></td></tr>
+<tr><td align="center">Front / integrated brow</td><td align="center">Side / broad continuous surfaces</td></tr>
+<tr><td><img src="assets/renders/04_top.png" alt="Top view of the U-shaped lensless housing" /></td><td><img src="assets/renders/05_rear.png" alt="Rear three-quarter view of the housing" /></td></tr>
+<tr><td align="center">Top / wraparound layout</td><td align="center">Rear / interior access</td></tr>
+</table>
+
+The silhouette comes from the housing itself: broad faces meet through clipped corners rather than added decorative frames. The new body and upper cover are editable parts. The original assembly is retained in a separate reference collection for inspection.
+
+**Engineering status:** the model preserves the original coordinate scale and uses a conservative keep-out envelope. Actual battery, PCB and cable dimensions, physical units, fastening and assembly tolerances still need verification. It is a design prototype, not a print-ready or fit-certified release. [Model files and checks →](design/v0.4/README.md)
+
+## In context
+
+![v0.4 on a staged everyday desk](assets/scenes/08_everyday_desk.png)
+
+![v0.4 on a staged maker workbench](assets/scenes/09_maker_workbench.png)
+
+*Both scenes are synthetic Blender renders of the same v0.4 model. They illustrate intended contexts, not actual outreach sessions or evidence of device use.*
+
+[Explore all angles, detail views and the open housing →](docs/GALLERY.md)
+
+## What the project includes
+
+- **Wearable design:** the new v0.4 mesh assembly, editable Blender scene, shell exports and reproducible render setup.
+- **Runnable software:** a hardware-free FastAPI demo that turns structured observations into conservative traffic-light, obstacle and crosswalk messages.
+- **Development tools:** a browser dashboard, JSONL replay, process-local event history and an optional authenticated device-observation gateway.
+- **Community documentation:** outreach, making instruction and an explicitly scoped hardware-cost account.
+
+Live camera perception, speech and complete wearable integration remain separate development work. Earlier YOLO/ESP32/voice explorations are not presented as fully integrated features of this release. [Full project overview →](docs/PROJECT_OVERVIEW.md)
+
+## Run the demo
 
 ```bash
+git clone https://github.com/DresdenGman/AIGlasses_for_navigation.git
+cd AIGlasses_for_navigation
 python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\\Scripts\\activate
-pip install -r requirements.txt
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+python -m pip install -r requirements.txt
 cp .env.example .env
 python main.py
 ```
 
-打开：
-
-- `http://127.0.0.1:8081/api/health`
-- `http://127.0.0.1:8081/docs`
-
-运行测试：
+Open [the local dashboard](http://127.0.0.1:8081/) or [interactive API docs](http://127.0.0.1:8081/docs). Demo mode needs no camera, ESP32, model weights or cloud keys.
 
 ```bash
+python -m aiglasses.replay demo/events.jsonl
+python -m pip install -e '.[dev]'
 python -m pytest
 ```
 
-## 演示 API
+## Explore the repository
 
-```bash
-curl -X POST http://127.0.0.1:8081/api/observations \
-  -H 'content-type: application/json' \
-  -d '{"kind":"traffic_light","confidence":0.96,"light_state":"red"}'
-```
+| Area | Start here |
+|---|---|
+| Latest 3D design | [v0.4 assembly and usage](design/v0.4/README.md) |
+| Product images | [Gallery and image provenance](docs/GALLERY.md) |
+| Community and affordability | [Reported reach, instruction and cost](docs/COMMUNITY_AND_COST.md) |
+| Software | [Architecture](docs/ARCHITECTURE.md) · [Demo](docs/DEMO.md) · [Device gateway](docs/HARDWARE_GATEWAY.md) |
+| Project direction | [Overview](docs/PROJECT_OVERVIEW.md) · [Roadmap](docs/ROADMAP.md) |
 
-返回的提示会优先保证安全：低置信度不会被表述为确定指令，重复提示会被节流。
+## Attribution & responsible use
 
-## 开发路线
+Earlier project documentation credited [AI-FanGe / OpenAIglasses_for_Navigation](https://github.com/AI-FanGe/OpenAIglasses_for_Navigation); that upstream attribution is retained. See the [project overview](docs/PROJECT_OVERVIEW.md#attribution-and-provenance) and [MIT license](LICENSE).
 
-详见 [升级路线](docs/ROADMAP.md)。下一阶段会把真实摄像头/ESP32 接入封装成适配器，并使用录制视频与场景指标验证可靠性；不会把硬件耦合回核心决策逻辑。
-
-## 安全
-
-- 永远不要提交 `.env`、模型权重、录音或视频。
-- 云端语音密钥只可放在本机 `.env` 中；曾经出现在 Git 历史中的密钥必须在供应商后台撤销并重新生成。
-- 所有 AI/视觉输出都是不可信的感知结果，必须经过置信度、时间稳定性与安全策略检查。
+This is an assistive-technology **research prototype**, not a certified navigation aid. It must not replace a white cane, guide dog, personal judgment or traffic rules. Renders are design visualizations; community figures are creator-reported. Keep credentials, recordings and participant data out of Git.

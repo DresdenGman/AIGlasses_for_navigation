@@ -1,0 +1,98 @@
+{
+  "design/v0.4/AI_Glasses_Continuous_Facets_v0.4.glb": {
+    "bytes": 973396,
+    "sha256": "998be668e84689439ffb0f288d8c31f1303ca06de8cabaea1738e03a07c88239"
+  },
+  "design/v0.4/AI_Glasses_Continuous_Facets_v0.4.blend": {
+    "bytes": 9302825,
+    "sha256": "b644daf40cd9c48bc1016c018e27bc49f56f3952924cb6b0a4ae8f720c4242a2"
+  },
+  "design/v0.4/AI_Glasses_Desk_Scene_v0.4.blend": {
+    "bytes": 9343879,
+    "sha256": "74e541610da300ac3e2204699d4cd3596e5cf7bf113734f38f7a20dc2735b8b5"
+  },
+  "design/v0.4/render_manifest.json": {
+    "bytes": 678,
+    "sha256": "7b8ffb33f98f9d6eaf6d13029beb45a1567c050a18074a41a157c3c0cf3a43ab"
+  },
+  "design/v0.4/PROVENANCE.md": {
+    "bytes": 1745,
+    "sha256": "d1bab1ac56b64606bc1899f05c9ce709d3e759ae250f0b0d5ad3981f0caed5e3"
+  },
+  "design/v0.4/profiles.json": {
+    "bytes": 32457,
+    "sha256": "22a5915a8aa362599822f763e9bfa04efcb1e482cafe8a371c54fdc783b89b52"
+  },
+  "design/v0.4/README.md": {
+    "bytes": 5453,
+    "sha256": "0faaa8dc94f1d34e0ab89f00bfbed2da4d9401f8af9e8986d8ec418d46dbb51d"
+  },
+  "design/v0.4/AI_Glasses_Maker_Scene_v0.4.blend": {
+    "bytes": 9344117,
+    "sha256": "8c14160da6ca7dded71fc73efa5201799bc425a3ab6d68720ae7885aec7430af"
+  },
+  "design/v0.4/approved_concept.png": {
+    "bytes": 1689550,
+    "sha256": "ea789ef3078d3180cb2407bf1655e60c712ff8e2b45c00177d2e6d736f0eb682"
+  },
+  "design/v0.4/validation.json": {
+    "bytes": 2873,
+    "sha256": "86c98d758b2020c9158db96a45da40078e67f8299e35fdeaf1515a0c4138b134"
+  },
+  "design/v0.4/housing_lower.stl": {
+    "bytes": 844784,
+    "sha256": "c633f20043a53d140d367b22d54518467853f31cd23e239de0c8af5f60ddb23f"
+  },
+  "design/v0.4/build_model.py": {
+    "bytes": 14168,
+    "sha256": "9651e6caeb07d8a2444f2fedf9a315695978e48b248aafb420db615de1b1dd83"
+  },
+  "design/v0.4/reference_assembly.blend": {
+    "bytes": 9017017,
+    "sha256": "dff0023b52e727819f678c9b2f996762fd1f7ba7ba6bcb8571ac83b188797362"
+  },
+  "design/v0.4/render_gallery.py": {
+    "bytes": 11476,
+    "sha256": "e85a92197b4d3c02b8f0954dcb10c3e91536121f01ee30c1c83c5a6db8c6b048"
+  },
+  "design/v0.4/housing_upper.stl": {
+    "bytes": 387484,
+    "sha256": "d9e235230b5692356d7bacff85c3ca5403317e40fb4e8f268ba1d925fda15f00"
+  },
+  "assets/scenes/09_maker_workbench.png": {
+    "bytes": 2638559,
+    "sha256": "b3bbdbdc1eeee4d9445db28e54d9ad6081d7b48b8bb23150da406baf83fc2626"
+  },
+  "assets/scenes/08_everyday_desk.png": {
+    "bytes": 3172123,
+    "sha256": "4b834d34341a898496afd82f88e775280429a2626543a3bac50119ad64c316d2"
+  },
+  "assets/renders/04_top.png": {
+    "bytes": 2327540,
+    "sha256": "c0aecd79845482f3cb9bea90080526a85e5a7c6e976484948e48dfd3bc6aea0a"
+  },
+  "assets/renders/03_side.png": {
+    "bytes": 2239186,
+    "sha256": "6ef6efe6b67a689dec0012ca5f3c53688178111655aa60dbcae7361abc248f61"
+  },
+  "assets/renders/02_front.png": {
+    "bytes": 2201272,
+    "sha256": "7d5f9a22c23f0b603b64aeea315c0a18f3e3387c54bcf930a2d78ab1b6da9ab1"
+  },
+  "assets/renders/06_detail.png": {
+    "bytes": 2297451,
+    "sha256": "07a364248d0d338132620d382829378b2e05a9dd21c732c020d669fffcfdc3f1"
+  },
+  "assets/renders/07_open_housing.png": {
+    "bytes": 2377226,
+    "sha256": "77787c4f37ba01990f736b0d4f46fd10f0b13c78cb423219921e3adf68431bd7"
+  },
+  "assets/renders/05_rear.png": {
+    "bytes": 2372346,
+    "sha256": "8865454efd4f1e87c62e35967882d418f7bef7ed6c238f62b6fa037aad69feaa"
+  },
+  "assets/renders/01_hero.png": {
+    "bytes": 2314998,
+    "sha256": "e5706d56fea17f6bdd616f91bc003f0448702b17e67dc12679d0395b95bb3f3f"
+  }
+}

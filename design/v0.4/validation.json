@@ -1,0 +1,78 @@
+{
+  "version": "0.4.0",
+  "design": "Approved lightweight Continuous Facets",
+  "source_units": "unverified; preserved without asserting mm",
+  "reference_vertices": 256013,
+  "reference_faces": 292998,
+  "coordinate_translation": [
+    151.02978515625,
+    0,
+    0
+  ],
+  "source_geometry_preserved": true,
+  "replaced_source_skin_patches": [
+    1,
+    4,
+    5,
+    7,
+    10,
+    11
+  ],
+  "protected_reference_vertices": 162052,
+  "nominal_envelope_margin_source_units": 0.45,
+  "nominal_shell_expansion_source_units": 1.15,
+  "base_mesh_source_intersection_pairs": {
+    "Housing_v04 / unified hollow envelope": 0,
+    "Housing_v04 / removable upper cover": 0
+  },
+  "topology": {
+    "Housing_v04 / unified hollow envelope": {
+      "vertices": 1838,
+      "faces": 1547,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 28331.351977399718
+    },
+    "Housing_v04 / removable upper cover": {
+      "vertices": 802,
+      "faces": 609,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 8158.552572308227
+    }
+  },
+  "limitations": [
+    "Source scale is not calibrated.",
+    "Internal parts are not reliably identified.",
+    "No measured battery/PCB/cable assembly verification.",
+    "Envelope test is not manufacturing clearance certification.",
+    "Cover fastening and assembly path need mechanical design.",
+    "Bezel is a visual concept; optics require physical alignment validation."
+  ],
+  "evaluated_checks": {
+    "Housing_v04 / unified hollow envelope": {
+      "evaluated_intersection_pairs_with_protected_source": 0,
+      "protected_vertices_inside_shell_material": 0,
+      "minimum_protected_vertex_distance_source_units": 0.4499969482421875
+    },
+    "Housing_v04 / removable upper cover": {
+      "evaluated_intersection_pairs_with_protected_source": 0,
+      "protected_vertices_inside_shell_material": 0,
+      "minimum_protected_vertex_distance_source_units": 0.4499998092651367
+    }
+  },
+  "fit_scope": "Preserved source geometry excluding the six replaced exterior patches; no physical fit guarantee.",
+  "point_inside_method": "Ray parity for every protected source vertex, excluding replaced exterior patches 1/4/5/7/10/11, non-axis-aligned direction (1, .137, .311), epsilon .0001 source units; odd hits confirmed by majority of three independent ray directions",
+  "evaluated_mesh_checks": {
+    "Housing_v04 / unified hollow envelope": {
+      "evaluated_surface_intersection_pairs": 0,
+      "reference_vertices_inside_shell_material": 0,
+      "minimum_source_vertex_to_surface_distance_source_units": 0.4499969482421875
+    },
+    "Housing_v04 / removable upper cover": {
+      "evaluated_surface_intersection_pairs": 0,
+      "reference_vertices_inside_shell_material": 0,
+      "minimum_source_vertex_to_surface_distance_source_units": 0.4499998092651367
+    }
+  }
+}
