@@ -1,0 +1,17 @@
+{
+  "model_version": "0.4.0",
+  "renderer": "Blender Cycles",
+  "samples": 48,
+  "images": {
+    "01_hero.png": "Three-quarter studio",
+    "02_front.png": "Front studio",
+    "03_side.png": "Side studio",
+    "04_top.png": "Top studio",
+    "05_rear.png": "Rear studio",
+    "06_detail.png": "Camera detail",
+    "07_open_housing.png": "Upper cover raised 48 source units; not an assembly instruction",
+    "08_everyday_desk.png": "Synthetic desk set with generic props",
+    "09_maker_workbench.png": "Synthetic maker set with generic tools"
+  },
+  "provenance": "All images rendered directly from the included 3D model. Not physical-product or community-event photographs."
+}

@@ -97,3 +97,7 @@ Thumbs.db
 *.tmp
 *.temp
 *.cache
+
+# Blender autosave backups and local regeneration previews
+design/**/*.blend1
+design/**/*.blend2

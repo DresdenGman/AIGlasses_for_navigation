@@ -1,0 +1,9 @@
+{
+  "design_version": "0.4.0",
+  "name": "Continuous Facets",
+  "status": "editable enclosure prototype; physical fit unverified",
+  "blender": "v0.4/AI_Glasses_Continuous_Facets_v0.4.blend",
+  "preview": "v0.4/AI_Glasses_Continuous_Facets_v0.4.glb",
+  "documentation": "v0.4/README.md",
+  "validation": "v0.4/validation.json"
+}
