@@ -23,7 +23,7 @@ A new lensless wraparound enclosure with a straighter brow, clipped corners and 
 |:---:|:---:|:---:|
 | Engaged through outreach | Blind or visually impaired people reached | Received practical making instruction |
 
-The project creator reports reaching nearly 100 blind or visually impaired people across four communities. In three communities, the creator provided explanations of how to make the device, aiming to let local participants continue without ongoing funding or material donations from the creator.
+The project creator reports reaching 68 blind or visually impaired people across four communities. In three communities, the creator provided explanations of how to make the device, aiming to let local participants continue without ongoing funding or material donations from the creator.
 
 The focus is both **affordable hardware and knowledge that communities can retain**. These are creator-reported outreach figures, not device-delivery counts or measured mobility outcomes. [Read the community story and reporting scope →](docs/COMMUNITY_AND_COST.md)
 
