@@ -38,19 +38,18 @@ flowchart LR
     E --> G[Process-local metadata history]
 ```
 
-A future vision adapter translates frames into observations. A future audio adapter can speak resulting messages. Sensor processing and cloud integrations should remain separated from the decision rules, so that recorded scenarios can be replayed and inspected.
+A future vision adapter translates frames into observations. A future audio adapter can speak resulting messages. The adapter architecture separates sensor processing from decision rules for reproducible scenario replay.
 
 ## Attribution and provenance
 
-The earlier repository README credited [AI-FanGe / OpenAIglasses_for_Navigation](https://github.com/AI-FanGe/OpenAIglasses_for_Navigation) as the upstream code project. That attribution is retained; this repository should not imply that all historical vision or voice components were authored here. Existing license notices are unchanged.
+The earlier repository README credited [AI-FanGe / OpenAIglasses_for_Navigation](https://github.com/AI-FanGe/OpenAIglasses_for_Navigation) as the upstream code project. Historical vision and voice work includes upstream contributions. Existing attribution and license notices are retained.
 
-The v0.4 shell was rebuilt for this project from the approved Continuous Facets concept, using the existing local assembly as a spatial reference. The approved concept board was AI-generated. Published product angles and staged environments are rendered from the editable v0.4 Blender geometry, not documentary photos of a manufactured device or community event.
+The v0.4 shell was rebuilt for this project from the Continuous Facets concept, using the existing local assembly as a spatial reference. The concept board was AI-generated. Published product angles and staged environments are rendered from the editable v0.4 Blender geometry, not documentary photos of a manufactured device or community event.
 
 ## Responsible use
 
 This remains an assistive-technology research prototype. It is not a certified navigation device and must not replace a white cane, guide dog, professional orientation-and-mobility support, personal judgment or traffic rules. No field-safety, clinical or mobility-performance claim is made by this release.
 
+## Presentation renders
 
-## Detailed presentation materials
-
-[完整项目说明](../design/v0.4/presentation/项目完整说明.md) · [新增渲染与可编辑场景](../design/v0.4/presentation/展示入口.md) · [外部活动照片参考](../design/v0.4/presentation/照片参考与拍摄清单.md)
+[Editable scenes, renders and consistency record](../design/v0.4/presentation/README.md).

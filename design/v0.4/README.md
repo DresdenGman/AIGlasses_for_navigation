@@ -35,7 +35,7 @@ Enable the reference collection's objects to inspect the source geometry. Do not
 
 The housing is rebuilt as a hollow continuous envelope with broad faces and clipped cross-section corners. It is not a set of plates added to the earlier visual model. A separate upper cover shares the housing's surfaces and provides a concept for access. The source nose-support meshes are retained. Camera visualization remains aligned with the source camera's X/Z location, with a front optical opening.
 
-The [approved AI concept board](approved_concept.png) established the visual direction. The approved lightweight implementation tightens the brow and temples. Six original exterior skin patches (1, 4, 5, 7, 10, 11) are replaced rather than enclosed by a second outer body; the remaining 162,052 source vertices form the protected reference. The concept board was not a dimensioned engineering drawing.
+The [AI-generated concept board](approved_concept.png) established the visual direction. The lightweight implementation tightens the brow and temples. Six original exterior skin patches (1, 4, 5, 7, 10, 11) are replaced rather than enclosed by a second outer body; the remaining 162,052 source vertices form the protected reference. The concept board was not a dimensioned engineering drawing.
 
 The complete original assembly contains 256,013 vertices and 292,998 faces. It is stored in its original world orientation, translated by +151.02978515625 on X to center it. The original physical units are **unverified**: no conversion to millimeters is asserted.
 
@@ -64,7 +64,6 @@ All published angles and staged scenes come from the same actual model. No synth
 
 [Geometry and image provenance](PROVENANCE.md) · [Release notes](../../docs/RELEASE_v0.4.md)
 
+## Presentation renders
 
-## Detailed presentation materials
-
-[完整项目说明](presentation/项目完整说明.md) · [新增渲染与可编辑场景](presentation/展示入口.md) · [外部活动照片参考](presentation/照片参考与拍摄清单.md)
+[Editable scenes, renders and consistency record](presentation/README.md).

@@ -39,8 +39,8 @@ Perspective camera, revised lighting, material variation and more detailed gener
 
 ## 11 / Material and housing study
 ![Housing and camera detail](../design/v0.4/presentation/11_material_detail.png)
-[Editable scene, render script and consistency record](../design/v0.4/presentation/展示入口.md).
+[Editable scene, render script and consistency record](../design/v0.4/presentation/README.md).
 
 ## Image provenance
 
-The approved concept drawing was AI-generated during design exploration. Every image above was subsequently rendered from the actual v0.4 mesh, with consistent geometry across angles. The scenes, [original nine-image manifest](../design/v0.4/render_manifest.json) and [two-image photography manifest](../design/v0.4/presentation/photography_manifest.json) are included so that others can inspect or reproduce them. No identifiable community participants or fabricated endorsements appear in this gallery.
+The concept drawing was AI-generated during design exploration. Every image above was subsequently rendered from the actual v0.4 mesh, with consistent geometry across angles. The scenes, [original nine-image manifest](../design/v0.4/render_manifest.json) and [two-image photography manifest](../design/v0.4/presentation/photography_manifest.json) are included so that others can inspect or reproduce them. No identifiable community participants or fabricated endorsements appear in this gallery.

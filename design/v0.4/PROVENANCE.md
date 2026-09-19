@@ -1,7 +1,7 @@
 # Geometry and imagery provenance
 
 - Release design: **Continuous Facets v0.4.0**, September 18, 2026.
-- Design direction: creator-approved AI concept board; implemented as a new Blender mesh enclosure.
+- Design direction: AI-generated concept board; implemented as a new Blender mesh enclosure.
 - Mechanical reference: the complete assembled half of the project's existing `3dmodel.obj`, taken from its original Blender import. The exploded half is not duplicated in the released reference library.
 - Original OBJ SHA-256: `7f9888f9cb32890d1e4459720c4580dd2a00e7830c1eeb72a4d7c3727195ed0c`.
 - Reference transform: original world-space coordinates, translated by `(+151.02978515625, 0, 0)`; no unit conversion.
