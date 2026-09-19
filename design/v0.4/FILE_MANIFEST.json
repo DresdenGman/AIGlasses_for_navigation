@@ -16,16 +16,16 @@
     "sha256": "7b8ffb33f98f9d6eaf6d13029beb45a1567c050a18074a41a157c3c0cf3a43ab"
   },
   "design/v0.4/PROVENANCE.md": {
-    "bytes": 1745,
-    "sha256": "d1bab1ac56b64606bc1899f05c9ce709d3e759ae250f0b0d5ad3981f0caed5e3"
+    "bytes": 1738,
+    "sha256": "30906f194c0fe250c3979b70430912ccb81be9e20e131097aea3aa7722f413fe"
   },
   "design/v0.4/profiles.json": {
     "bytes": 32457,
     "sha256": "22a5915a8aa362599822f763e9bfa04efcb1e482cafe8a371c54fdc783b89b52"
   },
   "design/v0.4/README.md": {
-    "bytes": 5689,
-    "sha256": "24f9baf1f9347d8fe40fc54c01a8167c9a9d3d00d8c413b0c6fcade52e1a1281"
+    "bytes": 5546,
+    "sha256": "4c7d876b991bd7d4879b96df599cb555a1357a95c6d3812c3dd2dcee9dea7e4c"
   },
   "design/v0.4/AI_Glasses_Maker_Scene_v0.4.blend": {
     "bytes": 9344117,

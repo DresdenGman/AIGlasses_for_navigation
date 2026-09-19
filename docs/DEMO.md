@@ -1,17 +1,17 @@
-# 无硬件演示与回放
+# Demo and replay
 
-## 网页演示
+## Browser demo
 
-启动 `python main.py`，打开 `http://127.0.0.1:8081/`。页面按钮会调用同一条生产提示路径，而不是写死的前端文案。
+Run `python main.py` and open `http://127.0.0.1:8081/`. Dashboard actions use the service's guidance engine. No camera, ESP32 or model weights are required.
 
-## 可复现回放
+## Reproducible replay
 
 ```bash
 python -m aiglasses.replay demo/events.jsonl
 ```
 
-`demo/events.jsonl` 是一条条标准化的观察结果。未来每个真实场景视频都应保留对应的 JSONL 标注/推理输出，并记录模型版本、设备、阈值与日期。这样可在没有硬件的情况下复现每一个提示决策。
+`demo/events.jsonl` contains standardized observations. Replay sends these observations through the guidance rules, allowing individual decisions to be reproduced without hardware.
 
-## 未来硬件接入
+## Hardware integration
 
-实现 `aiglasses.adapters.VisionAdapter`：将一帧图像转换为 `Observation`。不要让 ESP32、YOLO、云服务 SDK 或 UI 直接决定语音内容；它们只能提供带置信度的观察结果，最终由 `GuidanceEngine` 统一执行安全规则。
+The `aiglasses.adapters.VisionAdapter` interface converts an image frame into an `Observation`. Adapters supply observations with confidence values; `GuidanceEngine` applies the guidance rules. Live camera perception and audio output remain separate integration work.

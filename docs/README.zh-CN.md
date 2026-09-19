@@ -39,7 +39,6 @@ v0.4 采用一体化连续折面：更轻薄的前框、斜切转角和收紧的
 
 本项目保留原文档对 [AI-FanGe / OpenAIglasses_for_Navigation](https://github.com/AI-FanGe/OpenAIglasses_for_Navigation) 的上游署名。项目是研发原型，不可替代白杖、导盲犬、个人判断和交通规则。
 
+## 展示资料
 
-## Detailed presentation materials
-
-[完整项目说明](../design/v0.4/presentation/项目完整说明.md) · [新增渲染与可编辑场景](../design/v0.4/presentation/展示入口.md) · [外部活动照片参考](../design/v0.4/presentation/照片参考与拍摄清单.md)
+[展示渲染与可编辑场景](../design/v0.4/presentation/README.md) · [项目概述（英文）](PROJECT_OVERVIEW.md)

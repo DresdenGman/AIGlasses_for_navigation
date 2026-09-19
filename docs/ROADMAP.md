@@ -1,25 +1,24 @@
-# 产品升级路线
+# Roadmap
 
-## 已完成：基础可交付版本
+## Available
 
-- 无硬件运行的 FastAPI 演示服务。
-- 可测试的保守提示引擎：红灯、近距离障碍物、人行横道、低置信度与重复提醒抑制。
-- 环境变量配置和密钥隔离。
+- Hardware-free FastAPI demo service.
+- Guidance rules for traffic lights, nearby obstacles, crosswalks, low confidence and repeated-message suppression.
+- Environment-based configuration and credential separation.
+- Authenticated device-observation endpoint for controlled development networks.
+- Editable v0.4 enclosure, source-assembly reference and Blender renders.
 
-## 下一步：真实感知适配器
+## Integration work
 
-1. 定义 `CameraAdapter` 与 `DetectionAdapter` 接口。
-2. 使用受保护的设备观察入口；详见 [硬件网关](HARDWARE_GATEWAY.md)。
-3. 先使用录制视频回放，记录延迟、误报、漏报和提示频率。
-4. 再接入 ESP32，保持网络、音频与 IMU 代码与提示策略隔离。
+- Live camera and detection adapters.
+- Recorded-video evaluation of latency, false positives, missed detections and message frequency.
+- ESP32 capture, audio output and IMU integration behind adapter interfaces.
 
-## 安全验证门槛
+## Validation work
 
-- 任何“通行”相关提示都必须包含不确定性和用户确认语义。
-- 每种场景都有视频回放测试。
-- 记录模型版本、阈值、设备与测试日期。
-- 未通过场景验证的能力不得作为产品承诺。
+- Scenario replay with recorded model versions, thresholds, devices and test dates.
+- Evaluation of message uncertainty and user interpretation in controlled settings.
+- Calibration of model units and measurement of physical components.
+- Verification of fastening, assembly paths, manufacturing tolerances and physical fit.
 
-## 产品与展示
-
-v0.4 已提供可编辑的连续折面外壳、原装配参照、多角度渲染与桌面场景。所有产品展示图由同一 Blender 几何模型渲染，明确标为数字原型；不把效果图作为实物装配、真实使用或社区活动的证据。下一阶段需要核实物理单位、实际元件尺寸、固定方式、装配路径与制造公差。
+The current release does not establish safe road crossing, physical assembly readiness or measured mobility outcomes.

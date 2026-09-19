@@ -12,7 +12,7 @@ The purpose is to make assistive technology more accessible through a low-cost d
 
 The creator reports providing **practical explanations of how to make the device in three communities**, with the intention that local participants can continue making it without ongoing funding or material donations from the creator. The model focuses on transferring know-how instead of requiring recurring personal sponsorship.
 
-Instruction has been reported; ongoing independent production volume and long-term outcomes have not been quantified here. No participant names, identifying photographs, health records, or invented testimonials are published.
+Instruction has been reported; ongoing independent production volume and long-term outcomes have not been quantified here. A [session photograph](../assets/community/in-person-session.png) supplied by the project creator appears in the README. Participant names and health records are not included.
 
 ## Hardware cost
 
@@ -22,10 +22,6 @@ Instruction has been reported; ongoing independent production volume and long-te
 | Present-day build in the United States | **Estimated under US$30 per unit** | Creator's current estimate; not a supplier-verified quotation |
 | New continuous-facet v0.4 enclosure | **Not yet separately costed** | Digital design; material, process and assembly validation pending |
 
-These numbers exclude a phone/computer, cloud services, tools, labor and other non-hardware costs. The creator expects little additional expenditure in their existing setup, but that is not a guarantee of zero additional costs for another maker. Component sourcing, shipping, taxes and enclosure fabrication need to be itemized in a reproducible bill of materials before promising a universal all-in price.
+These numbers exclude a phone/computer, cloud services, tools, labor and other non-hardware costs. The creator expects little additional expenditure in their existing setup, but that is not a guarantee of zero additional costs for another maker. A fully itemized bill of materials covering sourcing, shipping, taxes and enclosure fabrication is not yet available.
 
 **Design goal:** reduce hardware cost aggressively so that affordability is less of a barrier to participation. “Accessible to everyone” is an aspiration, not a verified statement about universal suitability or availability.
-
-## How future evidence should be recorded
-
-Keep anonymous aggregate counts of sessions and participants, distinguish repeat attendance from unique people, record device production separately, and publish dated bills of materials with quantity and sourcing assumptions. Any community photographs require appropriate permission and must remain separate from synthetic design imagery.
