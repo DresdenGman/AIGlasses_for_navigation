@@ -18,7 +18,6 @@ A new lensless wraparound enclosure with a straighter brow, clipped corners and 
 
 ![A presenter speaking to seated participants during an in-person session](assets/community/in-person-session.png)
 
-*In-person session photograph provided by the project creator.*
 
 | **4 communities** | **Nearly 100 people** | **3 communities** |
 |:---:|:---:|:---:|
