@@ -1,0 +1,20 @@
+{
+  "model": "Approved v0.4",
+  "product_mesh_sha256_before": "173ce8470e2d15435fd6ac847ffe59c6fb46a8d2c497bbe862593b0e99318981",
+  "product_mesh_sha256_after": "173ce8470e2d15435fd6ac847ffe59c6fb46a8d2c497bbe862593b0e99318981",
+  "geometry_unchanged": true,
+  "type": "Native Blender CGI, not a physical prototype photo",
+  "tool_reference": "https://www.wera.de/en-nz/tools/2050-ph-screwdriver-for-phillips-screws-for-electronic-applications",
+  "prop_scope": "Generic illustration; not supplied hardware or claimed measured BOM",
+  "photography": [
+    "Perspective camera",
+    "Area lights",
+    "Material roughness variation",
+    "Fine procedural bump",
+    "Depth of field"
+  ],
+  "images": [
+    "10_workbench_photography.png",
+    "11_material_detail.png"
+  ]
+}

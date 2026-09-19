@@ -1,0 +1,34 @@
+{
+  "render_photography.py": {
+    "bytes": 9476,
+    "sha256": "d6a67566340d5f313f99b180ee75d6564c8a24648d32e7ab6d37fa0a090d433b"
+  },
+  "照片参考与拍摄清单.md": {
+    "bytes": 4175,
+    "sha256": "7ff1d9731d8ae4e7b1b5f31f71f62713d9204d6a7b33ed07c418e90acd8d33fc"
+  },
+  "photography_manifest.json": {
+    "bytes": 771,
+    "sha256": "b59690de1dda3c6d3141189a9ae07465f4f1588fac5fe50cedb6edf6b71c3275"
+  },
+  "展示入口.md": {
+    "bytes": 884,
+    "sha256": "fea89e5b6f303610c3a56c2cde06a1efc346ded6aec6930f54a67839b2f637a5"
+  },
+  "Photography_Workbench_v0.4.blend": {
+    "bytes": 9367572,
+    "sha256": "f39a666c23d8fbcd4d7e654ea4aab9e4a3acd7ebe976e527466a6b9cd5b6bce6"
+  },
+  "项目完整说明.md": {
+    "bytes": 17234,
+    "sha256": "4506c4f0571b3daad895ffa85e93187df2e1f3aefb682023f85f70bfd93c32d5"
+  },
+  "10_workbench_photography.png": {
+    "bytes": 3793655,
+    "sha256": "355cd117354a6bd6897eea5620343254e7f8a17628905449d267c77ac8bb6c03"
+  },
+  "11_material_detail.png": {
+    "bytes": 3699944,
+    "sha256": "6fc66e4af3f89cc2e653fce0b8bcf9db99e45a2a726a1663b4cd259a5af2a3f2"
+  }
+}

@@ -49,3 +49,8 @@ The v0.4 shell was rebuilt for this project from the approved Continuous Facets 
 ## Responsible use
 
 This remains an assistive-technology research prototype. It is not a certified navigation device and must not replace a white cane, guide dog, professional orientation-and-mobility support, personal judgment or traffic rules. No field-safety, clinical or mobility-performance claim is made by this release.
+
+
+## Detailed presentation materials
+
+[完整项目说明](../design/v0.4/presentation/项目完整说明.md) · [新增渲染与可编辑场景](../design/v0.4/presentation/展示入口.md) · [外部活动照片参考](../design/v0.4/presentation/照片参考与拍摄清单.md)

@@ -63,3 +63,8 @@ To keep new outputs separate, set `AIGLASSES_OUT` to another directory. The buil
 All published angles and staged scenes come from the same actual model. No synthesized community or user photographs are included.
 
 [Geometry and image provenance](PROVENANCE.md) · [Release notes](../../docs/RELEASE_v0.4.md)
+
+
+## Detailed presentation materials
+
+[完整项目说明](presentation/项目完整说明.md) · [新增渲染与可编辑场景](presentation/展示入口.md) · [外部活动照片参考](presentation/照片参考与拍摄清单.md)
