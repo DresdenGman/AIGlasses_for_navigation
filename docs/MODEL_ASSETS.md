@@ -1,16 +1,13 @@
-# 3D 模型资产规范
+# 3D model assets
 
-当前 OBJ 是拆分的工程组件与 Rhino 曲线混合导出，Blender 会报告部分曲线记录不兼容。它可用于视觉预览，但不应作为唯一的机械源文件。
+The original OBJ combines engineering components with Rhino curve records, some of which Blender cannot import. It serves as a visual and spatial reference rather than a verified mechanical source.
 
-## 规范
+## Published assets
 
-1. 保留原始 OBJ，只读保存；所有修改建立版本副本。
-2. 将源 CAD（优先 STEP、3DM、Fusion 360 或 SolidWorks）作为权威机械文件。
-3. 建立装配体：前框、左/右镜腿、摄像头、主板、电池、扬声器、麦克风、IMU、线缆和紧固件都应独立命名。
-4. 为每个电子组件登记尺寸、质量、热源、接口与不可侵犯空间包络。
-5. 每次改外观前执行碰撞检查；每次改后导出版本、渲染预览和变更记录。
-6. 本次发布将压缩后的小型 Blender 场景与可交换网格放在 `design/v0.4/`，方便直接下载。原始大型 OBJ、模型权重与后续更大的 CAD 资产仍使用单独的版本化存储或 Git LFS。
+[Continuous Facets v0.4](../design/v0.4/README.md) includes the editable enclosure, multi-angle renders, source-assembly reference and geometry checks. Compact Blender scenes and exchange meshes are available under `design/v0.4/`.
 
-## 当前最新设计
+The source OBJ is preserved unchanged. Large source geometry and model weights use separate storage or Git LFS.
 
-[v0.4 连续折面](../design/v0.4/README.md) 是当前外观方向。可编辑文件、多角度渲染、原装配参照和检查结果一起发布；实际装配与制造验证仍待完成。
+## Mechanical status
+
+Physical units, component dimensions, mass, thermal properties, interfaces, fasteners and assembly clearances remain unverified. The published meshes do not establish manufacturing readiness. Dimensioned source CAD and a measured component inventory remain outstanding.
