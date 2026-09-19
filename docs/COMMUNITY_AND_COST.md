@@ -2,9 +2,9 @@
 
 Updated September 18, 2026. These figures and descriptions are reported by the project creator. They describe the existing outreach and earlier hardware prototype, not a deployment of the new v0.4 enclosure.
 
-## Reach: four communities, nearly 100 people
+## Reach: four communities, nearly 60 people
 
-The creator reports engaging **four communities** and reaching **nearly 100 blind or visually impaired people** through project outreach. This is a measure of community contact and engagement. It is not a count of devices delivered, daily active users, or independently measured improvements in mobility.
+The creator reports engaging **four communities** and reaching **nearly 60 blind or visually impaired people** through project outreach. This is a measure of community contact and engagement. It is not a count of devices delivered, daily active users, or independently measured improvements in mobility.
 
 The purpose is to make assistive technology more accessible through a low-cost device and shared practical knowledge. Community feedback and hands-on explanation inform the project alongside software and industrial-design work.
 

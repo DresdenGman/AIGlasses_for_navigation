@@ -8,7 +8,7 @@ AI Glasses for Navigation combines a wearable hardware experiment, a software gu
 
 **Software.** The runnable repository implements a hardware-free FastAPI service. Structured observations are validated and passed through deterministic guidance rules for traffic lights, nearby obstacles and crosswalks. Low-confidence observations produce uncertainty messages; repeated prompts are throttled. The browser dashboard, API and replay command use the same guidance implementation. An optional authenticated, rate-limited device endpoint accepts observations in controlled development environments.
 
-**Community work.** The creator reports contact with four communities and nearly 100 blind or visually impaired people, plus making instruction in three communities intended to support continuation without ongoing personal funding or material donations. See [scope and cost](COMMUNITY_AND_COST.md) for precise definitions.
+**Community work.** The creator reports contact with four communities and nearly 60 blind or visually impaired people, plus making instruction in three communities intended to support continuation without ongoing personal funding or material donations. See [scope and cost](COMMUNITY_AND_COST.md) for precise definitions.
 
 ## What runs today, and what remains integration work
 

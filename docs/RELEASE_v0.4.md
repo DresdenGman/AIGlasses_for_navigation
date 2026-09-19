@@ -8,7 +8,7 @@ The repository homepage now presents the Continuous Facets exterior design, a ni
 - Complete original assembly retained in a hidden reference collection; source OBJ unchanged.
 - Blender studio, desk and maker scenes; GLB and two shell STL exports.
 - Portable construction and gallery scripts, source-envelope validation and provenance notes.
-- English and Chinese project introduction; four-community / nearly-100-person outreach and three-community making instruction described as creator reports.
+- English and Chinese project introduction; four-community / nearly-60-person outreach and three-community making instruction described as creator reports.
 - Historical China hardware cost under US$20 and current US estimate under US$30, explicitly excluding non-hardware costs and not misrepresented as a verified v0.4 bill of materials.
 - Existing tested demonstration software brought onto the default branch with the presentation update.
 
