@@ -3,7 +3,7 @@
 # AI Glasses for Navigation
 ### Lower-cost hardware. Shared know-how. Community-oriented design.
 
-[中文介绍](docs/README.zh-CN.md) · [3D files](design/v0.4/README.md) · [Render gallery](docs/GALLERY.md) · [Run the demo](#run-the-demo)
+[中文介绍](docs/README.zh-CN.md) · [完整项目说明](design/v0.4/presentation/项目完整说明.md) · [3D files](design/v0.4/README.md) · [Render gallery](docs/GALLERY.md) · [Run the demo](#run-the-demo)
 
 ![Continuous Facets v0.4 — three-quarter studio render](assets/renders/01_hero.png)
 
@@ -47,11 +47,23 @@ The silhouette comes from the housing itself: broad faces meet through clipped c
 
 ![v0.4 on a staged everyday desk](assets/scenes/08_everyday_desk.png)
 
-![v0.4 on a staged maker workbench](assets/scenes/09_maker_workbench.png)
+![v0.4 photography study with detailed generic tools](design/v0.4/presentation/10_workbench_photography.png)
 
 *Both scenes are synthetic Blender renders of the same v0.4 model. They illustrate intended contexts, not actual outreach sessions or evidence of device use.*
 
-[Explore all angles, detail views and the open housing →](docs/GALLERY.md)
+[Explore all 11 angles and scenes →](docs/GALLERY.md)
+
+## How the project fits together
+
+The detailed project guide connects the visual-assistance goal, current guidance software, housing design, hardware integration, data handling, cost and community teaching. It explains the implemented observation-to-message flow and separates it from future camera and audio integration.
+
+- **[完整项目说明 / Detailed project guide](design/v0.4/presentation/项目完整说明.md):** 15 sections covering architecture, behavior, interfaces, enclosure checks, affordability, community work and next steps.
+- **[Presentation study](design/v0.4/presentation/展示入口.md):** two new native Blender renders, editable workbench scene, script and a product-mesh consistency record. The approved v0.4 product geometry is unchanged.
+- **[External activity-photo references](design/v0.4/presentation/照片参考与拍摄清单.md):** seven photographs linked from three original reports found through Baidu. These document other organizations' activities, not this project's outreach; republication permission has not been verified.
+
+![Continuous housing and camera detail](design/v0.4/presentation/11_material_detail.png)
+
+*Native Blender CGI. The generic precision-tool prop was informed by real product references; it is not a supplied accessory or evidence of a brand partnership.*
 
 ## What the project includes
 
