@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from math import isfinite
 from time import monotonic
 
 
@@ -24,6 +25,10 @@ class GuidanceEngine:
     """Conservative rules for the prototype. It never treats weak vision as fact."""
 
     def __init__(self, min_confidence: float = 0.70, cooldown_seconds: float = 3.0) -> None:
+        if not isfinite(min_confidence) or not 0 <= min_confidence <= 1:
+            raise ValueError("min_confidence must be finite and between 0 and 1")
+        if not isfinite(cooldown_seconds) or cooldown_seconds < 0:
+            raise ValueError("cooldown_seconds must be finite and non-negative")
         self.min_confidence = min_confidence
         self.cooldown_seconds = cooldown_seconds
         self._last_spoken: dict[str, float] = {}
@@ -35,11 +40,19 @@ class GuidanceEngine:
         if observation.confidence < self.min_confidence:
             return Guidance("status", "前方情况不确定，请谨慎确认。", False)
 
+        if observation.kind == "obstacle" and observation.distance_m is not None:
+            if not isfinite(observation.distance_m) or observation.distance_m < 0:
+                return Guidance("status", "障碍物距离无效，请自行确认周围环境。", False)
+
         if observation.kind == "traffic_light":
             if observation.light_state == "red":
                 return self._emit("traffic_red", "urgent", "红灯，请停下等待。", now)
             if observation.light_state == "green":
-                return self._emit("traffic_green", "navigation", "检测到绿灯，请先确认周围车辆后通行。", now)
+                return self._emit(
+                    "traffic_green", "status",
+                    "检测到绿灯，但无法判断是否可以通行。请使用既有出行辅助并自行确认。",
+                    now, actionable=False,
+                )
             return Guidance("status", "红绿灯状态不确定，请等待确认。", False)
 
         if observation.kind == "obstacle":
@@ -52,9 +65,9 @@ class GuidanceEngine:
             return self._emit("crosswalk", "navigation", "检测到人行横道，请保持方向并确认信号灯。", now)
         return Guidance("status", "已收到观察结果，但尚未配置对应的安全提示。", False)
 
-    def _emit(self, key: str, level: str, message: str, now: float) -> Guidance:
+    def _emit(self, key: str, level: str, message: str, now: float, actionable: bool = True) -> Guidance:
         previous = self._last_spoken.get(key)
         if previous is not None and now - previous < self.cooldown_seconds:
             return Guidance("status", "相同提示已抑制。", False)
         self._last_spoken[key] = now
-        return Guidance(level, message, True)
+        return Guidance(level, message, actionable)
