@@ -85,11 +85,12 @@ flowchart TD
 
 Observations include a category and confidence value, plus fields such as traffic-light state, obstacle distance or object label. The engine then applies deterministic rules:
 
-- **Traffic lights:** a red-light observation produces a stop-and-wait message. A green-light observation includes a reminder to check surrounding vehicles. An unknown state produces an uncertainty message.
+- **Traffic lights:** a red-light observation produces a stop-and-wait message. A green-light observation is informational and non-actionable: the engine cannot decide whether crossing is possible. An unknown state produces an uncertainty message. Informational green-light messages retain repeated-message suppression.
 - **Obstacles:** an observation at 1.5 meters or less produces a nearby-obstacle warning; other obstacle observations produce a general caution.
 - **Crosswalks:** a crosswalk observation produces a message about orientation and checking the signal.
 - **Low confidence:** observations below the default 0.70 confidence threshold produce an uncertainty message marked as non-actionable.
 - **Repeated messages:** the same guidance category is suppressed within the default three-second cooldown.
+- **Invalid distances:** negative or non-finite obstacle distances produce a non-actionable status message, including observations loaded directly from replay files.
 
 These rules respond to supplied observations; they do not prove that a camera detected the scene correctly. Current guidance messages and the demo interface are in Chinese. The project documentation is primarily in English.
 

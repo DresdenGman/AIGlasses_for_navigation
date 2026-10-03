@@ -1,0 +1,7 @@
+{"kind":"traffic_light","confidence":1.0,"light_state":"green"}
+{"kind":"traffic_light","confidence":0.95,"light_state":"unknown"}
+{"kind":"traffic_light","confidence":0.4,"light_state":"red"}
+{"kind":"obstacle","confidence":0.95,"distance_m":-1}
+{"kind":"crosswalk","confidence":1.1}
+{"kind":"obstacle","confidence":0.95,"distance_m":1.0}
+{"kind":"traffic_light","confidence":0.95,"light_state":"red"}
