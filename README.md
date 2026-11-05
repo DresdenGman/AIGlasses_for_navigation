@@ -7,6 +7,7 @@
 [![MIT License](https://img.shields.io/github/license/DresdenGman/AIGlasses_for_navigation)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](pyproject.toml)
 [![Stars](https://img.shields.io/github/stars/DresdenGman/AIGlasses_for_navigation)](https://github.com/DresdenGman/AIGlasses_for_navigation/stargazers)
+[![Release](https://img.shields.io/github/v/release/DresdenGman/AIGlasses_for_navigation?label=Release)](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/latest)
 [![中文](https://img.shields.io/badge/%E4%B8%AD%E6%96%87-6e7781)](docs/README.zh-CN.md)
 
 [Project](#the-project) · [Timeline](#project-timeline) · [Community](#community-first) · [Feedback](#participant-feedback) · [How it works](#how-the-system-works) · [Design](#wearable-design--continuous-facets-v04) · [Run the demo](#run-the-demo) · [中文](docs/README.zh-CN.md)
@@ -25,6 +26,18 @@ An editable, lensless wraparound enclosure with a straighter brow, clipped corne
 *Blender render of the digital enclosure prototype; not a photograph of a manufactured product.*
 
 </div>
+
+## Evidence at a glance
+
+From the participant feedback survey (August–November 2026) — the full results, raw data and limitations are in the [feedback report](docs/FEEDBACK.md):
+
+| **72** | **53** | **3.47 / 5** | **9 of 53** |
+|:---:|:---:|:---:|:---:|
+| Survey responses | Had used the glasses at least once | Mean helpfulness, rated by those users | Still using them at survey time |
+
+<img src="assets/feedback/helpfulness.png" width="640" alt="Bar chart of helpfulness ratings from the 53 respondents who had used the glasses: 2 rated 1, 7 rated 2, 16 rated 3, 20 rated 4 and 8 rated 5, a mean of 3.47 out of 5" />
+
+The same survey names the top problem plainly: **51% of users said the prompts were inaccurate**. [What participants reported →](#participant-feedback)
 
 ## The project
 
@@ -81,6 +94,11 @@ In August–November 2026, an anonymous bilingual survey collected **72 response
 <td><img src="assets/feedback/problems.png" alt="Bar chart of problems reported by the 53 respondents who had used the glasses: inaccurate prompts 51 percent, battery life 38 percent, connection instability and unclear audio 30 percent each, fit 23 percent, complexity 15 percent, privacy concerns 11 percent, and 19 percent reported no problems" /></td>
 </tr>
 <tr><td align="center">Helpfulness, as rated by users themselves</td><td align="center">Problems, reported on the same survey</td></tr>
+<tr>
+<td><img src="assets/feedback/improve-first.png" alt="Bar chart of the one improvement respondents most wanted fixed first, all 72 respondents: more accurate prompts 25, longer battery life 12, clearer audio 10, durability 9, simpler operation 6, comfort 4, teaching and set-up support 3, other 3" /></td>
+<td><img src="assets/feedback/participation.png" alt="Bar chart of how the 72 respondents took part: joined a hands-on build session 21, saw a demonstration only 19, tried the glasses 14, received and kept a pair 9, followed the online guide 3, organised or taught a session 3, other 3" /></td>
+</tr>
+<tr><td align="center">If one thing is fixed first — all 72 respondents</td><td align="center">How respondents took part — all 72 responses</td></tr>
 </table>
 
 Three findings set the project's priorities:
