@@ -211,6 +211,15 @@ Geometry checks cover shell topology, surface intersections and containment agai
 
 [All 11 views and image provenance](docs/GALLERY.md) · [Editable presentation scenes](design/v0.4/presentation/README.md)
 
+### Worn concept study
+
+<table>
+<tr><td><img src="assets/concept/worn-concept-front.jpg" alt="Concept render of the wraparound bar worn, front view" /></td><td><img src="assets/concept/worn-concept-side.jpg" alt="Concept render of the wraparound bar worn, side view" /></td></tr>
+<tr><td align="center">Front</td><td align="center">Side</td></tr>
+</table>
+
+*Concept renders exploring how a future one-piece enclosure could look when worn. These are generated design-study images, not photographs: the person shown is not a project participant, and the current hardware remains the 3D-printed v0.4 enclosure documented above.*
+
 ## Affordability by design
 
 Reducing hardware cost is central to the project, alongside sharing the knowledge needed to make it.
