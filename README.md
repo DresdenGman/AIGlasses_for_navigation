@@ -27,6 +27,12 @@ An editable, lensless wraparound enclosure with a straighter brow, clipped corne
 
 </div>
 
+<p align="center">
+  <img src="assets/demo.gif" alt="Recording of the included demo dashboard stepping through its four sample observations: a red light returns an urgent stop message, a nearby obstacle returns a slow-down warning, a crosswalk returns a direction message, and a low-confidence detection returns an uncertainty notice instead of a command" width="860" />
+</p>
+
+*The included demo, recorded from a live run: the dashboard's four sample observations pass through the real guidance engine. The last one is the point of the project — a low-confidence detection is surfaced as uncertainty, never as a command. Guidance text is in Chinese, as shipped; run it yourself under [Run the demo](#run-the-demo).*
+
 ## Evidence at a glance
 
 From the participant feedback survey (August–November 2026) — the full results, raw data and limitations are in the [feedback report](docs/FEEDBACK.md):
