@@ -1,6 +1,7 @@
 {
   "design_version": "0.4.0",
   "name": "Continuous Facets",
+  "scope": "Enclosure study only. Not the Python package version in pyproject.toml (0.1.0).",
   "status": "editable enclosure prototype; physical fit unverified",
   "blender": "v0.4/AI_Glasses_Continuous_Facets_v0.4.blend",
   "preview": "v0.4/AI_Glasses_Continuous_Facets_v0.4.glb",

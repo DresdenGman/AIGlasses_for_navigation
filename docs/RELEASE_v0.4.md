@@ -1,5 +1,7 @@
 # Design release v0.4 — Continuous Facets
 
+This note records the **enclosure** publication. It is not a software package release and not a certified product. The runnable package remains **0.1.0** in `pyproject.toml`.
+
 The repository homepage now presents the Continuous Facets exterior design, a nine-image gallery, editable 3D files and a clearer account of the project's community work and affordability.
 
 ## Included
