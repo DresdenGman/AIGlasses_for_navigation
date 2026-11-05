@@ -10,7 +10,7 @@
 | 版本 Version | 硬件成本 Hardware cost | 口径说明 Scope |
 |---|---|---|
 | 早期国内原型 Early China prototype | < US$20 / 台 per unit | 作者当时实测，特定历史语境 |
-| 美国现行估算 Current US estimate | < US$30 / 台 per unit | 作者估算，未经供应商报价核实 |
+| 美国现行估算 Current US estimate | < US$35 / 台 per unit | 作者估算，未经供应商报价核实 |
 
 ## 物料表
 
