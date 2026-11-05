@@ -100,7 +100,7 @@ It establishes, for this benchmark's regime:
 
 It does not establish:
 
-- Anything about near-field lamps. A head-mounted camera metres from a signal would see lamps orders of magnitude larger than this dataset's; performance in that regime is unmeasured, not excused — the same protocol should be run on frames at that scale before any claim is made.
+- Anything about near-field lamps. A head-mounted camera metres from a signal would see lamps orders of magnitude larger than this dataset's; performance in that regime is unmeasured, not excused — the same protocol should be run on frames at that scale before any claim is made. A first probe at larger scales, on published still photographs rather than prototype-collected frames, is reported in [RECORDED_RUN_2026-11-05.md](RECORDED_RUN_2026-11-05.md); it narrows this gap without closing it.
 - Anything about crosswalks, obstacles, latency, message wording, or the guidance engine's handling of these observations (the synthetic harness covers the guidance separation, on generated frames).
 - Street validation of any kind. These are benchmark driving frames from 2015, recorded in daylight in one metropolitan area; they are not recordings of the prototype in use, and no result here supports a claim about safe road crossing.
 
