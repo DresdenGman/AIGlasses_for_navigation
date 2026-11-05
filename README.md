@@ -3,7 +3,19 @@
 # AI Glasses for Navigation
 ### Lower-cost visual assistance. Shared making knowledge. Community participation.
 
-[Project](#the-project) · [Timeline](#project-timeline) · [Community](#community-first) · [How it works](#how-the-system-works) · [Design](#wearable-design--continuous-facets-v04) · [Run the demo](#run-the-demo) · [中文介绍](docs/README.zh-CN.md)
+[![Test prototype](https://img.shields.io/github/actions/workflow/status/DresdenGman/AIGlasses_for_navigation/test.yml?branch=main&label=Test%20prototype)](https://github.com/DresdenGman/AIGlasses_for_navigation/actions/workflows/test.yml)
+[![MIT License](https://img.shields.io/github/license/DresdenGman/AIGlasses_for_navigation)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](pyproject.toml)
+[![Stars](https://img.shields.io/github/stars/DresdenGman/AIGlasses_for_navigation)](https://github.com/DresdenGman/AIGlasses_for_navigation/stargazers)
+[![中文](https://img.shields.io/badge/%E4%B8%AD%E6%96%87-6e7781)](docs/README.zh-CN.md)
+
+[Project](#the-project) · [Timeline](#project-timeline) · [Community](#community-first) · [How it works](#how-the-system-works) · [Design](#wearable-design--continuous-facets-v04) · [Run the demo](#run-the-demo) · [中文](docs/README.zh-CN.md)
+
+An open-source, under-$30 navigation-glasses direction for blind and low-vision people — the current release is a safety-first guidance demo and a printable enclosure study, not a certified aid.
+
+[Demo →](#run-the-demo) · [Build →](design/v0.4/README.md) · [Join →](docs/CONTRIBUTING.md)
+
+**<$30** · **Nearly 60 people** · **4 communities**
 
 ![Continuous Facets v0.4 — three-quarter studio render](assets/renders/01_hero.png)
 
