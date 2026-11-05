@@ -1,29 +1,21 @@
 # Security policy
 
-## Scope
+This repository is an assistive-technology **research prototype**. It is not a certified medical device, not a mobility aid, and not a product with a security-support contract.
 
-This repository is a research prototype. The software attack surface is the
-FastAPI demo service and its authenticated device-observation gateway
-(`docs/HARDWARE_GATEWAY.md`). The demo is intended for local or controlled
-development networks; it is not hardened for public internet deployment.
+## What this covers
+
+The runnable Python package on the default branch: the guidance demo, its API, and the optional device-observation gateway. Design files and community notes are documentation, not a deployed service.
+
+Python versions under test are those declared by `requires-python` in `pyproject.toml` (3.10 and newer) and exercised in CI (3.10, 3.11, 3.12).
 
 ## Reporting a vulnerability
 
-Please report suspected vulnerabilities privately through GitHub's
-**Report a vulnerability** button (Security tab of this repository) rather
-than a public issue, and include:
+Use GitHub private vulnerability reporting on this repository when it is available (Security tab). If it is not available, open an issue that describes impact and affected versions without a step-by-step exploit, and without any of the following:
 
-- the affected file or endpoint,
-- steps to reproduce,
-- the impact you observed.
+- API keys, device tokens, or `.env` contents
+- Recordings, photos of participants, location traces, or contact details
+- Names of community partners or neighborhood contacts
 
-You should receive an acknowledgement within a few days. Because this is a
-small community project, fixes are best-effort and there is no bug bounty.
+A guidance bug that could be read as permission to move or cross a street is a safety defect. Report it as a bug, with a sanitized observation payload, and do not describe the demo as safe to follow outdoors.
 
-## Safety issues are different from security issues
-
-If you find behaviour that could mislead a blind or low-vision user — for
-example a guidance message that overstates what the device knows — that is a
-safety issue, not a security one. Please open a regular issue and describe
-the scenario. Safety-relevant guidance behaviour is covered by the demo's
-regression scenarios in `demo/safety-regression.jsonl`.
+There is no bug-bounty program. Fixes land in this repository when a maintainer can review them. Do not send model weights or private community records as part of a report.

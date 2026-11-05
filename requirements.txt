@@ -1,1 +1,4 @@
--e .[dev]
+# Runtime install of this repository. Dependency versions live in pyproject.toml.
+# This file does not install the dev extra (pytest, httpx).
+# For tests: python -m pip install -r requirements-dev.txt
+-e .

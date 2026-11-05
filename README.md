@@ -209,9 +209,19 @@ The repository provides a working software demonstration and inspectable design 
 
 [Development roadmap →](docs/ROADMAP.md)
 
+## Version labels
+
+These numbers are easy to mix up. They are not one product release, and none of them is a certified assistive device.
+
+| Label | Meaning |
+|---|---|
+| **Package 0.1.0** | `ai-glasses-navigation-prototype` in [`pyproject.toml`](pyproject.toml), also shown in the API metadata. This is the runnable guidance demo. |
+| **Design v0.4** | Continuous Facets enclosure study. [`design/LATEST.json`](design/LATEST.json) records `0.4.0` for that geometry and its renders, not for the Python package. |
+| **Python 3.10+** | `requires-python` in `pyproject.toml`. CI runs the test suite on 3.10, 3.11, and 3.12. |
+
 ## Run the demo
 
-Use Python 3.10 or later for the current source. Demo mode requires no camera, ESP32, model weights or cloud keys.
+Use Python 3.10 or later. That floor is `requires-python` in `pyproject.toml`. Demo mode requires no camera, ESP32, model weights, or cloud keys.
 
 ```bash
 git clone https://github.com/DresdenGman/AIGlasses_for_navigation.git
@@ -225,13 +235,15 @@ python main.py
 
 Open the [local dashboard](http://127.0.0.1:8081/) or [interactive API docs](http://127.0.0.1:8081/docs). The dashboard sends sample observations through the guidance engine.
 
-Replay the included observations or run the software tests:
+`requirements.txt` installs the runtime package only. Replay the included observations, or install the dev extra and run the tests:
 
 ```bash
 python -m aiglasses.replay demo/events.jsonl
-python -m pip install -e '.[dev]'
+python -m pip install -r requirements-dev.txt
 python -m pytest
 ```
+
+`requirements-dev.txt` is the same install as `python -m pip install -e '.[dev]'` (pytest and httpx). It is not required to start the demo.
 
 The current entry point is `main.py`, with implementation under `aiglasses/`. Earlier prototype instructions referring to other entry points describe a different stage of the project. [Demo guide →](docs/DEMO.md)
 
