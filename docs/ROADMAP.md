@@ -9,7 +9,7 @@
 - Environment-based configuration and credential separation.
 - Authenticated device-observation endpoint for controlled development networks.
 - Editable v0.4 enclosure, source-assembly reference and Blender renders.
-- Participant feedback report with raw data and a reproducible analysis: 72 bilingual survey responses, published in full including unfavourable results ([FEEDBACK.md](FEEDBACK.md)).
+- Participant feedback report with raw data and a reproducible analysis: 85 bilingual survey responses, published in full including unfavourable results ([FEEDBACK.md](FEEDBACK.md)).
 - Synthetic perception evaluation (`python -m aiglasses.eval`) on generated lamp and object-absence frames. It reports false prompts, misses, per-frame wall time, and repeat suppression, with perception errors separated from guidance-rule outcomes. It does not measure street performance. See [EVAL.md](EVAL.md).
 - A local recorded-video command (`python -m aiglasses.eval.recorded`) that scores a short private clip through the same counters when the operator's labels attest consent and redaction. It skips when no private labels file is present, so CI does not need a recording. It does not ship footage and it does not claim street performance. See [RECORDED_EVAL.md](RECORDED_EVAL.md).
 
