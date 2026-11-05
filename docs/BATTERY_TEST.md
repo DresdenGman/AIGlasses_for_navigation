@@ -1,8 +1,12 @@
 # Battery endurance test — protocol and results
 
-Battery life is the second most common problem in the [participant feedback](FEEDBACK.md) (38% of users; one reported under an hour of continuous use). It has never been measured under a recorded protocol. This document fixes the protocol first, so the result — whenever it is measured — can be checked and repeated.
+Battery life is the second most common problem in the [participant feedback](FEEDBACK.md) (36% of users; one reported under an hour of continuous use). It has never been measured under a recorded protocol. This document fixes the protocol first, so the result — whenever it is measured — can be checked and repeated.
 
 **Status: protocol defined; no measurement has been recorded yet.** Any battery-life figure stated anywhere else for this project is a participant report, not a measurement.
+
+## Creator-reported everyday endurance (not a protocol result)
+
+In everyday use the glasses run about 3 hours 15 minutes per charge (creator's report, 2026-11-05; not a timed run, mixed use). This figure is anecdotal: the protocol below has not been run yet, and this number must not be cited as its result.
 
 ## Protocol
 
