@@ -14,6 +14,10 @@ The creator reports providing **practical explanations of how to make the device
 
 Instruction has been reported; ongoing independent production volume and long-term outcomes have not been quantified here. A [session photograph](../assets/community/in-person-session.png) supplied by the project creator appears in the README. Participant names and health records are not included.
 
+## Devices built and shared
+
+The creator reports building **20 assembled units of the earlier hardware prototype, plus additional parts kits**, and sharing them with participants across the communities above. This is the creator's count of devices built and handed over. It is not a count of devices in current use: the 2026 survey below asked about continued use separately, and its answers (9 of 53 users still using) are the record for that question.
+
 ## Participant feedback (2026)
 
 A bilingual anonymous survey collected **72 responses** in August–November 2026 from session participants, people who tried or kept the earlier prototype, and online-guide builders. Among the 53 respondents who had used the glasses, the mean helpfulness rating was 3.47 out of 5; the most-reported problem was inaccurate prompts (51%), and 9 of the 53 were still using the glasses at survey time. Full results, method, limitations and the raw data are published in [Participant feedback](FEEDBACK.md).
