@@ -83,9 +83,13 @@ python -m aiglasses.replay demo/safety-regression.jsonl
 
 `demo/events.jsonl` contains standardized observations. Replay sends them through the guidance rules without a camera.
 
+## Synthetic perception eval
+
+`python -m aiglasses.eval` scores generated lamps and a few object-absence frames through this same adapter and `GuidanceEngine`. It prints false prompts, misses, latency, and repeat suppression, and it can write JSON and CSV under `demo_output/`. Definitions, the label schema, and the limits are in [EVAL.md](EVAL.md). The command does not download weights. It is not a street test.
+
 ## Tests
 
-CI installs the dev and vision extras and runs the suite on Python 3.10, 3.11, and 3.12. It uses synthetic frames. It does not download weights or play audio.
+CI installs the dev and vision extras, runs the suite, and runs `python -m aiglasses.eval` on Python 3.10, 3.11, and 3.12. It uses synthetic frames. It does not download weights or play audio.
 
 `requirements-dev.txt` installs pytest and httpx. Camera tests also need the vision extra:
 
