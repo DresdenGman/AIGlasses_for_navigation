@@ -34,7 +34,7 @@ Development began in **early 2025**. The initial building and development phase 
 
 The aim is to make visual-assistance hardware more affordable and its construction more understandable. Sharing the making process matters alongside the device itself: participants can learn how it works and build local knowledge that can continue beyond a single visit or donation.
 
-Today, this repository contains a runnable guidance demo, an editable v0.4 enclosure and its render gallery, plus documentation of community work and hardware costs. Live camera perception, speech output and a fully integrated wearable remain separate development work in the current release.
+Today, this repository contains a runnable guidance demo, an optional laptop webcam / video / still-image path into that same guidance engine, optional spoken playback of the resulting text, an editable v0.4 enclosure and its render gallery, plus documentation of community work and hardware costs. An ESP32 wearable and a certified navigation aid are not part of this release.
 
 ## Project timeline
 
@@ -108,22 +108,24 @@ The broader project explores four everyday assistance workflows. These informed 
 | **Tactile-paving navigation** | Recognize a path, describe alignment and identify nearby obstacles. | Earlier materials describe YOLO segmentation and path-guidance experiments. The current demo handles obstacle observations; it does not implement a complete tactile-path navigation pipeline. |
 | **Crosswalk and traffic-light awareness** | Identify a crosswalk and communicate traffic-light observations with uncertainty. | The guidance engine handles structured crosswalk and red/green/unknown light inputs. Live recognition accuracy and safe crossing have not been established by this demo. |
 | **Object search** | Find a named object and provide cues about its location. | Earlier materials describe YOLO-E detection, tracking and MediaPipe hand cues. These are not integrated into the current demo. |
-| **Voice interaction** | Ask questions and receive spoken assistance without relying on a visual display. | Earlier materials reference speech recognition and multimodal services. The current core returns text guidance; end-to-end audio integration remains outstanding. |
+| **Voice interaction** | Ask questions and receive spoken assistance without relying on a visual display. | Optional local or browser speech can read a guidance sentence aloud. It does not hold a conversation, and low-confidence vision is not turned into a spoken command. |
 
 ## How the system works
 
-The intended wearable pipeline starts with a camera, turns visual input into observations, applies guidance rules and communicates the result through audio. The current runnable software implements the **observation-to-guidance** portion, making its behavior inspectable without camera hardware or cloud access.
+The intended wearable pipeline starts with a camera, turns visual input into observations, applies guidance rules and communicates the result through audio. The runnable core is still the **observation-to-guidance** step, which can be inspected with no camera and no cloud access. An optional laptop path can create observations from a webcam, a video file, or a still image and can speak the resulting sentence. That path is not a field-tested recognizer and not a certified aid.
 
 ```mermaid
 flowchart TD
     A[Demo scenarios or recorded JSONL observations] --> C[Validate structured observation]
     B[Authenticated device observation gateway] --> C
+    W[Laptop webcam, video file, or still image] --> P[Local vision adapter]
+    P --> C
     C --> D[Guidance engine]
     D --> E[Confidence checks and repeated-message suppression]
-    E --> F[Text response through dashboard, REST or WebSocket]
+    E --> F[Text on the dashboard, REST, WebSocket, or CLI]
+    E --> S[Optional local or browser speech]
     E --> G[Temporary in-memory event history]
-    H[Future camera and perception integration] -.-> B
-    F -.-> I[Future audio output integration]
+    H[ESP32 and wearable audio] -.-> B
 ```
 
 ### Guidance behavior
@@ -137,7 +139,7 @@ Observations include a category and confidence value, plus fields such as traffi
 - **Repeated messages:** the same guidance category is suppressed within the default three-second cooldown.
 - **Invalid distances:** negative or non-finite obstacle distances produce a non-actionable status message, including observations loaded directly from replay files.
 
-These rules respond to supplied observations; they do not prove that a camera detected the scene correctly. Current guidance messages and the demo interface are in Chinese. The project documentation is primarily in English.
+The laptop camera adapter does not attach a distance. A bounding box therefore cannot become the nearby-obstacle warning. These rules respond to supplied observations; they do not prove that a camera detected the scene correctly. Current guidance messages and the demo interface are in Chinese. The project documentation is primarily in English.
 
 ### Software and hardware responsibilities
 
@@ -147,8 +149,8 @@ These rules respond to supplied observations; they do not prove that a camera de
 | **Guidance engine** | Converts traffic-light, obstacle and crosswalk observations into text guidance, with confidence and repetition handling. |
 | **Replay tool** | Runs recorded JSONL observations through the same guidance rules for reproducible inspection. |
 | **Device gateway** | Accepts observations with a matching token in hardware mode; defaults to 120 requests per minute per device. Intended for controlled development networks. |
-| **Camera and perception** | Earlier work references ESP32 capture, YOLO/YOLO-E and MediaPipe. Live perception adapters remain integration work for the current core. |
-| **Audio and interaction** | Earlier work references microphones, speakers and cloud speech/multimodal services. These are separate from the current text-response demo. |
+| **Camera and perception** | A laptop webcam, video file, or still image can feed an OpenCV lamp heuristic. An optional Apache-2.0 YOLOX file adds a short COCO allowlist. Neither path measures distance or establishes street accuracy. ESP32 capture remains future work. |
+| **Audio and interaction** | Optional edge-tts or pyttsx3 reads the guidance sentence. The dashboard can use the browser's speech API. This is not a conversational assistant or a wearable speaker. |
 | **Power and enclosure** | The design provides an enclosure study. Measured electronic-part dimensions, power requirements, fastening and physical assembly still require verification. |
 
 Setting hardware mode enables the observation endpoint; it does not automatically connect an ESP32, run a vision model or produce speech. [Architecture](docs/ARCHITECTURE.md) · [Device gateway](docs/HARDWARE_GATEWAY.md) · [Project overview](docs/PROJECT_OVERVIEW.md)
@@ -202,7 +204,7 @@ The repository provides a working software demonstration and inspectable design 
 
 | Area | Available now | Continuing work |
 |---|---|---|
-| **Software** | Guidance rules, dashboard, REST/WebSocket interfaces, replay and device ingestion. | Live camera/perception adapters and audio output. |
+| **Software** | Guidance rules, dashboard, REST/WebSocket interfaces, replay, device ingestion, and an optional laptop camera / speech path. | Street-video evaluation, distance sensing, and ESP32 integration. |
 | **Enclosure** | Editable v0.4 geometry, exports, render scenes and source-geometry checks. | Physical scale calibration, measured components, mounting, cable routing, fabrication and fit. |
 | **Evaluation** | Repeatable structured-observation scenarios and repository tests. | Video-based perception evaluation, latency and error measurements, message comprehension and physical-prototype testing. |
 | **Community** | Outreach across four communities and making instruction in three, reaching nearly 60 people; a completed 72-response participant survey with published raw data. | Continued engagement; accuracy, battery and audio work prioritised from the survey findings. |
@@ -235,17 +237,38 @@ python main.py
 
 Open the [local dashboard](http://127.0.0.1:8081/) or [interactive API docs](http://127.0.0.1:8081/docs). The dashboard sends sample observations through the guidance engine.
 
-`requirements.txt` installs the runtime package only. Replay the included observations, or install the dev extra and run the tests:
+`requirements.txt` installs the runtime package only. Replay the included observations, or install the dev and vision extras and run the tests. The suite uses synthetic frames and does not download weights:
 
 ```bash
 python -m aiglasses.replay demo/events.jsonl
 python -m pip install -r requirements-dev.txt
+python -m pip install -e '.[vision]'
 python -m pytest
 ```
 
-`requirements-dev.txt` is the same install as `python -m pip install -e '.[dev]'` (pytest and httpx). It is not required to start the demo.
+`requirements-dev.txt` is the same install as `python -m pip install -e '.[dev]'` (pytest and httpx). It is not required to start the demo. Camera tests also need the `vision` extra shown above. The same pair is `python -m pip install -e '.[dev,vision]'`.
 
-The current entry point is `main.py`, with implementation under `aiglasses/`. Earlier prototype instructions referring to other entry points describe a different stage of the project. [Demo guide →](docs/DEMO.md)
+The current entry point is `main.py`, with implementation under `aiglasses/`. Earlier prototype instructions referring to other entry points describe a different stage of the project.
+
+### Laptop camera or a video file
+
+This path is optional. The classic demo above does not install it. It is still a research prototype: low confidence does not become a command, distance is not invented, and nothing here is a certified navigation aid. No ESP32 is required.
+
+```bash
+python -m pip install -e '.[vision]'
+python -m aiglasses.live --synthetic
+python -m aiglasses.live --source 0
+python -m aiglasses.live --source path/to/clip.mp4
+```
+
+The dashboard can also send one camera frame or one image after the vision extra is installed. Speech stays off unless you install the audio extra and pass `--tts edge` or `--tts pyttsx3`, or enable the browser-speech checkbox. `edge-tts` sends the sentence, not the picture, to an online speech service.
+
+```bash
+python -m pip install -e '.[audio]'
+python -m aiglasses.live --synthetic --tts pyttsx3
+```
+
+Details, limits, and how to record a short demo clip: [Demo guide →](docs/DEMO.md)
 
 ## Explore the repository
 
