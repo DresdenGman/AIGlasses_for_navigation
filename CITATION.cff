@@ -8,6 +8,7 @@ authors:
 type: software
 license: MIT
 repository-code: "https://github.com/DresdenGman/AIGlasses_for_navigation"
+doi: "10.5281/zenodo.23977544"
 version: "0.1.0"
 keywords:
   - assistive technology

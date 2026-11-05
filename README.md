@@ -8,6 +8,7 @@
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](pyproject.toml)
 [![Stars](https://img.shields.io/github/stars/DresdenGman/AIGlasses_for_navigation)](https://github.com/DresdenGman/AIGlasses_for_navigation/stargazers)
 [![Release](https://img.shields.io/github/v/release/DresdenGman/AIGlasses_for_navigation?label=Release)](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/latest)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23977544.svg)](https://doi.org/10.5281/zenodo.23977544)
 [![中文](https://img.shields.io/badge/%E4%B8%AD%E6%96%87-6e7781)](docs/README.zh-CN.md)
 
 [Project](#the-project) · [Timeline](#project-timeline) · [Community](#community-first) · [Feedback](#participant-feedback) · [How it works](#how-the-system-works) · [Design](#wearable-design--continuous-facets-v04) · [Run the demo](#run-the-demo) · [中文](docs/README.zh-CN.md)
