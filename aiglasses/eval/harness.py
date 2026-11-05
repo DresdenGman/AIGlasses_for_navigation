@@ -36,7 +36,8 @@ LATENCY_METHOD = (
 HONESTY = (
     "Synthetic generated frames only. This is not street validation, not a "
     "measurement of recorded video, and not a certified navigation aid. "
-    "Real recorded-video evaluation stays local and private until consent and redaction exist."
+    "Recorded-video evaluation is a separate local command. It scores a private "
+    "clip only when that clip's labels attest consent and redaction, and this command does not run it."
 )
 FREQUENCY_NOTE = (
     "actionable_messages counts GuidanceEngine results with actionable=true. "
@@ -313,6 +314,47 @@ def format_report(report: dict) -> str:
     return "\n".join(lines)
 
 
+def score_labeled_frame(
+    *,
+    index: int,
+    t_seconds: float,
+    expect: dict,
+    observations,
+    guidance,
+    chosen,
+    min_confidence: float,
+    latency_ms: float,
+) -> dict:
+    """Score one labeled frame. Distance is whatever the adapter already set, which is empty here.
+
+    The recorded-video command uses this same function. It does not keep a second copy of the rules.
+    """
+    perception_outcome = _perception_outcome(observations, expect, min_confidence)
+    guidance_outcome = _guidance_outcome(
+        guidance,
+        chosen,
+        expect,
+        perception_matched=perception_outcome == "match",
+    )
+    return {
+        "index": index,
+        "t_seconds": float(t_seconds),
+        "expect": expect,
+        "observations": [observation_to_dict(item) for item in observations],
+        "chosen": None if chosen is None else observation_to_dict(chosen),
+        "confidence": None if chosen is None else chosen.confidence,
+        "guidance": {
+            "level": guidance.level,
+            "message": guidance.message,
+            "actionable": guidance.actionable,
+        },
+        "perception_outcome": perception_outcome,
+        "guidance_outcome": guidance_outcome,
+        "separation": _separation(perception_outcome, guidance_outcome),
+        "latency_ms": round(float(latency_ms), 3),
+    }
+
+
 def _run_clip(clip, adapter, *, min_confidence, cooldown_seconds, render_frame) -> dict:
     engine = GuidanceEngine(min_confidence=min_confidence, cooldown_seconds=cooldown_seconds)
     frames = []
@@ -325,32 +367,18 @@ def _run_clip(clip, adapter, *, min_confidence, cooldown_seconds, render_frame) 
         observations = list(adapter.analyze_image(image))
         guidance, chosen = select_guidance(engine, observations, now=float(spec["t_seconds"]))
         latency_ms = (perf_counter() - started) * 1000
-        expect = spec["expect"]
-        perception_outcome = _perception_outcome(observations, expect, min_confidence)
-        guidance_outcome = _guidance_outcome(
-            guidance,
-            chosen,
-            expect,
-            perception_matched=perception_outcome == "match",
+        scored = score_labeled_frame(
+            index=index,
+            t_seconds=float(spec["t_seconds"]),
+            expect=spec["expect"],
+            observations=observations,
+            guidance=guidance,
+            chosen=chosen,
+            min_confidence=min_confidence,
+            latency_ms=latency_ms,
         )
-        frames.append({
-            "index": index,
-            "t_seconds": float(spec["t_seconds"]),
-            "generate": spec["generate"],
-            "expect": expect,
-            "observations": [observation_to_dict(item) for item in observations],
-            "chosen": None if chosen is None else observation_to_dict(chosen),
-            "confidence": None if chosen is None else chosen.confidence,
-            "guidance": {
-                "level": guidance.level,
-                "message": guidance.message,
-                "actionable": guidance.actionable,
-            },
-            "perception_outcome": perception_outcome,
-            "guidance_outcome": guidance_outcome,
-            "separation": _separation(perception_outcome, guidance_outcome),
-            "latency_ms": round(latency_ms, 3),
-        })
+        scored["generate"] = spec["generate"]
+        frames.append(scored)
     actionable = sum(frame["guidance"]["actionable"] for frame in frames)
     suppressed = sum(frame["guidance_outcome"] == "suppressed_repeat" for frame in frames)
     latencies = [frame["latency_ms"] for frame in frames]

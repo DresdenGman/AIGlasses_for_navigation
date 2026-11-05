@@ -60,6 +60,8 @@ v0.4 采用一体化连续折面：更轻薄的前框、斜切转角和收紧的
 
 在此之上，可以选择安装视觉依赖，用笔记本电脑摄像头、视频文件或一张图片生成观察，再交给同一套引导规则；也可以选择本地或浏览器朗读。低置信度不会变成行动指令。这一路径不测量距离，不需要 ESP32，也不是经过认证的导航辅助。历史文档中的 YOLO、ESP32 与整套可穿戴语音方案，不等于当前版本已经完成实地导航。
 
+感知评测有两条命令，都不是路测，也不是认证辅具。`python -m aiglasses.eval` 只跑合成图。`python -m aiglasses.eval.recorded` 只在本机标注已经写明同意和脱敏时才给私人短片打分；没有标注文件时会跳过，CI 不需要真实视频。同意与脱敏核对清单（中英）见 [RECORDED_EVAL.md](RECORDED_EVAL.md)。不要把录像提交到 git。
+
 [启动方法](../README.md#run-the-demo) · [完整项目介绍](PROJECT_OVERVIEW.md) · [架构](ARCHITECTURE.md)
 
 本项目保留原文档对 [AI-FanGe / OpenAIglasses_for_Navigation](https://github.com/AI-FanGe/OpenAIglasses_for_Navigation) 的上游署名。项目是研发原型，不可替代白杖、导盲犬、个人判断和交通规则。

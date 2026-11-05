@@ -87,6 +87,10 @@ python -m aiglasses.replay demo/safety-regression.jsonl
 
 `python -m aiglasses.eval` scores generated lamps and a few object-absence frames through this same adapter and `GuidanceEngine`. It prints false prompts, misses, latency, and repeat suppression, and it can write JSON and CSV under `demo_output/`. Definitions, the label schema, and the limits are in [EVAL.md](EVAL.md). The command does not download weights. It is not a street test.
 
+## Recorded-video eval
+
+`python -m aiglasses.eval.recorded` is the local clip command. It uses the same counters on a video or a still sequence, and only after a gitignored labels file attests consent and redaction. With no `data/private_eval/labels.json` it skips and exits 0. It never opens a webcam and it does not download weights. Checklists, the schema, and the flags are in [RECORDED_EVAL.md](RECORDED_EVAL.md). 中文核对清单在该文开头。 A skipped or successful exit is not a street result.
+
 ## Tests
 
 CI installs the dev and vision extras, runs the suite, and runs `python -m aiglasses.eval` on Python 3.10, 3.11, and 3.12. It uses synthetic frames. It does not download weights or play audio.

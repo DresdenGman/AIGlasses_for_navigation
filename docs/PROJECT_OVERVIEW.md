@@ -18,6 +18,7 @@ AI Glasses for Navigation combines a wearable hardware experiment, a software gu
 | Demo | Browser dashboard, REST API, WebSocket and JSONL replay | Scenario buttons use structured inputs. The camera trial is a separate, optional path |
 | Local perception | Optional webcam, video, or still image via an OpenCV lamp heuristic, with an optional YOLOX file | No measured distance, no crosswalk recognizer, no street-performance claim |
 | Synthetic perception eval | `python -m aiglasses.eval` on generated lamps, with labeled false-prompt, miss, latency, and repeat-suppression counts | Not recorded street video. See [EVAL.md](EVAL.md) |
+| Recorded-video eval | `python -m aiglasses.eval.recorded` on a private local clip, same counters, consent and redaction required | Skips with no labels file. No field collection in this repo. See [RECORDED_EVAL.md](RECORDED_EVAL.md) |
 | Local speech | Optional `edge-tts`, `pyttsx3`, or browser speech for the guidance sentence | Not a conversation, and not a wearable audio system |
 | Device gateway | Token authentication and per-device rate limit | Does not by itself connect a camera, ESP32 or speech system |
 | 3D design | v0.4 Blender assembly, shell exports, render cameras, rebuild script | Physical scale, exact electronic parts, fastening and print tolerances remain unverified |

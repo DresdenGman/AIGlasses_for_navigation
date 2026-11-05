@@ -4,7 +4,7 @@ This is a regression harness for the laptop perception path. It draws a few synt
 
 It is not street validation. It is not a certified navigation aid. It does not justify a claim about road crossing, mobility, or how the prototype behaves around real people.
 
-Recorded-video evaluation — consented footage, redacted, kept local or private — is still future work. Do not commit street recordings, bystander video, or other personal data to make this harness look more real.
+Recorded-video evaluation is a separate command, `python -m aiglasses.eval.recorded`. It scores a private local clip only when a gitignored labels file attests consent and redaction, and it skips when that file is absent. This synthetic command does not read those clips. Do not commit street recordings, bystander video, or other personal data to make either harness look more real. Consent and redaction checklists (中文核对清单在文首) are in [RECORDED_EVAL.md](RECORDED_EVAL.md). No consented field collection has been run in this repository.
 
 ## Command
 
@@ -19,6 +19,12 @@ python -m aiglasses.eval --output demo_output/perception_eval.json --csv demo_ou
 The command prints a table. It exits 0 when the live counts match the lock in the fixture, and 1 when they do not. `--no-strict` prints a mismatch without failing. `--fixture path/to/labels.json` scores another labels file of the same schema.
 
 `demo_output/` is gitignored. The command does not download weights and does not open a camera.
+
+## Recorded video is a different command
+
+`python -m aiglasses.eval.recorded` uses the same frame scorer and the same counter names on a local video or still sequence. Its labels schema is `aiglasses.perception_eval.recorded_labels` version 1, not this file's `aiglasses.perception_eval.labels` version 1. A missing `data/private_eval/labels.json` prints `status=skipped` and exits 0, which is what CI runs. It does not download weights. Exit 0 on that command means the process finished or skipped. It does not mean a street test passed.
+
+Do not add a recording, a photo, or a file path to `perception_v1.json`. `generate.kind` stays a drawing recipe.
 
 ## What is scored
 
@@ -131,4 +137,4 @@ Do not add a clip that needs YOLOX weights, a network fetch, or a picture of a p
 - Green withheld, unknown withheld, and the red-square block are rule outcomes. They are not evidence that perception is accurate.
 - Object-absence frames check that the heuristic does not invent an obstacle when YOLOX is not running. They do not measure whether YOLOX would see a person. There is no person in the fixture.
 - Latency is one process on one machine.
-- Participant feedback still says prompt accuracy is the main problem (51% of users; 25 of 72 asked for more accurate prompts first). This harness makes a synthetic baseline measurable. It does not close that gap. Stronger field claims wait on recorded-video evaluation with consent and redaction, run locally and kept private. See [the roadmap](ROADMAP.md) and [data boundaries](DATA_BOUNDARIES.md).
+- Participant feedback still says prompt accuracy is the main problem (51% of users; 25 of 72 asked for more accurate prompts first). This harness makes a synthetic baseline measurable. It does not close that gap. The local recorded-video command can score a consented, redacted clip on one machine. That command existing is not a field result. Stronger claims still wait on a consented collection that is reported without publishing the media. See [the recorded-video note](RECORDED_EVAL.md), [the roadmap](ROADMAP.md), and [data boundaries](DATA_BOUNDARIES.md).
