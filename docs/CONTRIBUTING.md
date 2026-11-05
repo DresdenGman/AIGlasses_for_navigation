@@ -5,15 +5,19 @@ It is research software, not a safety-certified mobility device.
 
 ## Local setup
 
+Python **3.10 or newer**, matching `requires-python` in `pyproject.toml`. CI runs 3.10, 3.11, and 3.12.
+
 ```bash
 git clone https://github.com/DresdenGman/AIGlasses_for_navigation.git
 cd AIGlasses_for_navigation
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\\Scripts\\activate
-pip install -e .[dev]
+python -m pip install -r requirements-dev.txt
 python -m pytest
 python main.py
 ```
+
+`requirements-dev.txt` installs the package and the `dev` extra (pytest, httpx). `requirements.txt` is the runtime-only install and does not include those tools. The same dev install is `python -m pip install -e '.[dev]'`.
 
 Before opening a pull request, ensure the test suite passes and describe any
 change to guidance behavior, privacy boundaries, or hardware integration.
