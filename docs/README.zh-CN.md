@@ -1,8 +1,19 @@
+<div align="center">
+
 # AI 导航眼镜
+### 35 美元以内的开源 AI 导航眼镜：看到的会说出来，看不准的，就说"不确定"，不猜。
 
-**35 美元以内的开源 AI 导航眼镜：看到的会说出来，看不准的，就说"不确定"，不猜。**
+[![Test prototype](https://img.shields.io/github/actions/workflow/status/DresdenGman/AIGlasses_for_navigation/test.yml?branch=main&label=Test%20prototype&style=flat-square)](https://github.com/DresdenGman/AIGlasses_for_navigation/actions/workflows/test.yml)
+[![MIT License](https://img.shields.io/github/license/DresdenGman/AIGlasses_for_navigation?style=flat-square)](../LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white&style=flat-square)](../pyproject.toml)
+[![Stars](https://img.shields.io/github/stars/DresdenGman/AIGlasses_for_navigation?style=flat-square)](https://github.com/DresdenGman/AIGlasses_for_navigation/stargazers)
+[![Release](https://img.shields.io/github/v/release/DresdenGman/AIGlasses_for_navigation?label=Release&style=flat-square)](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/latest)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23977544.svg)](https://doi.org/10.5281/zenodo.23977544)
+[![English](https://img.shields.io/badge/English-6e7781?style=flat-square)](../README.md)
 
-![连续折面 v0.4](../assets/renders/01_hero.png)
+<img src="../assets/renders/01_hero.png" alt="连续折面 v0.4" width="860" />
+
+</div>
 
 ## 数据速览
 
@@ -12,13 +23,17 @@
 |:---:|:---:|:---:|:---:|
 | 问卷回收份数 | 实际使用过眼镜的人数 | 使用者自评帮助程度平均分 | 问卷时仍在继续使用的人数 |
 
-<img src="../assets/feedback/helpfulness.png" width="640" alt="64 位实际使用者对帮助程度的评分分布：1 分 2 人、2 分 8 人、3 分 20 人、4 分 26 人、5 分 8 人，平均 3.47 分（满分 5 分）" />
+<p align="center">
+  <img src="../assets/feedback/helpfulness.png" width="640" alt="64 位实际使用者对帮助程度的评分分布：1 分 2 人、2 分 8 人、3 分 20 人、4 分 26 人、5 分 8 人，平均 3.47 分（满分 5 分）" />
+</p>
 
 同一份问卷也直说了最主要的问题：**48% 的使用者认为提示不准确**。[参与者反馈详情 →](#参与者反馈2026)
 
 ## 社区工作
 
-![现场交流：讲解者面向就座的参与者进行介绍](../assets/community/in-person-session.png)
+<p align="center">
+  <img src="../assets/community/in-person-session.png" alt="现场交流：讲解者面向就座的参与者进行介绍" width="860" />
+</p>
 
 *项目创作者提供的现场交流照片。*
 
@@ -56,9 +71,10 @@ v0.4 采用一体化连续折面：更轻薄的前框、斜切转角和收紧的
 
 佩戴概念图（正面 / 侧面）：
 
-![佩戴概念图正面](../assets/concept/worn-concept-front.jpg)
-
-![佩戴概念图侧面](../assets/concept/worn-concept-side.jpg)
+<table>
+<tr><td><img src="../assets/concept/worn-concept-front.jpg" alt="佩戴概念图正面" /></td><td><img src="../assets/concept/worn-concept-side.jpg" alt="佩戴概念图侧面" /></td></tr>
+<tr><td align="center">正面</td><td align="center">侧面</td></tr>
+</table>
 
 *这两张是探讨未来一体式外壳佩戴效果的概念渲染图（生成图），不是照片：图中人物不是项目参与者；当前实物仍为上文的 v0.4 3D 打印外壳。*
 

@@ -3,13 +3,13 @@
 # AI Glasses for Navigation
 ### Open-source AI navigation glasses under $35 — they say what they see, and say 'uncertain' instead of guessing.
 
-[![Test prototype](https://img.shields.io/github/actions/workflow/status/DresdenGman/AIGlasses_for_navigation/test.yml?branch=main&label=Test%20prototype)](https://github.com/DresdenGman/AIGlasses_for_navigation/actions/workflows/test.yml)
-[![MIT License](https://img.shields.io/github/license/DresdenGman/AIGlasses_for_navigation)](LICENSE)
-[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](pyproject.toml)
-[![Stars](https://img.shields.io/github/stars/DresdenGman/AIGlasses_for_navigation)](https://github.com/DresdenGman/AIGlasses_for_navigation/stargazers)
-[![Release](https://img.shields.io/github/v/release/DresdenGman/AIGlasses_for_navigation?label=Release)](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/latest)
+[![Test prototype](https://img.shields.io/github/actions/workflow/status/DresdenGman/AIGlasses_for_navigation/test.yml?branch=main&label=Test%20prototype&style=flat-square)](https://github.com/DresdenGman/AIGlasses_for_navigation/actions/workflows/test.yml)
+[![MIT License](https://img.shields.io/github/license/DresdenGman/AIGlasses_for_navigation?style=flat-square)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white&style=flat-square)](pyproject.toml)
+[![Stars](https://img.shields.io/github/stars/DresdenGman/AIGlasses_for_navigation?style=flat-square)](https://github.com/DresdenGman/AIGlasses_for_navigation/stargazers)
+[![Release](https://img.shields.io/github/v/release/DresdenGman/AIGlasses_for_navigation?label=Release&style=flat-square)](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/latest)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23977544.svg)](https://doi.org/10.5281/zenodo.23977544)
-[![中文](https://img.shields.io/badge/%E4%B8%AD%E6%96%87-6e7781)](docs/README.zh-CN.md)
+[![中文](https://img.shields.io/badge/%E4%B8%AD%E6%96%87-6e7781?style=flat-square)](docs/README.zh-CN.md)
 
 [Project](#the-project) · [Timeline](#project-timeline) · [Community](#community-first) · [Feedback](#participant-feedback) · [How it works](#how-the-system-works) · [Design](#wearable-design--continuous-facets-v04) · [Run the demo](#run-the-demo) · [中文](docs/README.zh-CN.md)
 
@@ -19,7 +19,7 @@ An open-source, under-$35 navigation-glasses direction for blind and low-vision 
 
 **Under $35 to build** · **Nearly 60 people reached** · **85 feedback responses**
 
-![Continuous Facets v0.4 — three-quarter studio render](assets/renders/01_hero.png)
+<img src="assets/renders/01_hero.png" alt="Continuous Facets v0.4 — three-quarter studio render" width="860" />
 
 **CONTINUOUS FACETS / DESIGN v0.4**<br>
 An editable, lensless wraparound enclosure with a straighter brow, clipped corners and integrated temple surfaces.
@@ -42,7 +42,6 @@ From the participant feedback survey (August–November 2026) — the full resul
 |:---:|:---:|:---:|:---:|
 | Survey responses | Had used the glasses at least once | Mean helpfulness, rated by those users | Still using them at survey time |
 
-<img src="assets/feedback/helpfulness.png" width="640" alt="Bar chart of helpfulness ratings from the 64 respondents who had used the glasses: 2 rated 1, 8 rated 2, 20 rated 3, 26 rated 4 and 8 rated 5, a mean of 3.47 out of 5" />
 
 The same survey names the top problem plainly: **48% of users said the prompts were inaccurate**. [What participants reported →](#participant-feedback)
 
@@ -73,7 +72,9 @@ The early development dates and community history are provided by the project cr
 
 ## Community first
 
-![A presenter speaking to seated participants during an in-person session](assets/community/in-person-session.png)
+<p align="center">
+  <img src="assets/community/in-person-session.png" alt="A presenter speaking to seated participants during an in-person session" width="860" />
+</p>
 
 | **4 communities** | **Nearly 60 people** | **3 communities** |
 |:---:|:---:|:---:|
@@ -91,7 +92,7 @@ These figures describe contact and instruction, rather than devices delivered or
 
 In August–November 2026, an anonymous bilingual survey collected **85 responses** (49 in Chinese, 36 in English) from people who had encountered the project — at assembly sessions, through trying or keeping the earlier prototype, at presentations, or via the online guide. The full results, method and limitations are published in [Participant feedback](docs/FEEDBACK.md), together with the [raw responses](data/feedback/participant-feedback-survey-responses-2026.csv) and a script that recomputes every number.
 
-| **85** | **64** | **3.47 / 5** | **9** |
+| **85** | **64** | **3.47 / 5** | **9 of 64** |
 |:---:|:---:|:---:|:---:|
 | Survey responses | Had used the glasses at least once | Mean helpfulness among those 64 users | Still using them at survey time |
 
@@ -204,9 +205,13 @@ Geometry checks cover shell topology, surface intersections and containment agai
 
 ### Design in context
 
-![v0.4 on a staged everyday desk](assets/scenes/08_everyday_desk.png)
+<p align="center">
+  <img src="assets/scenes/08_everyday_desk.png" alt="v0.4 on a staged everyday desk" width="860" />
+</p>
 
-![v0.4 workbench render with generic precision tools](design/v0.4/presentation/10_workbench_photography.png)
+<p align="center">
+  <img src="design/v0.4/presentation/10_workbench_photography.png" alt="v0.4 workbench render with generic precision tools" width="860" />
+</p>
 
 *These are synthetic Blender scenes of the same v0.4 model, rather than records of device use or community activities. The tools are generic props, not supplied accessories or a brand partnership.*
 
