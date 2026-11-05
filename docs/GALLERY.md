@@ -44,3 +44,7 @@ Perspective camera, revised lighting, material variation and more detailed gener
 ## Image provenance
 
 The concept drawing was AI-generated during design exploration. Every image above was subsequently rendered from the actual v0.4 mesh, with consistent geometry across angles. The scenes, [original nine-image manifest](../design/v0.4/render_manifest.json) and [two-image photography manifest](../design/v0.4/presentation/photography_manifest.json) are included so that others can inspect or reproduce them. No identifiable community participants or fabricated endorsements appear in this gallery.
+
+## Social preview
+
+[`assets/social-preview.png`](../assets/social-preview.png) is a 1280×640 card for link previews. It uses the hero render above, with the project name and the README's tagline set beside it. The enclosure is that Blender image, not a photograph of a manufactured product. GitHub does not take the file from the repository tree; upload steps are in [Social preview](SOCIAL_PREVIEW.md).
