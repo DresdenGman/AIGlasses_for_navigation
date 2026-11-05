@@ -60,39 +60,39 @@
     "sha256": "d9e235230b5692356d7bacff85c3ca5403317e40fb4e8f268ba1d925fda15f00"
   },
   "assets/scenes/09_maker_workbench.png": {
-    "bytes": 2638559,
-    "sha256": "b3bbdbdc1eeee4d9445db28e54d9ad6081d7b48b8bb23150da406baf83fc2626"
+    "bytes": 2638492,
+    "sha256": "5e78c282eeaf91d1d5661098d69706f77f090e4b76fd71e1180f69f2f2c52c26"
   },
   "assets/scenes/08_everyday_desk.png": {
-    "bytes": 3172123,
-    "sha256": "4b834d34341a898496afd82f88e775280429a2626543a3bac50119ad64c316d2"
+    "bytes": 3172056,
+    "sha256": "78dbcbec0131348bd8e57b28c79097647e981442f75ea29b71d6cfe3bf03b8a3"
   },
   "assets/renders/04_top.png": {
-    "bytes": 2327540,
-    "sha256": "c0aecd79845482f3cb9bea90080526a85e5a7c6e976484948e48dfd3bc6aea0a"
+    "bytes": 2327473,
+    "sha256": "7e59cb5caba7375114c5a83615008b777a199f31cb13e7f212e738a0600e4ab4"
   },
   "assets/renders/03_side.png": {
-    "bytes": 2239186,
-    "sha256": "6ef6efe6b67a689dec0012ca5f3c53688178111655aa60dbcae7361abc248f61"
+    "bytes": 2239119,
+    "sha256": "41b266abaae071669ade3845349d6e0f49e8c5cf2f51e4f64ee3594f1c1aca69"
   },
   "assets/renders/02_front.png": {
-    "bytes": 2201272,
-    "sha256": "7d5f9a22c23f0b603b64aeea315c0a18f3e3387c54bcf930a2d78ab1b6da9ab1"
+    "bytes": 2201205,
+    "sha256": "0f9f844dfb207d3834c8942fabc77b529e7ded51d5dfe3f3d61f2a1e4745e44c"
   },
   "assets/renders/06_detail.png": {
-    "bytes": 2297451,
-    "sha256": "07a364248d0d338132620d382829378b2e05a9dd21c732c020d669fffcfdc3f1"
+    "bytes": 2297384,
+    "sha256": "bcb554fedd458dddb586e48fff7b74f001238967ec060ab70e62f8b25e043dff"
   },
   "assets/renders/07_open_housing.png": {
-    "bytes": 2377226,
-    "sha256": "77787c4f37ba01990f736b0d4f46fd10f0b13c78cb423219921e3adf68431bd7"
+    "bytes": 2377159,
+    "sha256": "6a788fd5f3816fc78c8749e5841df7801c87ceb893d22bc47ec336ffd7d35aa4"
   },
   "assets/renders/05_rear.png": {
-    "bytes": 2372346,
-    "sha256": "8865454efd4f1e87c62e35967882d418f7bef7ed6c238f62b6fa037aad69feaa"
+    "bytes": 2372279,
+    "sha256": "5289b2fb1276edced4fbc1a24f8cc06b4194323f8c042896ee9d1466974f3078"
   },
   "assets/renders/01_hero.png": {
-    "bytes": 2314998,
-    "sha256": "e5706d56fea17f6bdd616f91bc003f0448702b17e67dc12679d0395b95bb3f3f"
+    "bytes": 2314931,
+    "sha256": "9b88f728decbf6d2998e3c20a8c681d1fbbfa1ea72a42c0a93c932a962e30db2"
   }
 }
