@@ -127,7 +127,7 @@ Prompt accuracy is the dominant problem by a wide margin — reported by just ov
 | Better teaching and follow-up support | 3 |
 | Other | 3 |
 
-These three findings — accuracy first, battery second, audio clarity third — are now reflected in the [roadmap](ROADMAP.md), including recorded-video evaluation of perception errors before any new field claims are made.
+These three findings — accuracy first, battery second, audio clarity third — are now reflected in the [roadmap](ROADMAP.md). A local recorded-video command can score a consented, redacted clip offline; no such field set has been collected in this repository, and neither that command nor the synthetic eval supports a street-performance claim.
 
 ## What respondents said
 

@@ -176,6 +176,7 @@ def test_report_metadata_records_thresholds_and_versions(report):
     assert meta["yolox"]["scored"] is False
     assert "download" in meta["yolox"]["note"].lower()
     assert "street" in meta["honesty"].lower()
+    assert "this command does not run it" in meta["honesty"].lower()
     assert "perf_counter" in meta["latency_method"]
     assert "select_guidance" in meta["latency_method"]
 

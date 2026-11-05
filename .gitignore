@@ -75,11 +75,20 @@ data/processed/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 
-# Recordings
+# Recordings — do not commit participant media
 recordings/
 *.mp4
+*.mov
+*.mkv
+*.webm
+*.m4v
 *.wav
 *.avi
+
+# Private recorded-video perception eval (clips and consent labels)
+data/private_eval/**
+!data/private_eval/README.md
+!data/private_eval/.gitkeep
 
 # Jupyter Notebook
 .ipynb_checkpoints

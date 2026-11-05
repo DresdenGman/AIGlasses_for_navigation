@@ -1,0 +1,51 @@
+{
+  "schema": "aiglasses.perception_eval.recorded_labels",
+  "schema_version": 1,
+  "example_only": true,
+  "session_id": "example-do-not-score",
+  "description": "Schema example. Not a recording. Copy to data/private_eval/labels.json after the consent and redaction checklists.",
+  "detector": "heuristic",
+  "min_confidence": 0.7,
+  "cooldown_seconds": 3.0,
+  "consent": {
+    "informed": false,
+    "purpose": "Local perception evaluation of a short clip for this research prototype. Not for publishing the media, not for training a released model, and not a street-performance claim.",
+    "risks_explained": false,
+    "retention": "Replace with where the file stays and when it is deleted. Do not name the participant.",
+    "access": "Replace with who on this machine can open the file. Do not upload it or send it to CI.",
+    "withdrawal": "Replace with how a participant asks for deletion. Do not put a name, phone number, or address in this file.",
+    "local_only": false,
+    "participant_copy_offered": false
+  },
+  "redaction": {
+    "faces": "absent",
+    "license_plates": "absent",
+    "screens": "absent",
+    "identifiable_locations": "absent",
+    "audio": "absent",
+    "confirmed": false
+  },
+  "clips": [
+    {
+      "id": "example-clip",
+      "description": "Replace the path with a private file or a directory of stills. This placeholder is not media.",
+      "media": {
+        "kind": "video",
+        "path": "REPLACE_WITH_PRIVATE_CLIP"
+      },
+      "samples": [
+        {
+          "id": "example-sample",
+          "frame_index": 0,
+          "expect": {
+            "category": null,
+            "traffic_light_state": null,
+            "actionable": false
+          },
+          "label_confidence": "uncertain",
+          "confidence_note": "Example only. Say what is in the frame and why the label is sure or not. Do not name a person or a place."
+        }
+      ]
+    }
+  ]
+}
