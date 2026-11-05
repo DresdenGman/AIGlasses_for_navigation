@@ -10,7 +10,7 @@
     <main>
       <p class="eyebrow">AI GLASSES · RESEARCH PROTOTYPE</p>
       <h1>安全提示演示台</h1>
-      <p class="lead">无硬件模拟模式。选择一个视觉观察结果，查看系统如何优先处理不确定性与安全风险。</p>
+      <p class="lead">默认是无硬件模拟。也可以把摄像头或一张图片送进同一套引导规则。这不是经过认证的导航辅助。</p>
       <section class="status" aria-label="系统状态">
         <span id="status-dot"></span><span id="status-text">正在检查服务…</span>
         <code id="mode"></code>
@@ -28,6 +28,19 @@
         <button data-payload='{"kind":"obstacle","confidence":0.40,"distance_m":0.5,"label":"不明物体"}'>
           <strong>低置信度</strong><small>不会被表述为确定指令</small>
         </button>
+      </section>
+      <section class="camera" aria-label="摄像头或图片试验">
+        <p class="label">摄像头或图片试验</p>
+        <p class="note">拍一帧，或选择一张图片。服务不保存画面，也不测量距离，所以不会据此发出“近距离障碍物”指令。置信度不足时只说明不确定。不能代替白杖、导盲犬或你自己的判断。</p>
+        <div class="camera-actions">
+          <button type="button" id="use-camera">使用摄像头拍一帧</button>
+          <button type="button" id="choose-image">选择图片</button>
+          <input id="frame-file" type="file" accept="image/jpeg,image/png,image/webp" hidden />
+        </div>
+        <label class="speak" for="speak-toggle"><input id="speak-toggle" type="checkbox" /> 用浏览器朗读文字（可关闭，不上传语音）</label>
+        <video id="preview" autoplay playsinline muted hidden></video>
+        <img id="still" alt="待分析的画面" hidden />
+        <canvas id="snap" hidden></canvas>
       </section>
       <section id="result" class="result neutral" aria-live="polite">
         <p class="label">等待观察结果</p><h2>请选择一个场景</h2><p>所有输出仅用于研发演示，不能代替使用者判断。</p>

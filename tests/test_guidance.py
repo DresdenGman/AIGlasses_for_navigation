@@ -9,6 +9,13 @@ def test_red_light_is_an_actionable_urgent_prompt():
     assert "红灯" in result.message
 
 
+def test_obstacle_without_a_distance_does_not_become_a_near_field_warning():
+    result = GuidanceEngine().assess(Observation("obstacle", 0.92, label="行人"), now=0)
+    assert result.actionable
+    assert result.level == "navigation"
+    assert "近距离" not in result.message
+
+
 def test_low_confidence_never_becomes_a_direction():
     result = GuidanceEngine().assess(Observation("obstacle", 0.40, distance_m=0.5), now=0)
     assert not result.actionable

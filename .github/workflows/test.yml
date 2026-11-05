@@ -18,7 +18,7 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - run: python -m pip install --upgrade pip
-      - run: python -m pip install '.[dev]'
+      - run: python -m pip install '.[dev,vision]'
       # Installation verifies the distributable package; `python -m` keeps
       # the invocation consistent with local development.
       - run: python -m pytest -p no:cacheprovider
