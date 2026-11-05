@@ -244,7 +244,7 @@ These numbers are easy to mix up. They are not one product release, and none of 
 | **Package 0.1.0** | `ai-glasses-navigation-prototype` in [`pyproject.toml`](pyproject.toml), also shown in the API metadata. This is the runnable guidance demo. |
 | **Design v0.4** | Continuous Facets enclosure study. [`design/LATEST.json`](design/LATEST.json) records `0.4.0` for that geometry and its renders, not for the Python package. |
 | **Python 3.10+** | `requires-python` in `pyproject.toml`. CI runs the test suite on 3.10, 3.11, and 3.12. |
-| **Project release v1.9** | Project-level releases of the whole repository. v1.8 (November 2026) was the first: the software demo, the laptop camera path, the v0.4 design, the build kit and the participant feedback report under one label. v1.9 adds the first measured camera evaluation, a priced reference build, and the replication and battery-test protocols. These labels do not replace the package or design labels above. [v1.9 notes](docs/RELEASE_v1.9.md) · [v1.8 notes](docs/RELEASE_v1.8.md) |
+| **Project release v1.9.1** | Project-level releases of the whole repository. v1.8 (November 2026) was the first: the software demo, the laptop camera path, the v0.4 design, the build kit and the participant feedback report under one label. v1.9 adds the first measured camera evaluation, a priced reference build, and the replication and battery-test protocols; v1.9.1 adds the recorded demo and Zenodo archiving. These labels do not replace the package or design labels above. [v1.9.1 notes](docs/RELEASE_v1.9.1.md) · [v1.9 notes](docs/RELEASE_v1.9.md) · [v1.8 notes](docs/RELEASE_v1.8.md) |
 
 ## Run the demo
 
