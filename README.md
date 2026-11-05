@@ -29,10 +29,10 @@ An editable, lensless wraparound enclosure with a straighter brow, clipped corne
 </div>
 
 <p align="center">
-  <img src="assets/demo.gif" alt="Recording of the included demo dashboard stepping through its four sample observations: a red light returns an urgent stop message, a nearby obstacle returns a slow-down warning, a crosswalk returns a direction message, and a low-confidence detection returns an uncertainty notice instead of a command" width="860" />
+  <img src="assets/demo.gif" alt="Animation cycling through the demo's four scenes: a red light — 'Red light. Please stop and wait.'; an obstacle close ahead — 'Slow down and steer around it.'; a crosswalk — 'Keep your heading and confirm the signal.'; and a low-confidence detection — 'The situation ahead is uncertain', explicitly not a command" width="860" />
 </p>
 
-*The included demo, recorded from a live run: the dashboard's four sample observations pass through the real guidance engine. The last one is the point of the project — a low-confidence detection is surfaced as uncertainty, never as a command. Guidance text is in Chinese, as shipped; run it yourself under [Run the demo](#run-the-demo).*
+*The included demo in four scenes: the dashboard's sample observations and the guidance engine's actual answers, translated from the shipped Chinese interface. The last scene is the point of the project — a low-confidence detection is surfaced as uncertainty, never as a command. An unedited recording of the shipped dashboard is kept with [Run the demo](#run-the-demo).*
 
 ## Evidence at a glance
 
@@ -261,7 +261,7 @@ cp .env.example .env
 python main.py
 ```
 
-Open the [local dashboard](http://127.0.0.1:8081/) or [interactive API docs](http://127.0.0.1:8081/docs). The dashboard sends sample observations through the guidance engine.
+Open the [local dashboard](http://127.0.0.1:8081/) or [interactive API docs](http://127.0.0.1:8081/docs). The dashboard sends sample observations through the guidance engine. Its interface and guidance text are in Chinese, as shipped; an unedited screen recording of a live run through the four sample observations is kept at [assets/demo-recording.gif](assets/demo-recording.gif).
 
 `requirements.txt` installs the runtime package only. Replay the included observations, or install the dev and vision extras and run the tests. The suite uses synthetic frames and does not download weights:
 
