@@ -224,7 +224,7 @@ The repository provides a working software demonstration and inspectable design 
 |---|---|---|
 | **Software** | Guidance rules, dashboard, REST/WebSocket interfaces, replay, device ingestion, and an optional laptop camera / speech path. | Street-video evaluation, distance sensing, and ESP32 integration. |
 | **Enclosure** | Editable v0.4 geometry, exports, render scenes and source-geometry checks. | Physical scale calibration, measured components, mounting, cable routing, fabrication and fit. |
-| **Evaluation** | Repeatable structured-observation scenarios, repository tests, and a synthetic perception eval (false prompts, misses, host latency, and repeat suppression on generated lamps). | Recorded-video perception evaluation with consent and redaction, message comprehension, and physical-prototype testing. |
+| **Evaluation** | Repeatable structured-observation scenarios, repository tests, a synthetic perception eval (false prompts, misses, host latency, and repeat suppression on generated lamps), and a first labeled real-frame traffic-light measurement ([Evaluation](docs/EVALUATION.md)). | Recorded-video perception evaluation with consent and redaction, message comprehension, and physical-prototype testing. |
 | **Community** | Outreach across four communities and making instruction in three, reaching nearly 60 people; a completed 72-response participant survey with published raw data. | Continued engagement; accuracy, battery and audio work prioritised from the survey findings. |
 
 [Development roadmap →](docs/ROADMAP.md)
