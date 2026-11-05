@@ -30,3 +30,5 @@
 - Verification of fastening, assembly paths, manufacturing tolerances and physical fit.
 
 The current release does not establish safe road crossing, physical assembly readiness or measured mobility outcomes.
+
+The winter iteration priorities derived from these measurements — in order, each with its evidence, proposed change and acceptance test — are in [V2_PRIORITIES.md](V2_PRIORITIES.md).
