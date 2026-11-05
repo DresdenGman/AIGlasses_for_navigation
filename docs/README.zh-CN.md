@@ -78,4 +78,4 @@ v0.4 采用一体化连续折面：更轻薄的前框、斜切转角和收紧的
 
 ## 展示资料
 
-[展示渲染与可编辑场景](../design/v0.4/presentation/README.md) · [项目概述（英文）](PROJECT_OVERVIEW.md)
+[展示渲染与可编辑场景](../design/v0.4/presentation/README.md) · [项目概述（英文）](PROJECT_OVERVIEW.md) · 一页纸：[使用者与社区（双语）](one-pagers/users-bilingual.md)、[招生版（英文）](one-pagers/admissions.md)、[合作方版（英文）](one-pagers/partners.md)

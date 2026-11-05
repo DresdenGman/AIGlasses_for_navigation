@@ -320,6 +320,7 @@ Details, limits, and how to record a short demo clip: [Demo guide →](docs/DEMO
 | Images | [Render gallery](docs/GALLERY.md) · [Editable presentation scenes](design/v0.4/presentation/README.md) |
 | Community and cost | [Reach, instruction and hardware costs](docs/COMMUNITY_AND_COST.md) |
 | Participant feedback | [Results, method and limitations](docs/FEEDBACK.md) · [Raw responses and analysis](data/feedback/) |
+| One-pagers | [Users & community (bilingual)](docs/one-pagers/users-bilingual.md) · [Admissions](docs/one-pagers/admissions.md) · [Partners](docs/one-pagers/partners.md) |
 | Contributions | [Contributor guide](docs/CONTRIBUTING.md) · [Issues](https://github.com/DresdenGman/AIGlasses_for_navigation/issues) |
 | 中文 | [中文项目介绍](docs/README.zh-CN.md) |
 
