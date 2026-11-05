@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite it as below."
+title: "AI Glasses for Navigation"
+abstract: "Open-source, low-cost AI navigation glasses for blind and low-vision people: a safety-first guidance software prototype, an editable v0.4 enclosure design, a bilingual community build kit, and participant feedback data from community sessions."
+authors:
+  - family-names: Goehner
+    given-names: Dresden
+type: software
+license: MIT
+repository-code: "https://github.com/DresdenGman/AIGlasses_for_navigation"
+version: "0.4.0"
+date-released: "2026-09-18"
+keywords:
+  - assistive technology
+  - accessibility
+  - blind and low-vision
+  - open hardware
+  - wearable
+  - community making
