@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from collections import deque
 from dataclasses import asdict, dataclass
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 
 from .guidance import Guidance, Observation
 
@@ -25,7 +25,7 @@ class EventLog:
 
     def record(self, observation: Observation, guidance: Guidance) -> GuidanceEvent:
         event = GuidanceEvent(
-            timestamp=datetime.now(UTC).isoformat(),
+            timestamp=datetime.now(timezone.utc).isoformat(),
             kind=observation.kind,
             confidence=observation.confidence,
             level=guidance.level,
