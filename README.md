@@ -17,7 +17,7 @@ An open-source, under-$35 navigation-glasses direction for blind and low-vision 
 
 [Demo →](#run-the-demo) · [Build →](design/v0.4/README.md) · [Feedback results →](docs/FEEDBACK.md) · [Join →](docs/CONTRIBUTING.md)
 
-**Under $35 to build** · **Nearly 60 people reached** · **72 feedback responses**
+**Under $35 to build** · **Nearly 60 people reached** · **85 feedback responses**
 
 ![Continuous Facets v0.4 — three-quarter studio render](assets/renders/01_hero.png)
 
@@ -38,13 +38,13 @@ An editable, lensless wraparound enclosure with a straighter brow, clipped corne
 
 From the participant feedback survey (August–November 2026) — the full results, raw data and limitations are in the [feedback report](docs/FEEDBACK.md):
 
-| **72** | **53** | **3.47 / 5** | **9 of 53** |
+| **85** | **64** | **3.47 / 5** | **9 of 64** |
 |:---:|:---:|:---:|:---:|
 | Survey responses | Had used the glasses at least once | Mean helpfulness, rated by those users | Still using them at survey time |
 
-<img src="assets/feedback/helpfulness.png" width="640" alt="Bar chart of helpfulness ratings from the 53 respondents who had used the glasses: 2 rated 1, 7 rated 2, 16 rated 3, 20 rated 4 and 8 rated 5, a mean of 3.47 out of 5" />
+<img src="assets/feedback/helpfulness.png" width="640" alt="Bar chart of helpfulness ratings from the 64 respondents who had used the glasses: 2 rated 1, 8 rated 2, 20 rated 3, 26 rated 4 and 8 rated 5, a mean of 3.47 out of 5" />
 
-The same survey names the top problem plainly: **51% of users said the prompts were inaccurate**. [What participants reported →](#participant-feedback)
+The same survey names the top problem plainly: **48% of users said the prompts were inaccurate**. [What participants reported →](#participant-feedback)
 
 ## The project
 
@@ -66,7 +66,7 @@ Today, this repository contains a runnable guidance demo, an optional laptop web
 | **December 2025** | First GitHub publication | The [initial repository commit](https://github.com/DresdenGman/AIGlasses_for_navigation/commit/12b121a3) was recorded on December 9, 2025 (UTC). Early documentation described tactile-paving navigation, crosswalk assistance, object search and voice interaction. |
 | **July 29, 2026** | Reproducible software prototype | A hardware-free FastAPI core, interactive dashboard, JSONL replay and in-memory event history were added. An authenticated device-observation gateway, per-device rate limiting, packaging and CI test configuration followed in the same iteration. |
 | **September 18, 2026** | Continuous Facets v0.4 | The lightweight enclosure direction was published with editable Blender files, GLB/STL exports, geometry checks, multiple rendered views and clearer community and cost documentation. |
-| **August–November 2026** | Participant feedback survey | 72 bilingual responses were collected from session participants, people who tried or kept the earlier prototype, and online-guide builders. Results — including the problems and the continued-use figures — are published with the raw data and a reproducible analysis in [Participant feedback](docs/FEEDBACK.md). |
+| **August–November 2026** | Participant feedback survey | 85 bilingual responses were collected from session participants, people who tried or kept the earlier prototype, and online-guide builders. Results — including the problems and the continued-use figures — are published with the raw data and a reproducible analysis in [Participant feedback](docs/FEEDBACK.md). |
 | **Late 2025–present** | Continuing community engagement | Outreach has reached four communities and nearly 60 blind or visually impaired people; three communities received practical explanations of how to make the device. Technical development and community engagement continue in parallel. |
 
 The early development dates and community history are provided by the project creator. Publication and software milestones are documented in the [commit history](https://github.com/DresdenGman/AIGlasses_for_navigation/commits/main/). The nearly one-year period refers to initial development during 2025; subsequent iteration continues beyond that period.
@@ -89,38 +89,38 @@ These figures describe contact and instruction, rather than devices delivered or
 
 ## Participant feedback
 
-In August–November 2026, an anonymous bilingual survey collected **72 responses** (36 in Chinese, 36 in English) from people who had encountered the project — at assembly sessions, through trying or keeping the earlier prototype, at presentations, or via the online guide. The full results, method and limitations are published in [Participant feedback](docs/FEEDBACK.md), together with the [raw responses](data/feedback/participant-feedback-survey-responses-2026.csv) and a script that recomputes every number.
+In August–November 2026, an anonymous bilingual survey collected **85 responses** (49 in Chinese, 36 in English) from people who had encountered the project — at assembly sessions, through trying or keeping the earlier prototype, at presentations, or via the online guide. The full results, method and limitations are published in [Participant feedback](docs/FEEDBACK.md), together with the [raw responses](data/feedback/participant-feedback-survey-responses-2026.csv) and a script that recomputes every number.
 
-| **72** | **53** | **3.47 / 5** | **9** |
+| **85** | **64** | **3.47 / 5** | **9** |
 |:---:|:---:|:---:|:---:|
-| Survey responses | Had used the glasses at least once | Mean helpfulness among those 53 users | Still using them at survey time |
+| Survey responses | Had used the glasses at least once | Mean helpfulness among those 64 users | Still using them at survey time |
 
 <table>
 <tr>
-<td><img src="assets/feedback/helpfulness.png" alt="Bar chart of helpfulness ratings from the 53 respondents who had used the glasses: 2 rated 1, 7 rated 2, 16 rated 3, 20 rated 4 and 8 rated 5, a mean of 3.47 out of 5" /></td>
-<td><img src="assets/feedback/problems.png" alt="Bar chart of problems reported by the 53 respondents who had used the glasses: inaccurate prompts 51 percent, battery life 38 percent, connection instability and unclear audio 30 percent each, fit 23 percent, complexity 15 percent, privacy concerns 11 percent, and 19 percent reported no problems" /></td>
+<td><img src="assets/feedback/helpfulness.png" alt="Bar chart of helpfulness ratings from the 64 respondents who had used the glasses: 2 rated 1, 8 rated 2, 20 rated 3, 26 rated 4 and 8 rated 5, a mean of 3.47 out of 5" /></td>
+<td><img src="assets/feedback/problems.png" alt="Bar chart of problems reported by the 64 respondents who had used the glasses: inaccurate prompts 48 percent, battery life 36 percent, connection instability 27 percent, unclear audio 28 percent, fit 22 percent, complexity 14 percent, privacy concerns 9 percent, and 17 percent reported no problems" /></td>
 </tr>
 <tr><td align="center">Helpfulness, as rated by users themselves</td><td align="center">Problems, reported on the same survey</td></tr>
 <tr>
-<td><img src="assets/feedback/improve-first.png" alt="Bar chart of the one improvement respondents most wanted fixed first, all 72 respondents: more accurate prompts 25, longer battery life 12, clearer audio 10, durability 9, simpler operation 6, comfort 4, teaching and set-up support 3, other 3" /></td>
-<td><img src="assets/feedback/participation.png" alt="Bar chart of how the 72 respondents took part: joined a hands-on build session 21, saw a demonstration only 19, tried the glasses 14, received and kept a pair 9, followed the online guide 3, organised or taught a session 3, other 3" /></td>
+<td><img src="assets/feedback/improve-first.png" alt="Bar chart of the one improvement respondents most wanted fixed first, all 85 respondents: more accurate prompts 29, longer battery life 16, clearer audio 11, durability 10, simpler operation 7, comfort 6, teaching and set-up support 3, other 3" /></td>
+<td><img src="assets/feedback/participation.png" alt="Bar chart of how the 85 respondents took part: joined a hands-on build session 24, saw a demonstration only 21, tried the glasses 22, received and kept a pair 9, followed the online guide 3, organised or taught a session 3, other 3" /></td>
 </tr>
-<tr><td align="center">If one thing is fixed first — all 72 respondents</td><td align="center">How respondents took part — all 72 responses</td></tr>
+<tr><td align="center">If one thing is fixed first — all 85 respondents</td><td align="center">How respondents took part — all 85 responses</td></tr>
 </table>
 
 Three findings set the project's priorities:
 
-- **Prompt accuracy is the central problem.** 51% of users said prompts were inaccurate or missed important information, and "more accurate prompts" was the single most-chosen improvement (25 of 72 respondents). A synthetic fixture eval counts false prompts and misses on generated lamps ([EVAL.md](docs/EVAL.md)). A separate local command can score a consented, redacted clip on one machine ([RECORDED_EVAL.md](docs/RECORDED_EVAL.md)); no such field set is in this repository, so no stronger field claim is warranted — see the [roadmap](docs/ROADMAP.md).
+- **Prompt accuracy is the central problem.** 48% of users said prompts were inaccurate or missed important information, and "more accurate prompts" was the single most-chosen improvement (29 of 85 respondents). A synthetic fixture eval counts false prompts and misses on generated lamps ([EVAL.md](docs/EVAL.md)). A separate local command can score a consented, redacted clip on one machine ([RECORDED_EVAL.md](docs/RECORDED_EVAL.md)); no such field set is in this repository, so no stronger field claim is warranted — see the [roadmap](docs/ROADMAP.md).
 - **Battery and audio follow.** 38% of users found the battery did not last long enough (one reported under an hour of continuous use), and 30% found the audio or instructions unclear.
-- **Continued use is weak, and it is reported here rather than smoothed over.** Of the 53 users, 9 still use the glasses, 14 use them less than before and 29 have stopped (one further response contradicts itself and is flagged in the full report). The survey's job was to surface exactly this.
+- **Continued use is weak, and it is reported here rather than smoothed over.** Of the 64 users, 9 still use the glasses, 19 use them less than before and 35 have stopped (one further response contradicts itself and is flagged in the full report). The survey's job was to surface exactly this.
 
 > "Reading medicine labels and bus stop signs for me."
-> — Survey respondent who kept a pair, rated the glasses 5/5, still using (quoted with permission; 57 of 72 respondents agreed to anonymous quotation)
+> — Survey respondent who kept a pair, rated the glasses 5/5, still using (quoted with permission; 68 of 85 respondents agreed to anonymous quotation)
 
 > "在楼道里走路能提前报前面堆着的纸箱，摸着确实在那，免得踢到绊脚。"
 > — *"Walking along the corridor, it told me about the stacked boxes ahead in time — I felt them, and they were there — so I did not trip over them."* — Respondent who kept a pair, rated 5/5, still using
 
-The survey covers the broader project and the earlier prototype, not the v0.4 enclosure. It was run by the project itself with a self-selected sample, and 40 of the 72 responses were not filled in on the form directly by the respondent — 25 were entered by a family member or volunteer, 12 were recorded by an organiser, and 3 were completed another way. The [full report](docs/FEEDBACK.md#limitations-of-this-data) explains what that means for reading the numbers.
+The survey covers the broader project and the earlier prototype, not the v0.4 enclosure. It was run by the project itself with a self-selected sample, and 51 of the 85 responses were not filled in on the form directly by the respondent — 34 were entered by a family member or volunteer, 14 were recorded by an organiser, and 3 were completed another way. The [full report](docs/FEEDBACK.md#limitations-of-this-data) explains what that means for reading the numbers.
 
 [Full results, method and limitations →](docs/FEEDBACK.md) · [Raw data →](data/feedback/) · [Reproduce the analysis →](data/feedback/analyze_feedback.py)
 
@@ -232,7 +232,7 @@ The repository provides a working software demonstration and inspectable design 
 | **Software** | Guidance rules, dashboard, REST/WebSocket interfaces, replay, device ingestion, and an optional laptop camera / speech path. | Street-video evaluation, distance sensing, and ESP32 integration. |
 | **Enclosure** | Editable v0.4 geometry, exports, render scenes and source-geometry checks. | Physical scale calibration, measured components, mounting, cable routing, fabrication and fit. |
 | **Evaluation** | Repeatable structured-observation scenarios, repository tests, a synthetic perception eval (false prompts, misses, host latency, and repeat suppression on generated lamps), a first labeled real-frame traffic-light measurement ([Evaluation](docs/EVALUATION.md)), and a local recorded-video command that scores a private clip only after consent and redaction are attested. | Consented field collection, message comprehension, and physical-prototype testing. The recorded-video command does not by itself supply a street result. |
-| **Community** | Outreach across four communities and making instruction in three, reaching nearly 60 people; a completed 72-response participant survey with published raw data. | Continued engagement; accuracy, battery and audio work prioritised from the survey findings. |
+| **Community** | Outreach across four communities and making instruction in three, reaching nearly 60 people; a completed 85-response participant survey with published raw data. | Continued engagement; accuracy, battery and audio work prioritised from the survey findings. |
 
 [Development roadmap →](docs/ROADMAP.md)
 

@@ -22,7 +22,7 @@
 
 - Scenario replay with recorded model versions, thresholds, devices and test dates.
 - Evaluation of message uncertainty and user interpretation in controlled settings.
-- Perception-accuracy evaluation on recorded video — false prompts and missed objects counted separately. This is the top problem (51% of users) and the top improvement priority (25 of 72 respondents) in the 2026 participant survey, and it gates any stronger field claim. The synthetic fixture eval does not lift this gate. The local recorded-video command does not lift it either: no consented field set has been collected or reported here.
+- Perception-accuracy evaluation on recorded video — false prompts and missed objects counted separately. This is the top problem (48% of users) and the top improvement priority (29 of 85 respondents) in the 2026 participant survey, and it gates any stronger field claim. The synthetic fixture eval does not lift this gate. The local recorded-video command does not lift it either: no consented field set has been collected or reported here.
 - A first measurement on labeled real frames now exists: [EVALUATION.md](EVALUATION.md) scores the camera path on 215 Bosch benchmark frames (coverage 4 of 61 single-state red/green frames; one red frame read as green). Those are distant vehicle-mounted lights, not consented near-field footage, so the recorded-video item above remains open.
 - Battery-endurance measurement under continuous use, after survey respondents reported the battery not lasting long enough (38% of users; one report of under one hour).
 - Audio-clarity checks in noisy rooms, after 30% of users reported unclear audio or instructions.

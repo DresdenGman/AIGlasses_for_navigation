@@ -1,85 +1,85 @@
 {
-  "responses_total": 72,
+  "responses_total": 85,
   "languages": {
     "English": 36,
-    "中文": 36
+    "中文": 49
   },
   "first_response": "2026/08/26 2:22:15 PM PDT",
   "last_response": "2026/11/04 7:18:35 AM PST",
   "involvement": {
-    "Hands-on assembly / building session": 21,
-    "Presentation or demo only": 19,
-    "Tried wearing or using the glasses": 14,
+    "Hands-on assembly / building session": 24,
+    "Tried wearing or using the glasses": 22,
+    "Presentation or demo only": 21,
     "Received or kept a pair": 9,
     "Learned from / built via the online guide": 3,
     "Helped organize, teach, or maintain": 3,
     "Other": 3
   },
-  "used_glasses_n": 53,
-  "never_used_n": 19,
+  "used_glasses_n": 64,
+  "never_used_n": 21,
   "helpfulness_users": {
-    "n": 53,
+    "n": 64,
     "distribution_1_to_5": {
       "1": 2,
-      "2": 7,
-      "3": 16,
-      "4": 20,
+      "2": 8,
+      "3": 20,
+      "4": 26,
       "5": 8
     },
     "mean": 3.47,
-    "rated_4_or_5": 28,
-    "rated_3_or_more": 44,
-    "rated_2_or_less": 9
+    "rated_4_or_5": 34,
+    "rated_3_or_more": 54,
+    "rated_2_or_less": 10
   },
   "problems_users_multi_select": {
-    "Prompts inaccurate or missed information": 27,
-    "Battery did not last long enough": 20,
-    "Device stopped or connection unstable": 16,
-    "Audio or instructions unclear": 16,
-    "Uncomfortable fit or wrong size": 12,
-    "No problems experienced": 10,
-    "Too complicated to operate": 8,
+    "Prompts inaccurate or missed information": 31,
+    "Battery did not last long enough": 23,
+    "Audio or instructions unclear": 18,
+    "Device stopped or connection unstable": 17,
+    "Uncomfortable fit or wrong size": 14,
+    "No problems experienced": 11,
+    "Too complicated to operate": 9,
     "Privacy concerns": 6
   },
   "current_use_users": {
-    "Use less than before": 14,
-    "Stopped using": 29,
+    "Use less than before": 19,
+    "Stopped using": 35,
     "Still using": 9,
     "Never actually used": 1
   },
   "independence_users": {
-    "Independent": 20,
-    "Needed a little help": 21,
-    "Needed a lot of help": 10,
+    "Independent": 21,
+    "Needed a little help": 27,
+    "Needed a lot of help": 14,
     "Basically could not operate independently": 2
   },
   "improve_first_all": {
-    "More accurate prompts": 25,
-    "Longer battery life": 12,
-    "Clearer audio and instructions": 10,
-    "More durable and stable device": 9,
-    "Simpler operation": 6,
-    "More comfortable fit": 4,
+    "More accurate prompts": 29,
+    "Longer battery life": 16,
+    "Clearer audio and instructions": 11,
+    "More durable and stable device": 10,
+    "Simpler operation": 7,
+    "More comfortable fit": 6,
     "Better teaching and follow-up support": 3,
     "Other": 3
   },
-  "quote_consent_yes": 57,
+  "quote_consent_yes": 68,
   "completion": {
-    "Completed it myself": 32,
-    "Family member or volunteer entered the answers": 25,
-    "Another way": 3,
-    "Activity organizer recorded the answers": 12
+    "Completed it myself": 34,
+    "Activity organizer recorded the answers": 14,
+    "Family member or volunteer entered the answers": 34,
+    "Another way": 3
   },
   "situations_all_multi_select": {
-    "Assembling or testing at an activity session": 39,
-    "Finding objects or people indoors": 27,
-    "Reading signs, text, or information about surroundings": 21,
-    "Testing at home": 19,
-    "Did not actually use them": 18,
-    "Moving around a familiar indoor space": 15,
-    "A short trial outdoors": 9,
+    "Assembling or testing at an activity session": 46,
+    "Finding objects or people indoors": 31,
+    "Reading signs, text, or information about surroundings": 23,
+    "Testing at home": 22,
+    "Did not actually use them": 20,
+    "Moving around a familiar indoor space": 17,
+    "A short trial outdoors": 11,
     "Another situation": 3
   },
-  "sessions_named": 50,
+  "sessions_named": 60,
   "sessions_distinct_labels": 32
 }
