@@ -1,5 +1,7 @@
 # Demo and replay
 
+Requires Python 3.10 or newer (`requires-python` in `pyproject.toml`). Install the runtime package with `requirements.txt`. Tests need `requirements-dev.txt`.
+
 ## Browser demo
 
 Run `python main.py` and open `http://127.0.0.1:8081/`. Dashboard actions use the service's guidance engine. No camera, ESP32 or model weights are required.

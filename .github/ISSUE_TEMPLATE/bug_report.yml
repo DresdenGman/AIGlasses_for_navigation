@@ -29,7 +29,7 @@ body:
     id: environment
     attributes:
       label: Environment
-      placeholder: macOS 15, Python 3.12, demo mode
+      placeholder: macOS, Python 3.10 or later, demo mode
     validations:
       required: true
   - type: checkboxes
