@@ -1,6 +1,8 @@
 # Participant feedback — survey results
 
-**72 responses · 36 in Chinese, 36 in English · collected 26 August – 4 November 2026**
+**85 responses · 49 in Chinese, 36 in English · collected 26 August – 4 November 2026**
+
+> **Data note (5 November 2026).** This page first reported 72 responses. A fuller export of the same survey then added 13 responses — all from the Chinese-language path, all inside the same collection window — and every figure below has been recomputed from the complete export. The mean helpfulness score did not move (3.47); most counts did. The earlier figures remain in the repository history and in the archived v1.9.1 release.
 
 This page reports a bilingual, anonymous feedback survey completed by people who encountered the project in different ways: hands-on assembly sessions, trying or keeping a pair of the earlier-prototype glasses, presentations, and the online build guide. It covers the broader project and the earlier hardware prototype — **not** the v0.4 enclosure design, which respondents had not used.
 
@@ -26,14 +28,14 @@ python3 data/feedback/analyze_feedback.py   # regenerates summary.json
 
 | How the form was completed | Responses |
 |---|---:|
-| Completed it myself | 32 |
-| A family member or volunteer entered my answers | 25 |
-| An activity organiser recorded my answers | 12 |
+| Completed it myself | 34 |
+| A family member or volunteer entered my answers | 34 |
+| An activity organiser recorded my answers | 14 |
 | Another way | 3 |
 
 Proxy completion can soften or shift answers, so it is disclosed here and should be kept in mind when reading every result below.
 
-- 57 of 72 respondents (79%) agreed to anonymous quotation of their open-ended answers. **Only those responses are quoted on this page.**
+- 68 of 85 respondents (80%) agreed to anonymous quotation of their open-ended answers. **Only those responses are quoted on this page.**
 
 ## Who responded
 
@@ -41,19 +43,19 @@ Proxy completion can soften or shift answers, so it is disclosed here and should
 
 | Involvement | Responses |
 |---|---:|
-| Hands-on assembly / building session | 21 |
-| Presentation or demo only | 19 |
-| Tried wearing or using the glasses | 14 |
+| Hands-on assembly / building session | 24 |
+| Presentation or demo only | 21 |
+| Tried wearing or using the glasses | 22 |
 | Received or kept a pair | 9 |
 | Learned from / built via the online guide | 3 |
 | Helped organise, teach, or maintain | 3 |
 | Other | 3 |
 
-50 respondents named a session or community in free text, producing 32 distinct labels (community centres, senior activity centres, a library demo, a makerspace, disability-support and blind-association workshops, volunteer training, and home builds from the guide). The labels were written by respondents and were not standardised, so they are **not** converted into a count of communities.
+60 respondents named a session or community in free text, producing 32 distinct labels (community centres, senior activity centres, a library demo, a makerspace, disability-support and blind-association workshops, volunteer training, and home builds from the guide). The labels were written by respondents and were not standardised, so they are **not** converted into a count of communities.
 
-**53 of the 72 respondents had used the glasses at least once; 19 never did** (most of them attended a presentation only). The results below use these two groups consistently:
+**64 of the 85 respondents had used the glasses at least once; 21 never did** (most of them attended a presentation only). The results below use these two groups consistently:
 
-- **Users** = the 53 who reported using the glasses at least once.
+- **Users** = the 64 who reported using the glasses at least once.
 - Ratings from the never-used group are excluded from user statistics, including four numeric ratings given anyway.
 
 ## What users reported
@@ -62,36 +64,36 @@ Proxy completion can soften or shift answers, so it is disclosed here and should
 
 ![Helpfulness distribution among respondents who had used the glasses](../assets/feedback/helpfulness.png)
 
-Among the 53 users — all of whom gave a rating — the mean score was **3.47 out of 5**:
+Among the 64 users — all of whom gave a rating — the mean score was **3.47 out of 5**:
 
 | Rating | 1 | 2 | 3 | 4 | 5 |
 |---|---:|---:|---:|---:|---:|
-| Responses | 2 | 7 | 16 | 20 | 8 |
+| Responses | 2 | 8 | 20 | 26 | 8 |
 
-28 of 53 (53%) rated the glasses 4 or 5; 9 of 53 (17%) rated them 1 or 2. The middle of the distribution is the honest headline: helpful for many people in specific moments, not yet reliable enough to be more than that.
+34 of 64 (53%) rated the glasses 4 or 5; 10 of 64 (16%) rated them 1 or 2. The middle of the distribution is the honest headline: helpful for many people in specific moments, not yet reliable enough to be more than that.
 
 ### What they used it for
 
-Most-reported situations (asked of all 72 respondents, multiple selections allowed; 18 respondents answered that they did not actually use them):
+Most-reported situations (asked of all 85 respondents, multiple selections allowed; 20 respondents answered that they did not actually use them):
 
 | Situation | Responses |
 |---|---:|
-| Assembling or testing at an activity session | 39 |
-| Finding objects or people indoors | 27 |
-| Reading signs, text, or information about surroundings | 21 |
-| Testing at home | 19 |
-| Moving around a familiar indoor space | 15 |
-| A short trial outdoors | 9 |
+| Assembling or testing at an activity session | 46 |
+| Finding objects or people indoors | 31 |
+| Reading signs, text, or information about surroundings | 23 |
+| Testing at home | 22 |
+| Moving around a familiar indoor space | 17 |
+| A short trial outdoors | 11 |
 
 Use is concentrated indoors and at sessions. Outdoor use is a short supervised trial in this data, not independent travel.
 
 ### Operating it independently
 
-Among the 53 users: **20** could complete the main steps independently, **21** needed a little help, **10** needed a lot of help, and **2** basically could not operate the glasses independently. Needing help at first contact is the norm in this sample, which is why session teaching matters — and why simpler start-up is a recurring request below.
+Among the 64 users: **21** could complete the main steps independently, **27** needed a little help, **14** needed a lot of help, and **2** basically could not operate the glasses independently. Needing help at first contact is the norm in this sample, which is why session teaching matters — and why simpler start-up is a recurring request below.
 
 ### Continued use
 
-Of the 53 users, **9 still use the glasses, 14 use them less than before, and 29 have stopped** (one further response marked "never actually used" here despite reporting a use count earlier; it is kept in the group and flagged rather than silently reassigned).
+Of the 64 users, **9 still use the glasses, 19 use them less than before, and 35 have stopped** (one further response marked "never actually used" here despite reporting a use count earlier; it is kept in the group and flagged rather than silently reassigned).
 
 Continued use is the weakest result in this survey. The problems table below is the best available explanation, and it sets the project's priorities more honestly than the helpfulness average does.
 
@@ -99,31 +101,31 @@ Continued use is the weakest result in this survey. The problems table below is 
 
 ![Problems experienced by respondents who had used the glasses](../assets/feedback/problems.png)
 
-| Problem (users, n = 53, multiple selections) | Responses | Share |
+| Problem (users, n = 64, multiple selections) | Responses | Share |
 |---|---:|---:|
-| Prompts were inaccurate or missed important information | 27 | 51% |
-| Battery did not last long enough | 20 | 38% |
-| Device stopped working or the connection was unstable | 16 | 30% |
-| Audio or instructions were unclear | 16 | 30% |
-| Uncomfortable fit or wrong size | 12 | 23% |
-| Too complicated to operate | 8 | 15% |
-| Privacy concerns | 6 | 11% |
-| No problems experienced | 10 | 19% |
+| Prompts were inaccurate or missed important information | 31 | 48% |
+| Battery did not last long enough | 23 | 36% |
+| Device stopped working or the connection was unstable | 17 | 27% |
+| Audio or instructions were unclear | 18 | 28% |
+| Uncomfortable fit or wrong size | 14 | 22% |
+| Too complicated to operate | 9 | 14% |
+| Privacy concerns | 6 | 9% |
+| No problems experienced | 11 | 17% |
 
-Prompt accuracy is the dominant problem by a wide margin — reported by just over half of all users. It is a perception-quality problem, and it is also a safety-relevant one: a device that sometimes describes the wrong thing teaches its user not to trust it.
+Prompt accuracy is the dominant problem by a wide margin — reported by just under half of all users. It is a perception-quality problem, and it is also a safety-relevant one: a device that sometimes describes the wrong thing teaches its user not to trust it.
 
 ## The one improvement respondents would make first
 
 ![Single top improvement priority across all respondents](../assets/feedback/improve-first.png)
 
-| Priority (all 72 respondents, one choice) | Responses |
+| Priority (all 85 respondents, one choice) | Responses |
 |---|---:|
-| More accurate prompts | 25 |
-| Longer battery life | 12 |
-| Clearer audio and instructions | 10 |
-| More durable and stable device | 9 |
-| Simpler operation | 6 |
-| More comfortable fit | 4 |
+| More accurate prompts | 29 |
+| Longer battery life | 16 |
+| Clearer audio and instructions | 11 |
+| More durable and stable device | 10 |
+| Simpler operation | 7 |
+| More comfortable fit | 6 |
 | Better teaching and follow-up support | 3 |
 | Other | 3 |
 
@@ -181,8 +183,8 @@ A navigation aid that leaves the crossing decision with the user is less impress
 
 Read these results with the following in mind:
 
-- **Self-selected sample.** Respondents are people who chose to answer, recruited through the project's own sessions and guide. There is no sampling frame and no response rate, so these figures describe these 72 people — not all participants, and not blind and low-vision people generally.
-- **Assisted completion.** 40 of 72 responses were not filled in directly by the respondent: 25 were entered by a family member or volunteer, 12 were recorded by an activity organiser, and 3 were completed another way (see the method table). This was necessary for accessibility, and it can also bias wording and ratings.
+- **Self-selected sample.** Respondents are people who chose to answer, recruited through the project's own sessions and guide. There is no sampling frame and no response rate, so these figures describe these 85 people — not all participants, and not blind and low-vision people generally.
+- **Assisted completion.** 51 of 85 responses were not filled in directly by the respondent: 34 were entered by a family member or volunteer, 14 were recorded by an activity organiser, and 3 were completed another way (see the method table). This was necessary for accessibility, and it can also bias wording and ratings.
 - **Small subgroups.** Only 9 respondents kept a pair of glasses; their continued use is encouraging and statistically fragile at the same time.
 - **Earlier prototype, mixed settings.** Answers cover different sessions, settings and points in the project's development. They are not measurements of one frozen device configuration, and no mobility or safety outcome was measured.
 - **Two field inconsistencies, kept visible.** Seven responses hold a current-use value ("still using") in the use-count field; they are counted as users because their other answers describe real use. One response reports a use count but marks current use as "never actually used"; it is flagged in the continued-use figures rather than corrected.
@@ -192,7 +194,7 @@ Read these results with the following in mind:
 
 | File | Contents |
 |---|---|
-| [participant-feedback-survey-responses-2026.csv](../data/feedback/participant-feedback-survey-responses-2026.csv) | Raw survey export, byte-for-byte as provided (72 responses, bilingual columns) |
+| [participant-feedback-survey-responses-2026.csv](../data/feedback/participant-feedback-survey-responses-2026.csv) | Raw survey export, byte-for-byte as provided (85 responses, bilingual columns; the complete export replaced the earlier 72-response file on 5 November 2026) |
 | [summary.json](../data/feedback/summary.json) | Every count published on this page |
 | [analyze_feedback.py](../data/feedback/analyze_feedback.py) | Standard-library script that merges the bilingual columns and regenerates the summary |
 | [make_charts.py](../data/feedback/make_charts.py) | Chart script (matplotlib) that renders the four charts from `summary.json` |

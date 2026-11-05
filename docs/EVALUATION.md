@@ -2,7 +2,7 @@
 
 **215 labeled driving frames · 321 annotated traffic lights · the production heuristic, untuned**
 
-The 2026 participant survey ([FEEDBACK.md](FEEDBACK.md)) put inaccurate prompts first among reported problems: 51% of the people who had used the glasses named them, and "more accurate prompts" was the single most-chosen improvement. Until now that complaint had no measured counterpart. This page is the first check of the laptop camera path — the OpenCV lamp heuristic in `aiglasses/vision.py` — against real, independently labeled road images.
+The 2026 participant survey ([FEEDBACK.md](FEEDBACK.md)) put inaccurate prompts first among reported problems: 48% of the people who had used the glasses named them, and "more accurate prompts" was the single most-chosen improvement. Until now that complaint had no measured counterpart. This page is the first check of the laptop camera path — the OpenCV lamp heuristic in `aiglasses/vision.py` — against real, independently labeled road images.
 
 The headline result is not a pass. On single-state red/green frames the path abstained on 57 of 61 frames, and its one wrong call was the worst kind: a red light read as green. The numbers are published in full because a measurement that only appears when it flatters the system is not a measurement.
 
