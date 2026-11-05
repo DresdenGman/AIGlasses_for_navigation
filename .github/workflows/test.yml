@@ -24,3 +24,6 @@ jobs:
       - run: python -m pytest -p no:cacheprovider
       # Generated lamp fixtures only. No weight download. Exit 1 if locked counts move.
       - run: python -m aiglasses.eval --output demo_output/perception_eval.json --csv demo_output/perception_eval.csv
+      # No private clip is in the repo. Exit 0 when data/private_eval/labels.json is absent.
+      # Does not download weights and does not read a recording.
+      - run: python -m aiglasses.eval.recorded

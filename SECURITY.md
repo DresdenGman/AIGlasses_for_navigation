@@ -13,7 +13,7 @@ Python versions under test are those declared by `requires-python` in `pyproject
 Use GitHub private vulnerability reporting on this repository when it is available (Security tab). If it is not available, open an issue that describes impact and affected versions without a step-by-step exploit, and without any of the following:
 
 - API keys, device tokens, or `.env` contents
-- Recordings, photos of participants, location traces, or contact details
+- Recordings, photos of participants, location traces, contact details, or recorded-video eval labels. That command reads local files only; do not attach the clips.
 - Names of community partners or neighborhood contacts
 
 A guidance bug that could be read as permission to move or cross a street is a safety defect. Report it as a bug, with a sanitized observation payload, and do not describe the demo as safe to follow outdoors.

@@ -34,12 +34,21 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Exit 0 even when the locked totals do not match. The default exit is 1 on a mismatch.",
     )
+    parser.epilog = (
+        "Recorded video is a different command and a different labels schema: "
+        "python -m aiglasses.eval recorded"
+    )
     return parser
 
 
 def main(argv: list[str] | None = None) -> int:
+    args_in = list(sys.argv[1:] if argv is None else argv)
+    if args_in and args_in[0] == "recorded":
+        from .recorded import main as recorded_main
+
+        return recorded_main(args_in[1:])
     parser = build_parser()
-    args = parser.parse_args(argv)
+    args = parser.parse_args(args_in)
     print(
         "Research prototype. Not a certified navigation aid. "
         "Synthetic frames only; this command does not measure street performance.",

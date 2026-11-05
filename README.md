@@ -109,7 +109,7 @@ In August–November 2026, an anonymous bilingual survey collected **72 response
 
 Three findings set the project's priorities:
 
-- **Prompt accuracy is the central problem.** 51% of users said prompts were inaccurate or missed important information, and "more accurate prompts" was the single most-chosen improvement (25 of 72 respondents). A synthetic fixture eval now counts false prompts and misses on generated lamps ([EVAL.md](docs/EVAL.md)). Until recorded-video evaluation quantifies perception errors, no stronger field claim is warranted — see the [roadmap](docs/ROADMAP.md).
+- **Prompt accuracy is the central problem.** 51% of users said prompts were inaccurate or missed important information, and "more accurate prompts" was the single most-chosen improvement (25 of 72 respondents). A synthetic fixture eval counts false prompts and misses on generated lamps ([EVAL.md](docs/EVAL.md)). A separate local command can score a consented, redacted clip on one machine ([RECORDED_EVAL.md](docs/RECORDED_EVAL.md)); no such field set is in this repository, so no stronger field claim is warranted — see the [roadmap](docs/ROADMAP.md).
 - **Battery and audio follow.** 38% of users found the battery did not last long enough (one reported under an hour of continuous use), and 30% found the audio or instructions unclear.
 - **Continued use is weak, and it is reported here rather than smoothed over.** Of the 53 users, 9 still use the glasses, 14 use them less than before and 29 have stopped (one further response contradicts itself and is flagged in the full report). The survey's job was to surface exactly this.
 
@@ -230,7 +230,7 @@ The repository provides a working software demonstration and inspectable design 
 |---|---|---|
 | **Software** | Guidance rules, dashboard, REST/WebSocket interfaces, replay, device ingestion, and an optional laptop camera / speech path. | Street-video evaluation, distance sensing, and ESP32 integration. |
 | **Enclosure** | Editable v0.4 geometry, exports, render scenes and source-geometry checks. | Physical scale calibration, measured components, mounting, cable routing, fabrication and fit. |
-| **Evaluation** | Repeatable structured-observation scenarios, repository tests, a synthetic perception eval (false prompts, misses, host latency, and repeat suppression on generated lamps), and a first labeled real-frame traffic-light measurement ([Evaluation](docs/EVALUATION.md)). | Recorded-video perception evaluation with consent and redaction, message comprehension, and physical-prototype testing. |
+| **Evaluation** | Repeatable structured-observation scenarios, repository tests, a synthetic perception eval (false prompts, misses, host latency, and repeat suppression on generated lamps), a first labeled real-frame traffic-light measurement ([Evaluation](docs/EVALUATION.md)), and a local recorded-video command that scores a private clip only after consent and redaction are attested. | Consented field collection, message comprehension, and physical-prototype testing. The recorded-video command does not by itself supply a street result. |
 | **Community** | Outreach across four communities and making instruction in three, reaching nearly 60 people; a completed 72-response participant survey with published raw data. | Continued engagement; accuracy, battery and audio work prioritised from the survey findings. |
 
 [Development roadmap →](docs/ROADMAP.md)
@@ -270,7 +270,10 @@ python -m pip install -r requirements-dev.txt
 python -m pip install -e '.[vision]'
 python -m pytest
 python -m aiglasses.eval
+python -m aiglasses.eval.recorded
 ```
+
+`python -m aiglasses.eval` locks the synthetic lamp counts. `python -m aiglasses.eval.recorded` skips unless `data/private_eval/labels.json` is present on that machine. Neither command is a street test. Consent, redaction, and the private-clip flags are in [RECORDED_EVAL.md](docs/RECORDED_EVAL.md).
 
 `requirements-dev.txt` is the same install as `python -m pip install -e '.[dev]'` (pytest and httpx). It is not required to start the demo. Camera tests also need the `vision` extra shown above. The same pair is `python -m pip install -e '.[dev,vision]'`.
 
@@ -301,7 +304,7 @@ Details, limits, and how to record a short demo clip: [Demo guide →](docs/DEMO
 | Area | Files and documentation |
 |---|---|
 | Project scope | [Overview](docs/PROJECT_OVERVIEW.md) · [Roadmap](docs/ROADMAP.md) |
-| Software | [Architecture](docs/ARCHITECTURE.md) · [Demo](docs/DEMO.md) · [Perception eval](docs/EVAL.md) · [Device gateway](docs/HARDWARE_GATEWAY.md) · [Data boundaries](docs/DATA_BOUNDARIES.md) |
+| Software | [Architecture](docs/ARCHITECTURE.md) · [Demo](docs/DEMO.md) · [Perception eval](docs/EVAL.md) · [Recorded-video eval](docs/RECORDED_EVAL.md) · [Device gateway](docs/HARDWARE_GATEWAY.md) · [Data boundaries](docs/DATA_BOUNDARIES.md) |
 | Design | [v0.4 model and downloads](design/v0.4/README.md) · [Geometry provenance](design/v0.4/PROVENANCE.md) · [Release notes](docs/RELEASE_v0.4.md) |
 | Images | [Render gallery](docs/GALLERY.md) · [Editable presentation scenes](design/v0.4/presentation/README.md) |
 | Community and cost | [Reach, instruction and hardware costs](docs/COMMUNITY_AND_COST.md) |

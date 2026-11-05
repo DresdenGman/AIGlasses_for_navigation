@@ -18,7 +18,7 @@ python -m pytest
 python main.py
 ```
 
-`requirements-dev.txt` installs the package and the `dev` extra (pytest, httpx). `requirements.txt` is the runtime-only install and does not include those tools. The same dev install is `python -m pip install -e '.[dev]'`. Camera tests also need the `vision` extra, which the second command adds. Together they match `python -m pip install -e '.[dev,vision]'`. Those tests use synthetic frames and do not download model weights. `python -m aiglasses.eval` scores the labeled synthetic perception fixtures; see [EVAL.md](EVAL.md). Camera and speech extras are documented in [the demo guide](DEMO.md).
+`requirements-dev.txt` installs the package and the `dev` extra (pytest, httpx). `requirements.txt` is the runtime-only install and does not include those tools. The same dev install is `python -m pip install -e '.[dev]'`. Camera tests also need the `vision` extra, which the second command adds. Together they match `python -m pip install -e '.[dev,vision]'`. Those tests use synthetic frames and do not download model weights. `python -m aiglasses.eval` scores the labeled synthetic perception fixtures; see [EVAL.md](EVAL.md). `python -m aiglasses.eval.recorded` scores a private clip only when local labels attest consent and redaction, and it skips in CI; see [RECORDED_EVAL.md](RECORDED_EVAL.md). Camera and speech extras are documented in [the demo guide](DEMO.md).
 
 Before opening a pull request, ensure the test suite passes and describe any
 change to guidance behavior, privacy boundaries, or hardware integration.
