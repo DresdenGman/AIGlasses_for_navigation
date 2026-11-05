@@ -9,13 +9,13 @@
 [![Stars](https://img.shields.io/github/stars/DresdenGman/AIGlasses_for_navigation)](https://github.com/DresdenGman/AIGlasses_for_navigation/stargazers)
 [![中文](https://img.shields.io/badge/%E4%B8%AD%E6%96%87-6e7781)](docs/README.zh-CN.md)
 
-[Project](#the-project) · [Timeline](#project-timeline) · [Community](#community-first) · [How it works](#how-the-system-works) · [Design](#wearable-design--continuous-facets-v04) · [Run the demo](#run-the-demo) · [中文](docs/README.zh-CN.md)
+[Project](#the-project) · [Timeline](#project-timeline) · [Community](#community-first) · [Feedback](#participant-feedback) · [How it works](#how-the-system-works) · [Design](#wearable-design--continuous-facets-v04) · [Run the demo](#run-the-demo) · [中文](docs/README.zh-CN.md)
 
-An open-source, under-$30 navigation-glasses direction for blind and low-vision people — the current release is a safety-first guidance demo and a printable enclosure study, not a certified aid.
+An open-source, under-$35 navigation-glasses direction for blind and low-vision people — the current release is a safety-first guidance demo and a printable enclosure study, not a certified aid.
 
-[Demo →](#run-the-demo) · [Build →](design/v0.4/README.md) · [Join →](docs/CONTRIBUTING.md)
+[Demo →](#run-the-demo) · [Build →](design/v0.4/README.md) · [Feedback results →](docs/FEEDBACK.md) · [Join →](docs/CONTRIBUTING.md)
 
-**<$30** · **Nearly 60 people** · **4 communities**
+**Under $35 to build** · **Nearly 60 people reached** · **72 feedback responses**
 
 ![Continuous Facets v0.4 — three-quarter studio render](assets/renders/01_hero.png)
 
@@ -46,6 +46,7 @@ Today, this repository contains a runnable guidance demo, an editable v0.4 enclo
 | **December 2025** | First GitHub publication | The [initial repository commit](https://github.com/DresdenGman/AIGlasses_for_navigation/commit/12b121a3) was recorded on December 9, 2025 (UTC). Early documentation described tactile-paving navigation, crosswalk assistance, object search and voice interaction. |
 | **July 29, 2026** | Reproducible software prototype | A hardware-free FastAPI core, interactive dashboard, JSONL replay and in-memory event history were added. An authenticated device-observation gateway, per-device rate limiting, packaging and CI test configuration followed in the same iteration. |
 | **September 18, 2026** | Continuous Facets v0.4 | The lightweight enclosure direction was published with editable Blender files, GLB/STL exports, geometry checks, multiple rendered views and clearer community and cost documentation. |
+| **August–November 2026** | Participant feedback survey | 72 bilingual responses were collected from session participants, people who tried or kept the earlier prototype, and online-guide builders. Results — including the problems and the continued-use figures — are published with the raw data and a reproducible analysis in [Participant feedback](docs/FEEDBACK.md). |
 | **Late 2025–present** | Continuing community engagement | Outreach has reached four communities and nearly 60 blind or visually impaired people; three communities received practical explanations of how to make the device. Technical development and community engagement continue in parallel. |
 
 The early development dates and community history are provided by the project creator. Publication and software milestones are documented in the [commit history](https://github.com/DresdenGman/AIGlasses_for_navigation/commits/main/). The nearly one-year period refers to initial development during 2025; subsequent iteration continues beyond that period.
@@ -65,6 +66,38 @@ The emphasis is on **affordable hardware and knowledge that communities can reta
 These figures describe contact and instruction, rather than devices delivered or daily active users. Independent production volume, long-term use and improvements in mobility have not been quantified. The community work concerns the broader project and earlier prototype; it does not establish deployment of the new v0.4 enclosure.
 
 [More on community work and reporting scope →](docs/COMMUNITY_AND_COST.md)
+
+## Participant feedback
+
+In August–November 2026, an anonymous bilingual survey collected **72 responses** (36 in Chinese, 36 in English) from people who had encountered the project — at assembly sessions, through trying or keeping the earlier prototype, at presentations, or via the online guide. The full results, method and limitations are published in [Participant feedback](docs/FEEDBACK.md), together with the [raw responses](data/feedback/participant-feedback-survey-responses-2026.csv) and a script that recomputes every number.
+
+| **72** | **53** | **3.47 / 5** | **9** |
+|:---:|:---:|:---:|:---:|
+| Survey responses | Had used the glasses at least once | Mean helpfulness among those 53 users | Still using them at survey time |
+
+<table>
+<tr>
+<td><img src="assets/feedback/helpfulness.png" alt="Bar chart of helpfulness ratings from the 53 respondents who had used the glasses: 2 rated 1, 7 rated 2, 16 rated 3, 20 rated 4 and 8 rated 5, a mean of 3.47 out of 5" /></td>
+<td><img src="assets/feedback/problems.png" alt="Bar chart of problems reported by the 53 respondents who had used the glasses: inaccurate prompts 51 percent, battery life 38 percent, connection instability and unclear audio 30 percent each, fit 23 percent, complexity 15 percent, privacy concerns 11 percent, and 19 percent reported no problems" /></td>
+</tr>
+<tr><td align="center">Helpfulness, as rated by users themselves</td><td align="center">Problems, reported on the same survey</td></tr>
+</table>
+
+Three findings set the project's priorities:
+
+- **Prompt accuracy is the central problem.** 51% of users said prompts were inaccurate or missed important information, and "more accurate prompts" was the single most-chosen improvement (25 of 72 respondents). Until recorded-video evaluation quantifies perception errors, no stronger field claim is warranted — see the [roadmap](docs/ROADMAP.md).
+- **Battery and audio follow.** 38% of users found the battery did not last long enough (one reported under an hour of continuous use), and 30% found the audio or instructions unclear.
+- **Continued use is weak, and it is reported here rather than smoothed over.** Of the 53 users, 9 still use the glasses, 14 use them less than before and 29 have stopped (one further response contradicts itself and is flagged in the full report). The survey's job was to surface exactly this.
+
+> "Reading medicine labels and bus stop signs for me."
+> — Survey respondent who kept a pair, rated the glasses 5/5, still using (quoted with permission; 57 of 72 respondents agreed to anonymous quotation)
+
+> "在楼道里走路能提前报前面堆着的纸箱，摸着确实在那，免得踢到绊脚。"
+> — *"Walking along the corridor, it told me about the stacked boxes ahead in time — I felt them, and they were there — so I did not trip over them."* — Respondent who kept a pair, rated 5/5, still using
+
+The survey covers the broader project and the earlier prototype, not the v0.4 enclosure. It was run by the project itself with a self-selected sample, and 40 of the 72 responses were not filled in on the form directly by the respondent — 25 were entered by a family member or volunteer, 12 were recorded by an organiser, and 3 were completed another way. The [full report](docs/FEEDBACK.md#limitations-of-this-data) explains what that means for reading the numbers.
+
+[Full results, method and limitations →](docs/FEEDBACK.md) · [Raw data →](data/feedback/) · [Reproduce the analysis →](data/feedback/analyze_feedback.py)
 
 ## What the glasses are intended to help with
 
@@ -158,7 +191,7 @@ Reducing hardware cost is central to the project, alongside sharing the knowledg
 | Build context | Hardware-only cost | Basis |
 |---|---|---|
 | **Earlier prototype built in China** | **Under US$20 per unit** | The creator's reported cost for the earlier build. |
-| **Estimated US build** | **Under US$30 per unit** | The creator's estimate; not yet verified against a supplier quotation. |
+| **Estimated US build** | **Under US$35 per unit** | The creator's estimate; not yet verified against a supplier quotation. |
 | **New v0.4 enclosure** | **Not separately costed** | Digital design awaiting fabrication and assembly validation. |
 
 These amounts exclude a phone or computer, cloud services, tools, labor and other non-hardware expenses. The earlier prototype's cost is not a verified cost for manufacturing v0.4. A fully itemized bill of materials, including sourcing, shipping, taxes and enclosure fabrication, is not yet available. [Cost details →](docs/COMMUNITY_AND_COST.md#hardware-cost)
@@ -172,7 +205,7 @@ The repository provides a working software demonstration and inspectable design 
 | **Software** | Guidance rules, dashboard, REST/WebSocket interfaces, replay and device ingestion. | Live camera/perception adapters and audio output. |
 | **Enclosure** | Editable v0.4 geometry, exports, render scenes and source-geometry checks. | Physical scale calibration, measured components, mounting, cable routing, fabrication and fit. |
 | **Evaluation** | Repeatable structured-observation scenarios and repository tests. | Video-based perception evaluation, latency and error measurements, message comprehension and physical-prototype testing. |
-| **Community** | Outreach across four communities and making instruction in three, reaching nearly 60 people. | Continued engagement and documentation of longer-term participation, independent making and use. |
+| **Community** | Outreach across four communities and making instruction in three, reaching nearly 60 people; a completed 72-response participant survey with published raw data. | Continued engagement; accuracy, battery and audio work prioritised from the survey findings. |
 
 [Development roadmap →](docs/ROADMAP.md)
 
@@ -223,6 +256,7 @@ The current entry point is `main.py`, with implementation under `aiglasses/`. Ea
 | Design | [v0.4 model and downloads](design/v0.4/README.md) · [Geometry provenance](design/v0.4/PROVENANCE.md) · [Release notes](docs/RELEASE_v0.4.md) |
 | Images | [Render gallery](docs/GALLERY.md) · [Editable presentation scenes](design/v0.4/presentation/README.md) |
 | Community and cost | [Reach, instruction and hardware costs](docs/COMMUNITY_AND_COST.md) |
+| Participant feedback | [Results, method and limitations](docs/FEEDBACK.md) · [Raw responses and analysis](data/feedback/) |
 | Contributions | [Contributor guide](docs/CONTRIBUTING.md) · [Issues](https://github.com/DresdenGman/AIGlasses_for_navigation/issues) |
 | 中文 | [中文项目介绍](docs/README.zh-CN.md) |
 
