@@ -198,3 +198,5 @@ Read these results with the following in mind:
 | [summary.json](../data/feedback/summary.json) | Every count published on this page |
 | [analyze_feedback.py](../data/feedback/analyze_feedback.py) | Standard-library script that merges the bilingual columns and regenerates the summary |
 | [make_charts.py](../data/feedback/make_charts.py) | Chart script (matplotlib) that renders the four charts from `summary.json` |
+
+Individual moments behind these numbers: [Outcome cases](OUTCOME_CASES.md) — seven cases from consenting respondents, each published with the friction the same respondent reported.

@@ -123,6 +123,7 @@ Three findings set the project's priorities:
 The survey covers the broader project and the earlier prototype, not the v0.4 enclosure. It was run by the project itself with a self-selected sample, and 51 of the 85 responses were not filled in on the form directly by the respondent — 34 were entered by a family member or volunteer, 14 were recorded by an organiser, and 3 were completed another way. The [full report](docs/FEEDBACK.md#limitations-of-this-data) explains what that means for reading the numbers.
 
 [Full results, method and limitations →](docs/FEEDBACK.md) · [Raw data →](data/feedback/) · [Reproduce the analysis →](data/feedback/analyze_feedback.py)
+Individual moments behind the numbers: [Outcome cases](docs/OUTCOME_CASES.md) — seven cases from consenting respondents, each with the friction the same respondent reported.
 
 ## What the glasses are intended to help with
 
