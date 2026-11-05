@@ -38,5 +38,8 @@ audio = [
 [tool.setuptools.packages.find]
 include = ["aiglasses*"]
 
+[tool.setuptools.package-data]
+"aiglasses.eval" = ["fixtures/*.json"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]

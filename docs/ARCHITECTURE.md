@@ -44,6 +44,9 @@ Laptop webcam, video, or still image
   opt-ins.
 - `aiglasses.live`: command-line runner for `--synthetic`, a webcam index, a
   video file, or a still image.
+- `aiglasses.eval`: scores generated, labeled frames through that adapter and
+  `GuidanceEngine`. See [EVAL.md](EVAL.md). It does not add a second set of
+  guidance rules and it does not measure street video.
 - `aiglasses.replay`: reads versioned JSONL demo observations for repeatable
   demonstrations.
 - `aiglasses.telemetry`: process-local metadata history. It stores no raw

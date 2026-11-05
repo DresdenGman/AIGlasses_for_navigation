@@ -1,0 +1,175 @@
+{
+  "schema": "aiglasses.perception_eval.labels",
+  "schema_version": 1,
+  "fixture_id": "perception_v1",
+  "detector": "heuristic",
+  "min_confidence": 0.70,
+  "cooldown_seconds": 3.0,
+  "description": "Generated lamp and object-absence frames. No recorded video, no people, no bystanders. Frames are drawn at runtime from generate recipes; this file is the ground truth.",
+  "expected_summary": {
+    "clips": 11,
+    "frames": 14,
+    "guidance_false_positives": 0,
+    "guidance_misses": 0,
+    "guidance_true_positives": 5,
+    "guidance_true_negatives": 9,
+    "suppressed_repeats": 1,
+    "suppression_failures": 0,
+    "actionable_messages": 5,
+    "other_non_actionable": 8,
+    "perception_false_positives": 0,
+    "perception_misses": 0,
+    "perception_matches": 9,
+    "perception_true_negatives": 4,
+    "perception_weak_spurious": 1,
+    "separation_aligned": 9,
+    "separation_rule_withheld": 4,
+    "separation_rule_blocked_weak": 1,
+    "separation_perception_error": 0,
+    "separation_guidance_rule_error": 0,
+    "separation_both": 0
+  },
+  "clips": [
+    {
+      "id": "red-lamp-center",
+      "description": "One saturated red disc. The heuristic should see a red lamp and the engine should give the actionable stop prompt.",
+      "frames": [
+        {
+          "t_seconds": 0.0,
+          "generate": {"kind": "lamp", "color_bgr": [0, 0, 220], "radius": 36},
+          "expect": {"category": "traffic_light", "traffic_light_state": "red", "actionable": true}
+        }
+      ]
+    },
+    {
+      "id": "red-lamp-offset",
+      "description": "The same red disc away from the center. Position is not a distance and must not change the prompt.",
+      "frames": [
+        {
+          "t_seconds": 0.0,
+          "generate": {"kind": "lamp", "color_bgr": [0, 0, 220], "radius": 36, "center": [70, 70]},
+          "expect": {"category": "traffic_light", "traffic_light_state": "red", "actionable": true}
+        }
+      ]
+    },
+    {
+      "id": "green-lamp",
+      "description": "A clear green disc. Perception should match green. Guidance stays non-actionable by rule, which is not a miss.",
+      "frames": [
+        {
+          "t_seconds": 0.0,
+          "generate": {"kind": "lamp", "color_bgr": [0, 200, 0], "radius": 36},
+          "expect": {"category": "traffic_light", "traffic_light_state": "green", "actionable": false}
+        }
+      ]
+    },
+    {
+      "id": "yellow-disc",
+      "description": "A yellow disc is not a red or green lamp. Expect no observation and no prompt.",
+      "frames": [
+        {
+          "t_seconds": 0.0,
+          "generate": {"kind": "lamp", "color_bgr": [0, 220, 220], "radius": 36},
+          "expect": {"category": null, "traffic_light_state": null, "actionable": false}
+        }
+      ]
+    },
+    {
+      "id": "red-speck",
+      "description": "A two-pixel-scale red dot is below the lamp area gate. Expect no observation.",
+      "frames": [
+        {
+          "t_seconds": 0.0,
+          "generate": {"kind": "lamp", "color_bgr": [0, 0, 220], "radius": 2},
+          "expect": {"category": null, "traffic_light_state": null, "actionable": false}
+        }
+      ]
+    },
+    {
+      "id": "red-square",
+      "description": "A red square is not a round lamp. A weak score may appear. It must stay below 0.70 and must not become a stop prompt.",
+      "frames": [
+        {
+          "t_seconds": 0.0,
+          "generate": {"kind": "red_square"},
+          "expect": {"category": null, "traffic_light_state": null, "actionable": false}
+        }
+      ]
+    },
+    {
+      "id": "conflicting-lamps",
+      "description": "A strong red disc and a strong green disc in one frame. Expect traffic_light/unknown and no actionable prompt.",
+      "frames": [
+        {
+          "t_seconds": 0.0,
+          "generate": {"kind": "conflicting_lamps"},
+          "expect": {"category": "traffic_light", "traffic_light_state": "unknown", "actionable": false}
+        }
+      ]
+    },
+    {
+      "id": "blank-field",
+      "description": "Empty black frame. Object absence: no lamp and no allowlisted object. The heuristic must not invent either.",
+      "frames": [
+        {
+          "t_seconds": 0.0,
+          "generate": {"kind": "blank"},
+          "expect": {"category": null, "traffic_light_state": null, "actionable": false}
+        }
+      ]
+    },
+    {
+      "id": "gray-column",
+      "description": "A vertical gray bar. YOLOX is not run. The heuristic must not invent an obstacle, a person, or a lamp.",
+      "frames": [
+        {
+          "t_seconds": 0.0,
+          "generate": {"kind": "column", "color_bgr": [80, 80, 80]},
+          "expect": {"category": null, "traffic_light_state": null, "actionable": false}
+        }
+      ]
+    },
+    {
+      "id": "red-repeat-cooldown",
+      "description": "Three red lamps on one clip clock. t=1.0 is inside the 3.0 s cooldown and must be suppressed. t=3.0 is the first instant the same prompt may speak again (the engine uses a strict less-than).",
+      "frames": [
+        {
+          "t_seconds": 0.0,
+          "generate": {"kind": "lamp", "color_bgr": [0, 0, 220], "radius": 36},
+          "expect": {"category": "traffic_light", "traffic_light_state": "red", "actionable": true}
+        },
+        {
+          "t_seconds": 1.0,
+          "generate": {"kind": "lamp", "color_bgr": [0, 0, 220], "radius": 36},
+          "expect": {
+            "category": "traffic_light",
+            "traffic_light_state": "red",
+            "actionable": false,
+            "repeat_suppressed": true
+          }
+        },
+        {
+          "t_seconds": 3.0,
+          "generate": {"kind": "lamp", "color_bgr": [0, 0, 220], "radius": 36},
+          "expect": {"category": "traffic_light", "traffic_light_state": "red", "actionable": true}
+        }
+      ]
+    },
+    {
+      "id": "green-then-red",
+      "description": "A green lamp then a red lamp one second later. The green cooldown key must not suppress the red prompt.",
+      "frames": [
+        {
+          "t_seconds": 0.0,
+          "generate": {"kind": "lamp", "color_bgr": [0, 200, 0], "radius": 36},
+          "expect": {"category": "traffic_light", "traffic_light_state": "green", "actionable": false}
+        },
+        {
+          "t_seconds": 1.0,
+          "generate": {"kind": "lamp", "color_bgr": [0, 0, 220], "radius": 36},
+          "expect": {"category": "traffic_light", "traffic_light_state": "red", "actionable": true}
+        }
+      ]
+    }
+  ]
+}

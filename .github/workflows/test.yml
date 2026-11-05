@@ -22,3 +22,5 @@ jobs:
       # Installation verifies the distributable package; `python -m` keeps
       # the invocation consistent with local development.
       - run: python -m pytest -p no:cacheprovider
+      # Generated lamp fixtures only. No weight download. Exit 1 if locked counts move.
+      - run: python -m aiglasses.eval --output demo_output/perception_eval.json --csv demo_output/perception_eval.csv
