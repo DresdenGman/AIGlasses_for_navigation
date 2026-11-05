@@ -17,10 +17,20 @@ class Settings:
     dashscope_api_key: str | None = None
     device_ingest_token: str | None = None
     device_max_requests_per_minute: int = 120
+    tts: str = "none"
+    vision_detector: str = "heuristic"
+    vision_weights: str | None = None
 
     @property
     def cloud_voice_enabled(self) -> bool:
         return bool(self.dashscope_api_key)
+
+
+def _choice(name: str, value: str, allowed: set[str]) -> str:
+    if value not in allowed:
+        choices = ", ".join(sorted(allowed))
+        raise ValueError(f"{name} must be one of: {choices}")
+    return value
 
 
 def load_settings() -> Settings:
@@ -29,6 +39,10 @@ def load_settings() -> Settings:
     mode = os.getenv("AIGLASSES_MODE", "demo").strip().lower()
     if mode not in {"demo", "hardware"}:
         raise ValueError("AIGLASSES_MODE must be 'demo' or 'hardware'")
+    tts = os.getenv("AIGLASSES_TTS", "none").strip().lower()
+    if tts in {"", "off", "text"}:
+        tts = "none"
+    vision = os.getenv("AIGLASSES_VISION", "heuristic").strip().lower() or "heuristic"
     return Settings(
         mode=mode,
         host=os.getenv("AIGLASSES_HOST", "127.0.0.1"),
@@ -36,4 +50,7 @@ def load_settings() -> Settings:
         dashscope_api_key=os.getenv("DASHSCOPE_API_KEY") or None,
         device_ingest_token=os.getenv("DEVICE_INGEST_TOKEN") or None,
         device_max_requests_per_minute=int(os.getenv("DEVICE_MAX_REQUESTS_PER_MINUTE", "120")),
+        tts=_choice("AIGLASSES_TTS", tts, {"none", "edge", "pyttsx3"}),
+        vision_detector=_choice("AIGLASSES_VISION", vision, {"heuristic", "yolox", "auto"}),
+        vision_weights=os.getenv("AIGLASSES_WEIGHTS") or None,
     )

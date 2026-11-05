@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "ai-glasses-navigation-prototype"
 # Runnable software prototype. Not the enclosure label (design v0.4).
 version = "0.1.0"
-description = "A hardware-free, safety-conscious AI glasses navigation prototype"
+description = "A safety-conscious AI glasses navigation prototype with a hardware-free demo and an optional laptop camera path"
 readme = "README.md"
 requires-python = ">=3.10"
 classifiers = [
@@ -25,6 +25,14 @@ dependencies = [
 dev = [
     "httpx>=0.27,<1.0",
     "pytest>=8.0,<9.0",
+]
+vision = [
+    "numpy>=1.26,<3",
+    "opencv-python-headless>=4.9,<5",
+]
+audio = [
+    "edge-tts>=6.1,<8",
+    "pyttsx3>=2.90,<3",
 ]
 
 [tool.setuptools.packages.find]

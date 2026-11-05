@@ -2,6 +2,8 @@
 
 Cameras, ESP32 devices and perception adapters send standardized observations to the service. `GuidanceEngine` handles guidance decisions; the gateway does not directly control speech or navigation.
 
+The laptop webcam and video path does not use this gateway and does not require `AIGLASSES_MODE=hardware`. See [the demo guide](DEMO.md).
+
 ## Configuration
 
 Set the following in the server's `.env` for a controlled development network:

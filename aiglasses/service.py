@@ -2,15 +2,20 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from fastapi import FastAPI, Header, HTTPException, Query, WebSocket, WebSocketDisconnect
+from fastapi import FastAPI, Header, HTTPException, Query, Request, WebSocket, WebSocketDisconnect
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 from .config import Settings
 from .guidance import GuidanceEngine, Observation
+from .pipeline import analyze_frame, observation_to_dict
 from .telemetry import EventLog
 from .ratelimit import SlidingWindowRateLimiter
+from .vision import VisionDependencyError, default_weights_path, opencv_available
+
+MAX_FRAME_BYTES = 5_000_000
+FRAME_TYPES = {"image/jpeg", "image/png", "image/webp", "application/octet-stream"}
 
 
 class ObservationPayload(BaseModel):
@@ -35,11 +40,17 @@ def create_app(settings: Settings) -> FastAPI:
 
     @app.get("/api/health")
     def health() -> dict:
+        weights = Path(settings.vision_weights) if settings.vision_weights else default_weights_path()
         return {
             "status": "ok",
             "mode": settings.mode,
             "cloud_voice_enabled": settings.cloud_voice_enabled,
             "hardware_required": settings.mode == "hardware",
+            "vision_backend": "opencv" if opencv_available() else "unavailable",
+            "vision_detector": settings.vision_detector,
+            "vision_weights_present": weights.is_file(),
+            "tts": settings.tts,
+            "certified_navigation_aid": False,
         }
 
     @app.get("/api/demo/scenarios")
@@ -49,6 +60,39 @@ def create_app(settings: Settings) -> FastAPI:
             {"kind": "obstacle", "confidence": 0.89, "distance_m": 1.1, "label": "路障"},
             {"kind": "crosswalk", "confidence": 0.85},
         ]
+
+    @app.post("/api/vision/frame")
+    async def vision_frame(request: Request) -> dict:
+        content_type = request.headers.get("content-type", "").split(";", 1)[0].strip().lower()
+        if content_type not in FRAME_TYPES:
+            raise HTTPException(status_code=415, detail="Send one image/jpeg or image/png frame")
+        payload = await request.body()
+        if not payload:
+            raise HTTPException(status_code=400, detail="Empty frame")
+        if len(payload) > MAX_FRAME_BYTES:
+            raise HTTPException(status_code=413, detail="Frame exceeds 5 MB")
+        try:
+            result = analyze_frame(
+                payload,
+                engine,
+                detector=settings.vision_detector,
+                weights=settings.vision_weights,
+            )
+        except VisionDependencyError as error:
+            raise HTTPException(status_code=503, detail=str(error)) from error
+        except ValueError as error:
+            raise HTTPException(status_code=400, detail=str(error)) from error
+        event = None
+        if result.observation is not None:
+            event = events.record(result.observation, result.guidance).__dict__
+        return {
+            "level": result.guidance.level,
+            "message": result.guidance.message,
+            "actionable": result.guidance.actionable,
+            "observations": [observation_to_dict(item) for item in result.observations],
+            "event": event,
+            "notice": "研究原型，不是经过认证的导航辅助。低置信度不会变成行动指令。",
+        }
 
     @app.post("/api/observations")
     def observe(payload: ObservationPayload) -> dict:

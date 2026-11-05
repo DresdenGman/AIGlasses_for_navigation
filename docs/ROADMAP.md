@@ -4,6 +4,8 @@
 
 - Hardware-free FastAPI demo service.
 - Guidance rules for traffic lights, nearby obstacles, crosswalks, low confidence and repeated-message suppression.
+- Optional laptop webcam, video, and still-image input through an OpenCV lamp heuristic, plus an optional downloaded YOLOX file for a short object allowlist. This path does not measure distance.
+- Optional spoken playback of guidance text (`edge-tts` or `pyttsx3`) and a browser-speech checkbox on the demo page.
 - Environment-based configuration and credential separation.
 - Authenticated device-observation endpoint for controlled development networks.
 - Editable v0.4 enclosure, source-assembly reference and Blender renders.
@@ -11,9 +13,8 @@
 
 ## Integration work
 
-- Live camera and detection adapters.
 - Recorded-video evaluation of latency, false positives, missed detections and message frequency.
-- ESP32 capture, audio output and IMU integration behind adapter interfaces.
+- ESP32 capture, wearable audio, and IMU integration behind the same observation contracts.
 
 ## Validation work
 

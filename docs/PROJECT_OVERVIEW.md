@@ -6,7 +6,7 @@ AI Glasses for Navigation combines a wearable hardware experiment, a software gu
 
 **Wearable design.** A camera-bearing, lensless wraparound frame provides a housing concept for electronics. The latest design is v0.4, Continuous Facets: a straighter brow, clipped corners and broad planar temple surfaces. The original source assembly remains available as a reference. The new shell is an editable Blender mesh and a geometric enclosure study; it has not passed physical assembly or mobility testing.
 
-**Software.** The runnable package is version **0.1.0** (`pyproject.toml`). That number is not the enclosure label. The repository implements a hardware-free FastAPI service. Structured observations are validated and passed through deterministic guidance rules for traffic lights, nearby obstacles and crosswalks. Low-confidence observations produce uncertainty messages; repeated prompts are throttled. The browser dashboard, API and replay command use the same guidance implementation. An optional authenticated, rate-limited device endpoint accepts observations in controlled development environments.
+**Software.** The runnable package is version **0.1.0** (`pyproject.toml`). That number is not the enclosure label. The repository implements a FastAPI service whose default demo is hardware-free. Structured observations are validated and passed through deterministic guidance rules for traffic lights, nearby obstacles and crosswalks. Low-confidence observations produce uncertainty messages; repeated prompts are throttled. The browser dashboard, API and replay command use the same guidance implementation. An optional laptop camera, video, or still-image adapter can produce those observations locally, and optional speech can read the resulting text. An optional authenticated, rate-limited device endpoint accepts observations in controlled development environments. None of this is a certified navigation aid.
 
 **Community work.** The creator reports contact with four communities and nearly 60 blind or visually impaired people, plus making instruction in three communities intended to support continuation without ongoing personal funding or material donations. See [scope and cost](COMMUNITY_AND_COST.md) for precise definitions.
 
@@ -15,7 +15,9 @@ AI Glasses for Navigation combines a wearable hardware experiment, a software gu
 | Layer | Available here | Boundary |
 |---|---|---|
 | Guidance rules | Red/green/unknown light, obstacle and crosswalk handling | Rule outputs do not establish perception accuracy or safe crossing |
-| Demo | Browser dashboard, REST API, WebSocket and JSONL replay | Demo observations are structured inputs, not live camera inference |
+| Demo | Browser dashboard, REST API, WebSocket and JSONL replay | Scenario buttons use structured inputs. The camera trial is a separate, optional path |
+| Local perception | Optional webcam, video, or still image via an OpenCV lamp heuristic, with an optional YOLOX file | No measured distance, no crosswalk recognizer, no street-performance claim |
+| Local speech | Optional `edge-tts`, `pyttsx3`, or browser speech for the guidance sentence | Not a conversation, and not a wearable audio system |
 | Device gateway | Token authentication and per-device rate limit | Does not by itself connect a camera, ESP32 or speech system |
 | 3D design | v0.4 Blender assembly, shell exports, render cameras, rebuild script | Physical scale, exact electronic parts, fastening and print tolerances remain unverified |
 | Earlier exploration | Prior documentation described YOLO/YOLO-E, ESP32, voice and IMU concepts | Those descriptions must not be read as fully integrated capabilities of this runnable release |
@@ -32,13 +34,16 @@ Those materials explain the broader motivation and integration direction. They d
 flowchart LR
     A[Demo or replay observations] --> C[Validate observation]
     B[Authenticated device observations] --> C
+    W[Optional webcam, video, or still] --> P[Local vision adapter]
+    P --> C
     C --> D[Guidance rules]
     D --> E[Confidence and repetition handling]
-    E --> F[Dashboard / API / WebSocket]
+    E --> F[Dashboard / API / WebSocket / CLI text]
+    E --> S[Optional speech]
     E --> G[Process-local metadata history]
 ```
 
-A future vision adapter translates frames into observations. A future audio adapter can speak resulting messages. The adapter architecture separates sensor processing from decision rules for reproducible scenario replay.
+The local vision adapter translates frames into observations. Speech, when enabled, reads the engine's sentence and does not invent a new one. ESP32 capture is still a separate integration. The adapter boundary keeps scenario replay independent of cameras and weight files.
 
 ## Attribution and provenance
 
