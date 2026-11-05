@@ -32,6 +32,8 @@ Demo scenarios / replay JSONL / protected device gateway
 
 ## Runtime modes
 
+The package requires Python 3.10 or newer (`requires-python` in `pyproject.toml`). That is the version CI tests (3.10, 3.11, and 3.12).
+
 `AIGLASSES_MODE=demo` is the default and needs no camera, ESP32, model file,
 or cloud key. `AIGLASSES_MODE=hardware` enables the authenticated observation
 gateway, but it does not by itself connect any hardware or certify guidance for
