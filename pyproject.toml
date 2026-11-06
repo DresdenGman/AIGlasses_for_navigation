@@ -28,7 +28,7 @@ dev = [
 ]
 vision = [
     "numpy>=1.26,<3",
-    "opencv-python-headless>=4.9,<5",
+    "opencv-python-headless>=4.9,<6",
 ]
 audio = [
     "edge-tts>=6.1,<8",
