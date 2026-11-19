@@ -11,7 +11,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23977544.svg)](https://doi.org/10.5281/zenodo.23977544)
 [![中文](https://img.shields.io/badge/%E4%B8%AD%E6%96%87-6e7781?style=flat-square)](docs/README.zh-CN.md)
 
-[Project](#the-project) · [Timeline](#project-timeline) · [Community](#community-first) · [Feedback](#participant-feedback) · [How it works](#how-the-system-works) · [Design](#wearable-design--continuous-facets-v04) · [Run the demo](#run-the-demo) · [中文](docs/README.zh-CN.md)
+[Project](#the-project) · [Timeline](#project-timeline) · [Community](#worn-concept-study) · [Feedback](#participant-feedback) · [How it works](#how-the-system-works) · [Design](#wearable-design--continuous-facets-v04) · [Run the demo](#run-the-demo) · [中文](docs/README.zh-CN.md)
 
 An open-source, under-$35 navigation-glasses direction for blind and low-vision people — the current release is a safety-first guidance demo and a printable enclosure study, not a certified aid.
 
@@ -69,20 +69,6 @@ Today, this repository contains a runnable guidance demo, an optional laptop web
 | **Late 2025–present** | Continuing community engagement | Outreach has reached four communities and nearly 60 blind or visually impaired people; three communities received practical explanations of how to make the device. Technical development and community engagement continue in parallel. |
 
 The early development dates and community history are provided by the project creator. Publication and software milestones are documented in the [commit history](https://github.com/DresdenGman/AIGlasses_for_navigation/commits/main/). The nearly one-year period refers to initial development during 2025; subsequent iteration continues beyond that period.
-
-## Community first
-
-| **4 communities** | **Nearly 60 people** | **3 communities** |
-|:---:|:---:|:---:|
-| Engaged through outreach | Blind or visually impaired people reached | Received practical making instruction |
-
-Beginning in late 2025, the project expanded from building the device to sharing it through community engagement. The project creator reports reaching nearly 60 blind or visually impaired people across four communities and providing explanations of how to make the device in three communities.
-
-The emphasis is on **affordable hardware and knowledge that communities can retain**. Making instruction is intended to help local participants continue without relying on the creator for ongoing funding or material donations. Community engagement remains an ongoing part of the project as its reach develops.
-
-These figures describe contact and instruction, rather than devices delivered or daily active users. Independent production volume, long-term use and improvements in mobility have not been quantified. The community work concerns the broader project and earlier prototype; it does not establish deployment of the new v0.4 enclosure.
-
-[More on community work and reporting scope →](docs/COMMUNITY_AND_COST.md)
 
 ## Participant feedback
 
@@ -223,6 +209,18 @@ Geometry checks cover shell topology, surface intersections and containment agai
 </table>
 
 *Concept renders exploring how a future one-piece enclosure could look when worn. These are generated design-study images, not photographs: the person shown is not a project participant, and the current hardware remains the 3D-printed v0.4 enclosure documented above.*
+
+| **4 communities** | **Nearly 60 people** | **3 communities** |
+|:---:|:---:|:---:|
+| Engaged through outreach | Blind or visually impaired people reached | Received practical making instruction |
+
+Beginning in late 2025, the project expanded from building the device to sharing it through community engagement. The project creator reports reaching nearly 60 blind or visually impaired people across four communities and providing explanations of how to make the device in three communities.
+
+The emphasis is on **affordable hardware and knowledge that communities can retain**. Making instruction is intended to help local participants continue without relying on the creator for ongoing funding or material donations. Community engagement remains an ongoing part of the project as its reach develops.
+
+These figures describe contact and instruction, rather than devices delivered or daily active users. Independent production volume, long-term use and improvements in mobility have not been quantified. The community work concerns the broader project and earlier prototype; it does not establish deployment of the new v0.4 enclosure.
+
+[More on community work and reporting scope →](docs/COMMUNITY_AND_COST.md)
 
 ## Affordability by design
 
