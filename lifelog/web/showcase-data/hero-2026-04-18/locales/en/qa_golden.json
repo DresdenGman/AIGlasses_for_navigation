@@ -1,0 +1,307 @@
+[
+  {
+    "id": "qa_01",
+    "question": "What did I eat for breakfast?",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "cap_01JRQ4H8ZE0000000000000002",
+      "cap_01JRQ4H8ZE0000000000000003"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "oatmeal"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_02",
+    "question": "Which tram line did I take this morning?",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "cap_01JRQ4H8ZE0000000000000019"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "4"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_03",
+    "question": "Where did I put the screws?",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "det_01JRQ4H8ZE0000000000000028",
+      "det_01JRQ4H8ZE0000000000000026",
+      "det_01JRQ4H8ZE0000000000000024",
+      "utt_01JRQ4H8ZE0000000000000131"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "red toolbox"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_04",
+    "question": "When will the replacement switch arrive?",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "utt_01JRQ4H8ZE0000000000000118"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "Tuesday"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_05",
+    "question": "What was wrong with my desk lamp?",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "utt_01JRQ4H8ZE0000000000000036",
+      "utt_01JRQ4H8ZE0000000000000021"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "switch"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_06",
+    "question": "How will I get the tracking number for the switch?",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "utt_01JRQ4H8ZE0000000000000118"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "text"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_07",
+    "question": "Where is my desk lamp now?",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "utt_01JRQ4H8ZE0000000000000141",
+      "det_01JRQ4H8ZE0000000000000030",
+      "cap_01JRQ4H8ZE0000000000000104"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "shelf"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_08",
+    "question": "What did I buy at the bakery?",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "utt_01JRQ4H8ZE0000000000000153"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "rye"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_09",
+    "question": "When can I pick up the repair manual at the library?",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "utt_01JRQ4H8ZE0000000000000163"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "Tuesday"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_10",
+    "question": "What tool did we use to test the lamp cord?",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "utt_01JRQ4H8ZE0000000000000042",
+      "utt_01JRQ4H8ZE0000000000000057",
+      "det_01JRQ4H8ZE0000000000000014",
+      "det_01JRQ4H8ZE0000000000000016"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "multimeter"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_11",
+    "question": "Where was my umbrella last seen?",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "det_01JRQ4H8ZE0000000000000038",
+      "cap_01JRQ4H8ZE0000000000000141"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "door"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_12",
+    "question": "What did the volunteer say the knot inside the lamp base is for?",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "utt_01JRQ4H8ZE0000000000000067"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "cord"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_13",
+    "question": "What did I note to do on Tuesday?",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "utt_01JRQ4H8ZE0000000000000201"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "library"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_14",
+    "question": "What was the name on the bakery sign?",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "cap_01JRQ4H8ZE0000000000000110"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "Quill"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_15",
+    "question": "What did the bakery cashier recommend?",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "utt_01JRQ4H8ZE0000000000000150"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "cinnamon"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_16",
+    "question": "How many screws held the lamp base?",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "utt_01JRQ4H8ZE0000000000000026"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "four"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_17",
+    "question": "Where are my keys?",
+    "expected_status": "uncertain",
+    "must_cite_any": [
+      "det_01JRQ4H8ZE0000000000000041",
+      "det_01JRQ4H8ZE0000000000000040",
+      "det_01JRQ4H8ZE0000000000000008",
+      "det_01JRQ4H8ZE0000000000000007",
+      "utt_01JRQ4H8ZE0000000000000011",
+      "utt_01JRQ4H8ZE0000000000000209"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [],
+    "trap": "object_uncertain"
+  },
+  {
+    "id": "qa_18",
+    "question": "What was I muttering to myself on the tram this morning?",
+    "expected_status": "uncertain",
+    "must_cite_any": [
+      "utt_01JRQ4H8ZE0000000000000013",
+      "utt_01JRQ4H8ZE0000000000000014"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [],
+    "trap": "low_confidence"
+  },
+  {
+    "id": "qa_19",
+    "question": "What did the bakery cashier say about my passport?",
+    "expected_status": "not_found",
+    "must_cite_any": [],
+    "must_not_cite": [],
+    "answer_keywords": [],
+    "trap": "no_evidence"
+  },
+  {
+    "id": "qa_20",
+    "question": "Did anyone talk about fixing a bicycle today?",
+    "expected_status": "not_found",
+    "must_cite_any": [],
+    "must_not_cite": [],
+    "answer_keywords": [],
+    "trap": "no_evidence"
+  },
+  {
+    "id": "qa_21",
+    "question": "Who did I have lunch with?",
+    "expected_status": "not_found",
+    "must_cite_any": [],
+    "must_not_cite": [],
+    "answer_keywords": [],
+    "trap": "paused_window"
+  },
+  {
+    "id": "qa_22",
+    "question": "What was happening around 12:45?",
+    "expected_status": "not_found",
+    "must_cite_any": [],
+    "must_not_cite": [],
+    "answer_keywords": [],
+    "trap": "paused_window"
+  },
+  {
+    "id": "qa_23",
+    "question": "What was I doing at 10 pm?",
+    "expected_status": "not_found",
+    "must_cite_any": [],
+    "must_not_cite": [],
+    "answer_keywords": [],
+    "trap": "out_of_window"
+  },
+  {
+    "id": "qa_24",
+    "question": "What did she say would be ready on Tuesday?",
+    "expected_status": "uncertain",
+    "must_cite_any": [
+      "utt_01JRQ4H8ZE0000000000000118",
+      "utt_01JRQ4H8ZE0000000000000163",
+      "utt_01JRQ4H8ZE0000000000000141"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [],
+    "trap": "ambiguous_speaker"
+  }
+]

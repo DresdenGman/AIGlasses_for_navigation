@@ -1,0 +1,367 @@
+{
+  "schema": "aiglasses.lifelog.showcase.answers",
+  "version": 1,
+  "day": "2026-04-18",
+  "locale": "zh-CN",
+  "note": "Static answers until the golden-question set is filled by the citation pipeline. Sentences quote cited records only.",
+  "items": [
+    {
+      "id": "qa_01",
+      "question": "我今天早餐吃了什么？",
+      "status": "answered",
+      "reason": null,
+      "sentences": [
+        {
+          "text": "画面靠近那碗加了香蕉片的燕麦粥，勺子悬在碗上方，旁边的笔记本还翻在接线草图那一页。",
+          "evidence": [
+            "cap_01JRQ4H8ZE0000000000000002"
+          ]
+        },
+        {
+          "text": "一个陶瓷杯清晰出现在碗边，碗里的燕麦粥已吃了一半，杯子后面摊着那本画有台灯接线草图的笔记本。",
+          "evidence": [
+            "cap_01JRQ4H8ZE0000000000000003"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qa_02",
+      "question": "我今天早上坐的是几路电车？",
+      "status": "answered",
+      "reason": null,
+      "sentences": [
+        {
+          "text": "一张电车票放在腿上的帆布袋旁边，上方显示屏显示“Line 4 · Fernhollow”。",
+          "evidence": [
+            "cap_01JRQ4H8ZE0000000000000019"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qa_03",
+      "question": "我螺丝放哪了？",
+      "status": "answered",
+      "reason": null,
+      "sentences": [
+        {
+          "text": "我先把螺丝放红色工具箱上，省得丢。",
+          "evidence": [
+            "det_01JRQ4H8ZE0000000000000028"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qa_04",
+      "question": "替换开关什么时候到？",
+      "status": "answered",
+      "reason": null,
+      "sentences": [
+        {
+          "text": "替换开关周二到，我会发短信给你物流单号。",
+          "evidence": [
+            "utt_01JRQ4H8ZE0000000000000118"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qa_05",
+      "question": "我的台灯怎么了？",
+      "status": "answered",
+      "reason": null,
+      "sentences": [
+        {
+          "text": "这个跷板开关里面裂了，还在打火；电线本身看着没问题。",
+          "evidence": [
+            "utt_01JRQ4H8ZE0000000000000036"
+          ]
+        },
+        {
+          "text": "是的，这盏台灯会闪来闪去，而且摇臂开关在转轴那里裂了。",
+          "evidence": [
+            "utt_01JRQ4H8ZE0000000000000021"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qa_06",
+      "question": "我怎么拿到开关的快递单号？",
+      "status": "answered",
+      "reason": null,
+      "sentences": [
+        {
+          "text": "替换开关周二到，我会发短信给你物流单号。",
+          "evidence": [
+            "utt_01JRQ4H8ZE0000000000000118"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qa_07",
+      "question": "我的台灯现在在哪儿？",
+      "status": "answered",
+      "reason": null,
+      "sentences": [
+        {
+          "text": "所以这个放“waiting for parts”那个架子，挂上蓝标签，一直放到周二。",
+          "evidence": [
+            "utt_01JRQ4H8ZE0000000000000141"
+          ]
+        },
+        {
+          "text": "贴着“waiting for parts”的架子上，台灯的蓝色标签清晰可见，旁边是一台小收音机和一台烤面包机。",
+          "evidence": [
+            "det_01JRQ4H8ZE0000000000000030"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qa_08",
+      "question": "我在面包店买了什么？",
+      "status": "answered",
+      "reason": null,
+      "sentences": [
+        {
+          "text": "我要一个黑麦面包和两个肉桂卷，谢谢。",
+          "evidence": [
+            "utt_01JRQ4H8ZE0000000000000153"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qa_09",
+      "question": "我什么时候能去图书馆取维修手册？",
+      "status": "answered",
+      "reason": null,
+      "sentences": [
+        {
+          "text": "您预约的那本台灯维修手册周二下午能准备好。",
+          "evidence": [
+            "utt_01JRQ4H8ZE0000000000000163"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qa_10",
+      "question": "我们用哪个工具测的台灯线？",
+      "status": "answered",
+      "reason": null,
+      "sentences": [
+        {
+          "text": "我去拿万用表，我们测一下电线。",
+          "evidence": [
+            "utt_01JRQ4H8ZE0000000000000042"
+          ]
+        },
+        {
+          "text": "等万用表发出“嘀”声，就说明电源线是导通的，没问题。",
+          "evidence": [
+            "utt_01JRQ4H8ZE0000000000000057"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qa_11",
+      "question": "我的伞最后是在哪儿看到的？",
+      "status": "answered",
+      "reason": null,
+      "sentences": [
+        {
+          "text": "前门旁靠着一把湿伞，伞尖在地板上留下水迹，门关着。",
+          "evidence": [
+            "det_01JRQ4H8ZE0000000000000038"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qa_12",
+      "question": "志愿者说台灯底座里的结是干什么用的？",
+      "status": "answered",
+      "reason": null,
+      "sentences": [
+        {
+          "text": "应力消除结给电源线一个机械止挡，这样就不会拽到里面的电线。",
+          "evidence": [
+            "utt_01JRQ4H8ZE0000000000000067"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qa_13",
+      "question": "我记着周二要做什么？",
+      "status": "answered",
+      "reason": null,
+      "sentences": [
+        {
+          "text": "周二先去修理咖啡馆取开关，再去图书馆取手册。",
+          "evidence": [
+            "utt_01JRQ4H8ZE0000000000000201"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qa_14",
+      "question": "面包店招牌上写的什么名字？",
+      "status": "answered",
+      "reason": null,
+      "sentences": [
+        {
+          "text": "面包房柜台温馨，玻璃柜后面黑板招牌写着“Quill Street Bakery”，暖光下可见肉桂卷。",
+          "evidence": [
+            "cap_01JRQ4H8ZE0000000000000110"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qa_15",
+      "question": "面包店收银员推荐了什么？",
+      "status": "answered",
+      "reason": null,
+      "sentences": [
+        {
+          "text": "肉桂卷刚出炉的，还热乎，想要甜的可以来点。",
+          "evidence": [
+            "utt_01JRQ4H8ZE0000000000000150"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qa_16",
+      "question": "台灯底座有几颗螺丝固定？",
+      "status": "answered",
+      "reason": null,
+      "sentences": [
+        {
+          "text": "我刚把灯座上的四颗螺丝都拧下来了。",
+          "evidence": [
+            "utt_01JRQ4H8ZE0000000000000026"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qa_17",
+      "question": "我的钥匙在哪儿？",
+      "status": "uncertain",
+      "reason": "low_transcript_confidence",
+      "sentences": [
+        {
+          "text": "证据偏弱。 钥匙……是在兜里还是……还在挂钩上……不确定……",
+          "evidence": [
+            "det_01JRQ4H8ZE0000000000000041",
+            "det_01JRQ4H8ZE0000000000000040",
+            "det_01JRQ4H8ZE0000000000000008",
+            "det_01JRQ4H8ZE0000000000000007",
+            "utt_01JRQ4H8ZE0000000000000011",
+            "utt_01JRQ4H8ZE0000000000000209"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qa_18",
+      "question": "我今天早上在电车上嘟囔了什么？",
+      "status": "uncertain",
+      "reason": "low_transcript_confidence",
+      "sentences": [
+        {
+          "text": "证据偏弱。 ……费恩什么……是这站下吗……",
+          "evidence": [
+            "utt_01JRQ4H8ZE0000000000000013",
+            "utt_01JRQ4H8ZE0000000000000014"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qa_19",
+      "question": "面包店收银员提到我护照什么了？",
+      "status": "not_found",
+      "reason": "no_evidence",
+      "sentences": [
+        {
+          "text": "记录中没有找到相关内容。",
+          "evidence": []
+        }
+      ]
+    },
+    {
+      "id": "qa_20",
+      "question": "今天有人说过修自行车吗？",
+      "status": "not_found",
+      "reason": "no_evidence",
+      "sentences": [
+        {
+          "text": "记录中没有找到相关内容。",
+          "evidence": []
+        }
+      ]
+    },
+    {
+      "id": "qa_21",
+      "question": "我中午和谁一起吃的饭？",
+      "status": "not_found",
+      "reason": "paused_window",
+      "sentences": [
+        {
+          "text": "记录中没有找到相关内容。",
+          "evidence": []
+        }
+      ]
+    },
+    {
+      "id": "qa_22",
+      "question": "12点45左右发生了什么？",
+      "status": "not_found",
+      "reason": "paused_window",
+      "sentences": [
+        {
+          "text": "记录中没有找到相关内容。",
+          "evidence": []
+        }
+      ]
+    },
+    {
+      "id": "qa_23",
+      "question": "我晚上10点在做什么？",
+      "status": "not_found",
+      "reason": "out_of_window",
+      "sentences": [
+        {
+          "text": "记录中没有找到相关内容。",
+          "evidence": []
+        }
+      ]
+    },
+    {
+      "id": "qa_24",
+      "question": "她说的周二会准备好的是什么？",
+      "status": "uncertain",
+      "reason": "ambiguous_speaker",
+      "sentences": [
+        {
+          "text": "证据偏弱。 替换开关周二到，我会发短信给你物流单号。",
+          "evidence": [
+            "utt_01JRQ4H8ZE0000000000000118",
+            "utt_01JRQ4H8ZE0000000000000163",
+            "utt_01JRQ4H8ZE0000000000000141"
+          ]
+        }
+      ]
+    }
+  ]
+}

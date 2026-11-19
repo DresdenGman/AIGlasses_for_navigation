@@ -1,0 +1,642 @@
+[
+  {
+    "id": "ent_sis",
+    "key": "SIS",
+    "kind": "person",
+    "user_named": true,
+    "appearances_days": 80,
+    "last_seen": {
+      "day": "2026-11-18",
+      "ts_ms": 1795059600000,
+      "ts_local": "2026-11-18T19:40:00-08:00",
+      "highlight_id": "hl_20261118_6",
+      "frame_id": "frm_01JY2026111800000000000147",
+      "place": "HOME"
+    },
+    "tracked_object": false
+  },
+  {
+    "id": "ent_neph",
+    "key": "NEPH",
+    "kind": "person",
+    "user_named": true,
+    "appearances_days": 52,
+    "last_seen": {
+      "day": "2026-11-18",
+      "ts_ms": 1795059600000,
+      "ts_local": "2026-11-18T19:40:00-08:00",
+      "highlight_id": "hl_20261118_6",
+      "frame_id": "frm_01JY2026111800000000000147",
+      "place": "HOME"
+    },
+    "tracked_object": false
+  },
+  {
+    "id": "ent_bil",
+    "key": "BIL",
+    "kind": "person",
+    "user_named": true,
+    "appearances_days": 37,
+    "last_seen": {
+      "day": "2026-11-08",
+      "ts_ms": 1794165300000,
+      "ts_local": "2026-11-08T11:15:00-08:00",
+      "highlight_id": "hl_20261108_2",
+      "frame_id": "frm_01JY2026110800000000000051",
+      "place": "SISH"
+    },
+    "tracked_object": false
+  },
+  {
+    "id": "ent_neigh",
+    "key": "NEIGH",
+    "kind": "person",
+    "user_named": true,
+    "appearances_days": 68,
+    "last_seen": {
+      "day": "2026-11-17",
+      "ts_ms": 1794966600000,
+      "ts_local": "2026-11-17T17:50:00-08:00",
+      "highlight_id": "hl_20261117_5",
+      "frame_id": "frm_01JY2026111700000000000118",
+      "place": "HOME"
+    },
+    "tracked_object": false
+  },
+  {
+    "id": "ent_neikid",
+    "key": "NEIKID",
+    "kind": "person",
+    "user_named": true,
+    "appearances_days": 34,
+    "last_seen": {
+      "day": "2026-11-05",
+      "ts_ms": 1793910600000,
+      "ts_local": "2026-11-05T12:30:00-08:00",
+      "highlight_id": "hl_20261105_2",
+      "frame_id": "frm_01JY2026110500000000000067",
+      "place": "PARK"
+    },
+    "tracked_object": false
+  },
+  {
+    "id": "ent_volb",
+    "key": "VOLB",
+    "kind": "person",
+    "user_named": true,
+    "appearances_days": 49,
+    "last_seen": {
+      "day": "2026-11-14",
+      "ts_ms": 1794699000000,
+      "ts_local": "2026-11-14T15:30:00-08:00",
+      "highlight_id": "hl_20261114_5",
+      "frame_id": "frm_01JY2026111400000000000087",
+      "place": "CAFE"
+    },
+    "tracked_object": false
+  },
+  {
+    "id": "ent_tomas",
+    "key": "TOMAS",
+    "kind": "person",
+    "user_named": true,
+    "appearances_days": 48,
+    "last_seen": {
+      "day": "2026-11-14",
+      "ts_ms": 1794685200000,
+      "ts_local": "2026-11-14T11:40:00-08:00",
+      "highlight_id": "hl_20261114_3",
+      "frame_id": "frm_01JY2026111400000000000041",
+      "place": "CAFE"
+    },
+    "tracked_object": false
+  },
+  {
+    "id": "ent_client1",
+    "key": "CLIENT1",
+    "kind": "person",
+    "user_named": true,
+    "appearances_days": 55,
+    "last_seen": {
+      "day": "2026-11-12",
+      "ts_ms": 1794508800000,
+      "ts_local": "2026-11-12T10:40:00-08:00",
+      "highlight_id": "hl_20261112_2",
+      "frame_id": "frm_01JY2026111200000000000043",
+      "place": "SHOP"
+    },
+    "tracked_object": false
+  },
+  {
+    "id": "ent_client2",
+    "key": "CLIENT2",
+    "kind": "person",
+    "user_named": true,
+    "appearances_days": 54,
+    "last_seen": {
+      "day": "2026-11-04",
+      "ts_ms": 1793808900000,
+      "ts_local": "2026-11-04T08:15:00-08:00",
+      "highlight_id": "hl_20261104_1",
+      "frame_id": "frm_01JY2026110400000000000010",
+      "place": "SHOP"
+    },
+    "tracked_object": false
+  },
+  {
+    "id": "ent_baker",
+    "key": "BAKER",
+    "kind": "person",
+    "user_named": true,
+    "appearances_days": 105,
+    "last_seen": {
+      "day": "2026-11-14",
+      "ts_ms": 1794690000000,
+      "ts_local": "2026-11-14T13:00:00-08:00",
+      "highlight_id": "hl_20261114_4",
+      "frame_id": "frm_01JY2026111400000000000057",
+      "place": "BAKE"
+    },
+    "tracked_object": false
+  },
+  {
+    "id": "ent_libr",
+    "key": "LIBR",
+    "kind": "person",
+    "user_named": true,
+    "appearances_days": 57,
+    "last_seen": {
+      "day": "2026-11-18",
+      "ts_ms": 1795029300000,
+      "ts_local": "2026-11-18T11:15:00-08:00",
+      "highlight_id": "hl_20261118_3",
+      "frame_id": "frm_01JY2026111800000000000046",
+      "place": "LIB"
+    },
+    "tracked_object": false
+  },
+  {
+    "id": "ent_coach",
+    "key": "COACH",
+    "kind": "person",
+    "user_named": true,
+    "appearances_days": 33,
+    "last_seen": {
+      "day": "2026-11-15",
+      "ts_ms": 1794755700000,
+      "ts_local": "2026-11-15T07:15:00-08:00",
+      "highlight_id": "hl_20261115_1",
+      "frame_id": "frm_01JY2026111500000000000004",
+      "place": "POOL"
+    },
+    "tracked_object": false
+  },
+  {
+    "id": "ent_oldf",
+    "key": "OLDF",
+    "kind": "person",
+    "user_named": true,
+    "appearances_days": 34,
+    "last_seen": {
+      "day": "2026-11-10",
+      "ts_ms": 1794339600000,
+      "ts_local": "2026-11-10T11:40:00-08:00",
+      "highlight_id": "hl_20261110_3",
+      "frame_id": "frm_01JY2026111000000000000031",
+      "place": "LIB"
+    },
+    "tracked_object": false
+  },
+  {
+    "id": "ent_mail",
+    "key": "MAIL",
+    "kind": "person",
+    "user_named": true,
+    "appearances_days": 22,
+    "last_seen": {
+      "day": "2026-10-12",
+      "ts_ms": 1791846600000,
+      "ts_local": "2026-10-12T16:10:00-07:00",
+      "highlight_id": "hl_20261012_4",
+      "frame_id": "frm_01JY2026101200000000000111",
+      "place": "HOME"
+    },
+    "tracked_object": false
+  },
+  {
+    "id": "ent_home",
+    "key": "HOME",
+    "kind": "place",
+    "user_named": true,
+    "appearances_days": 261,
+    "last_seen": {
+      "day": "2026-11-18",
+      "ts_ms": 1795059600000,
+      "ts_local": "2026-11-18T19:40:00-08:00",
+      "highlight_id": "hl_20261118_6",
+      "frame_id": "frm_01JY2026111800000000000147",
+      "place": "HOME"
+    },
+    "tracked_object": false
+  },
+  {
+    "id": "ent_shop",
+    "key": "SHOP",
+    "kind": "place",
+    "user_named": true,
+    "appearances_days": 165,
+    "last_seen": {
+      "day": "2026-11-17",
+      "ts_ms": 1794950400000,
+      "ts_local": "2026-11-17T13:20:00-08:00",
+      "highlight_id": "hl_20261117_4",
+      "frame_id": "frm_01JY2026111700000000000064",
+      "place": "SHOP"
+    },
+    "tracked_object": false
+  },
+  {
+    "id": "ent_cafe",
+    "key": "CAFE",
+    "kind": "place",
+    "user_named": true,
+    "appearances_days": 47,
+    "last_seen": {
+      "day": "2026-11-14",
+      "ts_ms": 1794699000000,
+      "ts_local": "2026-11-14T15:30:00-08:00",
+      "highlight_id": "hl_20261114_5",
+      "frame_id": "frm_01JY2026111400000000000087",
+      "place": "CAFE"
+    },
+    "tracked_object": false
+  },
+  {
+    "id": "ent_tram",
+    "key": "TRAM",
+    "kind": "place",
+    "user_named": true,
+    "appearances_days": 186,
+    "last_seen": {
+      "day": "2026-11-18",
+      "ts_ms": 1795017000000,
+      "ts_local": "2026-11-18T07:50:00-08:00",
+      "highlight_id": "hl_20261118_1",
+      "frame_id": "frm_01JY2026111800000000000005",
+      "place": "TRAM"
+    },
+    "tracked_object": false
+  },
+  {
+    "id": "ent_bake",
+    "key": "BAKE",
+    "kind": "place",
+    "user_named": true,
+    "appearances_days": 113,
+    "last_seen": {
+      "day": "2026-11-14",
+      "ts_ms": 1794690000000,
+      "ts_local": "2026-11-14T13:00:00-08:00",
+      "highlight_id": "hl_20261114_4",
+      "frame_id": "frm_01JY2026111400000000000057",
+      "place": "BAKE"
+    },
+    "tracked_object": false
+  },
+  {
+    "id": "ent_lib",
+    "key": "LIB",
+    "kind": "place",
+    "user_named": true,
+    "appearances_days": 59,
+    "last_seen": {
+      "day": "2026-11-18",
+      "ts_ms": 1795029300000,
+      "ts_local": "2026-11-18T11:15:00-08:00",
+      "highlight_id": "hl_20261118_3",
+      "frame_id": "frm_01JY2026111800000000000046",
+      "place": "LIB"
+    },
+    "tracked_object": false
+  },
+  {
+    "id": "ent_sish",
+    "key": "SISH",
+    "kind": "place",
+    "user_named": true,
+    "appearances_days": 41,
+    "last_seen": {
+      "day": "2026-11-08",
+      "ts_ms": 1794180000000,
+      "ts_local": "2026-11-08T15:20:00-08:00",
+      "highlight_id": "hl_20261108_4",
+      "frame_id": "frm_01JY2026110800000000000100",
+      "place": "SISH"
+    },
+    "tracked_object": false
+  },
+  {
+    "id": "ent_market",
+    "key": "MARKET",
+    "kind": "place",
+    "user_named": true,
+    "appearances_days": 12,
+    "last_seen": {
+      "day": "2026-10-23",
+      "ts_ms": 1792775100000,
+      "ts_local": "2026-10-23T10:05:00-07:00",
+      "highlight_id": "hl_20261023_2",
+      "frame_id": "frm_01JY2026102300000000000017",
+      "place": "MARKET"
+    },
+    "tracked_object": false
+  },
+  {
+    "id": "ent_pool",
+    "key": "POOL",
+    "kind": "place",
+    "user_named": true,
+    "appearances_days": 33,
+    "last_seen": {
+      "day": "2026-11-15",
+      "ts_ms": 1794755700000,
+      "ts_local": "2026-11-15T07:15:00-08:00",
+      "highlight_id": "hl_20261115_1",
+      "frame_id": "frm_01JY2026111500000000000004",
+      "place": "POOL"
+    },
+    "tracked_object": false
+  },
+  {
+    "id": "ent_park",
+    "key": "PARK",
+    "kind": "place",
+    "user_named": true,
+    "appearances_days": 48,
+    "last_seen": {
+      "day": "2026-11-15",
+      "ts_ms": 1794765000000,
+      "ts_local": "2026-11-15T09:50:00-08:00",
+      "highlight_id": "hl_20261115_2",
+      "frame_id": "frm_01JY2026111500000000000035",
+      "place": "PARK"
+    },
+    "tracked_object": false
+  },
+  {
+    "id": "ent_salt",
+    "key": "SALT",
+    "kind": "place",
+    "user_named": true,
+    "appearances_days": 9,
+    "last_seen": {
+      "day": "2026-08-23",
+      "ts_ms": 1787528400000,
+      "ts_local": "2026-08-23T16:40:00-07:00",
+      "highlight_id": "hl_20260823_4",
+      "frame_id": "frm_01JY2026082300000000000099",
+      "place": "SALT"
+    },
+    "tracked_object": false
+  },
+  {
+    "id": "ent_hware",
+    "key": "HWARE",
+    "kind": "place",
+    "user_named": true,
+    "appearances_days": 73,
+    "last_seen": {
+      "day": "2026-11-17",
+      "ts_ms": 1794935400000,
+      "ts_local": "2026-11-17T09:10:00-08:00",
+      "highlight_id": "hl_20261117_2",
+      "frame_id": "frm_01JY2026111700000000000014",
+      "place": "HWARE"
+    },
+    "tracked_object": false
+  },
+  {
+    "id": "ent_clinic",
+    "key": "CLINIC",
+    "kind": "place",
+    "user_named": true,
+    "appearances_days": 2,
+    "last_seen": {
+      "day": "2026-02-24",
+      "ts_ms": 1771950600000,
+      "ts_local": "2026-02-24T08:30:00-08:00",
+      "highlight_id": "hl_20260224_1",
+      "frame_id": "frm_01JY2026022400000000000005",
+      "place": "CLINIC"
+    },
+    "tracked_object": false
+  },
+  {
+    "id": "ent_keys",
+    "key": "KEYS",
+    "kind": "object",
+    "user_named": true,
+    "appearances_days": 83,
+    "last_seen": {
+      "day": "2026-11-17",
+      "ts_ms": 1794932400000,
+      "ts_local": "2026-11-17T08:20:00-08:00",
+      "highlight_id": "hl_20261117_1",
+      "frame_id": "frm_01JY2026111700000000000004",
+      "place": "HOME"
+    },
+    "tracked_object": true
+  },
+  {
+    "id": "ent_rglass",
+    "key": "RGLASS",
+    "kind": "object",
+    "user_named": true,
+    "appearances_days": 81,
+    "last_seen": {
+      "day": "2026-11-18",
+      "ts_ms": 1795017000000,
+      "ts_local": "2026-11-18T07:50:00-08:00",
+      "highlight_id": "hl_20261118_1",
+      "frame_id": "frm_01JY2026111800000000000005",
+      "place": "TRAM"
+    },
+    "tracked_object": true
+  },
+  {
+    "id": "ent_umb",
+    "key": "UMB",
+    "kind": "object",
+    "user_named": true,
+    "appearances_days": 111,
+    "last_seen": {
+      "day": "2026-11-15",
+      "ts_ms": 1794799800000,
+      "ts_local": "2026-11-15T19:30:00-08:00",
+      "highlight_id": "hl_20261115_5",
+      "frame_id": "frm_01JY2026111500000000000151",
+      "place": "TRAM"
+    },
+    "tracked_object": true
+  },
+  {
+    "id": "ent_tape",
+    "key": "TAPE",
+    "kind": "object",
+    "user_named": true,
+    "appearances_days": 124,
+    "last_seen": {
+      "day": "2026-11-11",
+      "ts_ms": 1794430800000,
+      "ts_local": "2026-11-11T13:00:00-08:00",
+      "highlight_id": "hl_20261111_3",
+      "frame_id": "frm_01JY2026111100000000000065",
+      "place": "SHOP"
+    },
+    "tracked_object": true
+  },
+  {
+    "id": "ent_glue",
+    "key": "GLUE",
+    "kind": "object",
+    "user_named": true,
+    "appearances_days": 107,
+    "last_seen": {
+      "day": "2026-11-12",
+      "ts_ms": 1794519600000,
+      "ts_local": "2026-11-12T13:40:00-08:00",
+      "highlight_id": "hl_20261112_4",
+      "frame_id": "frm_01JY2026111200000000000079",
+      "place": "HWARE"
+    },
+    "tracked_object": true
+  },
+  {
+    "id": "ent_toolb",
+    "key": "TOOLB",
+    "kind": "object",
+    "user_named": true,
+    "appearances_days": 84,
+    "last_seen": {
+      "day": "2026-11-17",
+      "ts_ms": 1794950400000,
+      "ts_local": "2026-11-17T13:20:00-08:00",
+      "highlight_id": "hl_20261117_4",
+      "frame_id": "frm_01JY2026111700000000000064",
+      "place": "SHOP"
+    },
+    "tracked_object": true
+  },
+  {
+    "id": "ent_screws",
+    "key": "SCREWS",
+    "kind": "object",
+    "user_named": true,
+    "appearances_days": 133,
+    "last_seen": {
+      "day": "2026-11-17",
+      "ts_ms": 1794935400000,
+      "ts_local": "2026-11-17T09:10:00-08:00",
+      "highlight_id": "hl_20261117_2",
+      "frame_id": "frm_01JY2026111700000000000014",
+      "place": "HWARE"
+    },
+    "tracked_object": false
+  },
+  {
+    "id": "ent_lamp",
+    "key": "LAMP",
+    "kind": "object",
+    "user_named": true,
+    "appearances_days": 103,
+    "last_seen": {
+      "day": "2026-11-18",
+      "ts_ms": 1795047000000,
+      "ts_local": "2026-11-18T16:10:00-08:00",
+      "highlight_id": "hl_20261118_5",
+      "frame_id": "frm_01JY2026111800000000000105",
+      "place": "HOME"
+    },
+    "tracked_object": true
+  },
+  {
+    "id": "ent_card",
+    "key": "CARD",
+    "kind": "object",
+    "user_named": true,
+    "appearances_days": 54,
+    "last_seen": {
+      "day": "2026-11-18",
+      "ts_ms": 1795029300000,
+      "ts_local": "2026-11-18T11:15:00-08:00",
+      "highlight_id": "hl_20261118_3",
+      "frame_id": "frm_01JY2026111800000000000046",
+      "place": "LIB"
+    },
+    "tracked_object": false
+  },
+  {
+    "id": "ent_wallet",
+    "key": "WALLET",
+    "kind": "object",
+    "user_named": true,
+    "appearances_days": 74,
+    "last_seen": {
+      "day": "2026-11-10",
+      "ts_ms": 1794367800000,
+      "ts_local": "2026-11-10T19:30:00-08:00",
+      "highlight_id": "hl_20261110_5",
+      "frame_id": "frm_01JY2026111000000000000125",
+      "place": "HOME"
+    },
+    "tracked_object": true
+  },
+  {
+    "id": "ent_multi",
+    "key": "MULTI",
+    "kind": "object",
+    "user_named": true,
+    "appearances_days": 65,
+    "last_seen": {
+      "day": "2026-11-17",
+      "ts_ms": 1794950400000,
+      "ts_local": "2026-11-17T13:20:00-08:00",
+      "highlight_id": "hl_20261117_4",
+      "frame_id": "frm_01JY2026111700000000000064",
+      "place": "SHOP"
+    },
+    "tracked_object": false
+  },
+  {
+    "id": "ent_tote",
+    "key": "TOTE",
+    "kind": "object",
+    "user_named": true,
+    "appearances_days": 118,
+    "last_seen": {
+      "day": "2026-11-17",
+      "ts_ms": 1794932400000,
+      "ts_local": "2026-11-17T08:20:00-08:00",
+      "highlight_id": "hl_20261117_1",
+      "frame_id": "frm_01JY2026111700000000000004",
+      "place": "HOME"
+    },
+    "tracked_object": false
+  },
+  {
+    "id": "ent_noteb",
+    "key": "NOTEB",
+    "kind": "object",
+    "user_named": true,
+    "appearances_days": 166,
+    "last_seen": {
+      "day": "2026-11-18",
+      "ts_ms": 1795047000000,
+      "ts_local": "2026-11-18T16:10:00-08:00",
+      "highlight_id": "hl_20261118_5",
+      "frame_id": "frm_01JY2026111800000000000105",
+      "place": "HOME"
+    },
+    "tracked_object": false
+  }
+]

@@ -1,0 +1,466 @@
+{
+  "schema": "aiglasses.lifelog.showcase.images",
+  "version": 1,
+  "slots": {
+    "home-kitchen-breakfast": {
+      "kind": "photo",
+      "file": "pov-kitchen-breakfast.jpg",
+      "src": "/showcase/photos/pov-kitchen-breakfast.jpg",
+      "thumb": "/showcase/photos/pov-kitchen-breakfast.jpg",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "en": "Breakfast and coffee by the kitchen window",
+        "zh-CN": "厨房窗边的早餐和咖啡"
+      }
+    },
+    "home-desk-packing": {
+      "kind": "photo",
+      "file": "pov-desk-keys-under-papers.jpg",
+      "src": "/showcase/photos/pov-desk-keys-under-papers.jpg",
+      "thumb": "/showcase/photos/pov-desk-keys-under-papers.jpg",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "en": "Keys partly hidden under papers on a desk",
+        "zh-CN": "钥匙半藏在桌上的纸下面"
+      }
+    },
+    "home-hallway-leaving": {
+      "kind": "placeholder",
+      "file": "home-hallway-leaving.svg",
+      "src": "/showcase/placeholders/home-hallway-leaving.svg",
+      "thumb": "/showcase/placeholders/home-hallway-leaving.svg",
+      "width": 640,
+      "height": 480,
+      "alt": {
+        "en": "No photograph yet for home hallway leaving",
+        "zh-CN": "这一场景还没有照片：home-hallway-leaving"
+      }
+    },
+    "street-walk-to-tram": {
+      "kind": "photo",
+      "file": "pov-evening-park-walk.jpg",
+      "src": "/showcase/photos/pov-evening-park-walk.jpg",
+      "thumb": "/showcase/photos/pov-evening-park-walk.jpg",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "en": "A walk along a park path",
+        "zh-CN": "沿公园小路走"
+      }
+    },
+    "tram-line4-morning": {
+      "kind": "photo",
+      "file": "pov-tram-window.jpg",
+      "src": "/showcase/photos/pov-tram-window.jpg",
+      "thumb": "/showcase/photos/pov-tram-window.jpg",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "en": "Sunlit tram ride through the city",
+        "zh-CN": "阳光里的电车，穿过城市"
+      }
+    },
+    "cafe-entrance-signin": {
+      "kind": "placeholder",
+      "file": "cafe-entrance-signin.svg",
+      "src": "/showcase/placeholders/cafe-entrance-signin.svg",
+      "thumb": "/showcase/placeholders/cafe-entrance-signin.svg",
+      "width": 640,
+      "height": 480,
+      "alt": {
+        "en": "No photograph yet for cafe entrance signin",
+        "zh-CN": "这一场景还没有照片：cafe-entrance-signin"
+      }
+    },
+    "cafe-lamp-diagnosis": {
+      "kind": "photo",
+      "file": "pov-repair-cafe-workbench.jpg",
+      "src": "/showcase/photos/pov-repair-cafe-workbench.jpg",
+      "thumb": "/showcase/photos/pov-repair-cafe-workbench.jpg",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "en": "Repair cafe workbench with screws on a red toolbox",
+        "zh-CN": "修理小馆的工作台"
+      }
+    },
+    "cafe-continuity-test": {
+      "kind": "photo",
+      "file": "pov-repair-cafe-workbench.jpg",
+      "src": "/showcase/photos/pov-repair-cafe-workbench.jpg",
+      "thumb": "/showcase/photos/pov-repair-cafe-workbench.jpg",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "en": "Repair cafe workbench with screws on a red toolbox",
+        "zh-CN": "修理小馆的工作台"
+      }
+    },
+    "cafe-coffee-corner": {
+      "kind": "photo",
+      "file": "pov-cafe-friend-hands.jpg",
+      "src": "/showcase/photos/pov-cafe-friend-hands.jpg",
+      "thumb": "/showcase/photos/pov-cafe-friend-hands.jpg",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "en": "Coffee with a friend, hands only",
+        "zh-CN": "和人喝咖啡，画面里只有手"
+      }
+    },
+    "cafe-parts-bin": {
+      "kind": "photo",
+      "file": "pov-repair-cafe-workbench.jpg",
+      "src": "/showcase/photos/pov-repair-cafe-workbench.jpg",
+      "thumb": "/showcase/photos/pov-repair-cafe-workbench.jpg",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "en": "Repair cafe workbench with screws on a red toolbox",
+        "zh-CN": "修理小馆的工作台"
+      }
+    },
+    "cafe-switch-order": {
+      "kind": "photo",
+      "file": "pov-repair-cafe-workbench.jpg",
+      "src": "/showcase/photos/pov-repair-cafe-workbench.jpg",
+      "thumb": "/showcase/photos/pov-repair-cafe-workbench.jpg",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "en": "Repair cafe workbench with screws on a red toolbox",
+        "zh-CN": "修理小馆的工作台"
+      }
+    },
+    "cafe-rewiring-base": {
+      "kind": "photo",
+      "file": "pov-repair-cafe-workbench.jpg",
+      "src": "/showcase/photos/pov-repair-cafe-workbench.jpg",
+      "thumb": "/showcase/photos/pov-repair-cafe-workbench.jpg",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "en": "Repair cafe workbench with screws on a red toolbox",
+        "zh-CN": "修理小馆的工作台"
+      }
+    },
+    "repair-bench-afternoon": {
+      "kind": "photo",
+      "file": "pov-repair-cafe-workbench.jpg",
+      "src": "/showcase/photos/pov-repair-cafe-workbench.jpg",
+      "thumb": "/showcase/photos/pov-repair-cafe-workbench.jpg",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "en": "Repair cafe workbench with screws on a red toolbox",
+        "zh-CN": "修理小馆的工作台"
+      }
+    },
+    "cafe-shelf-packup": {
+      "kind": "placeholder",
+      "file": "cafe-shelf-packup.svg",
+      "src": "/showcase/placeholders/cafe-shelf-packup.svg",
+      "thumb": "/showcase/placeholders/cafe-shelf-packup.svg",
+      "width": 640,
+      "height": 480,
+      "alt": {
+        "en": "No photograph yet for cafe shelf packup",
+        "zh-CN": "这一场景还没有照片：cafe-shelf-packup"
+      }
+    },
+    "street-walk-to-bakery": {
+      "kind": "photo",
+      "file": "pov-evening-park-walk.jpg",
+      "src": "/showcase/photos/pov-evening-park-walk.jpg",
+      "thumb": "/showcase/photos/pov-evening-park-walk.jpg",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "en": "A walk along a park path",
+        "zh-CN": "沿公园小路走"
+      }
+    },
+    "bakery-counter": {
+      "kind": "photo",
+      "file": "pov-bakery-counter.jpg",
+      "src": "/showcase/photos/pov-bakery-counter.jpg",
+      "thumb": "/showcase/photos/pov-bakery-counter.jpg",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "en": "Bakery display counter",
+        "zh-CN": "面包柜台"
+      }
+    },
+    "street-walk-to-library": {
+      "kind": "photo",
+      "file": "pov-evening-park-walk.jpg",
+      "src": "/showcase/photos/pov-evening-park-walk.jpg",
+      "thumb": "/showcase/photos/pov-evening-park-walk.jpg",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "en": "A walk along a park path",
+        "zh-CN": "沿公园小路走"
+      }
+    },
+    "library-holds-desk": {
+      "kind": "photo",
+      "file": "pov-library-aisle.jpg",
+      "src": "/showcase/photos/pov-library-aisle.jpg",
+      "thumb": "/showcase/photos/pov-library-aisle.jpg",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "en": "Library aisle toward daylight",
+        "zh-CN": "图书馆过道，通向日光"
+      }
+    },
+    "library-reading-room": {
+      "kind": "photo",
+      "file": "pov-library-aisle.jpg",
+      "src": "/showcase/photos/pov-library-aisle.jpg",
+      "thumb": "/showcase/photos/pov-library-aisle.jpg",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "en": "Library aisle toward daylight",
+        "zh-CN": "图书馆过道，通向日光"
+      }
+    },
+    "tram-line4-evening": {
+      "kind": "photo",
+      "file": "pov-tram-window.jpg",
+      "src": "/showcase/photos/pov-tram-window.jpg",
+      "thumb": "/showcase/photos/pov-tram-window.jpg",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "en": "Sunlit tram ride through the city",
+        "zh-CN": "阳光里的电车，穿过城市"
+      }
+    },
+    "home-hallway-evening": {
+      "kind": "placeholder",
+      "file": "home-hallway-evening.svg",
+      "src": "/showcase/placeholders/home-hallway-evening.svg",
+      "thumb": "/showcase/placeholders/home-hallway-evening.svg",
+      "width": 640,
+      "height": 480,
+      "alt": {
+        "en": "No photograph yet for home hallway evening",
+        "zh-CN": "这一场景还没有照片：home-hallway-evening"
+      }
+    },
+    "home-kitchen-dinner": {
+      "kind": "placeholder",
+      "file": "home-kitchen-dinner.svg",
+      "src": "/showcase/placeholders/home-kitchen-dinner.svg",
+      "thumb": "/showcase/placeholders/home-kitchen-dinner.svg",
+      "width": 640,
+      "height": 480,
+      "alt": {
+        "en": "No photograph yet for home kitchen dinner",
+        "zh-CN": "这一场景还没有照片：home-kitchen-dinner"
+      }
+    },
+    "home-desk-evening": {
+      "kind": "photo",
+      "file": "pov-desk-keys-under-papers.jpg",
+      "src": "/showcase/photos/pov-desk-keys-under-papers.jpg",
+      "thumb": "/showcase/photos/pov-desk-keys-under-papers.jpg",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "en": "Keys partly hidden under papers on a desk",
+        "zh-CN": "钥匙半藏在桌上的纸下面"
+      }
+    }
+  },
+  "frames": {
+    "frm_01JRQ4H8ZE0000000000000001": "home-kitchen-breakfast",
+    "frm_01JRQ4H8ZE0000000000000002": "home-kitchen-breakfast",
+    "frm_01JRQ4H8ZE0000000000000003": "home-kitchen-breakfast",
+    "frm_01JRQ4H8ZE0000000000000004": "home-kitchen-breakfast",
+    "frm_01JRQ4H8ZE0000000000000005": "home-kitchen-breakfast",
+    "frm_01JRQ4H8ZE0000000000000006": "home-kitchen-breakfast",
+    "frm_01JRQ4H8ZE0000000000000007": "home-desk-packing",
+    "frm_01JRQ4H8ZE0000000000000008": "home-desk-packing",
+    "frm_01JRQ4H8ZE0000000000000009": "home-desk-packing",
+    "frm_01JRQ4H8ZE0000000000000010": "home-desk-packing",
+    "frm_01JRQ4H8ZE0000000000000011": "home-desk-packing",
+    "frm_01JRQ4H8ZE0000000000000012": "home-hallway-leaving",
+    "frm_01JRQ4H8ZE0000000000000013": "home-hallway-leaving",
+    "frm_01JRQ4H8ZE0000000000000014": "home-hallway-leaving",
+    "frm_01JRQ4H8ZE0000000000000015": "home-hallway-leaving",
+    "frm_01JRQ4H8ZE0000000000000016": "street-walk-to-tram",
+    "frm_01JRQ4H8ZE0000000000000017": "street-walk-to-tram",
+    "frm_01JRQ4H8ZE0000000000000018": "tram-line4-morning",
+    "frm_01JRQ4H8ZE0000000000000019": "tram-line4-morning",
+    "frm_01JRQ4H8ZE0000000000000020": "tram-line4-morning",
+    "frm_01JRQ4H8ZE0000000000000021": "tram-line4-morning",
+    "frm_01JRQ4H8ZE0000000000000022": "tram-line4-morning",
+    "frm_01JRQ4H8ZE0000000000000023": "cafe-entrance-signin",
+    "frm_01JRQ4H8ZE0000000000000024": "cafe-entrance-signin",
+    "frm_01JRQ4H8ZE0000000000000025": "cafe-entrance-signin",
+    "frm_01JRQ4H8ZE0000000000000026": "cafe-entrance-signin",
+    "frm_01JRQ4H8ZE0000000000000027": "cafe-entrance-signin",
+    "frm_01JRQ4H8ZE0000000000000028": "cafe-entrance-signin",
+    "frm_01JRQ4H8ZE0000000000000029": "cafe-lamp-diagnosis",
+    "frm_01JRQ4H8ZE0000000000000030": "cafe-lamp-diagnosis",
+    "frm_01JRQ4H8ZE0000000000000031": "cafe-lamp-diagnosis",
+    "frm_01JRQ4H8ZE0000000000000032": "cafe-lamp-diagnosis",
+    "frm_01JRQ4H8ZE0000000000000033": "cafe-lamp-diagnosis",
+    "frm_01JRQ4H8ZE0000000000000034": "cafe-lamp-diagnosis",
+    "frm_01JRQ4H8ZE0000000000000035": "cafe-lamp-diagnosis",
+    "frm_01JRQ4H8ZE0000000000000036": "cafe-lamp-diagnosis",
+    "frm_01JRQ4H8ZE0000000000000037": "cafe-lamp-diagnosis",
+    "frm_01JRQ4H8ZE0000000000000038": "cafe-lamp-diagnosis",
+    "frm_01JRQ4H8ZE0000000000000039": "cafe-lamp-diagnosis",
+    "frm_01JRQ4H8ZE0000000000000040": "cafe-lamp-diagnosis",
+    "frm_01JRQ4H8ZE0000000000000041": "cafe-lamp-diagnosis",
+    "frm_01JRQ4H8ZE0000000000000042": "cafe-lamp-diagnosis",
+    "frm_01JRQ4H8ZE0000000000000043": "cafe-continuity-test",
+    "frm_01JRQ4H8ZE0000000000000044": "cafe-continuity-test",
+    "frm_01JRQ4H8ZE0000000000000045": "cafe-continuity-test",
+    "frm_01JRQ4H8ZE0000000000000046": "cafe-continuity-test",
+    "frm_01JRQ4H8ZE0000000000000047": "cafe-continuity-test",
+    "frm_01JRQ4H8ZE0000000000000048": "cafe-continuity-test",
+    "frm_01JRQ4H8ZE0000000000000049": "cafe-continuity-test",
+    "frm_01JRQ4H8ZE0000000000000050": "cafe-continuity-test",
+    "frm_01JRQ4H8ZE0000000000000051": "cafe-continuity-test",
+    "frm_01JRQ4H8ZE0000000000000052": "cafe-continuity-test",
+    "frm_01JRQ4H8ZE0000000000000053": "cafe-continuity-test",
+    "frm_01JRQ4H8ZE0000000000000054": "cafe-continuity-test",
+    "frm_01JRQ4H8ZE0000000000000055": "cafe-coffee-corner",
+    "frm_01JRQ4H8ZE0000000000000056": "cafe-coffee-corner",
+    "frm_01JRQ4H8ZE0000000000000057": "cafe-coffee-corner",
+    "frm_01JRQ4H8ZE0000000000000058": "cafe-coffee-corner",
+    "frm_01JRQ4H8ZE0000000000000059": "cafe-coffee-corner",
+    "frm_01JRQ4H8ZE0000000000000060": "cafe-coffee-corner",
+    "frm_01JRQ4H8ZE0000000000000061": "cafe-coffee-corner",
+    "frm_01JRQ4H8ZE0000000000000062": "cafe-coffee-corner",
+    "frm_01JRQ4H8ZE0000000000000063": "cafe-coffee-corner",
+    "frm_01JRQ4H8ZE0000000000000064": "cafe-coffee-corner",
+    "frm_01JRQ4H8ZE0000000000000065": "cafe-coffee-corner",
+    "frm_01JRQ4H8ZE0000000000000066": "cafe-coffee-corner",
+    "frm_01JRQ4H8ZE0000000000000067": "cafe-parts-bin",
+    "frm_01JRQ4H8ZE0000000000000068": "cafe-parts-bin",
+    "frm_01JRQ4H8ZE0000000000000069": "cafe-parts-bin",
+    "frm_01JRQ4H8ZE0000000000000070": "cafe-parts-bin",
+    "frm_01JRQ4H8ZE0000000000000071": "cafe-parts-bin",
+    "frm_01JRQ4H8ZE0000000000000072": "cafe-parts-bin",
+    "frm_01JRQ4H8ZE0000000000000073": "cafe-parts-bin",
+    "frm_01JRQ4H8ZE0000000000000074": "cafe-parts-bin",
+    "frm_01JRQ4H8ZE0000000000000075": "cafe-switch-order",
+    "frm_01JRQ4H8ZE0000000000000076": "cafe-switch-order",
+    "frm_01JRQ4H8ZE0000000000000077": "cafe-switch-order",
+    "frm_01JRQ4H8ZE0000000000000078": "cafe-switch-order",
+    "frm_01JRQ4H8ZE0000000000000079": "cafe-switch-order",
+    "frm_01JRQ4H8ZE0000000000000080": "cafe-switch-order",
+    "frm_01JRQ4H8ZE0000000000000081": "cafe-rewiring-base",
+    "frm_01JRQ4H8ZE0000000000000082": "cafe-rewiring-base",
+    "frm_01JRQ4H8ZE0000000000000083": "cafe-rewiring-base",
+    "frm_01JRQ4H8ZE0000000000000084": "cafe-rewiring-base",
+    "frm_01JRQ4H8ZE0000000000000085": "cafe-rewiring-base",
+    "frm_01JRQ4H8ZE0000000000000086": "cafe-rewiring-base",
+    "frm_01JRQ4H8ZE0000000000000087": "cafe-rewiring-base",
+    "frm_01JRQ4H8ZE0000000000000088": "cafe-rewiring-base",
+    "frm_01JRQ4H8ZE0000000000000089": "cafe-rewiring-base",
+    "frm_01JRQ4H8ZE0000000000000090": "cafe-rewiring-base",
+    "frm_01JRQ4H8ZE0000000000000091": "cafe-rewiring-base",
+    "frm_01JRQ4H8ZE0000000000000092": "cafe-rewiring-base",
+    "frm_01JRQ4H8ZE0000000000000093": "cafe-rewiring-base",
+    "frm_01JRQ4H8ZE0000000000000094": "cafe-rewiring-base",
+    "frm_01JRQ4H8ZE0000000000000095": "repair-bench-afternoon",
+    "frm_01JRQ4H8ZE0000000000000096": "repair-bench-afternoon",
+    "frm_01JRQ4H8ZE0000000000000097": "repair-bench-afternoon",
+    "frm_01JRQ4H8ZE0000000000000098": "repair-bench-afternoon",
+    "frm_01JRQ4H8ZE0000000000000099": "repair-bench-afternoon",
+    "frm_01JRQ4H8ZE0000000000000100": "repair-bench-afternoon",
+    "frm_01JRQ4H8ZE0000000000000101": "repair-bench-afternoon",
+    "frm_01JRQ4H8ZE0000000000000102": "repair-bench-afternoon",
+    "frm_01JRQ4H8ZE0000000000000103": "cafe-shelf-packup",
+    "frm_01JRQ4H8ZE0000000000000104": "cafe-shelf-packup",
+    "frm_01JRQ4H8ZE0000000000000105": "cafe-shelf-packup",
+    "frm_01JRQ4H8ZE0000000000000106": "cafe-shelf-packup",
+    "frm_01JRQ4H8ZE0000000000000107": "street-walk-to-bakery",
+    "frm_01JRQ4H8ZE0000000000000108": "street-walk-to-bakery",
+    "frm_01JRQ4H8ZE0000000000000109": "street-walk-to-bakery",
+    "frm_01JRQ4H8ZE0000000000000110": "bakery-counter",
+    "frm_01JRQ4H8ZE0000000000000111": "bakery-counter",
+    "frm_01JRQ4H8ZE0000000000000112": "bakery-counter",
+    "frm_01JRQ4H8ZE0000000000000113": "bakery-counter",
+    "frm_01JRQ4H8ZE0000000000000114": "bakery-counter",
+    "frm_01JRQ4H8ZE0000000000000115": "street-walk-to-library",
+    "frm_01JRQ4H8ZE0000000000000116": "street-walk-to-library",
+    "frm_01JRQ4H8ZE0000000000000117": "street-walk-to-library",
+    "frm_01JRQ4H8ZE0000000000000118": "library-holds-desk",
+    "frm_01JRQ4H8ZE0000000000000119": "library-holds-desk",
+    "frm_01JRQ4H8ZE0000000000000120": "library-holds-desk",
+    "frm_01JRQ4H8ZE0000000000000121": "library-holds-desk",
+    "frm_01JRQ4H8ZE0000000000000122": "library-holds-desk",
+    "frm_01JRQ4H8ZE0000000000000123": "library-reading-room",
+    "frm_01JRQ4H8ZE0000000000000124": "library-reading-room",
+    "frm_01JRQ4H8ZE0000000000000125": "library-reading-room",
+    "frm_01JRQ4H8ZE0000000000000126": "library-reading-room",
+    "frm_01JRQ4H8ZE0000000000000127": "library-reading-room",
+    "frm_01JRQ4H8ZE0000000000000128": "library-reading-room",
+    "frm_01JRQ4H8ZE0000000000000129": "library-reading-room",
+    "frm_01JRQ4H8ZE0000000000000130": "library-reading-room",
+    "frm_01JRQ4H8ZE0000000000000131": "library-reading-room",
+    "frm_01JRQ4H8ZE0000000000000132": "library-reading-room",
+    "frm_01JRQ4H8ZE0000000000000133": "library-reading-room",
+    "frm_01JRQ4H8ZE0000000000000134": "tram-line4-evening",
+    "frm_01JRQ4H8ZE0000000000000135": "tram-line4-evening",
+    "frm_01JRQ4H8ZE0000000000000136": "tram-line4-evening",
+    "frm_01JRQ4H8ZE0000000000000137": "tram-line4-evening",
+    "frm_01JRQ4H8ZE0000000000000138": "tram-line4-evening",
+    "frm_01JRQ4H8ZE0000000000000139": "tram-line4-evening",
+    "frm_01JRQ4H8ZE0000000000000140": "home-hallway-evening",
+    "frm_01JRQ4H8ZE0000000000000141": "home-hallway-evening",
+    "frm_01JRQ4H8ZE0000000000000142": "home-hallway-evening",
+    "frm_01JRQ4H8ZE0000000000000143": "home-kitchen-dinner",
+    "frm_01JRQ4H8ZE0000000000000144": "home-kitchen-dinner",
+    "frm_01JRQ4H8ZE0000000000000145": "home-kitchen-dinner",
+    "frm_01JRQ4H8ZE0000000000000146": "home-kitchen-dinner",
+    "frm_01JRQ4H8ZE0000000000000147": "home-kitchen-dinner",
+    "frm_01JRQ4H8ZE0000000000000148": "home-kitchen-dinner",
+    "frm_01JRQ4H8ZE0000000000000149": "home-kitchen-dinner",
+    "frm_01JRQ4H8ZE0000000000000150": "home-kitchen-dinner",
+    "frm_01JRQ4H8ZE0000000000000151": "home-desk-evening",
+    "frm_01JRQ4H8ZE0000000000000152": "home-desk-evening",
+    "frm_01JRQ4H8ZE0000000000000153": "home-desk-evening",
+    "frm_01JRQ4H8ZE0000000000000154": "home-desk-evening",
+    "frm_01JRQ4H8ZE0000000000000155": "home-desk-evening",
+    "frm_01JRQ4H8ZE0000000000000156": "home-desk-evening",
+    "frm_01JRQ4H8ZE0000000000000157": "home-desk-evening",
+    "frm_01JRQ4H8ZE0000000000000158": "home-desk-evening",
+    "frm_01JRQ4H8ZE0000000000000159": "home-desk-evening",
+    "frm_01JRQ4H8ZE0000000000000160": "home-desk-evening",
+    "frm_01JRQ4H8ZE0000000000000161": "home-desk-evening",
+    "frm_01JRQ4H8ZE0000000000000162": "home-desk-evening"
+  },
+  "highlights": [
+    "home-kitchen-breakfast",
+    "home-desk-evening",
+    "home-desk-packing",
+    "tram-line4-morning",
+    "tram-line4-evening",
+    "bakery-counter",
+    "library-reading-room",
+    "library-holds-desk",
+    "street-walk-to-bakery",
+    "street-walk-to-library",
+    "street-walk-to-tram",
+    "cafe-coffee-corner",
+    "cafe-lamp-diagnosis",
+    "cafe-rewiring-base",
+    "cafe-continuity-test",
+    "cafe-parts-bin",
+    "cafe-switch-order",
+    "repair-bench-afternoon"
+  ]
+}

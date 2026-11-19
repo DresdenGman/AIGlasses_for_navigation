@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="640" height="480">
+  <rect width="640" height="480" fill="#F4F1EA"/>
+  <rect x="28" y="28" width="584" height="424" fill="none" stroke="#D9D4C7"/>
+  <text x="48" y="250" fill="#4A4843" font-family="ui-monospace, monospace" font-size="18">plate pending</text>
+</svg>

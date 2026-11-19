@@ -1,0 +1,1622 @@
+[
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000001",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000001",
+    "ts_ms": 1776520800000,
+    "kind": "caption",
+    "text": "A small wooden kitchen table set for breakfast holds a bowl of oatmeal with banana slices, a ceramic mug of tea, and an open notebook showing a hand-drawn lamp wiring sketch.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000002",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000002",
+    "ts_ms": 1776521100000,
+    "kind": "caption",
+    "text": "A close view of the bowl of oatmeal with banana slices; a spoon is lifted above it, while the notebook page with the wiring sketch stays open beside the mug.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000003",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000003",
+    "ts_ms": 1776521400000,
+    "kind": "caption",
+    "text": "A ceramic coffee mug is clearly visible next to the half-eaten bowl of oatmeal; the open notebook with the lamp wiring sketch lies just beyond the mug.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000004",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000004",
+    "ts_ms": 1776521700000,
+    "kind": "caption",
+    "text": "The coffee mug takes up the right side of the frame, with a spoon resting in the oatmeal and the hand-drawn lamp sketch partially visible in the open notebook.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000005",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000005",
+    "ts_ms": 1776522000000,
+    "kind": "caption",
+    "text": "A hand reaches for the coffee mug as the other hand flips a page in the notebook, exposing more of the lamp wiring sketch.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000006",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000006",
+    "ts_ms": 1776522300000,
+    "kind": "caption",
+    "text": "The bowl is nearly empty, the spoon rests on a folded napkin, and the coffee mug sits beside the closed notebook as morning light falls across the table.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000007",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000007",
+    "ts_ms": 1776522600000,
+    "kind": "caption",
+    "text": "An old metal desk lamp with a cracked rocker switch lies on a folded towel on a cluttered desk, with a canvas tote and small screwdriver set beside it.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000008",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000008",
+    "ts_ms": 1776522900000,
+    "kind": "caption",
+    "text": "Hands fold the towel over the desk lamp, leaving the cracked rocker switch visible near one edge.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000009",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000009",
+    "ts_ms": 1776523200000,
+    "kind": "caption",
+    "text": "The lamp is now wrapped in the towel, only the neck and cracked switch exposed on the desk.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000010",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000010",
+    "ts_ms": 1776523500000,
+    "kind": "caption",
+    "text": "Hands lower the towel-wrapped lamp into a canvas tote, next to a small screwdriver set.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000011",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000011",
+    "ts_ms": 1776523800000,
+    "kind": "caption",
+    "text": "A hand smooths the top of the tote over the wrapped lamp and screwdriver set, the desk clear in front.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000012",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000012",
+    "ts_ms": 1776524100000,
+    "kind": "caption",
+    "text": "A folded dark umbrella is held in one hand near a narrow hallway coat rack, with the front door slightly open and soft morning light falling across the floor.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000013",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000013",
+    "ts_ms": 1776524400000,
+    "kind": "caption",
+    "text": "A hand reaches toward a jacket on a coat rack in a narrow hallway; a folded umbrella is tucked under the other arm, and the front door stands partly open.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000014",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000014",
+    "ts_ms": 1776524700000,
+    "kind": "caption",
+    "text": "A small wall hook by the door holds an indistinct metallic object, out of focus in the soft morning light; one hand pats a jacket pocket.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000015",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000015",
+    "ts_ms": 1776525000000,
+    "kind": "caption",
+    "text": "From near the open front door, the dark folded umbrella is visible under an arm while a hand reaches for the door handle; morning light spills into the hallway.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000016",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000016",
+    "ts_ms": 1776525300000,
+    "kind": "caption",
+    "text": "A quiet tree-lined residential sidewalk in early morning leads toward a small tram stop shelter ahead; far in the distance, a pedestrian is visible from behind.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000017",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000017",
+    "ts_ms": 1776525600000,
+    "kind": "caption",
+    "text": "The camera drifts to the side, showing a folded umbrella tucked under the wearer's arm against a jacket, with the tram stop shelter still ahead.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000018",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000018",
+    "ts_ms": 1776525900000,
+    "kind": "caption",
+    "text": "Inside the tram, a window seat view; my tote bag rests on my lap, and a passenger display reads 'Line 4 · Fernhollow'.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000019",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000019",
+    "ts_ms": 1776526200000,
+    "kind": "caption",
+    "text": "A tram ticket sits on my lap next to the tote, and the display above shows 'Line 4 · Fernhollow'.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000020",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000020",
+    "ts_ms": 1776526500000,
+    "kind": "caption",
+    "text": "Blurred motion inside the tram; the window and seated passengers are soft shapes, the tote bag a dark smudge on my lap.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000021",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000021",
+    "ts_ms": 1776526800000,
+    "kind": "caption",
+    "text": "The frame is blurry as the tram sways; bright window streaks and the outline of the tote bag fill the view.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000022",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000022",
+    "ts_ms": 1776527100000,
+    "kind": "caption",
+    "text": "The view steadies as the tram slows; the display comes into focus and my hand rests on the tote bag strap.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000023",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000023",
+    "ts_ms": 1776527400000,
+    "kind": "caption",
+    "text": "A first-person view of the entrance to a community hall, showing a hand-painted sign that reads 'Fernhollow Repair Cafe — Saturdays' above the door; a table with a clipboard is beside it.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000024",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000024",
+    "ts_ms": 1776527700000,
+    "kind": "caption",
+    "text": "A close view of a paper intake form on a clipboard on a table; a hand holding a pen hovers above the form.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000025",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000025",
+    "ts_ms": 1776528000000,
+    "kind": "caption",
+    "text": "A desk lamp with a dark cord and a cracked rocker switch sits on the intake table next to the clipboard; a hand rests the pen nearby.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000026",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000026",
+    "ts_ms": 1776528300000,
+    "kind": "caption",
+    "text": "A wider view of the community hall interior shows workbenches with a few people standing with backs to the camera; the intake table and desk lamp remain in the foreground.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000027",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000027",
+    "ts_ms": 1776528600000,
+    "kind": "caption",
+    "text": "A first-person view of the clipboard form with 'desk lamp' and 'flickers, switch cracked' written in pen on the item and problem lines.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000028",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000028",
+    "ts_ms": 1776528900000,
+    "kind": "caption",
+    "text": "A hand slides the completed intake form across the table toward a volunteer fixer; the desk lamp and the sign are partially visible in the background.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000029",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000029",
+    "ts_ms": 1776529200000,
+    "kind": "caption",
+    "text": "A wooden workbench fills the frame; the desk lamp lies on its side with the base open, and a small dish holds four screws.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000030",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000030",
+    "ts_ms": 1776529500000,
+    "kind": "caption",
+    "text": "The desk lamp is clearly visible with its base open and wiring exposed; four small screws sit in a little dish beside it.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000031",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000031",
+    "ts_ms": 1776529800000,
+    "kind": "caption",
+    "text": "A close view of the open lamp base shows two wires separated; the volunteer's hand holds a screwdriver near the cord entry.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000032",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000032",
+    "ts_ms": 1776530100000,
+    "kind": "caption",
+    "text": "The volunteer's fingers tilt the lamp base toward the camera; the cord trails across the warm wooden workbench.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000033",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000033",
+    "ts_ms": 1776530400000,
+    "kind": "caption",
+    "text": "Overhead light falls on the cracked rocker switch inside the open base; a small screwdriver rests near the dish of screws.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000034",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000034",
+    "ts_ms": 1776530700000,
+    "kind": "caption",
+    "text": "The desk lamp is clearly visible with its base open, and a digital multimeter sits next to it; the volunteer's hand points from the switch to the multimeter.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000035",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000035",
+    "ts_ms": 1776531000000,
+    "kind": "caption",
+    "text": "A wider view shows the desk lamp, the multimeter, the small dish of screws, and the cord coiled at the bench edge.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000036",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000036",
+    "ts_ms": 1776531300000,
+    "kind": "caption",
+    "text": "The volunteer's hands lift the multimeter probes; the lamp cord lies in a loose coil on the workbench.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000037",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000037",
+    "ts_ms": 1776531600000,
+    "kind": "caption",
+    "text": "Close on the open lamp base: the rocker switch is cracked, and the multimeter probes rest beside the lamp on the wood.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000038",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000038",
+    "ts_ms": 1776531900000,
+    "kind": "caption",
+    "text": "A hand rotates the lamp base; four screws gleam in the little dish at the corner of the frame.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000039",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000039",
+    "ts_ms": 1776532200000,
+    "kind": "caption",
+    "text": "The multimeter display is softly out of focus beyond the desk lamp; the volunteer's hand adjusts one probe near the cord.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000040",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000040",
+    "ts_ms": 1776532500000,
+    "kind": "caption",
+    "text": "The desk lamp is centered in frame with its base open and wires partly tidied; the four screws remain in the little dish.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000041",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000041",
+    "ts_ms": 1776532800000,
+    "kind": "caption",
+    "text": "The volunteer's hand lifts one screw from the dish while the lamp base rests open on the wooden bench.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000042",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000042",
+    "ts_ms": 1776533100000,
+    "kind": "caption",
+    "text": "Warm light falls across the workbench as the lamp and multimeter sit together near the edge; the screwdriver is set aside.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000043",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000043",
+    "ts_ms": 1776533400000,
+    "kind": "caption",
+    "text": "A close view of the multimeter on the workbench with its red and black probes resting near a coiled cord.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000044",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000044",
+    "ts_ms": 1776533700000,
+    "kind": "caption",
+    "text": "The multimeter is centered in the frame, probes touching the flat prongs of the lamp plug while a hand steadies the cord.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000045",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000045",
+    "ts_ms": 1776534000000,
+    "kind": "caption",
+    "text": "The meter display fills the right side of the frame, showing a steady reading as the black probe stays on the cord's prong.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000046",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000046",
+    "ts_ms": 1776534300000,
+    "kind": "caption",
+    "text": "A hand lifts the red probe away from the plug, leaving the black clip attached; the coiled wire shifts on the bench.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000047",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000047",
+    "ts_ms": 1776534600000,
+    "kind": "caption",
+    "text": "Looking down at the bench, the lamp base sits beside the multimeter with its base screws collected in a small dish.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000048",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000048",
+    "ts_ms": 1776534900000,
+    "kind": "caption",
+    "text": "The camera drifts toward the coiled power cord and the meter; a hand adjusts the selection dial to continuity mode.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000049",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000049",
+    "ts_ms": 1776535200000,
+    "kind": "caption",
+    "text": "A close view of the meter screen shows the continuity symbol and a row of small digits, while the probes press against the prongs.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000050",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000050",
+    "ts_ms": 1776535500000,
+    "kind": "caption",
+    "text": "The multimeter's black probe and red probe each touch a lamp plug prong; a pair of hands holds the cord from sliding off the bench.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000051",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000051",
+    "ts_ms": 1776535800000,
+    "kind": "caption",
+    "text": "The lens shifts to the lamp base with its open bottom, showing a tidy knot in the cord where it enters the strain relief.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000052",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000052",
+    "ts_ms": 1776536100000,
+    "kind": "caption",
+    "text": "A hand points to the knot inside the base while the multimeter lies beyond, display still lit.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000053",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000053",
+    "ts_ms": 1776536400000,
+    "kind": "caption",
+    "text": "From a short distance, the workbench shows the disassembled lamp, coil of wire, and the multimeter near the edge.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000054",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000054",
+    "ts_ms": 1776536700000,
+    "kind": "caption",
+    "text": "A last close view of the multimeter probes resting across the lamp plug, with the bench slightly blurred behind.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000055",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000055",
+    "ts_ms": 1776537000000,
+    "kind": "caption",
+    "text": "At the tea corner, a tall metal urn and stacks of paper cups sit on a counter beside a tin of biscuits; a cork board above shows a handwritten schedule.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000056",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000056",
+    "ts_ms": 1776537300000,
+    "kind": "caption",
+    "text": "The view drifts toward the cork board, where Saturday hours are written in marker; in the background, a few people stand with their backs to the camera.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000057",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000057",
+    "ts_ms": 1776537600000,
+    "kind": "caption",
+    "text": "A pair of hands holds a paper cup of tea near the counter; the biscuit tin lid is partly open, and the large urn reflects the overhead light.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000058",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000058",
+    "ts_ms": 1776537900000,
+    "kind": "caption",
+    "text": "A volunteer's hands gesture over the cork board schedule while the camera stays low, catching only the edge of a workbench and two chairs.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000059",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000059",
+    "ts_ms": 1776538200000,
+    "kind": "caption",
+    "text": "The view shifts to a small round table with two paper cups, a folded napkin, and a biscuit on a napkin; people blurred in the far background are seen from behind.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000060",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000060",
+    "ts_ms": 1776538500000,
+    "kind": "caption",
+    "text": "A wide shot of the tea corner shows the urn, a stack of cups, and a person's back at the counter while light rain streaks the window.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000061",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000061",
+    "ts_ms": 1776538800000,
+    "kind": "caption",
+    "text": "Close on the biscuit tin label, a simple handwritten note reading 'tea corner,' and the corner of a paper schedule pinned to the cork.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000062",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000062",
+    "ts_ms": 1776539100000,
+    "kind": "caption",
+    "text": "The camera tilts up to a cork board filled with hand-drawn posters; a blurred figure in the foreground reaches for a paper cup.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000063",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000063",
+    "ts_ms": 1776539400000,
+    "kind": "caption",
+    "text": "Two paper cups sit on a low table next to a small dish of sugar packets; in the background, people in work aprons chat with their backs turned.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000064",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000064",
+    "ts_ms": 1776539700000,
+    "kind": "caption",
+    "text": "Over the shoulder of a seated person, the tea urn and cork board are visible across the room; only the back of a head appears.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000065",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000065",
+    "ts_ms": 1776540000000,
+    "kind": "caption",
+    "text": "A hand places a folded umbrella on the floor beside a chair; the table holds an empty paper cup and a half-open tin of biscuits.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000066",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000066",
+    "ts_ms": 1776540300000,
+    "kind": "caption",
+    "text": "The camera looks back toward the tea corner from a few steps away; a tall metal urn gleams, and two people stand in the distance facing away.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000067",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000067",
+    "ts_ms": 1776542400000,
+    "kind": "caption",
+    "text": "A workbench holds a gray plastic bin full of loose switches, knobs, and connectors; a pair of hands lifts the lid aside.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000068",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000068",
+    "ts_ms": 1776542700000,
+    "kind": "caption",
+    "text": "The desk lamp base rests next to the bin, its four screw holes empty and the cord coiled loosely.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000069",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000069",
+    "ts_ms": 1776543000000,
+    "kind": "caption",
+    "text": "Hands sift through the bin, lifting a small black rocker switch above the jumble of plastic parts.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000070",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000070",
+    "ts_ms": 1776543300000,
+    "kind": "caption",
+    "text": "The open lamp base is tilted toward the bin, showing the rectangular switch cutout in the metal.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000071",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000071",
+    "ts_ms": 1776543600000,
+    "kind": "caption",
+    "text": "A hand holds a gray switch near the lamp's cutout; the switch body is visibly wider than the opening.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000072",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000072",
+    "ts_ms": 1776543900000,
+    "kind": "caption",
+    "text": "The hands set the gray switch aside and continue sorting through connectors in the bin.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000073",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000073",
+    "ts_ms": 1776544200000,
+    "kind": "caption",
+    "text": "Close view of the bin's top layer: several rocker switches, a few round knobs, and tangled spade connectors.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000074",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000074",
+    "ts_ms": 1776544500000,
+    "kind": "caption",
+    "text": "The lamp base sits beside the bin, the cutout empty, and the hands rest on the edge of the bench.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000075",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000075",
+    "ts_ms": 1776544800000,
+    "kind": "caption",
+    "text": "A close view of a paper order slip on the workbench, a hand resting a pen beside it; the opened lamp base sits to the left and a cup of coffee to the right.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000076",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000076",
+    "ts_ms": 1776545100000,
+    "kind": "caption",
+    "text": "A hand writes on the paper order slip; the phrase 'switch — Tuesday' appears in neat handwriting above a small diagram of the lamp base.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000077",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000077",
+    "ts_ms": 1776545400000,
+    "kind": "caption",
+    "text": "Wider view across the bench shows a hand pointing at the opened lamp base, the order slip between them, and a coffee cup near the edge.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000078",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000078",
+    "ts_ms": 1776545700000,
+    "kind": "caption",
+    "text": "The order slip now shows the handwritten text 'switch — Tuesday', with the opened lamp base in the left foreground and a cup of coffee behind it.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000079",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000079",
+    "ts_ms": 1776546000000,
+    "kind": "caption",
+    "text": "Close view of the opened lamp base as a hand rotates it slightly; the paper slip and coffee cup are blurred in the background.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000080",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000080",
+    "ts_ms": 1776546300000,
+    "kind": "caption",
+    "text": "From behind, the volunteer leans over the bench, writing on the order slip; the opened lamp base and coffee cup sit near the hands.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000081",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000081",
+    "ts_ms": 1776546600000,
+    "kind": "caption",
+    "text": "Hands feed a black cord into the base of a metal desk lamp, the frame close on the open housing and a small dish of screws nearby.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000082",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000082",
+    "ts_ms": 1776546900000,
+    "kind": "caption",
+    "text": "A fingertip holds the cord steady against the lamp base while the other hand begins forming a loop, a work light overhead.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000083",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000083",
+    "ts_ms": 1776547200000,
+    "kind": "caption",
+    "text": "The desk lamp lies on its side at the workbench with its base open, exposing the wiring and the cord being repositioned.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000084",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000084",
+    "ts_ms": 1776547500000,
+    "kind": "caption",
+    "text": "A close view of a knot tied in the lamp cord just inside the metal base, with the wire strippers resting within reach.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000085",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000085",
+    "ts_ms": 1776547800000,
+    "kind": "caption",
+    "text": "Hands pull the knot snug against the opening in the base, the strain-relief loop flat along the metal edge.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000086",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000086",
+    "ts_ms": 1776548100000,
+    "kind": "caption",
+    "text": "Fingers tuck the inner wires apart and tidy them inside the lamp base, the small dish of screws still in the foreground.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000087",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000087",
+    "ts_ms": 1776548400000,
+    "kind": "caption",
+    "text": "A screwdriver leans against the dish of screws as both hands adjust the cord where it exits the base.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000088",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000088",
+    "ts_ms": 1776548700000,
+    "kind": "caption",
+    "text": "The open lamp base, wire strippers, and a folded towel occupy the bench under a bright work light.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000089",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000089",
+    "ts_ms": 1776549000000,
+    "kind": "caption",
+    "text": "Four small screws fill the shallow dish beside the lamp, each one clearly visible while hands work on the cord above.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000090",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000090",
+    "ts_ms": 1776549300000,
+    "kind": "caption",
+    "text": "Hands press the cord into a groove in the base, the strain-relief knot seated just inside the opening.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000091",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000091",
+    "ts_ms": 1776549600000,
+    "kind": "caption",
+    "text": "A wider view of the desk lamp on the bench shows its base still open and the cord secured in place.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000092",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000092",
+    "ts_ms": 1776549900000,
+    "kind": "caption",
+    "text": "One hand lifts the upper half of the base over the lower shell, aligning the edges for reassembly.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000093",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000093",
+    "ts_ms": 1776550200000,
+    "kind": "caption",
+    "text": "Fingers guide the cord away from the lamp base as the desk lamp sits upright, the dish of screws still nearby.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000094",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000094",
+    "ts_ms": 1776550500000,
+    "kind": "caption",
+    "text": "The work light glints across the metal base and the dish of screws as the lamp waits, its cord neatly held.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000095",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000095",
+    "ts_ms": 1776550800000,
+    "kind": "caption",
+    "text": "First-person view of the repair cafe workbench with a bright red metal toolbox and an opened desk lamp beside it.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000096",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000096",
+    "ts_ms": 1776551100000,
+    "kind": "caption",
+    "text": "Close view of the opened desk lamp base and its loose cord on the workbench; the red toolbox sits near the edge.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000097",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000097",
+    "ts_ms": 1776551400000,
+    "kind": "caption",
+    "text": "Four small screws sit on the workbench surface just in front of the red toolbox, the lamp's base open nearby.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000098",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000098",
+    "ts_ms": 1776551940000,
+    "kind": "caption",
+    "text": "A hand places the last of four screws on the closed lid of the red toolbox, with the opened lamp base to the left.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000099",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000099",
+    "ts_ms": 1776552000000,
+    "kind": "caption",
+    "text": "All four screws are now grouped on the red toolbox lid, the lamp body and its opened base resting beside the toolbox.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000100",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000100",
+    "ts_ms": 1776552060000,
+    "kind": "caption",
+    "text": "The four screws sit in a small cluster on the red toolbox lid, and the lamp base remains open on the workbench.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000101",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000101",
+    "ts_ms": 1776552600000,
+    "kind": "caption",
+    "text": "Wider view of the bench shows the red toolbox with the screws on its lid, the opened lamp and loose cord at the side.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000102",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000102",
+    "ts_ms": 1776552900000,
+    "kind": "caption",
+    "text": "Close-up of the four screws resting on the red toolbox lid, with the lamp cord and base blurred in the background.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000103",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000103",
+    "ts_ms": 1776553200000,
+    "kind": "caption",
+    "text": "A wooden shelf labeled 'waiting for parts' holds the desk lamp with a blue paper tag as a hand places it among other repaired items.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000104",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000104",
+    "ts_ms": 1776553500000,
+    "kind": "caption",
+    "text": "On the shelf labeled 'waiting for parts', the desk lamp's blue tag is clearly visible next to a small radio and a toaster.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000105",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000105",
+    "ts_ms": 1776553800000,
+    "kind": "caption",
+    "text": "Close view of the blue tag attached to the lamp cord, with the wooden shelf edge and other items softly out of focus.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000106",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000106",
+    "ts_ms": 1776554100000,
+    "kind": "caption",
+    "text": "A hand adjusts the lamp's position on the shelf, the blue tag hanging from the cord, while other repaired items sit along the shelf.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000107",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000107",
+    "ts_ms": 1776554400000,
+    "kind": "caption",
+    "text": "A folded umbrella under one arm occupies the lower edge of the frame; ahead, a damp sidewalk stretches past storefront awnings with a few distant pedestrians.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000108",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000108",
+    "ts_ms": 1776554700000,
+    "kind": "caption",
+    "text": "Light rain speckles the pavement and puddle reflections show a gray sky; two figures with umbrellas walk away in the middle distance.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000109",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000109",
+    "ts_ms": 1776555000000,
+    "kind": "caption",
+    "text": "Near a bakery storefront, the upper edge of an open umbrella frames a window filled with bread; steady light drizzle continues.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000110",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000110",
+    "ts_ms": 1776555300000,
+    "kind": "caption",
+    "text": "A cozy bakery counter with a chalkboard sign reading 'Quill Street Bakery' behind the glass case, cinnamon buns visible under warm light.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000111",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000111",
+    "ts_ms": 1776555600000,
+    "kind": "caption",
+    "text": "The glass case is close up, showing cinnamon buns with glaze, and cashier's hands rest on the counter edge.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000112",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000112",
+    "ts_ms": 1776555900000,
+    "kind": "caption",
+    "text": "A rye loaf sits in a paper bag on the counter, with a folded umbrella leaning against the counter nearby.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000113",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000113",
+    "ts_ms": 1776556200000,
+    "kind": "caption",
+    "text": "A paper bag with the bread loaf sits on the counter next to the register, its top folded open enough to show the crust.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000114",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000114",
+    "ts_ms": 1776556500000,
+    "kind": "caption",
+    "text": "The folded umbrella leans against the counter, and two white paper bags sit near the edge, one with the bread loaf.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000115",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000115",
+    "ts_ms": 1776556800000,
+    "kind": "caption",
+    "text": "A damp sidewalk stretches ahead in late afternoon light, with a brown paper bakery bag held low in one hand and a modest brick library building visible up the block.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000116",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000116",
+    "ts_ms": 1776557100000,
+    "kind": "caption",
+    "text": "The view shifts slightly down toward the wet concrete and the lower edge of the paper bag swaying gently, while the library building remains in the far background.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000117",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000117",
+    "ts_ms": 1776557400000,
+    "kind": "caption",
+    "text": "The library's brick facade now fills the upper part of the frame, and the soggy bakery bag is held against a jacket as the entrance comes into view.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000118",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000118",
+    "ts_ms": 1776557700000,
+    "kind": "caption",
+    "text": "A service desk at Larkspur Community Library with a 'Holds' sign, a stack of returned books, and a library card on the counter while hands rest on a keyboard.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000119",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000119",
+    "ts_ms": 1776558000000,
+    "kind": "caption",
+    "text": "The same service desk from eye level, with a folded umbrella propped against the counter edge and a stack of returned books beside it.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000120",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000120",
+    "ts_ms": 1776558300000,
+    "kind": "caption",
+    "text": "A close view of the counter as hands slide a library card toward the staff member's keyboard, with shelves of books blurred behind.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000121",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000121",
+    "ts_ms": 1776558600000,
+    "kind": "caption",
+    "text": "An eye-level view of the holds desk monitor showing a library account screen, with the edge of the 'Holds' sign and a stack of books at the right.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000122",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000122",
+    "ts_ms": 1776558900000,
+    "kind": "caption",
+    "text": "A wider view of the desk from the patron's side, with one hand resting on the folded umbrella and the staff member's hands typing at the keyboard.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000123",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000123",
+    "ts_ms": 1776559200000,
+    "kind": "caption",
+    "text": "A quiet reading room with long wooden tables and green reading lamps stretches toward tall windows streaked with rain; a few readers sit with heads bent over books.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000124",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000124",
+    "ts_ms": 1776559500000,
+    "kind": "caption",
+    "text": "An open book on small appliance repair fills the lower half of the frame, its wiring diagrams clearly visible under a green reading lamp.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000125",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000125",
+    "ts_ms": 1776559800000,
+    "kind": "caption",
+    "text": "Tall windows along the far wall blur with rain, and the silhouettes of readers at a long table are visible from behind.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000126",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000126",
+    "ts_ms": 1776560100000,
+    "kind": "caption",
+    "text": "A low angle along the long wooden table shows a reader's back in soft focus; green lamps glow above open books.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000127",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000127",
+    "ts_ms": 1776560400000,
+    "kind": "caption",
+    "text": "The book on small appliance repair sits open to a page of wiring diagrams and screw terminals, clearly visible under the warm reading lamp.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000128",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000128",
+    "ts_ms": 1776560700000,
+    "kind": "caption",
+    "text": "A hand traces a wiring diagram on the open page; the surrounding text is slightly blurred in the warm green lamp light.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000129",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000129",
+    "ts_ms": 1776561000000,
+    "kind": "caption",
+    "text": "A staff member in a dark cardigan stands at the far end of the long table, their back toward the camera, speaking in a low voice.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000130",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000130",
+    "ts_ms": 1776561300000,
+    "kind": "caption",
+    "text": "The book is open to a diagram of a small appliance switch, clearly visible, while rain streams down the tall window behind it.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000131",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000131",
+    "ts_ms": 1776561600000,
+    "kind": "caption",
+    "text": "The green reading lamp glows against the dimming room; rain speckles the tall window, blurring the trees outside.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000132",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000132",
+    "ts_ms": 1776561900000,
+    "kind": "caption",
+    "text": "A hand turns a page of the repair book, revealing a section on continuity testing; the page edges look soft in the low light.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000133",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000133",
+    "ts_ms": 1776562200000,
+    "kind": "caption",
+    "text": "A wide view across the quiet reading room shows long wooden tables, green reading lamps, and readers seen from behind as rain falls outside.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000134",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000134",
+    "ts_ms": 1776562500000,
+    "kind": "caption",
+    "text": "The tram aisle stretches ahead at dusk, a paper bakery bag resting on the lap, and the window shows rain streaks with blurred city lights beyond.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000135",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000135",
+    "ts_ms": 1776562800000,
+    "kind": "caption",
+    "text": "Looking down at the bakery bag on the lap, one hand holding the top steady as the tram sways gently through the evening.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000136",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000136",
+    "ts_ms": 1776563100000,
+    "kind": "caption",
+    "text": "The camera tilts toward the rain-streaked window; distant headlights blur into streaks, and the edge of a folded umbrella leans against the seat.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000137",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000137",
+    "ts_ms": 1776563400000,
+    "kind": "caption",
+    "text": "A blurry frame of the tram interior, smeared amber lights and the dark outline of a seated passenger seen from behind near the doors.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000138",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000138",
+    "ts_ms": 1776563700000,
+    "kind": "caption",
+    "text": "View returns to the bakery bag on the lap, a hand resting loosely on the paper, window reflections gliding past in the rain.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000139",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000139",
+    "ts_ms": 1776564000000,
+    "kind": "caption",
+    "text": "A wide view near the tram doors shows a few passengers from behind, rain running down the glass, and the paper bag still settled on the lap.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000140",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000140",
+    "ts_ms": 1776564300000,
+    "kind": "caption",
+    "text": "A dim hallway at dusk, seen from eye level; a small puddle is forming on the mat just inside the front door.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000141",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000141",
+    "ts_ms": 1776564600000,
+    "kind": "caption",
+    "text": "The front door is visible with a wet umbrella leaning against the wall beside it, its tip leaving water on the floor.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000142",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000142",
+    "ts_ms": 1776564900000,
+    "kind": "caption",
+    "text": "A paper bakery bag sits on a wooden side table in the dim hallway, next to the entryway mat.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000143",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000143",
+    "ts_ms": 1776565200000,
+    "kind": "caption",
+    "text": "A bowl of soup sits on a kitchen table beside a small board with slices of rye bread and a single cinnamon bun on a plate, under warm lamp light.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000144",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000144",
+    "ts_ms": 1776565500000,
+    "kind": "caption",
+    "text": "A hand holds a spoon over a bowl of soup, with rye bread and a cinnamon bun visible on the table in the warm evening light.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000145",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000145",
+    "ts_ms": 1776565800000,
+    "kind": "caption",
+    "text": "Close view of a chunk of rye bread being torn from a slice, crumbs on the wooden board.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000146",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000146",
+    "ts_ms": 1776566100000,
+    "kind": "caption",
+    "text": "A cinnamon bun on a small plate with a fork resting beside it, the bowl of soup partly emptied in the background.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000147",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000147",
+    "ts_ms": 1776566400000,
+    "kind": "caption",
+    "text": "The kitchen table at an angle shows a half-finished bowl of soup and the rye bread board with a few crumbs, warm lamp glow.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000148",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000148",
+    "ts_ms": 1776566700000,
+    "kind": "caption",
+    "text": "A hand reaches for a cinnamon bun on a plate, warm lamp light falling across the table.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000149",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000149",
+    "ts_ms": 1776567000000,
+    "kind": "caption",
+    "text": "The table near the end of the meal, with only crumbs left on the bread board and the plate showing traces of cinnamon.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000150",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000150",
+    "ts_ms": 1776567300000,
+    "kind": "caption",
+    "text": "The bowl and plate are pushed toward the center of the table; the lamp light is soft and low, leaving the kitchen edges dim.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000151",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000151",
+    "ts_ms": 1776567600000,
+    "kind": "caption",
+    "text": "A dim desk at night is lit by a small clip lamp, showing an open paper notebook with a short to-do list and a pencil resting beside it.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000152",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000152",
+    "ts_ms": 1776567900000,
+    "kind": "caption",
+    "text": "The notebook page fills more of the frame, with handwritten items and a pencil tip near the paper; a blurred shelf holds indistinct small objects behind.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000153",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000153",
+    "ts_ms": 1776568200000,
+    "kind": "caption",
+    "text": "A hand writes in the notebook, the pencil moving across the page in the small pool of warm light from the clip lamp.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000154",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000154",
+    "ts_ms": 1776568500000,
+    "kind": "caption",
+    "text": "The camera angles low across the desk, catching the clip lamp's bright edge and the shadow of a hand over the notebook.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000155",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000155",
+    "ts_ms": 1776568800000,
+    "kind": "caption",
+    "text": "The paper notebook shows a list with several crossed-out words; a pencil lies diagonally across it, and the desk surface fades into darkness.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000156",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000156",
+    "ts_ms": 1776569100000,
+    "kind": "caption",
+    "text": "The camera drifts toward the shelf in the background, where a few small shapes are out of focus and the desk lamp light just catches their edges.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000157",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000157",
+    "ts_ms": 1776569400000,
+    "kind": "caption",
+    "text": "Back at the notebook, a hand pauses with the pencil above the page; the only light is the small clip lamp, leaving the top of the desk in shadow.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000158",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000158",
+    "ts_ms": 1776569700000,
+    "kind": "caption",
+    "text": "The clip light throws a narrow beam onto the notebook, and the edge of a hand is just visible at the lower left of the frame.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000159",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000159",
+    "ts_ms": 1776570000000,
+    "kind": "caption",
+    "text": "The paper notebook lies open at an angle, the to-do list partially visible with a few new words, while the room around it is indistinct and dim.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000160",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000160",
+    "ts_ms": 1776570300000,
+    "kind": "caption",
+    "text": "A pencil rests in the crease of the notebook, and the desk lamp casts a warm glow that fades quickly into the dark background.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000161",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000161",
+    "ts_ms": 1776570600000,
+    "kind": "caption",
+    "text": "Very dark frame of the desk with just the clip lamp glowing near the notebook, the page barely visible and the shelf lost in shadow.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000162",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000162",
+    "ts_ms": 1776570900000,
+    "kind": "caption",
+    "text": "In near darkness, the small clip lamp illuminates only a corner of the notebook and the pale shape of a hand near the pencil.",
+    "lang": "en",
+    "model": "fixture",
+    "score": 0.8
+  }
+]

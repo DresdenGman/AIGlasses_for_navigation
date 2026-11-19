@@ -1,0 +1,20 @@
+{
+  "timezone": "America/Los_Angeles",
+  "retention_days": 365,
+  "local_first": true,
+  "audio_enabled": true,
+  "audio_consent_ack_ms": 1763568120000,
+  "keep_raw_audio": false,
+  "face_blur": true,
+  "location_enabled": true,
+  "cloud_vision_enabled": false,
+  "capture_paused": false,
+  "frame_interval_s": 300,
+  "backup": {
+    "enabled": true,
+    "target_type": "nas",
+    "encrypted": true,
+    "since_ms": 1765092600000,
+    "schedule_local": "02:30"
+  }
+}

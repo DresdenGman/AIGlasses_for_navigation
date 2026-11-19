@@ -1,0 +1,2209 @@
+{
+  "day": "2026-04-18",
+  "timezone": "America/Los_Angeles",
+  "language": "en",
+  "generated_ms": 1776570900000,
+  "provider": "fixture",
+  "model": null,
+  "status": "ok",
+  "headline": {
+    "id": "si_1",
+    "section": "headline",
+    "text": "Lamp repair morning at Fernhollow Repair Cafe, then bakery treats and a library hold",
+    "certainty": "confident",
+    "start_ms": 1776527400000,
+    "end_ms": 1776557700000,
+    "segment_ids": [
+      "seg_01JRQ4H8ZE0000000000000002",
+      "seg_01JRQ4H8ZE0000000000000003",
+      "seg_01JRQ4H8ZE0000000000000011",
+      "seg_01JRQ4H8ZE0000000000000012"
+    ],
+    "citations": [
+      {
+        "evidence_id": "cap_01JRQ4H8ZE0000000000000023",
+        "kind": "caption",
+        "day": "2026-04-18",
+        "ts_ms": 1776527400000,
+        "ts_end_ms": 1776527400000,
+        "ts_local": "2026-04-18T08:50:00-07:00",
+        "frame_id": "frm_01JRQ4H8ZE0000000000000023",
+        "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000023?variant=thumb",
+        "open_url": "/day/2026-04-18?t=1776527400000&focus=cap_01JRQ4H8ZE0000000000000023",
+        "quote": null,
+        "speaker": null,
+        "bbox": null,
+        "score": 0.8,
+        "certainty": "confident"
+      },
+      {
+        "evidence_id": "cap_01JRQ4H8ZE0000000000000110",
+        "kind": "caption",
+        "day": "2026-04-18",
+        "ts_ms": 1776555300000,
+        "ts_end_ms": 1776555300000,
+        "ts_local": "2026-04-18T16:35:00-07:00",
+        "frame_id": "frm_01JRQ4H8ZE0000000000000110",
+        "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000110?variant=thumb",
+        "open_url": "/day/2026-04-18?t=1776555300000&focus=cap_01JRQ4H8ZE0000000000000110",
+        "quote": null,
+        "speaker": null,
+        "bbox": null,
+        "score": 0.8,
+        "certainty": "confident"
+      },
+      {
+        "evidence_id": "cap_01JRQ4H8ZE0000000000000118",
+        "kind": "caption",
+        "day": "2026-04-18",
+        "ts_ms": 1776557700000,
+        "ts_end_ms": 1776557700000,
+        "ts_local": "2026-04-18T17:15:00-07:00",
+        "frame_id": "frm_01JRQ4H8ZE0000000000000118",
+        "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000118?variant=thumb",
+        "open_url": "/day/2026-04-18?t=1776557700000&focus=cap_01JRQ4H8ZE0000000000000118",
+        "quote": null,
+        "speaker": null,
+        "bbox": null,
+        "score": 0.8,
+        "certainty": "confident"
+      }
+    ]
+  },
+  "narrative": [
+    {
+      "id": "si_2",
+      "section": null,
+      "text": "Your day began at home with a quiet breakfast: oatmeal with banana slices, tea, and an open notebook showing a hand-drawn lamp wiring sketch. You talked through the lamp base and switch while getting ready, then gathered an umbrella and jacket before heading out.",
+      "certainty": "confident",
+      "start_ms": 1776520800000,
+      "end_ms": 1776524709100,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000001"
+      ],
+      "citations": [
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000001",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776520800000,
+          "ts_end_ms": 1776520800000,
+          "ts_local": "2026-04-18T07:00:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000001",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000001?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776520800000&focus=cap_01JRQ4H8ZE0000000000000001",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000002",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776521100000,
+          "ts_end_ms": 1776521100000,
+          "ts_local": "2026-04-18T07:05:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000002",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000002?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776521100000&focus=cap_01JRQ4H8ZE0000000000000002",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000001",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776521127000,
+          "ts_end_ms": 1776521131100,
+          "ts_local": "2026-04-18T07:05:27-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000002",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000002?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776521127000&focus=utt_01JRQ4H8ZE0000000000000001",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "You",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.82,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000003",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776521400000,
+          "ts_end_ms": 1776521400000,
+          "ts_local": "2026-04-18T07:10:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000003",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000003?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776521400000&focus=cap_01JRQ4H8ZE0000000000000003",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000012",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776524100000,
+          "ts_end_ms": 1776524100000,
+          "ts_local": "2026-04-18T07:55:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000012",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000012?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776524100000&focus=cap_01JRQ4H8ZE0000000000000012",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000010",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776524702200,
+          "ts_end_ms": 1776524709100,
+          "ts_local": "2026-04-18T08:05:02-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000014",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000014?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776524702200&focus=utt_01JRQ4H8ZE0000000000000010",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "You",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.79,
+          "certainty": "confident"
+        }
+      ]
+    },
+    {
+      "id": "si_3",
+      "section": null,
+      "text": "You rode the tram toward Fernhollow, keeping your tote and ticket close on Line 4. Around midday, you paused the recording for a break, planning to return at one.",
+      "certainty": "confident",
+      "start_ms": 1776525900000,
+      "end_ms": 1776539974100,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000002",
+        "seg_01JRQ4H8ZE0000000000000006"
+      ],
+      "citations": [
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000018",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776525900000,
+          "ts_end_ms": 1776525900000,
+          "ts_local": "2026-04-18T08:25:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000018",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000018?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776525900000&focus=cap_01JRQ4H8ZE0000000000000018",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000019",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776526200000,
+          "ts_end_ms": 1776526200000,
+          "ts_local": "2026-04-18T08:30:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000019",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000019?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776526200000&focus=cap_01JRQ4H8ZE0000000000000019",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000100",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776539967100,
+          "ts_end_ms": 1776539974100,
+          "ts_local": "2026-04-18T12:19:27-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000065",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000065?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776539967100&focus=utt_01JRQ4H8ZE0000000000000100",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "You",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.79,
+          "certainty": "confident"
+        }
+      ]
+    },
+    {
+      "id": "si_4",
+      "section": null,
+      "text": "At Fernhollow Repair Cafe, you worked with a volunteer to diagnose the cracked rocker switch in your desk lamp. The two of you opened the base, checked the cord with a multimeter, and confirmed the switch was the main problem. Since the exact replacement wasn't on hand, you ordered one and left the lamp on the waiting-for-parts shelf.",
+      "certainty": "confident",
+      "start_ms": 1776527803500,
+      "end_ms": 1776553510400,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000003",
+        "seg_01JRQ4H8ZE0000000000000004",
+        "seg_01JRQ4H8ZE0000000000000005",
+        "seg_01JRQ4H8ZE0000000000000007",
+        "seg_01JRQ4H8ZE0000000000000008",
+        "seg_01JRQ4H8ZE0000000000000010"
+      ],
+      "citations": [
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000019",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776527803500,
+          "ts_end_ms": 1776527806200,
+          "ts_local": "2026-04-18T08:56:43-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776527803500&focus=utt_01JRQ4H8ZE0000000000000019",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "You",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.9,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000029",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776529200000,
+          "ts_end_ms": 1776529200000,
+          "ts_local": "2026-04-18T09:20:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000029",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000029?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776529200000&focus=cap_01JRQ4H8ZE0000000000000029",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000034",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776530700000,
+          "ts_end_ms": 1776530700000,
+          "ts_local": "2026-04-18T09:45:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000034",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000034?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776530700000&focus=cap_01JRQ4H8ZE0000000000000034",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000036",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776530701900,
+          "ts_end_ms": 1776530708400,
+          "ts_local": "2026-04-18T09:45:01-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000034",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000034?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776530701900&focus=utt_01JRQ4H8ZE0000000000000036",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPB",
+            "label": "Speaker B",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.7,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000043",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776533400000,
+          "ts_end_ms": 1776533400000,
+          "ts_local": "2026-04-18T10:30:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000043",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000043?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776533400000&focus=cap_01JRQ4H8ZE0000000000000043",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000055",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776533715900,
+          "ts_end_ms": 1776533722200,
+          "ts_local": "2026-04-18T10:35:15-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000044",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000044?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776533715900&focus=utt_01JRQ4H8ZE0000000000000055",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPB",
+            "label": "Speaker B",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.83,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000073",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776536150500,
+          "ts_end_ms": 1776536153400,
+          "ts_local": "2026-04-18T11:15:50-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000052",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000052?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776536150500&focus=utt_01JRQ4H8ZE0000000000000073",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "You",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.7,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000109",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776543967800,
+          "ts_end_ms": 1776543972900,
+          "ts_local": "2026-04-18T13:26:07-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776543967800&focus=utt_01JRQ4H8ZE0000000000000109",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "You",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.85,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000075",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776544800000,
+          "ts_end_ms": 1776544800000,
+          "ts_local": "2026-04-18T13:40:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000075",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000075?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776544800000&focus=cap_01JRQ4H8ZE0000000000000075",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000118",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776545520000,
+          "ts_end_ms": 1776545526500,
+          "ts_local": "2026-04-18T13:52:00-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776545520000&focus=utt_01JRQ4H8ZE0000000000000118",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPB",
+            "label": "Speaker B",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.84,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000103",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776553200000,
+          "ts_end_ms": 1776553200000,
+          "ts_local": "2026-04-18T16:00:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000103",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000103?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776553200000&focus=cap_01JRQ4H8ZE0000000000000103",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000141",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776553505600,
+          "ts_end_ms": 1776553510400,
+          "ts_local": "2026-04-18T16:05:05-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000104",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000104?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776553505600&focus=utt_01JRQ4H8ZE0000000000000141",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPB",
+            "label": "Speaker B",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.74,
+          "certainty": "confident"
+        }
+      ]
+    },
+    {
+      "id": "si_5",
+      "section": null,
+      "text": "Later, you stopped at Quill Street Bakery for a rye loaf and two cinnamon buns, then visited Larkspur Community Library. The library desk confirmed your reserved lamp repair manual would be ready Tuesday afternoon and renewed your card for another year.",
+      "certainty": "confident",
+      "start_ms": 1776555300000,
+      "end_ms": 1776558140500,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000011",
+        "seg_01JRQ4H8ZE0000000000000012"
+      ],
+      "citations": [
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000110",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776555300000,
+          "ts_end_ms": 1776555300000,
+          "ts_local": "2026-04-18T16:35:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000110",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000110?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776555300000&focus=cap_01JRQ4H8ZE0000000000000110",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000150",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776555605100,
+          "ts_end_ms": 1776555610900,
+          "ts_local": "2026-04-18T16:40:05-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000111",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000111?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776555605100&focus=utt_01JRQ4H8ZE0000000000000150",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPC",
+            "label": "Speaker C",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.76,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000153",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776555686500,
+          "ts_end_ms": 1776555690400,
+          "ts_local": "2026-04-18T16:41:26-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776555686500&focus=utt_01JRQ4H8ZE0000000000000153",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "You",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.75,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000112",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776555900000,
+          "ts_end_ms": 1776555900000,
+          "ts_local": "2026-04-18T16:45:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000112",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000112?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776555900000&focus=cap_01JRQ4H8ZE0000000000000112",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000118",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776557700000,
+          "ts_end_ms": 1776557700000,
+          "ts_local": "2026-04-18T17:15:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000118",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000118?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776557700000&focus=cap_01JRQ4H8ZE0000000000000118",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000163",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776558035400,
+          "ts_end_ms": 1776558037300,
+          "ts_local": "2026-04-18T17:20:35-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000119",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000119?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776558035400&focus=utt_01JRQ4H8ZE0000000000000163",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPD",
+            "label": "Speaker D",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.83,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000167",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776558135700,
+          "ts_end_ms": 1776558140500,
+          "ts_local": "2026-04-18T17:22:15-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776558135700&focus=utt_01JRQ4H8ZE0000000000000167",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPD",
+            "label": "Speaker D",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.75,
+          "certainty": "confident"
+        }
+      ]
+    }
+  ],
+  "places": [
+    {
+      "id": "si_6",
+      "section": null,
+      "text": "Home: morning breakfast, lamp wiring sketch, and leaving with an umbrella and jacket.",
+      "certainty": "confident",
+      "start_ms": 1776520800000,
+      "end_ms": 1776524709100,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000001"
+      ],
+      "citations": [
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000001",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776520800000,
+          "ts_end_ms": 1776520800000,
+          "ts_local": "2026-04-18T07:00:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000001",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000001?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776520800000&focus=cap_01JRQ4H8ZE0000000000000001",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000002",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776521100000,
+          "ts_end_ms": 1776521100000,
+          "ts_local": "2026-04-18T07:05:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000002",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000002?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776521100000&focus=cap_01JRQ4H8ZE0000000000000002",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000012",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776524100000,
+          "ts_end_ms": 1776524100000,
+          "ts_local": "2026-04-18T07:55:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000012",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000012?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776524100000&focus=cap_01JRQ4H8ZE0000000000000012",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000010",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776524702200,
+          "ts_end_ms": 1776524709100,
+          "ts_local": "2026-04-18T08:05:02-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000014",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000014?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776524702200&focus=utt_01JRQ4H8ZE0000000000000010",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "You",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.79,
+          "certainty": "confident"
+        }
+      ],
+      "place_id": "plc_01JRQ4H8ZE0000000000HOME01"
+    },
+    {
+      "id": "si_7",
+      "section": null,
+      "text": "Tram line 4: rode to Fernhollow with a tote and ticket, and returned in the evening with the bakery bag.",
+      "certainty": "confident",
+      "start_ms": 1776525900000,
+      "end_ms": 1776562500000,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000002",
+        "seg_01JRQ4H8ZE0000000000000012",
+        "seg_01JRQ4H8ZE0000000000000013"
+      ],
+      "citations": [
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000018",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776525900000,
+          "ts_end_ms": 1776525900000,
+          "ts_local": "2026-04-18T08:25:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000018",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000018?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776525900000&focus=cap_01JRQ4H8ZE0000000000000018",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000019",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776526200000,
+          "ts_end_ms": 1776526200000,
+          "ts_local": "2026-04-18T08:30:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000019",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000019?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776526200000&focus=cap_01JRQ4H8ZE0000000000000019",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000134",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776562500000,
+          "ts_end_ms": 1776562500000,
+          "ts_local": "2026-04-18T18:35:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000134",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000134?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776562500000&focus=cap_01JRQ4H8ZE0000000000000134",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        }
+      ],
+      "place_id": "plc_01JRQ4H8ZE0000000000TRAM04"
+    },
+    {
+      "id": "si_8",
+      "section": null,
+      "text": "Fernhollow Repair Cafe: diagnosed the lamp switch, tested the cord, and left the lamp on the waiting-for-parts shelf.",
+      "certainty": "confident",
+      "start_ms": 1776527400000,
+      "end_ms": 1776553200000,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000002",
+        "seg_01JRQ4H8ZE0000000000000003",
+        "seg_01JRQ4H8ZE0000000000000004",
+        "seg_01JRQ4H8ZE0000000000000005",
+        "seg_01JRQ4H8ZE0000000000000010"
+      ],
+      "citations": [
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000023",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776527400000,
+          "ts_end_ms": 1776527400000,
+          "ts_local": "2026-04-18T08:50:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000023",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000023?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776527400000&focus=cap_01JRQ4H8ZE0000000000000023",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000019",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776527803500,
+          "ts_end_ms": 1776527806200,
+          "ts_local": "2026-04-18T08:56:43-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776527803500&focus=utt_01JRQ4H8ZE0000000000000019",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "You",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.9,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000029",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776529200000,
+          "ts_end_ms": 1776529200000,
+          "ts_local": "2026-04-18T09:20:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000029",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000029?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776529200000&focus=cap_01JRQ4H8ZE0000000000000029",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000034",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776530700000,
+          "ts_end_ms": 1776530700000,
+          "ts_local": "2026-04-18T09:45:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000034",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000034?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776530700000&focus=cap_01JRQ4H8ZE0000000000000034",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000043",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776533400000,
+          "ts_end_ms": 1776533400000,
+          "ts_local": "2026-04-18T10:30:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000043",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000043?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776533400000&focus=cap_01JRQ4H8ZE0000000000000043",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000103",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776553200000,
+          "ts_end_ms": 1776553200000,
+          "ts_local": "2026-04-18T16:00:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000103",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000103?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776553200000&focus=cap_01JRQ4H8ZE0000000000000103",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        }
+      ],
+      "place_id": "plc_01JRQ4H8ZE0000000000CAFE01"
+    },
+    {
+      "id": "si_9",
+      "section": null,
+      "text": "Quill Street Bakery: bought a rye loaf and two cinnamon buns.",
+      "certainty": "confident",
+      "start_ms": 1776555300000,
+      "end_ms": 1776555900000,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000011"
+      ],
+      "citations": [
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000110",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776555300000,
+          "ts_end_ms": 1776555300000,
+          "ts_local": "2026-04-18T16:35:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000110",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000110?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776555300000&focus=cap_01JRQ4H8ZE0000000000000110",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000150",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776555605100,
+          "ts_end_ms": 1776555610900,
+          "ts_local": "2026-04-18T16:40:05-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000111",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000111?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776555605100&focus=utt_01JRQ4H8ZE0000000000000150",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPC",
+            "label": "Speaker C",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.76,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000153",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776555686500,
+          "ts_end_ms": 1776555690400,
+          "ts_local": "2026-04-18T16:41:26-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776555686500&focus=utt_01JRQ4H8ZE0000000000000153",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "You",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.75,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000112",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776555900000,
+          "ts_end_ms": 1776555900000,
+          "ts_local": "2026-04-18T16:45:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000112",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000112?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776555900000&focus=cap_01JRQ4H8ZE0000000000000112",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        }
+      ],
+      "place_id": "plc_01JRQ4H8ZE0000000000BAKE01"
+    },
+    {
+      "id": "si_10",
+      "section": null,
+      "text": "Larkspur Community Library: checked on a reserved lamp repair manual and renewed a library card.",
+      "certainty": "confident",
+      "start_ms": 1776557700000,
+      "end_ms": 1776558140500,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000012"
+      ],
+      "citations": [
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000118",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776557700000,
+          "ts_end_ms": 1776557700000,
+          "ts_local": "2026-04-18T17:15:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000118",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000118?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776557700000&focus=cap_01JRQ4H8ZE0000000000000118",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000163",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776558035400,
+          "ts_end_ms": 1776558037300,
+          "ts_local": "2026-04-18T17:20:35-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000119",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000119?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776558035400&focus=utt_01JRQ4H8ZE0000000000000163",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPD",
+            "label": "Speaker D",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.83,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000167",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776558135700,
+          "ts_end_ms": 1776558140500,
+          "ts_local": "2026-04-18T17:22:15-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776558135700&focus=utt_01JRQ4H8ZE0000000000000167",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPD",
+            "label": "Speaker D",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.75,
+          "certainty": "confident"
+        }
+      ],
+      "place_id": "plc_01JRQ4H8ZE0000000000LIBR01"
+    }
+  ],
+  "activities": [
+    {
+      "id": "si_11",
+      "section": null,
+      "text": "Started the day at home with oatmeal, tea, and notes about a lamp switch repair.",
+      "certainty": "confident",
+      "start_ms": 1776520800000,
+      "end_ms": 1776522600000,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000001"
+      ],
+      "citations": [
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000001",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776520800000,
+          "ts_end_ms": 1776520800000,
+          "ts_local": "2026-04-18T07:00:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000001",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000001?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776520800000&focus=cap_01JRQ4H8ZE0000000000000001",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000002",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776521100000,
+          "ts_end_ms": 1776521100000,
+          "ts_local": "2026-04-18T07:05:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000002",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000002?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776521100000&focus=cap_01JRQ4H8ZE0000000000000002",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000001",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776521127000,
+          "ts_end_ms": 1776521131100,
+          "ts_local": "2026-04-18T07:05:27-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000002",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000002?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776521127000&focus=utt_01JRQ4H8ZE0000000000000001",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "You",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.82,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000003",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776521400000,
+          "ts_end_ms": 1776521400000,
+          "ts_local": "2026-04-18T07:10:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000003",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000003?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776521400000&focus=cap_01JRQ4H8ZE0000000000000003",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000007",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776522600000,
+          "ts_end_ms": 1776522600000,
+          "ts_local": "2026-04-18T07:30:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000007",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000007?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776522600000&focus=cap_01JRQ4H8ZE0000000000000007",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        }
+      ]
+    },
+    {
+      "id": "si_12",
+      "section": null,
+      "text": "Rode the Line 4 tram toward Fernhollow.",
+      "certainty": "confident",
+      "start_ms": 1776525900000,
+      "end_ms": 1776526200000,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000002"
+      ],
+      "citations": [
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000018",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776525900000,
+          "ts_end_ms": 1776525900000,
+          "ts_local": "2026-04-18T08:25:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000018",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000018?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776525900000&focus=cap_01JRQ4H8ZE0000000000000018",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000019",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776526200000,
+          "ts_end_ms": 1776526200000,
+          "ts_local": "2026-04-18T08:30:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000019",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000019?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776526200000&focus=cap_01JRQ4H8ZE0000000000000019",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        }
+      ]
+    },
+    {
+      "id": "si_13",
+      "section": null,
+      "text": "Diagnosed the desk lamp and tested the cord with a multimeter at the repair cafe.",
+      "certainty": "confident",
+      "start_ms": 1776527803500,
+      "end_ms": 1776533722200,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000003",
+        "seg_01JRQ4H8ZE0000000000000004",
+        "seg_01JRQ4H8ZE0000000000000005"
+      ],
+      "citations": [
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000019",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776527803500,
+          "ts_end_ms": 1776527806200,
+          "ts_local": "2026-04-18T08:56:43-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776527803500&focus=utt_01JRQ4H8ZE0000000000000019",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "You",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.9,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000029",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776529200000,
+          "ts_end_ms": 1776529200000,
+          "ts_local": "2026-04-18T09:20:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000029",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000029?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776529200000&focus=cap_01JRQ4H8ZE0000000000000029",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000034",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776530700000,
+          "ts_end_ms": 1776530700000,
+          "ts_local": "2026-04-18T09:45:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000034",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000034?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776530700000&focus=cap_01JRQ4H8ZE0000000000000034",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000036",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776530701900,
+          "ts_end_ms": 1776530708400,
+          "ts_local": "2026-04-18T09:45:01-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000034",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000034?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776530701900&focus=utt_01JRQ4H8ZE0000000000000036",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPB",
+            "label": "Speaker B",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.7,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000043",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776533400000,
+          "ts_end_ms": 1776533400000,
+          "ts_local": "2026-04-18T10:30:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000043",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000043?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776533400000&focus=cap_01JRQ4H8ZE0000000000000043",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000055",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776533715900,
+          "ts_end_ms": 1776533722200,
+          "ts_local": "2026-04-18T10:35:15-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000044",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000044?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776533715900&focus=utt_01JRQ4H8ZE0000000000000055",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPB",
+            "label": "Speaker B",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.83,
+          "certainty": "confident"
+        }
+      ]
+    },
+    {
+      "id": "si_14",
+      "section": null,
+      "text": "Paused the recording for a break around midday.",
+      "certainty": "confident",
+      "start_ms": 1776539967100,
+      "end_ms": 1776539974100,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000006"
+      ],
+      "citations": [
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000100",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776539967100,
+          "ts_end_ms": 1776539974100,
+          "ts_local": "2026-04-18T12:19:27-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000065",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000065?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776539967100&focus=utt_01JRQ4H8ZE0000000000000100",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "You",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.79,
+          "certainty": "confident"
+        }
+      ]
+    },
+    {
+      "id": "si_15",
+      "section": null,
+      "text": "Visited Quill Street Bakery for a rye loaf and cinnamon buns.",
+      "certainty": "confident",
+      "start_ms": 1776555300000,
+      "end_ms": 1776555900000,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000011"
+      ],
+      "citations": [
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000110",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776555300000,
+          "ts_end_ms": 1776555300000,
+          "ts_local": "2026-04-18T16:35:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000110",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000110?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776555300000&focus=cap_01JRQ4H8ZE0000000000000110",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000150",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776555605100,
+          "ts_end_ms": 1776555610900,
+          "ts_local": "2026-04-18T16:40:05-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000111",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000111?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776555605100&focus=utt_01JRQ4H8ZE0000000000000150",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPC",
+            "label": "Speaker C",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.76,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000153",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776555686500,
+          "ts_end_ms": 1776555690400,
+          "ts_local": "2026-04-18T16:41:26-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776555686500&focus=utt_01JRQ4H8ZE0000000000000153",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "You",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.75,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000112",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776555900000,
+          "ts_end_ms": 1776555900000,
+          "ts_local": "2026-04-18T16:45:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000112",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000112?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776555900000&focus=cap_01JRQ4H8ZE0000000000000112",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        }
+      ]
+    },
+    {
+      "id": "si_16",
+      "section": null,
+      "text": "Stopped at Larkspur Community Library to confirm a reserved manual and renew the library card.",
+      "certainty": "confident",
+      "start_ms": 1776557700000,
+      "end_ms": 1776558140500,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000012"
+      ],
+      "citations": [
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000118",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776557700000,
+          "ts_end_ms": 1776557700000,
+          "ts_local": "2026-04-18T17:15:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000118",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000118?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776557700000&focus=cap_01JRQ4H8ZE0000000000000118",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000163",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776558035400,
+          "ts_end_ms": 1776558037300,
+          "ts_local": "2026-04-18T17:20:35-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000119",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000119?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776558035400&focus=utt_01JRQ4H8ZE0000000000000163",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPD",
+            "label": "Speaker D",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.83,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000167",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776558135700,
+          "ts_end_ms": 1776558140500,
+          "ts_local": "2026-04-18T17:22:15-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776558135700&focus=utt_01JRQ4H8ZE0000000000000167",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPD",
+            "label": "Speaker D",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.75,
+          "certainty": "confident"
+        }
+      ]
+    }
+  ],
+  "people": [
+    {
+      "id": "si_17",
+      "section": null,
+      "text": "Repair cafe volunteer who helped diagnose the cracked rocker switch and explained the cord test and replacement process.",
+      "certainty": "confident",
+      "start_ms": 1776530701900,
+      "end_ms": 1776553510400,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000004",
+        "seg_01JRQ4H8ZE0000000000000005",
+        "seg_01JRQ4H8ZE0000000000000008",
+        "seg_01JRQ4H8ZE0000000000000010"
+      ],
+      "citations": [
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000036",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776530701900,
+          "ts_end_ms": 1776530708400,
+          "ts_local": "2026-04-18T09:45:01-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000034",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000034?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776530701900&focus=utt_01JRQ4H8ZE0000000000000036",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPB",
+            "label": "Speaker B",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.7,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000042",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776530882800,
+          "ts_end_ms": 1776530889400,
+          "ts_local": "2026-04-18T09:48:02-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776530882800&focus=utt_01JRQ4H8ZE0000000000000042",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPB",
+            "label": "Speaker B",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.74,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000055",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776533715900,
+          "ts_end_ms": 1776533722200,
+          "ts_local": "2026-04-18T10:35:15-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000044",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000044?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776533715900&focus=utt_01JRQ4H8ZE0000000000000055",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPB",
+            "label": "Speaker B",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.83,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000067",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776535016400,
+          "ts_end_ms": 1776535021500,
+          "ts_local": "2026-04-18T10:56:56-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776535016400&focus=utt_01JRQ4H8ZE0000000000000067",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPB",
+            "label": "Speaker B",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.83,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000118",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776545520000,
+          "ts_end_ms": 1776545526500,
+          "ts_local": "2026-04-18T13:52:00-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776545520000&focus=utt_01JRQ4H8ZE0000000000000118",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPB",
+            "label": "Speaker B",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.84,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000141",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776553505600,
+          "ts_end_ms": 1776553510400,
+          "ts_local": "2026-04-18T16:05:05-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000104",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000104?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776553505600&focus=utt_01JRQ4H8ZE0000000000000141",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPB",
+            "label": "Speaker B",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.74,
+          "certainty": "confident"
+        }
+      ],
+      "speaker": {
+        "id": "spk_01JRQ4H8ZE0000000000000SPB",
+        "label": "Speaker B",
+        "display_name": null,
+        "is_self": false
+      },
+      "speech_ms": 338200
+    },
+    {
+      "id": "si_18",
+      "section": null,
+      "text": "Bakery staff member who served the rye loaf and cinnamon buns.",
+      "certainty": "confident",
+      "start_ms": 1776555605100,
+      "end_ms": 1776555709700,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000011"
+      ],
+      "citations": [
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000150",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776555605100,
+          "ts_end_ms": 1776555610900,
+          "ts_local": "2026-04-18T16:40:05-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000111",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000111?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776555605100&focus=utt_01JRQ4H8ZE0000000000000150",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPC",
+            "label": "Speaker C",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.76,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000154",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776555703300,
+          "ts_end_ms": 1776555709700,
+          "ts_local": "2026-04-18T16:41:43-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776555703300&focus=utt_01JRQ4H8ZE0000000000000154",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPC",
+            "label": "Speaker C",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.75,
+          "certainty": "confident"
+        }
+      ],
+      "speaker": {
+        "id": "spk_01JRQ4H8ZE0000000000000SPC",
+        "label": "Speaker C",
+        "display_name": null,
+        "is_self": false
+      },
+      "speech_ms": 27100
+    },
+    {
+      "id": "si_19",
+      "section": null,
+      "text": "Library desk staff who confirmed the reserved manual and renewed the library card.",
+      "certainty": "confident",
+      "start_ms": 1776558035400,
+      "end_ms": 1776558140500,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000012"
+      ],
+      "citations": [
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000163",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776558035400,
+          "ts_end_ms": 1776558037300,
+          "ts_local": "2026-04-18T17:20:35-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000119",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000119?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776558035400&focus=utt_01JRQ4H8ZE0000000000000163",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPD",
+            "label": "Speaker D",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.83,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000167",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776558135700,
+          "ts_end_ms": 1776558140500,
+          "ts_local": "2026-04-18T17:22:15-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776558135700&focus=utt_01JRQ4H8ZE0000000000000167",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPD",
+            "label": "Speaker D",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.75,
+          "certainty": "confident"
+        }
+      ],
+      "speaker": {
+        "id": "spk_01JRQ4H8ZE0000000000000SPD",
+        "label": "Speaker D",
+        "display_name": null,
+        "is_self": false
+      },
+      "speech_ms": 65200
+    }
+  ],
+  "quotes": [
+    {
+      "id": "si_20",
+      "section": null,
+      "text": "It's the switch, mostly. It feels loose and sometimes the light cuts out.",
+      "certainty": "confident",
+      "start_ms": 1776527803500,
+      "end_ms": 1776527806200,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000003"
+      ],
+      "citations": [
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000019",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776527803500,
+          "ts_end_ms": 1776527806200,
+          "ts_local": "2026-04-18T08:56:43-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776527803500&focus=utt_01JRQ4H8ZE0000000000000019",
+          "quote": "It's the switch, mostly. It feels loose and sometimes the light cuts out.",
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "You",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.9,
+          "certainty": "confident"
+        }
+      ],
+      "quote": "It's the switch, mostly. It feels loose and sometimes the light cuts out.",
+      "utterance_id": "utt_01JRQ4H8ZE0000000000000019",
+      "speaker": {
+        "id": "spk_01JRQ4H8ZE0000000000000SPA",
+        "label": "Speaker A",
+        "display_name": "You",
+        "is_self": true
+      }
+    },
+    {
+      "id": "si_21",
+      "section": null,
+      "text": "I'm pausing the recording now for a lunch break; I'll be back at one.",
+      "certainty": "confident",
+      "start_ms": 1776539967100,
+      "end_ms": 1776539974100,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000006"
+      ],
+      "citations": [
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000100",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776539967100,
+          "ts_end_ms": 1776539974100,
+          "ts_local": "2026-04-18T12:19:27-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000065",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000065?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776539967100&focus=utt_01JRQ4H8ZE0000000000000100",
+          "quote": "I'm pausing the recording now for a lunch break; I'll be back at one.",
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "You",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.79,
+          "certainty": "confident"
+        }
+      ],
+      "quote": "I'm pausing the recording now for a lunch break; I'll be back at one.",
+      "utterance_id": "utt_01JRQ4H8ZE0000000000000100",
+      "speaker": {
+        "id": "spk_01JRQ4H8ZE0000000000000SPA",
+        "label": "Speaker A",
+        "display_name": "You",
+        "is_self": true
+      }
+    },
+    {
+      "id": "si_22",
+      "section": null,
+      "text": "The replacement switch should arrive Tuesday, I will text you the tracking number.",
+      "certainty": "confident",
+      "start_ms": 1776545520000,
+      "end_ms": 1776545526500,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000008"
+      ],
+      "citations": [
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000118",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776545520000,
+          "ts_end_ms": 1776545526500,
+          "ts_local": "2026-04-18T13:52:00-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776545520000&focus=utt_01JRQ4H8ZE0000000000000118",
+          "quote": "The replacement switch should arrive Tuesday, I will text you the tracking number.",
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPB",
+            "label": "Speaker B",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.84,
+          "certainty": "confident"
+        }
+      ],
+      "quote": "The replacement switch should arrive Tuesday, I will text you the tracking number.",
+      "utterance_id": "utt_01JRQ4H8ZE0000000000000118",
+      "speaker": {
+        "id": "spk_01JRQ4H8ZE0000000000000SPB",
+        "label": "Speaker B",
+        "display_name": null,
+        "is_self": false
+      }
+    },
+    {
+      "id": "si_23",
+      "section": null,
+      "text": "I'll take a rye loaf and two cinnamon buns, please.",
+      "certainty": "confident",
+      "start_ms": 1776555686500,
+      "end_ms": 1776555690400,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000011"
+      ],
+      "citations": [
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000153",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776555686500,
+          "ts_end_ms": 1776555690400,
+          "ts_local": "2026-04-18T16:41:26-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776555686500&focus=utt_01JRQ4H8ZE0000000000000153",
+          "quote": "I'll take a rye loaf and two cinnamon buns, please.",
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "You",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.75,
+          "certainty": "confident"
+        }
+      ],
+      "quote": "I'll take a rye loaf and two cinnamon buns, please.",
+      "utterance_id": "utt_01JRQ4H8ZE0000000000000153",
+      "speaker": {
+        "id": "spk_01JRQ4H8ZE0000000000000SPA",
+        "label": "Speaker A",
+        "display_name": "You",
+        "is_self": true
+      }
+    },
+    {
+      "id": "si_24",
+      "section": null,
+      "text": "That lamp repair manual you reserved will be ready Tuesday afternoon.",
+      "certainty": "confident",
+      "start_ms": 1776558035400,
+      "end_ms": 1776558037300,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000012"
+      ],
+      "citations": [
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000163",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776558035400,
+          "ts_end_ms": 1776558037300,
+          "ts_local": "2026-04-18T17:20:35-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000119",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000119?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776558035400&focus=utt_01JRQ4H8ZE0000000000000163",
+          "quote": "That lamp repair manual you reserved will be ready Tuesday afternoon.",
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPD",
+            "label": "Speaker D",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.83,
+          "certainty": "confident"
+        }
+      ],
+      "quote": "That lamp repair manual you reserved will be ready Tuesday afternoon.",
+      "utterance_id": "utt_01JRQ4H8ZE0000000000000163",
+      "speaker": {
+        "id": "spk_01JRQ4H8ZE0000000000000SPD",
+        "label": "Speaker D",
+        "display_name": null,
+        "is_self": false
+      }
+    }
+  ],
+  "uncertain": [
+    {
+      "id": "si_25",
+      "section": "activities",
+      "text": "You may have briefly checked whether a small metallic object was in a pocket or still near the front door, but the evidence was weak and you sounded unsure.",
+      "certainty": "uncertain",
+      "start_ms": 1776524700000,
+      "end_ms": 1776525000000,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000001"
+      ],
+      "citations": [
+        {
+          "evidence_id": "det_01JRQ4H8ZE0000000000000007",
+          "kind": "detection",
+          "day": "2026-04-18",
+          "ts_ms": 1776524700000,
+          "ts_end_ms": 1776524700000,
+          "ts_local": "2026-04-18T08:05:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000014",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000014?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776524700000&focus=det_01JRQ4H8ZE0000000000000007",
+          "quote": null,
+          "speaker": null,
+          "bbox": {
+            "x": 0.78,
+            "y": 0.3,
+            "w": 0.06,
+            "h": 0.08
+          },
+          "score": 0.34,
+          "certainty": "uncertain"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000011",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776524838500,
+          "ts_end_ms": 1776524845000,
+          "ts_local": "2026-04-18T08:07:18-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776524838500&focus=utt_01JRQ4H8ZE0000000000000011",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "You",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.29,
+          "certainty": "uncertain"
+        },
+        {
+          "evidence_id": "det_01JRQ4H8ZE0000000000000008",
+          "kind": "detection",
+          "day": "2026-04-18",
+          "ts_ms": 1776525000000,
+          "ts_end_ms": 1776525000000,
+          "ts_local": "2026-04-18T08:10:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000015",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000015?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776525000000&focus=det_01JRQ4H8ZE0000000000000008",
+          "quote": null,
+          "speaker": null,
+          "bbox": {
+            "x": 0.8,
+            "y": 0.28,
+            "w": 0.05,
+            "h": 0.07
+          },
+          "score": 0.31,
+          "certainty": "uncertain"
+        }
+      ]
+    },
+    {
+      "id": "si_26",
+      "section": "activities",
+      "text": "You may have been unsure which tram stop to take while riding Line 4 toward Fernhollow.",
+      "certainty": "uncertain",
+      "start_ms": 1776526251500,
+      "end_ms": 1776526311900,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000002"
+      ],
+      "citations": [
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000013",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776526251500,
+          "ts_end_ms": 1776526257900,
+          "ts_local": "2026-04-18T08:30:51-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000019",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000019?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776526251500&focus=utt_01JRQ4H8ZE0000000000000013",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "You",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.32,
+          "certainty": "uncertain"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000014",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776526310100,
+          "ts_end_ms": 1776526311900,
+          "ts_local": "2026-04-18T08:31:50-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776526310100&focus=utt_01JRQ4H8ZE0000000000000014",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "You",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.25,
+          "certainty": "uncertain"
+        }
+      ]
+    },
+    {
+      "id": "si_27",
+      "section": "people",
+      "text": "A library staff member may have made a fragmentary remark about a jacket, but it was too unclear to interpret.",
+      "certainty": "uncertain",
+      "start_ms": 1776561197100,
+      "end_ms": 1776561201600,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000012"
+      ],
+      "citations": [
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000190",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776561197100,
+          "ts_end_ms": 1776561201600,
+          "ts_local": "2026-04-18T18:13:17-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776561197100&focus=utt_01JRQ4H8ZE0000000000000190",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPD",
+            "label": "Speaker D",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.28,
+          "certainty": "uncertain"
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "frames": 162,
+    "audio_seconds": 9000,
+    "paused_ms": 1800000,
+    "first_ms": 1776520800000,
+    "last_ms": 1776570900000
+  },
+  "validation": {
+    "dropped_items": 0,
+    "dropped_citations": 0,
+    "dropped_quotes": 0
+  }
+}
