@@ -111,3 +111,17 @@ Thumbs.db
 # Blender autosave backups and local regeneration previews
 design/**/*.blend1
 design/**/*.blend2
+
+# Lifelog private data — owner media, local databases, and capture audio.
+# Synthetic sample-day frames under lifelog/sample_day/media/ may be committed.
+# Audio for that fixture stays local (manifest audio_committed: false).
+lifelog/data/
+lifelog-data/
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal
+*.m4a
+*.aac
+lifelog/**/media/audio/

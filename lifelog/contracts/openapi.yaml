@@ -1,0 +1,1388 @@
+openapi: 3.1.0
+info:
+  title: AIGlasses Lifelog API
+  version: 1.0.0
+  summary: Frozen contract v1 for the opt-in lifelog companion (research prototype).
+  description: |
+    Base path `/api/lifelog`. Served by `python -m aiglasses_lifelog serve` (default 127.0.0.1:8090),
+    a separate process from the navigation service. The public web demo implements the GET
+    endpoints read-only from the synthetic sample day; writes in demo mode return 403 `demo_read_only`
+    (the web app keeps demo edits in browser storage instead).
+
+    Auth:
+    * ownerAuth - HttpOnly cookie `ll_session` from `POST /auth/session`, or `Authorization: Bearer <owner token>`.
+    * deviceAuth - `Authorization: Bearer lld_<token>` plus `X-Device-Id: dev_...`. Tokens are shown once,
+      stored as SHA-256, compared with `hmac.compare_digest`.
+
+    Times: every instant is `*_ms` (UTC epoch ms) and, where shown to people, an ISO-8601 string with the
+    owner's offset (`*_local`). `day` = `YYYY-MM-DD` in the owner's timezone.
+
+    Errors always use `{"error": {"code": "...", "message": "..."}}`. Codes are listed in CONTRACTS.md section 3.9.
+  license:
+    name: MIT
+servers:
+  - url: http://127.0.0.1:8090/api/lifelog
+security:
+  - ownerAuth: []
+tags:
+  - {name: meta}
+  - {name: auth}
+  - {name: devices}
+  - {name: ingest}
+  - {name: timeline}
+  - {name: people-places}
+  - {name: summary}
+  - {name: ask}
+  - {name: objects}
+  - {name: privacy}
+  - {name: backup}
+  - {name: settings}
+  - {name: jobs}
+paths:
+  /health:
+    get:
+      tags: [meta]
+      security: []
+      summary: Liveness and public state (no personal data).
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/Health'}
+              example: {status: ok, version: 1.0.0, contract: aiglasses.lifelog.v1, mode: live, research_prototype: true, certified_aid: false, capture_paused: false, local_first: true, audio_enabled: false}
+  /time:
+    get:
+      tags: [meta]
+      security: []
+      summary: Server clock for device time sync.
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: {type: object, required: [server_time_ms], properties: {server_time_ms: {type: integer}}}
+              example: {server_time_ms: 1776527525000}
+  /auth/session:
+    post:
+      tags: [auth]
+      security: []
+      summary: Exchange the owner token for an HttpOnly session cookie (SameSite=Strict, 12 h). Rate limit 10/min per IP.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {type: object, required: [owner_token], properties: {owner_token: {type: string, minLength: 20}}}
+            example: {owner_token: "llo_REDACTED"}
+      responses:
+        '204': {description: Cookie set}
+        '401': {$ref: '#/components/responses/Error'}
+        '429': {$ref: '#/components/responses/Error'}
+    delete:
+      tags: [auth]
+      summary: Log out.
+      responses:
+        '204': {description: Cookie cleared}
+  /devices:
+    get:
+      tags: [devices]
+      summary: List paired devices (never returns tokens or hashes).
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: {type: object, required: [devices], properties: {devices: {type: array, items: {$ref: '#/components/schemas/Device'}}}}
+              example:
+                devices:
+                  - {id: dev_01JD3K8Z6Q4M2T7V9X0B1C2D3E, name: Glasses, kind: esp32_glasses, enabled: true, frame_interval_s: 30, created_ms: 1776400000000, last_seen_ms: 1776527500000, status: {battery_pct: 71, queued_items: 0, firmware: lifelog-esp32 0.1.0, free_storage_mb: 14210, uptime_ms: 5400000, boot_id: b7c1e2f0}, revoked: false}
+    post:
+      tags: [devices]
+      summary: Pair a new device. The plaintext token is returned ONCE.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [name, kind]
+              properties:
+                name: {type: string, minLength: 1, maxLength: 64}
+                kind: {$ref: '#/components/schemas/DeviceKind'}
+                frame_interval_s: {type: integer, minimum: 5, maximum: 3600, default: 30}
+            example: {name: Apple Watch, kind: apple_watch}
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [device, token, pairing_uri]
+                properties:
+                  device: {$ref: '#/components/schemas/Device'}
+                  token: {type: string, description: "lld_ + 43 url-safe base64 chars (32 random bytes)"}
+                  pairing_uri: {type: string, description: "aiglasses-lifelog://pair?host=..&device_id=..&token=.. (rendered as QR, never logged)"}
+              example:
+                device: {id: dev_01JD3MZ4A5B6C7D8E9F0G1H2J3, name: Apple Watch, kind: apple_watch, enabled: true, frame_interval_s: 30, created_ms: 1776527525000, last_seen_ms: null, status: null, revoked: false}
+                token: lld_SHOWN_ONCE
+                pairing_uri: "aiglasses-lifelog://pair?host=192.168.1.20%3A8090&device_id=dev_01JD3MZ4A5B6C7D8E9F0G1H2J3&token=lld_SHOWN_ONCE"
+  /devices/{device_id}:
+    parameters: [{$ref: '#/components/parameters/DeviceId'}]
+    patch:
+      tags: [devices]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name: {type: string, minLength: 1, maxLength: 64}
+                enabled: {type: boolean}
+                frame_interval_s: {type: integer, minimum: 5, maximum: 3600}
+            example: {frame_interval_s: 60}
+      responses:
+        '200': {description: Updated, content: {application/json: {schema: {$ref: '#/components/schemas/Device'}}}}
+        '404': {$ref: '#/components/responses/Error'}
+    delete:
+      tags: [devices]
+      summary: Revoke device (token rejected forever). Stored media is kept until retention or manual delete.
+      responses:
+        '204': {description: Revoked}
+  /devices/{device_id}/rotate-token:
+    parameters: [{$ref: '#/components/parameters/DeviceId'}]
+    post:
+      tags: [devices]
+      responses:
+        '200':
+          description: New token; the old one is invalid immediately.
+          content:
+            application/json:
+              schema: {type: object, required: [token, pairing_uri], properties: {token: {type: string}, pairing_uri: {type: string}}}
+  /devices/me/config:
+    get:
+      tags: [devices]
+      security: [{deviceAuth: []}]
+      summary: Devices poll this before every upload batch and at least every 60 s while awake. Devices MUST stop capturing while paused=true.
+      parameters: [{$ref: '#/components/parameters/XDeviceId'}]
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/DeviceConfig'}
+              example: {device_id: dev_01JD3K8Z6Q4M2T7V9X0B1C2D3E, paused: false, paused_until_ms: null, frame_interval_s: 30, audio_enabled: false, location_enabled: false, max_batch: 20, server_time_ms: 1776527525000, config_version: 7}
+        '401': {$ref: '#/components/responses/Error'}
+  /devices/me/heartbeat:
+    post:
+      tags: [devices]
+      security: [{deviceAuth: []}]
+      parameters: [{$ref: '#/components/parameters/XDeviceId'}]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/Heartbeat'}
+            example: {battery_pct: 71, free_storage_mb: 14210, queued_items: 3, firmware: lifelog-esp32 0.1.0, uptime_ms: 5400000, boot_id: b7c1e2f0}
+      responses:
+        '200': {description: Same body as /devices/me/config, content: {application/json: {schema: {$ref: '#/components/schemas/DeviceConfig'}}}}
+  /devices/me/pause:
+    post:
+      tags: [devices]
+      security: [{deviceAuth: []}]
+      summary: Hardware or watch pause button. Pauses ALL capture globally (same effect as POST /privacy/pause or /privacy/resume).
+      parameters: [{$ref: '#/components/parameters/XDeviceId'}]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [paused]
+              properties:
+                paused: {type: boolean}
+                duration_s: {type: [integer, 'null'], minimum: 60, maximum: 86400}
+            example: {paused: true, duration_s: null}
+      responses:
+        '200': {description: Updated config, content: {application/json: {schema: {$ref: '#/components/schemas/DeviceConfig'}}}}
+  /ingest/frame:
+    post:
+      tags: [ingest]
+      security: [{deviceAuth: []}]
+      summary: Upload one JPEG frame as the raw body. Idempotent on (device, boot_id, seq).
+      description: |
+        Rejected without storing anything when capture is paused now, or when the capture instant falls
+        inside any recorded pause interval (423, device must drop the item and not retry). Device disabled
+        or revoked gives 403 or 401. Max 2 MB. The server decodes, classifies quality (dark or lens-covered
+        frames are stored with that quality), blurs faces before writing when settings.face_blur=true,
+        writes a 320 px thumbnail that is always blurred, and enqueues `frame.analyze`.
+      parameters:
+        - {$ref: '#/components/parameters/XDeviceId'}
+        - {$ref: '#/components/parameters/XBootId'}
+        - {$ref: '#/components/parameters/XSeq'}
+        - {$ref: '#/components/parameters/XClockSource'}
+        - name: X-Captured-At
+          in: header
+          required: true
+          description: Epoch ms from the device clock. When X-Clock-Source=unsynced send device uptime ms at capture instead.
+          schema: {type: integer}
+        - name: X-Uptime-Ms
+          in: header
+          required: false
+          description: Device uptime ms at send time. Required when X-Clock-Source=unsynced.
+          schema: {type: integer}
+      requestBody:
+        required: true
+        content:
+          image/jpeg:
+            schema: {type: string, format: binary}
+      responses:
+        '201':
+          description: Stored
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/IngestResult'}
+              example: {id: frm_01JD3N1A2B3C4D5E6F7G8H9J0K, duplicate: false, day: '2026-04-18', captured_ms: 1776527525000, clock_corrected: false, quality: ok}
+        '200':
+          description: Duplicate; nothing changed.
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/IngestResult'}
+              example: {id: frm_01JD3N1A2B3C4D5E6F7G8H9J0K, duplicate: true, day: '2026-04-18', captured_ms: 1776527525000, clock_corrected: false, quality: ok}
+        '401': {$ref: '#/components/responses/Error'}
+        '403': {$ref: '#/components/responses/Error'}
+        '413': {$ref: '#/components/responses/Error'}
+        '415': {$ref: '#/components/responses/Error'}
+        '422': {$ref: '#/components/responses/Error'}
+        '423':
+          description: Paused. The device must drop this item and NOT retry it.
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/Error'}
+              example: {error: {code: capture_paused, message: Capture is paused; item discarded.}}
+        '429': {$ref: '#/components/responses/Error'}
+  /ingest/audio:
+    post:
+      tags: [ingest]
+      security: [{deviceAuth: []}]
+      summary: Upload one audio chunk as the raw body (max 15 min, max 20 MB). Default OFF; 403 audio_disabled until the owner enables audio and acknowledges the consent notice.
+      parameters:
+        - {$ref: '#/components/parameters/XDeviceId'}
+        - {$ref: '#/components/parameters/XBootId'}
+        - {$ref: '#/components/parameters/XSeq'}
+        - {$ref: '#/components/parameters/XClockSource'}
+        - {name: X-Started-At, in: header, required: true, schema: {type: integer}, description: Epoch ms of the first sample.}
+        - {name: X-Duration-Ms, in: header, required: true, schema: {type: integer, minimum: 1, maximum: 900000}}
+        - {name: X-Sample-Rate, in: header, required: false, schema: {type: integer, example: 16000}}
+      requestBody:
+        required: true
+        content:
+          audio/mp4: {schema: {type: string, format: binary}}
+          audio/aac: {schema: {type: string, format: binary}}
+          audio/wav: {schema: {type: string, format: binary}}
+          audio/ogg: {schema: {type: string, format: binary}}
+      responses:
+        '201':
+          description: Stored
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/IngestResult'}
+              example: {id: aud_01JD3P7Q8R9S0T1U2V3W4X5Y6Z, duplicate: false, day: '2026-04-18', captured_ms: 1776545400000, clock_corrected: false, quality: null}
+        '200': {description: Duplicate, content: {application/json: {schema: {$ref: '#/components/schemas/IngestResult'}}}}
+        '403':
+          description: audio_disabled or device_disabled
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/Error'}
+              example: {error: {code: audio_disabled, message: Audio capture is off. Enable it in Privacy after reading the consent notice.}}
+        '423': {$ref: '#/components/responses/Error'}
+        '429': {$ref: '#/components/responses/Error'}
+  /ingest/location:
+    post:
+      tags: [ingest]
+      security: [{deviceAuth: []}]
+      summary: Batch of coarse location fixes from the iPhone relay. Default OFF (403 location_disabled).
+      parameters: [{$ref: '#/components/parameters/XDeviceId'}]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [fixes]
+              properties:
+                fixes:
+                  type: array
+                  maxItems: 500
+                  items:
+                    type: object
+                    required: [ts_ms, lat, lon]
+                    properties:
+                      ts_ms: {type: integer}
+                      lat: {type: number, minimum: -90, maximum: 90}
+                      lon: {type: number, minimum: -180, maximum: 180}
+                      accuracy_m: {type: number}
+            example: {fixes: [{ts_ms: 1776527525000, lat: 37.0001, lon: -122.0001, accuracy_m: 65}]}
+      responses:
+        '200':
+          description: Accepted. Fixes inside pause intervals are dropped and counted.
+          content:
+            application/json:
+              schema: {type: object, properties: {accepted: {type: integer}, dropped_paused: {type: integer}}}
+              example: {accepted: 1, dropped_paused: 0}
+        '403': {$ref: '#/components/responses/Error'}
+  /days:
+    get:
+      tags: [timeline]
+      summary: Days that have any retained data, newest first.
+      parameters:
+        - {name: from, in: query, schema: {type: string, format: date}}
+        - {name: to, in: query, schema: {type: string, format: date}}
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: {type: object, required: [days], properties: {days: {type: array, items: {$ref: '#/components/schemas/DayInfo'}}}}
+              example:
+                days:
+                  - {day: '2026-04-18', first_ms: 1776520800000, last_ms: 1776570000000, frames: 168, audio_seconds: 5400, utterances: 214, segments: 14, has_summary: true, expires_on: '2026-05-02'}
+    delete:
+      tags: [privacy]
+      summary: Delete one or more days immediately (media, derived rows, index, summary). Irreversible.
+      parameters:
+        - {name: day, in: query, required: true, schema: {type: array, items: {type: string, format: date}}, style: form, explode: true}
+      responses:
+        '200': {description: Purge report, content: {application/json: {schema: {$ref: '#/components/schemas/PurgeReport'}}}}
+  /timeline/{day}:
+    parameters: [{$ref: '#/components/parameters/Day'}]
+    get:
+      tags: [timeline]
+      summary: Bucketed overview for the scrubber.
+      parameters:
+        - {name: bucket_s, in: query, schema: {type: integer, enum: [10, 30, 60, 300, 900], default: 60}}
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/Timeline'}
+              example:
+                day: '2026-04-18'
+                timezone: America/Los_Angeles
+                start_ms: 1776520800000
+                end_ms: 1776570000000
+                bucket_s: 60
+                buckets:
+                  - {start_ms: 1776520800000, frames: 1, speech: false, audio: false, detections: 0, paused: false, cover_frame_id: frm_01JD3N1A2B3C4D5E6F7G8H9J0K}
+                pauses: [{start_ms: 1776540600000, end_ms: 1776542400000, source: owner}]
+                segments:
+                  - {id: seg_01JD3Q0A1B2C3D4E5F6G7H8J9K, start_ms: 1776524400000, end_ms: 1776528000000, kind: activity, title: Repairing a desk lamp, certainty: confident}
+        '404': {$ref: '#/components/responses/Error'}
+  /frames:
+    get:
+      tags: [timeline]
+      summary: Frames in a window, ascending by capture time. Paginated with page_token.
+      parameters:
+        - {name: day, in: query, required: true, schema: {type: string, format: date}}
+        - {name: from_ms, in: query, schema: {type: integer}}
+        - {name: to_ms, in: query, schema: {type: integer}}
+        - {name: limit, in: query, schema: {type: integer, minimum: 1, maximum: 500, default: 200}}
+        - {name: page_token, in: query, schema: {type: string}}
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [frames, next_page_token]
+                properties:
+                  frames: {type: array, items: {$ref: '#/components/schemas/FrameBrief'}}
+                  next_page_token: {type: [string, 'null']}
+              example:
+                frames:
+                  - {id: frm_01JD3N1A2B3C4D5E6F7G8H9J0K, ts_ms: 1776527525000, ts_local: '2026-04-18T08:52:05-07:00', device_id: dev_01JD3K8Z6Q4M2T7V9X0B1C2D3E, thumb_url: '/api/lifelog/media/frames/frm_01JD3N1A2B3C4D5E6F7G8H9J0K?variant=thumb', full_url: '/api/lifelog/media/frames/frm_01JD3N1A2B3C4D5E6F7G8H9J0K?variant=full', caption: A workbench with a disassembled desk lamp and a small tray of screws., quality: ok, detections: 2, segment_id: seg_01JD3Q0A1B2C3D4E5F6G7H8J9K}
+                next_page_token: null
+  /frames/{frame_id}:
+    parameters: [{name: frame_id, in: path, required: true, schema: {type: string, pattern: '^frm_[0-9A-Z]{26}$'}}]
+    get:
+      tags: [timeline]
+      responses:
+        '200': {description: OK, content: {application/json: {schema: {$ref: '#/components/schemas/FrameDetail'}}}}
+        '404': {$ref: '#/components/responses/Error'}
+  /media/frames/{frame_id}:
+    parameters: [{name: frame_id, in: path, required: true, schema: {type: string}}]
+    get:
+      tags: [timeline]
+      summary: Image bytes. Cache-Control private, max-age=3600. Thumbnails are always face-blurred.
+      parameters:
+        - {name: variant, in: query, schema: {type: string, enum: [thumb, full], default: thumb}}
+      responses:
+        '200': {description: Image, content: {image/jpeg: {schema: {type: string, format: binary}}, image/webp: {schema: {type: string, format: binary}}}}
+        '404': {$ref: '#/components/responses/Error'}
+  /media/audio/{audio_chunk_id}:
+    parameters: [{name: audio_chunk_id, in: path, required: true, schema: {type: string}}]
+    get:
+      tags: [timeline]
+      summary: Audio bytes with HTTP Range support. 410 raw_audio_dropped when only the transcript is kept.
+      responses:
+        '200': {description: Audio, content: {audio/mp4: {schema: {type: string, format: binary}}}}
+        '206': {description: Partial content}
+        '410': {$ref: '#/components/responses/Error'}
+  /utterances:
+    get:
+      tags: [timeline]
+      parameters:
+        - {name: day, in: query, required: true, schema: {type: string, format: date}}
+        - {name: from_ms, in: query, schema: {type: integer}}
+        - {name: to_ms, in: query, schema: {type: integer}}
+        - {name: speaker_id, in: query, schema: {type: string}}
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: {type: object, required: [utterances], properties: {utterances: {type: array, items: {$ref: '#/components/schemas/Utterance'}}}}
+              example:
+                utterances:
+                  - id: utt_01JD3R2S3T4U5V6W7X8Y9Z0A1B
+                    audio_chunk_id: aud_01JD3P7Q8R9S0T1U2V3W4X5Y6Z
+                    start_ms: 1776545520000
+                    end_ms: 1776545526500
+                    ts_local: '2026-04-18T13:52:00-07:00'
+                    speaker: {id: spk_01JD3S0A1B2C3D4E5F6G7H8J9K, label: Speaker B, display_name: null, is_self: false}
+                    text: The replacement switch should arrive Tuesday, I will text you the tracking number.
+                    lang: en
+                    score: 0.86
+                    certainty: confident
+                    audio_url: '/api/lifelog/media/audio/aud_01JD3P7Q8R9S0T1U2V3W4X5Y6Z#t=120,126.5'
+  /segments:
+    get:
+      tags: [timeline]
+      parameters:
+        - {name: day, in: query, required: true, schema: {type: string, format: date}}
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: {type: object, required: [segments], properties: {segments: {type: array, items: {$ref: '#/components/schemas/Segment'}}}}
+  /segments/{segment_id}:
+    parameters: [{name: segment_id, in: path, required: true, schema: {type: string}}]
+    get:
+      tags: [timeline]
+      responses:
+        '200':
+          description: Segment with its frames (max 200) and utterances
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - {$ref: '#/components/schemas/Segment'}
+                  - type: object
+                    properties:
+                      frames: {type: array, items: {$ref: '#/components/schemas/FrameBrief'}}
+                      utterances: {type: array, items: {$ref: '#/components/schemas/Utterance'}}
+        '404': {$ref: '#/components/responses/Error'}
+  /speakers:
+    get:
+      tags: [people-places]
+      parameters: [{name: day, in: query, required: true, schema: {type: string, format: date}}]
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [speakers]
+                properties:
+                  speakers:
+                    type: array
+                    items:
+                      allOf:
+                        - {$ref: '#/components/schemas/Speaker'}
+                        - type: object
+                          properties:
+                            speech_ms: {type: integer}
+                            first_ms: {type: integer}
+                            last_ms: {type: integer}
+                            sample_utterance_id: {type: [string, 'null']}
+  /speakers/{speaker_id}:
+    parameters: [{name: speaker_id, in: path, required: true, schema: {type: string}}]
+    patch:
+      tags: [people-places]
+      summary: Owner names an anonymous speaker for that day only (no cross-day matching).
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                display_name: {type: [string, 'null'], minLength: 1, maxLength: 40}
+                is_self: {type: boolean}
+            example: {display_name: Neighbour, is_self: false}
+      responses:
+        '200': {description: Updated, content: {application/json: {schema: {$ref: '#/components/schemas/Speaker'}}}}
+  /places:
+    get:
+      tags: [people-places]
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: {type: object, properties: {places: {type: array, items: {$ref: '#/components/schemas/Place'}}}}
+    post:
+      tags: [people-places]
+      summary: Create a manual place, optionally tagging a time window of a day with it (sets frames.place_id and segments.place_id in that window).
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [name]
+              properties:
+                name: {type: string, minLength: 1, maxLength: 80}
+                tag: {type: object, properties: {day: {type: string, format: date}, from_ms: {type: integer}, to_ms: {type: integer}}}
+            example: {name: Workshop, tag: {day: '2026-04-18', from_ms: 1776524400000, to_ms: 1776528000000}}
+      responses:
+        '201': {description: Created, content: {application/json: {schema: {$ref: '#/components/schemas/Place'}}}}
+  /places/{place_id}:
+    parameters: [{name: place_id, in: path, required: true, schema: {type: string}}]
+    patch:
+      tags: [people-places]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {type: object, properties: {name: {type: string, minLength: 1, maxLength: 80}}}
+      responses:
+        '200': {description: Updated, content: {application/json: {schema: {$ref: '#/components/schemas/Place'}}}}
+  /summary/{day}:
+    parameters: [{$ref: '#/components/parameters/Day'}]
+    get:
+      tags: [summary]
+      responses:
+        '200': {description: OK, content: {application/json: {schema: {$ref: '#/components/schemas/DaySummary'}}}}
+        '404':
+          description: not_generated
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/Error'}
+              example: {error: {code: not_generated, message: No summary yet for 2026-04-18.}}
+  /summary/{day}/generate:
+    parameters: [{$ref: '#/components/parameters/Day'}]
+    post:
+      tags: [summary]
+      summary: Queue (re)generation. Provider defaults to settings.llm_provider; deepseek is refused (409 local_first_blocks_provider) while local_first=true.
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                provider: {$ref: '#/components/schemas/LLMProvider'}
+                language: {type: string, enum: [zh-CN, en]}
+      responses:
+        '202':
+          description: Queued
+          content:
+            application/json:
+              schema: {type: object, properties: {job_id: {type: string}}}
+              example: {job_id: job_01JD3T0A1B2C3D4E5F6G7H8J9K}
+        '409': {$ref: '#/components/responses/Error'}
+  /ask:
+    post:
+      tags: [ask]
+      summary: Evidence-cited Q&A over retained records. Never returns answer text without at least one server-validated citation (except the fixed not_found sentence).
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/AskRequest'}
+            examples:
+              screws: {value: {question: "我螺丝放哪了？", day: '2026-04-18', locale: zh-CN}}
+              afternoon: {value: {question: "What did that person say this afternoon?", day: '2026-04-18', from_ms: 1776538800000, to_ms: 1776567600000, locale: en}}
+      responses:
+        '200':
+          description: OK. status is answered, uncertain or not_found.
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/AskResponse'}
+              examples:
+                answered:
+                  value:
+                    question: "我螺丝放哪了？"
+                    status: answered
+                    answer: "下午 3:41 装螺丝的小铁盒放在工作台左侧红色工具箱的盖子上。"
+                    score: 0.81
+                    citations:
+                      - evidence_id: det_01JD3V5W6X7Y8Z9A0B1C2D3E4F
+                        kind: detection
+                        day: '2026-04-18'
+                        ts_ms: 1776552060000
+                        ts_end_ms: 1776552060000
+                        ts_local: '2026-04-18T15:41:00-07:00'
+                        frame_id: frm_01JD3V0A1B2C3D4E5F6G7H8J9K
+                        thumb_url: '/api/lifelog/media/frames/frm_01JD3V0A1B2C3D4E5F6G7H8J9K?variant=thumb'
+                        open_url: '/day/2026-04-18?t=1776552060000&focus=det_01JD3V5W6X7Y8Z9A0B1C2D3E4F'
+                        quote: null
+                        speaker: null
+                        bbox: {x: 0.12, y: 0.55, w: 0.18, h: 0.14}
+                        score: 0.81
+                        certainty: confident
+                    evidence_considered: 9
+                    provider: deepseek
+                    model: deepseek-flash
+                    local_first: false
+                    validation: {dropped_citations: 0, dropped_quotes: 0, forced_status: null, reasons: []}
+                    latency_ms: 1840
+                not_found:
+                  value:
+                    question: "Where is my passport?"
+                    status: not_found
+                    answer: "I couldn't find this in the records for 2026-04-18."
+                    score: 0.0
+                    citations: []
+                    evidence_considered: 0
+                    provider: extractive
+                    model: null
+                    local_first: true
+                    validation: {dropped_citations: 0, dropped_quotes: 0, forced_status: not_found, reasons: [no_evidence]}
+                    latency_ms: 42
+        '409': {$ref: '#/components/responses/Error'}
+        '422': {$ref: '#/components/responses/Error'}
+        '503':
+          description: provider_unavailable (for example the local model server is not running). The client may retry with provider=extractive.
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/Error'}
+  /objects/watchlist:
+    get:
+      tags: [objects]
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: {type: object, required: [items], properties: {items: {type: array, items: {$ref: '#/components/schemas/WatchItem'}}}}
+    put:
+      tags: [objects]
+      summary: Replace the watchlist (max 30 items). New items apply to frames analyzed afterwards, plus any days listed in reanalyze_days.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [items]
+              properties:
+                items:
+                  type: array
+                  maxItems: 30
+                  items:
+                    type: object
+                    required: [label, display_name]
+                    properties:
+                      id: {type: string}
+                      label: {type: string, minLength: 1, maxLength: 40, pattern: '^[a-z][a-z0-9 -]*$'}
+                      display_name: {type: string, minLength: 1, maxLength: 40}
+                      aliases: {type: array, maxItems: 10, items: {type: string, maxLength: 40}}
+                      enabled: {type: boolean, default: true}
+                reanalyze_days: {type: array, items: {type: string, format: date}, maxItems: 7}
+            example:
+              items:
+                - {label: screw tray, display_name: "螺丝盒", aliases: ["螺丝", screws], enabled: true}
+                - {label: keys, display_name: "钥匙", aliases: [key], enabled: true}
+      responses:
+        '200': {description: Saved, content: {application/json: {schema: {type: object, properties: {items: {type: array, items: {$ref: '#/components/schemas/WatchItem'}}}}}}}
+  /objects/last-seen:
+    get:
+      tags: [objects]
+      summary: Deterministic DB lookup of the latest sightings per watch item across all retained days. No LLM involved.
+      parameters:
+        - {name: label, in: query, required: false, schema: {type: string}, description: Watch-item label; omit for all enabled items.}
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [items, searched_days]
+                properties:
+                  items: {type: array, items: {$ref: '#/components/schemas/LastSeen'}}
+                  searched_days: {type: integer}
+              example:
+                searched_days: 1
+                items:
+                  - watch_item: {id: wli_01JD3W0A1B2C3D4E5F6G7H8J9K, label: screw tray, display_name: "螺丝盒", aliases: ["螺丝", screws], enabled: true}
+                    status: seen
+                    last_confident:
+                      detection_id: det_01JD3V5W6X7Y8Z9A0B1C2D3E4F
+                      frame_id: frm_01JD3V0A1B2C3D4E5F6G7H8J9K
+                      day: '2026-04-18'
+                      ts_ms: 1776552060000
+                      ts_local: '2026-04-18T15:41:00-07:00'
+                      score: 0.62
+                      certainty: confident
+                      bbox: {x: 0.12, y: 0.55, w: 0.18, h: 0.14}
+                      thumb_url: '/api/lifelog/media/frames/frm_01JD3V0A1B2C3D4E5F6G7H8J9K?variant=thumb'
+                      full_url: '/api/lifelog/media/frames/frm_01JD3V0A1B2C3D4E5F6G7H8J9K?variant=full'
+                      open_url: '/day/2026-04-18?t=1776552060000&focus=det_01JD3V5W6X7Y8Z9A0B1C2D3E4F'
+                      place: {id: plc_01JD3X0A1B2C3D4E5F6G7H8J9K, name: Workshop, kind: manual}
+                      caption: A red toolbox on a workbench with a small metal tray on its lid.
+                    newer_uncertain: null
+                  - watch_item: {id: wli_01JD3Y0A1B2C3D4E5F6G7H8J9K, label: keys, display_name: "钥匙", aliases: [key], enabled: true}
+                    status: not_seen
+                    last_confident: null
+                    newer_uncertain: null
+  /privacy:
+    get:
+      tags: [privacy]
+      responses:
+        '200': {description: OK, content: {application/json: {schema: {$ref: '#/components/schemas/PrivacySettings'}}}}
+    patch:
+      tags: [privacy]
+      summary: Enabling audio requires audio_consent_ack=true in the same request (422 consent_required). Setting local_first=false requires confirm_cloud=true (422 confirmation_required).
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/PrivacyPatch'}
+            example: {retention_days: 7}
+      responses:
+        '200': {description: Updated, content: {application/json: {schema: {$ref: '#/components/schemas/PrivacySettings'}}}}
+        '422': {$ref: '#/components/responses/Error'}
+  /privacy/pause:
+    post:
+      tags: [privacy]
+      summary: One-tap pause. Idempotent; an already open interval is kept (its end is updated if duration_s is given).
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                duration_s: {type: [integer, 'null'], minimum: 60, maximum: 86400, description: null means until resumed}
+                reason: {type: string, maxLength: 120}
+            example: {duration_s: 3600}
+      responses:
+        '200': {description: OK, content: {application/json: {schema: {$ref: '#/components/schemas/PrivacySettings'}}}}
+  /privacy/resume:
+    post:
+      tags: [privacy]
+      responses:
+        '200': {description: OK, content: {application/json: {schema: {$ref: '#/components/schemas/PrivacySettings'}}}}
+  /privacy/purge:
+    post:
+      tags: [privacy]
+      summary: Run the retention purge now (same code path as the nightly job).
+      responses:
+        '200': {description: Report, content: {application/json: {schema: {$ref: '#/components/schemas/PurgeReport'}}}}
+  /privacy/egress-log:
+    get:
+      tags: [privacy]
+      parameters: [{name: limit, in: query, schema: {type: integer, minimum: 1, maximum: 500, default: 100}}]
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: {type: object, properties: {entries: {type: array, items: {$ref: '#/components/schemas/EgressEntry'}}}}
+              example:
+                entries:
+                  - {id: egr_01JD3Z0A1B2C3D4E5F6G7H8J9K, ts_ms: 1776567000000, provider: deepseek, purpose: summary, host: api.deepseek.com, bytes_out: 18234, items: {utterances: 214, captions: 168, frames: 0}, day: '2026-04-18'}
+  /privacy/purge-log:
+    get:
+      tags: [privacy]
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: {type: object, properties: {entries: {type: array, items: {$ref: '#/components/schemas/PurgeReport'}}}}
+  /backup/config:
+    get:
+      tags: [backup]
+      responses:
+        '200': {description: OK, content: {application/json: {schema: {$ref: '#/components/schemas/BackupConfig'}}}}
+    put:
+      tags: [backup]
+      summary: Choose an existing rclone crypt remote. Credentials are configured with the CLI wizard, never through this API.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/BackupConfig'}
+            example: {enabled: true, target_type: nas, remote: lifelog-nas-crypt, path: aiglasses-lifelog, schedule: nightly, include_raw_audio: false}
+      responses:
+        '200': {description: Saved, content: {application/json: {schema: {$ref: '#/components/schemas/BackupConfig'}}}}
+        '409':
+          description: local_first_blocks_cloud, remote_not_crypt or remote_unknown
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/Error'}
+              example: {error: {code: local_first_blocks_cloud, message: Local-first is on; only NAS targets are allowed.}}
+  /backup/remotes:
+    get:
+      tags: [backup]
+      summary: Remotes from `rclone listremotes --long` plus `rclone config dump` parsed for type only. Names and types, never secrets.
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  rclone_available: {type: boolean}
+                  rclone_version: {type: [string, 'null']}
+                  remotes:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        name: {type: string}
+                        type: {type: string, description: rclone backend type such as crypt, drive, smb, webdav, sftp, s3}
+                        is_crypt: {type: boolean}
+                        wraps: {type: [string, 'null'], description: Underlying backend type for crypt remotes.}
+                        target_type: {type: string, enum: [cloud, nas]}
+              example:
+                rclone_available: true
+                rclone_version: v1.71.0
+                remotes:
+                  - {name: lifelog-nas-crypt, type: crypt, is_crypt: true, wraps: smb, target_type: nas}
+                  - {name: gdrive, type: drive, is_crypt: false, wraps: null, target_type: cloud}
+  /backup/status:
+    get:
+      tags: [backup]
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/BackupStatus'}
+              example: {state: ok, last_run: {id: bkp_01JD400A1B2C3D4E5F6G7H8J9K, started_ms: 1776594600000, finished_ms: 1776594712000, state: ok, remote: lifelog-nas-crypt, target_type: nas, files: 391, bytes: 48211933, deleted: 0, error: null}, next_run_ms: 1776681000000}
+  /backup/run:
+    post:
+      tags: [backup]
+      responses:
+        '202': {description: Queued, content: {application/json: {schema: {type: object, properties: {job_id: {type: string}}}}}}
+        '409': {$ref: '#/components/responses/Error'}
+  /settings:
+    get:
+      tags: [settings]
+      responses:
+        '200': {description: OK, content: {application/json: {schema: {$ref: '#/components/schemas/GeneralSettings'}}}}
+    patch:
+      tags: [settings]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/GeneralSettings'}
+            example: {llm_provider: ollama, ollama_model: 'qwen3:4b'}
+      responses:
+        '200': {description: OK, content: {application/json: {schema: {$ref: '#/components/schemas/GeneralSettings'}}}}
+        '409': {$ref: '#/components/responses/Error'}
+  /jobs:
+    get:
+      tags: [jobs]
+      summary: Pipeline status for the settings page (counts and recent failures; no content).
+      parameters: [{name: day, in: query, schema: {type: string, format: date}}]
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  counts: {type: object, additionalProperties: {type: object, additionalProperties: {type: integer}}}
+                  recent_failures:
+                    type: array
+                    items: {type: object, properties: {id: {type: string}, kind: {type: string}, ref_id: {type: string}, error: {type: string}, updated_ms: {type: integer}}}
+              example:
+                counts: {frame.analyze: {queued: 3, running: 1, done: 164, failed: 0}, audio.transcribe: {done: 18}}
+                recent_failures: []
+components:
+  securitySchemes:
+    ownerAuth: {type: http, scheme: bearer, description: "Owner token (llo_...) or the ll_session cookie."}
+    deviceAuth: {type: http, scheme: bearer, description: "Device token (lld_...) plus the X-Device-Id header."}
+  parameters:
+    Day: {name: day, in: path, required: true, schema: {type: string, format: date, pattern: '^[0-9]{4}-[0-9]{2}-[0-9]{2}$'}}
+    DeviceId: {name: device_id, in: path, required: true, schema: {type: string, pattern: '^dev_[0-9A-Z]{26}$'}}
+    XDeviceId: {name: X-Device-Id, in: header, required: true, schema: {type: string, pattern: '^dev_[0-9A-Z]{26}$'}}
+    XBootId: {name: X-Boot-Id, in: header, required: true, description: Random 8-32 lowercase hex chars chosen at each boot or app launch., schema: {type: string, pattern: '^[0-9a-f]{8,32}$'}}
+    XSeq: {name: X-Seq, in: header, required: true, description: Monotonic per boot id starting at 0., schema: {type: integer, minimum: 0}}
+    XClockSource: {name: X-Clock-Source, in: header, required: true, schema: {type: string, enum: [ntp, rtc, phone, unsynced]}}
+  responses:
+    Error:
+      description: Error
+      content:
+        application/json:
+          schema: {$ref: '#/components/schemas/Error'}
+  schemas:
+    Error:
+      type: object
+      required: [error]
+      properties:
+        error:
+          type: object
+          required: [code, message]
+          properties: {code: {type: string}, message: {type: string}}
+    Health:
+      type: object
+      required: [status, version, contract, mode, research_prototype, certified_aid, capture_paused, local_first, audio_enabled]
+      properties:
+        status: {type: string, enum: [ok]}
+        version: {type: string}
+        contract: {type: string, const: aiglasses.lifelog.v1}
+        mode: {type: string, enum: [live, demo]}
+        research_prototype: {type: boolean, const: true}
+        certified_aid: {type: boolean, const: false}
+        capture_paused: {type: boolean}
+        local_first: {type: boolean}
+        audio_enabled: {type: boolean}
+    DeviceKind: {type: string, enum: [esp32_glasses, apple_watch, iphone_relay, phone_web, shortcut]}
+    Heartbeat:
+      type: object
+      properties:
+        battery_pct: {type: [integer, 'null'], minimum: 0, maximum: 100}
+        free_storage_mb: {type: [integer, 'null']}
+        queued_items: {type: [integer, 'null']}
+        firmware: {type: [string, 'null'], maxLength: 40}
+        uptime_ms: {type: [integer, 'null']}
+        boot_id: {type: [string, 'null']}
+    Device:
+      type: object
+      required: [id, name, kind, enabled, frame_interval_s, created_ms, last_seen_ms, status, revoked]
+      properties:
+        id: {type: string}
+        name: {type: string}
+        kind: {$ref: '#/components/schemas/DeviceKind'}
+        enabled: {type: boolean}
+        frame_interval_s: {type: integer}
+        created_ms: {type: integer}
+        last_seen_ms: {type: [integer, 'null']}
+        status: {oneOf: [{$ref: '#/components/schemas/Heartbeat'}, {type: 'null'}]}
+        revoked: {type: boolean}
+    DeviceConfig:
+      type: object
+      required: [device_id, paused, paused_until_ms, frame_interval_s, audio_enabled, location_enabled, max_batch, server_time_ms, config_version]
+      properties:
+        device_id: {type: string}
+        paused: {type: boolean}
+        paused_until_ms: {type: [integer, 'null']}
+        frame_interval_s: {type: integer}
+        audio_enabled: {type: boolean}
+        location_enabled: {type: boolean}
+        max_batch: {type: integer, description: Max items a device uploads before polling config again.}
+        server_time_ms: {type: integer}
+        config_version: {type: integer, description: Increments on any change that affects devices.}
+    IngestResult:
+      type: object
+      required: [id, duplicate, day, captured_ms, clock_corrected, quality]
+      properties:
+        id: {type: string}
+        duplicate: {type: boolean}
+        day: {type: string, format: date}
+        captured_ms: {type: integer, description: For audio this is started_ms.}
+        clock_corrected: {type: boolean}
+        quality: {type: [string, 'null'], enum: [unknown, ok, dark, blurry, lens_covered, null]}
+    DayInfo:
+      type: object
+      required: [day, first_ms, last_ms, frames, audio_seconds, utterances, segments, has_summary, expires_on]
+      properties:
+        day: {type: string, format: date}
+        first_ms: {type: integer}
+        last_ms: {type: integer}
+        frames: {type: integer}
+        audio_seconds: {type: integer}
+        utterances: {type: integer}
+        segments: {type: integer}
+        has_summary: {type: boolean}
+        expires_on: {type: string, format: date, description: Local date on which the purge job deletes this day.}
+    Certainty: {type: string, enum: [confident, uncertain]}
+    BBox:
+      type: object
+      required: [x, y, w, h]
+      properties: {x: {type: number}, y: {type: number}, w: {type: number}, h: {type: number}}
+    Timeline:
+      type: object
+      required: [day, timezone, start_ms, end_ms, bucket_s, buckets, pauses, segments]
+      properties:
+        day: {type: string}
+        timezone: {type: string}
+        start_ms: {type: integer, description: First bucket start (floor of first item to bucket_s).}
+        end_ms: {type: integer}
+        bucket_s: {type: integer}
+        buckets:
+          type: array
+          description: Only non-empty or paused buckets are listed (sparse).
+          items:
+            type: object
+            required: [start_ms, frames, speech, audio, detections, paused, cover_frame_id]
+            properties:
+              start_ms: {type: integer}
+              frames: {type: integer}
+              audio: {type: boolean}
+              speech: {type: boolean}
+              detections: {type: integer}
+              paused: {type: boolean}
+              cover_frame_id: {type: [string, 'null']}
+        pauses:
+          type: array
+          items: {type: object, required: [start_ms, end_ms, source], properties: {start_ms: {type: integer}, end_ms: {type: [integer, 'null']}, source: {type: string}}}
+        segments:
+          type: array
+          items: {type: object, required: [id, start_ms, end_ms, kind, title, certainty], properties: {id: {type: string}, start_ms: {type: integer}, end_ms: {type: integer}, kind: {type: string}, title: {type: string}, certainty: {$ref: '#/components/schemas/Certainty'}}}
+    FrameBrief:
+      type: object
+      required: [id, ts_ms, ts_local, device_id, thumb_url, full_url, caption, quality, detections, segment_id]
+      properties:
+        id: {type: string}
+        ts_ms: {type: integer}
+        ts_local: {type: string}
+        device_id: {type: string}
+        thumb_url: {type: string}
+        full_url: {type: string}
+        caption: {type: [string, 'null'], description: Latest kind=caption text, if any.}
+        quality: {type: string}
+        detections: {type: integer}
+        segment_id: {type: [string, 'null']}
+    Detection:
+      type: object
+      required: [id, label, watch_item_id, score, certainty, bbox]
+      properties:
+        id: {type: string}
+        label: {type: string}
+        watch_item_id: {type: [string, 'null']}
+        score: {type: number}
+        certainty: {$ref: '#/components/schemas/Certainty'}
+        bbox: {$ref: '#/components/schemas/BBox'}
+    Speaker:
+      type: object
+      required: [id, label, display_name, is_self]
+      properties:
+        id: {type: string}
+        label: {type: string, description: "Speaker A, Speaker B, ..."}
+        display_name: {type: [string, 'null']}
+        is_self: {type: boolean}
+    Place:
+      type: object
+      required: [id, name, kind]
+      properties:
+        id: {type: string}
+        name: {type: string}
+        kind: {type: string, enum: [manual, location_cluster, caption_guess]}
+    Utterance:
+      type: object
+      required: [id, audio_chunk_id, start_ms, end_ms, ts_local, speaker, text, lang, score, certainty, audio_url]
+      properties:
+        id: {type: string}
+        audio_chunk_id: {type: string}
+        start_ms: {type: integer}
+        end_ms: {type: integer}
+        ts_local: {type: string}
+        speaker: {oneOf: [{$ref: '#/components/schemas/Speaker'}, {type: 'null'}]}
+        text: {type: string}
+        lang: {type: [string, 'null']}
+        score: {type: number}
+        certainty: {$ref: '#/components/schemas/Certainty'}
+        audio_url: {type: [string, 'null'], description: Media-fragment URL; null when raw audio was dropped.}
+    FrameDetail:
+      allOf:
+        - {$ref: '#/components/schemas/FrameBrief'}
+        - type: object
+          required: [captions, detection_list, nearby_utterances, place, blurred, faces_detected]
+          properties:
+            captions:
+              type: array
+              items: {type: object, properties: {id: {type: string}, kind: {type: string, enum: [caption, dense_caption, ocr]}, text: {type: string}, model: {type: string}, score: {type: number}}}
+            detection_list: {type: array, items: {$ref: '#/components/schemas/Detection'}}
+            nearby_utterances: {type: array, description: Utterances overlapping plus or minus 30 s., items: {$ref: '#/components/schemas/Utterance'}}
+            place: {oneOf: [{$ref: '#/components/schemas/Place'}, {type: 'null'}]}
+            blurred: {type: boolean}
+            faces_detected: {type: integer}
+    Segment:
+      type: object
+      required: [id, day, start_ms, end_ms, kind, title, summary, place, cover_frame_id, speaker_ids, score, certainty, provider]
+      properties:
+        id: {type: string}
+        day: {type: string}
+        start_ms: {type: integer}
+        end_ms: {type: integer}
+        kind: {type: string, enum: [activity, conversation, transit, idle, paused]}
+        title: {type: string}
+        summary: {type: [string, 'null']}
+        place: {oneOf: [{$ref: '#/components/schemas/Place'}, {type: 'null'}]}
+        cover_frame_id: {type: [string, 'null']}
+        speaker_ids: {type: array, items: {type: string}}
+        score: {type: number}
+        certainty: {$ref: '#/components/schemas/Certainty'}
+        provider: {type: string}
+    Citation:
+      type: object
+      description: Built by the SERVER from its own evidence rows. Clients never construct citations.
+      required: [evidence_id, kind, day, ts_ms, ts_end_ms, ts_local, frame_id, thumb_url, open_url, quote, speaker, bbox, score, certainty]
+      properties:
+        evidence_id: {type: string, description: Real row id (utt_, cap_, det_, frm_ or seg_).}
+        kind: {type: string, enum: [utterance, caption, ocr, detection, frame, segment]}
+        day: {type: string}
+        ts_ms: {type: integer}
+        ts_end_ms: {type: integer}
+        ts_local: {type: string}
+        frame_id: {type: [string, 'null'], description: Frame to show. For utterances the nearest frame within 60 s, else null.}
+        thumb_url: {type: [string, 'null']}
+        open_url: {type: string, description: "/day/{day}?t={ts_ms}&focus={evidence_id}"}
+        quote: {type: [string, 'null'], description: Verbatim substring of the utterance or OCR text, validated server-side.}
+        speaker: {oneOf: [{$ref: '#/components/schemas/Speaker'}, {type: 'null'}]}
+        bbox: {oneOf: [{$ref: '#/components/schemas/BBox'}, {type: 'null'}]}
+        score: {type: number, description: evidence_score = relevance x source_conf}
+        certainty: {$ref: '#/components/schemas/Certainty'}
+    Validation:
+      type: object
+      required: [dropped_citations, dropped_quotes, forced_status, reasons]
+      properties:
+        dropped_citations: {type: integer}
+        dropped_quotes: {type: integer}
+        forced_status: {type: [string, 'null'], enum: [uncertain, not_found, null]}
+        reasons:
+          type: array
+          items: {type: string, enum: [no_evidence, below_evidence_min, below_answer_min, unknown_citation, no_valid_citation, quote_mismatch, model_uncertain, model_not_found, provider_error, paused_window, invalid_model_json]}
+    LLMProvider: {type: string, enum: [deepseek, ollama, extractive]}
+    AskRequest:
+      type: object
+      required: [question]
+      additionalProperties: false
+      properties:
+        question: {type: string, minLength: 1, maxLength: 500}
+        day: {type: string, format: date, description: Default is the most recent day with data.}
+        from_ms: {type: integer}
+        to_ms: {type: integer}
+        all_days: {type: boolean, default: false, description: Search all retained days (day is ignored).}
+        locale: {type: string, enum: [zh-CN, en], default: zh-CN}
+        provider: {$ref: '#/components/schemas/LLMProvider'}
+    AskResponse:
+      type: object
+      required: [question, status, answer, score, citations, evidence_considered, provider, model, local_first, validation, latency_ms]
+      properties:
+        question: {type: string}
+        status: {type: string, enum: [answered, uncertain, not_found]}
+        answer: {type: string, description: For not_found a fixed localized sentence. The UI prefixes uncertain answers with the uncertain badge.}
+        score: {type: number}
+        citations: {type: array, items: {$ref: '#/components/schemas/Citation'}}
+        evidence_considered: {type: integer}
+        provider: {type: string, enum: [deepseek, ollama, extractive, precomputed]}
+        model: {type: [string, 'null']}
+        local_first: {type: boolean}
+        validation: {$ref: '#/components/schemas/Validation'}
+        latency_ms: {type: integer}
+    SummaryItem:
+      type: object
+      required: [id, text, certainty, start_ms, end_ms, segment_ids, citations]
+      properties:
+        id: {type: string, description: "si_<n>, stable within one summary"}
+        section: {type: [string, 'null'], enum: [headline, narrative, places, activities, people, quotes, null], description: "Original section; set on items moved into uncertain[]."}
+        text: {type: string}
+        certainty: {$ref: '#/components/schemas/Certainty'}
+        start_ms: {type: [integer, 'null']}
+        end_ms: {type: [integer, 'null']}
+        segment_ids: {type: array, items: {type: string}}
+        citations: {type: array, minItems: 1, items: {$ref: '#/components/schemas/Citation'}}
+    PlaceItem:
+      allOf:
+        - {$ref: '#/components/schemas/SummaryItem'}
+        - {type: object, required: [place_id], properties: {place_id: {type: [string, 'null']}}}
+    PersonItem:
+      allOf:
+        - {$ref: '#/components/schemas/SummaryItem'}
+        - type: object
+          required: [speaker, speech_ms]
+          properties:
+            speaker: {$ref: '#/components/schemas/Speaker'}
+            speech_ms: {type: integer}
+    QuoteItem:
+      allOf:
+        - {$ref: '#/components/schemas/SummaryItem'}
+        - type: object
+          required: [quote, utterance_id, speaker]
+          properties:
+            quote: {type: string, description: Verbatim; equals or is a normalized substring of the utterance text.}
+            utterance_id: {type: string}
+            speaker: {oneOf: [{$ref: '#/components/schemas/Speaker'}, {type: 'null'}]}
+    DaySummary:
+      type: object
+      required: [day, timezone, language, generated_ms, provider, model, status, headline, narrative, places, activities, people, quotes, uncertain, coverage, validation]
+      properties:
+        day: {type: string}
+        timezone: {type: string}
+        language: {type: string, enum: [zh-CN, en]}
+        generated_ms: {type: integer}
+        provider: {type: string, enum: [deepseek, ollama, extractive, fixture]}
+        model: {type: [string, 'null']}
+        status: {type: string, enum: [ok, partial, failed]}
+        headline: {oneOf: [{$ref: '#/components/schemas/SummaryItem'}, {type: 'null'}], description: One line, max 120 chars, cited like any item.}
+        narrative: {type: array, maxItems: 8, description: Editorial paragraphs; each must carry a valid citation or it is dropped., items: {$ref: '#/components/schemas/SummaryItem'}}
+        places: {type: array, items: {$ref: '#/components/schemas/PlaceItem'}}
+        activities: {type: array, items: {$ref: '#/components/schemas/SummaryItem'}}
+        people: {type: array, items: {$ref: '#/components/schemas/PersonItem'}}
+        quotes: {type: array, items: {$ref: '#/components/schemas/QuoteItem'}}
+        uncertain: {type: array, description: Cited but weak items (score below 0.70 or model-flagged). Uncited items never appear anywhere., items: {$ref: '#/components/schemas/SummaryItem'}}
+        coverage:
+          type: object
+          required: [frames, audio_seconds, paused_ms, first_ms, last_ms]
+          properties:
+            frames: {type: integer}
+            audio_seconds: {type: integer}
+            paused_ms: {type: integer}
+            first_ms: {type: [integer, 'null']}
+            last_ms: {type: [integer, 'null']}
+        validation:
+          type: object
+          required: [dropped_items, dropped_citations, dropped_quotes]
+          properties:
+            dropped_items: {type: integer}
+            dropped_citations: {type: integer}
+            dropped_quotes: {type: integer}
+    WatchItem:
+      type: object
+      required: [id, label, display_name, aliases, enabled]
+      properties:
+        id: {type: string}
+        label: {type: string}
+        display_name: {type: string}
+        aliases: {type: array, items: {type: string}}
+        enabled: {type: boolean}
+    Sighting:
+      type: object
+      required: [detection_id, frame_id, day, ts_ms, ts_local, score, certainty, bbox, thumb_url, full_url, open_url, place, caption]
+      properties:
+        detection_id: {type: string}
+        frame_id: {type: string}
+        day: {type: string}
+        ts_ms: {type: integer}
+        ts_local: {type: string}
+        score: {type: number}
+        certainty: {$ref: '#/components/schemas/Certainty'}
+        bbox: {$ref: '#/components/schemas/BBox'}
+        thumb_url: {type: string}
+        full_url: {type: string}
+        open_url: {type: string}
+        place: {oneOf: [{$ref: '#/components/schemas/Place'}, {type: 'null'}]}
+        caption: {type: [string, 'null']}
+    LastSeen:
+      type: object
+      required: [watch_item, status, last_confident, newer_uncertain]
+      properties:
+        watch_item: {$ref: '#/components/schemas/WatchItem'}
+        status: {type: string, enum: [seen, uncertain, not_seen]}
+        last_confident: {oneOf: [{$ref: '#/components/schemas/Sighting'}, {type: 'null'}]}
+        newer_uncertain: {oneOf: [{$ref: '#/components/schemas/Sighting'}, {type: 'null'}], description: Latest uncertain sighting if newer than last_confident, or the only sighting when status is uncertain.}
+    PrivacySettings:
+      type: object
+      required: [capture_paused, paused_until_ms, open_pause_id, retention_days, local_first, audio_enabled, audio_consent_ack_ms, keep_raw_audio, face_blur, location_enabled, cloud_vision_enabled, next_purge_ms]
+      properties:
+        capture_paused: {type: boolean}
+        paused_until_ms: {type: [integer, 'null']}
+        open_pause_id: {type: [string, 'null']}
+        retention_days: {type: integer, minimum: 1, maximum: 365}
+        local_first: {type: boolean}
+        audio_enabled: {type: boolean}
+        audio_consent_ack_ms: {type: [integer, 'null']}
+        keep_raw_audio: {type: boolean}
+        face_blur: {type: boolean}
+        location_enabled: {type: boolean}
+        cloud_vision_enabled: {type: boolean}
+        next_purge_ms: {type: integer}
+      example: {capture_paused: false, paused_until_ms: null, open_pause_id: null, retention_days: 14, local_first: true, audio_enabled: false, audio_consent_ack_ms: null, keep_raw_audio: false, face_blur: true, location_enabled: false, cloud_vision_enabled: false, next_purge_ms: 1776594600000}
+    PrivacyPatch:
+      type: object
+      additionalProperties: false
+      properties:
+        retention_days: {type: integer, minimum: 1, maximum: 365}
+        local_first: {type: boolean}
+        confirm_cloud: {type: boolean}
+        audio_enabled: {type: boolean}
+        audio_consent_ack: {type: boolean}
+        keep_raw_audio: {type: boolean}
+        face_blur: {type: boolean}
+        location_enabled: {type: boolean}
+        cloud_vision_enabled: {type: boolean}
+    PurgeReport:
+      type: object
+      required: [id, ts_ms, trigger, cutoff_day, days, frames, audio_chunks, utterances, bytes]
+      properties:
+        id: {type: string}
+        ts_ms: {type: integer}
+        trigger: {type: string, enum: [retention, owner_day, owner_range, startup]}
+        cutoff_day: {type: [string, 'null']}
+        days: {type: array, items: {type: string}}
+        frames: {type: integer}
+        audio_chunks: {type: integer}
+        utterances: {type: integer}
+        bytes: {type: integer}
+    EgressEntry:
+      type: object
+      required: [id, ts_ms, provider, purpose, host, bytes_out, items, day]
+      properties:
+        id: {type: string}
+        ts_ms: {type: integer}
+        provider: {type: string}
+        purpose: {type: string, enum: [ask, summary, caption, backup]}
+        host: {type: string}
+        bytes_out: {type: integer}
+        items: {type: object, additionalProperties: {type: integer}}
+        day: {type: [string, 'null']}
+    BackupConfig:
+      type: object
+      required: [enabled, target_type, remote, path, schedule, include_raw_audio]
+      properties:
+        enabled: {type: boolean}
+        target_type: {type: [string, 'null'], enum: [cloud, nas, null]}
+        remote: {type: [string, 'null'], description: Name of an rclone remote whose type is crypt.}
+        path: {type: string, default: aiglasses-lifelog, pattern: '^[A-Za-z0-9._/-]{1,200}$'}
+        schedule: {type: string, enum: [nightly, hourly, manual], default: nightly}
+        include_raw_audio: {type: boolean, default: false}
+    BackupRun:
+      type: object
+      required: [id, started_ms, finished_ms, state, remote, target_type, files, bytes, deleted, error]
+      properties:
+        id: {type: string}
+        started_ms: {type: integer}
+        finished_ms: {type: [integer, 'null']}
+        state: {type: string, enum: [running, ok, failed, skipped_local_first, skipped_disabled]}
+        remote: {type: [string, 'null']}
+        target_type: {type: [string, 'null']}
+        files: {type: integer}
+        bytes: {type: integer}
+        deleted: {type: integer}
+        error: {type: [string, 'null']}
+    BackupStatus:
+      type: object
+      required: [state, last_run, next_run_ms]
+      properties:
+        state: {type: string, enum: [disabled, idle, running, ok, failed, blocked_local_first, rclone_missing]}
+        last_run: {oneOf: [{$ref: '#/components/schemas/BackupRun'}, {type: 'null'}]}
+        next_run_ms: {type: [integer, 'null']}
+    GeneralSettings:
+      type: object
+      additionalProperties: false
+      properties:
+        timezone: {type: string, example: America/Los_Angeles}
+        locale: {type: string, enum: [zh-CN, en]}
+        summary_language: {type: string, enum: [zh-CN, en]}
+        llm_provider: {$ref: '#/components/schemas/LLMProvider'}
+        ollama_url: {type: string, example: 'http://127.0.0.1:11434'}
+        ollama_model: {type: string, example: 'qwen3:4b'}
+        summary_time_local: {type: string, pattern: '^[0-9]{2}:[0-9]{2}$', example: '22:30'}
+        default_frame_interval_s: {type: integer, minimum: 5, maximum: 3600}

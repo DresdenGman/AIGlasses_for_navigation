@@ -1,0 +1,54 @@
+{
+  "$schema_note": "aiglasses.lifelog design tokens v1 (FROZEN). Web maps these to Tailwind theme + CSS variables.",
+  "color": {
+    "light": {
+      "paper": "#F4F1EA",
+      "paper-raised": "#FBF9F4",
+      "ink": "#111111",
+      "ink-muted": "#4A4843",
+      "rule": "#D9D4C7",
+      "focus": "#1F4FD1",
+      "uncertain-fg": "#7A4A00",
+      "uncertain-bg": "#F6E3B8",
+      "uncertain-rule": "#C98A1B",
+      "paused-hatch": "#B9B3A3",
+      "speech": "#2F5D50",
+      "detection": "#7A2E3A",
+      "danger": "#9B1C1C"
+    },
+    "dark": {
+      "paper": "#121211",
+      "paper-raised": "#1B1B19",
+      "ink": "#EDEAE2",
+      "ink-muted": "#A9A59B",
+      "rule": "#34322D",
+      "focus": "#8FB0FF",
+      "uncertain-fg": "#F2C66D",
+      "uncertain-bg": "#3A2A0B",
+      "uncertain-rule": "#C98A1B",
+      "paused-hatch": "#4A4740",
+      "speech": "#7FC3AE",
+      "detection": "#E39AA6",
+      "danger": "#F08A8A"
+    }
+  },
+  "font": {
+    "serif": "Newsreader, 'Source Serif 4', 'Noto Serif SC', serif",
+    "sans": "Inter, 'Noto Sans SC', system-ui, sans-serif",
+    "mono": "'JetBrains Mono', ui-monospace, monospace",
+    "licenses": "All SIL OFL 1.1, self-hosted via next/font; no third-party font CDN at runtime."
+  },
+  "type_scale_rem": {"xs": 0.8125, "sm": 0.9375, "base": 1.0625, "lg": 1.25, "xl": 1.625, "2xl": 2.25, "display": 3.5},
+  "type_scale_large_text_multiplier": 1.25,
+  "line_height": {"tight": 1.15, "body": 1.6, "mono": 1.45},
+  "space_px": [0, 4, 8, 12, 16, 24, 32, 48, 64, 96, 128],
+  "radius_px": {"none": 0, "sm": 2, "md": 4},
+  "motion": {"fast_ms": 120, "base_ms": 180, "max_ms": 200, "easing": "cubic-bezier(0.2, 0, 0, 1)", "reduce_motion": "all transitions 0 ms; no auto-scroll animation"},
+  "layout": {"grid_columns": 12, "max_width_px": 1440, "gutter_px": 24, "reading_measure_ch": 68},
+  "contrast": "Body text ≥ 7:1 (AAA) on paper; UI text and badges ≥ 4.5:1; focus ring 2 px solid focus + 2 px offset.",
+  "badge": {
+    "uncertain": {"label_en": "uncertain", "label_zh-CN": "不确定", "fg": "uncertain-fg", "bg": "uncertain-bg", "border": "1px dashed uncertain-rule", "icon": "dashed circle"},
+    "not_found": {"label_en": "not in records", "label_zh-CN": "记录中未找到", "fg": "ink-muted", "bg": "transparent", "border": "1px solid rule"},
+    "synthetic": {"label_en": "Synthetic sample day · research prototype", "label_zh-CN": "合成示例日 · 研究原型"}
+  }
+}

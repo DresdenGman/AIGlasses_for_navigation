@@ -1,0 +1,138 @@
+{
+  "schema": "aiglasses.lifelog.sample_day",
+  "version": 1,
+  "contract": "aiglasses.lifelog.v1",
+  "synthetic": true,
+  "notice": "SYNTHETIC SAMPLE DAY. Every person, voice, place, conversation and image in this folder is invented for demonstration. Nothing was recorded from a real person. Images are illustrations, not photographs of real places.",
+  "license": "MIT (same as repository)",
+  "day": "2026-04-18",
+  "timezone": "America/Los_Angeles",
+  "locales": ["en", "zh-CN"],
+  "default_locale": "en",
+  "window": {
+    "first_ms": 1776520800000,
+    "last_ms": 1776570900000,
+    "first_local": "2026-04-18T07:00:00-07:00",
+    "last_local": "2026-04-18T20:55:00-07:00"
+  },
+  "persona": {
+    "description": "A fictional hobbyist repairer who wears the glasses for one Saturday. Never named in content; referred to as 'you' / '你'.",
+    "fictional_places": ["Home (sample)", "Fernhollow Repair Cafe", "Tram line 4", "Quill Street Bakery", "Larkspur Community Library"]
+  },
+  "devices": "devices.json",
+  "files": {
+    "shared": {
+      "frames": "frames.json",
+      "detections": "detections.json",
+      "watchlist": "watchlist.json",
+      "audio_chunks": "audio_chunks.json",
+      "speakers": "speakers.json",
+      "pauses": "pauses.json",
+      "places": "places.json"
+    },
+    "localized": {
+      "captions": "locales/{locale}/captions.json",
+      "utterances": "locales/{locale}/utterances.json",
+      "segments": "locales/{locale}/segments.json",
+      "places_names": "locales/{locale}/places.json",
+      "speaker_names": "locales/{locale}/speakers.json",
+      "summary": "locales/{locale}/summary.json",
+      "qa_golden": "locales/{locale}/qa_golden.json"
+    }
+  },
+  "media": {
+    "frames_dir": "media/frames",
+    "thumbs_dir": "media/thumbs",
+    "audio_dir": "media/audio",
+    "frame_format": "webp",
+    "frame_size": [640, 480],
+    "thumb_size": [320, 240],
+    "audio_committed": false,
+    "audio_note": "Audio files are optional. `python -m tools.sample_day_gen tts` can render synthetic voices locally into media/audio (gitignored). The demo shows transcripts when audio is absent.",
+    "watermark": "SAMPLE · SYNTHETIC",
+    "max_total_bytes": 10485760
+  },
+  "capture": {
+    "frame_interval_s": 300,
+    "audio_chunk_s": 300,
+    "audio_enabled_note": "In the story every speaker agreed to be recorded; the demo shows the consent reminder anyway."
+  },
+  "counts": {
+    "frames": 162,
+    "captions": 162,
+    "detections": 41,
+    "audio_chunks": 30,
+    "utterances": 214,
+    "speakers": 4,
+    "segments": 14,
+    "pauses": 1,
+    "qa_golden": 24
+  },
+  "provenance": {
+    "generator": "lifelog/tools/sample_day_gen",
+    "generator_version": "0.1.0",
+    "seed": 20260418,
+    "text": "Scripted story outline in tools/sample_day_gen/story.yaml expanded by an LLM, then validated by validate.py (ids, timestamps, locale parity, no real names list).",
+    "images": "Illustrations generated from per-scene prompts in tools/sample_day_gen/scenes.yaml, then cropped/jittered into frames and watermarked. No real people or faces.",
+    "sha256": "media/SHA256SUMS"
+  },
+  "examples": {
+    "frame": {
+      "id": "frm_01JRSAMPLE0000000000000042",
+      "device_id": "dev_01JRSAMPLE00000000000GLASS",
+      "ts_ms": 1776552060000,
+      "file": "media/frames/frm_01JRSAMPLE0000000000000042.webp",
+      "thumb": "media/thumbs/frm_01JRSAMPLE0000000000000042.webp",
+      "width": 640,
+      "height": 480,
+      "quality": "ok",
+      "blurred": true,
+      "faces_detected": 0,
+      "place_id": "plc_01JRSAMPLE0000000000CAFE01",
+      "scene": "repair-bench-afternoon"
+    },
+    "detection": {
+      "id": "det_01JRSAMPLE0000000000000007",
+      "frame_id": "frm_01JRSAMPLE0000000000000042",
+      "ts_ms": 1776552060000,
+      "watch_item_id": "wli_01JRSAMPLE00000000000SCREW",
+      "label": "screw tray",
+      "score": 0.62,
+      "certainty": "confident",
+      "bbox": {"x": 0.12, "y": 0.55, "w": 0.18, "h": 0.14},
+      "model": "fixture"
+    },
+    "utterance_en": {
+      "id": "utt_01JRSAMPLE0000000000000118",
+      "audio_chunk_id": "aud_01JRSAMPLE0000000000000017",
+      "start_ms": 1776545520000,
+      "end_ms": 1776545526500,
+      "speaker_id": "spk_01JRSAMPLE0000000000000SPB",
+      "text": "The replacement switch should arrive Tuesday, I will text you the tracking number.",
+      "lang": "en",
+      "avg_logprob": -0.15,
+      "no_speech_prob": 0.02,
+      "score": 0.84,
+      "certainty": "confident",
+      "model": "fixture"
+    },
+    "qa_golden_item": {
+      "id": "qa_03",
+      "question": "Where did I put the screws?",
+      "expected_status": "answered",
+      "must_cite_any": ["det_01JRSAMPLE0000000000000007", "utt_01JRSAMPLE0000000000000131"],
+      "must_not_cite": [],
+      "answer_keywords": ["red toolbox"],
+      "trap": null
+    },
+    "qa_golden_trap": {
+      "id": "qa_19",
+      "question": "What did the bakery cashier say about my passport?",
+      "expected_status": "not_found",
+      "must_cite_any": [],
+      "must_not_cite": [],
+      "answer_keywords": [],
+      "trap": "no_evidence"
+    }
+  }
+}
