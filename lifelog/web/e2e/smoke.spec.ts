@@ -32,6 +32,10 @@ test.describe("showcase pages", () => {
     await expect(page.getByText("不确定").first()).toBeVisible();
     await page.getByRole("button", { name: "English" }).click();
     await expect(page.getByRole("heading", { level: 1 })).toContainText("2026");
+    await page.getByRole("button", { name: /E\d/ }).first().click();
+    await expect(page.getByRole("dialog")).toBeVisible();
+    await page.keyboard.press("Escape");
+    await expect(page.getByRole("dialog")).toBeHidden();
 
     await page.goto("/ask");
     await page.getByRole("button", { name: "Where did I put the screws?" }).click();
@@ -49,5 +53,16 @@ test.describe("showcase pages", () => {
 
     await page.getByRole("button", { name: "Pause capture" }).click();
     await expect(page.getByRole("button", { name: /Paused/ })).toBeVisible();
+
+    await page.goto("/");
+    await expect(page.getByRole("img", { name: "Guide dog walk by the lake" })).toBeVisible();
+    await expect(page.getByText("F-0418-0099")).toBeVisible();
+    await page.getByRole("link", { name: /18 APR\. 2026/ }).first().click();
+    await expect(page).toHaveURL(/\/day\/2026-04-18\/summary/);
+
+    await page.goto("/objects");
+    await expect(page.getByRole("img", { name: "Wallet on a sunlit entryway shelf" })).toBeVisible();
+    await expect(page.getByRole("img", { name: "Keys partly hidden under papers on a desk" })).toBeVisible();
+    await expect(page.getByRole("img", { name: /pill|reading glasses|sunglasses/i })).toHaveCount(0);
   });
 });

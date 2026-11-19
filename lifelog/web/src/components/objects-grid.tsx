@@ -2,44 +2,60 @@ import Link from "next/link";
 import type { LastSeen, Locale } from "@/lib/api/schemas";
 import { FramePlate, UncertainBadge } from "@/components/media";
 import { t } from "@/lib/i18n";
+import type { Plate } from "@/lib/plates";
+import { plateAlt } from "@/lib/plates";
 import { formatClock, formatDate } from "@/lib/time";
 
-export function ObjectsGrid({ items, searchedDays, locale }: { items: LastSeen[]; searchedDays: number; locale: Locale }) {
+export function ObjectsGrid({
+  items,
+  searchedDays,
+  locale,
+  plates,
+}: {
+  items: LastSeen[];
+  searchedDays: number;
+  locale: Locale;
+  plates: Record<string, Plate>;
+}) {
   const copy = t(locale);
   return (
     <div>
-      <p className="text-sm text-ink-muted">
+      <p className="max-w-measure">{copy.foundBy}</p>
+      <p className="mt-2 text-sm text-ink-muted">
         {searchedDays} {copy.searched}
       </p>
-      <ul className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <ul className="mt-12 grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2">
         {items.map((item) => {
-          const sighting = item.status === "uncertain" ? item.newer_uncertain : item.last_confident;
-          const uncertain = item.status === "uncertain" || item.newer_uncertain !== null;
+          const sighting = item.last_confident ?? item.newer_uncertain;
+          const low = item.newer_uncertain;
+          const plate = plates[item.watch_item.label];
           return (
-            <li key={item.watch_item.id} className={item.status === "uncertain" ? "border border-dashed border-uncertain-rule bg-uncertain-bg p-3 text-uncertain-fg" : ""}>
-              <h2 className="serif text-2xl">{item.watch_item.display_name}</h2>
-              <p className="mono text-xs text-ink-muted">{item.watch_item.label}</p>
+            <li key={item.watch_item.id} className={low ? "border border-dashed border-uncertain-rule bg-paper p-4" : ""}>
+              <h2 className="serif text-3xl">{item.watch_item.display_name}</h2>
+              <p className="eyebrow mt-2">{item.watch_item.label}</p>
               {item.status === "not_seen" || !sighting ? (
-                <div className="mt-3">
+                <div className="mt-4">
                   <FramePlate frameId={null} alt={copy.notSeen} className="aspect-[3/2]" />
                   <p className="mt-3">{copy.notSeen}</p>
                 </div>
               ) : (
-                <Link href={sighting.open_url} className="mt-3 block no-underline">
-                  <FramePlate frameId={sighting.frame_id} alt={sighting.caption ?? item.watch_item.display_name} time={formatClock(sighting.ts_ms, locale)} className="aspect-[3/2]" />
-                  <p className="mono mt-2 text-sm">
-                    {formatDate(sighting.day, locale)} · {formatClock(sighting.ts_ms, locale)}
-                  </p>
-                  <p className="text-sm">{sighting.place?.name ?? copy.place}</p>
-                  <p className="mono text-sm">
-                    {copy.confidence} {sighting.score.toFixed(2)}
-                  </p>
+                <Link href={sighting.open_url} className="mt-4 block no-underline">
+                  {plate ? (
+                    <img src={plate.src} alt={plateAlt(plate, locale)} width={1536} height={1024} className="plate aspect-[3/2] w-full object-cover" />
+                  ) : (
+                    <FramePlate frameId={sighting.frame_id} alt={sighting.caption ?? item.watch_item.display_name} time={formatClock(sighting.ts_ms, locale)} className="aspect-[3/2]" />
+                  )}
+                  <p className="eyebrow mt-3">{formatDate(sighting.day, locale)} · {formatClock(sighting.ts_ms, locale)}</p>
+                  <p className="mt-1">{sighting.place?.name ?? copy.place}</p>
+                  <p className="mono text-sm">{copy.confidence} {sighting.score.toFixed(2)}</p>
                 </Link>
               )}
-              {uncertain && item.status !== "not_seen" ? (
-                <p className="mt-2">
+              {low ? (
+                <p className="mt-4">
                   <UncertainBadge locale={locale} />
-                  {item.newer_uncertain && item.status === "seen" ? <span className="ml-2 text-sm">{copy.newer}</span> : null}
+                  <span className="mt-2 block text-sm text-uncertain-fg">
+                    {copy.newer} {low.score.toFixed(2)} · {low.place?.name}
+                  </span>
                 </p>
               ) : null}
             </li>

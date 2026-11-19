@@ -31,9 +31,9 @@ export function FramePlate({
   const asset = frameAsset(frameId);
   if (!asset) {
     return (
-      <span className={`relative block overflow-hidden bg-paper ${className}`}>
-        <img src="/showcase/placeholders/pending.svg" alt={alt} width={640} height={480} className="h-full w-full object-cover" />
-        {time ? <span className="time-chip mono absolute left-2 top-2 px-1.5 py-0.5 text-xs">{time}</span> : null}
+      <span className={`plate relative flex aspect-[3/2] items-end overflow-hidden border border-rule bg-paper p-3 ${className}`}>
+        <span className="sr-only">{alt}</span>
+        {time ? <span className="eyebrow">{time}</span> : <span className="eyebrow">{alt}</span>}
       </span>
     );
   }

@@ -1,6 +1,7 @@
 import { ObjectsGrid } from "@/components/objects-grid";
 import { getClient } from "@/lib/api/client";
 import { t } from "@/lib/i18n";
+import { OBJECT_PLATES } from "@/lib/plates";
 import { getUi } from "@/lib/request";
 
 export default async function ObjectsPage() {
@@ -12,7 +13,7 @@ export default async function ObjectsPage() {
       <h1 className="serif text-display">{copy.objectsTitle}</h1>
       <p className="mt-4 max-w-measure text-xl">{copy.objectsLede}</p>
       <div className="mt-8">
-        <ObjectsGrid items={seen.items} searchedDays={seen.searched_days} locale={locale} />
+        <ObjectsGrid items={seen.items} searchedDays={seen.searched_days} locale={locale} plates={OBJECT_PLATES} />
       </div>
     </article>
   );

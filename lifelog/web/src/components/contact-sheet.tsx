@@ -23,11 +23,10 @@ export function ContactSheet({ days, locale }: { days: ArchiveDay[]; locale: Loc
 
   return (
     <section aria-labelledby="contact-sheet">
-      <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+      <div className="mb-6 flex flex-wrap items-center justify-end gap-3">
         <h2 id="contact-sheet" className="sr-only">
           {copy.heatmapLabel}
         </h2>
-        <p className="max-w-measure text-sm">{copy.heatmapLabel}</p>
         <button type="button" className="min-h-11 border border-rule px-3 text-sm" aria-pressed={list} onClick={() => setList((value) => !value)}>
           {list ? copy.gridView : copy.listView}
         </button>
@@ -43,16 +42,16 @@ export function ContactSheet({ days, locale }: { days: ArchiveDay[]; locale: Loc
           <svg width="0" height="0" aria-hidden="true">
             <defs>
               <pattern id="cell-hatch" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-                <line x1="0" y1="0" x2="0" y2="4" stroke="#B9B3A3" strokeWidth="1" />
+                <line x1="0" y1="0" x2="0" y2="4" stroke="var(--paused-hatch)" strokeWidth="1" />
               </pattern>
             </defs>
           </svg>
           <ActivityCalendar
             data={data}
-            blockSize={14}
-            blockMargin={3}
+            blockSize={22}
+            blockMargin={4}
             blockRadius={0}
-            fontSize={13}
+            fontSize={15}
             colorScheme={theme}
             theme={{ light, dark }}
             showColorLegend={false}
@@ -63,6 +62,9 @@ export function ContactSheet({ days, locale }: { days: ArchiveDay[]; locale: Loc
               const day = byDate.get(activity.date);
               if (!day) return block;
               const name = cellName(day, locale, copy);
+              const x = Number(block.props.x ?? 0);
+              const y = Number(block.props.y ?? 0);
+              const size = Number(block.props.width ?? 22);
               const fill = day.cell_state === "paused" ? "url(#cell-hatch)" : day.cell_state === "deleted" || day.cell_state === "expired" ? "transparent" : undefined;
               return (
                 <a href={day.has_summary ? `/day/${day.day}/summary` : `/day/${day.day}`} aria-label={name}>
@@ -72,8 +74,12 @@ export function ContactSheet({ days, locale }: { days: ArchiveDay[]; locale: Loc
                     strokeWidth: day.day === FEATURED_DAY ? 2 : 1,
                     strokeDasharray: day.cell_state === "expired" ? "2 2" : undefined,
                   })}
-                  {day.cell_state === "deleted" ? <line x1={4} y1={12} x2={12} y2={2} stroke="var(--ink-muted)" strokeWidth={1} /> : null}
-                  {day.uncertain_items > 0 ? <line x1={1} y1={13} x2={13} y2={13} stroke="var(--uncertain-rule)" strokeWidth={2} strokeDasharray="2 1" /> : null}
+                  {day.cell_state === "deleted" ? (
+                    <line x1={x + 3} y1={y + size - 3} x2={x + size - 3} y2={y + 3} stroke="var(--ink-muted)" strokeWidth={1.25} />
+                  ) : null}
+                  {day.uncertain_items > 0 ? (
+                    <circle cx={x + size - 4} cy={y + 4} r={2.25} fill="var(--uncertain-rule)" />
+                  ) : null}
                   <title>{name}</title>
                 </a>
               );

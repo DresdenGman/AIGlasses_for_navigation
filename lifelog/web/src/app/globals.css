@@ -56,6 +56,14 @@ html.dark ::selection {
   mix-blend-mode: multiply;
 }
 
+.plate {
+  background: var(--paper);
+}
+
+html.dark .plate {
+  filter: brightness(0.96);
+}
+
 html.dark .wordmark {
   filter: invert(1);
   mix-blend-mode: normal;

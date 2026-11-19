@@ -113,18 +113,19 @@ export function SummaryView({
           </section>
         ))}
       </div>
-      <section className="mt-16 border border-dashed border-uncertain-rule bg-uncertain-bg p-6 text-uncertain-fg">
-        <h2 className="flex items-center gap-3 text-lg">
-          <UncertainBadge locale={locale} />
-          <span className="serif">{copy.unsureTitle}</span>
-        </h2>
-        {summary.uncertain.length === 0 ? <p className="mt-4">{copy.unsureEmpty}</p> : (
-          <ul className="mt-4 space-y-4">
+      <section className="mt-24">
+        <h2 className="eyebrow">{copy.unsureTitle}</h2>
+        {summary.uncertain.length === 0 ? <p className="mt-6">{copy.unsureEmpty}</p> : (
+          <ul className="mt-6 flex flex-col gap-6">
             {summary.uncertain.map((item) => {
               const chips = claim(item);
+              const best = item.citations.reduce((max, citation) => Math.max(max, citation.score), 0);
+              const reason = locale === "zh-CN" ? `证据偏弱（最高 ${best.toFixed(2)}）。` : `Evidence is weak (best match ${best.toFixed(2)}).`;
               return (
-                <li key={item.id}>
-                  <p>
+                <li key={item.id} className="border border-dashed border-uncertain-rule bg-paper p-5">
+                  <UncertainBadge locale={locale} />
+                  <p className="mt-3 text-sm text-uncertain-fg">{reason}</p>
+                  <p className="mt-3 max-w-measure">
                     <span className="sr-only">{copy.uncertain}: </span>
                     {item.text}{" "}
                     {chips.map((chip) => (
