@@ -114,8 +114,8 @@ Three findings set the project's priorities:
 > "Reading medicine labels and bus stop signs for me."
 > — Survey respondent who kept a pair, rated the glasses 5/5, still using (quoted with permission; 68 of 85 respondents agreed to anonymous quotation)
 
-> "在楼道里走路能提前报前面堆着的纸箱，摸着确实在那，免得踢到绊脚。"
-> — *"Walking along the corridor, it told me about the stacked boxes ahead in time — I felt them, and they were there — so I did not trip over them."* — Respondent who kept a pair, rated 5/5, still using
+> "Walking along the corridor, it told me about the stacked boxes ahead in time — I felt them, and they were there — so I did not trip over them."
+> — Respondent who kept a pair, rated 5/5, still using
 
 The survey covers the broader project and the earlier prototype, not the v0.4 enclosure. It was run by the project itself with a self-selected sample, and 51 of the 85 responses were not filled in on the form directly by the respondent — 34 were entered by a family member or volunteer, 14 were recorded by an organiser, and 3 were completed another way. The [full report](docs/FEEDBACK.md#limitations-of-this-data) explains what that means for reading the numbers.
 
