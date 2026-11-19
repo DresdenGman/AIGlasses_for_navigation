@@ -32,7 +32,7 @@
 ## 社区工作
 
 <p align="center">
-  <img src="../assets/community/in-person-session.png" alt="现场交流：讲解者面向就座的参与者进行介绍" width="860" />
+  <img src="../assets/community/in-person-session.png" alt="社区活动四宫格：户外咨询台、课堂讲解、小组动手活动与户外座谈" width="860" />
 </p>
 
 *项目创作者提供的现场交流照片。*

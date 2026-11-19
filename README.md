@@ -73,7 +73,7 @@ The early development dates and community history are provided by the project cr
 ## Community first
 
 <p align="center">
-  <img src="assets/community/in-person-session.png" alt="A presenter speaking to seated participants during an in-person session" width="860" />
+  <img src="assets/community/in-person-session.png" alt="Four panels from community sessions: an outdoor information table, a classroom presentation, a hands-on group activity, and an outdoor discussion" width="860" />
 </p>
 
 | **4 communities** | **Nearly 60 people** | **3 communities** |
