@@ -59,7 +59,7 @@ Today, this repository contains a runnable guidance demo, an optional laptop web
 
 | Period | Milestone | What changed |
 |---|---|---|
-| **Early 2025** | Building began | Initial development of the AI glasses project started, before publication on GitHub. |
+| **Late 2024** | Building began | Initial development of the AI glasses project started, before publication on GitHub. |
 | **Throughout 2025** | Nearly a year of initial development | Building and development continued across the year, forming the early prototype and project direction. |
 | **Late 2025** | Community work began | The project moved into community outreach and practical explanation, beginning an ongoing effort to broaden participation and share making knowledge. |
 | **December 2025** | First GitHub publication | The [initial repository commit](https://github.com/DresdenGman/AIGlasses_for_navigation/commit/12b121a3) was recorded on December 9, 2025 (UTC). Early documentation described tactile-paving navigation, crosswalk assistance, object search and voice interaction. |
