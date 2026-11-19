@@ -7,7 +7,7 @@ import { DayNav } from "@/components/day-nav";
 import { EvidenceChip } from "@/components/evidence";
 import { FilmStrip } from "@/components/film-strip";
 import { FramePlate, UncertainBadge } from "@/components/media";
-import { frameAsset } from "@/lib/images";
+import { firstFrameInSlot, frameAsset } from "@/lib/images";
 import { t } from "@/lib/i18n";
 import { formatClock, formatKawara, formatNumber, formatSpan } from "@/lib/time";
 import { noDescription } from "@/lib/text";
@@ -28,6 +28,11 @@ export function SummaryView({
   const highlight = frames.find((frame) => frame.ts_ms === time && frame.quality === "ok")
     ?? frames.find((frame) => frame.quality === "ok")
     ?? null;
+  const homeAccents = ["home-desk-packing", "home-hallway-leaving"].flatMap((slot) => {
+    const id = firstFrameInSlot(slot);
+    const asset = frameAsset(id);
+    return id && asset ? [{ id, alt: asset.alt[locale] }] : [];
+  });
   const sections: Array<{ eyebrow: string; items: SummaryItem[] }> = [
     { eyebrow: copy.whereEyebrow, items: summary.places },
     { eyebrow: copy.didEyebrow, items: summary.activities },
@@ -53,20 +58,29 @@ export function SummaryView({
           <h1 className="serif mt-3 text-display">{formatKawara(summary.day, locale)}</h1>
           {summary.headline ? <p className="serif mt-6 max-w-measure text-xl italic">{summary.headline.text}</p> : null}
         </div>
-        <dl className="eyebrow space-y-3 lg:col-span-4">
-          <div>
-            <dt>{copy.spanLabel}</dt>
-            <dd>{summary.coverage.first_ms ? formatClock(summary.coverage.first_ms, locale) : "—"} – {summary.coverage.last_ms ? formatClock(summary.coverage.last_ms, locale) : "—"}</dd>
-          </div>
-          <div>
-            <dt>{copy.framesWord}</dt>
-            <dd>{formatNumber(summary.coverage.frames, locale)} · {formatSpan(summary.coverage.audio_seconds, locale)}</dd>
-          </div>
-          <div>
-            <dt>{copy.expires}</dt>
-            <dd>{summary.day.replace("2026", "2027")}</dd>
-          </div>
-        </dl>
+        <div className="lg:col-span-4">
+          <dl className="eyebrow space-y-3">
+            <div>
+              <dt>{copy.spanLabel}</dt>
+              <dd>{summary.coverage.first_ms ? formatClock(summary.coverage.first_ms, locale) : "—"} – {summary.coverage.last_ms ? formatClock(summary.coverage.last_ms, locale) : "—"}</dd>
+            </div>
+            <div>
+              <dt>{copy.framesWord}</dt>
+              <dd>{formatNumber(summary.coverage.frames, locale)} · {formatSpan(summary.coverage.audio_seconds, locale)}</dd>
+            </div>
+            <div>
+              <dt>{copy.expires}</dt>
+              <dd>{summary.day.replace("2026", "2027")}</dd>
+            </div>
+          </dl>
+          {homeAccents.length > 0 ? (
+            <div className="mt-6 grid grid-cols-2 gap-3">
+              {homeAccents.map((accent) => (
+                <FramePlate key={accent.id} frameId={accent.id} alt={accent.alt} locale={locale} variant="thumb" className="aspect-[3/2]" />
+              ))}
+            </div>
+          ) : null}
+        </div>
       </header>
       {highlight ? (
         <figure className="mt-10 grid grid-cols-1 gap-4 lg:grid-cols-12">
@@ -103,7 +117,7 @@ export function SummaryView({
                     </div>
                     <aside className="lg:col-span-2">
                       {thumb && frameAsset(thumb) ? (
-                        <FramePlate frameId={thumb} alt="" className="aspect-[4/3]" />
+                        <FramePlate frameId={thumb} alt="" variant="thumb" locale={locale} className="aspect-[4/3]" />
                       ) : null}
                     </aside>
                   </div>

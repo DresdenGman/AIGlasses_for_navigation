@@ -3519,8 +3519,8 @@
     ]
   },
   "2026-04-18": {
-    "summary": "Lamp repair morning at Fernhollow Repair Cafe, then bakery treats and a library hold",
-    "one_line": "Lamp repair morning at Fernhollow Repair Cafe, then bakery treats and a library hold",
+    "summary": "Repair cafe lamp fix, tram errands, bakery and library stop.",
+    "one_line": "Repair cafe lamp fix, tram errands, bakery and library stop.",
     "highlights": {
       "hl_20260418_1": {
         "title": "Oatmeal and a wiring sketch",
@@ -3550,7 +3550,7 @@
     "uncertain": [
       {
         "id": "un_20260418_1",
-        "text": "You may have briefly checked whether a small metallic object was in a pocket or still near the front door, but the evidence was weak and you sounded unsure."
+        "text": "There may have been uncertainty at home about whether a small metallic door-hook object was in a pocket or still on the hook."
       }
     ]
   },

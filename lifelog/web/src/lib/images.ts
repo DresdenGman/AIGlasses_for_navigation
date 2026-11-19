@@ -17,6 +17,7 @@ const SlotSchema = z.object({
     en: z.string(),
     "zh-CN": z.string(),
   }),
+  srcSet: z.string().optional(),
 });
 
 const RegistrySchema = z.object({
@@ -36,6 +37,7 @@ export type FrameAsset = {
   width: number;
   height: number;
   alt: { en: string; "zh-CN": string };
+  srcSet?: string;
 };
 
 export function frameAsset(frameId: string | null | undefined): FrameAsset | null {
@@ -44,7 +46,7 @@ export function frameAsset(frameId: string | null | undefined): FrameAsset | nul
   if (!slot) return null;
   const image = registry.slots[slot];
   if (!image) return null;
-  return { slot, src: image.src, thumb: image.thumb, width: image.width, height: image.height, alt: image.alt };
+  return { slot, src: image.src, thumb: image.thumb, width: image.width, height: image.height, alt: image.alt, srcSet: image.srcSet };
 }
 
 export function frameSrc(frameId: string | null | undefined, variant: "full" | "thumb" = "full"): string | null {
@@ -53,11 +55,16 @@ export function frameSrc(frameId: string | null | undefined, variant: "full" | "
   return variant === "thumb" ? asset.thumb : asset.src;
 }
 
+export function firstFrameInSlot(slot: string): string | null {
+  const found = Object.entries(registry.frames).find(([, name]) => name === slot);
+  return found?.[0] ?? null;
+}
+
 export function highlightSlots(): FrameAsset[] {
   return registry.highlights.flatMap((slot) => {
     const image = registry.slots[slot];
     if (!image) return [];
-    return [{ slot, src: image.src, thumb: image.thumb, width: image.width, height: image.height, alt: image.alt }];
+    return [{ slot, src: image.src, thumb: image.thumb, width: image.width, height: image.height, alt: image.alt, srcSet: image.srcSet }];
   });
 }
 

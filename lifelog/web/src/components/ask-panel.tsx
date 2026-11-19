@@ -18,8 +18,15 @@ export function AskPanel({
   docs: SearchDoc[];
 }) {
   const copy = t(locale);
-  const [question, setQuestion] = useState(prepared[0]?.question ?? "");
-  const [response, setResponse] = useState<AskResponse | null>(prepared[0] ?? null);
+  const [question, setQuestion] = useState("");
+  const [response, setResponse] = useState<AskResponse | null>(null);
+  const hero = prepared.filter((item) => item.mode !== "year");
+  const year = prepared.filter((item) => item.mode === "year");
+
+  const show = (item: AskResponse) => {
+    setQuestion(item.question);
+    setResponse(item);
+  };
 
   const ask = (text: string) => {
     const next = answerQuestion({ question: text, locale, day: FEATURED_DAY }, prepared, docs);
@@ -32,7 +39,7 @@ export function AskPanel({
     return response.provider === "precomputed" ? copy.precomputed : copy.offline;
   }, [copy.offline, copy.precomputed, response]);
 
-  const showAnswer = response && (response.status === "not_found" || response.citations.length > 0);
+  const showAnswer = response !== null;
 
   return (
     <div>
@@ -59,31 +66,20 @@ export function AskPanel({
           </button>
         </div>
       </form>
-      <section className="mt-8" aria-label={copy.suggested}>
-        <h2 className="text-sm">{copy.suggested}</h2>
-        <ul className="mt-3 flex flex-col gap-2">
-          {prepared.map((item) => (
-            <li key={item.question}>
-              <button type="button" className="text-left underline decoration-rule underline-offset-4" onClick={() => ask(item.question)}>
-                {item.question}
-              </button>
-            </li>
-          ))}
-        </ul>
-      </section>
-      <p className="mt-6 max-w-measure text-sm text-ink-muted">{copy.offlineNote}</p>
+      {response?.provider === "extractive" ? <p className="mt-6 max-w-measure text-sm text-ink-muted">{copy.offlineNote}</p> : null}
       {showAnswer && response ? (
-        <section aria-label={copy.answerRegion} aria-live="polite" className="mt-6 border border-rule p-5">
+        <section aria-label={copy.answerRegion} aria-live="polite" className="mt-8 max-w-measure border border-rule p-5">
           <p className="eyebrow">{response.status === "answered" ? copy.answeredEyebrow : response.status === "uncertain" ? copy.uncertain : copy.notInRecords} · {label}</p>
           {response.status === "uncertain" ? (
-            <div className="mt-4 border border-dashed border-uncertain-rule bg-uncertain-bg p-4 text-uncertain-fg">
+            <div className="mt-4 border border-dashed border-uncertain-rule bg-paper p-4">
               <UncertainBadge locale={locale} />
+              <p className="mt-3 text-sm text-uncertain-fg">{response.reason_text ?? `${copy.weakEvidence} ${response.score.toFixed(2)}`}</p>
               <p className="serif mt-3 text-2xl leading-snug">{response.answer}</p>
             </div>
           ) : response.status === "not_found" ? (
             <div className="mt-4">
               <MissingBadge locale={locale} />
-              <p className="mt-3 max-w-measure">{response.answer}</p>
+              <p className="mt-3 text-ink-muted">{response.answer}</p>
             </div>
           ) : (
             <p className="serif mt-4 text-3xl leading-snug">{response.answer}</p>
@@ -91,11 +87,10 @@ export function AskPanel({
           {response.citations.length > 0 ? (
             <p className="mt-4">
               {response.citations.map((citation, index) => (
-                <EvidenceChip key={citation.evidence_id} citation={citation} n={index + 1} locale={locale} />
+                <EvidenceChip key={`${citation.handle ?? citation.evidence_id}-${index}`} citation={citation} n={index + 1} locale={locale} />
               ))}
             </p>
           ) : null}
-          {response.status === "uncertain" ? <p className="mt-3 text-sm">{copy.weakEvidence} {response.score.toFixed(2)}</p> : null}
           <details className="mt-5 text-sm">
             <summary>{copy.evidence}</summary>
             <p className="mt-2 text-ink-muted">
@@ -105,6 +100,28 @@ export function AskPanel({
           </details>
         </section>
       ) : null}
+      <section className="mt-10" aria-label={copy.suggested}>
+        <h2 className="eyebrow">{copy.suggested}</h2>
+        {[{ title: copy.suggestedDay, items: hero }, { title: copy.suggestedYear, items: year }].map((group) => (
+          <div key={group.title} className="mt-8">
+            <h3 className="text-sm text-ink-muted">{group.title}</h3>
+            <ul className="mt-3 flex flex-col gap-2">
+              {group.items.map((item) => (
+                <li key={item.id ?? item.question}>
+                  <button
+                    type="button"
+                    className="min-h-11 text-left underline decoration-rule underline-offset-4"
+                    aria-pressed={response !== null && response.id === item.id}
+                    onClick={() => show(item)}
+                  >
+                    {item.question}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </section>
     </div>
   );
 }

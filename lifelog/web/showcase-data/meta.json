@@ -2,7 +2,7 @@
   "schema": "aiglasses.lifelog.showcase",
   "version": 1,
   "contract": "aiglasses.lifelog.v1 (+ year/showcase extensions)",
-  "provenance": "Invented showcase data. Every person, place, conversation, testimonial and image prompt is fictional; testimonials are not from real users. Hero day = contract fixture sample_day/ with neutral ids; year layer = LLM-expanded outline in year/year_story.yaml. Keep this note out of UI copy.",
+  "provenance": "Invented showcase data. Every person, place, conversation, testimonial and image prompt is fictional; testimonials are not from real users. Hero day = contract fixture sample_day/ with neutral ids; year layer = LLM-expanded outline in year/year_story.yaml. Photographs are fictional plates for those scenes, not captured frames. Keep this note out of UI copy.",
   "generated_from": {
     "hero": "sample_day/ (tools/build.py)",
     "year": "year/ (tools/year_build.py)",
@@ -19,6 +19,8 @@
     "year": "year/days.json highlights[].image_prompt (photoreal)"
   },
   "files": [
+    "answers/en.json",
+    "answers/zh-CN.json",
     "backup_runs.json",
     "egress_log.json",
     "entities.json",

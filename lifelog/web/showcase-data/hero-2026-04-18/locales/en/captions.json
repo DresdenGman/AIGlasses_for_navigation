@@ -544,7 +544,7 @@
     "frame_id": "frm_01JRQ4H8ZE0000000000000055",
     "ts_ms": 1776537000000,
     "kind": "caption",
-    "text": "At the tea corner, a tall metal urn and stacks of paper cups sit on a counter beside a tin of biscuits; a cork board above shows a handwritten schedule.",
+    "text": "A tea corner in a community hall with a large metal urn, stacks of paper cups, and a tin of biscuits on a table; a cork board above shows a hand-written schedule.",
     "lang": "en",
     "model": "fixture",
     "score": 0.8
@@ -554,7 +554,7 @@
     "frame_id": "frm_01JRQ4H8ZE0000000000000056",
     "ts_ms": 1776537300000,
     "kind": "caption",
-    "text": "The view drifts toward the cork board, where Saturday hours are written in marker; in the background, a few people stand with their backs to the camera.",
+    "text": "A hand lifts a paper cup from the stack near the large urn; the biscuit tin and the corner of the cork board are in the background.",
     "lang": "en",
     "model": "fixture",
     "score": 0.8
@@ -564,7 +564,7 @@
     "frame_id": "frm_01JRQ4H8ZE0000000000000057",
     "ts_ms": 1776537600000,
     "kind": "caption",
-    "text": "A pair of hands holds a paper cup of tea near the counter; the biscuit tin lid is partly open, and the large urn reflects the overhead light.",
+    "text": "Two people in work aprons stand at the tea corner seen from behind, heads turned toward the cork board; one pours from the urn into a paper cup.",
     "lang": "en",
     "model": "fixture",
     "score": 0.8
@@ -574,7 +574,7 @@
     "frame_id": "frm_01JRQ4H8ZE0000000000000058",
     "ts_ms": 1776537900000,
     "kind": "caption",
-    "text": "A volunteer's hands gesture over the cork board schedule while the camera stays low, catching only the edge of a workbench and two chairs.",
+    "text": "Close view of the cork board schedule with hand-written times and 'Saturdays' in neat block letters; a tin of biscuits sits blurred in the lower frame.",
     "lang": "en",
     "model": "fixture",
     "score": 0.8
@@ -584,7 +584,7 @@
     "frame_id": "frm_01JRQ4H8ZE0000000000000059",
     "ts_ms": 1776538200000,
     "kind": "caption",
-    "text": "The view shifts to a small round table with two paper cups, a folded napkin, and a biscuit on a napkin; people blurred in the far background are seen from behind.",
+    "text": "A paper cup of tea rests on the table beside the biscuit tin; the large urn reflects overhead lights; people chat in the background beyond.",
     "lang": "en",
     "model": "fixture",
     "score": 0.8
@@ -594,7 +594,7 @@
     "frame_id": "frm_01JRQ4H8ZE0000000000000060",
     "ts_ms": 1776538500000,
     "kind": "caption",
-    "text": "A wide shot of the tea corner shows the urn, a stack of cups, and a person's back at the counter while light rain streaks the window.",
+    "text": "From the corner of the room, the tea corner appears distant; two figures are visible from behind near the urn, and the cork board is a small pale square.",
     "lang": "en",
     "model": "fixture",
     "score": 0.8
@@ -604,7 +604,7 @@
     "frame_id": "frm_01JRQ4H8ZE0000000000000061",
     "ts_ms": 1776538800000,
     "kind": "caption",
-    "text": "Close on the biscuit tin label, a simple handwritten note reading 'tea corner,' and the corner of a paper schedule pinned to the cork.",
+    "text": "Looking down at the table edge, a hand holds a plain biscuit above the open tin; paper cups are stacked nearby and a large urn stands blurred behind.",
     "lang": "en",
     "model": "fixture",
     "score": 0.8
@@ -614,7 +614,7 @@
     "frame_id": "frm_01JRQ4H8ZE0000000000000062",
     "ts_ms": 1776539100000,
     "kind": "caption",
-    "text": "The camera tilts up to a cork board filled with hand-drawn posters; a blurred figure in the foreground reaches for a paper cup.",
+    "text": "A few people stand in the background seen from behind, while the tea corner's biscuit tin and a drained paper cup sit on the table in the foreground.",
     "lang": "en",
     "model": "fixture",
     "score": 0.8
@@ -624,7 +624,7 @@
     "frame_id": "frm_01JRQ4H8ZE0000000000000063",
     "ts_ms": 1776539400000,
     "kind": "caption",
-    "text": "Two paper cups sit on a low table next to a small dish of sugar packets; in the background, people in work aprons chat with their backs turned.",
+    "text": "The cork board schedule is partially obscured by a hand reaching for a paper cup; the large urn and a stack of cups fill the right side.",
     "lang": "en",
     "model": "fixture",
     "score": 0.8
@@ -634,7 +634,7 @@
     "frame_id": "frm_01JRQ4H8ZE0000000000000064",
     "ts_ms": 1776539700000,
     "kind": "caption",
-    "text": "Over the shoulder of a seated person, the tea urn and cork board are visible across the room; only the back of a head appears.",
+    "text": "A paper cup sits on a table by the window of the tea corner; outside, a gray sky, and the urn's metal surface catches a faint reflection.",
     "lang": "en",
     "model": "fixture",
     "score": 0.8
@@ -644,7 +644,7 @@
     "frame_id": "frm_01JRQ4H8ZE0000000000000065",
     "ts_ms": 1776540000000,
     "kind": "caption",
-    "text": "A hand places a folded umbrella on the floor beside a chair; the table holds an empty paper cup and a half-open tin of biscuits.",
+    "text": "The biscuit tin is nearly empty, its lid leaning against the wall; behind it, people chat at a distance with their backs to the camera.",
     "lang": "en",
     "model": "fixture",
     "score": 0.8
@@ -654,7 +654,7 @@
     "frame_id": "frm_01JRQ4H8ZE0000000000000066",
     "ts_ms": 1776540300000,
     "kind": "caption",
-    "text": "The camera looks back toward the tea corner from a few steps away; a tall metal urn gleams, and two people stand in the distance facing away.",
+    "text": "The large urn is turned off, a paper cup with tea sits beside the biscuit tin, and two hands fold a paper napkin at the edge of the table.",
     "lang": "en",
     "model": "fixture",
     "score": 0.8

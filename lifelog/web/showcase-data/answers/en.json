@@ -1,367 +1,3686 @@
 {
-  "schema": "aiglasses.lifelog.showcase.answers",
+  "schema": "aiglasses.lifelog.showcase_answers",
   "version": 1,
-  "day": "2026-04-18",
   "locale": "en",
-  "note": "Static answers until the golden-question set is filled by the citation pipeline. Sentences quote cited records only.",
-  "items": [
+  "provider": "precomputed",
+  "rules": {
+    "evidence_min": 0.25,
+    "answer_min": 0.7,
+    "rrf_k": 60,
+    "top_candidates": 40,
+    "keep": 12,
+    "retrieval": "RRF over two lexical lists: BM25(question) and BM25(cached query expansion, standing in for the vector lists); object last-seen shortcut at relevance 1.0"
+  },
+  "answers": [
     {
       "id": "qa_01",
       "question": "What did I eat for breakfast?",
+      "locale": "en",
+      "scope": {
+        "all_days": false,
+        "day": "2026-04-18",
+        "from_ms": null,
+        "to_ms": null
+      },
       "status": "answered",
-      "reason": null,
+      "ui_tone": "neutral",
+      "answer": "You ate oatmeal with banana slices for breakfast.",
       "sentences": [
         {
-          "text": "A close view of the bowl of oatmeal with banana slices; a spoon is lifted above it, while the notebook page with the wiring sketch stays open beside the mug.",
+          "text": "You ate oatmeal with banana slices for breakfast.",
           "evidence": [
-            "cap_01JRQ4H8ZE0000000000000002"
-          ]
+            "E1",
+            "E2",
+            "E3",
+            "E4"
+          ],
+          "quote": "a bowl of oatmeal with banana slices"
+        }
+      ],
+      "evidence": [
+        {
+          "handle": "E1",
+          "kind": "caption",
+          "id": "cap_01JRQ4H8ZE0000000000000001",
+          "day": "2026-04-18",
+          "ts": 1776520800000,
+          "ts_end": 1776520800000,
+          "ts_local": "2026-04-18T07:00:00-07:00",
+          "label": "Frame · Home",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000001.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000001",
+          "source_conf": 0.8,
+          "score": 0.79,
+          "certainty": "confident",
+          "quote": "a bowl of oatmeal with banana slices",
+          "open_url": "/day/2026-04-18?t=1776520800000&focus=cap_01JRQ4H8ZE0000000000000001"
         },
         {
-          "text": "A ceramic coffee mug is clearly visible next to the half-eaten bowl of oatmeal; the open notebook with the lamp wiring sketch lies just beyond the mug.",
-          "evidence": [
-            "cap_01JRQ4H8ZE0000000000000003"
-          ]
+          "handle": "E2",
+          "kind": "segment",
+          "id": "seg_01JRQ4H8ZE0000000000000001",
+          "day": "2026-04-18",
+          "ts": 1776520800000,
+          "ts_end": 1776525300000,
+          "ts_local": "2026-04-18T07:00:00-07:00",
+          "label": "Segment",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000008.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000008",
+          "source_conf": 0.72,
+          "score": 0.35,
+          "certainty": "confident",
+          "quote": "You eat oatmeal with banana and tea",
+          "open_url": "/day/2026-04-18?t=1776520800000&focus=seg_01JRQ4H8ZE0000000000000001"
+        },
+        {
+          "handle": "E3",
+          "kind": "caption",
+          "id": "cap_01JRQ4H8ZE0000000000000003",
+          "day": "2026-04-18",
+          "ts": 1776521400000,
+          "ts_end": 1776521400000,
+          "ts_local": "2026-04-18T07:10:00-07:00",
+          "label": "Frame · Home",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000003.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000003",
+          "source_conf": 0.8,
+          "score": 0.35,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776521400000&focus=cap_01JRQ4H8ZE0000000000000003"
+        },
+        {
+          "handle": "E4",
+          "kind": "caption",
+          "id": "cap_01JRQ4H8ZE0000000000000006",
+          "day": "2026-04-18",
+          "ts": 1776522300000,
+          "ts_end": 1776522300000,
+          "ts_local": "2026-04-18T07:25:00-07:00",
+          "label": "Frame · Home",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000006.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000006",
+          "source_conf": 0.8,
+          "score": 0.38,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776522300000&focus=cap_01JRQ4H8ZE0000000000000006"
         }
-      ]
+      ],
+      "evidence_considered": 41,
+      "score": 0.79,
+      "reason": null,
+      "reasons": [],
+      "reason_text": null,
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "hero",
+      "provider": "precomputed",
+      "golden": {
+        "expected_status": "answered",
+        "trap": null,
+        "must_cite_any": [
+          "cap_01JRQ4H8ZE0000000000000002",
+          "cap_01JRQ4H8ZE0000000000000003"
+        ],
+        "status_match": true,
+        "citation_hit": true
+      }
     },
     {
       "id": "qa_02",
       "question": "Which tram line did I take this morning?",
+      "locale": "en",
+      "scope": {
+        "all_days": false,
+        "day": "2026-04-18",
+        "from_ms": null,
+        "to_ms": null
+      },
       "status": "answered",
-      "reason": null,
+      "ui_tone": "neutral",
+      "answer": "You took tram line 4 toward Fernhollow this morning.",
       "sentences": [
         {
-          "text": "A tram ticket sits on my lap next to the tote, and the display above shows 'Line 4 · Fernhollow'.",
+          "text": "You took tram line 4 toward Fernhollow this morning.",
           "evidence": [
-            "cap_01JRQ4H8ZE0000000000000019"
+            "E3",
+            "E5",
+            "E6"
           ]
         }
-      ]
+      ],
+      "evidence": [
+        {
+          "handle": "E3",
+          "kind": "segment",
+          "id": "seg_01JRQ4H8ZE0000000000000002",
+          "day": "2026-04-18",
+          "ts": 1776525300000,
+          "ts_end": 1776527400000,
+          "ts_local": "2026-04-18T08:15:00-07:00",
+          "label": "Segment",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000019.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000019",
+          "source_conf": 0.67,
+          "score": 0.66,
+          "certainty": "uncertain",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776525300000&focus=seg_01JRQ4H8ZE0000000000000002"
+        },
+        {
+          "handle": "E5",
+          "kind": "caption",
+          "id": "cap_01JRQ4H8ZE0000000000000018",
+          "day": "2026-04-18",
+          "ts": 1776525900000,
+          "ts_end": 1776525900000,
+          "ts_local": "2026-04-18T08:25:00-07:00",
+          "label": "Frame · Tram line 4",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000018.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000018",
+          "source_conf": 0.8,
+          "score": 0.75,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776525900000&focus=cap_01JRQ4H8ZE0000000000000018"
+        },
+        {
+          "handle": "E6",
+          "kind": "caption",
+          "id": "cap_01JRQ4H8ZE0000000000000019",
+          "day": "2026-04-18",
+          "ts": 1776526200000,
+          "ts_end": 1776526200000,
+          "ts_local": "2026-04-18T08:30:00-07:00",
+          "label": "Frame · Tram line 4",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000019.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000019",
+          "source_conf": 0.8,
+          "score": 0.78,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776526200000&focus=cap_01JRQ4H8ZE0000000000000019"
+        }
+      ],
+      "evidence_considered": 53,
+      "score": 0.78,
+      "reason": null,
+      "reasons": [],
+      "reason_text": null,
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "hero",
+      "provider": "precomputed",
+      "golden": {
+        "expected_status": "answered",
+        "trap": null,
+        "must_cite_any": [
+          "cap_01JRQ4H8ZE0000000000000019"
+        ],
+        "status_match": true,
+        "citation_hit": true
+      }
     },
     {
       "id": "qa_03",
       "question": "Where did I put the screws?",
+      "locale": "en",
+      "scope": {
+        "all_days": false,
+        "day": "2026-04-18",
+        "from_ms": null,
+        "to_ms": null
+      },
       "status": "answered",
-      "reason": null,
+      "ui_tone": "neutral",
+      "answer": "You put the four screws on the lid of a red toolbox for safekeeping.",
       "sentences": [
         {
-          "text": "I'll leave the screws on top of the red toolbox so I don't lose them.",
+          "text": "You put the four screws on the lid of a red toolbox for safekeeping.",
           "evidence": [
-            "det_01JRQ4H8ZE0000000000000028"
+            "E4",
+            "E7",
+            "E6",
+            "E8",
+            "E10",
+            "E11"
           ]
         }
-      ]
+      ],
+      "evidence": [
+        {
+          "handle": "E4",
+          "kind": "segment",
+          "id": "seg_01JRQ4H8ZE0000000000000010",
+          "day": "2026-04-18",
+          "ts": 1776550800000,
+          "ts_end": 1776554400000,
+          "ts_local": "2026-04-18T15:20:00-07:00",
+          "label": "Segment",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000101.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000101",
+          "source_conf": 0.77,
+          "score": 0.76,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776550800000&focus=seg_01JRQ4H8ZE0000000000000010"
+        },
+        {
+          "handle": "E6",
+          "kind": "caption",
+          "id": "cap_01JRQ4H8ZE0000000000000098",
+          "day": "2026-04-18",
+          "ts": 1776551940000,
+          "ts_end": 1776551940000,
+          "ts_local": "2026-04-18T15:39:00-07:00",
+          "label": "Frame · Fernhollow Repair Cafe",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000098.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000098",
+          "source_conf": 0.8,
+          "score": 0.7,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776551940000&focus=cap_01JRQ4H8ZE0000000000000098"
+        },
+        {
+          "handle": "E7",
+          "kind": "utterance",
+          "id": "utt_01JRQ4H8ZE0000000000000131",
+          "day": "2026-04-18",
+          "ts": 1776551952000,
+          "ts_end": 1776551956000,
+          "ts_local": "2026-04-18T15:39:12-07:00",
+          "label": "You · Speech",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000098.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000098",
+          "source_conf": 0.83,
+          "score": 0.72,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776551952000&focus=utt_01JRQ4H8ZE0000000000000131"
+        },
+        {
+          "handle": "E8",
+          "kind": "caption",
+          "id": "cap_01JRQ4H8ZE0000000000000099",
+          "day": "2026-04-18",
+          "ts": 1776552000000,
+          "ts_end": 1776552000000,
+          "ts_local": "2026-04-18T15:40:00-07:00",
+          "label": "Frame · Fernhollow Repair Cafe",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000099.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000099",
+          "source_conf": 0.8,
+          "score": 0.61,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776552000000&focus=cap_01JRQ4H8ZE0000000000000099"
+        },
+        {
+          "handle": "E10",
+          "kind": "caption",
+          "id": "cap_01JRQ4H8ZE0000000000000100",
+          "day": "2026-04-18",
+          "ts": 1776552060000,
+          "ts_end": 1776552060000,
+          "ts_local": "2026-04-18T15:41:00-07:00",
+          "label": "Frame · Fernhollow Repair Cafe",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000100.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000100",
+          "source_conf": 0.8,
+          "score": 0.68,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776552060000&focus=cap_01JRQ4H8ZE0000000000000100"
+        },
+        {
+          "handle": "E11",
+          "kind": "detection",
+          "id": "det_01JRQ4H8ZE0000000000000028",
+          "day": "2026-04-18",
+          "ts": 1776552060000,
+          "ts_end": 1776552060000,
+          "ts_local": "2026-04-18T15:41:00-07:00",
+          "label": "screws · 0.66",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000100.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000100",
+          "source_conf": 0.66,
+          "score": 0.66,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776552060000&focus=det_01JRQ4H8ZE0000000000000028"
+        }
+      ],
+      "evidence_considered": 62,
+      "score": 0.76,
+      "reason": null,
+      "reasons": [],
+      "reason_text": null,
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "hero",
+      "provider": "precomputed",
+      "golden": {
+        "expected_status": "answered",
+        "trap": null,
+        "must_cite_any": [
+          "det_01JRQ4H8ZE0000000000000028",
+          "det_01JRQ4H8ZE0000000000000026",
+          "det_01JRQ4H8ZE0000000000000024",
+          "utt_01JRQ4H8ZE0000000000000131"
+        ],
+        "status_match": true,
+        "citation_hit": true
+      }
     },
     {
       "id": "qa_04",
       "question": "When will the replacement switch arrive?",
+      "locale": "en",
+      "scope": {
+        "all_days": false,
+        "day": "2026-04-18",
+        "from_ms": null,
+        "to_ms": null
+      },
       "status": "answered",
-      "reason": null,
+      "ui_tone": "neutral",
+      "answer": "Your replacement switch should arrive Tuesday.",
       "sentences": [
         {
-          "text": "The replacement switch should arrive Tuesday, I will text you the tracking number.",
+          "text": "Your replacement switch should arrive Tuesday.",
           "evidence": [
-            "utt_01JRQ4H8ZE0000000000000118"
+            "E12",
+            "E10"
           ]
         }
-      ]
+      ],
+      "evidence": [
+        {
+          "handle": "E10",
+          "kind": "segment",
+          "id": "seg_01JRQ4H8ZE0000000000000008",
+          "day": "2026-04-18",
+          "ts": 1776544800000,
+          "ts_end": 1776546600000,
+          "ts_local": "2026-04-18T13:40:00-07:00",
+          "label": "Segment",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000078.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000078",
+          "source_conf": 0.77,
+          "score": 0.75,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776544800000&focus=seg_01JRQ4H8ZE0000000000000008"
+        },
+        {
+          "handle": "E12",
+          "kind": "utterance",
+          "id": "utt_01JRQ4H8ZE0000000000000118",
+          "day": "2026-04-18",
+          "ts": 1776545520000,
+          "ts_end": 1776545526500,
+          "ts_local": "2026-04-18T13:52:00-07:00",
+          "label": "Speaker B · Speech",
+          "thumb_hint": null,
+          "frame_id": null,
+          "source_conf": 0.84,
+          "score": 0.83,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776545520000&focus=utt_01JRQ4H8ZE0000000000000118"
+        }
+      ],
+      "evidence_considered": 61,
+      "score": 0.83,
+      "reason": null,
+      "reasons": [],
+      "reason_text": null,
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "hero",
+      "provider": "precomputed",
+      "golden": {
+        "expected_status": "answered",
+        "trap": null,
+        "must_cite_any": [
+          "utt_01JRQ4H8ZE0000000000000118"
+        ],
+        "status_match": true,
+        "citation_hit": true
+      }
     },
     {
       "id": "qa_05",
       "question": "What was wrong with my desk lamp?",
+      "locale": "en",
+      "scope": {
+        "all_days": false,
+        "day": "2026-04-18",
+        "from_ms": null,
+        "to_ms": null
+      },
       "status": "answered",
-      "reason": null,
+      "ui_tone": "neutral",
+      "answer": "Your desk lamp was flickering on and off, and its rocker switch was cracked where it pivots.",
       "sentences": [
         {
-          "text": "This rocker switch is cracked inside and it's arcing; the cord itself looks fine.",
+          "text": "Your desk lamp was flickering on and off, and its rocker switch was cracked where it pivots.",
           "evidence": [
-            "utt_01JRQ4H8ZE0000000000000036"
-          ]
-        },
-        {
-          "text": "Yeah, the desk lamp will flicker on and off, and the rocker switch is cracked right where it pivots.",
-          "evidence": [
-            "utt_01JRQ4H8ZE0000000000000021"
+            "E4",
+            "E5",
+            "E6",
+            "E7"
           ]
         }
-      ]
+      ],
+      "evidence": [
+        {
+          "handle": "E4",
+          "kind": "segment",
+          "id": "seg_01JRQ4H8ZE0000000000000003",
+          "day": "2026-04-18",
+          "ts": 1776527400000,
+          "ts_end": 1776529200000,
+          "ts_local": "2026-04-18T08:50:00-07:00",
+          "label": "Segment",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000026.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000026",
+          "source_conf": 0.79,
+          "score": 0.62,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776527400000&focus=seg_01JRQ4H8ZE0000000000000003"
+        },
+        {
+          "handle": "E5",
+          "kind": "utterance",
+          "id": "utt_01JRQ4H8ZE0000000000000021",
+          "day": "2026-04-18",
+          "ts": 1776527863800,
+          "ts_end": 1776527866500,
+          "ts_local": "2026-04-18T08:57:43.800000-07:00",
+          "label": "You · Speech",
+          "thumb_hint": null,
+          "frame_id": null,
+          "source_conf": 0.75,
+          "score": 0.71,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776527863800&focus=utt_01JRQ4H8ZE0000000000000021"
+        },
+        {
+          "handle": "E6",
+          "kind": "utterance",
+          "id": "utt_01JRQ4H8ZE0000000000000025",
+          "day": "2026-04-18",
+          "ts": 1776527982600,
+          "ts_end": 1776527988400,
+          "ts_local": "2026-04-18T08:59:42.600000-07:00",
+          "label": "You · Speech",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000025.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000025",
+          "source_conf": 0.72,
+          "score": 0.7,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776527982600&focus=utt_01JRQ4H8ZE0000000000000025"
+        },
+        {
+          "handle": "E7",
+          "kind": "caption",
+          "id": "cap_01JRQ4H8ZE0000000000000027",
+          "day": "2026-04-18",
+          "ts": 1776528600000,
+          "ts_end": 1776528600000,
+          "ts_local": "2026-04-18T09:10:00-07:00",
+          "label": "Frame · Fernhollow Repair Cafe",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000027.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000027",
+          "source_conf": 0.8,
+          "score": 0.69,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776528600000&focus=cap_01JRQ4H8ZE0000000000000027"
+        }
+      ],
+      "evidence_considered": 64,
+      "score": 0.71,
+      "reason": null,
+      "reasons": [],
+      "reason_text": null,
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "hero",
+      "provider": "precomputed",
+      "golden": {
+        "expected_status": "answered",
+        "trap": null,
+        "must_cite_any": [
+          "utt_01JRQ4H8ZE0000000000000036",
+          "utt_01JRQ4H8ZE0000000000000021"
+        ],
+        "status_match": true,
+        "citation_hit": true
+      }
     },
     {
       "id": "qa_06",
       "question": "How will I get the tracking number for the switch?",
+      "locale": "en",
+      "scope": {
+        "all_days": false,
+        "day": "2026-04-18",
+        "from_ms": null,
+        "to_ms": null
+      },
       "status": "answered",
-      "reason": null,
+      "ui_tone": "neutral",
+      "answer": "The volunteer will text you the tracking number for the replacement switch.",
       "sentences": [
         {
-          "text": "The replacement switch should arrive Tuesday, I will text you the tracking number.",
+          "text": "The volunteer will text you the tracking number for the replacement switch.",
           "evidence": [
-            "utt_01JRQ4H8ZE0000000000000118"
-          ]
+            "E10",
+            "E11"
+          ],
+          "quote": "I will text you the tracking number"
         }
-      ]
+      ],
+      "evidence": [
+        {
+          "handle": "E10",
+          "kind": "utterance",
+          "id": "utt_01JRQ4H8ZE0000000000000118",
+          "day": "2026-04-18",
+          "ts": 1776545520000,
+          "ts_end": 1776545526500,
+          "ts_local": "2026-04-18T13:52:00-07:00",
+          "label": "Speaker B · Speech",
+          "thumb_hint": null,
+          "frame_id": null,
+          "source_conf": 0.84,
+          "score": 0.84,
+          "certainty": "confident",
+          "quote": "I will text you the tracking number",
+          "open_url": "/day/2026-04-18?t=1776545520000&focus=utt_01JRQ4H8ZE0000000000000118"
+        },
+        {
+          "handle": "E11",
+          "kind": "utterance",
+          "id": "utt_01JRQ4H8ZE0000000000000122",
+          "day": "2026-04-18",
+          "ts": 1776545613600,
+          "ts_end": 1776545617600,
+          "ts_local": "2026-04-18T13:53:33.600000-07:00",
+          "label": "Speaker B · Speech",
+          "thumb_hint": null,
+          "frame_id": null,
+          "source_conf": 0.76,
+          "score": 0.74,
+          "certainty": "confident",
+          "quote": "I'll text it with the tracking",
+          "open_url": "/day/2026-04-18?t=1776545613600&focus=utt_01JRQ4H8ZE0000000000000122"
+        }
+      ],
+      "evidence_considered": 50,
+      "score": 0.84,
+      "reason": null,
+      "reasons": [],
+      "reason_text": null,
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "hero",
+      "provider": "precomputed",
+      "golden": {
+        "expected_status": "answered",
+        "trap": null,
+        "must_cite_any": [
+          "utt_01JRQ4H8ZE0000000000000118"
+        ],
+        "status_match": true,
+        "citation_hit": true
+      }
     },
     {
       "id": "qa_07",
       "question": "Where is my desk lamp now?",
-      "status": "answered",
-      "reason": null,
+      "locale": "en",
+      "scope": {
+        "all_days": false,
+        "day": "2026-04-18",
+        "from_ms": null,
+        "to_ms": null
+      },
+      "status": "uncertain",
+      "ui_tone": "amber",
+      "answer": "Your desk lamp is now at home. It was earlier at Fernhollow Repair Cafe on the shelf labeled 'waiting for parts'.",
       "sentences": [
         {
-          "text": "So this goes on the waiting-for-parts shelf with the blue tag, and it stays there until Tuesday.",
+          "text": "Your desk lamp is now at home.",
           "evidence": [
-            "utt_01JRQ4H8ZE0000000000000141"
-          ]
+            "E12"
+          ],
+          "quote": "The camera drifts toward the shelf in the background, where a few small shapes are out of focus and the desk lamp light just catches their edges."
         },
         {
-          "text": "On the shelf labeled 'waiting for parts', the desk lamp's blue tag is clearly visible next to a small radio and a toaster.",
+          "text": "It was earlier at Fernhollow Repair Cafe on the shelf labeled 'waiting for parts'.",
           "evidence": [
-            "det_01JRQ4H8ZE0000000000000030"
-          ]
+            "E10"
+          ],
+          "quote": "On the shelf labeled 'waiting for parts', the desk lamp's blue tag is clearly visible next to a small radio and a toaster."
         }
-      ]
+      ],
+      "evidence": [
+        {
+          "handle": "E10",
+          "kind": "caption",
+          "id": "cap_01JRQ4H8ZE0000000000000104",
+          "day": "2026-04-18",
+          "ts": 1776553500000,
+          "ts_end": 1776553500000,
+          "ts_local": "2026-04-18T16:05:00-07:00",
+          "label": "Frame · Fernhollow Repair Cafe",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000104.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000104",
+          "source_conf": 0.8,
+          "score": 0.68,
+          "certainty": "confident",
+          "quote": "On the shelf labeled 'waiting for parts', the desk lamp's blue tag is clearly visible next to a small radio and a toaster.",
+          "open_url": "/day/2026-04-18?t=1776553500000&focus=cap_01JRQ4H8ZE0000000000000104"
+        },
+        {
+          "handle": "E12",
+          "kind": "caption",
+          "id": "cap_01JRQ4H8ZE0000000000000156",
+          "day": "2026-04-18",
+          "ts": 1776569100000,
+          "ts_end": 1776569100000,
+          "ts_local": "2026-04-18T20:25:00-07:00",
+          "label": "Frame · Home",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000156.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000156",
+          "source_conf": 0.8,
+          "score": 0.63,
+          "certainty": "confident",
+          "quote": "The camera drifts toward the shelf in the background, where a few small shapes are out of focus and the desk lamp light just catches their edges.",
+          "open_url": "/day/2026-04-18?t=1776569100000&focus=cap_01JRQ4H8ZE0000000000000156"
+        }
+      ],
+      "evidence_considered": 57,
+      "score": 0.68,
+      "reason": "below_answer_min",
+      "reasons": [
+        "below_answer_min"
+      ],
+      "reason_text": "Uncertain: the best supporting evidence scores 0.68, below the 0.70 needed to answer.",
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": "uncertain"
+      },
+      "mode": "hero",
+      "provider": "precomputed",
+      "golden": {
+        "expected_status": "answered",
+        "trap": null,
+        "must_cite_any": [
+          "utt_01JRQ4H8ZE0000000000000141",
+          "det_01JRQ4H8ZE0000000000000030",
+          "cap_01JRQ4H8ZE0000000000000104"
+        ],
+        "status_match": false,
+        "citation_hit": true
+      }
     },
     {
       "id": "qa_08",
       "question": "What did I buy at the bakery?",
+      "locale": "en",
+      "scope": {
+        "all_days": false,
+        "day": "2026-04-18",
+        "from_ms": null,
+        "to_ms": null
+      },
       "status": "answered",
-      "reason": null,
+      "ui_tone": "neutral",
+      "answer": "You bought a rye loaf and two cinnamon buns at the bakery.",
       "sentences": [
         {
-          "text": "I'll take a rye loaf and two cinnamon buns, please.",
+          "text": "You bought a rye loaf and two cinnamon buns at the bakery.",
           "evidence": [
-            "utt_01JRQ4H8ZE0000000000000153"
+            "E2"
           ]
         }
-      ]
+      ],
+      "evidence": [
+        {
+          "handle": "E2",
+          "kind": "segment",
+          "id": "seg_01JRQ4H8ZE0000000000000011",
+          "day": "2026-04-18",
+          "ts": 1776554400000,
+          "ts_end": 1776556800000,
+          "ts_local": "2026-04-18T16:20:00-07:00",
+          "label": "Segment",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000111.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000111",
+          "source_conf": 0.75,
+          "score": 0.75,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776554400000&focus=seg_01JRQ4H8ZE0000000000000011"
+        }
+      ],
+      "evidence_considered": 41,
+      "score": 0.75,
+      "reason": null,
+      "reasons": [],
+      "reason_text": null,
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "hero",
+      "provider": "precomputed",
+      "golden": {
+        "expected_status": "answered",
+        "trap": null,
+        "must_cite_any": [
+          "utt_01JRQ4H8ZE0000000000000153"
+        ],
+        "status_match": true,
+        "citation_hit": false
+      }
     },
     {
       "id": "qa_09",
       "question": "When can I pick up the repair manual at the library?",
+      "locale": "en",
+      "scope": {
+        "all_days": false,
+        "day": "2026-04-18",
+        "from_ms": null,
+        "to_ms": null
+      },
       "status": "answered",
-      "reason": null,
+      "ui_tone": "neutral",
+      "answer": "You can pick up the repair manual at the library on Tuesday afternoon.",
       "sentences": [
         {
-          "text": "That lamp repair manual you reserved will be ready Tuesday afternoon.",
+          "text": "You can pick up the repair manual at the library on Tuesday afternoon.",
           "evidence": [
-            "utt_01JRQ4H8ZE0000000000000163"
+            "E5",
+            "E6",
+            "E8",
+            "E9",
+            "E10"
           ]
         }
-      ]
+      ],
+      "evidence": [
+        {
+          "handle": "E5",
+          "kind": "utterance",
+          "id": "utt_01JRQ4H8ZE0000000000000163",
+          "day": "2026-04-18",
+          "ts": 1776558035400,
+          "ts_end": 1776558037300,
+          "ts_local": "2026-04-18T17:20:35.400000-07:00",
+          "label": "Speaker D · Speech",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000119.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000119",
+          "source_conf": 0.83,
+          "score": 0.77,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776558035400&focus=utt_01JRQ4H8ZE0000000000000163"
+        },
+        {
+          "handle": "E6",
+          "kind": "utterance",
+          "id": "utt_01JRQ4H8ZE0000000000000174",
+          "day": "2026-04-18",
+          "ts": 1776558614900,
+          "ts_end": 1776558617600,
+          "ts_local": "2026-04-18T17:30:14.900000-07:00",
+          "label": "Speaker D · Speech",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000121.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000121",
+          "source_conf": 0.73,
+          "score": 0.65,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776558614900&focus=utt_01JRQ4H8ZE0000000000000174"
+        },
+        {
+          "handle": "E8",
+          "kind": "segment",
+          "id": "seg_01JRQ4H8ZE0000000000000013",
+          "day": "2026-04-18",
+          "ts": 1776562500000,
+          "ts_end": 1776564300000,
+          "ts_local": "2026-04-18T18:35:00-07:00",
+          "label": "Segment",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000137.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000137",
+          "source_conf": 0.73,
+          "score": 0.7,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776562500000&focus=seg_01JRQ4H8ZE0000000000000013"
+        },
+        {
+          "handle": "E9",
+          "kind": "utterance",
+          "id": "utt_01JRQ4H8ZE0000000000000193",
+          "day": "2026-04-18",
+          "ts": 1776563116300,
+          "ts_end": 1776563122300,
+          "ts_local": "2026-04-18T18:45:16.300000-07:00",
+          "label": "You · Speech",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000136.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000136",
+          "source_conf": 0.8,
+          "score": 0.74,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776563116300&focus=utt_01JRQ4H8ZE0000000000000193"
+        },
+        {
+          "handle": "E10",
+          "kind": "utterance",
+          "id": "utt_01JRQ4H8ZE0000000000000201",
+          "day": "2026-04-18",
+          "ts": 1776565946200,
+          "ts_end": 1776565950300,
+          "ts_local": "2026-04-18T19:32:26.200000-07:00",
+          "label": "You · Speech",
+          "thumb_hint": null,
+          "frame_id": null,
+          "source_conf": 0.88,
+          "score": 0.87,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776565946200&focus=utt_01JRQ4H8ZE0000000000000201"
+        }
+      ],
+      "evidence_considered": 52,
+      "score": 0.87,
+      "reason": null,
+      "reasons": [],
+      "reason_text": null,
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "hero",
+      "provider": "precomputed",
+      "golden": {
+        "expected_status": "answered",
+        "trap": null,
+        "must_cite_any": [
+          "utt_01JRQ4H8ZE0000000000000163"
+        ],
+        "status_match": true,
+        "citation_hit": true
+      }
     },
     {
       "id": "qa_10",
       "question": "What tool did we use to test the lamp cord?",
+      "locale": "en",
+      "scope": {
+        "all_days": false,
+        "day": "2026-04-18",
+        "from_ms": null,
+        "to_ms": null
+      },
       "status": "answered",
-      "reason": null,
+      "ui_tone": "neutral",
+      "answer": "You used a multimeter to test the lamp cord.",
       "sentences": [
         {
-          "text": "I'll grab the multimeter and we can test the cord.",
+          "text": "You used a multimeter to test the lamp cord.",
           "evidence": [
-            "utt_01JRQ4H8ZE0000000000000042"
-          ]
-        },
-        {
-          "text": "When the multimeter beep sounds, the cord has continuity and is fine.",
-          "evidence": [
-            "utt_01JRQ4H8ZE0000000000000057"
+            "E3",
+            "E5",
+            "E6",
+            "E7",
+            "E8"
           ]
         }
-      ]
+      ],
+      "evidence": [
+        {
+          "handle": "E3",
+          "kind": "segment",
+          "id": "seg_01JRQ4H8ZE0000000000000004",
+          "day": "2026-04-18",
+          "ts": 1776529200000,
+          "ts_end": 1776533400000,
+          "ts_local": "2026-04-18T09:20:00-07:00",
+          "label": "Segment",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000036.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000036",
+          "source_conf": 0.78,
+          "score": 0.69,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776529200000&focus=seg_01JRQ4H8ZE0000000000000004"
+        },
+        {
+          "handle": "E5",
+          "kind": "utterance",
+          "id": "utt_01JRQ4H8ZE0000000000000042",
+          "day": "2026-04-18",
+          "ts": 1776530882800,
+          "ts_end": 1776530889400,
+          "ts_local": "2026-04-18T09:48:02.800000-07:00",
+          "label": "Speaker B · Speech",
+          "thumb_hint": null,
+          "frame_id": null,
+          "source_conf": 0.74,
+          "score": 0.73,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776530882800&focus=utt_01JRQ4H8ZE0000000000000042"
+        },
+        {
+          "handle": "E6",
+          "kind": "caption",
+          "id": "cap_01JRQ4H8ZE0000000000000036",
+          "day": "2026-04-18",
+          "ts": 1776531300000,
+          "ts_end": 1776531300000,
+          "ts_local": "2026-04-18T09:55:00-07:00",
+          "label": "Frame · Fernhollow Repair Cafe",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000036.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000036",
+          "source_conf": 0.8,
+          "score": 0.65,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776531300000&focus=cap_01JRQ4H8ZE0000000000000036"
+        },
+        {
+          "handle": "E7",
+          "kind": "segment",
+          "id": "seg_01JRQ4H8ZE0000000000000005",
+          "day": "2026-04-18",
+          "ts": 1776533400000,
+          "ts_end": 1776537000000,
+          "ts_local": "2026-04-18T10:30:00-07:00",
+          "label": "Segment",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000049.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000049",
+          "source_conf": 0.76,
+          "score": 0.69,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776533400000&focus=seg_01JRQ4H8ZE0000000000000005"
+        },
+        {
+          "handle": "E8",
+          "kind": "caption",
+          "id": "cap_01JRQ4H8ZE0000000000000044",
+          "day": "2026-04-18",
+          "ts": 1776533700000,
+          "ts_end": 1776533700000,
+          "ts_local": "2026-04-18T10:35:00-07:00",
+          "label": "Frame · Fernhollow Repair Cafe",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000044.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000044",
+          "source_conf": 0.8,
+          "score": 0.7,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776533700000&focus=cap_01JRQ4H8ZE0000000000000044"
+        }
+      ],
+      "evidence_considered": 65,
+      "score": 0.73,
+      "reason": null,
+      "reasons": [],
+      "reason_text": null,
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "hero",
+      "provider": "precomputed",
+      "golden": {
+        "expected_status": "answered",
+        "trap": null,
+        "must_cite_any": [
+          "utt_01JRQ4H8ZE0000000000000042",
+          "utt_01JRQ4H8ZE0000000000000057",
+          "det_01JRQ4H8ZE0000000000000014",
+          "det_01JRQ4H8ZE0000000000000016"
+        ],
+        "status_match": true,
+        "citation_hit": true
+      }
     },
     {
       "id": "qa_11",
       "question": "Where was my umbrella last seen?",
+      "locale": "en",
+      "scope": {
+        "all_days": false,
+        "day": "2026-04-18",
+        "from_ms": null,
+        "to_ms": null
+      },
       "status": "answered",
-      "reason": null,
+      "ui_tone": "neutral",
+      "answer": "Your umbrella was last seen at home, leaning against the wall beside the front door with its tip leaving water on the floor.",
       "sentences": [
         {
-          "text": "The front door is visible with a wet umbrella leaning against the wall beside it, its tip leaving water on the floor.",
+          "text": "Your umbrella was last seen at home, leaning against the wall beside the front door with its tip leaving water on the floor.",
           "evidence": [
-            "det_01JRQ4H8ZE0000000000000038"
-          ]
+            "E11",
+            "E12"
+          ],
+          "quote": "wet umbrella leaning against the wall beside it, its tip leaving water on the floor"
         }
-      ]
+      ],
+      "evidence": [
+        {
+          "handle": "E11",
+          "kind": "caption",
+          "id": "cap_01JRQ4H8ZE0000000000000141",
+          "day": "2026-04-18",
+          "ts": 1776564600000,
+          "ts_end": 1776564600000,
+          "ts_local": "2026-04-18T19:10:00-07:00",
+          "label": "Frame · Home",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000141.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000141",
+          "source_conf": 0.8,
+          "score": 0.72,
+          "certainty": "confident",
+          "quote": "wet umbrella leaning against the wall beside it, its tip leaving water on the floor",
+          "open_url": "/day/2026-04-18?t=1776564600000&focus=cap_01JRQ4H8ZE0000000000000141"
+        },
+        {
+          "handle": "E12",
+          "kind": "detection",
+          "id": "det_01JRQ4H8ZE0000000000000038",
+          "day": "2026-04-18",
+          "ts": 1776564600000,
+          "ts_end": 1776564600000,
+          "ts_local": "2026-04-18T19:10:00-07:00",
+          "label": "umbrella · 0.63",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000141.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000141",
+          "source_conf": 0.63,
+          "score": 0.63,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776564600000&focus=det_01JRQ4H8ZE0000000000000038"
+        }
+      ],
+      "evidence_considered": 51,
+      "score": 0.72,
+      "reason": null,
+      "reasons": [],
+      "reason_text": null,
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "hero",
+      "provider": "precomputed",
+      "golden": {
+        "expected_status": "answered",
+        "trap": null,
+        "must_cite_any": [
+          "det_01JRQ4H8ZE0000000000000038",
+          "cap_01JRQ4H8ZE0000000000000141"
+        ],
+        "status_match": true,
+        "citation_hit": true
+      }
     },
     {
       "id": "qa_12",
       "question": "What did the volunteer say the knot inside the lamp base is for?",
+      "locale": "en",
+      "scope": {
+        "all_days": false,
+        "day": "2026-04-18",
+        "from_ms": null,
+        "to_ms": null
+      },
       "status": "answered",
-      "reason": null,
+      "ui_tone": "neutral",
+      "answer": "The volunteer's discussion indicated the knot inside the lamp base is for strain relief; it is a strain-relief knot.",
       "sentences": [
         {
-          "text": "The strain relief knot gives the cord a mechanical stop so it can't pull on the wires.",
+          "text": "The volunteer's discussion indicated the knot inside the lamp base is for strain relief; it is a strain-relief knot.",
           "evidence": [
-            "utt_01JRQ4H8ZE0000000000000067"
-          ]
+            "E3",
+            "E7"
+          ],
+          "quote": "You discuss strain relief and the knot inside the base."
         }
-      ]
+      ],
+      "evidence": [
+        {
+          "handle": "E3",
+          "kind": "segment",
+          "id": "seg_01JRQ4H8ZE0000000000000005",
+          "day": "2026-04-18",
+          "ts": 1776533400000,
+          "ts_end": 1776537000000,
+          "ts_local": "2026-04-18T10:30:00-07:00",
+          "label": "Segment",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000049.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000049",
+          "source_conf": 0.76,
+          "score": 0.75,
+          "certainty": "confident",
+          "quote": "You discuss strain relief and the knot inside the base.",
+          "open_url": "/day/2026-04-18?t=1776533400000&focus=seg_01JRQ4H8ZE0000000000000005"
+        },
+        {
+          "handle": "E7",
+          "kind": "segment",
+          "id": "seg_01JRQ4H8ZE0000000000000009",
+          "day": "2026-04-18",
+          "ts": 1776546600000,
+          "ts_end": 1776550800000,
+          "ts_local": "2026-04-18T14:10:00-07:00",
+          "label": "Segment",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000088.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000088",
+          "source_conf": 0.79,
+          "score": 0.74,
+          "certainty": "confident",
+          "quote": "tie a strain-relief knot inside the base",
+          "open_url": "/day/2026-04-18?t=1776546600000&focus=seg_01JRQ4H8ZE0000000000000009"
+        }
+      ],
+      "evidence_considered": 54,
+      "score": 0.75,
+      "reason": null,
+      "reasons": [],
+      "reason_text": null,
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "hero",
+      "provider": "precomputed",
+      "golden": {
+        "expected_status": "answered",
+        "trap": null,
+        "must_cite_any": [
+          "utt_01JRQ4H8ZE0000000000000067"
+        ],
+        "status_match": true,
+        "citation_hit": false
+      }
     },
     {
       "id": "qa_13",
       "question": "What did I note to do on Tuesday?",
+      "locale": "en",
+      "scope": {
+        "all_days": false,
+        "day": "2026-04-18",
+        "from_ms": null,
+        "to_ms": null
+      },
       "status": "answered",
-      "reason": null,
+      "ui_tone": "neutral",
+      "answer": "You noted to pick up the switch at the repair cafe, then the manual at the library on Tuesday.",
       "sentences": [
         {
-          "text": "On Tuesday, pick up the switch at the repair cafe, then the manual at the library.",
+          "text": "You noted to pick up the switch at the repair cafe, then the manual at the library on Tuesday.",
           "evidence": [
-            "utt_01JRQ4H8ZE0000000000000201"
-          ]
+            "E9"
+          ],
+          "quote": "On Tuesday, pick up the switch at the repair cafe, then the manual at the library."
         }
-      ]
+      ],
+      "evidence": [
+        {
+          "handle": "E9",
+          "kind": "utterance",
+          "id": "utt_01JRQ4H8ZE0000000000000201",
+          "day": "2026-04-18",
+          "ts": 1776565946200,
+          "ts_end": 1776565950300,
+          "ts_local": "2026-04-18T19:32:26.200000-07:00",
+          "label": "You · Speech",
+          "thumb_hint": null,
+          "frame_id": null,
+          "source_conf": 0.88,
+          "score": 0.75,
+          "certainty": "confident",
+          "quote": "On Tuesday, pick up the switch at the repair cafe, then the manual at the library.",
+          "open_url": "/day/2026-04-18?t=1776565946200&focus=utt_01JRQ4H8ZE0000000000000201"
+        }
+      ],
+      "evidence_considered": 52,
+      "score": 0.75,
+      "reason": null,
+      "reasons": [],
+      "reason_text": null,
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "hero",
+      "provider": "precomputed",
+      "golden": {
+        "expected_status": "answered",
+        "trap": null,
+        "must_cite_any": [
+          "utt_01JRQ4H8ZE0000000000000201"
+        ],
+        "status_match": true,
+        "citation_hit": true
+      }
     },
     {
       "id": "qa_14",
       "question": "What was the name on the bakery sign?",
+      "locale": "en",
+      "scope": {
+        "all_days": false,
+        "day": "2026-04-18",
+        "from_ms": null,
+        "to_ms": null
+      },
       "status": "answered",
-      "reason": null,
+      "ui_tone": "neutral",
+      "answer": "The name on the bakery sign was \"Quill Street Bakery\".",
       "sentences": [
         {
-          "text": "A cozy bakery counter with a chalkboard sign reading 'Quill Street Bakery' behind the glass case, cinnamon buns visible under warm light.",
+          "text": "The name on the bakery sign was \"Quill Street Bakery\".",
           "evidence": [
-            "cap_01JRQ4H8ZE0000000000000110"
-          ]
+            "E7"
+          ],
+          "quote": "Quill Street Bakery"
         }
-      ]
+      ],
+      "evidence": [
+        {
+          "handle": "E7",
+          "kind": "caption",
+          "id": "cap_01JRQ4H8ZE0000000000000110",
+          "day": "2026-04-18",
+          "ts": 1776555300000,
+          "ts_end": 1776555300000,
+          "ts_local": "2026-04-18T16:35:00-07:00",
+          "label": "Frame · Quill Street Bakery",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000110.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000110",
+          "source_conf": 0.8,
+          "score": 0.79,
+          "certainty": "confident",
+          "quote": "Quill Street Bakery",
+          "open_url": "/day/2026-04-18?t=1776555300000&focus=cap_01JRQ4H8ZE0000000000000110"
+        }
+      ],
+      "evidence_considered": 40,
+      "score": 0.79,
+      "reason": null,
+      "reasons": [],
+      "reason_text": null,
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "hero",
+      "provider": "precomputed",
+      "golden": {
+        "expected_status": "answered",
+        "trap": null,
+        "must_cite_any": [
+          "cap_01JRQ4H8ZE0000000000000110"
+        ],
+        "status_match": true,
+        "citation_hit": true
+      }
     },
     {
       "id": "qa_15",
       "question": "What did the bakery cashier recommend?",
+      "locale": "en",
+      "scope": {
+        "all_days": false,
+        "day": "2026-04-18",
+        "from_ms": null,
+        "to_ms": null
+      },
       "status": "answered",
-      "reason": null,
+      "ui_tone": "neutral",
+      "answer": "The bakery cashier recommended the warm cinnamon buns.",
       "sentences": [
         {
-          "text": "The cinnamon buns just came out, still warm if you want something sweet.",
+          "text": "The bakery cashier recommended the warm cinnamon buns.",
           "evidence": [
-            "utt_01JRQ4H8ZE0000000000000150"
-          ]
+            "E2"
+          ],
+          "quote": "the cashier recommends the warm cinnamon buns"
         }
-      ]
+      ],
+      "evidence": [
+        {
+          "handle": "E2",
+          "kind": "segment",
+          "id": "seg_01JRQ4H8ZE0000000000000011",
+          "day": "2026-04-18",
+          "ts": 1776554400000,
+          "ts_end": 1776556800000,
+          "ts_local": "2026-04-18T16:20:00-07:00",
+          "label": "Segment",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000111.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000111",
+          "source_conf": 0.75,
+          "score": 0.75,
+          "certainty": "confident",
+          "quote": "the cashier recommends the warm cinnamon buns",
+          "open_url": "/day/2026-04-18?t=1776554400000&focus=seg_01JRQ4H8ZE0000000000000011"
+        }
+      ],
+      "evidence_considered": 41,
+      "score": 0.75,
+      "reason": null,
+      "reasons": [],
+      "reason_text": null,
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "hero",
+      "provider": "precomputed",
+      "golden": {
+        "expected_status": "answered",
+        "trap": null,
+        "must_cite_any": [
+          "utt_01JRQ4H8ZE0000000000000150"
+        ],
+        "status_match": true,
+        "citation_hit": false
+      }
     },
     {
       "id": "qa_16",
       "question": "How many screws held the lamp base?",
+      "locale": "en",
+      "scope": {
+        "all_days": false,
+        "day": "2026-04-18",
+        "from_ms": null,
+        "to_ms": null
+      },
       "status": "answered",
-      "reason": null,
+      "ui_tone": "neutral",
+      "answer": "Four screws held the lamp base.",
       "sentences": [
         {
-          "text": "I just took the four screws out of the lamp base.",
+          "text": "Four screws held the lamp base.",
           "evidence": [
-            "utt_01JRQ4H8ZE0000000000000026"
-          ]
+            "E1"
+          ],
+          "quote": "I just took the four screws out of the lamp base."
         }
-      ]
+      ],
+      "evidence": [
+        {
+          "handle": "E1",
+          "kind": "utterance",
+          "id": "utt_01JRQ4H8ZE0000000000000026",
+          "day": "2026-04-18",
+          "ts": 1776529503700,
+          "ts_end": 1776529507300,
+          "ts_local": "2026-04-18T09:25:03.700000-07:00",
+          "label": "You · Speech",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000030.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000030",
+          "source_conf": 0.76,
+          "score": 0.74,
+          "certainty": "confident",
+          "quote": "I just took the four screws out of the lamp base.",
+          "open_url": "/day/2026-04-18?t=1776529503700&focus=utt_01JRQ4H8ZE0000000000000026"
+        }
+      ],
+      "evidence_considered": 59,
+      "score": 0.74,
+      "reason": null,
+      "reasons": [],
+      "reason_text": null,
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "hero",
+      "provider": "precomputed",
+      "golden": {
+        "expected_status": "answered",
+        "trap": null,
+        "must_cite_any": [
+          "utt_01JRQ4H8ZE0000000000000026"
+        ],
+        "status_match": true,
+        "citation_hit": true
+      }
     },
     {
       "id": "qa_17",
       "question": "Where are my keys?",
+      "locale": "en",
+      "scope": {
+        "all_days": false,
+        "day": "2026-04-18",
+        "from_ms": null,
+        "to_ms": null
+      },
       "status": "uncertain",
-      "reason": "low_transcript_confidence",
+      "ui_tone": "amber",
+      "answer": "Earlier, you said, \"Alright, they're in my pocket, locking up now.\" But a hook by the door only showed an indistinct metallic object, so that wasn't confirmed. By evening you were unsure: you said you had patted your pockets, and you planned to \"check the door hook in the morning.\" A late detection labeled \"keys\" near the desk describes only a pencil and lamp, so the keys' location remains unclear.",
       "sentences": [
         {
-          "text": "Evidence is weak. ...are the keys in a pocket or still on the hook... not sure...",
+          "text": "Earlier, you said, \"Alright, they're in my pocket, locking up now.\"",
           "evidence": [
-            "det_01JRQ4H8ZE0000000000000041",
-            "det_01JRQ4H8ZE0000000000000040",
-            "det_01JRQ4H8ZE0000000000000008",
-            "det_01JRQ4H8ZE0000000000000007",
-            "utt_01JRQ4H8ZE0000000000000011",
-            "utt_01JRQ4H8ZE0000000000000209"
-          ]
+            "E2"
+          ],
+          "quote": "Alright, they're in my pocket, locking up now."
+        },
+        {
+          "text": "But a hook by the door only showed an indistinct metallic object, so that wasn't confirmed.",
+          "evidence": [
+            "E1"
+          ],
+          "quote": "indistinct metallic object"
+        },
+        {
+          "text": "By evening you were unsure: you said you had patted your pockets, and you planned to \"check the door hook in the morning.\"",
+          "evidence": [
+            "E8",
+            "E10"
+          ],
+          "quote": "check the door hook in the morning"
+        },
+        {
+          "text": "A late detection labeled \"keys\" near the desk describes only a pencil and lamp, so the keys' location remains unclear.",
+          "evidence": [
+            "E11"
+          ],
+          "quote": "keys"
         }
-      ]
+      ],
+      "evidence": [
+        {
+          "handle": "E1",
+          "kind": "caption",
+          "id": "cap_01JRQ4H8ZE0000000000000014",
+          "day": "2026-04-18",
+          "ts": 1776524700000,
+          "ts_end": 1776524700000,
+          "ts_local": "2026-04-18T08:05:00-07:00",
+          "label": "Frame · Home",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000014.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000014",
+          "source_conf": 0.8,
+          "score": 0.39,
+          "certainty": "confident",
+          "quote": "indistinct metallic object",
+          "open_url": "/day/2026-04-18?t=1776524700000&focus=cap_01JRQ4H8ZE0000000000000014"
+        },
+        {
+          "handle": "E2",
+          "kind": "utterance",
+          "id": "utt_01JRQ4H8ZE0000000000000012",
+          "day": "2026-04-18",
+          "ts": 1776524939200,
+          "ts_end": 1776524943500,
+          "ts_local": "2026-04-18T08:08:59.200000-07:00",
+          "label": "You · Speech",
+          "thumb_hint": null,
+          "frame_id": null,
+          "source_conf": 0.81,
+          "score": 0.36,
+          "certainty": "confident",
+          "quote": "Alright, they're in my pocket, locking up now.",
+          "open_url": "/day/2026-04-18?t=1776524939200&focus=utt_01JRQ4H8ZE0000000000000012"
+        },
+        {
+          "handle": "E8",
+          "kind": "utterance",
+          "id": "utt_01JRQ4H8ZE0000000000000211",
+          "day": "2026-04-18",
+          "ts": 1776569580900,
+          "ts_end": 1776569585700,
+          "ts_local": "2026-04-18T20:33:00.900000-07:00",
+          "label": "You · Speech",
+          "thumb_hint": null,
+          "frame_id": null,
+          "source_conf": 0.75,
+          "score": 0.33,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776569580900&focus=utt_01JRQ4H8ZE0000000000000211"
+        },
+        {
+          "handle": "E10",
+          "kind": "utterance",
+          "id": "utt_01JRQ4H8ZE0000000000000213",
+          "day": "2026-04-18",
+          "ts": 1776569638400,
+          "ts_end": 1776569643100,
+          "ts_local": "2026-04-18T20:33:58.400000-07:00",
+          "label": "You · Speech",
+          "thumb_hint": null,
+          "frame_id": null,
+          "source_conf": 0.72,
+          "score": 0.33,
+          "certainty": "confident",
+          "quote": "check the door hook in the morning",
+          "open_url": "/day/2026-04-18?t=1776569638400&focus=utt_01JRQ4H8ZE0000000000000213"
+        },
+        {
+          "handle": "E11",
+          "kind": "detection",
+          "id": "det_01JRQ4H8ZE0000000000000041",
+          "day": "2026-04-18",
+          "ts": 1776570300000,
+          "ts_end": 1776570300000,
+          "ts_local": "2026-04-18T20:45:00-07:00",
+          "label": "keys · 0.36",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000160.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000160",
+          "source_conf": 0.36,
+          "score": 0.36,
+          "certainty": "uncertain",
+          "quote": "keys",
+          "open_url": "/day/2026-04-18?t=1776570300000&focus=det_01JRQ4H8ZE0000000000000041"
+        }
+      ],
+      "evidence_considered": 41,
+      "score": 0.39,
+      "reason": "model_uncertain",
+      "reasons": [
+        "model_uncertain"
+      ],
+      "reason_text": "Uncertain: the records don't settle this on their own.",
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "hero",
+      "provider": "precomputed",
+      "golden": {
+        "expected_status": "uncertain",
+        "trap": "object_uncertain",
+        "must_cite_any": [
+          "det_01JRQ4H8ZE0000000000000041",
+          "det_01JRQ4H8ZE0000000000000040",
+          "det_01JRQ4H8ZE0000000000000008",
+          "det_01JRQ4H8ZE0000000000000007",
+          "utt_01JRQ4H8ZE0000000000000011",
+          "utt_01JRQ4H8ZE0000000000000209"
+        ],
+        "status_match": true,
+        "citation_hit": true
+      }
     },
     {
       "id": "qa_18",
       "question": "What was I muttering to myself on the tram this morning?",
+      "locale": "en",
+      "scope": {
+        "all_days": false,
+        "day": "2026-04-18",
+        "from_ms": null,
+        "to_ms": null
+      },
       "status": "uncertain",
-      "reason": "low_transcript_confidence",
+      "ui_tone": "amber",
+      "answer": "You were muttering about getting off at Fernhollow.",
       "sentences": [
         {
-          "text": "Evidence is weak. ... Fern-something ... do I get off ...",
+          "text": "You were muttering about getting off at Fernhollow.",
           "evidence": [
-            "utt_01JRQ4H8ZE0000000000000013",
-            "utt_01JRQ4H8ZE0000000000000014"
-          ]
+            "E3"
+          ],
+          "quote": "mumbling about getting off at Fernhollow"
         }
-      ]
+      ],
+      "evidence": [
+        {
+          "handle": "E3",
+          "kind": "segment",
+          "id": "seg_01JRQ4H8ZE0000000000000002",
+          "day": "2026-04-18",
+          "ts": 1776525300000,
+          "ts_end": 1776527400000,
+          "ts_local": "2026-04-18T08:15:00-07:00",
+          "label": "Segment",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000019.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000019",
+          "source_conf": 0.67,
+          "score": 0.64,
+          "certainty": "uncertain",
+          "quote": "mumbling about getting off at Fernhollow",
+          "open_url": "/day/2026-04-18?t=1776525300000&focus=seg_01JRQ4H8ZE0000000000000002"
+        }
+      ],
+      "evidence_considered": 44,
+      "score": 0.64,
+      "reason": "below_answer_min",
+      "reasons": [
+        "below_answer_min"
+      ],
+      "reason_text": "Uncertain: the best supporting evidence scores 0.64, below the 0.70 needed to answer.",
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": "uncertain"
+      },
+      "mode": "hero",
+      "provider": "precomputed",
+      "golden": {
+        "expected_status": "uncertain",
+        "trap": "low_confidence",
+        "must_cite_any": [
+          "utt_01JRQ4H8ZE0000000000000013",
+          "utt_01JRQ4H8ZE0000000000000014"
+        ],
+        "status_match": true,
+        "citation_hit": false
+      }
     },
     {
       "id": "qa_19",
       "question": "What did the bakery cashier say about my passport?",
+      "locale": "en",
+      "scope": {
+        "all_days": false,
+        "day": "2026-04-18",
+        "from_ms": null,
+        "to_ms": null
+      },
       "status": "not_found",
-      "reason": "no_evidence",
+      "ui_tone": "neutral",
+      "answer": "I couldn't find this in the records for 2026-04-18.",
       "sentences": [
         {
-          "text": "I found nothing in your records about this.",
+          "text": "I couldn't find this in the records for 2026-04-18.",
           "evidence": []
         }
-      ]
+      ],
+      "evidence": [],
+      "evidence_considered": 20,
+      "score": 0.0,
+      "reason": "no_evidence",
+      "reasons": [
+        "no_evidence"
+      ],
+      "reason_text": "No matching records.",
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "hero",
+      "provider": "precomputed",
+      "golden": {
+        "expected_status": "not_found",
+        "trap": "no_evidence",
+        "must_cite_any": [],
+        "status_match": true,
+        "citation_hit": true
+      }
     },
     {
       "id": "qa_20",
       "question": "Did anyone talk about fixing a bicycle today?",
+      "locale": "en",
+      "scope": {
+        "all_days": false,
+        "day": "2026-04-18",
+        "from_ms": null,
+        "to_ms": null
+      },
       "status": "not_found",
-      "reason": "no_evidence",
+      "ui_tone": "neutral",
+      "answer": "I couldn't find this in the records for 2026-04-18.",
       "sentences": [
         {
-          "text": "I found nothing in your records about this.",
+          "text": "I couldn't find this in the records for 2026-04-18.",
           "evidence": []
         }
-      ]
+      ],
+      "evidence": [],
+      "evidence_considered": 25,
+      "score": 0.0,
+      "reason": "no_evidence",
+      "reasons": [
+        "no_evidence"
+      ],
+      "reason_text": "No matching records.",
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "hero",
+      "provider": "precomputed",
+      "golden": {
+        "expected_status": "not_found",
+        "trap": "no_evidence",
+        "must_cite_any": [],
+        "status_match": true,
+        "citation_hit": true
+      }
     },
     {
       "id": "qa_21",
       "question": "Who did I have lunch with?",
+      "locale": "en",
+      "scope": {
+        "all_days": false,
+        "day": "2026-04-18",
+        "from_ms": null,
+        "to_ms": null
+      },
       "status": "not_found",
-      "reason": "paused_window",
+      "ui_tone": "neutral",
+      "answer": "I couldn't find this in the records for 2026-04-18.",
       "sentences": [
         {
-          "text": "I found nothing in your records about this.",
+          "text": "I couldn't find this in the records for 2026-04-18.",
           "evidence": []
         }
-      ]
+      ],
+      "evidence": [],
+      "evidence_considered": 40,
+      "score": 0.0,
+      "reason": "no_evidence",
+      "reasons": [
+        "no_evidence"
+      ],
+      "reason_text": "No matching records.",
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "hero",
+      "provider": "precomputed",
+      "golden": {
+        "expected_status": "not_found",
+        "trap": "paused_window",
+        "must_cite_any": [],
+        "status_match": true,
+        "citation_hit": true
+      }
     },
     {
       "id": "qa_22",
       "question": "What was happening around 12:45?",
+      "locale": "en",
+      "scope": {
+        "all_days": false,
+        "day": "2026-04-18",
+        "from_ms": 1776540600000,
+        "to_ms": 1776542400000
+      },
       "status": "not_found",
-      "reason": "paused_window",
+      "ui_tone": "neutral",
+      "answer": "I couldn't find this in the records for 2026-04-18.",
       "sentences": [
         {
-          "text": "I found nothing in your records about this.",
+          "text": "I couldn't find this in the records for 2026-04-18.",
           "evidence": []
         }
-      ]
+      ],
+      "evidence": [],
+      "evidence_considered": 0,
+      "score": 0.0,
+      "reason": "paused_window",
+      "reasons": [
+        "paused_window"
+      ],
+      "reason_text": "Recording was paused for that whole window.",
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "hero",
+      "provider": "precomputed",
+      "golden": {
+        "expected_status": "not_found",
+        "trap": "paused_window",
+        "must_cite_any": [],
+        "status_match": true,
+        "citation_hit": true
+      }
     },
     {
       "id": "qa_23",
       "question": "What was I doing at 10 pm?",
+      "locale": "en",
+      "scope": {
+        "all_days": false,
+        "day": "2026-04-18",
+        "from_ms": 1776573900000,
+        "to_ms": 1776575700000
+      },
       "status": "not_found",
-      "reason": "out_of_window",
+      "ui_tone": "neutral",
+      "answer": "I couldn't find this in the records for 2026-04-18.",
       "sentences": [
         {
-          "text": "I found nothing in your records about this.",
+          "text": "I couldn't find this in the records for 2026-04-18.",
           "evidence": []
         }
-      ]
+      ],
+      "evidence": [],
+      "evidence_considered": 0,
+      "score": 0.0,
+      "reason": "no_evidence",
+      "reasons": [
+        "no_evidence"
+      ],
+      "reason_text": "No matching records.",
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "hero",
+      "provider": "precomputed",
+      "golden": {
+        "expected_status": "not_found",
+        "trap": "out_of_window",
+        "must_cite_any": [],
+        "status_match": true,
+        "citation_hit": true
+      }
     },
     {
       "id": "qa_24",
       "question": "What did she say would be ready on Tuesday?",
+      "locale": "en",
+      "scope": {
+        "all_days": false,
+        "day": "2026-04-18",
+        "from_ms": null,
+        "to_ms": null
+      },
       "status": "uncertain",
-      "reason": "ambiguous_speaker",
+      "ui_tone": "amber",
+      "answer": "It's unclear which person 'she' refers to. One speaker said \"The replacement switch should arrive Tuesday\" (repair cafe), while another said \"That lamp repair manual you reserved will be ready Tuesday afternoon\" (library).",
       "sentences": [
         {
-          "text": "Evidence is weak. The replacement switch should arrive Tuesday, I will text you the tracking number.",
+          "text": "It's unclear which person 'she' refers to. One speaker said \"The replacement switch should arrive Tuesday\" (repair cafe), while another said \"That lamp repair manual you reserved will be ready Tuesday afternoon\" (library).",
           "evidence": [
-            "utt_01JRQ4H8ZE0000000000000118",
-            "utt_01JRQ4H8ZE0000000000000163",
-            "utt_01JRQ4H8ZE0000000000000141"
+            "E4",
+            "E8"
+          ],
+          "quote": "The replacement switch should arrive Tuesday"
+        }
+      ],
+      "evidence": [
+        {
+          "handle": "E4",
+          "kind": "utterance",
+          "id": "utt_01JRQ4H8ZE0000000000000118",
+          "day": "2026-04-18",
+          "ts": 1776545520000,
+          "ts_end": 1776545526500,
+          "ts_local": "2026-04-18T13:52:00-07:00",
+          "label": "Speaker B · Speech",
+          "thumb_hint": null,
+          "frame_id": null,
+          "source_conf": 0.84,
+          "score": 0.67,
+          "certainty": "confident",
+          "quote": "The replacement switch should arrive Tuesday",
+          "open_url": "/day/2026-04-18?t=1776545520000&focus=utt_01JRQ4H8ZE0000000000000118"
+        },
+        {
+          "handle": "E8",
+          "kind": "utterance",
+          "id": "utt_01JRQ4H8ZE0000000000000163",
+          "day": "2026-04-18",
+          "ts": 1776558035400,
+          "ts_end": 1776558037300,
+          "ts_local": "2026-04-18T17:20:35.400000-07:00",
+          "label": "Speaker D · Speech",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000119.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000119",
+          "source_conf": 0.83,
+          "score": 0.82,
+          "certainty": "confident",
+          "quote": "That lamp repair manual you reserved will be ready Tuesday afternoon",
+          "open_url": "/day/2026-04-18?t=1776558035400&focus=utt_01JRQ4H8ZE0000000000000163"
+        }
+      ],
+      "evidence_considered": 43,
+      "score": 0.82,
+      "reason": "model_uncertain",
+      "reasons": [
+        "model_uncertain"
+      ],
+      "reason_text": "Uncertain: the records don't settle this on their own.",
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "hero",
+      "provider": "precomputed",
+      "golden": {
+        "expected_status": "uncertain",
+        "trap": "ambiguous_speaker",
+        "must_cite_any": [
+          "utt_01JRQ4H8ZE0000000000000118",
+          "utt_01JRQ4H8ZE0000000000000163",
+          "utt_01JRQ4H8ZE0000000000000141"
+        ],
+        "status_match": true,
+        "citation_hit": true
+      }
+    },
+    {
+      "id": "yq_01",
+      "question": "When did I last see Mira?",
+      "locale": "en",
+      "scope": {
+        "all_days": true,
+        "day": null,
+        "from_ms": null,
+        "to_ms": null
+      },
+      "status": "not_found",
+      "ui_tone": "neutral",
+      "answer": "I couldn't find this in the records for 2025-11-19 – 2026-11-18.",
+      "sentences": [
+        {
+          "text": "I couldn't find this in the records for 2025-11-19 – 2026-11-18.",
+          "evidence": []
+        }
+      ],
+      "evidence": [],
+      "evidence_considered": 47,
+      "score": 0.0,
+      "reason": "no_evidence",
+      "reasons": [
+        "no_evidence"
+      ],
+      "reason_text": "No matching records.",
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "year",
+      "provider": "precomputed"
+    },
+    {
+      "id": "yq_02",
+      "question": "Where did I leave my reading glasses?",
+      "locale": "en",
+      "scope": {
+        "all_days": true,
+        "day": null,
+        "from_ms": null,
+        "to_ms": null
+      },
+      "status": "uncertain",
+      "ui_tone": "amber",
+      "answer": "The last clear record places the tortoiseshell reading glasses behind the jar of screws on the shelf above the bench at home. A later detection is unclear: it only possibly shows the glasses, partly hidden, on Tram line 4.",
+      "sentences": [
+        {
+          "text": "The last clear record places the tortoiseshell reading glasses behind the jar of screws on the shelf above the bench at home.",
+          "evidence": [
+            "E11"
+          ]
+        },
+        {
+          "text": "A later detection is unclear: it only possibly shows the glasses, partly hidden, on Tram line 4.",
+          "evidence": [
+            "E12"
           ]
         }
-      ]
+      ],
+      "evidence": [
+        {
+          "handle": "E11",
+          "kind": "sighting",
+          "id": "frm_01JY2026111500000000000117",
+          "day": "2026-11-15",
+          "ts": 1794789600000,
+          "ts_end": 1794789600000,
+          "ts_local": "2026-11-15T16:40:00-08:00",
+          "label": "Reading glasses · 0.68",
+          "thumb_hint": "year/highlights/hl_20261115_4.webp",
+          "frame_id": "frm_01JY2026111500000000000117",
+          "source_conf": 0.68,
+          "score": 0.68,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-11-15?t=1794789600000&focus=frm_01JY2026111500000000000117"
+        },
+        {
+          "handle": "E12",
+          "kind": "sighting",
+          "id": "frm_01JY2026111800000000000005",
+          "day": "2026-11-18",
+          "ts": 1795017000000,
+          "ts_end": 1795017000000,
+          "ts_local": "2026-11-18T07:50:00-08:00",
+          "label": "Reading glasses · 0.41",
+          "thumb_hint": "year/highlights/hl_20261118_1.webp",
+          "frame_id": "frm_01JY2026111800000000000005",
+          "source_conf": 0.41,
+          "score": 0.41,
+          "certainty": "uncertain",
+          "quote": null,
+          "open_url": "/day/2026-11-18?t=1795017000000&focus=frm_01JY2026111800000000000005"
+        }
+      ],
+      "evidence_considered": 61,
+      "score": 0.68,
+      "reason": "model_uncertain",
+      "reasons": [
+        "model_uncertain"
+      ],
+      "reason_text": "Uncertain: the records don't settle this on their own.",
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "year",
+      "provider": "precomputed"
+    },
+    {
+      "id": "yq_03",
+      "question": "What did the pharmacist say about my refill?",
+      "locale": "en",
+      "scope": {
+        "all_days": true,
+        "day": null,
+        "from_ms": null,
+        "to_ms": null
+      },
+      "status": "not_found",
+      "ui_tone": "neutral",
+      "answer": "I couldn't find this in the records for 2025-11-19 – 2026-11-18.",
+      "sentences": [
+        {
+          "text": "I couldn't find this in the records for 2025-11-19 – 2026-11-18.",
+          "evidence": []
+        }
+      ],
+      "evidence": [],
+      "evidence_considered": 53,
+      "score": 0.0,
+      "reason": "no_evidence",
+      "reasons": [
+        "no_evidence"
+      ],
+      "reason_text": "No matching records.",
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "year",
+      "provider": "precomputed"
+    },
+    {
+      "id": "yq_04",
+      "question": "Where are my keys?",
+      "locale": "en",
+      "scope": {
+        "all_days": true,
+        "day": null,
+        "from_ms": null,
+        "to_ms": null
+      },
+      "status": "uncertain",
+      "ui_tone": "amber",
+      "answer": "The most recent record is only an unclear detection: it may show the keys being dropped into the canvas tote with the library card, but the keys are described as partly hidden, so it does not settle where they are. Shortly before that, they were recorded in your pocket while riding the tram.",
+      "sentences": [
+        {
+          "text": "The most recent record is only an unclear detection: it may show the keys being dropped into the canvas tote with the library card, but the keys are described as partly hidden, so it does not settle where they are.",
+          "evidence": [
+            "E12"
+          ],
+          "quote": "Unclear detection: possibly Keys, small and partly hidden in the frame at Home."
+        },
+        {
+          "text": "Shortly before that, they were recorded in your pocket while riding the tram.",
+          "evidence": [
+            "E11"
+          ],
+          "quote": "keys in your pocket"
+        }
+      ],
+      "evidence": [
+        {
+          "handle": "E11",
+          "kind": "sighting",
+          "id": "frm_01JY2026111500000000000151",
+          "day": "2026-11-15",
+          "ts": 1794799800000,
+          "ts_end": 1794799800000,
+          "ts_local": "2026-11-15T19:30:00-08:00",
+          "label": "Keys · 0.67",
+          "thumb_hint": "year/highlights/hl_20261115_5.webp",
+          "frame_id": "frm_01JY2026111500000000000151",
+          "source_conf": 0.67,
+          "score": 0.67,
+          "certainty": "confident",
+          "quote": "keys in your pocket",
+          "open_url": "/day/2026-11-15?t=1794799800000&focus=frm_01JY2026111500000000000151"
+        },
+        {
+          "handle": "E12",
+          "kind": "sighting",
+          "id": "frm_01JY2026111700000000000004",
+          "day": "2026-11-17",
+          "ts": 1794932400000,
+          "ts_end": 1794932400000,
+          "ts_local": "2026-11-17T08:20:00-08:00",
+          "label": "Keys · 0.38",
+          "thumb_hint": "year/highlights/hl_20261117_1.webp",
+          "frame_id": "frm_01JY2026111700000000000004",
+          "source_conf": 0.38,
+          "score": 0.38,
+          "certainty": "uncertain",
+          "quote": "Unclear detection: possibly Keys, small and partly hidden in the frame at Home.",
+          "open_url": "/day/2026-11-17?t=1794932400000&focus=frm_01JY2026111700000000000004"
+        }
+      ],
+      "evidence_considered": 64,
+      "score": 0.67,
+      "reason": "model_uncertain",
+      "reasons": [
+        "model_uncertain"
+      ],
+      "reason_text": "Uncertain: the records don't settle this on their own.",
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "year",
+      "provider": "precomputed"
+    },
+    {
+      "id": "yq_05",
+      "question": "When did the replacement switch for the desk lamp arrive?",
+      "locale": "en",
+      "scope": {
+        "all_days": true,
+        "day": null,
+        "from_ms": null,
+        "to_ms": null
+      },
+      "status": "answered",
+      "ui_tone": "neutral",
+      "answer": "Your replacement switch arrived in the post on 21 April 2026, delivered in a small padded envelope.",
+      "sentences": [
+        {
+          "text": "Your replacement switch arrived in the post on 21 April 2026, delivered in a small padded envelope.",
+          "evidence": [
+            "E6",
+            "E7"
+          ],
+          "quote": "The replacement switch arrives in the post"
+        }
+      ],
+      "evidence": [
+        {
+          "handle": "E6",
+          "kind": "day",
+          "id": "2026-04-21",
+          "day": "2026-04-21",
+          "ts": 1776781200000,
+          "ts_end": 1776831300000,
+          "ts_local": "2026-04-21T07:20:00-07:00",
+          "label": "Day",
+          "thumb_hint": "year/highlights/hl_20260421_3.webp",
+          "frame_id": "frm_01JY2026042100000000000041",
+          "source_conf": 0.8,
+          "score": 0.79,
+          "certainty": "confident",
+          "quote": "The replacement switch arrives in the post",
+          "open_url": "/day/2026-04-21?t=1776781200000&focus=2026-04-21"
+        },
+        {
+          "handle": "E7",
+          "kind": "highlight",
+          "id": "hl_20260421_1",
+          "day": "2026-04-21",
+          "ts": 1776784500000,
+          "ts_end": 1776784500000,
+          "ts_local": "2026-04-21T08:15:00-07:00",
+          "label": "Highlight · Home",
+          "thumb_hint": "year/highlights/hl_20260421_1.webp",
+          "frame_id": "frm_01JY2026042100000000000012",
+          "source_conf": 0.8,
+          "score": 0.66,
+          "certainty": "confident",
+          "quote": "The switch arrives in a padded envelope.",
+          "open_url": "/day/2026-04-21?t=1776784500000&focus=hl_20260421_1"
+        }
+      ],
+      "evidence_considered": 61,
+      "score": 0.79,
+      "reason": null,
+      "reasons": [],
+      "reason_text": null,
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "year",
+      "provider": "precomputed"
+    },
+    {
+      "id": "yq_06",
+      "question": "What did I see on the Saltmere trip?",
+      "locale": "en",
+      "scope": {
+        "all_days": true,
+        "day": null,
+        "from_ms": null,
+        "to_ms": null
+      },
+      "status": "answered",
+      "ui_tone": "neutral",
+      "answer": "On the Saltmere trip you saw gulls over the platform and could already hear the water. On the train you sketched the coastline out the window and wrote down three things you wanted to see. Leaving Saltmere, you watched the sea slide away.",
+      "sentences": [
+        {
+          "text": "On the Saltmere trip you saw gulls over the platform and could already hear the water.",
+          "evidence": [
+            "E5"
+          ]
+        },
+        {
+          "text": "On the train you sketched the coastline out the window and wrote down three things you wanted to see.",
+          "evidence": [
+            "E8"
+          ]
+        },
+        {
+          "text": "Leaving Saltmere, you watched the sea slide away.",
+          "evidence": [
+            "E9"
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "handle": "E5",
+          "kind": "highlight",
+          "id": "hl_20260502_4",
+          "day": "2026-05-02",
+          "ts": 1777765500000,
+          "ts_end": 1777765500000,
+          "ts_local": "2026-05-02T16:45:00-07:00",
+          "label": "Highlight · Saltmere (trip)",
+          "thumb_hint": "year/highlights/hl_20260502_4.webp",
+          "frame_id": "frm_01JY2026050200000000000112",
+          "source_conf": 0.8,
+          "score": 0.69,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-05-02?t=1777765500000&focus=hl_20260502_4"
+        },
+        {
+          "handle": "E8",
+          "kind": "highlight",
+          "id": "hl_20260522_3",
+          "day": "2026-05-22",
+          "ts": 1779466800000,
+          "ts_end": 1779466800000,
+          "ts_local": "2026-05-22T09:20:00-07:00",
+          "label": "Highlight · Saltmere (trip)",
+          "thumb_hint": "year/highlights/hl_20260522_3.webp",
+          "frame_id": "frm_01JY2026052200000000000032",
+          "source_conf": 0.8,
+          "score": 0.72,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-05-22?t=1779466800000&focus=hl_20260522_3"
+        },
+        {
+          "handle": "E9",
+          "kind": "highlight",
+          "id": "hl_20260525_2",
+          "day": "2026-05-25",
+          "ts": 1779725400000,
+          "ts_end": 1779725400000,
+          "ts_local": "2026-05-25T09:10:00-07:00",
+          "label": "Highlight · Saltmere (trip)",
+          "thumb_hint": "year/highlights/hl_20260525_2.webp",
+          "frame_id": "frm_01JY2026052500000000000027",
+          "source_conf": 0.8,
+          "score": 0.66,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-05-25?t=1779725400000&focus=hl_20260525_2"
+        }
+      ],
+      "evidence_considered": 53,
+      "score": 0.72,
+      "reason": null,
+      "reasons": [],
+      "reason_text": null,
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "year",
+      "provider": "precomputed"
+    },
+    {
+      "id": "yq_07",
+      "question": "When was the repair cafe's anniversary party?",
+      "locale": "en",
+      "scope": {
+        "all_days": true,
+        "day": null,
+        "from_ms": null,
+        "to_ms": null
+      },
+      "status": "answered",
+      "ui_tone": "neutral",
+      "answer": "The latest record places the repair cafe's fifth-anniversary party on October 24. An earlier record had the anniversary party on October 10.",
+      "sentences": [
+        {
+          "text": "The latest record places the repair cafe's fifth-anniversary party on October 24.",
+          "evidence": [
+            "E12"
+          ]
+        },
+        {
+          "text": "An earlier record had the anniversary party on October 10.",
+          "evidence": [
+            "E8"
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "handle": "E8",
+          "kind": "day",
+          "id": "2026-10-10",
+          "day": "2026-10-10",
+          "ts": 1791644400000,
+          "ts_end": 1791682200000,
+          "ts_local": "2026-10-10T08:00:00-07:00",
+          "label": "Day",
+          "thumb_hint": "year/highlights/hl_20261010_3.webp",
+          "frame_id": "frm_01JY2026101000000000000055",
+          "source_conf": 0.8,
+          "score": 0.8,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-10-10?t=1791644400000&focus=2026-10-10"
+        },
+        {
+          "handle": "E12",
+          "kind": "day",
+          "id": "2026-10-24",
+          "day": "2026-10-24",
+          "ts": 1792857000000,
+          "ts_end": 1792902000000,
+          "ts_local": "2026-10-24T08:50:00-07:00",
+          "label": "Day",
+          "thumb_hint": "year/highlights/hl_20261024_1.webp",
+          "frame_id": "frm_01JY2026102400000000000003",
+          "source_conf": 0.8,
+          "score": 0.65,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-10-24?t=1792857000000&focus=2026-10-24"
+        }
+      ],
+      "evidence_considered": 66,
+      "score": 0.8,
+      "reason": null,
+      "reasons": [],
+      "reason_text": null,
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "year",
+      "provider": "precomputed"
+    },
+    {
+      "id": "yq_08",
+      "question": "When did I last go swimming?",
+      "locale": "en",
+      "scope": {
+        "all_days": true,
+        "day": null,
+        "from_ms": null,
+        "to_ms": null
+      },
+      "status": "uncertain",
+      "ui_tone": "amber",
+      "answer": "Your last recorded swim was a morning pool session on August 30, 2026, before a long Sunday dinner later that day.",
+      "sentences": [
+        {
+          "text": "Your last recorded swim was a morning pool session on August 30, 2026, before a long Sunday dinner later that day.",
+          "evidence": [
+            "E10"
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "handle": "E10",
+          "kind": "day",
+          "id": "2026-08-30",
+          "day": "2026-08-30",
+          "ts": 1788101400000,
+          "ts_end": 1788150600000,
+          "ts_local": "2026-08-30T07:50:00-07:00",
+          "label": "Day",
+          "thumb_hint": "year/highlights/hl_20260830_3.webp",
+          "frame_id": "frm_01JY2026083000000000000063",
+          "source_conf": 0.8,
+          "score": 0.64,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-08-30?t=1788101400000&focus=2026-08-30"
+        }
+      ],
+      "evidence_considered": 57,
+      "score": 0.64,
+      "reason": "below_answer_min",
+      "reasons": [
+        "below_answer_min"
+      ],
+      "reason_text": "Uncertain: the best supporting evidence scores 0.64, below the 0.70 needed to answer.",
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": "uncertain"
+      },
+      "mode": "year",
+      "provider": "precomputed"
+    },
+    {
+      "id": "yq_09",
+      "question": "Where did I find the tape measure in August?",
+      "locale": "en",
+      "scope": {
+        "all_days": true,
+        "day": null,
+        "from_ms": null,
+        "to_ms": null,
+        "months": [
+          "2026-08"
+        ]
+      },
+      "status": "answered",
+      "ui_tone": "neutral",
+      "answer": "You found the yellow tape measure under a rag in the tote; later in August, both yellow tape measures were in the drawer.",
+      "sentences": [
+        {
+          "text": "You found the yellow tape measure under a rag in the tote; later in August, both yellow tape measures were in the drawer.",
+          "evidence": [
+            "E10",
+            "E12"
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "handle": "E10",
+          "kind": "highlight",
+          "id": "hl_20260818_3",
+          "day": "2026-08-18",
+          "ts": 1787076000000,
+          "ts_end": 1787076000000,
+          "ts_local": "2026-08-18T11:00:00-07:00",
+          "label": "Highlight · Home",
+          "thumb_hint": "year/highlights/hl_20260818_3.webp",
+          "frame_id": "frm_01JY2026081800000000000037",
+          "source_conf": 0.8,
+          "score": 0.66,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-08-18?t=1787076000000&focus=hl_20260818_3"
+        },
+        {
+          "handle": "E12",
+          "kind": "highlight",
+          "id": "hl_20260831_5",
+          "day": "2026-08-31",
+          "ts": 1788229800000,
+          "ts_end": 1788229800000,
+          "ts_local": "2026-08-31T19:30:00-07:00",
+          "label": "Highlight · Home",
+          "thumb_hint": "year/highlights/hl_20260831_5.webp",
+          "frame_id": "frm_01JY2026083100000000000131",
+          "source_conf": 0.8,
+          "score": 0.76,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-08-31?t=1788229800000&focus=hl_20260831_5"
+        }
+      ],
+      "evidence_considered": 48,
+      "score": 0.76,
+      "reason": null,
+      "reasons": [],
+      "reason_text": null,
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "year",
+      "provider": "precomputed"
+    },
+    {
+      "id": "yq_10",
+      "question": "Who was at Thanksgiving?",
+      "locale": "en",
+      "scope": {
+        "all_days": true,
+        "day": null,
+        "from_ms": null,
+        "to_ms": null
+      },
+      "status": "uncertain",
+      "ui_tone": "amber",
+      "answer": "Thanksgiving was at your sister's house, with a toast at the family's request, but the record doesn't list who attended. A radio for Pip is mentioned, but it's unclear whether Pip was present.",
+      "sentences": [
+        {
+          "text": "Thanksgiving was at your sister's house, with a toast at the family's request, but the record doesn't list who attended.",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "text": "A radio for Pip is mentioned, but it's unclear whether Pip was present.",
+          "evidence": [
+            "E1"
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "handle": "E1",
+          "kind": "day",
+          "id": "2025-11-27",
+          "day": "2025-11-27",
+          "ts": 1764261000000,
+          "ts_end": 1764312000000,
+          "ts_local": "2025-11-27T08:30:00-08:00",
+          "label": "Day",
+          "thumb_hint": "year/highlights/hl_20251127_3.webp",
+          "frame_id": "frm_01JY2025112700000000000055",
+          "source_conf": 0.8,
+          "score": 0.79,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2025-11-27?t=1764261000000&focus=2025-11-27"
+        }
+      ],
+      "evidence_considered": 40,
+      "score": 0.79,
+      "reason": "model_uncertain",
+      "reasons": [
+        "model_uncertain"
+      ],
+      "reason_text": "Uncertain: the records don't settle this on their own.",
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "year",
+      "provider": "precomputed"
+    },
+    {
+      "id": "yq_11",
+      "question": "What did June and I make in the bookbinding class?",
+      "locale": "en",
+      "scope": {
+        "all_days": true,
+        "day": null,
+        "from_ms": null,
+        "to_ms": null
+      },
+      "status": "not_found",
+      "ui_tone": "neutral",
+      "answer": "I couldn't find this in the records for 2025-11-19 – 2026-11-18.",
+      "sentences": [
+        {
+          "text": "I couldn't find this in the records for 2025-11-19 – 2026-11-18.",
+          "evidence": []
+        }
+      ],
+      "evidence": [],
+      "evidence_considered": 46,
+      "score": 0.0,
+      "reason": "no_evidence",
+      "reasons": [
+        "no_evidence"
+      ],
+      "reason_text": "No matching records.",
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "year",
+      "provider": "precomputed"
+    },
+    {
+      "id": "yq_12",
+      "question": "When did I buy the multimeter?",
+      "locale": "en",
+      "scope": {
+        "all_days": true,
+        "day": null,
+        "from_ms": null,
+        "to_ms": null
+      },
+      "status": "uncertain",
+      "ui_tone": "amber",
+      "answer": "The latest record of you buying a multimeter is 17 January 2026, at the corner hardware store, where you compared two meters and took the one with the clearer dial and simpler probes. An earlier record on 2 January 2026 also has you buying a multimeter and a reel of solder on the way home, so two purchases are recorded and the later one is the most recent.",
+      "sentences": [
+        {
+          "text": "The latest record of you buying a multimeter is 17 January 2026, at the corner hardware store, where you compared two meters and took the one with the clearer dial and simpler probes.",
+          "evidence": [
+            "E6",
+            "E7"
+          ]
+        },
+        {
+          "text": "An earlier record on 2 January 2026 also has you buying a multimeter and a reel of solder on the way home, so two purchases are recorded and the later one is the most recent.",
+          "evidence": [
+            "E4",
+            "E5"
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "handle": "E4",
+          "kind": "day",
+          "id": "2026-01-02",
+          "day": "2026-01-02",
+          "ts": 1767369900000,
+          "ts_end": 1767406800000,
+          "ts_local": "2026-01-02T08:05:00-08:00",
+          "label": "Day",
+          "thumb_hint": "year/highlights/hl_20260102_1.webp",
+          "frame_id": "frm_01JY2026010200000000000008",
+          "source_conf": 0.8,
+          "score": 0.39,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-01-02?t=1767369900000&focus=2026-01-02"
+        },
+        {
+          "handle": "E5",
+          "kind": "highlight",
+          "id": "hl_20260102_2",
+          "day": "2026-01-02",
+          "ts": 1767383400000,
+          "ts_end": 1767383400000,
+          "ts_local": "2026-01-02T11:50:00-08:00",
+          "label": "Highlight · Corner hardware store",
+          "thumb_hint": "year/highlights/hl_20260102_2.webp",
+          "frame_id": "frm_01JY2026010200000000000046",
+          "source_conf": 0.8,
+          "score": 0.65,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-01-02?t=1767383400000&focus=hl_20260102_2"
+        },
+        {
+          "handle": "E6",
+          "kind": "day",
+          "id": "2026-01-17",
+          "day": "2026-01-17",
+          "ts": 1768667400000,
+          "ts_end": 1768702800000,
+          "ts_local": "2026-01-17T08:30:00-08:00",
+          "label": "Day",
+          "thumb_hint": "year/highlights/hl_20260117_2.webp",
+          "frame_id": "frm_01JY2026011700000000000025",
+          "source_conf": 0.8,
+          "score": 0.39,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-01-17?t=1768667400000&focus=2026-01-17"
+        },
+        {
+          "handle": "E7",
+          "kind": "highlight",
+          "id": "hl_20260117_1",
+          "day": "2026-01-17",
+          "ts": 1768670100000,
+          "ts_end": 1768670100000,
+          "ts_local": "2026-01-17T09:15:00-08:00",
+          "label": "Highlight · Corner hardware store",
+          "thumb_hint": "year/highlights/hl_20260117_1.webp",
+          "frame_id": "frm_01JY2026011700000000000010",
+          "source_conf": 0.8,
+          "score": 0.57,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-01-17?t=1768670100000&focus=hl_20260117_1"
+        }
+      ],
+      "evidence_considered": 74,
+      "score": 0.65,
+      "reason": "below_answer_min",
+      "reasons": [
+        "below_answer_min"
+      ],
+      "reason_text": "Uncertain: the best supporting evidence scores 0.65, below the 0.70 needed to answer.",
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": "uncertain"
+      },
+      "mode": "year",
+      "provider": "precomputed"
+    },
+    {
+      "id": "yq_13",
+      "question": "What did I do on June 14?",
+      "locale": "en",
+      "scope": {
+        "all_days": false,
+        "day": "2026-06-14",
+        "from_ms": null,
+        "to_ms": null
+      },
+      "status": "not_found",
+      "ui_tone": "neutral",
+      "answer": "I couldn't find this in the records for 2026-06-14.",
+      "sentences": [
+        {
+          "text": "I couldn't find this in the records for 2026-06-14.",
+          "evidence": []
+        }
+      ],
+      "evidence": [],
+      "evidence_considered": 0,
+      "score": 0.0,
+      "reason": "paused_window",
+      "reasons": [
+        "paused_window"
+      ],
+      "reason_text": "Recording was paused for that whole window.",
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "year",
+      "provider": "precomputed"
+    },
+    {
+      "id": "yq_14",
+      "question": "What did I do on May 29?",
+      "locale": "en",
+      "scope": {
+        "all_days": false,
+        "day": "2026-05-29",
+        "from_ms": null,
+        "to_ms": null
+      },
+      "status": "not_found",
+      "ui_tone": "neutral",
+      "answer": "I couldn't find this in the records for 2026-05-29.",
+      "sentences": [
+        {
+          "text": "I couldn't find this in the records for 2026-05-29.",
+          "evidence": []
+        }
+      ],
+      "evidence": [],
+      "evidence_considered": 0,
+      "score": 0.0,
+      "reason": "no_evidence",
+      "reasons": [
+        "no_evidence"
+      ],
+      "reason_text": "No matching records. You deleted this day's records.",
+      "note": "deleted_by_owner",
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "year",
+      "provider": "precomputed"
+    },
+    {
+      "id": "yq_15",
+      "question": "Which costumes did I fix for the Larsen kids?",
+      "locale": "en",
+      "scope": {
+        "all_days": true,
+        "day": null,
+        "from_ms": null,
+        "to_ms": null
+      },
+      "status": "uncertain",
+      "ui_tone": "amber",
+      "answer": "You repaired costumes for the kids, but the records do not name which costumes. One costume involved a robot arm and a loose wrist strap you glued.",
+      "sentences": [
+        {
+          "text": "You repaired costumes for the kids, but the records do not name which costumes.",
+          "evidence": [
+            "E10",
+            "E12"
+          ]
+        },
+        {
+          "text": "One costume involved a robot arm and a loose wrist strap you glued.",
+          "evidence": [
+            "E11"
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "handle": "E10",
+          "kind": "highlight",
+          "id": "hl_20261015_2",
+          "day": "2026-10-15",
+          "ts": 1792089000000,
+          "ts_end": 1792089000000,
+          "ts_local": "2026-10-15T11:30:00-07:00",
+          "label": "Highlight · Home",
+          "thumb_hint": "year/highlights/hl_20261015_2.webp",
+          "frame_id": "frm_01JY2026101500000000000055",
+          "source_conf": 0.8,
+          "score": 0.8,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-10-15?t=1792089000000&focus=hl_20261015_2"
+        },
+        {
+          "handle": "E11",
+          "kind": "highlight",
+          "id": "hl_20261030_5",
+          "day": "2026-10-30",
+          "ts": 1793403600000,
+          "ts_end": 1793403600000,
+          "ts_local": "2026-10-30T16:40:00-07:00",
+          "label": "Highlight · Home",
+          "thumb_hint": "year/highlights/hl_20261030_5.webp",
+          "frame_id": "frm_01JY2026103000000000000103",
+          "source_conf": 0.8,
+          "score": 0.7,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-10-30?t=1793403600000&focus=hl_20261030_5"
+        },
+        {
+          "handle": "E12",
+          "kind": "day",
+          "id": "2026-10-31",
+          "day": "2026-10-31",
+          "ts": 1793461800000,
+          "ts_end": 1793508000000,
+          "ts_local": "2026-10-31T08:50:00-07:00",
+          "label": "Day",
+          "thumb_hint": "year/highlights/hl_20261031_1.webp",
+          "frame_id": "frm_01JY2026103100000000000005",
+          "source_conf": 0.8,
+          "score": 0.66,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-10-31?t=1793461800000&focus=2026-10-31"
+        }
+      ],
+      "evidence_considered": 52,
+      "score": 0.8,
+      "reason": "model_uncertain",
+      "reasons": [
+        "model_uncertain"
+      ],
+      "reason_text": "Uncertain: the records don't settle this on their own.",
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "year",
+      "provider": "precomputed"
+    },
+    {
+      "id": "yq_16",
+      "question": "What's the name of the cashier at the bakery?",
+      "locale": "en",
+      "scope": {
+        "all_days": true,
+        "day": null,
+        "from_ms": null,
+        "to_ms": null
+      },
+      "status": "not_found",
+      "ui_tone": "neutral",
+      "answer": "I couldn't find this in the records for 2025-11-19 – 2026-11-18.",
+      "sentences": [
+        {
+          "text": "I couldn't find this in the records for 2025-11-19 – 2026-11-18.",
+          "evidence": []
+        }
+      ],
+      "evidence": [],
+      "evidence_considered": 55,
+      "score": 0.0,
+      "reason": "no_evidence",
+      "reasons": [
+        "no_evidence"
+      ],
+      "reason_text": "No matching records.",
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "year",
+      "provider": "precomputed"
+    },
+    {
+      "id": "yq_17",
+      "question": "What did Pip and I fix on his scooter?",
+      "locale": "en",
+      "scope": {
+        "all_days": true,
+        "day": null,
+        "from_ms": null,
+        "to_ms": null
+      },
+      "status": "answered",
+      "ui_tone": "neutral",
+      "answer": "You and Pip fixed the scooter's soft wheel: the bearing was cleaned, the axle greased, and the wheel spun free; Pip did the last screw while you held the frame steady.",
+      "sentences": [
+        {
+          "text": "You and Pip fixed the scooter's soft wheel: the bearing was cleaned, the axle greased, and the wheel spun free; Pip did the last screw while you held the frame steady.",
+          "evidence": [
+            "E9"
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "handle": "E9",
+          "kind": "day",
+          "id": "2026-07-23",
+          "day": "2026-07-23",
+          "ts": 1784823600000,
+          "ts_end": 1784867700000,
+          "ts_local": "2026-07-23T09:20:00-07:00",
+          "label": "Day",
+          "thumb_hint": "year/highlights/hl_20260723_1.webp",
+          "frame_id": "frm_01JY2026072300000000000005",
+          "source_conf": 0.8,
+          "score": 0.79,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-07-23?t=1784823600000&focus=2026-07-23"
+        }
+      ],
+      "evidence_considered": 64,
+      "score": 0.79,
+      "reason": null,
+      "reasons": [],
+      "reason_text": null,
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "year",
+      "provider": "precomputed"
+    },
+    {
+      "id": "yq_18",
+      "question": "When did I make dumplings with the neighbors?",
+      "locale": "en",
+      "scope": {
+        "all_days": true,
+        "day": null,
+        "from_ms": null,
+        "to_ms": null
+      },
+      "status": "uncertain",
+      "ui_tone": "amber",
+      "answer": "The records show dumpling making for a neighborhood dinner on February 13, but the folding session that day names family, not neighbors; another folding session on February 17 includes other people but does not label them as neighbors.",
+      "sentences": [
+        {
+          "text": "The records show dumpling making for a neighborhood dinner on February 13, but the folding session that day names family, not neighbors; another folding session on February 17 includes other people but does not label them as neighbors.",
+          "evidence": [
+            "E2",
+            "E4",
+            "E7"
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "handle": "E2",
+          "kind": "day",
+          "id": "2026-02-13",
+          "day": "2026-02-13",
+          "ts": 1771000200000,
+          "ts_end": 1771040700000,
+          "ts_local": "2026-02-13T08:30:00-08:00",
+          "label": "Day",
+          "thumb_hint": "year/highlights/hl_20260213_1.webp",
+          "frame_id": "frm_01JY2026021300000000000005",
+          "source_conf": 0.8,
+          "score": 0.79,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-02-13?t=1771000200000&focus=2026-02-13"
+        },
+        {
+          "handle": "E4",
+          "kind": "highlight",
+          "id": "hl_20260213_4",
+          "day": "2026-02-13",
+          "ts": 1771024800000,
+          "ts_end": 1771024800000,
+          "ts_local": "2026-02-13T15:20:00-08:00",
+          "label": "Highlight · Home",
+          "thumb_hint": "year/highlights/hl_20260213_4.webp",
+          "frame_id": "frm_01JY2026021300000000000083",
+          "source_conf": 0.8,
+          "score": 0.77,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-02-13?t=1771024800000&focus=hl_20260213_4"
+        },
+        {
+          "handle": "E7",
+          "kind": "highlight",
+          "id": "hl_20260217_3",
+          "day": "2026-02-17",
+          "ts": 1771381800000,
+          "ts_end": 1771381800000,
+          "ts_local": "2026-02-17T18:30:00-08:00",
+          "label": "Highlight · Home",
+          "thumb_hint": "year/highlights/hl_20260217_3.webp",
+          "frame_id": "frm_01JY2026021700000000000127",
+          "source_conf": 0.8,
+          "score": 0.76,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-02-17?t=1771381800000&focus=hl_20260217_3"
+        }
+      ],
+      "evidence_considered": 72,
+      "score": 0.79,
+      "reason": "model_uncertain",
+      "reasons": [
+        "model_uncertain"
+      ],
+      "reason_text": "Uncertain: the records don't settle this on their own.",
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "year",
+      "provider": "precomputed"
+    },
+    {
+      "id": "yq_19",
+      "question": "What did the swim coach say about my stroke?",
+      "locale": "en",
+      "scope": {
+        "all_days": true,
+        "day": null,
+        "from_ms": null,
+        "to_ms": null
+      },
+      "status": "answered",
+      "ui_tone": "neutral",
+      "answer": "The coach had you breathe every third stroke instead of every second, and it got easier. You were told to slow your kick in the last length, and the coach corrected your catch so you practiced a slower catch while being watched from the lane end. Most recently the coach set a slow kick drill, with you counting tiles between breaths.",
+      "sentences": [
+        {
+          "text": "The coach had you breathe every third stroke instead of every second, and it got easier.",
+          "evidence": [
+            "E7"
+          ],
+          "quote": "breathe every third stroke instead of every second"
+        },
+        {
+          "text": "You were told to slow your kick in the last length, and the coach corrected your catch so you practiced a slower catch while being watched from the lane end.",
+          "evidence": [
+            "E9",
+            "E10"
+          ],
+          "quote": "slow your kick in the last length"
+        },
+        {
+          "text": "Most recently the coach set a slow kick drill, with you counting tiles between breaths.",
+          "evidence": [
+            "E12"
+          ],
+          "quote": "The coach sets a slow kick drill"
+        }
+      ],
+      "evidence": [
+        {
+          "handle": "E7",
+          "kind": "highlight",
+          "id": "hl_20260517_1",
+          "day": "2026-05-17",
+          "ts": 1779030000000,
+          "ts_end": 1779030000000,
+          "ts_local": "2026-05-17T08:00:00-07:00",
+          "label": "Highlight · Community pool",
+          "thumb_hint": "year/highlights/hl_20260517_1.webp",
+          "frame_id": "frm_01JY2026051700000000000003",
+          "source_conf": 0.8,
+          "score": 0.67,
+          "certainty": "confident",
+          "quote": "breathe every third stroke instead of every second",
+          "open_url": "/day/2026-05-17?t=1779030000000&focus=hl_20260517_1"
+        },
+        {
+          "handle": "E9",
+          "kind": "highlight",
+          "id": "hl_20260809_1",
+          "day": "2026-08-09",
+          "ts": 1786288500000,
+          "ts_end": 1786288500000,
+          "ts_local": "2026-08-09T08:15:00-07:00",
+          "label": "Highlight · Community pool",
+          "thumb_hint": "year/highlights/hl_20260809_1.webp",
+          "frame_id": "frm_01JY2026080900000000000004",
+          "source_conf": 0.8,
+          "score": 0.68,
+          "certainty": "confident",
+          "quote": "slow your kick in the last length",
+          "open_url": "/day/2026-08-09?t=1786288500000&focus=hl_20260809_1"
+        },
+        {
+          "handle": "E10",
+          "kind": "highlight",
+          "id": "hl_20260920_1",
+          "day": "2026-09-20",
+          "ts": 1789917300000,
+          "ts_end": 1789917300000,
+          "ts_local": "2026-09-20T08:15:00-07:00",
+          "label": "Highlight · Community pool",
+          "thumb_hint": "year/highlights/hl_20260920_1.webp",
+          "frame_id": "frm_01JY2026092000000000000004",
+          "source_conf": 0.8,
+          "score": 0.67,
+          "certainty": "confident",
+          "quote": "Coach corrects your catch.",
+          "open_url": "/day/2026-09-20?t=1789917300000&focus=hl_20260920_1"
+        },
+        {
+          "handle": "E12",
+          "kind": "highlight",
+          "id": "hl_20261011_1",
+          "day": "2026-10-11",
+          "ts": 1791733200000,
+          "ts_end": 1791733200000,
+          "ts_local": "2026-10-11T08:40:00-07:00",
+          "label": "Highlight · Community pool",
+          "thumb_hint": "year/highlights/hl_20261011_1.webp",
+          "frame_id": "frm_01JY2026101100000000000003",
+          "source_conf": 0.8,
+          "score": 0.76,
+          "certainty": "confident",
+          "quote": "The coach sets a slow kick drill",
+          "open_url": "/day/2026-10-11?t=1791733200000&focus=hl_20261011_1"
+        }
+      ],
+      "evidence_considered": 60,
+      "score": 0.76,
+      "reason": null,
+      "reasons": [],
+      "reason_text": null,
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "year",
+      "provider": "precomputed"
+    },
+    {
+      "id": "yq_20",
+      "question": "Did I finish exporting the year book?",
+      "locale": "en",
+      "scope": {
+        "all_days": true,
+        "day": null,
+        "from_ms": null,
+        "to_ms": null
+      },
+      "status": "uncertain",
+      "ui_tone": "amber",
+      "answer": "You exported a first draft of the year book earlier on. The full export later finished, with a bound copy ordered for the shelf above the bench.",
+      "sentences": [
+        {
+          "text": "You exported a first draft of the year book earlier on.",
+          "evidence": [
+            "E7",
+            "E8"
+          ]
+        },
+        {
+          "text": "The full export later finished, with a bound copy ordered for the shelf above the bench.",
+          "evidence": [
+            "E10",
+            "E11"
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "handle": "E7",
+          "kind": "day",
+          "id": "2026-11-06",
+          "day": "2026-11-06",
+          "ts": 1793978400000,
+          "ts_end": 1794025800000,
+          "ts_local": "2026-11-06T07:20:00-08:00",
+          "label": "Day",
+          "thumb_hint": "year/highlights/hl_20261106_2.webp",
+          "frame_id": "frm_01JY2026110600000000000039",
+          "source_conf": 0.8,
+          "score": 0.65,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-11-06?t=1793978400000&focus=2026-11-06"
+        },
+        {
+          "handle": "E8",
+          "kind": "highlight",
+          "id": "hl_20261106_1",
+          "day": "2026-11-06",
+          "ts": 1793980800000,
+          "ts_end": 1793980800000,
+          "ts_local": "2026-11-06T08:00:00-08:00",
+          "label": "Highlight · Home",
+          "thumb_hint": "year/highlights/hl_20261106_1.webp",
+          "frame_id": "frm_01JY2026110600000000000009",
+          "source_conf": 0.8,
+          "score": 0.62,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-11-06?t=1793980800000&focus=hl_20261106_1"
+        },
+        {
+          "handle": "E10",
+          "kind": "day",
+          "id": "2026-11-15",
+          "day": "2026-11-15",
+          "ts": 1794754800000,
+          "ts_end": 1794802800000,
+          "ts_local": "2026-11-15T07:00:00-08:00",
+          "label": "Day",
+          "thumb_hint": "year/highlights/hl_20261115_4.webp",
+          "frame_id": "frm_01JY2026111500000000000117",
+          "source_conf": 0.8,
+          "score": 0.62,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-11-15?t=1794754800000&focus=2026-11-15"
+        },
+        {
+          "handle": "E11",
+          "kind": "highlight",
+          "id": "hl_20261115_3",
+          "day": "2026-11-15",
+          "ts": 1794776400000,
+          "ts_end": 1794776400000,
+          "ts_local": "2026-11-15T13:00:00-08:00",
+          "label": "Highlight · Home",
+          "thumb_hint": "year/highlights/hl_20261115_3.webp",
+          "frame_id": "frm_01JY2026111500000000000073",
+          "source_conf": 0.8,
+          "score": 0.67,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-11-15?t=1794776400000&focus=hl_20261115_3"
+        }
+      ],
+      "evidence_considered": 74,
+      "score": 0.67,
+      "reason": "below_answer_min",
+      "reasons": [
+        "below_answer_min"
+      ],
+      "reason_text": "Uncertain: the best supporting evidence scores 0.67, below the 0.70 needed to answer.",
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": "uncertain"
+      },
+      "mode": "year",
+      "provider": "precomputed"
+    },
+    {
+      "id": "yq_21",
+      "question": "Where did I last see the red toolbox?",
+      "locale": "en",
+      "scope": {
+        "all_days": true,
+        "day": null,
+        "from_ms": null,
+        "to_ms": null
+      },
+      "status": "answered",
+      "ui_tone": "neutral",
+      "answer": "The latest record of the red toolbox puts it in your home workshop, where you tested a radio's power cord and sanded cabinet doors. It had moved there from the Fernhollow Repair Cafe bench and, before that, the tram.",
+      "sentences": [
+        {
+          "text": "The latest record of the red toolbox puts it in your home workshop, where you tested a radio's power cord and sanded cabinet doors.",
+          "evidence": [
+            "E12"
+          ]
+        },
+        {
+          "text": "It had moved there from the Fernhollow Repair Cafe bench and, before that, the tram.",
+          "evidence": [
+            "E10",
+            "E11"
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "handle": "E10",
+          "kind": "highlight",
+          "id": "hl_20261031_1",
+          "day": "2026-10-31",
+          "ts": 1793463000000,
+          "ts_end": 1793463000000,
+          "ts_local": "2026-10-31T09:10:00-07:00",
+          "label": "Highlight · Fernhollow Repair Cafe",
+          "thumb_hint": "year/highlights/hl_20261031_1.webp",
+          "frame_id": "frm_01JY2026103100000000000005",
+          "source_conf": 0.8,
+          "score": 0.64,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-10-31?t=1793463000000&focus=hl_20261031_1"
+        },
+        {
+          "handle": "E11",
+          "kind": "highlight",
+          "id": "hl_20261107_1",
+          "day": "2026-11-07",
+          "ts": 1794067500000,
+          "ts_end": 1794067500000,
+          "ts_local": "2026-11-07T08:05:00-08:00",
+          "label": "Highlight · Tram line 4",
+          "thumb_hint": "year/highlights/hl_20261107_1.webp",
+          "frame_id": "frm_01JY2026110700000000000001",
+          "source_conf": 0.8,
+          "score": 0.71,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-11-07?t=1794067500000&focus=hl_20261107_1"
+        },
+        {
+          "handle": "E12",
+          "kind": "sighting",
+          "id": "frm_01JY2026111700000000000064",
+          "day": "2026-11-17",
+          "ts": 1794950400000,
+          "ts_end": 1794950400000,
+          "ts_local": "2026-11-17T13:20:00-08:00",
+          "label": "Red toolbox · 0.53",
+          "thumb_hint": "year/highlights/hl_20261117_4.webp",
+          "frame_id": "frm_01JY2026111700000000000064",
+          "source_conf": 0.53,
+          "score": 0.53,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-11-17?t=1794950400000&focus=frm_01JY2026111700000000000064"
+        }
+      ],
+      "evidence_considered": 53,
+      "score": 0.71,
+      "reason": null,
+      "reasons": [],
+      "reason_text": null,
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "year",
+      "provider": "precomputed"
+    },
+    {
+      "id": "yq_22",
+      "question": "What did I do on New Year's Eve?",
+      "locale": "en",
+      "scope": {
+        "all_days": false,
+        "day": "2025-12-31",
+        "from_ms": null,
+        "to_ms": null
+      },
+      "status": "answered",
+      "ui_tone": "neutral",
+      "answer": "You spent New Year's Eve at Sis's house, fixing a wobbly chair leg while Pip held the lamp. Dov cooked too much again, and the year ended with a countdown at the kitchen table. The tree lights stayed on through the countdown and everyone clinked glasses at the table.",
+      "sentences": [
+        {
+          "text": "You spent New Year's Eve at Sis's house, fixing a wobbly chair leg while Pip held the lamp.",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "text": "Dov cooked too much again, and the year ended with a countdown at the kitchen table.",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "text": "The tree lights stayed on through the countdown and everyone clinked glasses at the table.",
+          "evidence": [
+            "E2"
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "handle": "E1",
+          "kind": "day",
+          "id": "2025-12-31",
+          "day": "2025-12-31",
+          "ts": 1767222000000,
+          "ts_end": 1767254340000,
+          "ts_local": "2025-12-31T15:00:00-08:00",
+          "label": "Day",
+          "thumb_hint": "year/highlights/hl_20251231_1.webp",
+          "frame_id": "frm_01JY2025123100000000000005",
+          "source_conf": 0.8,
+          "score": 0.8,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2025-12-31?t=1767222000000&focus=2025-12-31"
+        },
+        {
+          "handle": "E2",
+          "kind": "highlight",
+          "id": "hl_20251231_5",
+          "day": "2025-12-31",
+          "ts": 1767254100000,
+          "ts_end": 1767254100000,
+          "ts_local": "2025-12-31T23:55:00-08:00",
+          "label": "Highlight · Sis's house",
+          "thumb_hint": "year/highlights/hl_20251231_5.webp",
+          "frame_id": "frm_01JY2025123100000000000108",
+          "source_conf": 0.8,
+          "score": 0.39,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2025-12-31?t=1767254100000&focus=hl_20251231_5"
+        }
+      ],
+      "evidence_considered": 2,
+      "score": 0.8,
+      "reason": null,
+      "reasons": [],
+      "reason_text": null,
+      "note": null,
+      "validation": {
+        "dropped_citations": 0,
+        "dropped_quotes": 0,
+        "dropped_sentences": 0,
+        "forced_status": null
+      },
+      "mode": "year",
+      "provider": "precomputed"
     }
   ]
 }

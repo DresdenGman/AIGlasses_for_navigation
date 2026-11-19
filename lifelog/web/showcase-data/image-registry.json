@@ -16,39 +16,42 @@
     },
     "home-desk-packing": {
       "kind": "photo",
-      "file": "pov-desk-keys-under-papers.jpg",
-      "src": "/showcase/photos/pov-desk-keys-under-papers.jpg",
-      "thumb": "/showcase/photos/pov-desk-keys-under-papers.jpg",
-      "width": 1536,
-      "height": 1024,
+      "file": "hero-01-home-desk-packing-1448.jpg",
+      "src": "/showcase/photos/hero/hero-01-home-desk-packing-1448.jpg",
+      "thumb": "/showcase/photos/hero/hero-01-home-desk-packing-720.jpg",
+      "width": 1448,
+      "height": 1086,
       "alt": {
-        "en": "Keys partly hidden under papers on a desk",
-        "zh-CN": "钥匙半藏在桌上的纸下面"
-      }
+        "en": "Hands wrapping a worn metal desk lamp in a towel beside an open canvas tote, with a red toolbox and a tray of screwdrivers on the desk",
+        "zh-CN": "双手用毛巾包住一只旧台灯，旁边是帆布袋、红色工具箱和一盒螺丝刀"
+      },
+      "srcSet": "/showcase/photos/hero/hero-01-home-desk-packing-720.jpg 720w, /showcase/photos/hero/hero-01-home-desk-packing-1448.jpg 1448w"
     },
     "home-hallway-leaving": {
-      "kind": "placeholder",
-      "file": "home-hallway-leaving.svg",
-      "src": "/showcase/placeholders/home-hallway-leaving.svg",
-      "thumb": "/showcase/placeholders/home-hallway-leaving.svg",
-      "width": 640,
-      "height": 480,
+      "kind": "photo",
+      "file": "hero-02-home-hallway-leaving-1448.jpg",
+      "src": "/showcase/photos/hero/hero-02-home-hallway-leaving-1448.jpg",
+      "thumb": "/showcase/photos/hero/hero-02-home-hallway-leaving-720.jpg",
+      "width": 1448,
+      "height": 1086,
       "alt": {
-        "en": "No photograph yet for home hallway leaving",
-        "zh-CN": "这一场景还没有照片：home-hallway-leaving"
-      }
+        "en": "A hand holding a closed umbrella in a hallway, with coats on hooks, keys by the open front door, and daylight outside",
+        "zh-CN": "手握一把收起的伞，门厅里挂着外套，敞开的门外是日光，钥匙挂在门边"
+      },
+      "srcSet": "/showcase/photos/hero/hero-02-home-hallway-leaving-720.jpg 720w, /showcase/photos/hero/hero-02-home-hallway-leaving-1448.jpg 1448w"
     },
     "street-walk-to-tram": {
       "kind": "photo",
-      "file": "pov-evening-park-walk.jpg",
-      "src": "/showcase/photos/pov-evening-park-walk.jpg",
-      "thumb": "/showcase/photos/pov-evening-park-walk.jpg",
-      "width": 1536,
-      "height": 1024,
+      "file": "hero-03-street-walk-to-tram-1448.jpg",
+      "src": "/showcase/photos/hero/hero-03-street-walk-to-tram-1448.jpg",
+      "thumb": "/showcase/photos/hero/hero-03-street-walk-to-tram-720.jpg",
+      "width": 1448,
+      "height": 1086,
       "alt": {
-        "en": "A walk along a park path",
-        "zh-CN": "沿公园小路走"
-      }
+        "en": "A sidewalk under cherry blossoms leading to a tram shelter and the tracks",
+        "zh-CN": "樱花树下的人行道，通向电车站和轨道"
+      },
+      "srcSet": "/showcase/photos/hero/hero-03-street-walk-to-tram-720.jpg 720w, /showcase/photos/hero/hero-03-street-walk-to-tram-1448.jpg 1448w"
     },
     "tram-line4-morning": {
       "kind": "photo",
@@ -63,64 +66,69 @@
       }
     },
     "cafe-entrance-signin": {
-      "kind": "placeholder",
-      "file": "cafe-entrance-signin.svg",
-      "src": "/showcase/placeholders/cafe-entrance-signin.svg",
-      "thumb": "/showcase/placeholders/cafe-entrance-signin.svg",
-      "width": 640,
-      "height": 480,
+      "kind": "photo",
+      "file": "hero-04-cafe-entrance-signin-1448.jpg",
+      "src": "/showcase/photos/hero/hero-04-cafe-entrance-signin-1448.jpg",
+      "thumb": "/showcase/photos/hero/hero-04-cafe-entrance-signin-720.jpg",
+      "width": 1448,
+      "height": 1086,
       "alt": {
-        "en": "No photograph yet for cafe entrance signin",
-        "zh-CN": "这一场景还没有照片：cafe-entrance-signin"
-      }
+        "en": "Signing in at a clipboard beside a sign that reads Fernhollow Repair Cafe, Saturdays, with the workshop through the open door",
+        "zh-CN": "在写着「Fernhollow Repair Cafe — Saturdays」的牌子旁签到，门内是修理工坊"
+      },
+      "srcSet": "/showcase/photos/hero/hero-04-cafe-entrance-signin-720.jpg 720w, /showcase/photos/hero/hero-04-cafe-entrance-signin-1448.jpg 1448w"
     },
     "cafe-lamp-diagnosis": {
       "kind": "photo",
-      "file": "pov-repair-cafe-workbench.jpg",
-      "src": "/showcase/photos/pov-repair-cafe-workbench.jpg",
-      "thumb": "/showcase/photos/pov-repair-cafe-workbench.jpg",
-      "width": 1536,
-      "height": 1024,
+      "file": "hero-05-cafe-lamp-diagnosis-1448.jpg",
+      "src": "/showcase/photos/hero/hero-05-cafe-lamp-diagnosis-1448.jpg",
+      "thumb": "/showcase/photos/hero/hero-05-cafe-lamp-diagnosis-720.jpg",
+      "width": 1448,
+      "height": 1086,
       "alt": {
-        "en": "Repair cafe workbench with screws on a red toolbox",
-        "zh-CN": "修理小馆的工作台"
-      }
+        "en": "Two people at a workbench with the lamp base open, a multimeter, and a few screws in a small dish",
+        "zh-CN": "工作台上灯座已经打开，旁边有万用表和小碟里的几颗螺丝"
+      },
+      "srcSet": "/showcase/photos/hero/hero-05-cafe-lamp-diagnosis-720.jpg 720w, /showcase/photos/hero/hero-05-cafe-lamp-diagnosis-1448.jpg 1448w"
     },
     "cafe-continuity-test": {
       "kind": "photo",
-      "file": "pov-repair-cafe-workbench.jpg",
-      "src": "/showcase/photos/pov-repair-cafe-workbench.jpg",
-      "thumb": "/showcase/photos/pov-repair-cafe-workbench.jpg",
-      "width": 1536,
-      "height": 1024,
+      "file": "hero-06-cafe-continuity-test-1448.jpg",
+      "src": "/showcase/photos/hero/hero-06-cafe-continuity-test-1448.jpg",
+      "thumb": "/showcase/photos/hero/hero-06-cafe-continuity-test-720.jpg",
+      "width": 1448,
+      "height": 1086,
       "alt": {
-        "en": "Repair cafe workbench with screws on a red toolbox",
-        "zh-CN": "修理小馆的工作台"
-      }
+        "en": "Hands testing a lamp plug with a multimeter that reads 0.8, the lamp and a coil of solder on the bench",
+        "zh-CN": "双手用万用表测灯的插头，读数是 0.8，台上有台灯和一卷焊锡"
+      },
+      "srcSet": "/showcase/photos/hero/hero-06-cafe-continuity-test-720.jpg 720w, /showcase/photos/hero/hero-06-cafe-continuity-test-1448.jpg 1448w"
     },
     "cafe-coffee-corner": {
       "kind": "photo",
-      "file": "pov-cafe-friend-hands.jpg",
-      "src": "/showcase/photos/pov-cafe-friend-hands.jpg",
-      "thumb": "/showcase/photos/pov-cafe-friend-hands.jpg",
-      "width": 1536,
-      "height": 1024,
+      "file": "hero-07-cafe-coffee-corner-1448.jpg",
+      "src": "/showcase/photos/hero/hero-07-cafe-coffee-corner-1448.jpg",
+      "thumb": "/showcase/photos/hero/hero-07-cafe-coffee-corner-720.jpg",
+      "width": 1448,
+      "height": 1086,
       "alt": {
-        "en": "Coffee with a friend, hands only",
-        "zh-CN": "和人喝咖啡，画面里只有手"
-      }
+        "en": "A coffee urn, stacked cups, and a tin of cookies on a side table, with people at the workshop benches beyond",
+        "zh-CN": "侧桌上的咖啡壶、纸杯和饼干盒，远处是工位上的人"
+      },
+      "srcSet": "/showcase/photos/hero/hero-07-cafe-coffee-corner-720.jpg 720w, /showcase/photos/hero/hero-07-cafe-coffee-corner-1448.jpg 1448w"
     },
     "cafe-parts-bin": {
       "kind": "photo",
-      "file": "pov-repair-cafe-workbench.jpg",
-      "src": "/showcase/photos/pov-repair-cafe-workbench.jpg",
-      "thumb": "/showcase/photos/pov-repair-cafe-workbench.jpg",
-      "width": 1536,
-      "height": 1024,
+      "file": "hero-08-cafe-parts-bin-1448.jpg",
+      "src": "/showcase/photos/hero/hero-08-cafe-parts-bin-1448.jpg",
+      "thumb": "/showcase/photos/hero/hero-08-cafe-parts-bin-720.jpg",
+      "width": 1448,
+      "height": 1086,
       "alt": {
-        "en": "Repair cafe workbench with screws on a red toolbox",
-        "zh-CN": "修理小馆的工作台"
-      }
+        "en": "Hands choosing a replacement switch from a parts bin, the open lamp and red toolbox on the bench",
+        "zh-CN": "从零件盒里挑选开关，台上是打开的台灯和红色工具箱"
+      },
+      "srcSet": "/showcase/photos/hero/hero-08-cafe-parts-bin-720.jpg 720w, /showcase/photos/hero/hero-08-cafe-parts-bin-1448.jpg 1448w"
     },
     "cafe-switch-order": {
       "kind": "photo",
@@ -136,15 +144,16 @@
     },
     "cafe-rewiring-base": {
       "kind": "photo",
-      "file": "pov-repair-cafe-workbench.jpg",
-      "src": "/showcase/photos/pov-repair-cafe-workbench.jpg",
-      "thumb": "/showcase/photos/pov-repair-cafe-workbench.jpg",
-      "width": 1536,
-      "height": 1024,
+      "file": "hero-09-cafe-rewiring-base-1448.jpg",
+      "src": "/showcase/photos/hero/hero-09-cafe-rewiring-base-1448.jpg",
+      "thumb": "/showcase/photos/hero/hero-09-cafe-rewiring-base-720.jpg",
+      "width": 1448,
+      "height": 1086,
       "alt": {
-        "en": "Repair cafe workbench with screws on a red toolbox",
-        "zh-CN": "修理小馆的工作台"
-      }
+        "en": "Hands tying a new wire into the open lamp base, with solder, pliers, and a lit work lamp nearby",
+        "zh-CN": "双手把新线接到打开的灯座上，旁边有焊锡、钳子和一盏亮着的工作灯"
+      },
+      "srcSet": "/showcase/photos/hero/hero-09-cafe-rewiring-base-720.jpg 720w, /showcase/photos/hero/hero-09-cafe-rewiring-base-1448.jpg 1448w"
     },
     "repair-bench-afternoon": {
       "kind": "photo",
@@ -159,16 +168,17 @@
       }
     },
     "cafe-shelf-packup": {
-      "kind": "placeholder",
-      "file": "cafe-shelf-packup.svg",
-      "src": "/showcase/placeholders/cafe-shelf-packup.svg",
-      "thumb": "/showcase/placeholders/cafe-shelf-packup.svg",
-      "width": 640,
-      "height": 480,
+      "kind": "photo",
+      "file": "hero-10-cafe-shelf-packup-1448.jpg",
+      "src": "/showcase/photos/hero/hero-10-cafe-shelf-packup-1448.jpg",
+      "thumb": "/showcase/photos/hero/hero-10-cafe-shelf-packup-720.jpg",
+      "width": 1448,
+      "height": 1086,
       "alt": {
-        "en": "No photograph yet for cafe shelf packup",
-        "zh-CN": "这一场景还没有照片：cafe-shelf-packup"
-      }
+        "en": "The desk lamp on a wooden shelf under a label that reads waiting for parts, with a tag on the cord",
+        "zh-CN": "台灯放在木架上，架子标着 waiting for parts，电线上挂着标签"
+      },
+      "srcSet": "/showcase/photos/hero/hero-10-cafe-shelf-packup-720.jpg 720w, /showcase/photos/hero/hero-10-cafe-shelf-packup-1448.jpg 1448w"
     },
     "street-walk-to-bakery": {
       "kind": "photo",
@@ -208,15 +218,16 @@
     },
     "library-holds-desk": {
       "kind": "photo",
-      "file": "pov-library-aisle.jpg",
-      "src": "/showcase/photos/pov-library-aisle.jpg",
-      "thumb": "/showcase/photos/pov-library-aisle.jpg",
-      "width": 1536,
-      "height": 1024,
+      "file": "hero-11-library-holds-desk-1448.jpg",
+      "src": "/showcase/photos/hero/hero-11-library-holds-desk-1448.jpg",
+      "thumb": "/showcase/photos/hero/hero-11-library-holds-desk-720.jpg",
+      "width": 1448,
+      "height": 1086,
       "alt": {
-        "en": "Library aisle toward daylight",
-        "zh-CN": "图书馆过道，通向日光"
-      }
+        "en": "A library holds desk with a stack of reserved books, a library card, and a staff member at the keyboard",
+        "zh-CN": "图书馆预约台，桌上是一叠预约的书和借书卡，馆员在键盘前"
+      },
+      "srcSet": "/showcase/photos/hero/hero-11-library-holds-desk-720.jpg 720w, /showcase/photos/hero/hero-11-library-holds-desk-1448.jpg 1448w"
     },
     "library-reading-room": {
       "kind": "photo",
@@ -232,15 +243,16 @@
     },
     "tram-line4-evening": {
       "kind": "photo",
-      "file": "pov-tram-window.jpg",
-      "src": "/showcase/photos/pov-tram-window.jpg",
-      "thumb": "/showcase/photos/pov-tram-window.jpg",
-      "width": 1536,
-      "height": 1024,
+      "file": "hero-12-tram-line4-evening-1448.jpg",
+      "src": "/showcase/photos/hero/hero-12-tram-line4-evening-1448.jpg",
+      "thumb": "/showcase/photos/hero/hero-12-tram-line4-evening-720.jpg",
+      "width": 1448,
+      "height": 1086,
       "alt": {
-        "en": "Sunlit tram ride through the city",
-        "zh-CN": "阳光里的电车，穿过城市"
-      }
+        "en": "An evening tram seat with a bakery bag on the lap and rain on the window",
+        "zh-CN": "傍晚的电车座位，膝上是面包纸袋，窗外在下雨"
+      },
+      "srcSet": "/showcase/photos/hero/hero-12-tram-line4-evening-720.jpg 720w, /showcase/photos/hero/hero-12-tram-line4-evening-1448.jpg 1448w"
     },
     "home-hallway-evening": {
       "kind": "placeholder",
@@ -255,28 +267,30 @@
       }
     },
     "home-kitchen-dinner": {
-      "kind": "placeholder",
-      "file": "home-kitchen-dinner.svg",
-      "src": "/showcase/placeholders/home-kitchen-dinner.svg",
-      "thumb": "/showcase/placeholders/home-kitchen-dinner.svg",
-      "width": 640,
-      "height": 480,
+      "kind": "photo",
+      "file": "hero-13-home-kitchen-dinner-1448.jpg",
+      "src": "/showcase/photos/hero/hero-13-home-kitchen-dinner-1448.jpg",
+      "thumb": "/showcase/photos/hero/hero-13-home-kitchen-dinner-720.jpg",
+      "width": 1448,
+      "height": 1086,
       "alt": {
-        "en": "No photograph yet for home kitchen dinner",
-        "zh-CN": "这一场景还没有照片：home-kitchen-dinner"
-      }
+        "en": "Dinner at the kitchen table: soup, sliced bread, and a roll under a warm lamp",
+        "zh-CN": "厨房餐桌上的晚饭：汤、切片面包和一只卷饼，台灯暖黄"
+      },
+      "srcSet": "/showcase/photos/hero/hero-13-home-kitchen-dinner-720.jpg 720w, /showcase/photos/hero/hero-13-home-kitchen-dinner-1448.jpg 1448w"
     },
     "home-desk-evening": {
       "kind": "photo",
-      "file": "pov-desk-keys-under-papers.jpg",
-      "src": "/showcase/photos/pov-desk-keys-under-papers.jpg",
-      "thumb": "/showcase/photos/pov-desk-keys-under-papers.jpg",
-      "width": 1536,
-      "height": 1024,
+      "file": "hero-14-home-desk-evening-1448.jpg",
+      "src": "/showcase/photos/hero/hero-14-home-desk-evening-1448.jpg",
+      "thumb": "/showcase/photos/hero/hero-14-home-desk-evening-720.jpg",
+      "width": 1448,
+      "height": 1086,
       "alt": {
-        "en": "Keys partly hidden under papers on a desk",
-        "zh-CN": "钥匙半藏在桌上的纸下面"
-      }
+        "en": "An evening desk with a notebook, a pencil, a mug, and a small lamp switched on",
+        "zh-CN": "晚上的书桌，笔记本和铅笔、一只杯子，小台灯开着"
+      },
+      "srcSet": "/showcase/photos/hero/hero-14-home-desk-evening-720.jpg 720w, /showcase/photos/hero/hero-14-home-desk-evening-1448.jpg 1448w"
     }
   },
   "frames": {
@@ -445,22 +459,27 @@
   },
   "highlights": [
     "home-kitchen-breakfast",
-    "home-desk-evening",
     "home-desk-packing",
-    "tram-line4-morning",
-    "tram-line4-evening",
-    "bakery-counter",
-    "library-reading-room",
-    "library-holds-desk",
-    "street-walk-to-bakery",
-    "street-walk-to-library",
+    "home-hallway-leaving",
     "street-walk-to-tram",
-    "cafe-coffee-corner",
+    "tram-line4-morning",
+    "cafe-entrance-signin",
     "cafe-lamp-diagnosis",
-    "cafe-rewiring-base",
     "cafe-continuity-test",
+    "cafe-coffee-corner",
     "cafe-parts-bin",
     "cafe-switch-order",
-    "repair-bench-afternoon"
+    "cafe-rewiring-base",
+    "repair-bench-afternoon",
+    "cafe-shelf-packup",
+    "street-walk-to-bakery",
+    "bakery-counter",
+    "street-walk-to-library",
+    "library-holds-desk",
+    "library-reading-room",
+    "tram-line4-evening",
+    "home-hallway-evening",
+    "home-kitchen-dinner",
+    "home-desk-evening"
   ]
 }

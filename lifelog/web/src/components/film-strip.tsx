@@ -74,7 +74,7 @@ export function FilmStrip({
                 style={{ transform: `translateX(${virtual.start}px)`, width: virtual.size - 8 }}
                 onClick={() => onSeek(item.frame.ts_ms)}
               >
-                <FramePlate frameId={item.frame.id} alt={item.frame.caption ?? noDescription(locale)} className="h-[72px] w-[96px]" />
+                <FramePlate frameId={item.frame.id} alt={item.frame.caption ?? noDescription(locale)} variant="thumb" locale={locale} className="h-[72px] w-[96px]" />
                 <span className="eyebrow mt-1 block">{formatClock(item.frame.ts_ms, locale)}</span>
               </button>
             );

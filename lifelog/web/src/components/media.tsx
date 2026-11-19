@@ -22,24 +22,38 @@ export function FramePlate({
   alt,
   time,
   className = "",
+  variant = "full",
+  locale,
 }: {
   frameId: string | null | undefined;
   alt: string;
   time?: string;
   className?: string;
+  variant?: "full" | "thumb";
+  locale?: Locale;
 }) {
   const asset = frameAsset(frameId);
+  const described = alt === "No description" || alt === "无描述" ? "" : alt;
   if (!asset) {
     return (
       <span className={`plate relative flex aspect-[3/2] items-end overflow-hidden border border-rule bg-paper p-3 ${className}`}>
-        <span className="sr-only">{alt}</span>
-        {time ? <span className="eyebrow">{time}</span> : <span className="eyebrow">{alt}</span>}
+        <span className="sr-only">{described || alt}</span>
+        {time ? <span className="eyebrow">{time}</span> : <span className="eyebrow">{described || alt}</span>}
       </span>
     );
   }
+  const text = described || (locale ? asset.alt[locale] : asset.alt.en);
   return (
     <span className={`relative block overflow-hidden bg-paper ${className}`}>
-      <img src={asset.src} alt={alt} width={asset.width} height={asset.height} className="h-full w-full object-cover" />
+      <img
+        src={variant === "thumb" ? asset.thumb : asset.src}
+        srcSet={variant === "full" ? asset.srcSet : undefined}
+        sizes={variant === "full" && asset.srcSet ? "(min-width: 64rem) 48rem, 100vw" : undefined}
+        alt={text}
+        width={asset.width}
+        height={asset.height}
+        className="h-full w-full object-cover"
+      />
       {time ? (
         <span className="time-chip mono absolute left-2 top-2 px-1.5 py-0.5 text-xs">{time}</span>
       ) : null}
@@ -54,6 +68,9 @@ const kindLabel: Record<Citation["kind"], { en: string; "zh-CN": string }> = {
   detection: { en: "object", "zh-CN": "物件" },
   frame: { en: "frame", "zh-CN": "画面" },
   segment: { en: "stretch", "zh-CN": "一段时间" },
+  highlight: { en: "highlight", "zh-CN": "片段" },
+  sighting: { en: "sighting", "zh-CN": "看见" },
+  day: { en: "day", "zh-CN": "一天" },
 };
 
 export function CitationChip({ citation, locale }: { citation: Citation; locale: Locale }) {
@@ -62,7 +79,7 @@ export function CitationChip({ citation, locale }: { citation: Citation; locale:
   const label = `${copy.citeLabel}, ${time}, ${kindLabel[citation.kind][locale]}`;
   return (
     <Link href={citation.open_url} className="chip" aria-label={label}>
-      <FramePlate frameId={citation.frame_id} alt="" time={time} className="h-14 w-20" />
+      <FramePlate frameId={citation.frame_id} alt="" time={time} variant="thumb" locale={locale} className="h-14 w-20" />
       <span>
         <span className="mono block text-sm">{time}</span>
         <span className="block text-sm text-ink-muted">{kindLabel[citation.kind][locale]}</span>

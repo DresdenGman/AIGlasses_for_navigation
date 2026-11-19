@@ -27,7 +27,8 @@ export const PlaceSchema = z.object({
 
 export const CitationSchema = z.object({
   evidence_id: z.string().min(1),
-  kind: z.enum(["utterance", "caption", "ocr", "detection", "frame", "segment"]),
+  handle: z.string().optional(),
+  kind: z.enum(["utterance", "caption", "ocr", "detection", "frame", "segment", "highlight", "sighting", "day"]),
   day: z.string(),
   ts_ms: z.number().int(),
   ts_end_ms: z.number().int(),
@@ -64,6 +65,7 @@ export const ValidationSchema = z.object({
 });
 
 export const AskResponseSchema = z.object({
+  id: z.string().optional(),
   question: z.string(),
   status: z.enum(["answered", "uncertain", "not_found"]),
   answer: z.string(),
@@ -75,6 +77,70 @@ export const AskResponseSchema = z.object({
   local_first: z.boolean(),
   validation: ValidationSchema,
   latency_ms: z.number().int(),
+  mode: z.enum(["hero", "year"]).optional(),
+  ui_tone: z.enum(["neutral", "amber"]).optional(),
+  reason_text: z.string().nullable().optional(),
+});
+
+export const ShowcaseEvidenceSchema = z.object({
+  handle: z.string(),
+  kind: z.enum(["utterance", "caption", "ocr", "detection", "frame", "segment", "highlight", "sighting", "day"]),
+  id: z.string(),
+  day: z.string(),
+  ts: z.number().int(),
+  ts_end: z.number().int(),
+  ts_local: z.string(),
+  label: z.string(),
+  thumb_hint: z.string().nullable().optional(),
+  frame_id: z.string().nullable(),
+  source_conf: z.number().optional(),
+  score: z.number(),
+  certainty: CertaintySchema,
+  quote: z.string().nullable(),
+  open_url: z.string(),
+});
+
+export const ShowcaseAnswerSchema = z.object({
+  id: z.string(),
+  question: z.string(),
+  locale: LocaleSchema,
+  scope: z.object({
+    all_days: z.boolean(),
+    day: z.string().nullable(),
+    from_ms: z.number().int().nullable(),
+    to_ms: z.number().int().nullable(),
+  }),
+  status: z.enum(["answered", "uncertain", "not_found"]),
+  ui_tone: z.enum(["neutral", "amber"]),
+  answer: z.string(),
+  sentences: z.array(z.object({
+    text: z.string(),
+    evidence: z.array(z.string()),
+    quote: z.string().nullable().optional(),
+  })),
+  evidence: z.array(ShowcaseEvidenceSchema),
+  evidence_considered: z.number().int(),
+  score: z.number(),
+  reason: z.string().nullable(),
+  reasons: z.array(z.string()),
+  reason_text: z.string().nullable(),
+  note: z.string().nullable(),
+  validation: z.object({
+    dropped_citations: z.number().int(),
+    dropped_quotes: z.number().int(),
+    dropped_sentences: z.number().int().optional(),
+    forced_status: z.enum(["uncertain", "not_found"]).nullable(),
+  }),
+  mode: z.enum(["hero", "year"]),
+  provider: z.literal("precomputed"),
+});
+
+export const ShowcaseAnswersFileSchema = z.object({
+  schema: z.string(),
+  version: z.number(),
+  locale: LocaleSchema,
+  provider: z.literal("precomputed"),
+  answers: z.array(ShowcaseAnswerSchema),
 });
 
 export const AskRequestSchema = z.object({

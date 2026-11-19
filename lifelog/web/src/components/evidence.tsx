@@ -6,7 +6,7 @@ import * as Dialog from "@radix-ui/react-dialog";
 import type { Citation, FrameDetail, Locale, Utterance } from "@/lib/api/schemas";
 import { FramePlate } from "@/components/media";
 import { t } from "@/lib/i18n";
-import { formatClock } from "@/lib/time";
+import { FEATURED_DAY, formatClock, formatDate } from "@/lib/time";
 import { noDescription, speakerName } from "@/lib/text";
 
 type OpenState = { citation: Citation; label: string };
@@ -59,7 +59,7 @@ export function EvidenceChip({
   const evidence = useEvidence();
   const copy = t(locale);
   const time = formatClock(citation.ts_ms, locale);
-  const label = `E${n}`;
+  const label = citation.handle ?? `E${n}`;
   return (
     <button
       type="button"
@@ -134,10 +134,11 @@ function ClipSheet({
   const titleId = useId();
   const citation = active?.citation;
   const nearbyFrames = useMemo(() => {
-    if (!citation) return [];
+    if (!citation || citation.day !== FEATURED_DAY) return [];
     const windowed = frames.filter((frame) => Math.abs(frame.ts_ms - citation.ts_ms) <= 10_000 && frame.quality === "ok");
     if (windowed.length > 0) return windowed;
-    return frames.filter((frame) => frame.quality === "ok").slice(0, 1);
+    const nearest = [...frames].filter((frame) => frame.quality === "ok").sort((a, b) => Math.abs(a.ts_ms - citation.ts_ms) - Math.abs(b.ts_ms - citation.ts_ms))[0];
+    return nearest ? [nearest] : [];
   }, [citation, frames]);
   const nearbySpeech = useMemo(() => {
     if (!citation) return [];
@@ -196,7 +197,8 @@ function ClipSheet({
         <Dialog.Content className="clip-sheet" aria-labelledby={titleId}>
           <div className="flex items-start justify-between gap-4">
             <Dialog.Title id={titleId} className="eyebrow">
-              {copy.clipTitle} {active?.label} · {citation ? formatClock(citation.ts_ms, locale) : ""}
+              {copy.clipTitle} {active?.label}
+              {citation ? ` · ${citation.day === FEATURED_DAY ? formatClock(citation.ts_ms, locale) : formatDate(citation.day, locale)}` : ""}
             </Dialog.Title>
             <Dialog.Close className="min-h-11 min-w-11 border border-rule px-3">Esc</Dialog.Close>
           </div>
@@ -208,9 +210,16 @@ function ClipSheet({
               time={formatClock(shown.ts_ms, locale)}
               className="mt-4 aspect-[3/2]"
             />
+          ) : citation ? (
+            <FramePlate
+              frameId={citation.frame_id}
+              alt={citation.quote ?? noDescription(locale)}
+              time={formatClock(citation.ts_ms, locale)}
+              className="mt-4 aspect-[3/2]"
+            />
           ) : null}
           <p className="mt-2 text-sm">
-            {shown?.caption ? `${shown.caption} (${copy.generated})` : noDescription(locale)}
+            {shown?.caption ? `${shown.caption} (${copy.generated})` : citation?.quote ?? noDescription(locale)}
           </p>
           <div className="mt-4 border border-rule p-2">
             <media-controller audio="">

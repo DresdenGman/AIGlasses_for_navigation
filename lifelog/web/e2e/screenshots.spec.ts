@@ -29,11 +29,7 @@ test("capture light and dark pages", async ({ page }) => {
       await document.fonts.ready;
     });
     await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
-    if (name === "timeline") {
-      await page.screenshot({ path: `${out}/${name}-light.jpg`, fullPage: true, type: "jpeg", quality: 60 });
-    } else {
-      await page.screenshot({ path: `${out}/${name}-light.png`, fullPage: true });
-    }
+    await page.screenshot({ path: `${out}/${name}-light.jpg`, fullPage: true, type: "jpeg", quality: 55 });
   }
   await page.getByRole("button", { name: "Dark theme" }).click();
   for (const [name, path] of pages) {
@@ -44,10 +40,6 @@ test("capture light and dark pages", async ({ page }) => {
     await page.evaluate(async () => {
       await document.fonts.ready;
     });
-    if (name === "timeline") {
-      await page.screenshot({ path: `${out}/${name}-dark.jpg`, fullPage: true, type: "jpeg", quality: 60 });
-    } else {
-      await page.screenshot({ path: `${out}/${name}-dark.png`, fullPage: true });
-    }
+    await page.screenshot({ path: `${out}/${name}-dark.jpg`, fullPage: true, type: "jpeg", quality: 55 });
   }
 });

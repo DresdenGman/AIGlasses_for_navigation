@@ -23,7 +23,7 @@ import type {
   Utterance,
   YearArchive,
 } from "@/lib/api/schemas";
-import { DaySummarySchema } from "@/lib/api/schemas";
+import { DaySummarySchema, ShowcaseAnswersFileSchema } from "@/lib/api/schemas";
 import { ShowcaseNotFound } from "@/lib/api/load";
 import { answerQuestion, documentsFromDay } from "@/lib/search";
 import { FEATURED_DAY, TIMEZONE } from "@/lib/time";
@@ -87,15 +87,19 @@ type YearDay = {
   highlight_frame_id: string | null;
 };
 
-type AnswerFile = {
-  items: Array<{
-    id: string;
-    question: string;
-    status: "answered" | "uncertain" | "not_found";
-    reason: string | null;
-    sentences: Array<{ text: string; evidence: string[] }>;
-  }>;
-};
+const KNOWN_REASONS = [
+  "no_evidence",
+  "below_evidence_min",
+  "below_answer_min",
+  "unknown_citation",
+  "no_valid_citation",
+  "quote_mismatch",
+  "model_uncertain",
+  "model_not_found",
+  "provider_error",
+  "paused_window",
+  "invalid_model_json",
+] as const;
 
 function readJson<T>(rel: string): T {
   return JSON.parse(readFileSync(path.join(DATA, rel), "utf8")) as T;
@@ -349,34 +353,51 @@ function archiveDays(): ArchiveDay[] {
   });
 }
 
-function answers(locale: Locale): AnswerFile {
-  return cached(`answers-${locale}`, () => readJson<AnswerFile>(`answers/${locale}.json`));
+function answers(locale: Locale) {
+  return cached(`answers-${locale}`, () => ShowcaseAnswersFileSchema.parse(readJson(`answers/${locale}.json`)));
 }
 
-function toAsk(item: AnswerFile["items"][number], locale: Locale): AskResponse {
-  const citations = item.sentences.flatMap((sentence) =>
-    sentence.evidence.map((id) => resolveEvidence(id, locale)).filter((row): row is Citation => row !== null),
-  );
-  const unique = [...new Map(citations.map((citation) => [citation.evidence_id, citation])).values()];
-  const text = item.sentences.map((sentence) => sentence.text).join(" ");
-  const status: AskResponse["status"] = item.status === "not_found" || unique.length === 0 ? "not_found" : item.status;
+function toAsk(item: ReturnType<typeof answers>["answers"][number]): AskResponse {
+  const citations = item.status === "not_found" ? [] : item.evidence.map((row) => ({
+    evidence_id: row.id,
+    handle: row.handle,
+    kind: row.kind,
+    day: row.day,
+    ts_ms: row.ts,
+    ts_end_ms: row.ts_end,
+    ts_local: row.ts_local,
+    frame_id: row.frame_id,
+    thumb_url: row.frame_id ? media(row.frame_id, "thumb") : null,
+    open_url: row.open_url,
+    quote: row.quote,
+    speaker: null,
+    bbox: null,
+    score: row.score,
+    certainty: row.certainty,
+  }));
   return {
+    id: item.id,
     question: item.question,
-    status,
-    answer: text,
-    score: unique.reduce((max, citation) => Math.max(max, citation.score), 0),
-    citations: status === "not_found" ? [] : unique,
-    evidence_considered: unique.length,
+    status: item.status,
+    answer: item.answer,
+    score: item.score,
+    citations,
+    evidence_considered: item.evidence_considered,
     provider: "precomputed",
     model: null,
     local_first: true,
     validation: {
-      dropped_citations: 0,
-      dropped_quotes: 0,
-      forced_status: item.status === "not_found" ? "not_found" : item.status === "uncertain" ? "uncertain" : null,
-      reasons: item.status === "not_found" ? ["no_evidence"] : item.status === "uncertain" ? ["below_answer_min"] : [],
+      dropped_citations: item.validation.dropped_citations,
+      dropped_quotes: item.validation.dropped_quotes,
+      forced_status: item.validation.forced_status,
+      reasons: item.reasons.filter((reason): reason is (typeof KNOWN_REASONS)[number] =>
+        (KNOWN_REASONS as readonly string[]).includes(reason),
+      ),
     },
     latency_ms: 6,
+    mode: item.mode,
+    ui_tone: item.ui_tone,
+    reason_text: item.reason_text,
   };
 }
 
@@ -720,7 +741,7 @@ export const showcase = {
     };
   },
   preparedAsks(locale: Locale): AskResponse[] {
-    return answers(locale).items.map((item) => toAsk(item, locale));
+    return answers(locale).answers.map((item) => toAsk(item));
   },
   ask(request: AskRequest): AskResponse {
     const locale: Locale = request.locale === "en" ? "en" : "zh-CN";
