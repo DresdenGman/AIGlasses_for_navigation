@@ -85,6 +85,96 @@ html.dark ::selection {
   transition: filter 240ms var(--ease), transform 240ms var(--ease);
 }
 
+.museum-header {
+  background: var(--paper);
+  backdrop-filter: blur(12px);
+}
+
+.museum-nav a {
+  position: relative;
+  letter-spacing: 0.01em;
+}
+
+.museum-nav a[aria-current="page"]::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0.4rem;
+  left: 0;
+  height: 1px;
+  background: var(--ink);
+}
+
+.museum-page {
+  background:
+    linear-gradient(to bottom, transparent 0, transparent 6rem, var(--rule) 6rem, transparent 6.063rem),
+    var(--paper);
+}
+
+.archive-intro {
+  border-left: 1px solid var(--rule);
+  padding-left: 2rem;
+}
+
+.contact-sheet-frame {
+  border: 1px solid var(--rule);
+  background: var(--paper-raised);
+  padding: 0.75rem;
+}
+
+.ask-page {
+  display: grid;
+  grid-template-columns: minmax(16rem, 0.72fr) minmax(24rem, 1.28fr);
+  gap: clamp(2rem, 6vw, 7rem);
+  align-items: start;
+}
+
+.ask-intro {
+  position: sticky;
+  top: 11rem;
+  padding-right: clamp(1rem, 3vw, 4rem);
+  border-right: 1px solid var(--rule);
+}
+
+.ask-answer {
+  box-shadow: 12px 12px 0 var(--paper-raised);
+}
+
+.ask-suggestions {
+  columns: 2;
+  column-gap: 2.5rem;
+}
+
+.ask-suggestions li {
+  break-inside: avoid;
+}
+
+.object-archive {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: 1.5rem;
+  row-gap: 4.5rem;
+}
+
+.object-archive > li:nth-child(3n + 1) {
+  grid-column: span 5;
+}
+
+.object-archive > li:nth-child(3n + 2),
+.object-archive > li:nth-child(3n + 3) {
+  grid-column: span 7;
+}
+
+.object-archive img {
+  filter: saturate(0.82);
+  transition: filter 180ms var(--ease), transform 180ms var(--ease);
+}
+
+.object-archive li:hover img {
+  filter: saturate(1);
+  transform: scale(1.008);
+}
+
 .archive-hero-image:hover {
   filter: saturate(1) contrast(1.05);
   transform: translate(0.35rem, -0.35rem);
@@ -107,6 +197,34 @@ html.dark ::selection {
 @media (max-width: 640px) {
   body {
     background-size: 50% 100%;
+  }
+
+  .archive-intro,
+  .ask-intro {
+    border-right: 0;
+    border-left: 1px solid var(--rule);
+    padding-right: 0;
+    padding-left: 1rem;
+  }
+
+  .ask-page {
+    display: block;
+  }
+
+  .ask-intro {
+    position: static;
+  }
+
+  .ask-suggestions {
+    columns: 1;
+  }
+
+  .object-archive {
+    display: block;
+  }
+
+  .object-archive > li + li {
+    margin-top: 3.5rem;
   }
 }
 

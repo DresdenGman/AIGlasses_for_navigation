@@ -25,12 +25,12 @@ export default async function YearPage() {
   ];
   const findings = stats.top_places.slice(0, 3);
   return (
-    <article>
+    <article className="museum-page">
       <header className="archive-hero mx-auto grid max-w-page grid-cols-1 gap-8 px-4 pb-8 pt-10 md:px-8 lg:grid-cols-12 lg:pt-16">
         <div className="lg:col-span-8">
           <img src={YEAR_HERO.src} alt={plateAlt(YEAR_HERO, locale)} width={1536} height={1024} className="archive-hero-image plate aspect-[3/2] w-full object-cover" />
         </div>
-        <div className="flex flex-col justify-end lg:col-span-4">
+        <div className="archive-intro flex flex-col justify-end lg:col-span-4">
           <p className="eyebrow">{copy.yearEyebrow} / {year.to.slice(0, 4)}</p>
           <h1 className="archive-year serif mt-4 text-display">{year.to.slice(0, 4)}</h1>
           <p className="serif mt-6 text-xl italic leading-snug">{ui.year_line}</p>

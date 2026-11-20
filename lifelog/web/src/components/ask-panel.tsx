@@ -76,7 +76,7 @@ export function AskPanel({
       </form>
       {response?.provider === "extractive" ? <p className="mt-6 max-w-measure text-sm text-ink-muted">{copy.offlineNote}</p> : null}
       {showAnswer && response ? (
-        <section aria-label={copy.answerRegion} aria-live="polite" className="mt-8 max-w-measure border border-rule p-5">
+        <section aria-label={copy.answerRegion} aria-live="polite" className="ask-answer mt-8 max-w-measure border border-rule bg-paper-raised p-6">
           <p className="eyebrow">{response.status === "answered" ? copy.answeredEyebrow : response.status === "uncertain" ? copy.uncertain : copy.notInRecords} · {label}</p>
           {response.status === "uncertain" ? (
             <div className="mt-4 border border-dashed border-uncertain-rule bg-paper p-4">

@@ -8,7 +8,7 @@ export function ArchiveDay({ day, locale }: { day: DayInfo; locale: Locale }) {
   const copy = t(locale);
   const hours = hoursBetween(day.first_ms, day.last_ms);
   return (
-    <article className="mx-auto max-w-page px-6 py-10">
+    <article className="museum-page mx-auto max-w-page px-6 py-12">
       <DayNav day={day.day} locale={locale} />
       <h1 className="serif mt-8 text-display">{formatDate(day.day, locale)}</h1>
       <p className="mt-6 max-w-measure text-xl">{copy.archiveTitle}</p>

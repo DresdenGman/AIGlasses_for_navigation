@@ -48,13 +48,13 @@ export function SiteChrome({
   return (
     <EvidenceProvider frames={frames} utterances={utterances} locale={prefs.locale}>
       <a className="skip" href="#content">{copy.skip}</a>
-      <header className="border-b border-rule">
+      <header className="museum-header sticky top-0 z-30 border-b border-rule">
         <div className="mx-auto flex min-h-14 max-w-page flex-wrap items-center justify-between gap-x-6 gap-y-3 px-4 py-3 md:px-8">
           <Link href="/" className="flex items-center gap-3 no-underline">
             <TimelineGlyph />
             <span className="serif text-xl tracking-tight">Lifelog</span>
           </Link>
-          <nav aria-label={copy.navLabel} className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm">
+          <nav aria-label={copy.navLabel} className="museum-nav flex flex-wrap items-center gap-x-5 gap-y-2 text-sm">
             {links.map(([href, label]) => (
               <Link key={href} href={href} aria-current={path === href ? "page" : undefined} className="inline-flex min-h-11 items-center no-underline">
                 {label}

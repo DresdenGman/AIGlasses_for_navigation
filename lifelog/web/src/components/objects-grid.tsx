@@ -24,7 +24,7 @@ export function ObjectsGrid({
       <p className="mt-2 text-sm text-ink-muted">
         {searchedDays} {copy.searched}
       </p>
-      <ul className="mt-12 grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2">
+      <ul className="object-archive mt-12">
         {items.map((item) => {
           const sighting = item.last_confident ?? item.newer_uncertain;
           const low = item.newer_uncertain;
