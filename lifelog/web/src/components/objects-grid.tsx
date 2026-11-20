@@ -35,7 +35,7 @@ export function ObjectsGrid({
               <p className="eyebrow mt-2">{item.watch_item.label}</p>
               {item.status === "not_seen" || !sighting ? (
                 <div className="mt-4">
-                  <FramePlate frameId={null} alt={copy.notSeen} className="aspect-[3/2]" />
+                  <FramePlate frameId={null} alt="" locale={locale} className="aspect-[3/2]" />
                   <p className="mt-3">{copy.notSeen}</p>
                 </div>
               ) : (
@@ -43,7 +43,7 @@ export function ObjectsGrid({
                   {plate ? (
                     <img src={plate.src} alt={plateAlt(plate, locale)} width={1536} height={1024} className="plate aspect-[3/2] w-full object-cover" />
                   ) : (
-                    <FramePlate frameId={sighting.frame_id} alt={sighting.caption ?? item.watch_item.display_name} time={formatClock(sighting.ts_ms, locale)} className="aspect-[3/2]" />
+                    <FramePlate frameId={sighting.frame_id} alt={sighting.caption ?? item.watch_item.display_name} time={formatClock(sighting.ts_ms, locale)} locale={locale} className="aspect-[3/2]" />
                   )}
                   <p className="eyebrow mt-3">{formatDate(sighting.day, locale)} · {formatClock(sighting.ts_ms, locale)}</p>
                   <p className="mt-1">{sighting.place?.name ?? copy.place}</p>

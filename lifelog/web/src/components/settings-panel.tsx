@@ -16,7 +16,6 @@ const kindName: Record<Device["kind"], { en: string; "zh-CN": string }> = {
 export function SettingsPanel({
   locale,
   devices,
-  backup,
   status,
   runs,
 }: {
@@ -62,7 +61,6 @@ export function SettingsPanel({
             onClick={() => prefs.update({ backupTarget: "nas", backupEnabled: true })}
           >
             {copy.nas}
-            <span className="mono ml-2 text-sm">{backup.remote}</span>
           </button>
           <button
             type="button"
@@ -85,11 +83,14 @@ export function SettingsPanel({
         ) : null}
         <div className="mt-4 max-h-64 overflow-auto" tabIndex={0} role="region" aria-label={copy.backup}>
         <ul className="space-y-1 text-sm">
-          {runs.map((run) => (
-            <li key={run.id} className={run.state === "failed" ? "text-danger" : ""}>
-              <span className="mono">{run.started_local}</span> {run.state} {run.error ? `· ${run.error}` : `· ${run.files} ${copy.files}`}
-            </li>
-          ))}
+          {runs.map((run) => {
+            const startedMs = Date.parse(run.started_local);
+            return (
+              <li key={run.id} className={run.state === "failed" ? "text-danger" : ""}>
+                <span className="mono">{Number.isNaN(startedMs) ? run.started_local : formatDateTime(startedMs, locale)}</span> {run.state} {run.error ? `· ${run.error}` : `· ${formatNumber(run.files, locale)} ${copy.files}`}
+              </li>
+            );
+          })}
         </ul>
         </div>
       </section>

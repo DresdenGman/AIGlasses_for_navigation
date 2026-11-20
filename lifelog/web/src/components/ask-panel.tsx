@@ -111,12 +111,12 @@ export function AskPanel({
       <section className="mt-10" aria-label={copy.suggested}>
         <h2 className="eyebrow">{copy.suggested}</h2>
         <label className="mt-4 block max-w-measure">
-          <span className="sr-only">{copy.suggested}</span>
+          <span className="sr-only">{copy.filterQuestions}</span>
           <input
             type="search"
             value={suggestedQuery}
             onChange={(event) => setSuggestedQuery(event.target.value)}
-            placeholder={copy.askPlaceholder}
+            placeholder={copy.filterQuestions}
             className="min-h-11 w-full border border-rule bg-transparent px-3"
           />
         </label>

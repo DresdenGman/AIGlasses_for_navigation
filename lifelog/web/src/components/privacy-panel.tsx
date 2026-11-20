@@ -5,7 +5,12 @@ import * as Switch from "@radix-ui/react-switch";
 import type { Locale, PrivacySettings } from "@/lib/api/schemas";
 import { t } from "@/lib/i18n";
 import { usePrefs } from "@/lib/prefs";
-import { formatDateTime } from "@/lib/time";
+import { formatDateTime, formatNumber } from "@/lib/time";
+
+function formatBytes(bytes: number, locale: Locale): string {
+  if (bytes < 1024) return `${formatNumber(bytes, locale)} B`;
+  return `${formatNumber(bytes / 1024, locale, 1)} KB`;
+}
 
 export function PrivacyPanel({
   locale,
@@ -39,7 +44,6 @@ export function PrivacyPanel({
       </section>
       <section className="mt-8 border border-ink p-6">
         <h2 className="serif text-3xl">{state.paused ? copy.paused : copy.pause}</h2>
-        <p className="mt-3 max-w-measure">{copy.pauseHelp}</p>
         <button
           type="button"
           className="mt-6 min-h-14 border border-ink bg-ink px-6 text-lg text-paper"
@@ -110,38 +114,44 @@ export function PrivacyPanel({
         <table className="mt-4 w-full text-sm">
           <thead>
             <tr className="border-b border-rule text-left">
-              <th className="py-2 font-normal" scope="col">{copy.setting}</th>
-              <th className="py-2 font-normal" scope="col">{copy.nowCol}</th>
-              <th className="py-2 font-normal" scope="col">{copy.defaultWord}</th>
+              <th className="py-2 pr-4 font-normal" scope="col">{copy.setting}</th>
+              <th className="py-2 pr-4 font-normal" scope="col">{copy.nowCol}</th>
+              <th className="py-2 pr-4 font-normal" scope="col">{copy.defaultWord}</th>
               <th className="py-2 font-normal" scope="col">{copy.means}</th>
             </tr>
           </thead>
           <tbody>
-            <tr className="border-b border-rule"><th className="py-3 text-left font-normal" scope="row">{copy.localFirst}</th><td>{state.localFirst ? "on" : "off"}</td><td>on</td><td>{copy.localFirstOn}</td></tr>
-            <tr className="border-b border-rule"><th className="py-3 text-left font-normal" scope="row">{copy.retention}</th><td>{state.retentionDays}</td><td>14</td><td>{retentionLine}</td></tr>
-            <tr className="border-b border-rule"><th className="py-3 text-left font-normal" scope="row">{copy.audio}</th><td>{state.audioEnabled ? "on" : "off"}</td><td>off</td><td>{copy.audioHelp}</td></tr>
+            <tr className="border-b border-rule"><th className="py-3 pr-4 text-left font-normal" scope="row">{copy.localFirst}</th><td className="pr-4">{state.localFirst ? "on" : "off"}</td><td className="pr-4">on</td><td>{copy.localFirstOn}</td></tr>
+            <tr className="border-b border-rule"><th className="py-3 pr-4 text-left font-normal" scope="row">{copy.retention}</th><td className="pr-4">{state.retentionDays}</td><td className="pr-4">14</td><td>{retentionLine}</td></tr>
+            <tr className="border-b border-rule"><th className="py-3 pr-4 text-left font-normal" scope="row">{copy.audio}</th><td className="pr-4">{state.audioEnabled ? "on" : "off"}</td><td className="pr-4">off</td><td>{copy.audioHelp}</td></tr>
           </tbody>
         </table>
         <h2 className="serif mt-10 text-2xl">{egressNote}</h2>
         <div className="mt-3 max-h-64 overflow-auto" tabIndex={0} role="region" aria-label={egressNote}>
           <table className="w-full text-sm">
             <tbody>
-              {egress.slice(-8).map((row) => (
-                <tr key={row.id} className="border-t border-rule">
-                  <td className="mono py-2">{row.ts_local}</td>
-                  <td>{row.purpose}</td>
-                  <td className="mono">{row.bytes_out}</td>
-                  <td>{row.day}</td>
-                </tr>
-              ))}
+              {egress.slice(-8).map((row) => {
+                const tsMs = Date.parse(row.ts_local);
+                return (
+                  <tr key={row.id} className="border-t border-rule">
+                    <td className="mono py-2 pr-4">{Number.isNaN(tsMs) ? row.ts_local : formatDateTime(tsMs, locale)}</td>
+                    <td className="pr-4">{row.purpose}</td>
+                    <td className="mono pr-4">{formatBytes(row.bytes_out, locale)}</td>
+                    <td>{row.day}</td>
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
         </div>
         <h2 className="serif mt-8 text-2xl">{copy.deletedDays}</h2>
         <ul className="mt-2 space-y-1 text-sm">
-          {purges.map((row) => (
-            <li key={row.id} className="mono">{row.ts_local} · {row.trigger} · {row.days.join(", ")} · {row.frames}</li>
-          ))}
+          {purges.map((row) => {
+            const tsMs = Date.parse(row.ts_local);
+            return (
+              <li key={row.id} className="mono">{Number.isNaN(tsMs) ? row.ts_local : formatDateTime(tsMs, locale)} · {row.trigger} · {row.days.join(", ")} · {formatNumber(row.frames, locale)}</li>
+            );
+          })}
         </ul>
       </section>
     </div>

@@ -118,7 +118,7 @@ export function TimelineView({
       <p className="mt-4 max-w-measure text-sm text-ink-muted">{copy.timelineIntro}</p>
       <p className="mt-2 max-w-measure text-sm">{copy.keyboardHelp}</p>
       <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-12">
-        <div className="lg:col-span-8">
+        <div className="min-w-0 lg:col-span-8">
           <div className="relative">
             {paused || !frame || frame.quality !== "ok" ? (
               <FramePlate frameId={null} alt={paused ? copy.pausedPlate : alt} className="aspect-[3/2]" />
@@ -166,7 +166,7 @@ export function TimelineView({
             </p>
           ) : null}
         </div>
-        <section className="lg:col-span-4" aria-labelledby="transcript-title">
+        <section className="min-w-0 lg:col-span-4" aria-labelledby="transcript-title">
           <h2 id="transcript-title" className="serif text-2xl">{copy.transcript}</h2>
           <p className="mt-1 text-sm text-ink-muted">{copy.rawAudio}</p>
           <div ref={transcriptRef} className="mt-4 max-h-[32rem] overflow-auto pr-1">
@@ -213,7 +213,7 @@ export function TimelineView({
           aria-valuemax={86400000}
           aria-valuenow={Math.round(time - midnight)}
           aria-valuetext={formatClock(time, locale)}
-          className="relative h-10 cursor-pointer"
+          className="relative h-10 cursor-pointer overflow-hidden"
           onClick={(event) => {
             const rect = event.currentTarget.getBoundingClientRect();
             const ratio = (event.clientX - rect.left) / rect.width;
