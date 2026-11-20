@@ -1,0 +1,1 @@
+{"$schema":"../gen/schemas/desktop-schema.json","description":"Default capability set for the Lifelog front-end demo shell.","identifier":"default","permissions":["core:default"],"windows":["main"]}
