@@ -1,0 +1,69 @@
+[
+  {
+    "id": "wli_01JRQ4H8ZE00000000000SCREW",
+    "label": "screws",
+    "display_name": {
+      "en": "Screws",
+      "zh-CN": "螺丝"
+    },
+    "aliases": [
+      "screw",
+      "螺丝",
+      "螺丝钉"
+    ],
+    "enabled": true
+  },
+  {
+    "id": "wli_01JRQ4H8ZE000000000000KEYS",
+    "label": "keys",
+    "display_name": {
+      "en": "Keys",
+      "zh-CN": "钥匙"
+    },
+    "aliases": [
+      "key",
+      "钥匙",
+      "钥匙串"
+    ],
+    "enabled": true
+  },
+  {
+    "id": "wli_01JRQ4H8ZE00000000PASSPORT",
+    "label": "passport",
+    "display_name": {
+      "en": "Passport",
+      "zh-CN": "护照"
+    },
+    "aliases": [
+      "护照"
+    ],
+    "enabled": true
+  },
+  {
+    "id": "wli_01JRQ4H8ZE000000000000LAMP",
+    "label": "desk lamp",
+    "display_name": {
+      "en": "Desk lamp",
+      "zh-CN": "台灯"
+    },
+    "aliases": [
+      "lamp",
+      "台灯",
+      "灯"
+    ],
+    "enabled": true
+  },
+  {
+    "id": "wli_01JRQ4H8ZE00000000UMBRELLA",
+    "label": "umbrella",
+    "display_name": {
+      "en": "Umbrella",
+      "zh-CN": "雨伞"
+    },
+    "aliases": [
+      "伞",
+      "雨伞"
+    ],
+    "enabled": true
+  }
+]

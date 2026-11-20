@@ -1,0 +1,12 @@
+[
+  {
+    "id": "dev_01JRQ4H8ZE00000000000GLASS",
+    "name": "Sample glasses",
+    "kind": "esp32_glasses"
+  },
+  {
+    "id": "dev_01JRQ4H8ZE00000000000WATCH",
+    "name": "Sample watch",
+    "kind": "apple_watch"
+  }
+]

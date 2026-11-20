@@ -1,0 +1,22 @@
+[
+  {
+    "id": "spk_01JRQ4H8ZE0000000000000SPA",
+    "label": "Speaker A",
+    "is_self": true
+  },
+  {
+    "id": "spk_01JRQ4H8ZE0000000000000SPB",
+    "label": "Speaker B",
+    "is_self": false
+  },
+  {
+    "id": "spk_01JRQ4H8ZE0000000000000SPC",
+    "label": "Speaker C",
+    "is_self": false
+  },
+  {
+    "id": "spk_01JRQ4H8ZE0000000000000SPD",
+    "label": "Speaker D",
+    "is_self": false
+  }
+]

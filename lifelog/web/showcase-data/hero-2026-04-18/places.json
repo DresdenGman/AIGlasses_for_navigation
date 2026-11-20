@@ -1,0 +1,22 @@
+[
+  {
+    "id": "plc_01JRQ4H8ZE0000000000HOME01",
+    "kind": "manual"
+  },
+  {
+    "id": "plc_01JRQ4H8ZE0000000000TRAM04",
+    "kind": "manual"
+  },
+  {
+    "id": "plc_01JRQ4H8ZE0000000000CAFE01",
+    "kind": "manual"
+  },
+  {
+    "id": "plc_01JRQ4H8ZE0000000000BAKE01",
+    "kind": "manual"
+  },
+  {
+    "id": "plc_01JRQ4H8ZE0000000000LIBR01",
+    "kind": "manual"
+  }
+]

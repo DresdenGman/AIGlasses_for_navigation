@@ -1,0 +1,236 @@
+[
+  {
+    "id": "prg_01JY2025112400000000000000",
+    "ts_ms": 1764828360000,
+    "ts_local": "2025-12-03T22:06:00-08:00",
+    "trigger": "owner_day",
+    "cutoff_day": null,
+    "days": [
+      "2025-11-24"
+    ],
+    "range": null,
+    "frames": 177,
+    "audio_chunks": 15,
+    "utterances": 149,
+    "bytes": 19872000
+  },
+  {
+    "id": "prg_01JY2025120500000000000000",
+    "ts_ms": 1765080000000,
+    "ts_local": "2025-12-06T20:00:00-08:00",
+    "trigger": "owner_day",
+    "cutoff_day": null,
+    "days": [
+      "2025-12-05"
+    ],
+    "range": null,
+    "frames": 160,
+    "audio_chunks": 9,
+    "utterances": 57,
+    "bytes": 16550000
+  },
+  {
+    "id": "prg_01JY2026020700000000000000",
+    "ts_ms": 1770527160000,
+    "ts_local": "2026-02-07T21:06:00-08:00",
+    "trigger": "owner_day",
+    "cutoff_day": null,
+    "days": [
+      "2026-02-07"
+    ],
+    "range": null,
+    "frames": 98,
+    "audio_chunks": 19,
+    "utterances": 192,
+    "bytes": 14318000
+  },
+  {
+    "id": "prg_01JY2026033100000000000000",
+    "ts_ms": 1775620800000,
+    "ts_local": "2026-04-07T21:00:00-07:00",
+    "trigger": "owner_day",
+    "cutoff_day": null,
+    "days": [
+      "2026-03-31"
+    ],
+    "range": null,
+    "frames": 151,
+    "audio_chunks": 15,
+    "utterances": 152,
+    "bytes": 17636000
+  },
+  {
+    "id": "prg_01JY2026040800000000000000",
+    "ts_ms": 1775799540000,
+    "ts_local": "2026-04-09T22:39:00-07:00",
+    "trigger": "owner_day",
+    "cutoff_day": null,
+    "days": [
+      "2026-04-08"
+    ],
+    "range": null,
+    "frames": 155,
+    "audio_chunks": 21,
+    "utterances": 170,
+    "bytes": 19840000
+  },
+  {
+    "id": "prg_01JY2026060300000000000001",
+    "ts_ms": 1780549800000,
+    "ts_local": "2026-06-03T22:10:00-07:00",
+    "trigger": "owner_range",
+    "cutoff_day": null,
+    "days": [
+      "2026-06-03"
+    ],
+    "range": {
+      "start_ms": 1780520400000,
+      "end_ms": 1780522800000
+    },
+    "frames": 8,
+    "audio_chunks": 1,
+    "utterances": 15,
+    "bytes": 998000
+  },
+  {
+    "id": "prg_01JY2026052900000000000000",
+    "ts_ms": 1780887840000,
+    "ts_local": "2026-06-07T20:04:00-07:00",
+    "trigger": "owner_day",
+    "cutoff_day": null,
+    "days": [
+      "2026-05-29"
+    ],
+    "range": null,
+    "frames": 121,
+    "audio_chunks": 10,
+    "utterances": 98,
+    "bytes": 13506000
+  },
+  {
+    "id": "prg_01JY2026061800000000000000",
+    "ts_ms": 1782612840000,
+    "ts_local": "2026-06-27T19:14:00-07:00",
+    "trigger": "owner_day",
+    "cutoff_day": null,
+    "days": [
+      "2026-06-18"
+    ],
+    "range": null,
+    "frames": 179,
+    "audio_chunks": 17,
+    "utterances": 148,
+    "bytes": 20664000
+  },
+  {
+    "id": "prg_01JY2026071400000000000000",
+    "ts_ms": 1784520600000,
+    "ts_local": "2026-07-19T21:10:00-07:00",
+    "trigger": "owner_day",
+    "cutoff_day": null,
+    "days": [
+      "2026-07-14"
+    ],
+    "range": null,
+    "frames": 157,
+    "audio_chunks": 13,
+    "utterances": 100,
+    "bytes": 17532000
+  },
+  {
+    "id": "prg_01JY2026081500000000000000",
+    "ts_ms": 1787289720000,
+    "ts_local": "2026-08-20T22:22:00-07:00",
+    "trigger": "owner_day",
+    "cutoff_day": null,
+    "days": [
+      "2026-08-15"
+    ],
+    "range": null,
+    "frames": 103,
+    "audio_chunks": 27,
+    "utterances": 224,
+    "bytes": 17228000
+  },
+  {
+    "id": "prg_01JY2026090500000000000000",
+    "ts_ms": 1789186380000,
+    "ts_local": "2026-09-11T21:13:00-07:00",
+    "trigger": "owner_day",
+    "cutoff_day": null,
+    "days": [
+      "2026-09-05"
+    ],
+    "range": null,
+    "frames": 102,
+    "audio_chunks": 27,
+    "utterances": 252,
+    "bytes": 17142000
+  },
+  {
+    "id": "prg_01JY2026092600000000000001",
+    "ts_ms": 1790485800000,
+    "ts_local": "2026-09-26T22:10:00-07:00",
+    "trigger": "owner_range",
+    "cutoff_day": null,
+    "days": [
+      "2026-09-26"
+    ],
+    "range": {
+      "start_ms": 1790446500000,
+      "end_ms": 1790447700000
+    },
+    "frames": 4,
+    "audio_chunks": 1,
+    "utterances": 14,
+    "bytes": 654000
+  },
+  {
+    "id": "prg_01JY2026100600000000000000",
+    "ts_ms": 1792032540000,
+    "ts_local": "2026-10-14T19:49:00-07:00",
+    "trigger": "owner_day",
+    "cutoff_day": null,
+    "days": [
+      "2026-10-06"
+    ],
+    "range": null,
+    "frames": 138,
+    "audio_chunks": 17,
+    "utterances": 126,
+    "bytes": 17138000
+  },
+  {
+    "id": "prg_01JY2026110700000000000001",
+    "ts_ms": 1794118200000,
+    "ts_local": "2026-11-07T22:10:00-08:00",
+    "trigger": "owner_range",
+    "cutoff_day": null,
+    "days": [
+      "2026-11-07"
+    ],
+    "range": {
+      "start_ms": 1794103500000,
+      "end_ms": 1794106200000
+    },
+    "frames": 9,
+    "audio_chunks": 1,
+    "utterances": 18,
+    "bytes": 1084000
+  },
+  {
+    "id": "prg_01JY2026111600000000000000",
+    "ts_ms": 1795065780000,
+    "ts_local": "2026-11-18T21:23:00-08:00",
+    "trigger": "owner_day",
+    "cutoff_day": null,
+    "days": [
+      "2026-11-16"
+    ],
+    "range": null,
+    "frames": 161,
+    "audio_chunks": 17,
+    "utterances": 156,
+    "bytes": 19116000
+  }
+]

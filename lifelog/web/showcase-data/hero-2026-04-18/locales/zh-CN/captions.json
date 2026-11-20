@@ -1,0 +1,1622 @@
+[
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000001",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000001",
+    "ts_ms": 1776520800000,
+    "kind": "caption",
+    "text": "一张小木桌上摆着早餐：一碗加了香蕉片的燕麦粥、一个陶瓷杯里的茶，旁边摊开一本笔记本，画着台灯接线草图，晨光从窗户照进来。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000002",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000002",
+    "ts_ms": 1776521100000,
+    "kind": "caption",
+    "text": "画面靠近那碗加了香蕉片的燕麦粥，勺子悬在碗上方，旁边的笔记本还翻在接线草图那一页。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000003",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000003",
+    "ts_ms": 1776521400000,
+    "kind": "caption",
+    "text": "一个陶瓷杯清晰出现在碗边，碗里的燕麦粥已吃了一半，杯子后面摊着那本画有台灯接线草图的笔记本。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000004",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000004",
+    "ts_ms": 1776521700000,
+    "kind": "caption",
+    "text": "画面右侧是一个马克杯，一把勺子搁在燕麦粥里，摊开的笔记本上那幅手绘台灯草图露出一部分。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000005",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000005",
+    "ts_ms": 1776522000000,
+    "kind": "caption",
+    "text": "一只手伸向马克杯，另一只手翻动笔记本页面，台灯接线草图露得更多了。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000006",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000006",
+    "ts_ms": 1776522300000,
+    "kind": "caption",
+    "text": "碗几乎空了，勺子放在叠好的餐巾上，马克杯旁边是合上的笔记本，晨光铺在桌面上。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000007",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000007",
+    "ts_ms": 1776522600000,
+    "kind": "caption",
+    "text": "一张杂乱的桌面，旧金属台灯放在折好的毛巾上，拨动开关明显开裂；旁边有帆布托特包和小螺丝刀套装。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000008",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000008",
+    "ts_ms": 1776522900000,
+    "kind": "caption",
+    "text": "一双手把毛巾折盖到台灯上，裂开的拨动开关还露在毛巾边。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000009",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000009",
+    "ts_ms": 1776523200000,
+    "kind": "caption",
+    "text": "台灯已经被毛巾包好，只有灯颈和开裂的开关还露在桌面外。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000010",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000010",
+    "ts_ms": 1776523500000,
+    "kind": "caption",
+    "text": "双手把用毛巾包好的台灯放进帆布托特包，旁边是那套小螺丝刀。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000011",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000011",
+    "ts_ms": 1776523800000,
+    "kind": "caption",
+    "text": "一只手把托特包顶部抚平，盖住包好的台灯和螺丝刀套装，前面的桌面已经清空。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000012",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000012",
+    "ts_ms": 1776524100000,
+    "kind": "caption",
+    "text": "窄走廊里，一只手拿着折叠好的深色雨伞，旁边是衣帽架，前门微开，早晨的柔光落在地板上。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000013",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000013",
+    "ts_ms": 1776524400000,
+    "kind": "caption",
+    "text": "一只手伸向衣帽架上的外套，折叠伞夹在另一只胳膊下，前门半开着。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000014",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000014",
+    "ts_ms": 1776524700000,
+    "kind": "caption",
+    "text": "门边的小挂钩上挂着一个模糊的金属物件，在晨光中看不清楚；一只手拍了拍外套口袋。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000015",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000015",
+    "ts_ms": 1776525000000,
+    "kind": "caption",
+    "text": "从微开的前门旁，可见深色折叠伞夹在胳膊下，一只手伸向门把手，晨光洒进走廊。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000016",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000016",
+    "ts_ms": 1776525300000,
+    "kind": "caption",
+    "text": "一条安静的有树荫的居民区人行道在清晨通向前面一个小电车站候车亭；远处一个行人背影可见。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000017",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000017",
+    "ts_ms": 1776525600000,
+    "kind": "caption",
+    "text": "镜头偏向一侧，显示一把折叠伞夹在穿着外套的手臂下，电车站候车亭仍在前面。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000018",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000018",
+    "ts_ms": 1776525900000,
+    "kind": "caption",
+    "text": "坐在有轨电车靠窗的位置，帆布袋放在腿上，乘客显示屏上写着“Line 4 · Fernhollow”。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000019",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000019",
+    "ts_ms": 1776526200000,
+    "kind": "caption",
+    "text": "一张电车票放在腿上的帆布袋旁边，上方显示屏显示“Line 4 · Fernhollow”。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000020",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000020",
+    "ts_ms": 1776526500000,
+    "kind": "caption",
+    "text": "车厢内因晃动变得模糊，车窗和坐着的乘客都成了柔和的轮廓，腿上的帆布袋是一片暗影。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000021",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000021",
+    "ts_ms": 1776526800000,
+    "kind": "caption",
+    "text": "电车摇晃，画面模糊，车窗的明亮光带和帆布袋的轮廓占满视野。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000022",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000022",
+    "ts_ms": 1776527100000,
+    "kind": "caption",
+    "text": "电车减速，画面稳定下来，显示屏逐渐清晰，我的手搭在帆布袋的背带上。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000023",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000023",
+    "ts_ms": 1776527400000,
+    "kind": "caption",
+    "text": "门上方手绘招牌写着“Fernhollow Repair Cafe — Saturdays”，旁边靠墙的桌上放着写字板。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000024",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000024",
+    "ts_ms": 1776527700000,
+    "kind": "caption",
+    "text": "写字板上有一张纸质登记表，一只手握着笔悬在表上方。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000025",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000025",
+    "ts_ms": 1776528000000,
+    "kind": "caption",
+    "text": "登记表旁边的桌上放着一盏台灯，深色电源线，摇臂开关有裂痕；一只手把笔放在旁边。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000026",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000026",
+    "ts_ms": 1776528300000,
+    "kind": "caption",
+    "text": "更广的视角看到社区大厅内部，几张工作台旁有几个人背对镜头站着；前景还是登记桌和那盏台灯。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000027",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000027",
+    "ts_ms": 1776528600000,
+    "kind": "caption",
+    "text": "写字板表格上，物品栏写着“desk lamp”，问题栏写着“flickers, switch cracked”。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000028",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000028",
+    "ts_ms": 1776528900000,
+    "kind": "caption",
+    "text": "一只手把填好的登记表从桌上推向志愿修理师，背景里台灯和招牌部分可见。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000029",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000029",
+    "ts_ms": 1776529200000,
+    "kind": "caption",
+    "text": "木质工作台占满画面；台灯侧放在台面上，底座打开，旁边的小碟里放着四颗小螺丝。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000030",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000030",
+    "ts_ms": 1776529500000,
+    "kind": "caption",
+    "text": "台灯清晰可见，底座打开，内部线路露出来；旁边小碟里放着四颗小螺丝。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000031",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000031",
+    "ts_ms": 1776529800000,
+    "kind": "caption",
+    "text": "近景看到打开的灯座里两根线分开；志愿者的手拿着螺丝刀靠近电线入口处。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000032",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000032",
+    "ts_ms": 1776530100000,
+    "kind": "caption",
+    "text": "志愿者的手指把灯座朝镜头这边倾斜；电线拖在暖色木质工作台上。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000033",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000033",
+    "ts_ms": 1776530400000,
+    "kind": "caption",
+    "text": "顶灯照在打开底座里裂开的跷板开关上；一把小螺丝刀放在装螺丝的小碟旁。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000034",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000034",
+    "ts_ms": 1776530700000,
+    "kind": "caption",
+    "text": "台灯清晰可见，底座打开，旁边放着一台数字万用表；志愿者的手从开关指向万用表。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000035",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000035",
+    "ts_ms": 1776531000000,
+    "kind": "caption",
+    "text": "更宽的视角里，台灯、万用表、装螺丝的小碟都在画面中，电线盘在台面边缘。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000036",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000036",
+    "ts_ms": 1776531300000,
+    "kind": "caption",
+    "text": "志愿者的双手拿起万用表表笔；台灯电线松散地盘在工作台上。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000037",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000037",
+    "ts_ms": 1776531600000,
+    "kind": "caption",
+    "text": "特写打开的灯座：跷板开关裂开，万用表表笔搁在木台面上的台灯旁。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000038",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000038",
+    "ts_ms": 1776531900000,
+    "kind": "caption",
+    "text": "一只手转动灯座；画面角落的小碟里四颗螺丝微微反光。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000039",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000039",
+    "ts_ms": 1776532200000,
+    "kind": "caption",
+    "text": "万用表显示屏在台灯后方柔焦；志愿者的手在电线旁调整一根表笔。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000040",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000040",
+    "ts_ms": 1776532500000,
+    "kind": "caption",
+    "text": "台灯在画面中央，底座打开，内部电线整理过一部分；四颗螺丝仍在小碟里。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000041",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000041",
+    "ts_ms": 1776532800000,
+    "kind": "caption",
+    "text": "志愿者的手从小碟里拿起一颗螺丝，台灯底座打开着放在木台面上。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000042",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000042",
+    "ts_ms": 1776533100000,
+    "kind": "caption",
+    "text": "暖光洒在工作台上，台灯和万用表并排放在靠近边缘处；螺丝刀被放到一边。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000043",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000043",
+    "ts_ms": 1776533400000,
+    "kind": "caption",
+    "text": "工作台上万用表近景，红色和黑色表笔放在一卷缠绕的电源线旁边。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000044",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000044",
+    "ts_ms": 1776533700000,
+    "kind": "caption",
+    "text": "万用表位于画面中央，表笔接触台灯插头的扁平插脚，一只手扶住电源线。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000045",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000045",
+    "ts_ms": 1776534000000,
+    "kind": "caption",
+    "text": "表盘显示占据画面右侧，读数稳定，黑色表笔仍接触插脚。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000046",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000046",
+    "ts_ms": 1776534300000,
+    "kind": "caption",
+    "text": "一只手将红表笔从插头移开，黑色夹子仍夹着；工作台上的线圈线材移动了一下。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000047",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000047",
+    "ts_ms": 1776534600000,
+    "kind": "caption",
+    "text": "俯视工作台，台灯底座放在万用表旁边，底座螺丝收集在一个小碟子里。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000048",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000048",
+    "ts_ms": 1776534900000,
+    "kind": "caption",
+    "text": "镜头移向盘绕的电源线和万用表；一只手将选择旋钮调到通断档。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000049",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000049",
+    "ts_ms": 1776535200000,
+    "kind": "caption",
+    "text": "万用表屏幕近景显示通断符号和一排小数字，表笔按在插脚上。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000050",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000050",
+    "ts_ms": 1776535500000,
+    "kind": "caption",
+    "text": "万用表的黑色和红色表笔分别接触台灯插头的两个插脚；一双手扶住电源线，防止从工作台上滑落。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000051",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000051",
+    "ts_ms": 1776535800000,
+    "kind": "caption",
+    "text": "镜头移向台灯底座开口朝上，显示电源线进入应力消除处有一个整齐的结。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000052",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000052",
+    "ts_ms": 1776536100000,
+    "kind": "caption",
+    "text": "一只手指向底座内的结，万用表放在远处，屏幕仍亮着。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000053",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000053",
+    "ts_ms": 1776536400000,
+    "kind": "caption",
+    "text": "从稍远处看，工作台上摆着拆开的台灯、线圈线材和挨着边缘的万用表。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000054",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000054",
+    "ts_ms": 1776536700000,
+    "kind": "caption",
+    "text": "最后一帧近景，万用表表笔横放在台灯插头上，背景工作台略微虚化。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000055",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000055",
+    "ts_ms": 1776537000000,
+    "kind": "caption",
+    "text": "茶点区在社区活动厅一角，桌上摆着一个大金属保温壶、几叠纸杯和一罐饼干，上方软木板上贴着手写时间表。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000056",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000056",
+    "ts_ms": 1776537300000,
+    "kind": "caption",
+    "text": "一只手从大金属壶旁拿起一个纸杯，背景里能看到饼干罐和软木板的一角。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000057",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000057",
+    "ts_ms": 1776537600000,
+    "kind": "caption",
+    "text": "两个穿工作围裙的人背对镜头站在茶点区，头转向软木板；其中一人从保温壶往纸杯里倒水。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000058",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000058",
+    "ts_ms": 1776537900000,
+    "kind": "caption",
+    "text": "靠近看软木板上的手写时间表，上面有规整的时间安排和“Saturdays”字样；下方模糊处放着饼干罐。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000059",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000059",
+    "ts_ms": 1776538200000,
+    "kind": "caption",
+    "text": "一个纸杯茶放在桌上，旁边是饼干罐；大金属壶表面映着上方灯光，远处有人聊天。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000060",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000060",
+    "ts_ms": 1776538500000,
+    "kind": "caption",
+    "text": "从房间角落望过去，茶点区显得有点远，两个身影背对镜头在保温壶附近，软木板是一小块浅色方块。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000061",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000061",
+    "ts_ms": 1776538800000,
+    "kind": "caption",
+    "text": "低头看向桌边，一只手从打开的饼干罐上方拿起一块原味饼干；旁边叠着纸杯，身后的大金属壶虚化可见。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000062",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000062",
+    "ts_ms": 1776539100000,
+    "kind": "caption",
+    "text": "背景里几个人背对镜头站着，前景的桌上放着饼干罐和一个喝空了的纸杯。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000063",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000063",
+    "ts_ms": 1776539400000,
+    "kind": "caption",
+    "text": "软木板上的时间表被一只手拿纸杯的动作遮住一部分；右侧是大金属壶和一堆纸杯。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000064",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000064",
+    "ts_ms": 1776539700000,
+    "kind": "caption",
+    "text": "茶点区靠窗的桌上放着一个纸杯，窗外天色灰暗，金属壶表面映出淡淡反光。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000065",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000065",
+    "ts_ms": 1776540000000,
+    "kind": "caption",
+    "text": "饼干罐快空了，盖子斜靠在墙边；远处有人背对镜头在聊天。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000066",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000066",
+    "ts_ms": 1776540300000,
+    "kind": "caption",
+    "text": "大金属壶已经关掉，一个装着茶的纸杯放在饼干罐旁边，两只手在桌边叠一张纸巾。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000067",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000067",
+    "ts_ms": 1776542400000,
+    "kind": "caption",
+    "text": "工作台上放着一个灰色塑料零件箱，里面散落着开关、旋钮和连接器，一双手把盖子放到一旁。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000068",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000068",
+    "ts_ms": 1776542700000,
+    "kind": "caption",
+    "text": "台灯底座放在零件箱旁边，四个螺丝孔空着，电源线松散地盘成一圈。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000069",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000069",
+    "ts_ms": 1776543000000,
+    "kind": "caption",
+    "text": "手在箱子里翻找，从一堆塑料零件中拿起一个黑色的小船型开关。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000070",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000070",
+    "ts_ms": 1776543300000,
+    "kind": "caption",
+    "text": "打开的灯座朝箱子那边微微倾斜，露出金属底座上的矩形开关开口。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000071",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000071",
+    "ts_ms": 1776543600000,
+    "kind": "caption",
+    "text": "一只手把一个灰色开关举到灯座开口附近，开关壳体明显比开口宽。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000072",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000072",
+    "ts_ms": 1776543900000,
+    "kind": "caption",
+    "text": "那双手把灰色开关放到一边，继续在箱子里翻找连接器。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000073",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000073",
+    "ts_ms": 1776544200000,
+    "kind": "caption",
+    "text": "箱子上层特写：几个船型开关、几个圆形旋钮，还有缠在一起的插片端子。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000074",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000074",
+    "ts_ms": 1776544500000,
+    "kind": "caption",
+    "text": "灯座放在箱子旁边，开口还空着，那双手搭在工作台边缘。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000075",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000075",
+    "ts_ms": 1776544800000,
+    "kind": "caption",
+    "text": "工作台上一张纸质订单，一只手把笔放在旁边；左边是打开的灯座，右边一杯咖啡。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000076",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000076",
+    "ts_ms": 1776545100000,
+    "kind": "caption",
+    "text": "一只手在纸质订单上写字；短语“switch — Tuesday”出现在整洁字迹上方，下面画着灯座的小图。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000077",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000077",
+    "ts_ms": 1776545400000,
+    "kind": "caption",
+    "text": "更宽的视角：一手指向打开的灯座，订单在中间，咖啡杯靠近台面边缘。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000078",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000078",
+    "ts_ms": 1776545700000,
+    "kind": "caption",
+    "text": "订单上现在写着“switch — Tuesday”，打开的灯座在左前景，后面有杯咖啡。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000079",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000079",
+    "ts_ms": 1776546000000,
+    "kind": "caption",
+    "text": "近距离看打开的灯座，一只手轻轻转动它；订单和咖啡杯在背景里虚化。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000080",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000080",
+    "ts_ms": 1776546300000,
+    "kind": "caption",
+    "text": "从背后看，一个身影俯身在工作台上写字，旁边是打开的灯座和咖啡杯。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000081",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000081",
+    "ts_ms": 1776546600000,
+    "kind": "caption",
+    "text": "一双手把一根黑色电源线穿进金属台灯底座，画面靠近打开的外壳，旁边小碟里放着螺丝。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000082",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000082",
+    "ts_ms": 1776546900000,
+    "kind": "caption",
+    "text": "一只手用指尖把电线按在灯座边缘，另一只手开始绕出一个环，上方亮着工作灯。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000083",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000083",
+    "ts_ms": 1776547200000,
+    "kind": "caption",
+    "text": "台灯侧躺在工作台上，底座打开，露出内部电线，一只手在挪动电源线。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000084",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000084",
+    "ts_ms": 1776547500000,
+    "kind": "caption",
+    "text": "特写：金属灯座内的电线上打了一个结，剥线钳放在手边。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000085",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000085",
+    "ts_ms": 1776547800000,
+    "kind": "caption",
+    "text": "两只手把结拉紧，让它贴住底座开口，那段线环平贴着金属边缘。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000086",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000086",
+    "ts_ms": 1776548100000,
+    "kind": "caption",
+    "text": "手指把灯座内部的几根线分开并整理好，浅碟里的螺丝仍在前景位置。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000087",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000087",
+    "ts_ms": 1776548400000,
+    "kind": "caption",
+    "text": "一把螺丝刀靠在小碟旁边，两只手在调整从底座出口伸出的电线。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000088",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000088",
+    "ts_ms": 1776548700000,
+    "kind": "caption",
+    "text": "工作台上摆着打开的灯座、剥线钳和一块折好的毛巾，工作灯很亮。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000089",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000089",
+    "ts_ms": 1776549000000,
+    "kind": "caption",
+    "text": "四颗小螺丝在浅碟里，每颗都看得很清楚，两只手在上方整理电线。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000090",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000090",
+    "ts_ms": 1776549300000,
+    "kind": "caption",
+    "text": "两只手把电线按进底座的凹槽，那个缓冲结正好卡在开口内侧。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000091",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000091",
+    "ts_ms": 1776549600000,
+    "kind": "caption",
+    "text": "更宽的视角里，台灯放在工作台上，底座还开着，电线已经固定住。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000092",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000092",
+    "ts_ms": 1776549900000,
+    "kind": "caption",
+    "text": "一只手把底座的上半部分抬到下半部分上方，对齐边缘准备装回去。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000093",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000093",
+    "ts_ms": 1776550200000,
+    "kind": "caption",
+    "text": "手指把电线从台灯底座旁拨开，台灯立着，装螺丝的小碟还在旁边。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000094",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000094",
+    "ts_ms": 1776550500000,
+    "kind": "caption",
+    "text": "工作灯的亮光扫过金属底座和装螺丝的小碟，台灯立着，电线被整齐地固定住。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000095",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000095",
+    "ts_ms": 1776550800000,
+    "kind": "caption",
+    "text": "修理咖啡馆工作台的第一人称视角，亮红色金属工具箱和打开的小台灯摆在旁边。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000096",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000096",
+    "ts_ms": 1776551100000,
+    "kind": "caption",
+    "text": "近景：打开的小台灯底座和松散的电线，红色工具箱靠近台面边缘。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000097",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000097",
+    "ts_ms": 1776551400000,
+    "kind": "caption",
+    "text": "四颗小螺丝放在红色工具箱前的工作台面上，旁边是打开底座的小台灯。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000098",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000098",
+    "ts_ms": 1776551940000,
+    "kind": "caption",
+    "text": "一只手正把最后一颗螺丝放到红色工具箱的盖子上，左侧是打开底座的小台灯。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000099",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000099",
+    "ts_ms": 1776552000000,
+    "kind": "caption",
+    "text": "四颗螺丝都聚在红色工具箱盖上，灯身和打开底座搁在旁边。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000100",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000100",
+    "ts_ms": 1776552060000,
+    "kind": "caption",
+    "text": "四颗螺丝在红色工具箱盖上聚成一小簇，台灯底座仍开着。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000101",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000101",
+    "ts_ms": 1776552600000,
+    "kind": "caption",
+    "text": "更宽的画面：红色工具箱盖上有螺丝，旁边是打开的小台灯和松散的电线。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000102",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000102",
+    "ts_ms": 1776552900000,
+    "kind": "caption",
+    "text": "特写：四颗螺丝放在红色工具箱盖上，背景的台灯电线和底座虚化。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000103",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000103",
+    "ts_ms": 1776553200000,
+    "kind": "caption",
+    "text": "木架子上贴着“waiting for parts”标签，一只手把台灯放到其他修好物品之间，灯上系着蓝色纸标签。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000104",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000104",
+    "ts_ms": 1776553500000,
+    "kind": "caption",
+    "text": "贴着“waiting for parts”的架子上，台灯的蓝色标签清晰可见，旁边是一台小收音机和一台烤面包机。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000105",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000105",
+    "ts_ms": 1776553800000,
+    "kind": "caption",
+    "text": "灯线上系着的蓝色标签特写，木架边缘和其他物品柔和虚化。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000106",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000106",
+    "ts_ms": 1776554100000,
+    "kind": "caption",
+    "text": "一只手在架子上调整台灯位置，蓝色标签从灯线上垂下，其他修好的物品沿架子排开。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000107",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000107",
+    "ts_ms": 1776554400000,
+    "kind": "caption",
+    "text": "一把折叠伞夹在胳膊下，占着画面下缘；前方湿滑的人行道经过几家店门口的遮阳篷，远处有几个行人背影。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000108",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000108",
+    "ts_ms": 1776554700000,
+    "kind": "caption",
+    "text": "小雨点落在路面上，水洼倒影里是灰蒙蒙的天；两个撑伞的身影在中间远处越走越远。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000109",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000109",
+    "ts_ms": 1776555000000,
+    "kind": "caption",
+    "text": "快到面包店，打开的伞上缘正好框住一扇摆满面包的橱窗；细雨持续下着。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000110",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000110",
+    "ts_ms": 1776555300000,
+    "kind": "caption",
+    "text": "面包房柜台温馨，玻璃柜后面黑板招牌写着“Quill Street Bakery”，暖光下可见肉桂卷。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000111",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000111",
+    "ts_ms": 1776555600000,
+    "kind": "caption",
+    "text": "玻璃柜拉近，带糖霜的肉桂卷，收银员的手搭在柜台边沿。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000112",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000112",
+    "ts_ms": 1776555900000,
+    "kind": "caption",
+    "text": "一个黑麦面包放在柜台的纸袋里，旁边一把折叠伞靠在柜台边。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000113",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000113",
+    "ts_ms": 1776556200000,
+    "kind": "caption",
+    "text": "装着面包的纸袋放在收银机旁，袋口微开，露出面包皮。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000114",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000114",
+    "ts_ms": 1776556500000,
+    "kind": "caption",
+    "text": "折叠伞靠在柜台边，两个白色纸袋放在边缘附近，其中一个装着面包。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000115",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000115",
+    "ts_ms": 1776556800000,
+    "kind": "caption",
+    "text": "午后近傍晚，潮湿的人行道向前延伸，一只手提着棕色纸袋，前方街区的砖砌图书馆隐约可见。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000116",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000116",
+    "ts_ms": 1776557100000,
+    "kind": "caption",
+    "text": "视线转向湿漉漉的混凝土路面，纸袋下沿轻轻晃动，远处图书馆仍在画面边缘。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000117",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000117",
+    "ts_ms": 1776557400000,
+    "kind": "caption",
+    "text": "图书馆的砖墙占据画面上方，入口出现在视野中，潮湿的纸袋贴在夹克上。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000118",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000118",
+    "ts_ms": 1776557700000,
+    "kind": "caption",
+    "text": "“Larkspur Community Library”的服务台前，立着“Holds”标牌，一叠归还图书和一张借书卡摆在台面上，工作人员的手搭在键盘上。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000119",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000119",
+    "ts_ms": 1776558000000,
+    "kind": "caption",
+    "text": "平视服务台，一把折叠伞靠在柜台边缘，旁边放着一叠归还的书。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000120",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000120",
+    "ts_ms": 1776558300000,
+    "kind": "caption",
+    "text": "特写柜台，一只手把借书卡滑向键盘方向，背景里的书架模糊不清。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000121",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000121",
+    "ts_ms": 1776558600000,
+    "kind": "caption",
+    "text": "平视预约台显示器，屏幕上是图书馆账户页面，右侧露出“Holds”标牌边缘和一叠书。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000122",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000122",
+    "ts_ms": 1776558900000,
+    "kind": "caption",
+    "text": "从读者一侧看到的服务台全景，一只手搭在折叠伞上，工作人员的手正在键盘上打字。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000123",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000123",
+    "ts_ms": 1776559200000,
+    "kind": "caption",
+    "text": "安静阅览室向远处延伸，长木桌和绿色台灯排开，高窗上雨痕一道道，几个读者的背影伏在书上。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000124",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000124",
+    "ts_ms": 1776559500000,
+    "kind": "caption",
+    "text": "一本摊开的小家电维修书占满画面下半部分，绿色台灯下接线图清晰可见。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000125",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000125",
+    "ts_ms": 1776559800000,
+    "kind": "caption",
+    "text": "沿远处墙面的高窗被雨水模糊，长桌边几位读者的背影轮廓可见。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000126",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000126",
+    "ts_ms": 1776560100000,
+    "kind": "caption",
+    "text": "沿长木桌低角度看去，一个读者的背影虚化，上方绿色台灯照着摊开的书。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000127",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000127",
+    "ts_ms": 1776560400000,
+    "kind": "caption",
+    "text": "小家电维修书翻到接线图和螺丝端子那一页，暖色台灯下看得很清楚。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000128",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000128",
+    "ts_ms": 1776560700000,
+    "kind": "caption",
+    "text": "一只手在摊开的书页上沿着接线图滑动，周围文字在暖绿台灯光下略微虚化。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000129",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000129",
+    "ts_ms": 1776561000000,
+    "kind": "caption",
+    "text": "一位穿深色开衫的工作人员站在长桌远端，背对镜头低声说话。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000130",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000130",
+    "ts_ms": 1776561300000,
+    "kind": "caption",
+    "text": "书翻到小家电开关的示意图，看得很清楚，背后高窗上雨水流下。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000131",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000131",
+    "ts_ms": 1776561600000,
+    "kind": "caption",
+    "text": "绿色台灯在渐暗的阅览室里亮着，雨点打在高窗上，外面的树影模糊。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000132",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000132",
+    "ts_ms": 1776561900000,
+    "kind": "caption",
+    "text": "一只手翻过维修书的一页，露出通断测试那节，低光下页边显得柔和。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000133",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000133",
+    "ts_ms": 1776562200000,
+    "kind": "caption",
+    "text": "从安静阅览室一端看过去，长木桌、绿色台灯和几个读者的背影，窗外雨在下。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000134",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000134",
+    "ts_ms": 1776562500000,
+    "kind": "caption",
+    "text": "傍晚，车厢过道向前延伸，腿上放着一个面包纸袋；车窗布满雨痕，外面城市灯光模糊成片。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000135",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000135",
+    "ts_ms": 1776562800000,
+    "kind": "caption",
+    "text": "低头看向腿上的面包袋，一只手扶着袋口，电车在夜色中轻轻晃动。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000136",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000136",
+    "ts_ms": 1776563100000,
+    "kind": "caption",
+    "text": "视线转向有雨痕的车窗，远处车灯拉成模糊光带，一把折叠伞斜靠在一旁座位边上。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000137",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000137",
+    "ts_ms": 1776563400000,
+    "kind": "caption",
+    "text": "模糊的车厢画面，琥珀色灯光晕开，车门附近一个坐着乘客的黑色背影轮廓。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000138",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000138",
+    "ts_ms": 1776563700000,
+    "kind": "caption",
+    "text": "视线回到腿上的面包袋，一只手轻轻搭在纸袋上，车窗倒影在雨中滑过。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000139",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000139",
+    "ts_ms": 1776564000000,
+    "kind": "caption",
+    "text": "车门附近的宽视角中，几个乘客的背影，雨水顺着玻璃流下，腿上的纸袋仍放在原处。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000140",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000140",
+    "ts_ms": 1776564300000,
+    "kind": "caption",
+    "text": "黄昏的门厅光线昏暗，门内侧的脚垫上已经积起一小滩水。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000141",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000141",
+    "ts_ms": 1776564600000,
+    "kind": "caption",
+    "text": "前门旁靠着一把湿伞，伞尖在地板上留下水迹，门关着。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000142",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000142",
+    "ts_ms": 1776564900000,
+    "kind": "caption",
+    "text": "木质边桌上放着一个纸质面包袋，就在门垫旁边。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000143",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000143",
+    "ts_ms": 1776565200000,
+    "kind": "caption",
+    "text": "一碗汤放在厨房桌上，旁边木板上摆着几片黑麦面包，还有一个肉桂卷放在小盘里，暖灯照着。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000144",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000144",
+    "ts_ms": 1776565500000,
+    "kind": "caption",
+    "text": "一只手拿着勺子悬在汤碗上方，桌上能看到黑麦面包和肉桂卷，暖黄灯光下。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000145",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000145",
+    "ts_ms": 1776565800000,
+    "kind": "caption",
+    "text": "近景里一块黑麦面包从一片上撕下，木板上落着碎屑。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000146",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000146",
+    "ts_ms": 1776566100000,
+    "kind": "caption",
+    "text": "肉桂卷放在小盘子里，旁边搁着一把叉子，背景里的汤碗已经空了大半。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000147",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000147",
+    "ts_ms": 1776566400000,
+    "kind": "caption",
+    "text": "餐桌斜角看过去，汤碗还剩一半，黑麦面包板上有几粒碎屑，暖黄灯光照着。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000148",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000148",
+    "ts_ms": 1776566700000,
+    "kind": "caption",
+    "text": "一只手伸向盘子里的肉桂卷，暖灯的光落在桌面上。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000149",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000149",
+    "ts_ms": 1776567000000,
+    "kind": "caption",
+    "text": "快吃完时，面包板上只剩碎屑，盘子里留着一点肉桂痕迹。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000150",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000150",
+    "ts_ms": 1776567300000,
+    "kind": "caption",
+    "text": "碗和盘子被推到桌子中间，灯光明亮而柔和，厨房边缘显得昏暗。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000151",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000151",
+    "ts_ms": 1776567600000,
+    "kind": "caption",
+    "text": "夜晚昏暗的书桌被小夹灯照亮，桌上摊开纸质笔记本，写着简短待办清单，旁边放着一支铅笔。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000152",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000152",
+    "ts_ms": 1776567900000,
+    "kind": "caption",
+    "text": "笔记本页面占画面更多，有几条手写事项，铅笔尖靠近纸面；后方架子上模糊的小物件看不清楚。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000153",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000153",
+    "ts_ms": 1776568200000,
+    "kind": "caption",
+    "text": "一只手在笔记本上写字，铅笔在夹灯照出的小片暖光里移动。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000154",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000154",
+    "ts_ms": 1776568500000,
+    "kind": "caption",
+    "text": "镜头低低扫过桌面，夹灯的亮边和手在笔记本上的影子被拍进来。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000155",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000155",
+    "ts_ms": 1776568800000,
+    "kind": "caption",
+    "text": "纸质笔记本上列着几条，有几个词被划掉；一支铅笔斜放在上面，桌面边缘没入黑暗。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000156",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000156",
+    "ts_ms": 1776569100000,
+    "kind": "caption",
+    "text": "镜头转向后方架子，几个小物件虚焦，台灯光线只擦出轮廓。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000157",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000157",
+    "ts_ms": 1776569400000,
+    "kind": "caption",
+    "text": "回到笔记本，一只手停在纸页上方，铅笔悬着；只有小夹灯亮着，桌面上半部分留在阴影里。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000158",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000158",
+    "ts_ms": 1776569700000,
+    "kind": "caption",
+    "text": "夹灯把一窄束光打在笔记本上，画面左下角露出一只手。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000159",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000159",
+    "ts_ms": 1776570000000,
+    "kind": "caption",
+    "text": "纸质笔记本斜摊着，待办清单露出几行新写的字，周围房间昏暗模糊。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000160",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000160",
+    "ts_ms": 1776570300000,
+    "kind": "caption",
+    "text": "铅笔搁在笔记本中缝里，台灯暖光迅速消失在暗背景里。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000161",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000161",
+    "ts_ms": 1776570600000,
+    "kind": "caption",
+    "text": "桌面很暗，只有夹灯在笔记本旁亮着，纸页勉强可见，后面的架子隐在阴影里。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  },
+  {
+    "id": "cap_01JRQ4H8ZE0000000000000162",
+    "frame_id": "frm_01JRQ4H8ZE0000000000000162",
+    "ts_ms": 1776570900000,
+    "kind": "caption",
+    "text": "几乎全黑，小夹灯只照亮笔记本一角，铅笔旁有一只手发白。",
+    "lang": "zh",
+    "model": "fixture",
+    "score": 0.8
+  }
+]

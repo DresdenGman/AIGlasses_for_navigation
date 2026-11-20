@@ -1,0 +1,162 @@
+{
+  "ent_sis": {
+    "name": "Sis (Wren)",
+    "note": "older sister, lives across town"
+  },
+  "ent_neph": {
+    "name": "Nephew Pip",
+    "note": "sister's son, 9 years old in spring"
+  },
+  "ent_bil": {
+    "name": "Dov (brother-in-law)",
+    "note": "sister's partner, cooks a lot"
+  },
+  "ent_neigh": {
+    "name": "Mrs. Okafor next door",
+    "note": "neighbor with the garden planters"
+  },
+  "ent_neikid": {
+    "name": "The Larsen kids",
+    "note": "two kids across the street"
+  },
+  "ent_volb": {
+    "name": "Repair cafe mentor",
+    "note": "the patient volunteer fixer (anonymous Speaker B on Apr 18)"
+  },
+  "ent_tomas": {
+    "name": "Tomas (repair cafe)",
+    "note": "fellow volunteer who fixes radios"
+  },
+  "ent_client1": {
+    "name": "Client: Hollis",
+    "note": "client with the oak dresser"
+  },
+  "ent_client2": {
+    "name": "Client: Ines",
+    "note": "client with the reupholstered chairs and cabinets"
+  },
+  "ent_baker": {
+    "name": "Bakery counter",
+    "note": "the cashier at Quill Street Bakery (never named)"
+  },
+  "ent_libr": {
+    "name": "Holds desk",
+    "note": "library holds desk staff"
+  },
+  "ent_coach": {
+    "name": "Sunday swim coach",
+    "note": "coach at the community pool"
+  },
+  "ent_oldf": {
+    "name": "June from the bookbinding class",
+    "note": "classmate from the January workshop"
+  },
+  "ent_mail": {
+    "name": "Mail carrier",
+    "note": "the neighborhood mail carrier"
+  },
+  "ent_home": {
+    "name": "Home",
+    "note": "apartment with a small workshop corner"
+  },
+  "ent_shop": {
+    "name": "Home workshop",
+    "note": "rented garage workshop two streets away"
+  },
+  "ent_cafe": {
+    "name": "Fernhollow Repair Cafe",
+    "note": "Saturdays, community hall"
+  },
+  "ent_tram": {
+    "name": "Tram line 4",
+    "note": "the daily tram"
+  },
+  "ent_bake": {
+    "name": "Quill Street Bakery",
+    "note": "rye loaf and cinnamon buns"
+  },
+  "ent_lib": {
+    "name": "Larkspur Community Library",
+    "note": "holds desk, workshops"
+  },
+  "ent_sish": {
+    "name": "Sis's house",
+    "note": "across town, big kitchen"
+  },
+  "ent_market": {
+    "name": "Harbor Saturday market",
+    "note": "produce and night market in summer"
+  },
+  "ent_pool": {
+    "name": "Community pool",
+    "note": "Sunday mornings"
+  },
+  "ent_park": {
+    "name": "Alder Park",
+    "note": "walks and the duck pond"
+  },
+  "ent_salt": {
+    "name": "Saltmere (trip)",
+    "note": "seaside town, May trip"
+  },
+  "ent_hware": {
+    "name": "Corner hardware store",
+    "note": "screws, glue, sandpaper"
+  },
+  "ent_clinic": {
+    "name": "Neighborhood clinic",
+    "note": "February cold"
+  },
+  "ent_keys": {
+    "name": "Keys",
+    "note": "brass ring with a blue tag"
+  },
+  "ent_rglass": {
+    "name": "Reading glasses",
+    "note": "tortoiseshell frame"
+  },
+  "ent_umb": {
+    "name": "Umbrella",
+    "note": "dark folding umbrella"
+  },
+  "ent_tape": {
+    "name": "Tape measure",
+    "note": "yellow 5 m tape"
+  },
+  "ent_glue": {
+    "name": "Glue gun",
+    "note": "small hot-glue gun"
+  },
+  "ent_toolb": {
+    "name": "Red toolbox",
+    "note": "lives at the repair cafe bench"
+  },
+  "ent_screws": {
+    "name": "Screw jar",
+    "note": "jar of assorted screws"
+  },
+  "ent_lamp": {
+    "name": "Desk lamp",
+    "note": "the repaired metal desk lamp"
+  },
+  "ent_card": {
+    "name": "Library card",
+    "note": "renewed every April"
+  },
+  "ent_wallet": {
+    "name": "Wallet",
+    "note": "brown leather wallet"
+  },
+  "ent_multi": {
+    "name": "Multimeter",
+    "note": "bought in January"
+  },
+  "ent_tote": {
+    "name": "Canvas tote",
+    "note": "carries repairs around"
+  },
+  "ent_noteb": {
+    "name": "Paper notebook",
+    "note": "wiring sketches and lists"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "KEYS": {
+    "display_name": "Keys",
+    "note": "brass ring with a blue tag",
+    "captions": {
+      "hl_20261028_1": "The tote bangs against your knee as the tram crosses the windy waterfront.",
+      "hl_20261101_4": "The app pings the blue tag under a canvas bag by the door, exactly where you left them on Friday.",
+      "hl_20261109_1": "Everyone is in winter coats and the tram heater smells faintly of dust.",
+      "hl_20261115_5": "You ride two stops for the air, keys in your pocket, and walk back under a clear cold sky.",
+      "hl_20261117_1": "You drop the library card and keys into the canvas tote, find the missing tape measure at the bottom, and head out."
+    }
+  },
+  "RGLASS": {
+    "display_name": "Reading glasses",
+    "note": "tortoiseshell frame",
+    "captions": {
+      "hl_20261106_2": "You photograph page after page of the paper notebook, squinting through the reading glasses at the smudged ones.",
+      "hl_20261109_2": "You work along the grain with the reading glasses pushed up and the radio off.",
+      "hl_20261112_1": "You go over the drawer fronts once more with the glasses on and find nothing left to fix.",
+      "hl_20261115_4": "The app locates the tortoiseshell reading glasses behind the jar of screws, on the shelf above the bench.",
+      "hl_20261118_1": "Fog on the windows; you scrub the timeline back to January and see a year of line 4 mornings stacked in rows."
+    }
+  },
+  "UMB": {
+    "display_name": "Umbrella",
+    "note": "dark folding umbrella",
+    "captions": {
+      "hl_20261030_6": "You set out a bowl of wrapped candy and hang the wet umbrella by the door.",
+      "hl_20261102_1": "The tram windows fog at the edges and your umbrella drips into the well by the door.",
+      "hl_20261103_3": "The town slides past in halves, and you get off two stops early just to walk in it.",
+      "hl_20261112_3": "You take the tram across town with nothing to carry and enjoy the empty afternoon seats.",
+      "hl_20261115_5": "You ride two stops for the air, keys in your pocket, and walk back under a clear cold sky."
+    }
+  },
+  "TAPE": {
+    "display_name": "Tape measure",
+    "note": "yellow 5 m tape",
+    "captions": {
+      "hl_20261026_2": "You clean old glue, measure the joint, and clamp the chair frame square.",
+      "hl_20261028_2": "You set the yellow tape measure against the cabinet door and mark hinge centers.",
+      "hl_20261028_5": "The app question 'where is the yellow tape measure?' points under the chair frame.",
+      "hl_20261105_3": "You ask the app where the yellow tape was last recorded and it answers: the bench by the window, under a rag.",
+      "hl_20261111_3": "You measure twice with the yellow tape, bend a small bracket, and fix it across the weak corner."
+    }
+  },
+  "GLUE": {
+    "display_name": "Glue gun",
+    "note": "small hot-glue gun",
+    "captions": {
+      "hl_20261031_3": "You re-glue wing joints, shorten a strap, and add a soft cloth cuff to the robot arm.",
+      "hl_20261031_6": "You sweep glue scraps and switch on the repaired desk lamp after the last knock.",
+      "hl_20261104_2": "A loose corner gets a careful bead of hot glue and a clamp, and the recording pauses while you hold it steady.",
+      "hl_20261111_2": "You dig out four short screws, run a bead of glue into the split, and clamp it while the kettle boils.",
+      "hl_20261112_4": "You browse hinges you do not need yet and buy only glue sticks and a box of small screws."
+    }
+  },
+  "TOOLB": {
+    "display_name": "Red toolbox",
+    "note": "lives at the repair cafe bench",
+    "captions": {
+      "hl_20261107_2": "Tomas arranges the radios in a queue by size while you lay out the toolbox and the screw jar.",
+      "hl_20261107_6": "Three fixes out of five, one kettle kept for next week, and the hall swept before four.",
+      "hl_20261111_3": "You measure twice with the yellow tape, bend a small bracket, and fix it across the weak corner.",
+      "hl_20261114_1": "The mentor pins the winter notice to the board while you set out the toolbox for the final Saturday.",
+      "hl_20261117_4": "You test the power cord of a radio Tomas might want for Saturday, then start sanding the cabinet doors Ines left last week."
+    }
+  },
+  "LAMP": {
+    "display_name": "Desk lamp",
+    "note": "the repaired metal desk lamp",
+    "captions": {
+      "hl_20261101_5": "You wipe down the repaired desk lamp and put the paper notebook back where you can find it.",
+      "hl_20261109_3": "The repaired metal desk lamp passes its test again, and you set it aside for the cafe bench.",
+      "hl_20261114_5": "A visitor takes the repaired metal desk lamp for a dark hallway and promises to bring the kettle next year.",
+      "hl_20261118_2": "You star the clips worth keeping: the desk lamp coming back to life, Pip's first repair, Hollis's dresser sliding shut.",
+      "hl_20261118_5": "You ask where the paper notebook was last seen; the app points to the desk, and it's under the lamp, just off the edge."
+    }
+  },
+  "WALLET": {
+    "display_name": "Wallet",
+    "note": "brown leather wallet",
+    "captions": {
+      "hl_20261028_6": "You lean into the wind with the umbrella closed and the wallet zipped in the tote.",
+      "hl_20261029_2": "The bakery counter bags a rye loaf and two cinnamon buns for the weekend.",
+      "hl_20261031_2": "You buy a rye loaf and a small bag of buns, then tuck the wallet away.",
+      "hl_20261109_1": "Everyone is in winter coats and the tram heater smells faintly of dust.",
+      "hl_20261110_5": "You put the library card where it belongs and the wallet back in the coat pocket."
+    }
+  }
+}

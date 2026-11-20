@@ -1,0 +1,560 @@
+[
+  {
+    "id": "t01",
+    "name": "Maya R.",
+    "age_band": "30s",
+    "role": "parent of twins",
+    "town": "Cindervale",
+    "months_used": 8,
+    "rating": 5,
+    "features": [
+      "qa",
+      "timeline",
+      "summary",
+      "object_finder",
+      "pause"
+    ],
+    "title": "Twins, keys, and the daily recap",
+    "quote": "The daily summary has become my evening reset: it tells me which twin had the library bag and when I last saw the spare key. I scrub the timeline to the exact minute we left the park because I could not remember whether the water bottle came home. The object finder saved me twice this month, and the one-tap pause is easy even with a toddler on my hip.",
+    "date": "2026-02-14"
+  },
+  {
+    "id": "t02",
+    "name": "Diego M.",
+    "age_band": "40s",
+    "role": "night-shift nurse",
+    "town": "Marrow Bay",
+    "months_used": 6,
+    "rating": 3,
+    "features": [
+      "timeline",
+      "qa",
+      "pause",
+      "uncertain",
+      "backup"
+    ],
+    "title": "Useful on nights, battery is tight",
+    "quote": "The timeline is genuinely helpful when I need to check whether I locked the staff exit or where I set down my badge. But the battery barely makes it through a twelve-hour shift if I leave capture on, so I pause it during breaks and miss chunks. The uncertain labels are honest, though I wish the question answering would say not captured faster instead of guessing around the gap.",
+    "date": "2026-03-02"
+  },
+  {
+    "id": "t03",
+    "name": "Priya S.",
+    "age_band": "50s",
+    "role": "low-vision piano tuner",
+    "town": "Fernquay",
+    "months_used": 11,
+    "rating": 5,
+    "features": [
+      "qa",
+      "object_finder",
+      "summary",
+      "privacy",
+      "pause"
+    ],
+    "title": "A quiet second set of eyes",
+    "quote": "I tune pianos in unfamiliar houses, and the object finder helps me confirm which case holds my felt wedges before I leave. I ask the site where I set the tuning hammer, and it gives me a timestamp I can click. The glasses are discreet enough that clients forget them, and pausing capture for private conversations has become second nature.",
+    "date": "2026-04-19"
+  },
+  {
+    "id": "t04",
+    "name": "Jonas W.",
+    "age_band": "60s",
+    "role": "retired teacher",
+    "town": "Quillwater",
+    "months_used": 9,
+    "rating": 4,
+    "features": [
+      "summary",
+      "timeline",
+      "qa",
+      "backup",
+      "uncertain"
+    ],
+    "title": "Good summaries, occasional unsure answers",
+    "quote": "The daily summary reads like a tidy note from a very patient assistant, and I use it to recall which neighbor stopped by and what we agreed about the fence. Timeline scrubbing is smooth, but sometimes it marks a perfectly clear moment as uncertain, so I double-check. Backing up to my home NAS took an afternoon to set up, but now it runs without fuss.",
+    "date": "2026-05-08"
+  },
+  {
+    "id": "t05",
+    "name": "Mei L.",
+    "age_band": "20s",
+    "role": "bike mechanic",
+    "town": "Brindlewood",
+    "months_used": 3,
+    "rating": 4,
+    "features": [
+      "object_finder",
+      "timeline",
+      "pause",
+      "privacy"
+    ],
+    "title": "Found the torque wrench again",
+    "quote": "I lose tools constantly in the workshop, and the last-seen finder has cut my searching down to a minute. I click the timestamp and watch the frame where I carry the torque wrench back to the bench. The pause button is handy when a customer wants to talk privately, though I sometimes forget to turn capture back on.",
+    "date": "2026-06-11"
+  },
+  {
+    "id": "t06",
+    "name": "Oluwaseun A.",
+    "age_band": "30s",
+    "role": "community theater stage manager",
+    "town": "Glass Harbor",
+    "months_used": 7,
+    "rating": 5,
+    "features": [
+      "timeline",
+      "summary",
+      "qa",
+      "backup",
+      "uncertain"
+    ],
+    "title": "Cue-to-cue recall without notebooks",
+    "quote": "During tech week I used the timeline to check exactly when the fog machine was moved and who had the spare battery pack. The question answering gave me a timestamp for when did the prop table get cleared, and the uncertain label stopped me from trusting a guess. I back up to my own cloud after every show, so the whole run is searchable.",
+    "date": "2026-06-29"
+  },
+  {
+    "id": "t07",
+    "name": "Hana K.",
+    "age_band": "40s",
+    "role": "bookbinder",
+    "town": "Ivyhurst",
+    "months_used": 5,
+    "rating": 5,
+    "features": [
+      "summary",
+      "object_finder",
+      "privacy",
+      "pause",
+      "timeline"
+    ],
+    "title": "Private by default in a shared studio",
+    "quote": "I share a studio with three other binders, so the local-first switch matters to me; my frames stay on my own drive unless I choose otherwise. The daily summary reminds me which client's paper order arrived and where I put the bone folder. One-tap pause keeps other people's work out of my timeline when they ask.",
+    "date": "2026-07-03"
+  },
+  {
+    "id": "t08",
+    "name": "Rafael C.",
+    "age_band": "70s",
+    "role": "woodworker",
+    "town": "Alderwick",
+    "months_used": 12,
+    "rating": 4,
+    "features": [
+      "qa",
+      "object_finder",
+      "summary",
+      "backup",
+      "uncertain"
+    ],
+    "title": "Helpful, but the NAS setup was fiddly",
+    "quote": "I ask where I left the 3mm drill bit, and it usually shows me the last frame of me setting it down. The object finder is excellent for small hardware, though the home NAS setup took me two evenings and one phone call to a patient nephew. I appreciate that uncertain answers are labeled instead of pretending, but I wish there were fewer of them in the dusty shop.",
+    "date": "2026-07-21"
+  },
+  {
+    "id": "t09",
+    "name": "Ingrid P.",
+    "age_band": "50s",
+    "role": "park caretaker",
+    "town": "Nettlecombe",
+    "months_used": 4,
+    "rating": 5,
+    "features": [
+      "timeline",
+      "summary",
+      "pause",
+      "privacy"
+    ],
+    "title": "Trail checks with a clean record",
+    "quote": "I walk the same paths every day, so the timeline helps me confirm which gate I propped open and when the bridge sign went missing. I pause capture during staff meetings and keep the privacy switch local, which my crew appreciates. The daily summary is short enough to read before I lock the shed.",
+    "date": "2026-08-01"
+  },
+  {
+    "id": "t10",
+    "name": "Tariq B.",
+    "age_band": "30s",
+    "role": "delivery cyclist",
+    "town": "Saltmarsh",
+    "months_used": 2,
+    "rating": 4,
+    "features": [
+      "object_finder",
+      "qa",
+      "pause",
+      "backup"
+    ],
+    "title": "Find the parcel, skip the awkward stops",
+    "quote": "When a delivery slip goes missing, I ask the site which porch I photographed last, and the timestamp usually settles it. The object finder for my second lock has saved me from backtracking across town. I pause recording at customers' doors, but the battery drops fast when I forget to resume between drops.",
+    "date": "2026-08-13"
+  },
+  {
+    "id": "t11",
+    "name": "Sofia N.",
+    "age_band": "40s",
+    "role": "ceramicist",
+    "town": "Juniper Vale",
+    "months_used": 10,
+    "rating": 5,
+    "features": [
+      "summary",
+      "object_finder",
+      "timeline",
+      "privacy"
+    ],
+    "title": "Glaze notes and last-seen tools",
+    "quote": "The daily summary is my glaze log: it reminds me which batch I mixed and where I set the sieve. I use the timeline to find the exact moment a commission piece went into the kiln, and the object finder for my favorite rib tool. Local-first storage was the reason I bought in; my studio footage never leaves my own drive.",
+    "date": "2026-08-24"
+  },
+  {
+    "id": "t12",
+    "name": "Kenji H.",
+    "age_band": "20s",
+    "role": "line cook",
+    "town": "Tidewell",
+    "months_used": 1,
+    "rating": 4,
+    "features": [
+      "timeline",
+      "qa",
+      "uncertain",
+      "pause"
+    ],
+    "title": "Great for prep, noisy for audio",
+    "quote": "The timeline is handy for checking when the stock went on and which station had the missing ladle. The kitchen is loud, so the audio capture is mostly clatter, and the question answering marks a lot as uncertain. I pause it during staff meals because nobody wants to be recorded while complaining about the rush.",
+    "date": "2026-09-05"
+  },
+  {
+    "id": "t13",
+    "name": "Leila F.",
+    "age_band": "60s",
+    "role": "archivist",
+    "town": "Mossgrove",
+    "months_used": 9,
+    "rating": 5,
+    "features": [
+      "backup",
+      "timeline",
+      "qa",
+      "summary",
+      "privacy"
+    ],
+    "title": "A personal archive that stays personal",
+    "quote": "I treat the timeline like a finding aid for my own days, and I love that I can back it up to my home NAS instead of handing it to a company. The question answering with clickable timestamps helps me verify dates for family stories. I keep auto-delete short for everyday footage and archive only what matters.",
+    "date": "2026-09-17"
+  },
+  {
+    "id": "t14",
+    "name": "Mateo R.",
+    "age_band": "30s",
+    "role": "parent of twins",
+    "town": "Rookhaven",
+    "months_used": 6,
+    "rating": 4,
+    "features": [
+      "summary",
+      "object_finder",
+      "pause",
+      "uncertain"
+    ],
+    "title": "The daily recap saves bedtime",
+    "quote": "The daily summary tells me which twin finished homework and where the second sippy cup ended up. I use the object finder for the missing shoe before we leave the house, and the uncertain label has stopped me from arguing with my own guess. Pause is easy, but I wish the battery lasted through a full day of errands.",
+    "date": "2026-09-28"
+  },
+  {
+    "id": "t15",
+    "name": "Nadia V.",
+    "age_band": "40s",
+    "role": "sign language interpreter",
+    "town": "Larkspur Bend",
+    "months_used": 8,
+    "rating": 5,
+    "features": [
+      "pause",
+      "privacy",
+      "timeline",
+      "summary"
+    ],
+    "title": "Consent controls that fit the job",
+    "quote": "I work in meetings and community events where recording is sensitive, so one-tap pause and the local-first switch are not extras, they are the whole point. The timeline helps me check my schedule and which room I was in, without capturing the people I am interpreting for. I delete everyday footage after a week and keep only my own summary notes.",
+    "date": "2026-10-06"
+  },
+  {
+    "id": "t16",
+    "name": "Ethan J.",
+    "age_band": "50s",
+    "role": "ferry deckhand",
+    "town": "Vellum Creek",
+    "months_used": 5,
+    "rating": 4,
+    "features": [
+      "object_finder",
+      "timeline",
+      "qa",
+      "backup",
+      "uncertain"
+    ],
+    "title": "Salt air, missing gloves, clear timestamps",
+    "quote": "The last-seen finder for my work gloves is surprisingly good, even when the frames are a bit foggy. I ask the site when the tide chart was last in my hand, and the answer comes with a timestamp I can click. Backup to my own cloud works, but the setup instructions assume I know more about home networks than I do.",
+    "date": "2026-10-14"
+  },
+  {
+    "id": "t17",
+    "name": "Chloe D.",
+    "age_band": "20s",
+    "role": "barista",
+    "town": "Yarrow Bend",
+    "months_used": 4,
+    "rating": 5,
+    "features": [
+      "timeline",
+      "summary",
+      "pause",
+      "privacy"
+    ],
+    "title": "Shift notes without a notebook",
+    "quote": "I use the daily summary to remember which regular asked for the oat blend and which pastry tray I restocked. The timeline is quick enough to scrub during a lull, and pause keeps customer conversations out of my record. I like that the site stays local-first; it feels less like surveillance and more like my own notes.",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "t18",
+    "name": "Arjun P.",
+    "age_band": "30s",
+    "role": "warehouse picker",
+    "town": "Glimmerstead",
+    "months_used": 3,
+    "rating": 2,
+    "features": [
+      "timeline",
+      "qa",
+      "pause",
+      "uncertain"
+    ],
+    "title": "Battery and gaps make it hard",
+    "quote": "The idea is good, but my battery dies before the end of a ten-hour pick shift, so the timeline has big holes. The question answering often says uncertain for moments I know were captured, which makes me stop trusting it. I still use pause and the timeline now and then, but I would not rely on it for a full shift.",
+    "date": "2026-10-30"
+  },
+  {
+    "id": "t19",
+    "name": "Fatima E.",
+    "age_band": "40s",
+    "role": "librarian",
+    "town": "Havenbrook",
+    "months_used": 11,
+    "rating": 5,
+    "features": [
+      "qa",
+      "timeline",
+      "summary",
+      "backup",
+      "uncertain"
+    ],
+    "title": "Clickable answers for small mysteries",
+    "quote": "A patron asked when a community flyer went up, and I checked my own timeline instead of guessing. The question answering gave me a timestamp I could click and confirm, and the uncertain label kept me honest about the gap. I back up to my home NAS weekly, so the whole year is tidy.",
+    "date": "2026-11-04"
+  },
+  {
+    "id": "t20",
+    "name": "Lukas G.",
+    "age_band": "60s",
+    "role": "birdwatcher",
+    "town": "Pinehollow",
+    "months_used": 7,
+    "rating": 4,
+    "features": [
+      "summary",
+      "object_finder",
+      "timeline",
+      "privacy"
+    ],
+    "title": "Field notes with exact minutes",
+    "quote": "The daily summary gathers my sightings and reminds me which trailhead I started from. I use the timeline to find the exact minute a heron crossed the marsh, and the object finder for my spotting scope cap. I pause capture at sensitive nesting sites and keep everything on my own drive.",
+    "date": "2026-02-27"
+  },
+  {
+    "id": "t21",
+    "name": "Yara H.",
+    "age_band": "30s",
+    "role": "urban gardener",
+    "town": "Thistleport",
+    "months_used": 9,
+    "rating": 5,
+    "features": [
+      "summary",
+      "timeline",
+      "qa",
+      "object_finder",
+      "pause"
+    ],
+    "title": "Which bed, which seed, which tool",
+    "quote": "The summary reminds me which bed I watered and where I left the hand fork. I ask the site when I planted the fennel, and it gives me a timestamp I can click back to. I pause recording during neighborhood meetings, but the garden timeline itself is a lovely record of the season.",
+    "date": "2026-03-19"
+  },
+  {
+    "id": "t22",
+    "name": "Noah S.",
+    "age_band": "40s",
+    "role": "home inspector",
+    "town": "Umberfield",
+    "months_used": 6,
+    "rating": 4,
+    "features": [
+      "qa",
+      "timeline",
+      "object_finder",
+      "backup",
+      "uncertain"
+    ],
+    "title": "Timestamps for the detail I forgot",
+    "quote": "After an inspection I can ask where I last saw the moisture meter or which crawlspace hatch I photographed. The clickable timestamps have saved me a return trip more than once. Backup to my own cloud is reliable, though the uncertain labels sometimes appear on clear frames, so I still keep paper notes.",
+    "date": "2026-04-07"
+  },
+  {
+    "id": "t23",
+    "name": "Anika M.",
+    "age_band": "50s",
+    "role": "tailor",
+    "town": "Silverdyke",
+    "months_used": 12,
+    "rating": 5,
+    "features": [
+      "timeline",
+      "object_finder",
+      "summary",
+      "privacy",
+      "pause"
+    ],
+    "title": "Measurements, pins, and private fittings",
+    "quote": "I use the object finder for the good fabric scissors at least twice a week. The timeline helps me confirm when a client's fitting started and which alteration I promised, and the daily summary keeps it all short. I pause during private fittings and keep storage local, which matters in a small shop.",
+    "date": "2026-05-16"
+  },
+  {
+    "id": "t24",
+    "name": "Boris T.",
+    "age_band": "70s",
+    "role": "retired machinist",
+    "town": "Orchard Fen",
+    "months_used": 10,
+    "rating": 3,
+    "features": [
+      "qa",
+      "summary",
+      "backup",
+      "uncertain",
+      "timeline"
+    ],
+    "title": "Useful, but I fought the NAS setup",
+    "quote": "The daily summary is clear, and I like being able to ask where I put the calipers. But setting up backup to my home NAS was the hardest part of the whole thing, and I nearly gave up. The uncertain answers are honest, yet they show up often enough that I keep a paper list for important jobs.",
+    "date": "2026-06-02"
+  },
+  {
+    "id": "t25",
+    "name": "Camila Q.",
+    "age_band": "20s",
+    "role": "museum guard",
+    "town": "Kestrelford",
+    "months_used": 2,
+    "rating": 4,
+    "features": [
+      "timeline",
+      "pause",
+      "privacy",
+      "summary"
+    ],
+    "title": "Quiet record for a quiet job",
+    "quote": "I use the timeline mostly to check when I rotated through a gallery and where I left my radio. Pause is important during school groups because I do not want children's conversations stored. The daily summary is pleasantly boring, which is exactly what I want from a work log.",
+    "date": "2026-07-09"
+  },
+  {
+    "id": "t26",
+    "name": "Dmitri L.",
+    "age_band": "40s",
+    "role": "bike tour guide",
+    "town": "Rushmere",
+    "months_used": 8,
+    "rating": 5,
+    "features": [
+      "qa",
+      "timeline",
+      "object_finder",
+      "backup",
+      "pause"
+    ],
+    "title": "Route questions answered with timestamps",
+    "quote": "When a guest asks where we stopped for water, I can ask my timeline and get a clickable minute. The object finder helps me check which pannier holds the first-aid kit before a ride. I pause capture during off-duty conversations, and the backup to my own cloud runs overnight.",
+    "date": "2026-08-08"
+  },
+  {
+    "id": "t27",
+    "name": "Elena R.",
+    "age_band": "30s",
+    "role": "puppeteer",
+    "town": "Larkmoor",
+    "months_used": 4,
+    "rating": 4,
+    "features": [
+      "summary",
+      "object_finder",
+      "timeline",
+      "uncertain"
+    ],
+    "title": "Puppet parts and honest uncertainty",
+    "quote": "The object finder for tiny puppet hands is a lifesaver before a show. I use the timeline to see when I last packed the rod set, and the daily summary reminds me which case went to the workshop. The uncertain labels are useful when the frame is blocked, though I wish I could correct them.",
+    "date": "2026-09-11"
+  },
+  {
+    "id": "t28",
+    "name": "Farid N.",
+    "age_band": "50s",
+    "role": "bakery owner",
+    "town": "Mallowreach",
+    "months_used": 5,
+    "rating": 5,
+    "features": [
+      "summary",
+      "timeline",
+      "qa",
+      "backup",
+      "privacy"
+    ],
+    "title": "Early mornings, clear summaries",
+    "quote": "I start before dawn and forget which supplier called or where I set the order book. The daily summary gives me the shape of the day, and question answering finds the timestamp when the flour delivery arrived. I keep capture local and delete routine footage after two weeks; only the summaries stay.",
+    "date": "2026-10-02"
+  },
+  {
+    "id": "t29",
+    "name": "Grace O.",
+    "age_band": "60s",
+    "role": "community choir organizer",
+    "town": "Vesper Bay",
+    "months_used": 7,
+    "rating": 4,
+    "features": [
+      "timeline",
+      "summary",
+      "pause",
+      "privacy",
+      "qa"
+    ],
+    "title": "Song lists, consent, and good defaults",
+    "quote": "I use the timeline to remember which arrangement we rehearsed and where I left the pitch pipe. I pause recording during choir members' personal conversations, and the local-first switch means the footage stays on my own drive. The summary is helpful, but I wish question answering handled song titles better than it does.",
+    "date": "2026-10-26"
+  },
+  {
+    "id": "t30",
+    "name": "Hiro Y.",
+    "age_band": "30s",
+    "role": "radio hobbyist",
+    "town": "Yarrow Bend",
+    "months_used": 1,
+    "rating": 4,
+    "features": [
+      "timeline",
+      "qa",
+      "object_finder",
+      "uncertain",
+      "pause"
+    ],
+    "title": "Finding adapters and call times",
+    "quote": "I ask where the coax adapter went, and the last-seen finder usually points me to the right desk pile. The timeline helps me confirm when I logged a contact, though the uncertain label appears a lot in dim radio-shack light. Pause is easy when a friend wants to talk off the record.",
+    "date": "2026-11-12"
+  }
+]

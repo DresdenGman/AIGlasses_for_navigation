@@ -1,0 +1,32 @@
+name: Lifelog web
+
+on:
+  push:
+    paths:
+      - "lifelog/web/**"
+      - ".github/workflows/lifelog-web.yml"
+  pull_request:
+    paths:
+      - "lifelog/web/**"
+      - ".github/workflows/lifelog-web.yml"
+
+jobs:
+  web:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: lifelog/web
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: lifelog/web/package-lock.json
+      - run: npm ci
+      - run: npm run validate
+      - run: npm run typecheck
+      - run: npm run lint
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e
+      - run: npm run build
