@@ -110,7 +110,7 @@ export function TimelineView({
   const hours = Array.from({ length: 7 }, (_, index) => index * 4);
 
   return (
-    <article className="mx-auto max-w-page px-6 py-8">
+    <article className="museum-page mx-auto max-w-page px-6 py-12">
       <h1 className="serif text-display">{formatDate(timeline.day, locale)}</h1>
       <div className="mt-6">
         <DayNav day={timeline.day} locale={locale} />

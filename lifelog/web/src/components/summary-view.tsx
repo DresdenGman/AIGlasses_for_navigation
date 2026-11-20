@@ -50,7 +50,7 @@ export function SummaryView({
     return chips;
   };
   return (
-    <article className="mx-auto max-w-page px-4 py-12 md:px-8">
+    <article className="museum-page mx-auto max-w-page px-4 py-12 md:px-8">
       <DayNav day={summary.day} locale={locale} />
       <header className="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-12">
         <div className="lg:col-span-8">
