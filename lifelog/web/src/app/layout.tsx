@@ -53,6 +53,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     backupTarget: backup.target_type === "cloud" ? "cloud" : "nas",
     speakerNames: {},
     pausedAt: null,
+    pausedUntil: null,
   };
   const light = colorVars(tokens.color.light);
   const dark = colorVars(tokens.color.dark);

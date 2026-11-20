@@ -19,6 +19,7 @@ export type ShowcaseOverrides = {
   backupTarget: "nas" | "cloud";
   speakerNames: Record<string, string>;
   pausedAt: number | null;
+  pausedUntil: number | null;
 };
 
 type DialogName = "resume" | "cloud" | "audio" | null;
@@ -40,6 +41,7 @@ type PrefsValue = {
   confirmCloudOff: () => void;
   requestAudio: () => void;
   confirmAudio: () => void;
+  pauseFor: (seconds: number) => void;
   update: (patch: Partial<ShowcaseOverrides>) => void;
   setSpeakerName: (id: string, name: string) => void;
 };
@@ -93,6 +95,19 @@ export function PrefsProvider({
     localStorage.setItem(STORAGE_KEY, JSON.stringify(overrides));
   }, [overrides, ready]);
 
+  useEffect(() => {
+    if (!overrides.pausedUntil) return;
+    const remaining = overrides.pausedUntil - Date.now();
+    if (remaining <= 0) {
+      setOverrides((current) => ({ ...current, paused: false, pausedAt: null, pausedUntil: null }));
+      return;
+    }
+    const timer = window.setTimeout(() => {
+      setOverrides((current) => ({ ...current, paused: false, pausedAt: null, pausedUntil: null }));
+    }, remaining);
+    return () => window.clearTimeout(timer);
+  }, [overrides.pausedUntil]);
+
   const value = useMemo<PrefsValue>(() => {
     const update = (patch: Partial<ShowcaseOverrides>) => {
       setOverrides((current) => ({ ...current, ...patch }));
@@ -122,10 +137,14 @@ export function PrefsProvider({
           return next;
         });
       },
-      pause: () => update({ paused: true, pausedAt: Date.now() }),
+      pause: () => update({ paused: true, pausedAt: Date.now(), pausedUntil: null }),
+      pauseFor: (seconds) => {
+        const now = Date.now();
+        update({ paused: true, pausedAt: now, pausedUntil: now + seconds * 1000 });
+      },
       askResume: () => setDialog("resume"),
       confirmResume: () => {
-        update({ paused: false, pausedAt: null });
+        update({ paused: false, pausedAt: null, pausedUntil: null });
         setDialog(null);
       },
       closeDialog: () => setDialog(null),

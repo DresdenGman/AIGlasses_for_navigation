@@ -32,8 +32,8 @@ export function PrivacyPanel({
         <h2 className="serif text-3xl">{copy.pauseNow}</h2>
         <p className="mt-3 max-w-measure">{copy.pauseHelp}</p>
         <div className="mt-4 flex flex-wrap gap-3">
-          <button type="button" className="min-h-11 border border-rule px-4" onClick={() => prefs.pause()}>{copy.fifteen}</button>
-          <button type="button" className="min-h-11 border border-rule px-4" onClick={() => prefs.pause()}>{copy.oneHour}</button>
+          <button type="button" className="min-h-11 border border-rule px-4" onClick={() => prefs.pauseFor(15 * 60)}>{copy.fifteen}</button>
+          <button type="button" className="min-h-11 border border-rule px-4" onClick={() => prefs.pauseFor(60 * 60)}>{copy.oneHour}</button>
           <button type="button" className="min-h-11 border border-ink px-4" onClick={() => (state.paused ? prefs.askResume() : prefs.pause())}>{copy.untilResume}</button>
         </div>
       </section>

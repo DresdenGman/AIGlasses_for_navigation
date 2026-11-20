@@ -66,6 +66,44 @@ export default async function YearPage() {
         </dl>
       </section>
 
+      <section className="mx-auto mt-24 max-w-page px-4 md:px-8" aria-labelledby="capabilities-title">
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-12">
+          <div className="lg:col-span-3">
+            <h2 id="capabilities-title" className="eyebrow">The complete loop</h2>
+          </div>
+          <div className="lg:col-span-9">
+            <p className="serif max-w-measure text-2xl leading-snug">
+              Capture, keep, understand, and find a moment again — with uncertainty visible at every step.
+            </p>
+            <ul className="mt-8 grid grid-cols-1 gap-px border border-rule bg-rule sm:grid-cols-2">
+              {[
+                ["01", "Timed capture", "A five-minute frame rhythm and watch transcript form the day.", `/day/${FEATURED_DAY}`],
+                ["02", "Cloud or NAS backup", "A visible backup ledger keeps the destination and failures explicit.", "/settings"],
+                ["03", "Daily summary", "Places, activities, people, and speech are arranged into a readable day.", `/day/${FEATURED_DAY}/summary`],
+                ["04", "Timeline playback", "Scrub the full day, jump to a frame, or follow the transcript.", `/day/${FEATURED_DAY}`],
+                ["05", "Evidence-first answers", "Ask a question and open the exact cited moment.", "/ask"],
+                ["06", "Last-seen objects", "Search watched objects without turning a weak sighting into certainty.", "/objects"],
+                ["07", "Uncertainty markers", "Weak evidence is labeled instead of being polished into a claim.", "/ask"],
+                ["08", "Privacy controls", "Pause capture, choose retention, and keep the record local-first.", "/privacy"],
+              ].map(([number, title, description, href]) => (
+                <li key={number} className="bg-paper p-5">
+                  <Link href={href} className="block no-underline">
+                    <span className="eyebrow">{number}</span>
+                    <h3 className="serif mt-4 text-2xl">{title}</h3>
+                    <p className="mt-2 text-sm text-ink-muted">{description}</p>
+                    <span className="mt-5 inline-block text-sm underline">Open view</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-5 max-w-measure text-sm text-ink-muted">
+              This public page is a synthetic showcase. The interface and contracts are implemented; live camera,
+              Apple Watch, storage credentials, and model keys still need to be connected for a real deployment.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="mt-24" aria-labelledby="months-title">
         <div className="mx-auto mb-8 grid max-w-page grid-cols-1 gap-4 px-4 md:px-8 lg:grid-cols-12">
           <h2 id="months-title" className="eyebrow lg:col-span-3">{copy.monthsTitle}</h2>
