@@ -20,8 +20,16 @@ export function AskPanel({
   const copy = t(locale);
   const [question, setQuestion] = useState("");
   const [response, setResponse] = useState<AskResponse | null>(null);
+  const [suggestedQuery, setSuggestedQuery] = useState("");
   const hero = prepared.filter((item) => item.mode !== "year");
   const year = prepared.filter((item) => item.mode === "year");
+  const normalizedQuery = suggestedQuery.toLocaleLowerCase();
+  const filteredHero = hero.filter((item) =>
+    item.question.toLocaleLowerCase().includes(normalizedQuery),
+  );
+  const filteredYear = year.filter((item) =>
+    item.question.toLocaleLowerCase().includes(normalizedQuery),
+  );
 
   const show = (item: AskResponse) => {
     setQuestion(item.question);
@@ -102,7 +110,17 @@ export function AskPanel({
       ) : null}
       <section className="mt-10" aria-label={copy.suggested}>
         <h2 className="eyebrow">{copy.suggested}</h2>
-        {[{ title: copy.suggestedDay, items: hero }, { title: copy.suggestedYear, items: year }].map((group) => (
+        <label className="mt-4 block max-w-measure">
+          <span className="sr-only">{copy.suggested}</span>
+          <input
+            type="search"
+            value={suggestedQuery}
+            onChange={(event) => setSuggestedQuery(event.target.value)}
+            placeholder={copy.askPlaceholder}
+            className="min-h-11 w-full border border-rule bg-transparent px-3"
+          />
+        </label>
+        {[{ title: copy.suggestedDay, items: filteredHero }, { title: copy.suggestedYear, items: filteredYear }].map((group) => (
           <div key={group.title} className="mt-8">
             <h3 className="text-sm text-ink-muted">{group.title}</h3>
             <ul className="mt-3 flex flex-col gap-2">
