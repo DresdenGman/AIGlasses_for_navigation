@@ -24,14 +24,17 @@
       },
       "status": "answered",
       "ui_tone": "neutral",
-      "answer": "你早餐吃了加了香蕉片的燕麦粥，并配了茶。",
+      "answer": "你早餐吃了燕麦粥配香蕉片。",
       "sentences": [
         {
-          "text": "你早餐吃了加了香蕉片的燕麦粥，并配了茶。",
+          "text": "你早餐吃了燕麦粥配香蕉片。",
           "evidence": [
             "E1",
-            "E2"
-          ]
+            "E2",
+            "E3",
+            "E4"
+          ],
+          "quote": "一碗加了香蕉片的燕麦粥"
         }
       ],
       "evidence": [
@@ -47,9 +50,9 @@
           "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000001.webp",
           "frame_id": "frm_01JRQ4H8ZE0000000000000001",
           "source_conf": 0.8,
-          "score": 0.71,
+          "score": 0.79,
           "certainty": "confident",
-          "quote": null,
+          "quote": "一碗加香蕉片的燕麦粥",
           "open_url": "/day/2026-04-18?t=1776520800000&focus=cap_01JRQ4H8ZE0000000000000001"
         },
         {
@@ -64,14 +67,48 @@
           "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000008.webp",
           "frame_id": "frm_01JRQ4H8ZE0000000000000008",
           "source_conf": 0.72,
-          "score": 0.69,
+          "score": 0.35,
+          "certainty": "confident",
+          "quote": "你吃燕麦粥配香蕉，还喝茶",
+          "open_url": "/day/2026-04-18?t=1776520800000&focus=seg_01JRQ4H8ZE0000000000000001"
+        },
+        {
+          "handle": "E3",
+          "kind": "caption",
+          "id": "cap_01JRQ4H8ZE0000000000000003",
+          "day": "2026-04-18",
+          "ts": 1776521400000,
+          "ts_end": 1776521400000,
+          "ts_local": "2026-04-18T07:10:00-07:00",
+          "label": "画面 · 家",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000003.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000003",
+          "source_conf": 0.8,
+          "score": 0.35,
           "certainty": "confident",
           "quote": null,
-          "open_url": "/day/2026-04-18?t=1776520800000&focus=seg_01JRQ4H8ZE0000000000000001"
+          "open_url": "/day/2026-04-18?t=1776521400000&focus=cap_01JRQ4H8ZE0000000000000003"
+        },
+        {
+          "handle": "E4",
+          "kind": "caption",
+          "id": "cap_01JRQ4H8ZE0000000000000006",
+          "day": "2026-04-18",
+          "ts": 1776522300000,
+          "ts_end": 1776522300000,
+          "ts_local": "2026-04-18T07:25:00-07:00",
+          "label": "画面 · 家",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000006.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000006",
+          "source_conf": 0.8,
+          "score": 0.38,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776522300000&focus=cap_01JRQ4H8ZE0000000000000006"
         }
       ],
-      "evidence_considered": 56,
-      "score": 0.71,
+      "evidence_considered": 41,
+      "score": 0.79,
       "reason": null,
       "reasons": [],
       "reason_text": null,
@@ -92,7 +129,7 @@
           "cap_01JRQ4H8ZE0000000000000003"
         ],
         "status_match": true,
-        "citation_hit": false
+        "citation_hit": true
       }
     },
     {
@@ -107,20 +144,20 @@
       },
       "status": "answered",
       "ui_tone": "neutral",
-      "answer": "你早上坐的是4路有轨电车。",
+      "answer": "今天早上你乘坐了开往蕨谷的 4 路有轨电车。",
       "sentences": [
         {
-          "text": "你早上坐的是4路有轨电车。",
+          "text": "今天早上你乘坐了开往蕨谷的 4 路有轨电车。",
           "evidence": [
-            "E2",
-            "E4"
-          ],
-          "quote": "乘4路有轨电车前往Fernhollow"
+            "E3",
+            "E5",
+            "E6"
+          ]
         }
       ],
       "evidence": [
         {
-          "handle": "E2",
+          "handle": "E3",
           "kind": "segment",
           "id": "seg_01JRQ4H8ZE0000000000000002",
           "day": "2026-04-18",
@@ -131,13 +168,13 @@
           "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000019.webp",
           "frame_id": "frm_01JRQ4H8ZE0000000000000019",
           "source_conf": 0.67,
-          "score": 0.65,
+          "score": 0.66,
           "certainty": "uncertain",
           "quote": "乘4路有轨电车前往Fernhollow",
           "open_url": "/day/2026-04-18?t=1776525300000&focus=seg_01JRQ4H8ZE0000000000000002"
         },
         {
-          "handle": "E4",
+          "handle": "E5",
           "kind": "caption",
           "id": "cap_01JRQ4H8ZE0000000000000018",
           "day": "2026-04-18",
@@ -148,14 +185,31 @@
           "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000018.webp",
           "frame_id": "frm_01JRQ4H8ZE0000000000000018",
           "source_conf": 0.8,
-          "score": 0.72,
+          "score": 0.75,
           "certainty": "confident",
           "quote": "Line 4 · Fernhollow",
           "open_url": "/day/2026-04-18?t=1776525900000&focus=cap_01JRQ4H8ZE0000000000000018"
+        },
+        {
+          "handle": "E6",
+          "kind": "caption",
+          "id": "cap_01JRQ4H8ZE0000000000000019",
+          "day": "2026-04-18",
+          "ts": 1776526200000,
+          "ts_end": 1776526200000,
+          "ts_local": "2026-04-18T08:30:00-07:00",
+          "label": "画面 · 4 路有轨电车",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000019.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000019",
+          "source_conf": 0.8,
+          "score": 0.78,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776526200000&focus=cap_01JRQ4H8ZE0000000000000019"
         }
       ],
-      "evidence_considered": 61,
-      "score": 0.72,
+      "evidence_considered": 53,
+      "score": 0.78,
       "reason": null,
       "reasons": [],
       "reason_text": null,
@@ -175,7 +229,7 @@
           "cap_01JRQ4H8ZE0000000000000019"
         ],
         "status_match": true,
-        "citation_hit": false
+        "citation_hit": true
       }
     },
     {
@@ -190,29 +244,23 @@
       },
       "status": "answered",
       "ui_tone": "neutral",
-      "answer": "你的四颗螺丝放在红色工具箱盖上。你说先把螺丝放红色工具箱上，志愿者确认工具箱会留到周二。",
+      "answer": "你把四颗螺丝放在一个红色工具箱的盖子上妥善保管。",
       "sentences": [
         {
-          "text": "你的四颗螺丝放在红色工具箱盖上。",
+          "text": "你把四颗螺丝放在一个红色工具箱的盖子上妥善保管。",
           "evidence": [
-            "E3",
-            "E5",
+            "E4",
+            "E7",
+            "E6",
             "E8",
+            "E10",
             "E11"
           ]
-        },
-        {
-          "text": "你说先把螺丝放红色工具箱上，志愿者确认工具箱会留到周二。",
-          "evidence": [
-            "E6",
-            "E7"
-          ],
-          "quote": "我先把螺丝放红色工具箱上，省得丢。"
         }
       ],
       "evidence": [
         {
-          "handle": "E3",
+          "handle": "E4",
           "kind": "segment",
           "id": "seg_01JRQ4H8ZE0000000000000010",
           "day": "2026-04-18",
@@ -223,13 +271,13 @@
           "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000101.webp",
           "frame_id": "frm_01JRQ4H8ZE0000000000000101",
           "source_conf": 0.77,
-          "score": 0.74,
+          "score": 0.76,
           "certainty": "confident",
           "quote": null,
           "open_url": "/day/2026-04-18?t=1776550800000&focus=seg_01JRQ4H8ZE0000000000000010"
         },
         {
-          "handle": "E5",
+          "handle": "E6",
           "kind": "caption",
           "id": "cap_01JRQ4H8ZE0000000000000098",
           "day": "2026-04-18",
@@ -246,7 +294,7 @@
           "open_url": "/day/2026-04-18?t=1776551940000&focus=cap_01JRQ4H8ZE0000000000000098"
         },
         {
-          "handle": "E6",
+          "handle": "E7",
           "kind": "utterance",
           "id": "utt_01JRQ4H8ZE0000000000000131",
           "day": "2026-04-18",
@@ -257,27 +305,10 @@
           "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000098.webp",
           "frame_id": "frm_01JRQ4H8ZE0000000000000098",
           "source_conf": 0.83,
-          "score": 0.82,
+          "score": 0.72,
           "certainty": "confident",
           "quote": "我先把螺丝放红色工具箱上，省得丢。",
           "open_url": "/day/2026-04-18?t=1776551952000&focus=utt_01JRQ4H8ZE0000000000000131"
-        },
-        {
-          "handle": "E7",
-          "kind": "utterance",
-          "id": "utt_01JRQ4H8ZE0000000000000132",
-          "day": "2026-04-18",
-          "ts": 1776551964000,
-          "ts_end": 1776551969000,
-          "ts_local": "2026-04-18T15:39:24-07:00",
-          "label": "说话人 B · 语音",
-          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000098.webp",
-          "frame_id": "frm_01JRQ4H8ZE0000000000000098",
-          "source_conf": 0.72,
-          "score": 0.66,
-          "certainty": "confident",
-          "quote": "对，红色工具箱到周二都放在这个工作台上，这四颗螺丝跑不了。",
-          "open_url": "/day/2026-04-18?t=1776551964000&focus=utt_01JRQ4H8ZE0000000000000132"
         },
         {
           "handle": "E8",
@@ -291,31 +322,48 @@
           "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000099.webp",
           "frame_id": "frm_01JRQ4H8ZE0000000000000099",
           "source_conf": 0.8,
-          "score": 0.62,
+          "score": 0.61,
           "certainty": "confident",
           "quote": null,
           "open_url": "/day/2026-04-18?t=1776552000000&focus=cap_01JRQ4H8ZE0000000000000099"
         },
         {
-          "handle": "E11",
+          "handle": "E10",
           "kind": "caption",
-          "id": "cap_01JRQ4H8ZE0000000000000102",
+          "id": "cap_01JRQ4H8ZE0000000000000100",
           "day": "2026-04-18",
-          "ts": 1776552900000,
-          "ts_end": 1776552900000,
-          "ts_local": "2026-04-18T15:55:00-07:00",
+          "ts": 1776552060000,
+          "ts_end": 1776552060000,
+          "ts_local": "2026-04-18T15:41:00-07:00",
           "label": "画面 · 蕨谷修理咖啡馆",
-          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000102.webp",
-          "frame_id": "frm_01JRQ4H8ZE0000000000000102",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000100.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000100",
           "source_conf": 0.8,
-          "score": 0.72,
+          "score": 0.68,
           "certainty": "confident",
           "quote": null,
-          "open_url": "/day/2026-04-18?t=1776552900000&focus=cap_01JRQ4H8ZE0000000000000102"
+          "open_url": "/day/2026-04-18?t=1776552060000&focus=cap_01JRQ4H8ZE0000000000000100"
+        },
+        {
+          "handle": "E11",
+          "kind": "detection",
+          "id": "det_01JRQ4H8ZE0000000000000028",
+          "day": "2026-04-18",
+          "ts": 1776552060000,
+          "ts_end": 1776552060000,
+          "ts_local": "2026-04-18T15:41:00-07:00",
+          "label": "螺丝 · 0.66",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000100.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000100",
+          "source_conf": 0.66,
+          "score": 0.66,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776552060000&focus=det_01JRQ4H8ZE0000000000000028"
         }
       ],
-      "evidence_considered": 60,
-      "score": 0.82,
+      "evidence_considered": 62,
+      "score": 0.76,
       "reason": null,
       "reasons": [],
       "reason_text": null,
@@ -358,15 +406,15 @@
         {
           "text": "替换开关周二到。",
           "evidence": [
-            "E10",
-            "E8"
+            "E12",
+            "E10"
           ],
           "quote": "替换开关周二到，我会发短信给你物流单号。"
         }
       ],
       "evidence": [
         {
-          "handle": "E8",
+          "handle": "E10",
           "kind": "segment",
           "id": "seg_01JRQ4H8ZE0000000000000008",
           "day": "2026-04-18",
@@ -383,7 +431,7 @@
           "open_url": "/day/2026-04-18?t=1776544800000&focus=seg_01JRQ4H8ZE0000000000000008"
         },
         {
-          "handle": "E10",
+          "handle": "E12",
           "kind": "utterance",
           "id": "utt_01JRQ4H8ZE0000000000000118",
           "day": "2026-04-18",
@@ -400,7 +448,7 @@
           "open_url": "/day/2026-04-18?t=1776545520000&focus=utt_01JRQ4H8ZE0000000000000118"
         }
       ],
-      "evidence_considered": 67,
+      "evidence_considered": 61,
       "score": 0.83,
       "reason": null,
       "reasons": [],
@@ -441,27 +489,40 @@
         {
           "text": "你的台灯会闪烁，摇臂开关在转轴处开裂。",
           "evidence": [
-            "E4"
+            "E5"
           ],
           "quote": "这盏台灯会闪来闪去，而且摇臂开关在转轴那里裂了"
         },
         {
           "text": "拆开检查后发现开关内部开裂并打火，电线本身正常。",
-          "evidence": [
-            "E6"
-          ],
+          "evidence": [],
           "quote": "发现摇臂开关内部开裂并打火，电线本身正常"
         },
         {
           "text": "目前台灯因等待配件放在修理咖啡馆的架子上。",
-          "evidence": [
-            "E11"
-          ]
+          "evidence": []
         }
       ],
       "evidence": [
         {
           "handle": "E4",
+          "kind": "segment",
+          "id": "seg_01JRQ4H8ZE0000000000000003",
+          "day": "2026-04-18",
+          "ts": 1776527400000,
+          "ts_end": 1776529200000,
+          "ts_local": "2026-04-18T08:50:00-07:00",
+          "label": "片段",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000026.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000026",
+          "source_conf": 0.79,
+          "score": 0.62,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776527400000&focus=seg_01JRQ4H8ZE0000000000000003"
+        },
+        {
+          "handle": "E5",
           "kind": "utterance",
           "id": "utt_01JRQ4H8ZE0000000000000021",
           "day": "2026-04-18",
@@ -472,48 +533,48 @@
           "thumb_hint": null,
           "frame_id": null,
           "source_conf": 0.75,
-          "score": 0.61,
+          "score": 0.71,
           "certainty": "confident",
           "quote": "这盏台灯会闪来闪去，而且摇臂开关在转轴那里裂了",
           "open_url": "/day/2026-04-18?t=1776527863800&focus=utt_01JRQ4H8ZE0000000000000021"
         },
         {
           "handle": "E6",
-          "kind": "segment",
-          "id": "seg_01JRQ4H8ZE0000000000000004",
+          "kind": "utterance",
+          "id": "utt_01JRQ4H8ZE0000000000000025",
           "day": "2026-04-18",
-          "ts": 1776529200000,
-          "ts_end": 1776533400000,
-          "ts_local": "2026-04-18T09:20:00-07:00",
-          "label": "片段",
-          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000036.webp",
-          "frame_id": "frm_01JRQ4H8ZE0000000000000036",
-          "source_conf": 0.78,
-          "score": 0.6,
-          "certainty": "confident",
-          "quote": "发现摇臂开关内部开裂并打火，电线本身正常",
-          "open_url": "/day/2026-04-18?t=1776529200000&focus=seg_01JRQ4H8ZE0000000000000004"
-        },
-        {
-          "handle": "E11",
-          "kind": "detection",
-          "id": "det_01JRQ4H8ZE0000000000000030",
-          "day": "2026-04-18",
-          "ts": 1776553500000,
-          "ts_end": 1776553500000,
-          "ts_local": "2026-04-18T16:05:00-07:00",
-          "label": "desk lamp · 0.73",
-          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000104.webp",
-          "frame_id": "frm_01JRQ4H8ZE0000000000000104",
-          "source_conf": 0.73,
-          "score": 0.73,
+          "ts": 1776527982600,
+          "ts_end": 1776527988400,
+          "ts_local": "2026-04-18T08:59:42.600000-07:00",
+          "label": "你 · 语音",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000025.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000025",
+          "source_conf": 0.72,
+          "score": 0.7,
           "certainty": "confident",
           "quote": null,
-          "open_url": "/day/2026-04-18?t=1776553500000&focus=det_01JRQ4H8ZE0000000000000030"
+          "open_url": "/day/2026-04-18?t=1776527982600&focus=utt_01JRQ4H8ZE0000000000000025"
+        },
+        {
+          "handle": "E7",
+          "kind": "caption",
+          "id": "cap_01JRQ4H8ZE0000000000000027",
+          "day": "2026-04-18",
+          "ts": 1776528600000,
+          "ts_end": 1776528600000,
+          "ts_local": "2026-04-18T09:10:00-07:00",
+          "label": "画面 · 蕨谷修理咖啡馆",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000027.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000027",
+          "source_conf": 0.8,
+          "score": 0.69,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776528600000&focus=cap_01JRQ4H8ZE0000000000000027"
         }
       ],
-      "evidence_considered": 69,
-      "score": 0.73,
+      "evidence_considered": 64,
+      "score": 0.71,
       "reason": null,
       "reasons": [],
       "reason_text": null,
@@ -554,14 +615,13 @@
         {
           "text": "你会通过短信收到开关的物流单号，志愿者说会发短信给你，你也已表示会留意。",
           "evidence": [
-            "E9",
-            "E11"
+            "E10"
           ]
         }
       ],
       "evidence": [
         {
-          "handle": "E9",
+          "handle": "E10",
           "kind": "utterance",
           "id": "utt_01JRQ4H8ZE0000000000000118",
           "day": "2026-04-18",
@@ -580,22 +640,22 @@
         {
           "handle": "E11",
           "kind": "utterance",
-          "id": "utt_01JRQ4H8ZE0000000000000144",
+          "id": "utt_01JRQ4H8ZE0000000000000122",
           "day": "2026-04-18",
-          "ts": 1776553614500,
-          "ts_end": 1776553616500,
-          "ts_local": "2026-04-18T16:06:54.500000-07:00",
-          "label": "你 · 语音",
+          "ts": 1776545613600,
+          "ts_end": 1776545617600,
+          "ts_local": "2026-04-18T13:53:33.600000-07:00",
+          "label": "说话人 B · 语音",
           "thumb_hint": null,
           "frame_id": null,
-          "source_conf": 0.68,
-          "score": 0.66,
+          "source_conf": 0.76,
+          "score": 0.74,
           "certainty": "confident",
-          "quote": null,
-          "open_url": "/day/2026-04-18?t=1776553614500&focus=utt_01JRQ4H8ZE0000000000000144"
+          "quote": "我会连同物流跟踪信息一起发短信给你。",
+          "open_url": "/day/2026-04-18?t=1776545613600&focus=utt_01JRQ4H8ZE0000000000000122"
         }
       ],
-      "evidence_considered": 59,
+      "evidence_considered": 50,
       "score": 0.84,
       "reason": null,
       "reasons": [],
@@ -629,47 +689,74 @@
         "from_ms": null,
         "to_ms": null
       },
-      "status": "answered",
-      "ui_tone": "neutral",
-      "answer": "你的台灯现在在蕨谷修理咖啡馆，贴着“waiting for parts”的架子上。",
+      "status": "uncertain",
+      "ui_tone": "amber",
+      "answer": "你的台灯现在在家里。它早些时候在蕨谷修理咖啡馆贴着“waiting for parts”标签的架子上。",
       "sentences": [
         {
-          "text": "你的台灯现在在蕨谷修理咖啡馆，贴着“waiting for parts”的架子上。",
+          "text": "你的台灯现在在家里。",
           "evidence": [
             "E12"
-          ]
+          ],
+          "quote": "镜头转向背景中的架子，那里有几个模糊的小物件，台灯的光刚好照到它们的边缘。"
+        },
+        {
+          "text": "它早些时候在蕨谷修理咖啡馆贴着“waiting for parts”标签的架子上。",
+          "evidence": [
+            "E10"
+          ],
+          "quote": "在贴着“waiting for parts”标签的架子上，台灯的蓝色标签清晰可见，旁边是一台小收音机和一个烤面包机。"
         }
       ],
       "evidence": [
         {
-          "handle": "E12",
-          "kind": "detection",
-          "id": "det_01JRQ4H8ZE0000000000000030",
+          "handle": "E10",
+          "kind": "caption",
+          "id": "cap_01JRQ4H8ZE0000000000000104",
           "day": "2026-04-18",
           "ts": 1776553500000,
           "ts_end": 1776553500000,
           "ts_local": "2026-04-18T16:05:00-07:00",
-          "label": "desk lamp · 0.73",
+          "label": "画面 · 蕨谷修理咖啡馆",
           "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000104.webp",
           "frame_id": "frm_01JRQ4H8ZE0000000000000104",
-          "source_conf": 0.73,
-          "score": 0.73,
+          "source_conf": 0.8,
+          "score": 0.68,
           "certainty": "confident",
-          "quote": null,
-          "open_url": "/day/2026-04-18?t=1776553500000&focus=det_01JRQ4H8ZE0000000000000030"
+          "quote": "在标有“等待配件”的架子上，台灯的蓝色标签清晰可见，旁边有一台小收音机和一台烤面包机。",
+          "open_url": "/day/2026-04-18?t=1776553500000&focus=cap_01JRQ4H8ZE0000000000000104"
+        },
+        {
+          "handle": "E12",
+          "kind": "caption",
+          "id": "cap_01JRQ4H8ZE0000000000000156",
+          "day": "2026-04-18",
+          "ts": 1776569100000,
+          "ts_end": 1776569100000,
+          "ts_local": "2026-04-18T20:25:00-07:00",
+          "label": "画面 · 家",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000156.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000156",
+          "source_conf": 0.8,
+          "score": 0.63,
+          "certainty": "confident",
+          "quote": "镜头缓缓转向背景中的架子，那里有几个模糊的小物体，台灯光刚好照到它们的边缘。",
+          "open_url": "/day/2026-04-18?t=1776569100000&focus=cap_01JRQ4H8ZE0000000000000156"
         }
       ],
-      "evidence_considered": 67,
-      "score": 0.73,
-      "reason": null,
-      "reasons": [],
-      "reason_text": null,
+      "evidence_considered": 57,
+      "score": 0.68,
+      "reason": "below_answer_min",
+      "reasons": [
+        "below_answer_min"
+      ],
+      "reason_text": "不确定：最佳支持证据得分为 0.68，低于回答所需的 0.70。",
       "note": null,
       "validation": {
         "dropped_citations": 0,
         "dropped_quotes": 0,
         "dropped_sentences": 0,
-        "forced_status": null
+        "forced_status": "uncertain"
       },
       "mode": "hero",
       "provider": "precomputed",
@@ -681,7 +768,7 @@
           "det_01JRQ4H8ZE0000000000000030",
           "cap_01JRQ4H8ZE0000000000000104"
         ],
-        "status_match": true,
+        "status_match": false,
         "citation_hit": true
       }
     },
@@ -702,8 +789,7 @@
         {
           "text": "你在面包店买了一个黑麦面包和两个肉桂卷。",
           "evidence": [
-            "E2",
-            "E4"
+            "E2"
           ],
           "quote": "你买了一个黑麦面包和两个肉桂卷"
         }
@@ -725,26 +811,9 @@
           "certainty": "confident",
           "quote": "你买了一个黑麦面包和两个肉桂卷",
           "open_url": "/day/2026-04-18?t=1776554400000&focus=seg_01JRQ4H8ZE0000000000000011"
-        },
-        {
-          "handle": "E4",
-          "kind": "utterance",
-          "id": "utt_01JRQ4H8ZE0000000000000154",
-          "day": "2026-04-18",
-          "ts": 1776555703300,
-          "ts_end": 1776555709700,
-          "ts_local": "2026-04-18T16:41:43.300000-07:00",
-          "label": "说话人 C · 语音",
-          "thumb_hint": null,
-          "frame_id": null,
-          "source_conf": 0.75,
-          "score": 0.64,
-          "certainty": "confident",
-          "quote": "好的，两个肉桂卷和一个黑麦面包。",
-          "open_url": "/day/2026-04-18?t=1776555703300&focus=utt_01JRQ4H8ZE0000000000000154"
         }
       ],
-      "evidence_considered": 53,
+      "evidence_considered": 41,
       "score": 0.75,
       "reason": null,
       "reasons": [],
@@ -785,17 +854,17 @@
         {
           "text": "你可以在周二下午去图书馆取维修手册。",
           "evidence": [
-            "E4",
-            "E10",
-            "E11",
-            "E12"
+            "E5",
+            "E8",
+            "E9",
+            "E10"
           ],
           "quote": "您预约的那本台灯维修手册周二下午能准备好。"
         }
       ],
       "evidence": [
         {
-          "handle": "E4",
+          "handle": "E5",
           "kind": "utterance",
           "id": "utt_01JRQ4H8ZE0000000000000163",
           "day": "2026-04-18",
@@ -806,13 +875,30 @@
           "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000119.webp",
           "frame_id": "frm_01JRQ4H8ZE0000000000000119",
           "source_conf": 0.83,
-          "score": 0.79,
+          "score": 0.77,
           "certainty": "confident",
           "quote": "您预约的那本台灯维修手册周二下午能准备好。",
           "open_url": "/day/2026-04-18?t=1776558035400&focus=utt_01JRQ4H8ZE0000000000000163"
         },
         {
-          "handle": "E10",
+          "handle": "E6",
+          "kind": "utterance",
+          "id": "utt_01JRQ4H8ZE0000000000000174",
+          "day": "2026-04-18",
+          "ts": 1776558614900,
+          "ts_end": 1776558617600,
+          "ts_local": "2026-04-18T17:30:14.900000-07:00",
+          "label": "说话人 D · 语音",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000121.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000121",
+          "source_conf": 0.73,
+          "score": 0.65,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776558614900&focus=utt_01JRQ4H8ZE0000000000000174"
+        },
+        {
+          "handle": "E8",
           "kind": "segment",
           "id": "seg_01JRQ4H8ZE0000000000000013",
           "day": "2026-04-18",
@@ -823,13 +909,13 @@
           "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000137.webp",
           "frame_id": "frm_01JRQ4H8ZE0000000000000137",
           "source_conf": 0.73,
-          "score": 0.67,
+          "score": 0.7,
           "certainty": "confident",
           "quote": "周二下午先去修理咖啡馆拿开关，再去图书馆取手册。",
           "open_url": "/day/2026-04-18?t=1776562500000&focus=seg_01JRQ4H8ZE0000000000000013"
         },
         {
-          "handle": "E11",
+          "handle": "E9",
           "kind": "utterance",
           "id": "utt_01JRQ4H8ZE0000000000000193",
           "day": "2026-04-18",
@@ -840,13 +926,13 @@
           "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000136.webp",
           "frame_id": "frm_01JRQ4H8ZE0000000000000136",
           "source_conf": 0.8,
-          "score": 0.75,
+          "score": 0.74,
           "certainty": "confident",
           "quote": "好的，周二下午：先去修理咖啡馆拿开关，然后去图书馆拿手册。",
           "open_url": "/day/2026-04-18?t=1776563116300&focus=utt_01JRQ4H8ZE0000000000000193"
         },
         {
-          "handle": "E12",
+          "handle": "E10",
           "kind": "utterance",
           "id": "utt_01JRQ4H8ZE0000000000000201",
           "day": "2026-04-18",
@@ -857,14 +943,14 @@
           "thumb_hint": null,
           "frame_id": null,
           "source_conf": 0.88,
-          "score": 0.86,
+          "score": 0.87,
           "certainty": "confident",
           "quote": "周二先去修理咖啡馆取开关，再去图书馆取手册。",
           "open_url": "/day/2026-04-18?t=1776565946200&focus=utt_01JRQ4H8ZE0000000000000201"
         }
       ],
       "evidence_considered": 52,
-      "score": 0.86,
+      "score": 0.87,
       "reason": null,
       "reasons": [],
       "reason_text": null,
@@ -897,21 +983,72 @@
         "from_ms": null,
         "to_ms": null
       },
-      "status": "uncertain",
-      "ui_tone": "amber",
+      "status": "answered",
+      "ui_tone": "neutral",
       "answer": "你用万用表测了台灯线。",
       "sentences": [
         {
           "text": "你用万用表测了台灯线。",
           "evidence": [
-            "E4",
-            "E5"
+            "E7",
+            "E8"
           ]
         }
       ],
       "evidence": [
         {
-          "handle": "E4",
+          "handle": "E3",
+          "kind": "segment",
+          "id": "seg_01JRQ4H8ZE0000000000000004",
+          "day": "2026-04-18",
+          "ts": 1776529200000,
+          "ts_end": 1776533400000,
+          "ts_local": "2026-04-18T09:20:00-07:00",
+          "label": "片段",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000036.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000036",
+          "source_conf": 0.78,
+          "score": 0.69,
+          "certainty": "confident",
+          "quote": "发现摇臂开关内部开裂并打火，电线本身正常",
+          "open_url": "/day/2026-04-18?t=1776529200000&focus=seg_01JRQ4H8ZE0000000000000004"
+        },
+        {
+          "handle": "E5",
+          "kind": "utterance",
+          "id": "utt_01JRQ4H8ZE0000000000000042",
+          "day": "2026-04-18",
+          "ts": 1776530882800,
+          "ts_end": 1776530889400,
+          "ts_local": "2026-04-18T09:48:02.800000-07:00",
+          "label": "说话人 B · 语音",
+          "thumb_hint": null,
+          "frame_id": null,
+          "source_conf": 0.74,
+          "score": 0.73,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776530882800&focus=utt_01JRQ4H8ZE0000000000000042"
+        },
+        {
+          "handle": "E6",
+          "kind": "caption",
+          "id": "cap_01JRQ4H8ZE0000000000000036",
+          "day": "2026-04-18",
+          "ts": 1776531300000,
+          "ts_end": 1776531300000,
+          "ts_local": "2026-04-18T09:55:00-07:00",
+          "label": "画面 · 蕨谷修理咖啡馆",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000036.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000036",
+          "source_conf": 0.8,
+          "score": 0.65,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776531300000&focus=cap_01JRQ4H8ZE0000000000000036"
+        },
+        {
+          "handle": "E7",
           "kind": "segment",
           "id": "seg_01JRQ4H8ZE0000000000000005",
           "day": "2026-04-18",
@@ -922,13 +1059,13 @@
           "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000049.webp",
           "frame_id": "frm_01JRQ4H8ZE0000000000000049",
           "source_conf": 0.76,
-          "score": 0.64,
+          "score": 0.69,
           "certainty": "confident",
-          "quote": null,
+          "quote": "你们讨论应力消除和底座里的结。",
           "open_url": "/day/2026-04-18?t=1776533400000&focus=seg_01JRQ4H8ZE0000000000000005"
         },
         {
-          "handle": "E5",
+          "handle": "E8",
           "kind": "caption",
           "id": "cap_01JRQ4H8ZE0000000000000044",
           "day": "2026-04-18",
@@ -939,25 +1076,23 @@
           "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000044.webp",
           "frame_id": "frm_01JRQ4H8ZE0000000000000044",
           "source_conf": 0.8,
-          "score": 0.65,
+          "score": 0.7,
           "certainty": "confident",
           "quote": null,
           "open_url": "/day/2026-04-18?t=1776533700000&focus=cap_01JRQ4H8ZE0000000000000044"
         }
       ],
-      "evidence_considered": 57,
-      "score": 0.65,
-      "reason": "below_answer_min",
-      "reasons": [
-        "below_answer_min"
-      ],
-      "reason_text": "不确定：最有力的证据得分只有 0.65，低于作答所需的 0.70。",
+      "evidence_considered": 65,
+      "score": 0.73,
+      "reason": null,
+      "reasons": [],
+      "reason_text": null,
       "note": null,
       "validation": {
         "dropped_citations": 0,
         "dropped_quotes": 0,
         "dropped_sentences": 0,
-        "forced_status": "uncertain"
+        "forced_status": null
       },
       "mode": "hero",
       "provider": "precomputed",
@@ -970,8 +1105,8 @@
           "det_01JRQ4H8ZE0000000000000014",
           "det_01JRQ4H8ZE0000000000000016"
         ],
-        "status_match": false,
-        "citation_hit": false
+        "status_match": true,
+        "citation_hit": true
       }
     },
     {
@@ -984,21 +1119,22 @@
         "from_ms": null,
         "to_ms": null
       },
-      "status": "uncertain",
-      "ui_tone": "amber",
-      "answer": "你的伞最后是在家前门旁看到的，靠着一把湿伞，伞尖在地板上留下水迹。",
+      "status": "answered",
+      "ui_tone": "neutral",
+      "answer": "你的雨伞最后一次被看到是在家里，靠在正门旁边的墙上，伞尖在地板上留下了水。",
       "sentences": [
         {
-          "text": "你的伞最后是在家前门旁看到的，靠着一把湿伞，伞尖在地板上留下水迹。",
+          "text": "你的雨伞最后一次被看到是在家里，靠在正门旁边的墙上，伞尖在地板上留下了水。",
           "evidence": [
-            "E10",
-            "E11"
-          ]
+            "E11",
+            "E12"
+          ],
+          "quote": "湿雨伞靠在它旁边的墙上，伞尖在地板上留下了水"
         }
       ],
       "evidence": [
         {
-          "handle": "E10",
+          "handle": "E11",
           "kind": "caption",
           "id": "cap_01JRQ4H8ZE0000000000000141",
           "day": "2026-04-18",
@@ -1009,13 +1145,13 @@
           "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000141.webp",
           "frame_id": "frm_01JRQ4H8ZE0000000000000141",
           "source_conf": 0.8,
-          "score": 0.69,
+          "score": 0.72,
           "certainty": "confident",
-          "quote": null,
+          "quote": "一把湿伞靠在它旁边的墙上，伞尖在地上滴了一摊水",
           "open_url": "/day/2026-04-18?t=1776564600000&focus=cap_01JRQ4H8ZE0000000000000141"
         },
         {
-          "handle": "E11",
+          "handle": "E12",
           "kind": "detection",
           "id": "det_01JRQ4H8ZE0000000000000038",
           "day": "2026-04-18",
@@ -1032,19 +1168,17 @@
           "open_url": "/day/2026-04-18?t=1776564600000&focus=det_01JRQ4H8ZE0000000000000038"
         }
       ],
-      "evidence_considered": 72,
-      "score": 0.69,
-      "reason": "below_answer_min",
-      "reasons": [
-        "below_answer_min"
-      ],
-      "reason_text": "不确定：最有力的证据得分只有 0.69，低于作答所需的 0.70。",
+      "evidence_considered": 51,
+      "score": 0.72,
+      "reason": null,
+      "reasons": [],
+      "reason_text": null,
       "note": null,
       "validation": {
         "dropped_citations": 0,
         "dropped_quotes": 0,
         "dropped_sentences": 0,
-        "forced_status": "uncertain"
+        "forced_status": null
       },
       "mode": "hero",
       "provider": "precomputed",
@@ -1055,7 +1189,7 @@
           "det_01JRQ4H8ZE0000000000000038",
           "cap_01JRQ4H8ZE0000000000000141"
         ],
-        "status_match": false,
+        "status_match": true,
         "citation_hit": true
       }
     },
@@ -1069,20 +1203,22 @@
         "from_ms": null,
         "to_ms": null
       },
-      "status": "uncertain",
-      "ui_tone": "amber",
-      "answer": "记录里只提到你们讨论了底座内的“应力消除结”的作用，但没有记录志愿者具体说明这个结是干什么用的。",
+      "status": "answered",
+      "ui_tone": "neutral",
+      "answer": "志愿者的讨论表明，灯座内部的结是用于应力消除的；它是一个应力消除结。",
       "sentences": [
         {
-          "text": "记录里只提到你们讨论了底座内的“应力消除结”的作用，但没有记录志愿者具体说明这个结是干什么用的。",
+          "text": "志愿者的讨论表明，灯座内部的结是用于应力消除的；它是一个应力消除结。",
           "evidence": [
-            "E8"
-          ]
+            "E3",
+            "E7"
+          ],
+          "quote": "You discuss strain relief and the knot inside the base."
         }
       ],
       "evidence": [
         {
-          "handle": "E8",
+          "handle": "E3",
           "kind": "segment",
           "id": "seg_01JRQ4H8ZE0000000000000005",
           "day": "2026-04-18",
@@ -1093,19 +1229,34 @@
           "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000049.webp",
           "frame_id": "frm_01JRQ4H8ZE0000000000000049",
           "source_conf": 0.76,
-          "score": 0.71,
+          "score": 0.75,
           "certainty": "confident",
-          "quote": null,
+          "quote": "你们讨论应力消除和底座里的结。",
           "open_url": "/day/2026-04-18?t=1776533400000&focus=seg_01JRQ4H8ZE0000000000000005"
+        },
+        {
+          "handle": "E7",
+          "kind": "segment",
+          "id": "seg_01JRQ4H8ZE0000000000000009",
+          "day": "2026-04-18",
+          "ts": 1776546600000,
+          "ts_end": 1776550800000,
+          "ts_local": "2026-04-18T14:10:00-07:00",
+          "label": "片段",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000088.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000088",
+          "source_conf": 0.79,
+          "score": 0.74,
+          "certainty": "confident",
+          "quote": "在底座内部打一个防拉脱结",
+          "open_url": "/day/2026-04-18?t=1776546600000&focus=seg_01JRQ4H8ZE0000000000000009"
         }
       ],
-      "evidence_considered": 49,
-      "score": 0.71,
-      "reason": "model_uncertain",
-      "reasons": [
-        "model_uncertain"
-      ],
-      "reason_text": "不确定：现有记录本身不足以下结论。",
+      "evidence_considered": 54,
+      "score": 0.75,
+      "reason": null,
+      "reasons": [],
+      "reason_text": null,
       "note": null,
       "validation": {
         "dropped_citations": 0,
@@ -1121,7 +1272,7 @@
         "must_cite_any": [
           "utt_01JRQ4H8ZE0000000000000067"
         ],
-        "status_match": false,
+        "status_match": true,
         "citation_hit": false
       }
     },
@@ -1135,37 +1286,19 @@
         "from_ms": null,
         "to_ms": null
       },
-      "status": "uncertain",
-      "ui_tone": "amber",
+      "status": "answered",
+      "ui_tone": "neutral",
       "answer": "你记着周二先去修理咖啡馆取开关，再去图书馆取手册。",
       "sentences": [
         {
           "text": "你记着周二先去修理咖啡馆取开关，再去图书馆取手册。",
           "evidence": [
-            "E9",
-            "E8"
+            "E9"
           ],
           "quote": "周二先去修理咖啡馆取开关，再去图书馆取手册。"
         }
       ],
       "evidence": [
-        {
-          "handle": "E8",
-          "kind": "segment",
-          "id": "seg_01JRQ4H8ZE0000000000000014",
-          "day": "2026-04-18",
-          "ts": 1776564300000,
-          "ts_end": 1776570900000,
-          "ts_local": "2026-04-18T19:05:00-07:00",
-          "label": "片段",
-          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000151.webp",
-          "frame_id": "frm_01JRQ4H8ZE0000000000000151",
-          "source_conf": 0.75,
-          "score": 0.65,
-          "certainty": "confident",
-          "quote": "录下语音备忘提醒周二取开关和手册",
-          "open_url": "/day/2026-04-18?t=1776564300000&focus=seg_01JRQ4H8ZE0000000000000014"
-        },
         {
           "handle": "E9",
           "kind": "utterance",
@@ -1178,25 +1311,23 @@
           "thumb_hint": null,
           "frame_id": null,
           "source_conf": 0.88,
-          "score": 0.62,
+          "score": 0.75,
           "certainty": "confident",
           "quote": "周二先去修理咖啡馆取开关，再去图书馆取手册。",
           "open_url": "/day/2026-04-18?t=1776565946200&focus=utt_01JRQ4H8ZE0000000000000201"
         }
       ],
-      "evidence_considered": 53,
-      "score": 0.65,
-      "reason": "below_answer_min",
-      "reasons": [
-        "below_answer_min"
-      ],
-      "reason_text": "不确定：最有力的证据得分只有 0.65，低于作答所需的 0.70。",
+      "evidence_considered": 52,
+      "score": 0.75,
+      "reason": null,
+      "reasons": [],
+      "reason_text": null,
       "note": null,
       "validation": {
         "dropped_citations": 0,
         "dropped_quotes": 0,
         "dropped_sentences": 0,
-        "forced_status": "uncertain"
+        "forced_status": null
       },
       "mode": "hero",
       "provider": "precomputed",
@@ -1206,7 +1337,7 @@
         "must_cite_any": [
           "utt_01JRQ4H8ZE0000000000000201"
         ],
-        "status_match": false,
+        "status_match": true,
         "citation_hit": true
       }
     },
@@ -1244,14 +1375,14 @@
           "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000110.webp",
           "frame_id": "frm_01JRQ4H8ZE0000000000000110",
           "source_conf": 0.8,
-          "score": 0.77,
+          "score": 0.79,
           "certainty": "confident",
-          "quote": null,
+          "quote": "羽毛笔街面包房",
           "open_url": "/day/2026-04-18?t=1776555300000&focus=cap_01JRQ4H8ZE0000000000000110"
         }
       ],
-      "evidence_considered": 50,
-      "score": 0.77,
+      "evidence_considered": 40,
+      "score": 0.79,
       "reason": null,
       "reasons": [],
       "reason_text": null,
@@ -1286,19 +1417,19 @@
       },
       "status": "answered",
       "ui_tone": "neutral",
-      "answer": "你在羽毛笔街面包房时，收银员推荐了刚出炉的肉桂卷。",
+      "answer": "面包房收银员推荐了温热的肉桂卷。",
       "sentences": [
         {
-          "text": "你在羽毛笔街面包房时，收银员推荐了刚出炉的肉桂卷。",
+          "text": "面包房收银员推荐了温热的肉桂卷。",
           "evidence": [
-            "E4"
+            "E2"
           ],
-          "quote": "收银员推荐刚出炉的肉桂卷"
+          "quote": "收银员推荐温热的肉桂卷"
         }
       ],
       "evidence": [
         {
-          "handle": "E4",
+          "handle": "E2",
           "kind": "segment",
           "id": "seg_01JRQ4H8ZE0000000000000011",
           "day": "2026-04-18",
@@ -1315,7 +1446,7 @@
           "open_url": "/day/2026-04-18?t=1776554400000&focus=seg_01JRQ4H8ZE0000000000000011"
         }
       ],
-      "evidence_considered": 56,
+      "evidence_considered": 41,
       "score": 0.75,
       "reason": null,
       "reasons": [],
@@ -1351,54 +1482,37 @@
       },
       "status": "answered",
       "ui_tone": "neutral",
-      "answer": "台灯底座有四颗螺丝固定；后来修理时四颗螺丝被拆下，底座开着。",
+      "answer": "四颗螺丝固定着灯底座。",
       "sentences": [
         {
-          "text": "台灯底座有四颗螺丝固定；后来修理时四颗螺丝被拆下，底座开着。",
+          "text": "四颗螺丝固定着灯底座。",
           "evidence": [
-            "E1",
-            "E10"
-          ]
+            "E1"
+          ],
+          "quote": "我刚把那四颗螺丝从灯底座里取出来。"
         }
       ],
       "evidence": [
         {
           "handle": "E1",
           "kind": "utterance",
-          "id": "utt_01JRQ4H8ZE0000000000000001",
+          "id": "utt_01JRQ4H8ZE0000000000000026",
           "day": "2026-04-18",
-          "ts": 1776521127000,
-          "ts_end": 1776521131100,
-          "ts_local": "2026-04-18T07:05:27-07:00",
+          "ts": 1776529503700,
+          "ts_end": 1776529507300,
+          "ts_local": "2026-04-18T09:25:03.700000-07:00",
           "label": "你 · 语音",
-          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000002.webp",
-          "frame_id": "frm_01JRQ4H8ZE0000000000000002",
-          "source_conf": 0.82,
-          "score": 0.77,
-          "certainty": "confident",
-          "quote": null,
-          "open_url": "/day/2026-04-18?t=1776521127000&focus=utt_01JRQ4H8ZE0000000000000001"
-        },
-        {
-          "handle": "E10",
-          "kind": "caption",
-          "id": "cap_01JRQ4H8ZE0000000000000100",
-          "day": "2026-04-18",
-          "ts": 1776552060000,
-          "ts_end": 1776552060000,
-          "ts_local": "2026-04-18T15:41:00-07:00",
-          "label": "画面 · 蕨谷修理咖啡馆",
-          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000100.webp",
-          "frame_id": "frm_01JRQ4H8ZE0000000000000100",
-          "source_conf": 0.8,
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000030.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000030",
+          "source_conf": 0.76,
           "score": 0.74,
           "certainty": "confident",
-          "quote": null,
-          "open_url": "/day/2026-04-18?t=1776552060000&focus=cap_01JRQ4H8ZE0000000000000100"
+          "quote": "我刚把台灯底座上的四颗螺丝取下来。",
+          "open_url": "/day/2026-04-18?t=1776529503700&focus=utt_01JRQ4H8ZE0000000000000026"
         }
       ],
-      "evidence_considered": 55,
-      "score": 0.77,
+      "evidence_considered": 59,
+      "score": 0.74,
       "reason": null,
       "reasons": [],
       "reason_text": null,
@@ -1418,7 +1532,7 @@
           "utt_01JRQ4H8ZE0000000000000026"
         ],
         "status_match": true,
-        "citation_hit": false
+        "citation_hit": true
       }
     },
     {
@@ -1433,19 +1547,58 @@
       },
       "status": "uncertain",
       "ui_tone": "amber",
-      "answer": "你的钥匙在兜里。",
+      "answer": "早些时候，你说：“好吧，它们在我口袋里，我现在锁门。”但门旁的一个挂钩上只显示了一个模糊的金属物体，所以那没有得到确认。到了晚上你也不确定：你说你拍过口袋，并计划“早上检查门钩”。桌边一条标记为“keys”的较晚检测记录只描述了一支铅笔和一盏台灯，所以钥匙的位置仍不清楚。",
       "sentences": [
         {
-          "text": "你的钥匙在兜里。",
+          "text": "早些时候，你说：“好吧，它们在我口袋里，我现在锁门。”",
           "evidence": [
-            "E6"
+            "E2"
           ],
-          "quote": "在兜里"
+          "quote": "Alright, they're in my pocket, locking up now."
+        },
+        {
+          "text": "但门旁的一个挂钩上只显示了一个模糊的金属物体，所以那没有得到确认。",
+          "evidence": [
+            "E1"
+          ],
+          "quote": "indistinct metallic object"
+        },
+        {
+          "text": "到了晚上你也不确定：你说你拍过口袋，并计划“早上检查门钩”。",
+          "evidence": [
+            "E8",
+            "E10"
+          ],
+          "quote": "check the door hook in the morning"
+        },
+        {
+          "text": "桌边一条标记为“keys”的较晚检测记录只描述了一支铅笔和一盏台灯，所以钥匙的位置仍不清楚。",
+          "evidence": [
+            "E11"
+          ],
+          "quote": "keys"
         }
       ],
       "evidence": [
         {
-          "handle": "E6",
+          "handle": "E1",
+          "kind": "caption",
+          "id": "cap_01JRQ4H8ZE0000000000000014",
+          "day": "2026-04-18",
+          "ts": 1776524700000,
+          "ts_end": 1776524700000,
+          "ts_local": "2026-04-18T08:05:00-07:00",
+          "label": "画面 · 家",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000014.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000014",
+          "source_conf": 0.8,
+          "score": 0.39,
+          "certainty": "confident",
+          "quote": "模糊的金属物体",
+          "open_url": "/day/2026-04-18?t=1776524700000&focus=cap_01JRQ4H8ZE0000000000000014"
+        },
+        {
+          "handle": "E2",
           "kind": "utterance",
           "id": "utt_01JRQ4H8ZE0000000000000012",
           "day": "2026-04-18",
@@ -1456,25 +1609,76 @@
           "thumb_hint": null,
           "frame_id": null,
           "source_conf": 0.81,
-          "score": 0.39,
+          "score": 0.36,
           "certainty": "confident",
           "quote": "在兜里",
           "open_url": "/day/2026-04-18?t=1776524939200&focus=utt_01JRQ4H8ZE0000000000000012"
+        },
+        {
+          "handle": "E8",
+          "kind": "utterance",
+          "id": "utt_01JRQ4H8ZE0000000000000211",
+          "day": "2026-04-18",
+          "ts": 1776569580900,
+          "ts_end": 1776569585700,
+          "ts_local": "2026-04-18T20:33:00.900000-07:00",
+          "label": "你 · 语音",
+          "thumb_hint": null,
+          "frame_id": null,
+          "source_conf": 0.75,
+          "score": 0.33,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-04-18?t=1776569580900&focus=utt_01JRQ4H8ZE0000000000000211"
+        },
+        {
+          "handle": "E10",
+          "kind": "utterance",
+          "id": "utt_01JRQ4H8ZE0000000000000213",
+          "day": "2026-04-18",
+          "ts": 1776569638400,
+          "ts_end": 1776569643100,
+          "ts_local": "2026-04-18T20:33:58.400000-07:00",
+          "label": "你 · 语音",
+          "thumb_hint": null,
+          "frame_id": null,
+          "source_conf": 0.72,
+          "score": 0.33,
+          "certainty": "confident",
+          "quote": "早上检查门钩",
+          "open_url": "/day/2026-04-18?t=1776569638400&focus=utt_01JRQ4H8ZE0000000000000213"
+        },
+        {
+          "handle": "E11",
+          "kind": "detection",
+          "id": "det_01JRQ4H8ZE0000000000000041",
+          "day": "2026-04-18",
+          "ts": 1776570300000,
+          "ts_end": 1776570300000,
+          "ts_local": "2026-04-18T20:45:00-07:00",
+          "label": "钥匙 · 0.36",
+          "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000160.webp",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000160",
+          "source_conf": 0.36,
+          "score": 0.36,
+          "certainty": "uncertain",
+          "quote": "钥匙",
+          "open_url": "/day/2026-04-18?t=1776570300000&focus=det_01JRQ4H8ZE0000000000000041"
         }
       ],
       "evidence_considered": 41,
       "score": 0.39,
-      "reason": "below_answer_min",
+      "reason": "model_uncertain",
       "reasons": [
-        "below_answer_min"
+        "model_uncertain"
       ],
-      "reason_text": "不确定：最有力的证据得分只有 0.39，低于作答所需的 0.70。",
+      "reason_text": "不确定：仅凭这些记录无法确定此事。",
       "note": null,
       "validation": {
         "dropped_citations": 0,
         "dropped_quotes": 0,
         "dropped_sentences": 0,
-        "forced_status": "uncertain"
+        "forced_status": null
       },
       "mode": "hero",
       "provider": "precomputed",
@@ -1490,7 +1694,7 @@
           "utt_01JRQ4H8ZE0000000000000209"
         ],
         "status_match": true,
-        "citation_hit": false
+        "citation_hit": true
       }
     },
     {
@@ -1505,19 +1709,19 @@
       },
       "status": "uncertain",
       "ui_tone": "amber",
-      "answer": "你早上在电车上似乎含糊地嘟囔了确认下车站点，但录音嘈杂，具体内容不清楚。",
+      "answer": "你嘟囔着要在蕨谷下车。",
       "sentences": [
         {
-          "text": "你早上在电车上似乎含糊地嘟囔了确认下车站点，但录音嘈杂，具体内容不清楚。",
+          "text": "你嘟囔着要在蕨谷下车。",
           "evidence": [
-            "E2"
+            "E3"
           ],
-          "quote": "含糊地确认下车站点"
+          "quote": "嘟囔着要在蕨谷下车"
         }
       ],
       "evidence": [
         {
-          "handle": "E2",
+          "handle": "E3",
           "kind": "segment",
           "id": "seg_01JRQ4H8ZE0000000000000002",
           "day": "2026-04-18",
@@ -1534,19 +1738,19 @@
           "open_url": "/day/2026-04-18?t=1776525300000&focus=seg_01JRQ4H8ZE0000000000000002"
         }
       ],
-      "evidence_considered": 59,
+      "evidence_considered": 44,
       "score": 0.64,
-      "reason": "model_uncertain",
+      "reason": "below_answer_min",
       "reasons": [
-        "model_uncertain"
+        "below_answer_min"
       ],
-      "reason_text": "不确定：现有记录本身不足以下结论。",
+      "reason_text": "不确定：最佳支持证据得分为 0.64，低于回答所需的 0.70。",
       "note": null,
       "validation": {
         "dropped_citations": 0,
         "dropped_quotes": 0,
         "dropped_sentences": 0,
-        "forced_status": null
+        "forced_status": "uncertain"
       },
       "mode": "hero",
       "provider": "precomputed",
@@ -1581,7 +1785,7 @@
         }
       ],
       "evidence": [],
-      "evidence_considered": 63,
+      "evidence_considered": 20,
       "score": 0.0,
       "reason": "no_evidence",
       "reasons": [
@@ -1625,7 +1829,7 @@
         }
       ],
       "evidence": [],
-      "evidence_considered": 68,
+      "evidence_considered": 25,
       "score": 0.0,
       "reason": "no_evidence",
       "reasons": [
@@ -1669,7 +1873,7 @@
         }
       ],
       "evidence": [],
-      "evidence_considered": 56,
+      "evidence_considered": 40,
       "score": 0.0,
       "reason": "no_evidence",
       "reasons": [
@@ -1798,21 +2002,21 @@
         {
           "text": "说话人 B 提到替换开关周二到；说话人 D 提到台灯维修手册周二下午能准备好。",
           "evidence": [
-            "E3",
-            "E6"
+            "E4",
+            "E8"
           ]
         },
         {
           "text": "证据未标明说话人性别，无法判断“她”具体指谁，因此无法确定答案。",
           "evidence": [
-            "E3",
-            "E6"
+            "E4",
+            "E8"
           ]
         }
       ],
       "evidence": [
         {
-          "handle": "E3",
+          "handle": "E4",
           "kind": "utterance",
           "id": "utt_01JRQ4H8ZE0000000000000118",
           "day": "2026-04-18",
@@ -1823,13 +2027,13 @@
           "thumb_hint": null,
           "frame_id": null,
           "source_conf": 0.84,
-          "score": 0.74,
+          "score": 0.67,
           "certainty": "confident",
           "quote": null,
           "open_url": "/day/2026-04-18?t=1776545520000&focus=utt_01JRQ4H8ZE0000000000000118"
         },
         {
-          "handle": "E6",
+          "handle": "E8",
           "kind": "utterance",
           "id": "utt_01JRQ4H8ZE0000000000000163",
           "day": "2026-04-18",
@@ -1840,14 +2044,14 @@
           "thumb_hint": "hero-2026-04-18/media/thumbs/frm_01JRQ4H8ZE0000000000000119.webp",
           "frame_id": "frm_01JRQ4H8ZE0000000000000119",
           "source_conf": 0.83,
-          "score": 0.83,
+          "score": 0.82,
           "certainty": "confident",
           "quote": null,
           "open_url": "/day/2026-04-18?t=1776558035400&focus=utt_01JRQ4H8ZE0000000000000163"
         }
       ],
-      "evidence_considered": 51,
-      "score": 0.83,
+      "evidence_considered": 43,
+      "score": 0.82,
       "reason": "model_uncertain",
       "reasons": [
         "model_uncertain"
@@ -1894,7 +2098,7 @@
         }
       ],
       "evidence": [],
-      "evidence_considered": 74,
+      "evidence_considered": 47,
       "score": 0.0,
       "reason": "no_evidence",
       "reasons": [
@@ -1923,16 +2127,16 @@
       },
       "status": "uncertain",
       "ui_tone": "amber",
-      "answer": "较近一次明确记录显示，老花镜在工作台上方架子上、螺丝罐后面。但最新画面不清晰，只说可能在4路有轨电车上，无法确认现在放哪儿。",
+      "answer": "最后一条清晰的记录显示，玳瑁色老花镜位于家里工作台上方架子上装螺丝的罐子后面。后来的一次检测并不清楚：它只是可能显示那副老花镜在 4 路有轨电车上，且被部分遮住。",
       "sentences": [
         {
-          "text": "较近一次明确记录显示，老花镜在工作台上方架子上、螺丝罐后面。",
+          "text": "最后一条清晰的记录显示，玳瑁色老花镜位于家里工作台上方架子上装螺丝的罐子后面。",
           "evidence": [
             "E11"
           ]
         },
         {
-          "text": "但最新画面不清晰，只说可能在4路有轨电车上，无法确认现在放哪儿。",
+          "text": "后来的一次检测并不清楚：它只是可能显示那副老花镜在 4 路有轨电车上，且被部分遮住。",
           "evidence": [
             "E12"
           ]
@@ -1974,7 +2178,7 @@
           "open_url": "/day/2026-11-18?t=1795017000000&focus=frm_01JY2026111800000000000005"
         }
       ],
-      "evidence_considered": 57,
+      "evidence_considered": 61,
       "score": 0.68,
       "reason": "model_uncertain",
       "reasons": [
@@ -2011,7 +2215,7 @@
         }
       ],
       "evidence": [],
-      "evidence_considered": 77,
+      "evidence_considered": 53,
       "score": 0.0,
       "reason": "no_evidence",
       "reasons": [
@@ -2040,16 +2244,41 @@
       },
       "status": "uncertain",
       "ui_tone": "amber",
-      "answer": "最新记录里，你把钥匙丢进帆布袋后出门，但画面中钥匙只是可能被发现且被部分遮挡，无法确认现在具体在哪。",
+      "answer": "最近的记录只是一次不清晰的检测：它可能显示钥匙和借书卡一起被放进帆布袋，但钥匙被描述为部分被遮挡，所以它不能确定钥匙在哪里。就在那之前，记录显示它们在你乘坐有轨电车时在你的口袋里。",
       "sentences": [
         {
-          "text": "最新记录里，你把钥匙丢进帆布袋后出门，但画面中钥匙只是可能被发现且被部分遮挡，无法确认现在具体在哪。",
+          "text": "最近的记录只是一次不清晰的检测：它可能显示钥匙和借书卡一起被放进帆布袋，但钥匙被描述为部分被遮挡，所以它不能确定钥匙在哪里。",
           "evidence": [
             "E12"
-          ]
+          ],
+          "quote": "Unclear detection: possibly Keys, small and partly hidden in the frame at Home."
+        },
+        {
+          "text": "就在那之前，记录显示它们在你乘坐有轨电车时在你的口袋里。",
+          "evidence": [
+            "E11"
+          ],
+          "quote": "keys in your pocket"
         }
       ],
       "evidence": [
+        {
+          "handle": "E11",
+          "kind": "sighting",
+          "id": "frm_01JY2026111500000000000151",
+          "day": "2026-11-15",
+          "ts": 1794799800000,
+          "ts_end": 1794799800000,
+          "ts_local": "2026-11-15T19:30:00-08:00",
+          "label": "钥匙 · 0.67",
+          "thumb_hint": "year/highlights/hl_20261115_5.webp",
+          "frame_id": "frm_01JY2026111500000000000151",
+          "source_conf": 0.67,
+          "score": 0.67,
+          "certainty": "confident",
+          "quote": "你口袋里的钥匙",
+          "open_url": "/day/2026-11-15?t=1794799800000&focus=frm_01JY2026111500000000000151"
+        },
         {
           "handle": "E12",
           "kind": "sighting",
@@ -2064,12 +2293,12 @@
           "source_conf": 0.38,
           "score": 0.38,
           "certainty": "uncertain",
-          "quote": null,
+          "quote": "检测不明确：可能是 Keys，个头小，在家里的画面中有一部分被挡住了。",
           "open_url": "/day/2026-11-17?t=1794932400000&focus=frm_01JY2026111700000000000004"
         }
       ],
-      "evidence_considered": 58,
-      "score": 0.38,
+      "evidence_considered": 64,
+      "score": 0.67,
       "reason": "model_uncertain",
       "reasons": [
         "model_uncertain"
@@ -2102,14 +2331,14 @@
         {
           "text": "替换开关是4月21日到的，随邮件装在气泡信封里。",
           "evidence": [
-            "E5",
-            "E6"
+            "E6",
+            "E7"
           ]
         }
       ],
       "evidence": [
         {
-          "handle": "E5",
+          "handle": "E6",
           "kind": "day",
           "id": "2026-04-21",
           "day": "2026-04-21",
@@ -2122,11 +2351,11 @@
           "source_conf": 0.8,
           "score": 0.79,
           "certainty": "confident",
-          "quote": null,
+          "quote": "替换用的开关寄到了。",
           "open_url": "/day/2026-04-21?t=1776781200000&focus=2026-04-21"
         },
         {
-          "handle": "E6",
+          "handle": "E7",
           "kind": "highlight",
           "id": "hl_20260421_1",
           "day": "2026-04-21",
@@ -2137,13 +2366,13 @@
           "thumb_hint": "year/highlights/hl_20260421_1.webp",
           "frame_id": "frm_01JY2026042100000000000012",
           "source_conf": 0.8,
-          "score": 0.78,
+          "score": 0.66,
           "certainty": "confident",
-          "quote": null,
+          "quote": "开关装在一个带衬垫的信封里寄到了。",
           "open_url": "/day/2026-04-21?t=1776784500000&focus=hl_20260421_1"
         }
       ],
-      "evidence_considered": 57,
+      "evidence_considered": 61,
       "score": 0.79,
       "reason": null,
       "reasons": [],
@@ -2170,24 +2399,24 @@
       },
       "status": "answered",
       "ui_tone": "neutral",
-      "answer": "记录里有几次去盐湖镇：到站时看见海鸥在站台上空打转，也能听见水声。有一次退潮时你在潮池边看东西，中午去了鱼市。夏末在海边，你看水凉沙暖，也看风筝怎么也飞不起来，后来有人找对了角度。",
+      "answer": "去盐湖镇的旅途中，你看到海鸥在站台上空飞，而且已经能听到水声。在火车上，你画下窗外的海岸线，还写下了三样你想看的东西。离开盐湖镇时，你看着大海渐渐远去。",
       "sentences": [
         {
-          "text": "记录里有几次去盐湖镇：到站时看见海鸥在站台上空打转，也能听见水声。",
+          "text": "去盐湖镇的旅途中，你看到海鸥在站台上空飞，而且已经能听到水声。",
           "evidence": [
             "E5"
           ]
         },
         {
-          "text": "有一次退潮时你在潮池边看东西，中午去了鱼市。",
+          "text": "在火车上，你画下窗外的海岸线，还写下了三样你想看的东西。",
           "evidence": [
             "E8"
           ]
         },
         {
-          "text": "夏末在海边，你看水凉沙暖，也看风筝怎么也飞不起来，后来有人找对了角度。",
+          "text": "离开盐湖镇时，你看着大海渐渐远去。",
           "evidence": [
-            "E12"
+            "E9"
           ]
         }
       ],
@@ -2204,48 +2433,48 @@
           "thumb_hint": "year/highlights/hl_20260502_4.webp",
           "frame_id": "frm_01JY2026050200000000000112",
           "source_conf": 0.8,
-          "score": 0.71,
+          "score": 0.69,
           "certainty": "confident",
           "quote": null,
           "open_url": "/day/2026-05-02?t=1777765500000&focus=hl_20260502_4"
         },
         {
           "handle": "E8",
-          "kind": "day",
-          "id": "2026-05-23",
-          "day": "2026-05-23",
-          "ts": 1779546600000,
-          "ts_end": 1779591600000,
-          "ts_local": "2026-05-23T07:30:00-07:00",
-          "label": "当天",
-          "thumb_hint": "year/highlights/hl_20260523_4.webp",
-          "frame_id": "frm_01JY2026052300000000000099",
+          "kind": "highlight",
+          "id": "hl_20260522_3",
+          "day": "2026-05-22",
+          "ts": 1779466800000,
+          "ts_end": 1779466800000,
+          "ts_local": "2026-05-22T09:20:00-07:00",
+          "label": "精选 · 索尔特米尔（旅行）",
+          "thumb_hint": "year/highlights/hl_20260522_3.webp",
+          "frame_id": "frm_01JY2026052200000000000032",
           "source_conf": 0.8,
           "score": 0.72,
           "certainty": "confident",
           "quote": null,
-          "open_url": "/day/2026-05-23?t=1779546600000&focus=2026-05-23"
+          "open_url": "/day/2026-05-22?t=1779466800000&focus=hl_20260522_3"
         },
         {
-          "handle": "E12",
-          "kind": "day",
-          "id": "2026-08-23",
-          "day": "2026-08-23",
-          "ts": 1787499000000,
-          "ts_end": 1787545200000,
-          "ts_local": "2026-08-23T08:30:00-07:00",
-          "label": "当天",
-          "thumb_hint": "year/highlights/hl_20260823_1.webp",
-          "frame_id": "frm_01JY2026082300000000000002",
+          "handle": "E9",
+          "kind": "highlight",
+          "id": "hl_20260525_2",
+          "day": "2026-05-25",
+          "ts": 1779725400000,
+          "ts_end": 1779725400000,
+          "ts_local": "2026-05-25T09:10:00-07:00",
+          "label": "精选 · 索尔特米尔（旅行）",
+          "thumb_hint": "year/highlights/hl_20260525_2.webp",
+          "frame_id": "frm_01JY2026052500000000000027",
           "source_conf": 0.8,
-          "score": 0.76,
+          "score": 0.66,
           "certainty": "confident",
           "quote": null,
-          "open_url": "/day/2026-08-23?t=1787499000000&focus=2026-08-23"
+          "open_url": "/day/2026-05-25?t=1779725400000&focus=hl_20260525_2"
         }
       ],
-      "evidence_considered": 66,
-      "score": 0.76,
+      "evidence_considered": 53,
+      "score": 0.72,
       "reason": null,
       "reasons": [],
       "reason_text": null,
@@ -2271,24 +2500,41 @@
       },
       "status": "answered",
       "ui_tone": "neutral",
-      "answer": "按最新记录，五周年派对在10月24日，当天有蛋糕、收音机演示，工作台都满了。师傅也在当天作了简短周年致辞。",
+      "answer": "最新记录显示，修理咖啡馆的五周年派对在10月24日。较早的一条记录显示，周年派对在10月10日。",
       "sentences": [
         {
-          "text": "按最新记录，五周年派对在10月24日，当天有蛋糕、收音机演示，工作台都满了。",
+          "text": "最新记录显示，修理咖啡馆的五周年派对在10月24日。",
           "evidence": [
-            "E11"
+            "E12"
           ]
         },
         {
-          "text": "师傅也在当天作了简短周年致辞。",
+          "text": "较早的一条记录显示，周年派对在10月10日。",
           "evidence": [
-            "E12"
+            "E8"
           ]
         }
       ],
       "evidence": [
         {
-          "handle": "E11",
+          "handle": "E8",
+          "kind": "day",
+          "id": "2026-10-10",
+          "day": "2026-10-10",
+          "ts": 1791644400000,
+          "ts_end": 1791682200000,
+          "ts_local": "2026-10-10T08:00:00-07:00",
+          "label": "日期",
+          "thumb_hint": "year/highlights/hl_20261010_3.webp",
+          "frame_id": "frm_01JY2026101000000000000055",
+          "source_conf": 0.8,
+          "score": 0.8,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-10-10?t=1791644400000&focus=2026-10-10"
+        },
+        {
+          "handle": "E12",
           "kind": "day",
           "id": "2026-10-24",
           "day": "2026-10-24",
@@ -2303,27 +2549,10 @@
           "certainty": "confident",
           "quote": null,
           "open_url": "/day/2026-10-24?t=1792857000000&focus=2026-10-24"
-        },
-        {
-          "handle": "E12",
-          "kind": "highlight",
-          "id": "hl_20261024_4",
-          "day": "2026-10-24",
-          "ts": 1792878000000,
-          "ts_end": 1792878000000,
-          "ts_local": "2026-10-24T14:40:00-07:00",
-          "label": "精选 · 蕨谷修理咖啡馆",
-          "thumb_hint": "year/highlights/hl_20261024_4.webp",
-          "frame_id": "frm_01JY2026102400000000000071",
-          "source_conf": 0.8,
-          "score": 0.78,
-          "certainty": "confident",
-          "quote": null,
-          "open_url": "/day/2026-10-24?t=1792878000000&focus=hl_20261024_4"
         }
       ],
-      "evidence_considered": 56,
-      "score": 0.78,
+      "evidence_considered": 66,
+      "score": 0.8,
       "reason": null,
       "reasons": [],
       "reason_text": null,
@@ -2347,47 +2576,49 @@
         "from_ms": null,
         "to_ms": null
       },
-      "status": "answered",
-      "ui_tone": "neutral",
-      "answer": "你最近一次去游泳是在周日，到社区游泳馆游泳，教练建议放慢打腿。",
+      "status": "uncertain",
+      "ui_tone": "amber",
+      "answer": "你最后一次有记录的游泳是2026年8月30日的一次上午泳池活动，在那天晚些时候一顿漫长的周日晚餐之前。",
       "sentences": [
         {
-          "text": "你最近一次去游泳是在周日，到社区游泳馆游泳，教练建议放慢打腿。",
+          "text": "你最后一次有记录的游泳是2026年8月30日的一次上午泳池活动，在那天晚些时候一顿漫长的周日晚餐之前。",
           "evidence": [
-            "E12"
+            "E10"
           ]
         }
       ],
       "evidence": [
         {
-          "handle": "E12",
-          "kind": "highlight",
-          "id": "hl_20261018_1",
-          "day": "2026-10-18",
-          "ts": 1792334100000,
-          "ts_end": 1792334100000,
-          "ts_local": "2026-10-18T07:35:00-07:00",
-          "label": "精选 · 社区游泳馆",
-          "thumb_hint": "year/highlights/hl_20261018_1.webp",
-          "frame_id": "frm_01JY2026101800000000000003",
+          "handle": "E10",
+          "kind": "day",
+          "id": "2026-08-30",
+          "day": "2026-08-30",
+          "ts": 1788101400000,
+          "ts_end": 1788150600000,
+          "ts_local": "2026-08-30T07:50:00-07:00",
+          "label": "日期",
+          "thumb_hint": "year/highlights/hl_20260830_3.webp",
+          "frame_id": "frm_01JY2026083000000000000063",
           "source_conf": 0.8,
-          "score": 0.7,
+          "score": 0.64,
           "certainty": "confident",
           "quote": null,
-          "open_url": "/day/2026-10-18?t=1792334100000&focus=hl_20261018_1"
+          "open_url": "/day/2026-08-30?t=1788101400000&focus=2026-08-30"
         }
       ],
-      "evidence_considered": 59,
-      "score": 0.7,
-      "reason": null,
-      "reasons": [],
-      "reason_text": null,
+      "evidence_considered": 57,
+      "score": 0.64,
+      "reason": "below_answer_min",
+      "reasons": [
+        "below_answer_min"
+      ],
+      "reason_text": "不确定：最佳支持证据得分为 0.64，低于回答所需的 0.70。",
       "note": null,
       "validation": {
         "dropped_citations": 0,
         "dropped_quotes": 0,
         "dropped_sentences": 0,
-        "forced_status": null
+        "forced_status": "uncertain"
       },
       "mode": "year",
       "provider": "precomputed"
@@ -2407,37 +2638,54 @@
       },
       "status": "answered",
       "ui_tone": "neutral",
-      "answer": "那次卷尺最后是在工作间的帆布袋里找到的；记录说“午饭后果然在那儿找到了”。",
+      "answer": "你在帆布袋里的一块抹布下面找到了黄色卷尺；后来到了八月，两把黄色卷尺都在抽屉里。",
       "sentences": [
         {
-          "text": "那次卷尺最后是在工作间的帆布袋里找到的；记录说“午饭后果然在那儿找到了”。",
+          "text": "你在帆布袋里的一块抹布下面找到了黄色卷尺；后来到了八月，两把黄色卷尺都在抽屉里。",
           "evidence": [
-            "E4"
-          ],
-          "quote": "午饭后果然在那儿找到了"
+            "E10",
+            "E12"
+          ]
         }
       ],
       "evidence": [
         {
-          "handle": "E4",
-          "kind": "day",
-          "id": "2026-08-12",
-          "day": "2026-08-12",
-          "ts": 1786545600000,
-          "ts_end": 1786583400000,
-          "ts_local": "2026-08-12T07:40:00-07:00",
-          "label": "当天",
-          "thumb_hint": "year/highlights/hl_20260812_1.webp",
-          "frame_id": "frm_01JY2026081200000000000005",
+          "handle": "E10",
+          "kind": "highlight",
+          "id": "hl_20260818_3",
+          "day": "2026-08-18",
+          "ts": 1787076000000,
+          "ts_end": 1787076000000,
+          "ts_local": "2026-08-18T11:00:00-07:00",
+          "label": "精选 · 家",
+          "thumb_hint": "year/highlights/hl_20260818_3.webp",
+          "frame_id": "frm_01JY2026081800000000000037",
           "source_conf": 0.8,
-          "score": 0.71,
+          "score": 0.66,
           "certainty": "confident",
-          "quote": "午饭后果然在那儿找到了",
-          "open_url": "/day/2026-08-12?t=1786545600000&focus=2026-08-12"
+          "quote": null,
+          "open_url": "/day/2026-08-18?t=1787076000000&focus=hl_20260818_3"
+        },
+        {
+          "handle": "E12",
+          "kind": "highlight",
+          "id": "hl_20260831_5",
+          "day": "2026-08-31",
+          "ts": 1788229800000,
+          "ts_end": 1788229800000,
+          "ts_local": "2026-08-31T19:30:00-07:00",
+          "label": "精选 · 家",
+          "thumb_hint": "year/highlights/hl_20260831_5.webp",
+          "frame_id": "frm_01JY2026083100000000000131",
+          "source_conf": 0.8,
+          "score": 0.76,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-08-31?t=1788229800000&focus=hl_20260831_5"
         }
       ],
-      "evidence_considered": 53,
-      "score": 0.71,
+      "evidence_considered": 48,
+      "score": 0.76,
       "reason": null,
       "reasons": [],
       "reason_text": null,
@@ -2463,20 +2711,19 @@
       },
       "status": "uncertain",
       "ui_tone": "amber",
-      "answer": "你在姐姐家过感恩节，外甥皮皮也在。记录还提到“姐姐他们”要求祝酒时暂停，但没说明具体都有谁。",
+      "answer": "感恩节是在你姐姐家过的，应家人的要求敬了酒，但记录没有列出谁参加了。记录里提到了一台给皮皮的收音机，但不清楚皮皮是否在场。",
       "sentences": [
         {
-          "text": "你在姐姐家过感恩节，外甥皮皮也在。",
+          "text": "感恩节是在你姐姐家过的，应家人的要求敬了酒，但记录没有列出谁参加了。",
           "evidence": [
             "E1"
           ]
         },
         {
-          "text": "记录还提到“姐姐他们”要求祝酒时暂停，但没说明具体都有谁。",
+          "text": "记录里提到了一台给皮皮的收音机，但不清楚皮皮是否在场。",
           "evidence": [
             "E1"
-          ],
-          "quote": "姐姐他们要求祝酒时暂停"
+          ]
         }
       ],
       "evidence": [
@@ -2492,14 +2739,14 @@
           "thumb_hint": "year/highlights/hl_20251127_3.webp",
           "frame_id": "frm_01JY2025112700000000000055",
           "source_conf": 0.8,
-          "score": 0.8,
+          "score": 0.79,
           "certainty": "confident",
           "quote": "姐姐他们要求祝酒时暂停",
           "open_url": "/day/2025-11-27?t=1764261000000&focus=2025-11-27"
         }
       ],
-      "evidence_considered": 79,
-      "score": 0.8,
+      "evidence_considered": 40,
+      "score": 0.79,
       "reason": "model_uncertain",
       "reasons": [
         "model_uncertain"
@@ -2525,118 +2772,23 @@
         "from_ms": null,
         "to_ms": null
       },
-      "status": "answered",
+      "status": "not_found",
       "ui_tone": "neutral",
-      "answer": "你们在装订课交流缝线、胶水和本子做法：她把做的本子、新缝笔记本给你看，你们交换不裂胶心得，你也把缝线图抄在笔记页边。她还教过你补撕破修理手册的针法，并一起对照笔记本里的简单缝法图。",
+      "answer": "在 2025-11-19 – 2026-11-18 的记录里没有找到相关内容。",
       "sentences": [
         {
-          "text": "你们在装订课交流缝线、胶水和本子做法：她把做的本子、新缝笔记本给你看，你们交换不裂胶心得，你也把缝线图抄在笔记页边。",
-          "evidence": [
-            "E2",
-            "E3",
-            "E4"
-          ]
-        },
-        {
-          "text": "她还教过你补撕破修理手册的针法，并一起对照笔记本里的简单缝法图。",
-          "evidence": [
-            "E7",
-            "E11"
-          ]
+          "text": "在 2025-11-19 – 2026-11-18 的记录里没有找到相关内容。",
+          "evidence": []
         }
       ],
-      "evidence": [
-        {
-          "handle": "E2",
-          "kind": "highlight",
-          "id": "hl_20260204_2",
-          "day": "2026-02-04",
-          "ts": 1770232800000,
-          "ts_end": 1770232800000,
-          "ts_local": "2026-02-04T11:20:00-08:00",
-          "label": "精选 · 飞燕草社区图书馆",
-          "thumb_hint": "year/highlights/hl_20260204_2.webp",
-          "frame_id": "frm_01JY2026020400000000000037",
-          "source_conf": 0.8,
-          "score": 0.76,
-          "certainty": "confident",
-          "quote": null,
-          "open_url": "/day/2026-02-04?t=1770232800000&focus=hl_20260204_2"
-        },
-        {
-          "handle": "E3",
-          "kind": "highlight",
-          "id": "hl_20260319_3",
-          "day": "2026-03-19",
-          "ts": 1773943200000,
-          "ts_end": 1773943200000,
-          "ts_local": "2026-03-19T11:00:00-07:00",
-          "label": "精选 · 飞燕草社区图书馆",
-          "thumb_hint": "year/highlights/hl_20260319_3.webp",
-          "frame_id": "frm_01JY2026031900000000000029",
-          "source_conf": 0.8,
-          "score": 0.75,
-          "certainty": "confident",
-          "quote": null,
-          "open_url": "/day/2026-03-19?t=1773943200000&focus=hl_20260319_3"
-        },
-        {
-          "handle": "E4",
-          "kind": "highlight",
-          "id": "hl_20260512_4",
-          "day": "2026-05-12",
-          "ts": 1778635800000,
-          "ts_end": 1778635800000,
-          "ts_local": "2026-05-12T18:30:00-07:00",
-          "label": "精选 · 飞燕草社区图书馆",
-          "thumb_hint": "year/highlights/hl_20260512_4.webp",
-          "frame_id": "frm_01JY2026051200000000000131",
-          "source_conf": 0.8,
-          "score": 0.74,
-          "certainty": "confident",
-          "quote": null,
-          "open_url": "/day/2026-05-12?t=1778635800000&focus=hl_20260512_4"
-        },
-        {
-          "handle": "E7",
-          "kind": "highlight",
-          "id": "hl_20260808_2",
-          "day": "2026-08-08",
-          "ts": 1786212000000,
-          "ts_end": 1786212000000,
-          "ts_local": "2026-08-08T11:00:00-07:00",
-          "label": "精选 · 蕨谷修理咖啡馆",
-          "thumb_hint": "year/highlights/hl_20260808_2.webp",
-          "frame_id": "frm_01JY2026080800000000000025",
-          "source_conf": 0.8,
-          "score": 0.72,
-          "certainty": "confident",
-          "quote": null,
-          "open_url": "/day/2026-08-08?t=1786212000000&focus=hl_20260808_2"
-        },
-        {
-          "handle": "E11",
-          "kind": "highlight",
-          "id": "hl_20261020_2",
-          "day": "2026-10-20",
-          "ts": 1792518000000,
-          "ts_end": 1792518000000,
-          "ts_local": "2026-10-20T10:40:00-07:00",
-          "label": "精选 · 飞燕草社区图书馆",
-          "thumb_hint": "year/highlights/hl_20261020_2.webp",
-          "frame_id": "frm_01JY2026102000000000000021",
-          "source_conf": 0.8,
-          "score": 0.75,
-          "certainty": "confident",
-          "quote": null,
-          "open_url": "/day/2026-10-20?t=1792518000000&focus=hl_20261020_2"
-        }
-      ],
+      "evidence": [],
       "evidence_considered": 46,
-      "score": 0.76,
-      "reason": null,
-      "reasons": [],
-      "reason_text": null,
+      "score": 0.0,
+      "reason": "no_evidence",
+      "reasons": [
+        "no_evidence"
+      ],
+      "reason_text": "没有匹配的记录。",
       "note": null,
       "validation": {
         "dropped_citations": 0,
@@ -2657,21 +2809,79 @@
         "from_ms": null,
         "to_ms": null
       },
-      "status": "answered",
-      "ui_tone": "neutral",
-      "answer": "证据显示你在一月买了万用表：当时在五金店比较两只表，挑了刻度更清楚、表笔更简单的那只；后来也提到是一月买的。",
+      "status": "uncertain",
+      "ui_tone": "amber",
+      "answer": "你最近一次买万用表的记录是2026年1月17日，在街角五金店，你在那里比较了两个万用表，选了表盘更清晰、表笔更简单的那个。2026年1月2日还有一条更早的记录，也记录你在回家路上买了一台万用表和一卷焊锡，所以一共记录了两次购买，较晚的那次就是最近的一次。",
       "sentences": [
         {
-          "text": "证据显示你在一月买了万用表：当时在五金店比较两只表，挑了刻度更清楚、表笔更简单的那只；后来也提到是一月买的。",
+          "text": "你最近一次买万用表的记录是2026年1月17日，在街角五金店，你在那里比较了两个万用表，选了表盘更清晰、表笔更简单的那个。",
+          "evidence": [
+            "E6",
+            "E7"
+          ]
+        },
+        {
+          "text": "2026年1月2日还有一条更早的记录，也记录你在回家路上买了一台万用表和一卷焊锡，所以一共记录了两次购买，较晚的那次就是最近的一次。",
           "evidence": [
             "E4",
-            "E12"
+            "E5"
           ]
         }
       ],
       "evidence": [
         {
           "handle": "E4",
+          "kind": "day",
+          "id": "2026-01-02",
+          "day": "2026-01-02",
+          "ts": 1767369900000,
+          "ts_end": 1767406800000,
+          "ts_local": "2026-01-02T08:05:00-08:00",
+          "label": "日期",
+          "thumb_hint": "year/highlights/hl_20260102_1.webp",
+          "frame_id": "frm_01JY2026010200000000000008",
+          "source_conf": 0.8,
+          "score": 0.39,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-01-02?t=1767369900000&focus=2026-01-02"
+        },
+        {
+          "handle": "E5",
+          "kind": "highlight",
+          "id": "hl_20260102_2",
+          "day": "2026-01-02",
+          "ts": 1767383400000,
+          "ts_end": 1767383400000,
+          "ts_local": "2026-01-02T11:50:00-08:00",
+          "label": "精选 · 街角五金店",
+          "thumb_hint": "year/highlights/hl_20260102_2.webp",
+          "frame_id": "frm_01JY2026010200000000000046",
+          "source_conf": 0.8,
+          "score": 0.65,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-01-02?t=1767383400000&focus=hl_20260102_2"
+        },
+        {
+          "handle": "E6",
+          "kind": "day",
+          "id": "2026-01-17",
+          "day": "2026-01-17",
+          "ts": 1768667400000,
+          "ts_end": 1768702800000,
+          "ts_local": "2026-01-17T08:30:00-08:00",
+          "label": "日期",
+          "thumb_hint": "year/highlights/hl_20260117_2.webp",
+          "frame_id": "frm_01JY2026011700000000000025",
+          "source_conf": 0.8,
+          "score": 0.39,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-01-17?t=1768667400000&focus=2026-01-17"
+        },
+        {
+          "handle": "E7",
           "kind": "highlight",
           "id": "hl_20260117_1",
           "day": "2026-01-17",
@@ -2682,40 +2892,25 @@
           "thumb_hint": "year/highlights/hl_20260117_1.webp",
           "frame_id": "frm_01JY2026011700000000000010",
           "source_conf": 0.8,
-          "score": 0.65,
+          "score": 0.57,
           "certainty": "confident",
           "quote": null,
           "open_url": "/day/2026-01-17?t=1768670100000&focus=hl_20260117_1"
-        },
-        {
-          "handle": "E12",
-          "kind": "highlight",
-          "id": "hl_20261107_4",
-          "day": "2026-11-07",
-          "ts": 1794079200000,
-          "ts_end": 1794079200000,
-          "ts_local": "2026-11-07T11:20:00-08:00",
-          "label": "精选 · 蕨谷修理咖啡馆",
-          "thumb_hint": "year/highlights/hl_20261107_4.webp",
-          "frame_id": "frm_01JY2026110700000000000040",
-          "source_conf": 0.8,
-          "score": 0.73,
-          "certainty": "confident",
-          "quote": null,
-          "open_url": "/day/2026-11-07?t=1794079200000&focus=hl_20261107_4"
         }
       ],
-      "evidence_considered": 61,
-      "score": 0.73,
-      "reason": null,
-      "reasons": [],
-      "reason_text": null,
+      "evidence_considered": 74,
+      "score": 0.65,
+      "reason": "below_answer_min",
+      "reasons": [
+        "below_answer_min"
+      ],
+      "reason_text": "不确定：最佳支持证据得分为 0.65，低于回答所需的 0.70。",
       "note": null,
       "validation": {
         "dropped_citations": 0,
         "dropped_quotes": 0,
         "dropped_sentences": 0,
-        "forced_status": null
+        "forced_status": "uncertain"
       },
       "mode": "year",
       "provider": "precomputed"
@@ -2804,61 +2999,44 @@
         "from_ms": null,
         "to_ms": null
       },
-      "status": "answered",
-      "ui_tone": "neutral",
-      "answer": "你给拉家的孩子们补过戏服袖子，还粘亮片补过斗篷。试机器人手臂时，你也补粘过松开的腕带。",
+      "status": "uncertain",
+      "ui_tone": "amber",
+      "answer": "你给孩子们修过服装，但记录没有写明是哪些服装。其中一套服装涉及一条机器人手臂和一条你粘好的松动腕带。",
       "sentences": [
         {
-          "text": "你给拉家的孩子们补过戏服袖子，还粘亮片补过斗篷。",
+          "text": "你给孩子们修过服装，但记录没有写明是哪些服装。",
           "evidence": [
-            "E5",
-            "E6"
+            "E10",
+            "E12"
           ]
         },
         {
-          "text": "试机器人手臂时，你也补粘过松开的腕带。",
+          "text": "其中一套服装涉及一条机器人手臂和一条你粘好的松动腕带。",
           "evidence": [
-            "E10"
+            "E11"
           ]
         }
       ],
       "evidence": [
         {
-          "handle": "E5",
-          "kind": "highlight",
-          "id": "hl_20261008_3",
-          "day": "2026-10-08",
-          "ts": 1791498000000,
-          "ts_end": 1791498000000,
-          "ts_local": "2026-10-08T15:20:00-07:00",
-          "label": "精选 · 家",
-          "thumb_hint": "year/highlights/hl_20261008_3.webp",
-          "frame_id": "frm_01JY2026100800000000000095",
-          "source_conf": 0.8,
-          "score": 0.75,
-          "certainty": "confident",
-          "quote": null,
-          "open_url": "/day/2026-10-08?t=1791498000000&focus=hl_20261008_3"
-        },
-        {
-          "handle": "E6",
-          "kind": "highlight",
-          "id": "hl_20261010_3",
-          "day": "2026-10-10",
-          "ts": 1791660600000,
-          "ts_end": 1791660600000,
-          "ts_local": "2026-10-10T12:30:00-07:00",
-          "label": "精选 · 蕨谷修理咖啡馆",
-          "thumb_hint": "year/highlights/hl_20261010_3.webp",
-          "frame_id": "frm_01JY2026101000000000000055",
-          "source_conf": 0.8,
-          "score": 0.71,
-          "certainty": "confident",
-          "quote": null,
-          "open_url": "/day/2026-10-10?t=1791660600000&focus=hl_20261010_3"
-        },
-        {
           "handle": "E10",
+          "kind": "highlight",
+          "id": "hl_20261015_2",
+          "day": "2026-10-15",
+          "ts": 1792089000000,
+          "ts_end": 1792089000000,
+          "ts_local": "2026-10-15T11:30:00-07:00",
+          "label": "精选 · 家",
+          "thumb_hint": "year/highlights/hl_20261015_2.webp",
+          "frame_id": "frm_01JY2026101500000000000055",
+          "source_conf": 0.8,
+          "score": 0.8,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-10-15?t=1792089000000&focus=hl_20261015_2"
+        },
+        {
+          "handle": "E11",
           "kind": "highlight",
           "id": "hl_20261030_5",
           "day": "2026-10-30",
@@ -2869,17 +3047,36 @@
           "thumb_hint": "year/highlights/hl_20261030_5.webp",
           "frame_id": "frm_01JY2026103000000000000103",
           "source_conf": 0.8,
-          "score": 0.8,
+          "score": 0.7,
           "certainty": "confident",
           "quote": null,
           "open_url": "/day/2026-10-30?t=1793403600000&focus=hl_20261030_5"
+        },
+        {
+          "handle": "E12",
+          "kind": "day",
+          "id": "2026-10-31",
+          "day": "2026-10-31",
+          "ts": 1793461800000,
+          "ts_end": 1793508000000,
+          "ts_local": "2026-10-31T08:50:00-07:00",
+          "label": "日期",
+          "thumb_hint": "year/highlights/hl_20261031_1.webp",
+          "frame_id": "frm_01JY2026103100000000000005",
+          "source_conf": 0.8,
+          "score": 0.66,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-10-31?t=1793461800000&focus=2026-10-31"
         }
       ],
-      "evidence_considered": 51,
+      "evidence_considered": 52,
       "score": 0.8,
-      "reason": null,
-      "reasons": [],
-      "reason_text": null,
+      "reason": "model_uncertain",
+      "reasons": [
+        "model_uncertain"
+      ],
+      "reason_text": "不确定：仅凭这些记录无法确定此事。",
       "note": null,
       "validation": {
         "dropped_citations": 0,
@@ -2944,13 +3141,13 @@
         {
           "text": "你们修的是滑板车轮：把轴承清干净、给车轴上油，让轮子转得顺，最后一颗螺丝由皮皮拧。",
           "evidence": [
-            "E8"
+            "E9"
           ]
         }
       ],
       "evidence": [
         {
-          "handle": "E8",
+          "handle": "E9",
           "kind": "day",
           "id": "2026-07-23",
           "day": "2026-07-23",
@@ -2961,14 +3158,14 @@
           "thumb_hint": "year/highlights/hl_20260723_1.webp",
           "frame_id": "frm_01JY2026072300000000000005",
           "source_conf": 0.8,
-          "score": 0.76,
+          "score": 0.79,
           "certainty": "confident",
           "quote": null,
           "open_url": "/day/2026-07-23?t=1784823600000&focus=2026-07-23"
         }
       ],
-      "evidence_considered": 66,
-      "score": 0.76,
+      "evidence_considered": 64,
+      "score": 0.79,
       "reason": null,
       "reasons": [],
       "reason_text": null,
@@ -2992,22 +3189,15 @@
         "from_ms": null,
         "to_ms": null
       },
-      "status": "answered",
-      "ui_tone": "neutral",
-      "answer": "你是二月十七日包饺子的。邻居奥阿姨带来饺子馅并示范褶子，拉家的孩子们也一起捏。",
+      "status": "uncertain",
+      "ui_tone": "amber",
+      "answer": "记录显示，2月13日为一次邻里晚餐包饺子，但当天那场包饺子活动提到的是家人，不是邻居；2月17日的另一场包饺子活动包括其他人，但没有把他们标为邻居。",
       "sentences": [
         {
-          "text": "你是二月十七日包饺子的。",
-          "evidence": [
-            "E6",
-            "E7"
-          ]
-        },
-        {
-          "text": "邻居奥阿姨带来饺子馅并示范褶子，拉家的孩子们也一起捏。",
+          "text": "记录显示，2月13日为一次邻里晚餐包饺子，但当天那场包饺子活动提到的是家人，不是邻居；2月17日的另一场包饺子活动包括其他人，但没有把他们标为邻居。",
           "evidence": [
             "E2",
-            "E6",
+            "E4",
             "E7"
           ]
         }
@@ -3025,27 +3215,27 @@
           "thumb_hint": "year/highlights/hl_20260213_1.webp",
           "frame_id": "frm_01JY2026021300000000000005",
           "source_conf": 0.8,
-          "score": 0.78,
+          "score": 0.79,
           "certainty": "confident",
           "quote": null,
           "open_url": "/day/2026-02-13?t=1771000200000&focus=2026-02-13"
         },
         {
-          "handle": "E6",
-          "kind": "day",
-          "id": "2026-02-17",
-          "day": "2026-02-17",
-          "ts": 1771344000000,
-          "ts_end": 1771398600000,
-          "ts_local": "2026-02-17T08:00:00-08:00",
-          "label": "当天",
-          "thumb_hint": "year/highlights/hl_20260217_1.webp",
-          "frame_id": "frm_01JY2026021700000000000015",
+          "handle": "E4",
+          "kind": "highlight",
+          "id": "hl_20260213_4",
+          "day": "2026-02-13",
+          "ts": 1771024800000,
+          "ts_end": 1771024800000,
+          "ts_local": "2026-02-13T15:20:00-08:00",
+          "label": "精选 · 家",
+          "thumb_hint": "year/highlights/hl_20260213_4.webp",
+          "frame_id": "frm_01JY2026021300000000000083",
           "source_conf": 0.8,
-          "score": 0.66,
+          "score": 0.77,
           "certainty": "confident",
           "quote": null,
-          "open_url": "/day/2026-02-17?t=1771344000000&focus=2026-02-17"
+          "open_url": "/day/2026-02-13?t=1771024800000&focus=hl_20260213_4"
         },
         {
           "handle": "E7",
@@ -3059,17 +3249,19 @@
           "thumb_hint": "year/highlights/hl_20260217_3.webp",
           "frame_id": "frm_01JY2026021700000000000127",
           "source_conf": 0.8,
-          "score": 0.73,
+          "score": 0.76,
           "certainty": "confident",
           "quote": null,
           "open_url": "/day/2026-02-17?t=1771381800000&focus=hl_20260217_3"
         }
       ],
-      "evidence_considered": 57,
-      "score": 0.78,
-      "reason": null,
-      "reasons": [],
-      "reason_text": null,
+      "evidence_considered": 72,
+      "score": 0.79,
+      "reason": "model_uncertain",
+      "reasons": [
+        "model_uncertain"
+      ],
+      "reason_text": "不确定：仅凭这些记录无法确定此事。",
       "note": null,
       "validation": {
         "dropped_citations": 0,
@@ -3092,60 +3284,34 @@
       },
       "status": "answered",
       "ui_tone": "neutral",
-      "answer": "教练纠正过你的划水，让你练更慢的抓水，并在泳道尽头看着你。他还让你只数划水次数、不追时间，后来要求每三划换一次气。",
+      "answer": "教练让你每三次划水呼吸一次，而不是每两次呼吸一次，后来就轻松些了。你被要求在最后一趟放慢打腿，教练还纠正了你的抱水动作，于是你在泳道一端有人看着的情况下练习了更慢的抱水。最近一次，教练安排了慢速打腿练习，让你在两次呼吸之间数瓷砖。",
       "sentences": [
         {
-          "text": "教练纠正过你的划水，让你练更慢的抓水，并在泳道尽头看着你。",
+          "text": "教练让你每三次划水呼吸一次，而不是每两次呼吸一次，后来就轻松些了。",
           "evidence": [
-            "E9"
-          ]
+            "E7"
+          ],
+          "quote": "每三次划水呼吸一次，而不是每两次呼吸一次"
         },
         {
-          "text": "他还让你只数划水次数、不追时间，后来要求每三划换一次气。",
+          "text": "你被要求在最后一趟放慢打腿，教练还纠正了你的抱水动作，于是你在泳道一端有人看着的情况下练习了更慢的抱水。",
           "evidence": [
-            "E3",
-            "E5",
-            "E6"
-          ]
+            "E9",
+            "E10"
+          ],
+          "quote": "在最后一趟放慢打腿"
+        },
+        {
+          "text": "最近一次，教练安排了慢速打腿练习，让你在两次呼吸之间数瓷砖。",
+          "evidence": [
+            "E12"
+          ],
+          "quote": "教练安排慢速打腿练习"
         }
       ],
       "evidence": [
         {
-          "handle": "E3",
-          "kind": "highlight",
-          "id": "hl_20251228_1",
-          "day": "2025-12-28",
-          "ts": 1766939400000,
-          "ts_end": 1766939400000,
-          "ts_local": "2025-12-28T08:30:00-08:00",
-          "label": "精选 · 社区游泳馆",
-          "thumb_hint": "year/highlights/hl_20251228_1.webp",
-          "frame_id": "frm_01JY2025122800000000000005",
-          "source_conf": 0.8,
-          "score": 0.77,
-          "certainty": "confident",
-          "quote": null,
-          "open_url": "/day/2025-12-28?t=1766939400000&focus=hl_20251228_1"
-        },
-        {
-          "handle": "E5",
-          "kind": "highlight",
-          "id": "hl_20260510_1",
-          "day": "2026-05-10",
-          "ts": 1778423400000,
-          "ts_end": 1778423400000,
-          "ts_local": "2026-05-10T07:30:00-07:00",
-          "label": "精选 · 社区游泳馆",
-          "thumb_hint": "year/highlights/hl_20260510_1.webp",
-          "frame_id": "frm_01JY2026051000000000000007",
-          "source_conf": 0.8,
-          "score": 0.76,
-          "certainty": "confident",
-          "quote": null,
-          "open_url": "/day/2026-05-10?t=1778423400000&focus=hl_20260510_1"
-        },
-        {
-          "handle": "E6",
+          "handle": "E7",
           "kind": "highlight",
           "id": "hl_20260517_1",
           "day": "2026-05-17",
@@ -3156,13 +3322,30 @@
           "thumb_hint": "year/highlights/hl_20260517_1.webp",
           "frame_id": "frm_01JY2026051700000000000003",
           "source_conf": 0.8,
-          "score": 0.69,
+          "score": 0.67,
           "certainty": "confident",
-          "quote": null,
+          "quote": "每划三下呼吸一次，而不是每划两下。",
           "open_url": "/day/2026-05-17?t=1779030000000&focus=hl_20260517_1"
         },
         {
           "handle": "E9",
+          "kind": "highlight",
+          "id": "hl_20260809_1",
+          "day": "2026-08-09",
+          "ts": 1786288500000,
+          "ts_end": 1786288500000,
+          "ts_local": "2026-08-09T08:15:00-07:00",
+          "label": "精选 · 社区游泳池",
+          "thumb_hint": "year/highlights/hl_20260809_1.webp",
+          "frame_id": "frm_01JY2026080900000000000004",
+          "source_conf": 0.8,
+          "score": 0.68,
+          "certainty": "confident",
+          "quote": "最后一段放慢打腿",
+          "open_url": "/day/2026-08-09?t=1786288500000&focus=hl_20260809_1"
+        },
+        {
+          "handle": "E10",
           "kind": "highlight",
           "id": "hl_20260920_1",
           "day": "2026-09-20",
@@ -3173,14 +3356,31 @@
           "thumb_hint": "year/highlights/hl_20260920_1.webp",
           "frame_id": "frm_01JY2026092000000000000004",
           "source_conf": 0.8,
-          "score": 0.8,
+          "score": 0.67,
           "certainty": "confident",
-          "quote": null,
+          "quote": "教练纠正你的抓水动作。",
           "open_url": "/day/2026-09-20?t=1789917300000&focus=hl_20260920_1"
+        },
+        {
+          "handle": "E12",
+          "kind": "highlight",
+          "id": "hl_20261011_1",
+          "day": "2026-10-11",
+          "ts": 1791733200000,
+          "ts_end": 1791733200000,
+          "ts_local": "2026-10-11T08:40:00-07:00",
+          "label": "精选 · 社区游泳池",
+          "thumb_hint": "year/highlights/hl_20261011_1.webp",
+          "frame_id": "frm_01JY2026101100000000000003",
+          "source_conf": 0.8,
+          "score": 0.76,
+          "certainty": "confident",
+          "quote": "教练安排了一个慢速打腿练习",
+          "open_url": "/day/2026-10-11?t=1791733200000&focus=hl_20261011_1"
         }
       ],
-      "evidence_considered": 45,
-      "score": 0.8,
+      "evidence_considered": 60,
+      "score": 0.76,
       "reason": null,
       "reasons": [],
       "reason_text": null,
@@ -3204,22 +3404,62 @@
         "from_ms": null,
         "to_ms": null
       },
-      "status": "answered",
-      "ui_tone": "neutral",
-      "answer": "导出完了：年度册导出完成，导出也已跑完。",
+      "status": "uncertain",
+      "ui_tone": "amber",
+      "answer": "你早些时候导出了年鉴的初稿。完整导出后来完成了，并且为工作台上方的架子订购了一本装订本。",
       "sentences": [
         {
-          "text": "导出完了：年度册导出完成，导出也已跑完。",
+          "text": "你早些时候导出了年鉴的初稿。",
           "evidence": [
-            "E9",
+            "E7",
             "E8"
-          ],
-          "quote": "年度册导出完成"
+          ]
+        },
+        {
+          "text": "完整导出后来完成了，并且为工作台上方的架子订购了一本装订本。",
+          "evidence": [
+            "E10",
+            "E11"
+          ]
         }
       ],
       "evidence": [
         {
+          "handle": "E7",
+          "kind": "day",
+          "id": "2026-11-06",
+          "day": "2026-11-06",
+          "ts": 1793978400000,
+          "ts_end": 1794025800000,
+          "ts_local": "2026-11-06T07:20:00-08:00",
+          "label": "日期",
+          "thumb_hint": "year/highlights/hl_20261106_2.webp",
+          "frame_id": "frm_01JY2026110600000000000039",
+          "source_conf": 0.8,
+          "score": 0.65,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-11-06?t=1793978400000&focus=2026-11-06"
+        },
+        {
           "handle": "E8",
+          "kind": "highlight",
+          "id": "hl_20261106_1",
+          "day": "2026-11-06",
+          "ts": 1793980800000,
+          "ts_end": 1793980800000,
+          "ts_local": "2026-11-06T08:00:00-08:00",
+          "label": "精选 · 家",
+          "thumb_hint": "year/highlights/hl_20261106_1.webp",
+          "frame_id": "frm_01JY2026110600000000000009",
+          "source_conf": 0.8,
+          "score": 0.62,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-11-06?t=1793980800000&focus=hl_20261106_1"
+        },
+        {
+          "handle": "E10",
           "kind": "day",
           "id": "2026-11-15",
           "day": "2026-11-15",
@@ -3230,13 +3470,13 @@
           "thumb_hint": "year/highlights/hl_20261115_4.webp",
           "frame_id": "frm_01JY2026111500000000000117",
           "source_conf": 0.8,
-          "score": 0.74,
+          "score": 0.62,
           "certainty": "confident",
           "quote": "年度册导出终于跑完",
           "open_url": "/day/2026-11-15?t=1794754800000&focus=2026-11-15"
         },
         {
-          "handle": "E9",
+          "handle": "E11",
           "kind": "highlight",
           "id": "hl_20261115_3",
           "day": "2026-11-15",
@@ -3247,23 +3487,25 @@
           "thumb_hint": "year/highlights/hl_20261115_3.webp",
           "frame_id": "frm_01JY2026111500000000000073",
           "source_conf": 0.8,
-          "score": 0.77,
+          "score": 0.67,
           "certainty": "confident",
           "quote": "年度册导出完成",
           "open_url": "/day/2026-11-15?t=1794776400000&focus=hl_20261115_3"
         }
       ],
-      "evidence_considered": 68,
-      "score": 0.77,
-      "reason": null,
-      "reasons": [],
-      "reason_text": null,
+      "evidence_considered": 74,
+      "score": 0.67,
+      "reason": "below_answer_min",
+      "reasons": [
+        "below_answer_min"
+      ],
+      "reason_text": "不确定：最佳支持证据得分为 0.67，低于回答所需的 0.70。",
       "note": null,
       "validation": {
         "dropped_citations": 0,
         "dropped_quotes": 0,
         "dropped_sentences": 0,
-        "forced_status": null
+        "forced_status": "uncertain"
       },
       "mode": "year",
       "provider": "precomputed"
@@ -3278,18 +3520,59 @@
         "from_ms": null,
         "to_ms": null
       },
-      "status": "uncertain",
-      "ui_tone": "amber",
-      "answer": "最后一次看到红色工具箱是在家里的工作间。",
+      "status": "answered",
+      "ui_tone": "neutral",
+      "answer": "红色工具箱的最新记录显示它在你家里的工坊里，你在那里测试了一台收音机的电源线，并打磨了柜门。它是从蕨谷修理咖啡馆的工作台搬到那里的，在那之前是在有轨电车上。",
       "sentences": [
         {
-          "text": "最后一次看到红色工具箱是在家里的工作间。",
+          "text": "红色工具箱的最新记录显示它在你家里的工坊里，你在那里测试了一台收音机的电源线，并打磨了柜门。",
           "evidence": [
             "E12"
+          ]
+        },
+        {
+          "text": "它是从蕨谷修理咖啡馆的工作台搬到那里的，在那之前是在有轨电车上。",
+          "evidence": [
+            "E10",
+            "E11"
           ]
         }
       ],
       "evidence": [
+        {
+          "handle": "E10",
+          "kind": "highlight",
+          "id": "hl_20261031_1",
+          "day": "2026-10-31",
+          "ts": 1793463000000,
+          "ts_end": 1793463000000,
+          "ts_local": "2026-10-31T09:10:00-07:00",
+          "label": "精选 · 蕨谷修理咖啡馆",
+          "thumb_hint": "year/highlights/hl_20261031_1.webp",
+          "frame_id": "frm_01JY2026103100000000000005",
+          "source_conf": 0.8,
+          "score": 0.64,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-10-31?t=1793463000000&focus=hl_20261031_1"
+        },
+        {
+          "handle": "E11",
+          "kind": "highlight",
+          "id": "hl_20261107_1",
+          "day": "2026-11-07",
+          "ts": 1794067500000,
+          "ts_end": 1794067500000,
+          "ts_local": "2026-11-07T08:05:00-08:00",
+          "label": "精选 · 4 路有轨电车",
+          "thumb_hint": "year/highlights/hl_20261107_1.webp",
+          "frame_id": "frm_01JY2026110700000000000001",
+          "source_conf": 0.8,
+          "score": 0.71,
+          "certainty": "confident",
+          "quote": null,
+          "open_url": "/day/2026-11-07?t=1794067500000&focus=hl_20261107_1"
+        },
         {
           "handle": "E12",
           "kind": "sighting",
@@ -3308,19 +3591,17 @@
           "open_url": "/day/2026-11-17?t=1794950400000&focus=frm_01JY2026111700000000000064"
         }
       ],
-      "evidence_considered": 54,
-      "score": 0.53,
-      "reason": "below_answer_min",
-      "reasons": [
-        "below_answer_min"
-      ],
-      "reason_text": "不确定：最有力的证据得分只有 0.53，低于作答所需的 0.70。",
+      "evidence_considered": 53,
+      "score": 0.71,
+      "reason": null,
+      "reasons": [],
+      "reason_text": null,
       "note": null,
       "validation": {
         "dropped_citations": 0,
         "dropped_quotes": 0,
         "dropped_sentences": 0,
-        "forced_status": "uncertain"
+        "forced_status": null
       },
       "mode": "year",
       "provider": "precomputed"
@@ -3337,25 +3618,24 @@
       },
       "status": "answered",
       "ui_tone": "neutral",
-      "answer": "你带着小工具和一盘小面包坐4路有轨电车去姐姐家。在姐姐家你修一只晃动的椅腿，外甥帮你举台灯，姐夫同时做三样菜。晚上树灯亮着，大家在厨房桌边倒数、碰杯。",
+      "answer": "你在姐姐家过跨年夜，皮皮举着灯，你修一条摇晃的椅子腿。姐夫又做太多了，这一年就在厨房餐桌旁的倒计时中结束了。倒计时期间树上的灯一直亮着，大家在桌边碰杯。",
       "sentences": [
         {
-          "text": "你带着小工具和一盘小面包坐4路有轨电车去姐姐家。",
+          "text": "你在姐姐家过跨年夜，皮皮举着灯，你修一条摇晃的椅子腿。",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "text": "姐夫又做太多了，这一年就在厨房餐桌旁的倒计时中结束了。",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "text": "倒计时期间树上的灯一直亮着，大家在桌边碰杯。",
           "evidence": [
             "E2"
-          ]
-        },
-        {
-          "text": "在姐姐家你修一只晃动的椅腿，外甥帮你举台灯，姐夫同时做三样菜。",
-          "evidence": [
-            "E1",
-            "E3"
-          ]
-        },
-        {
-          "text": "晚上树灯亮着，大家在厨房桌边倒数、碰杯。",
-          "evidence": [
-            "E4"
           ]
         }
       ],
@@ -3380,40 +3660,6 @@
         {
           "handle": "E2",
           "kind": "highlight",
-          "id": "hl_20251231_1",
-          "day": "2025-12-31",
-          "ts": 1767223200000,
-          "ts_end": 1767223200000,
-          "ts_local": "2025-12-31T15:20:00-08:00",
-          "label": "精选 · 4 路有轨电车",
-          "thumb_hint": "year/highlights/hl_20251231_1.webp",
-          "frame_id": "frm_01JY2025123100000000000005",
-          "source_conf": 0.8,
-          "score": 0.38,
-          "certainty": "confident",
-          "quote": null,
-          "open_url": "/day/2025-12-31?t=1767223200000&focus=hl_20251231_1"
-        },
-        {
-          "handle": "E3",
-          "kind": "highlight",
-          "id": "hl_20251231_2",
-          "day": "2025-12-31",
-          "ts": 1767226200000,
-          "ts_end": 1767226200000,
-          "ts_local": "2025-12-31T16:10:00-08:00",
-          "label": "精选 · 姐姐家",
-          "thumb_hint": "year/highlights/hl_20251231_2.webp",
-          "frame_id": "frm_01JY2025123100000000000015",
-          "source_conf": 0.8,
-          "score": 0.78,
-          "certainty": "confident",
-          "quote": null,
-          "open_url": "/day/2025-12-31?t=1767226200000&focus=hl_20251231_2"
-        },
-        {
-          "handle": "E4",
-          "kind": "highlight",
           "id": "hl_20251231_5",
           "day": "2025-12-31",
           "ts": 1767254100000,
@@ -3429,7 +3675,7 @@
           "open_url": "/day/2025-12-31?t=1767254100000&focus=hl_20251231_5"
         }
       ],
-      "evidence_considered": 4,
+      "evidence_considered": 2,
       "score": 0.8,
       "reason": null,
       "reasons": [],
