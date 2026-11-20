@@ -9,6 +9,7 @@ name: lifelog-app
 on:
   push:
     branches: [main]
+    tags: ["lifelog-v*"]
     paths:
       - "lifelog/app/**"
       - ".github/workflows/lifelog-app.yml"
@@ -16,6 +17,9 @@ on:
     paths:
       - "lifelog/app/**"
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   web:
@@ -120,3 +124,38 @@ jobs:
           # and switch to `npx tauri ios build`.
           cargo check --manifest-path src-tauri/Cargo.toml --target aarch64-apple-ios
           cargo check --manifest-path src-tauri/Cargo.toml --target aarch64-apple-ios-sim
+
+  release:
+    name: Publish GitHub Release
+    needs: [desktop, android]
+    if: startsWith(github.ref, 'refs/tags/lifelog-v')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: lifelog-*
+          merge-multiple: true
+          path: release-assets
+      - name: Collect installer files
+        run: |
+          mkdir -p dist-release
+          find release-assets -type f \( -name "*.exe" -o -name "*.msi" -o -name "*.dmg" -o -name "*.AppImage" -o -name "*.deb" -o -name "*.rpm" -o -name "*.apk" \) -exec cp {} dist-release/ \;
+          ls -la dist-release/
+      - uses: softprops/action-gh-release@v2
+        with:
+          name: Lifelog ${{ github.ref_name }}
+          body: |
+            AI Glasses Lifelog companion app — front-end demo build (v0.1.0).
+
+            **Downloads**
+            - Windows: `.exe` (NSIS installer) or `.msi`
+            - macOS: `.dmg` (universal, Intel + Apple Silicon)
+            - Linux: `.AppImage`, `.deb` or `.rpm`
+            - Android: `.apk` (debug-signed, sideload install)
+
+            **iOS is not included**: an installable .ipa requires an Apple
+            Developer signing certificate + provisioning profile.
+
+            All records shown in the app are fictional showcase data.
+            Research prototype — not a medical device, not a navigation aid.
+          files: dist-release/*
