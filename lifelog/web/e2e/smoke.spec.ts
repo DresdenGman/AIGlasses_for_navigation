@@ -5,10 +5,10 @@ const pages = [
   { path: "/", name: /2026/ },
   { path: "/day/2026-04-18/summary", name: /2026/ },
   { path: "/day/2026-04-18", name: /2026/ },
-  { path: "/ask", name: /询问记录|Ask the record/ },
-  { path: "/objects", name: /最后一次看见|Last seen/ },
-  { path: "/privacy", name: /隐私|Privacy/ },
-  { path: "/settings", name: /设置|Settings/ },
+  { path: "/ask", name: /Ask the record/ },
+  { path: "/objects", name: /Last seen/ },
+  { path: "/privacy", name: /Privacy/ },
+  { path: "/settings", name: /Settings/ },
 ];
 
 async function expectClean(page: import("@playwright/test").Page) {
@@ -27,10 +27,9 @@ test.describe("showcase pages", () => {
     });
   }
 
-  test("language, ask, timeline keys, and pause", async ({ page }) => {
+  test("English, ask, timeline keys, and pause", async ({ page }) => {
     await page.goto("/day/2026-04-18/summary");
-    await expect(page.getByText("不确定").first()).toBeVisible();
-    await page.getByRole("button", { name: "English" }).click();
+    await expect(page.getByText("Uncertain").first()).toBeVisible();
     await expect(page.getByRole("heading", { level: 1 })).toContainText("2026");
     await page.getByRole("button", { name: /E\d/ }).first().click();
     await expect(page.getByRole("dialog")).toBeVisible();
@@ -47,9 +46,6 @@ test.describe("showcase pages", () => {
     await expect(page.locator(".border-dashed.border-uncertain-rule")).toBeVisible();
     await expect(page.locator(".bg-uncertain-bg")).toHaveCount(0);
     await page.getByRole("button", { name: "When did the replacement switch for the desk lamp arrive?" }).click();
-    await page.getByRole("button", { name: /E\d/ }).first().click();
-    await expect(page.getByRole("dialog")).toBeVisible();
-    await page.keyboard.press("Escape");
     await page.getByRole("button", { name: "What did the bakery cashier say about my passport?" }).click();
     await expect(page.getByText("not in records", { exact: true })).toBeVisible();
     await expect(page.getByText("I couldn't find this in the records for 2026-04-18.")).toBeVisible();

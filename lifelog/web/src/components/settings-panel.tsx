@@ -68,7 +68,7 @@ export function SettingsPanel({
             type="button"
             role="radio"
             aria-checked={target === "cloud"}
-            className="min-h-11 border border-rule px-4"
+            className={`min-h-11 border px-4 ${target === "cloud" ? "border-ink bg-ink text-paper" : "border-rule"}`}
             onClick={() => {
               if (prefs.overrides.localFirst) return;
               prefs.update({ backupTarget: "cloud", backupEnabled: true });
