@@ -73,6 +73,34 @@ export function PrefsProvider({
   const [dialog, setDialog] = useState<DialogName>(null);
   const [ready, setReady] = useState(false);
 
+  // The static export cannot read cookies on the server, so the provider
+  // restores theme / locale / large-text from cookies once on mount.
+  // Without this, every full page load silently reset dark mode and
+  // large text — core preferences for low-vision readers.
+  useEffect(() => {
+    const jar = new Map(
+      document.cookie
+        .split(";")
+        .map((part) => part.trim().split("=") as [string, string])
+        .filter(([name]) => name)
+        .map(([name, value]) => [name, decodeURIComponent(value ?? "")] as [string, string]),
+    );
+    const savedTheme = jar.get("ll_theme");
+    if (savedTheme === "dark" || savedTheme === "light") {
+      setThemeState(savedTheme);
+      document.documentElement.classList.toggle("dark", savedTheme === "dark");
+    }
+    const savedLocale = jar.get("ll_locale");
+    if (savedLocale === "en" || savedLocale === "zh-CN") {
+      setLocaleState(savedLocale);
+      document.documentElement.lang = savedLocale;
+    }
+    if (jar.get("ll_large") === "1") {
+      setLarge(true);
+      document.documentElement.dataset.large = "1";
+    }
+  }, []);
+
   useEffect(() => {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
