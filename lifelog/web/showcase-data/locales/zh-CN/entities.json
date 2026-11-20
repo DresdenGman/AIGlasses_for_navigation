@@ -1,0 +1,162 @@
+{
+  "ent_sis": {
+    "name": "姐姐（小雯）",
+    "note": "姐姐，住在城另一头"
+  },
+  "ent_neph": {
+    "name": "外甥皮皮",
+    "note": "姐姐的儿子，春天时九岁"
+  },
+  "ent_bil": {
+    "name": "姐夫阿多",
+    "note": "姐姐的爱人，很会做饭"
+  },
+  "ent_neigh": {
+    "name": "隔壁的奥阿姨",
+    "note": "邻居，一起种花箱"
+  },
+  "ent_neikid": {
+    "name": "拉家的孩子们",
+    "note": "对门家的两个孩子"
+  },
+  "ent_volb": {
+    "name": "修理咖啡馆的师傅",
+    "note": "耐心的志愿修理师（4 月 18 日的匿名说话人 B）"
+  },
+  "ent_tomas": {
+    "name": "托马（修理咖啡馆）",
+    "note": "修收音机的志愿者同伴"
+  },
+  "ent_client1": {
+    "name": "客户霍先生",
+    "note": "定做橡木斗柜的客户"
+  },
+  "ent_client2": {
+    "name": "客户伊女士",
+    "note": "翻新椅子和柜子的客户"
+  },
+  "ent_baker": {
+    "name": "面包房柜台",
+    "note": "羽毛笔街面包房的收银员（不知道名字）"
+  },
+  "ent_libr": {
+    "name": "图书馆预约台",
+    "note": "图书馆预约服务台工作人员"
+  },
+  "ent_coach": {
+    "name": "周日游泳教练",
+    "note": "社区泳池的教练"
+  },
+  "ent_oldf": {
+    "name": "装订课的小琼",
+    "note": "一月装订课的同学"
+  },
+  "ent_mail": {
+    "name": "邮递员",
+    "note": "片区邮递员"
+  },
+  "ent_home": {
+    "name": "家",
+    "note": "带一个小工作角的公寓"
+  },
+  "ent_shop": {
+    "name": "家里的工作间",
+    "note": "隔两条街租的车库工作间"
+  },
+  "ent_cafe": {
+    "name": "蕨谷修理咖啡馆",
+    "note": "每周六，社区活动厅"
+  },
+  "ent_tram": {
+    "name": "4 路有轨电车",
+    "note": "每天坐的有轨电车"
+  },
+  "ent_bake": {
+    "name": "羽毛笔街面包房",
+    "note": "黑麦面包和肉桂卷"
+  },
+  "ent_lib": {
+    "name": "飞燕草社区图书馆",
+    "note": "预约台、各种工作坊"
+  },
+  "ent_sish": {
+    "name": "姐姐家",
+    "note": "城另一头，大厨房"
+  },
+  "ent_market": {
+    "name": "港口周末市集",
+    "note": "农产品摊，夏天有夜市"
+  },
+  "ent_pool": {
+    "name": "社区游泳馆",
+    "note": "周日早上"
+  },
+  "ent_park": {
+    "name": "桤木公园",
+    "note": "散步、鸭子池塘"
+  },
+  "ent_salt": {
+    "name": "盐湖镇（旅行）",
+    "note": "海边小镇，五月旅行"
+  },
+  "ent_hware": {
+    "name": "街角五金店",
+    "note": "螺丝、胶水、砂纸"
+  },
+  "ent_clinic": {
+    "name": "社区诊所",
+    "note": "二月感冒时去过"
+  },
+  "ent_keys": {
+    "name": "钥匙",
+    "note": "黄铜钥匙圈，挂蓝色小牌"
+  },
+  "ent_rglass": {
+    "name": "老花镜",
+    "note": "玳瑁色镜框"
+  },
+  "ent_umb": {
+    "name": "雨伞",
+    "note": "深色折叠伞"
+  },
+  "ent_tape": {
+    "name": "卷尺",
+    "note": "黄色 5 米卷尺"
+  },
+  "ent_glue": {
+    "name": "热熔胶枪",
+    "note": "小号热熔胶枪"
+  },
+  "ent_toolb": {
+    "name": "红色工具箱",
+    "note": "放在修理咖啡馆的工作台"
+  },
+  "ent_screws": {
+    "name": "螺丝罐",
+    "note": "装杂螺丝的罐子"
+  },
+  "ent_lamp": {
+    "name": "台灯",
+    "note": "修好的金属台灯"
+  },
+  "ent_card": {
+    "name": "借书证",
+    "note": "每年四月续期"
+  },
+  "ent_wallet": {
+    "name": "钱包",
+    "note": "棕色皮钱包"
+  },
+  "ent_multi": {
+    "name": "万用表",
+    "note": "一月买的"
+  },
+  "ent_tote": {
+    "name": "帆布袋",
+    "note": "装待修物件"
+  },
+  "ent_noteb": {
+    "name": "纸质笔记本",
+    "note": "画电路草图、写清单"
+  }
+}

@@ -10,7 +10,7 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
+/lib/
 lib64/
 parts/
 sdist/
@@ -122,6 +122,15 @@ lifelog-data/
 *.sqlite-wal
 *.sqlite-shm
 *.sqlite-journal
+# Lifelog showcase site and local capture data
+lifelog/web/node_modules/
+lifelog/web/.next/
+lifelog/web/test-results/
+lifelog/web/playwright-report/
+lifelog/web/blob-report/
+lifelog/web/playwright/.cache/
+lifelog/data/
+*.sqlite*
 *.m4a
 *.aac
 lifelog/**/media/audio/

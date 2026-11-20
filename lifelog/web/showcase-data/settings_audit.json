@@ -1,0 +1,74 @@
+[
+  {
+    "ts_ms": 1763568060000,
+    "ts_local": "2025-11-19T08:01:00-08:00",
+    "key": "local_first",
+    "from": null,
+    "to": true,
+    "source": "owner"
+  },
+  {
+    "ts_ms": 1763568120000,
+    "ts_local": "2025-11-19T08:02:00-08:00",
+    "key": "audio_enabled",
+    "from": false,
+    "to": true,
+    "source": "owner"
+  },
+  {
+    "ts_ms": 1763568240000,
+    "ts_local": "2025-11-19T08:04:00-08:00",
+    "key": "face_blur",
+    "from": null,
+    "to": true,
+    "source": "owner"
+  },
+  {
+    "ts_ms": 1763788440000,
+    "ts_local": "2025-11-21T21:14:00-08:00",
+    "key": "retention_days",
+    "from": 14,
+    "to": 365,
+    "source": "owner"
+  },
+  {
+    "ts_ms": 1763922600000,
+    "ts_local": "2025-11-23T10:30:00-08:00",
+    "key": "location_enabled",
+    "from": false,
+    "to": true,
+    "source": "owner"
+  },
+  {
+    "ts_ms": 1765092600000,
+    "ts_local": "2025-12-06T23:30:00-08:00",
+    "key": "backup.target_type",
+    "from": null,
+    "to": "nas",
+    "source": "owner"
+  },
+  {
+    "ts_ms": 1768967100000,
+    "ts_local": "2026-01-20T19:45:00-08:00",
+    "key": "local_first",
+    "from": true,
+    "to": false,
+    "source": "owner"
+  },
+  {
+    "ts_ms": 1772467800000,
+    "ts_local": "2026-03-02T08:10:00-08:00",
+    "key": "local_first",
+    "from": false,
+    "to": true,
+    "source": "owner"
+  },
+  {
+    "ts_ms": 1779426300000,
+    "ts_local": "2026-05-21T22:05:00-07:00",
+    "key": "keep_raw_audio",
+    "from": false,
+    "to": false,
+    "source": "owner"
+  }
+]

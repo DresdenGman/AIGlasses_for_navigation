@@ -1,0 +1,954 @@
+[
+  {
+    "id": "wli_01JY000000000000000000KEYS",
+    "key": "KEYS",
+    "label": "keys",
+    "aliases": [
+      "钥匙"
+    ],
+    "enabled": true,
+    "status": "seen",
+    "last_confident": {
+      "day": "2026-11-15",
+      "ts_ms": 1794799800000,
+      "ts_local": "2026-11-15T19:30:00-08:00",
+      "frame_id": "frm_01JY2026111500000000000151",
+      "frame_label": "F-1115-0151",
+      "highlight_id": "hl_20261115_5",
+      "place": "TRAM",
+      "score": 0.67,
+      "certainty": "confident",
+      "bbox": {
+        "x": 0.26,
+        "y": 0.58,
+        "w": 0.22,
+        "h": 0.19
+      }
+    },
+    "newer_uncertain": {
+      "day": "2026-11-17",
+      "ts_ms": 1794932400000,
+      "ts_local": "2026-11-17T08:20:00-08:00",
+      "frame_id": "frm_01JY2026111700000000000004",
+      "frame_label": "F-1117-0004",
+      "highlight_id": "hl_20261117_1",
+      "place": "HOME",
+      "score": 0.38,
+      "certainty": "uncertain",
+      "bbox": {
+        "x": 0.35,
+        "y": 0.62,
+        "w": 0.17,
+        "h": 0.07
+      }
+    },
+    "sightings": [
+      {
+        "day": "2026-10-28",
+        "ts_ms": 1793200800000,
+        "ts_local": "2026-10-28T08:20:00-07:00",
+        "frame_id": "frm_01JY2026102800000000000005",
+        "frame_label": "F-1028-0005",
+        "highlight_id": "hl_20261028_1",
+        "place": "TRAM",
+        "score": 0.87,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.12,
+          "y": 0.12,
+          "w": 0.11,
+          "h": 0.08
+        }
+      },
+      {
+        "day": "2026-11-01",
+        "ts_ms": 1793583300000,
+        "ts_local": "2026-11-01T17:35:00-08:00",
+        "frame_id": "frm_01JY2026110100000000000127",
+        "frame_label": "F-1101-0127",
+        "highlight_id": "hl_20261101_4",
+        "place": "HOME",
+        "score": 0.71,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.13,
+          "y": 0.21,
+          "w": 0.1,
+          "h": 0.17
+        }
+      },
+      {
+        "day": "2026-11-09",
+        "ts_ms": 1794237300000,
+        "ts_local": "2026-11-09T07:15:00-08:00",
+        "frame_id": "frm_01JY2026110900000000000005",
+        "frame_label": "F-1109-0005",
+        "highlight_id": "hl_20261109_1",
+        "place": "TRAM",
+        "score": 0.84,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.06,
+          "y": 0.11,
+          "w": 0.14,
+          "h": 0.1
+        }
+      },
+      {
+        "day": "2026-11-15",
+        "ts_ms": 1794799800000,
+        "ts_local": "2026-11-15T19:30:00-08:00",
+        "frame_id": "frm_01JY2026111500000000000151",
+        "frame_label": "F-1115-0151",
+        "highlight_id": "hl_20261115_5",
+        "place": "TRAM",
+        "score": 0.67,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.26,
+          "y": 0.58,
+          "w": 0.22,
+          "h": 0.19
+        }
+      },
+      {
+        "day": "2026-11-17",
+        "ts_ms": 1794932400000,
+        "ts_local": "2026-11-17T08:20:00-08:00",
+        "frame_id": "frm_01JY2026111700000000000004",
+        "frame_label": "F-1117-0004",
+        "highlight_id": "hl_20261117_1",
+        "place": "HOME",
+        "score": 0.38,
+        "certainty": "uncertain",
+        "bbox": {
+          "x": 0.35,
+          "y": 0.62,
+          "w": 0.17,
+          "h": 0.07
+        }
+      }
+    ]
+  },
+  {
+    "id": "wli_01JY0000000000000000RGLASS",
+    "key": "RGLASS",
+    "label": "reading glasses",
+    "aliases": [
+      "老花镜"
+    ],
+    "enabled": true,
+    "status": "seen",
+    "last_confident": {
+      "day": "2026-11-15",
+      "ts_ms": 1794789600000,
+      "ts_local": "2026-11-15T16:40:00-08:00",
+      "frame_id": "frm_01JY2026111500000000000117",
+      "frame_label": "F-1115-0117",
+      "highlight_id": "hl_20261115_4",
+      "place": "HOME",
+      "score": 0.68,
+      "certainty": "confident",
+      "bbox": {
+        "x": 0.5,
+        "y": 0.62,
+        "w": 0.13,
+        "h": 0.07
+      }
+    },
+    "newer_uncertain": {
+      "day": "2026-11-18",
+      "ts_ms": 1795017000000,
+      "ts_local": "2026-11-18T07:50:00-08:00",
+      "frame_id": "frm_01JY2026111800000000000005",
+      "frame_label": "F-1118-0005",
+      "highlight_id": "hl_20261118_1",
+      "place": "TRAM",
+      "score": 0.41,
+      "certainty": "uncertain",
+      "bbox": {
+        "x": 0.53,
+        "y": 0.23,
+        "w": 0.24,
+        "h": 0.15
+      }
+    },
+    "sightings": [
+      {
+        "day": "2026-11-06",
+        "ts_ms": 1793989800000,
+        "ts_local": "2026-11-06T10:30:00-08:00",
+        "frame_id": "frm_01JY2026110600000000000039",
+        "frame_label": "F-1106-0039",
+        "highlight_id": "hl_20261106_2",
+        "place": "HOME",
+        "score": 0.53,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.38,
+          "y": 0.18,
+          "w": 0.18,
+          "h": 0.24
+        }
+      },
+      {
+        "day": "2026-11-09",
+        "ts_ms": 1794241800000,
+        "ts_local": "2026-11-09T08:30:00-08:00",
+        "frame_id": "frm_01JY2026110900000000000020",
+        "frame_label": "F-1109-0020",
+        "highlight_id": "hl_20261109_2",
+        "place": "SHOP",
+        "score": 0.62,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.51,
+          "y": 0.67,
+          "w": 0.17,
+          "h": 0.13
+        }
+      },
+      {
+        "day": "2026-11-12",
+        "ts_ms": 1794500400000,
+        "ts_local": "2026-11-12T08:20:00-08:00",
+        "frame_id": "frm_01JY2026111200000000000015",
+        "frame_label": "F-1112-0015",
+        "highlight_id": "hl_20261112_1",
+        "place": "SHOP",
+        "score": 0.65,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.65,
+          "y": 0.2,
+          "w": 0.15,
+          "h": 0.23
+        }
+      },
+      {
+        "day": "2026-11-15",
+        "ts_ms": 1794789600000,
+        "ts_local": "2026-11-15T16:40:00-08:00",
+        "frame_id": "frm_01JY2026111500000000000117",
+        "frame_label": "F-1115-0117",
+        "highlight_id": "hl_20261115_4",
+        "place": "HOME",
+        "score": 0.68,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.5,
+          "y": 0.62,
+          "w": 0.13,
+          "h": 0.07
+        }
+      },
+      {
+        "day": "2026-11-18",
+        "ts_ms": 1795017000000,
+        "ts_local": "2026-11-18T07:50:00-08:00",
+        "frame_id": "frm_01JY2026111800000000000005",
+        "frame_label": "F-1118-0005",
+        "highlight_id": "hl_20261118_1",
+        "place": "TRAM",
+        "score": 0.41,
+        "certainty": "uncertain",
+        "bbox": {
+          "x": 0.53,
+          "y": 0.23,
+          "w": 0.24,
+          "h": 0.15
+        }
+      }
+    ]
+  },
+  {
+    "id": "wli_01JY0000000000000000000UMB",
+    "key": "UMB",
+    "label": "umbrella",
+    "aliases": [
+      "雨伞"
+    ],
+    "enabled": true,
+    "status": "seen",
+    "last_confident": {
+      "day": "2026-11-15",
+      "ts_ms": 1794799800000,
+      "ts_local": "2026-11-15T19:30:00-08:00",
+      "frame_id": "frm_01JY2026111500000000000151",
+      "frame_label": "F-1115-0151",
+      "highlight_id": "hl_20261115_5",
+      "place": "TRAM",
+      "score": 0.8,
+      "certainty": "confident",
+      "bbox": {
+        "x": 0.33,
+        "y": 0.69,
+        "w": 0.12,
+        "h": 0.14
+      }
+    },
+    "newer_uncertain": null,
+    "sightings": [
+      {
+        "day": "2026-10-30",
+        "ts_ms": 1793409600000,
+        "ts_local": "2026-10-30T18:20:00-07:00",
+        "frame_id": "frm_01JY2026103000000000000123",
+        "frame_label": "F-1030-0123",
+        "highlight_id": "hl_20261030_6",
+        "place": "HOME",
+        "score": 0.57,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.21,
+          "y": 0.24,
+          "w": 0.24,
+          "h": 0.13
+        }
+      },
+      {
+        "day": "2026-11-02",
+        "ts_ms": 1793632800000,
+        "ts_local": "2026-11-02T07:20:00-08:00",
+        "frame_id": "frm_01JY2026110200000000000007",
+        "frame_label": "F-1102-0007",
+        "highlight_id": "hl_20261102_1",
+        "place": "TRAM",
+        "score": 0.84,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.11,
+          "y": 0.23,
+          "w": 0.14,
+          "h": 0.21
+        }
+      },
+      {
+        "day": "2026-11-03",
+        "ts_ms": 1793734200000,
+        "ts_local": "2026-11-03T11:30:00-08:00",
+        "frame_id": "frm_01JY2026110300000000000046",
+        "frame_label": "F-1103-0046",
+        "highlight_id": "hl_20261103_3",
+        "place": "TRAM",
+        "score": 0.86,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.57,
+          "y": 0.23,
+          "w": 0.11,
+          "h": 0.2
+        }
+      },
+      {
+        "day": "2026-11-12",
+        "ts_ms": 1794518100000,
+        "ts_local": "2026-11-12T13:15:00-08:00",
+        "frame_id": "frm_01JY2026111200000000000074",
+        "frame_label": "F-1112-0074",
+        "highlight_id": "hl_20261112_3",
+        "place": "TRAM",
+        "score": 0.7,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.25,
+          "y": 0.53,
+          "w": 0.2,
+          "h": 0.21
+        }
+      },
+      {
+        "day": "2026-11-15",
+        "ts_ms": 1794799800000,
+        "ts_local": "2026-11-15T19:30:00-08:00",
+        "frame_id": "frm_01JY2026111500000000000151",
+        "frame_label": "F-1115-0151",
+        "highlight_id": "hl_20261115_5",
+        "place": "TRAM",
+        "score": 0.8,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.33,
+          "y": 0.69,
+          "w": 0.12,
+          "h": 0.14
+        }
+      }
+    ]
+  },
+  {
+    "id": "wli_01JY000000000000000000TAPE",
+    "key": "TAPE",
+    "label": "tape measure",
+    "aliases": [
+      "卷尺"
+    ],
+    "enabled": true,
+    "status": "seen",
+    "last_confident": {
+      "day": "2026-11-11",
+      "ts_ms": 1794430800000,
+      "ts_local": "2026-11-11T13:00:00-08:00",
+      "frame_id": "frm_01JY2026111100000000000065",
+      "frame_label": "F-1111-0065",
+      "highlight_id": "hl_20261111_3",
+      "place": "SHOP",
+      "score": 0.6,
+      "certainty": "confident",
+      "bbox": {
+        "x": 0.46,
+        "y": 0.35,
+        "w": 0.2,
+        "h": 0.17
+      }
+    },
+    "newer_uncertain": null,
+    "sightings": [
+      {
+        "day": "2026-10-26",
+        "ts_ms": 1793033100000,
+        "ts_local": "2026-10-26T09:45:00-07:00",
+        "frame_id": "frm_01JY2026102600000000000016",
+        "frame_label": "F-1026-0016",
+        "highlight_id": "hl_20261026_2",
+        "place": "SHOP",
+        "score": 0.56,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.07,
+          "y": 0.13,
+          "w": 0.13,
+          "h": 0.14
+        }
+      },
+      {
+        "day": "2026-10-28",
+        "ts_ms": 1793205000000,
+        "ts_local": "2026-10-28T09:30:00-07:00",
+        "frame_id": "frm_01JY2026102800000000000019",
+        "frame_label": "F-1028-0019",
+        "highlight_id": "hl_20261028_2",
+        "place": "SHOP",
+        "score": 0.53,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.64,
+          "y": 0.55,
+          "w": 0.17,
+          "h": 0.12
+        }
+      },
+      {
+        "day": "2026-10-28",
+        "ts_ms": 1793226000000,
+        "ts_local": "2026-10-28T15:20:00-07:00",
+        "frame_id": "frm_01JY2026102800000000000089",
+        "frame_label": "F-1028-0089",
+        "highlight_id": "hl_20261028_5",
+        "place": "SHOP",
+        "score": 0.63,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.09,
+          "y": 0.52,
+          "w": 0.07,
+          "h": 0.1
+        }
+      },
+      {
+        "day": "2026-11-05",
+        "ts_ms": 1793919600000,
+        "ts_local": "2026-11-05T15:00:00-08:00",
+        "frame_id": "frm_01JY2026110500000000000097",
+        "frame_label": "F-1105-0097",
+        "highlight_id": "hl_20261105_3",
+        "place": "SHOP",
+        "score": 0.86,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.66,
+          "y": 0.41,
+          "w": 0.15,
+          "h": 0.25
+        }
+      },
+      {
+        "day": "2026-11-11",
+        "ts_ms": 1794430800000,
+        "ts_local": "2026-11-11T13:00:00-08:00",
+        "frame_id": "frm_01JY2026111100000000000065",
+        "frame_label": "F-1111-0065",
+        "highlight_id": "hl_20261111_3",
+        "place": "SHOP",
+        "score": 0.6,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.46,
+          "y": 0.35,
+          "w": 0.2,
+          "h": 0.17
+        }
+      }
+    ]
+  },
+  {
+    "id": "wli_01JY000000000000000000GLUE",
+    "key": "GLUE",
+    "label": "glue gun",
+    "aliases": [
+      "热熔胶枪"
+    ],
+    "enabled": true,
+    "status": "seen",
+    "last_confident": {
+      "day": "2026-11-12",
+      "ts_ms": 1794519600000,
+      "ts_local": "2026-11-12T13:40:00-08:00",
+      "frame_id": "frm_01JY2026111200000000000079",
+      "frame_label": "F-1112-0079",
+      "highlight_id": "hl_20261112_4",
+      "place": "HWARE",
+      "score": 0.56,
+      "certainty": "confident",
+      "bbox": {
+        "x": 0.52,
+        "y": 0.54,
+        "w": 0.07,
+        "h": 0.2
+      }
+    },
+    "newer_uncertain": null,
+    "sightings": [
+      {
+        "day": "2026-10-31",
+        "ts_ms": 1793475000000,
+        "ts_local": "2026-10-31T12:30:00-07:00",
+        "frame_id": "frm_01JY2026103100000000000045",
+        "frame_label": "F-1031-0045",
+        "highlight_id": "hl_20261031_3",
+        "place": "HOME",
+        "score": 0.73,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.37,
+          "y": 0.35,
+          "w": 0.13,
+          "h": 0.18
+        }
+      },
+      {
+        "day": "2026-10-31",
+        "ts_ms": 1793502000000,
+        "ts_local": "2026-10-31T20:00:00-07:00",
+        "frame_id": "frm_01JY2026103100000000000135",
+        "frame_label": "F-1031-0135",
+        "highlight_id": "hl_20261031_6",
+        "place": "HOME",
+        "score": 0.81,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.35,
+          "y": 0.46,
+          "w": 0.07,
+          "h": 0.08
+        }
+      },
+      {
+        "day": "2026-11-04",
+        "ts_ms": 1793821200000,
+        "ts_local": "2026-11-04T11:40:00-08:00",
+        "frame_id": "frm_01JY2026110400000000000051",
+        "frame_label": "F-1104-0051",
+        "highlight_id": "hl_20261104_2",
+        "place": "SHOP",
+        "score": 0.68,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.31,
+          "y": 0.41,
+          "w": 0.16,
+          "h": 0.22
+        }
+      },
+      {
+        "day": "2026-11-11",
+        "ts_ms": 1794421800000,
+        "ts_local": "2026-11-11T10:30:00-08:00",
+        "frame_id": "frm_01JY2026111100000000000035",
+        "frame_label": "F-1111-0035",
+        "highlight_id": "hl_20261111_2",
+        "place": "SHOP",
+        "score": 0.77,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.22,
+          "y": 0.16,
+          "w": 0.21,
+          "h": 0.21
+        }
+      },
+      {
+        "day": "2026-11-12",
+        "ts_ms": 1794519600000,
+        "ts_local": "2026-11-12T13:40:00-08:00",
+        "frame_id": "frm_01JY2026111200000000000079",
+        "frame_label": "F-1112-0079",
+        "highlight_id": "hl_20261112_4",
+        "place": "HWARE",
+        "score": 0.56,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.52,
+          "y": 0.54,
+          "w": 0.07,
+          "h": 0.2
+        }
+      }
+    ]
+  },
+  {
+    "id": "wli_01JY00000000000000000TOOLB",
+    "key": "TOOLB",
+    "label": "red toolbox",
+    "aliases": [
+      "红色工具箱"
+    ],
+    "enabled": true,
+    "status": "seen",
+    "last_confident": {
+      "day": "2026-11-17",
+      "ts_ms": 1794950400000,
+      "ts_local": "2026-11-17T13:20:00-08:00",
+      "frame_id": "frm_01JY2026111700000000000064",
+      "frame_label": "F-1117-0064",
+      "highlight_id": "hl_20261117_4",
+      "place": "SHOP",
+      "score": 0.53,
+      "certainty": "confident",
+      "bbox": {
+        "x": 0.54,
+        "y": 0.69,
+        "w": 0.25,
+        "h": 0.12
+      }
+    },
+    "newer_uncertain": null,
+    "sightings": [
+      {
+        "day": "2026-11-07",
+        "ts_ms": 1794069600000,
+        "ts_local": "2026-11-07T08:40:00-08:00",
+        "frame_id": "frm_01JY2026110700000000000008",
+        "frame_label": "F-1107-0008",
+        "highlight_id": "hl_20261107_2",
+        "place": "CAFE",
+        "score": 0.81,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.27,
+          "y": 0.56,
+          "w": 0.08,
+          "h": 0.06
+        }
+      },
+      {
+        "day": "2026-11-07",
+        "ts_ms": 1794093000000,
+        "ts_local": "2026-11-07T15:10:00-08:00",
+        "frame_id": "frm_01JY2026110700000000000086",
+        "frame_label": "F-1107-0086",
+        "highlight_id": "hl_20261107_6",
+        "place": "CAFE",
+        "score": 0.86,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.44,
+          "y": 0.35,
+          "w": 0.09,
+          "h": 0.2
+        }
+      },
+      {
+        "day": "2026-11-11",
+        "ts_ms": 1794430800000,
+        "ts_local": "2026-11-11T13:00:00-08:00",
+        "frame_id": "frm_01JY2026111100000000000065",
+        "frame_label": "F-1111-0065",
+        "highlight_id": "hl_20261111_3",
+        "place": "SHOP",
+        "score": 0.69,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.4,
+          "y": 0.22,
+          "w": 0.12,
+          "h": 0.23
+        }
+      },
+      {
+        "day": "2026-11-14",
+        "ts_ms": 1794673800000,
+        "ts_local": "2026-11-14T08:30:00-08:00",
+        "frame_id": "frm_01JY2026111400000000000003",
+        "frame_label": "F-1114-0003",
+        "highlight_id": "hl_20261114_1",
+        "place": "CAFE",
+        "score": 0.6,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.31,
+          "y": 0.56,
+          "w": 0.18,
+          "h": 0.15
+        }
+      },
+      {
+        "day": "2026-11-17",
+        "ts_ms": 1794950400000,
+        "ts_local": "2026-11-17T13:20:00-08:00",
+        "frame_id": "frm_01JY2026111700000000000064",
+        "frame_label": "F-1117-0064",
+        "highlight_id": "hl_20261117_4",
+        "place": "SHOP",
+        "score": 0.53,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.54,
+          "y": 0.69,
+          "w": 0.25,
+          "h": 0.12
+        }
+      }
+    ]
+  },
+  {
+    "id": "wli_01JY000000000000000000LAMP",
+    "key": "LAMP",
+    "label": "desk lamp",
+    "aliases": [
+      "台灯"
+    ],
+    "enabled": true,
+    "status": "seen",
+    "last_confident": {
+      "day": "2026-11-18",
+      "ts_ms": 1795047000000,
+      "ts_local": "2026-11-18T16:10:00-08:00",
+      "frame_id": "frm_01JY2026111800000000000105",
+      "frame_label": "F-1118-0105",
+      "highlight_id": "hl_20261118_5",
+      "place": "HOME",
+      "score": 0.73,
+      "certainty": "confident",
+      "bbox": {
+        "x": 0.22,
+        "y": 0.22,
+        "w": 0.08,
+        "h": 0.22
+      }
+    },
+    "newer_uncertain": null,
+    "sightings": [
+      {
+        "day": "2026-11-01",
+        "ts_ms": 1793593800000,
+        "ts_local": "2026-11-01T20:30:00-08:00",
+        "frame_id": "frm_01JY2026110100000000000162",
+        "frame_label": "F-1101-0162",
+        "highlight_id": "hl_20261101_5",
+        "place": "HOME",
+        "score": 0.55,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.59,
+          "y": 0.6,
+          "w": 0.15,
+          "h": 0.17
+        }
+      },
+      {
+        "day": "2026-11-09",
+        "ts_ms": 1794253800000,
+        "ts_local": "2026-11-09T11:50:00-08:00",
+        "frame_id": "frm_01JY2026110900000000000060",
+        "frame_label": "F-1109-0060",
+        "highlight_id": "hl_20261109_3",
+        "place": "SHOP",
+        "score": 0.83,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.54,
+          "y": 0.55,
+          "w": 0.18,
+          "h": 0.19
+        }
+      },
+      {
+        "day": "2026-11-14",
+        "ts_ms": 1794699000000,
+        "ts_local": "2026-11-14T15:30:00-08:00",
+        "frame_id": "frm_01JY2026111400000000000087",
+        "frame_label": "F-1114-0087",
+        "highlight_id": "hl_20261114_5",
+        "place": "CAFE",
+        "score": 0.55,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.18,
+          "y": 0.46,
+          "w": 0.09,
+          "h": 0.16
+        }
+      },
+      {
+        "day": "2026-11-18",
+        "ts_ms": 1795022400000,
+        "ts_local": "2026-11-18T09:20:00-08:00",
+        "frame_id": "frm_01JY2026111800000000000023",
+        "frame_label": "F-1118-0023",
+        "highlight_id": "hl_20261118_2",
+        "place": "HOME",
+        "score": 0.56,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.41,
+          "y": 0.32,
+          "w": 0.19,
+          "h": 0.12
+        }
+      },
+      {
+        "day": "2026-11-18",
+        "ts_ms": 1795047000000,
+        "ts_local": "2026-11-18T16:10:00-08:00",
+        "frame_id": "frm_01JY2026111800000000000105",
+        "frame_label": "F-1118-0105",
+        "highlight_id": "hl_20261118_5",
+        "place": "HOME",
+        "score": 0.73,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.22,
+          "y": 0.22,
+          "w": 0.08,
+          "h": 0.22
+        }
+      }
+    ]
+  },
+  {
+    "id": "wli_01JY0000000000000000WALLET",
+    "key": "WALLET",
+    "label": "wallet",
+    "aliases": [
+      "钱包"
+    ],
+    "enabled": true,
+    "status": "seen",
+    "last_confident": {
+      "day": "2026-11-10",
+      "ts_ms": 1794367800000,
+      "ts_local": "2026-11-10T19:30:00-08:00",
+      "frame_id": "frm_01JY2026111000000000000125",
+      "frame_label": "F-1110-0125",
+      "highlight_id": "hl_20261110_5",
+      "place": "HOME",
+      "score": 0.55,
+      "certainty": "confident",
+      "bbox": {
+        "x": 0.39,
+        "y": 0.58,
+        "w": 0.23,
+        "h": 0.09
+      }
+    },
+    "newer_uncertain": null,
+    "sightings": [
+      {
+        "day": "2026-10-28",
+        "ts_ms": 1793234400000,
+        "ts_local": "2026-10-28T17:40:00-07:00",
+        "frame_id": "frm_01JY2026102800000000000117",
+        "frame_label": "F-1028-0117",
+        "highlight_id": "hl_20261028_6",
+        "place": "HOME",
+        "score": 0.71,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.37,
+          "y": 0.26,
+          "w": 0.11,
+          "h": 0.11
+        }
+      },
+      {
+        "day": "2026-10-29",
+        "ts_ms": 1793295600000,
+        "ts_local": "2026-10-29T10:40:00-07:00",
+        "frame_id": "frm_01JY2026102900000000000025",
+        "frame_label": "F-1029-0025",
+        "highlight_id": "hl_20261029_2",
+        "place": "BAKE",
+        "score": 0.66,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.12,
+          "y": 0.44,
+          "w": 0.17,
+          "h": 0.17
+        }
+      },
+      {
+        "day": "2026-10-31",
+        "ts_ms": 1793468400000,
+        "ts_local": "2026-10-31T10:40:00-07:00",
+        "frame_id": "frm_01JY2026103100000000000023",
+        "frame_label": "F-1031-0023",
+        "highlight_id": "hl_20261031_2",
+        "place": "BAKE",
+        "score": 0.68,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.65,
+          "y": 0.48,
+          "w": 0.22,
+          "h": 0.09
+        }
+      },
+      {
+        "day": "2026-11-09",
+        "ts_ms": 1794237300000,
+        "ts_local": "2026-11-09T07:15:00-08:00",
+        "frame_id": "frm_01JY2026110900000000000005",
+        "frame_label": "F-1109-0005",
+        "highlight_id": "hl_20261109_1",
+        "place": "TRAM",
+        "score": 0.73,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.12,
+          "y": 0.31,
+          "w": 0.17,
+          "h": 0.24
+        }
+      },
+      {
+        "day": "2026-11-10",
+        "ts_ms": 1794367800000,
+        "ts_local": "2026-11-10T19:30:00-08:00",
+        "frame_id": "frm_01JY2026111000000000000125",
+        "frame_label": "F-1110-0125",
+        "highlight_id": "hl_20261110_5",
+        "place": "HOME",
+        "score": 0.55,
+        "certainty": "confident",
+        "bbox": {
+          "x": 0.39,
+          "y": 0.58,
+          "w": 0.23,
+          "h": 0.09
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,307 @@
+[
+  {
+    "id": "qa_01",
+    "question": "我今天早餐吃了什么？",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "cap_01JRQ4H8ZE0000000000000002",
+      "cap_01JRQ4H8ZE0000000000000003"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "燕麦"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_02",
+    "question": "我今天早上坐的是几路电车？",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "cap_01JRQ4H8ZE0000000000000019"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "4"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_03",
+    "question": "我螺丝放哪了？",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "det_01JRQ4H8ZE0000000000000028",
+      "det_01JRQ4H8ZE0000000000000026",
+      "det_01JRQ4H8ZE0000000000000024",
+      "utt_01JRQ4H8ZE0000000000000131"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "红色工具箱"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_04",
+    "question": "替换开关什么时候到？",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "utt_01JRQ4H8ZE0000000000000118"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "周二"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_05",
+    "question": "我的台灯怎么了？",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "utt_01JRQ4H8ZE0000000000000036",
+      "utt_01JRQ4H8ZE0000000000000021"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "开关"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_06",
+    "question": "我怎么拿到开关的快递单号？",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "utt_01JRQ4H8ZE0000000000000118"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "短信"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_07",
+    "question": "我的台灯现在在哪儿？",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "utt_01JRQ4H8ZE0000000000000141",
+      "det_01JRQ4H8ZE0000000000000030",
+      "cap_01JRQ4H8ZE0000000000000104"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "架子"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_08",
+    "question": "我在面包店买了什么？",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "utt_01JRQ4H8ZE0000000000000153"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "黑麦"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_09",
+    "question": "我什么时候能去图书馆取维修手册？",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "utt_01JRQ4H8ZE0000000000000163"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "周二"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_10",
+    "question": "我们用哪个工具测的台灯线？",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "utt_01JRQ4H8ZE0000000000000042",
+      "utt_01JRQ4H8ZE0000000000000057",
+      "det_01JRQ4H8ZE0000000000000014",
+      "det_01JRQ4H8ZE0000000000000016"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "万用表"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_11",
+    "question": "我的伞最后是在哪儿看到的？",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "det_01JRQ4H8ZE0000000000000038",
+      "cap_01JRQ4H8ZE0000000000000141"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "门"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_12",
+    "question": "志愿者说台灯底座里的结是干什么用的？",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "utt_01JRQ4H8ZE0000000000000067"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "电线"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_13",
+    "question": "我记着周二要做什么？",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "utt_01JRQ4H8ZE0000000000000201"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "图书馆"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_14",
+    "question": "面包店招牌上写的什么名字？",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "cap_01JRQ4H8ZE0000000000000110"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "Quill"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_15",
+    "question": "面包店收银员推荐了什么？",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "utt_01JRQ4H8ZE0000000000000150"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "肉桂"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_16",
+    "question": "台灯底座有几颗螺丝固定？",
+    "expected_status": "answered",
+    "must_cite_any": [
+      "utt_01JRQ4H8ZE0000000000000026"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [
+      "四"
+    ],
+    "trap": null
+  },
+  {
+    "id": "qa_17",
+    "question": "我的钥匙在哪儿？",
+    "expected_status": "uncertain",
+    "must_cite_any": [
+      "det_01JRQ4H8ZE0000000000000041",
+      "det_01JRQ4H8ZE0000000000000040",
+      "det_01JRQ4H8ZE0000000000000008",
+      "det_01JRQ4H8ZE0000000000000007",
+      "utt_01JRQ4H8ZE0000000000000011",
+      "utt_01JRQ4H8ZE0000000000000209"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [],
+    "trap": "object_uncertain"
+  },
+  {
+    "id": "qa_18",
+    "question": "我今天早上在电车上嘟囔了什么？",
+    "expected_status": "uncertain",
+    "must_cite_any": [
+      "utt_01JRQ4H8ZE0000000000000013",
+      "utt_01JRQ4H8ZE0000000000000014"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [],
+    "trap": "low_confidence"
+  },
+  {
+    "id": "qa_19",
+    "question": "面包店收银员提到我护照什么了？",
+    "expected_status": "not_found",
+    "must_cite_any": [],
+    "must_not_cite": [],
+    "answer_keywords": [],
+    "trap": "no_evidence"
+  },
+  {
+    "id": "qa_20",
+    "question": "今天有人说过修自行车吗？",
+    "expected_status": "not_found",
+    "must_cite_any": [],
+    "must_not_cite": [],
+    "answer_keywords": [],
+    "trap": "no_evidence"
+  },
+  {
+    "id": "qa_21",
+    "question": "我中午和谁一起吃的饭？",
+    "expected_status": "not_found",
+    "must_cite_any": [],
+    "must_not_cite": [],
+    "answer_keywords": [],
+    "trap": "paused_window"
+  },
+  {
+    "id": "qa_22",
+    "question": "12点45左右发生了什么？",
+    "expected_status": "not_found",
+    "must_cite_any": [],
+    "must_not_cite": [],
+    "answer_keywords": [],
+    "trap": "paused_window"
+  },
+  {
+    "id": "qa_23",
+    "question": "我晚上10点在做什么？",
+    "expected_status": "not_found",
+    "must_cite_any": [],
+    "must_not_cite": [],
+    "answer_keywords": [],
+    "trap": "out_of_window"
+  },
+  {
+    "id": "qa_24",
+    "question": "她说的周二会准备好的是什么？",
+    "expected_status": "uncertain",
+    "must_cite_any": [
+      "utt_01JRQ4H8ZE0000000000000118",
+      "utt_01JRQ4H8ZE0000000000000163",
+      "utt_01JRQ4H8ZE0000000000000141"
+    ],
+    "must_not_cite": [],
+    "answer_keywords": [],
+    "trap": "ambiguous_speaker"
+  }
+]

@@ -1,0 +1,161 @@
+{
+  "first_day": "2025-11-19",
+  "last_day": "2026-11-18",
+  "days_total": 365,
+  "days_captured": 312,
+  "days_paused": 41,
+  "days_deleted": 12,
+  "days_with_uncertain": 94,
+  "uncertain_items": 115,
+  "hours_captured": 3616.9,
+  "frames": 43705,
+  "utterances": 45003,
+  "audio_hours": 436.3,
+  "questions_asked": 655,
+  "objects_found": 283,
+  "highlights": 1472,
+  "people_met_total": 1126,
+  "pause_minutes_within_days": 5634,
+  "egress_events": 76,
+  "egress_bytes": 1088013,
+  "last_egress_day": "2026-03-01",
+  "purges": 15,
+  "tracked_objects": 8,
+  "backups_ok_last_30": 29,
+  "top_places": [
+    {
+      "place": "HOME",
+      "days": 260
+    },
+    {
+      "place": "TRAM",
+      "days": 184
+    },
+    {
+      "place": "SHOP",
+      "days": 165
+    },
+    {
+      "place": "BAKE",
+      "days": 113
+    },
+    {
+      "place": "HWARE",
+      "days": 72
+    },
+    {
+      "place": "LIB",
+      "days": 59
+    },
+    {
+      "place": "CAFE",
+      "days": 47
+    },
+    {
+      "place": "PARK",
+      "days": 46
+    }
+  ],
+  "per_month": {
+    "2025-11": {
+      "captured": 9,
+      "hours": 114.2,
+      "questions_asked": 14,
+      "objects_found": 7,
+      "paused": 2,
+      "deleted": 1
+    },
+    "2025-12": {
+      "captured": 24,
+      "hours": 269.2,
+      "questions_asked": 55,
+      "objects_found": 36,
+      "paused": 6,
+      "deleted": 1
+    },
+    "2026-01": {
+      "captured": 31,
+      "hours": 328.1,
+      "questions_asked": 65,
+      "objects_found": 38
+    },
+    "2026-02": {
+      "captured": 23,
+      "hours": 242.2,
+      "questions_asked": 22,
+      "objects_found": 13,
+      "deleted": 1,
+      "paused": 4
+    },
+    "2026-03": {
+      "captured": 20,
+      "hours": 233.3,
+      "questions_asked": 13,
+      "objects_found": 9,
+      "paused": 10,
+      "deleted": 1
+    },
+    "2026-04": {
+      "captured": 29,
+      "hours": 357.2,
+      "questions_asked": 87,
+      "objects_found": 23,
+      "deleted": 1
+    },
+    "2026-05": {
+      "captured": 27,
+      "hours": 317.3,
+      "questions_asked": 52,
+      "objects_found": 33,
+      "paused": 3,
+      "deleted": 1
+    },
+    "2026-06": {
+      "captured": 21,
+      "hours": 282.4,
+      "questions_asked": 45,
+      "objects_found": 23,
+      "paused": 8,
+      "deleted": 1
+    },
+    "2026-07": {
+      "captured": 28,
+      "hours": 369.3,
+      "questions_asked": 77,
+      "objects_found": 25,
+      "deleted": 1,
+      "paused": 2
+    },
+    "2026-08": {
+      "captured": 26,
+      "hours": 277.5,
+      "questions_asked": 51,
+      "objects_found": 11,
+      "paused": 4,
+      "deleted": 1
+    },
+    "2026-09": {
+      "captured": 28,
+      "hours": 321.3,
+      "questions_asked": 58,
+      "objects_found": 19,
+      "deleted": 1,
+      "paused": 1
+    },
+    "2026-10": {
+      "captured": 29,
+      "hours": 299.4,
+      "questions_asked": 60,
+      "objects_found": 28,
+      "deleted": 1,
+      "paused": 1
+    },
+    "2026-11": {
+      "captured": 17,
+      "hours": 205.9,
+      "questions_asked": 56,
+      "objects_found": 18,
+      "deleted": 1
+    }
+  }
+}

@@ -1,0 +1,236 @@
+[
+  {
+    "id": "seg_01JRQ4H8ZE0000000000000001",
+    "start_ms": 1776520800000,
+    "end_ms": 1776525300000,
+    "kind": "activity",
+    "title": "在家准备修理台灯",
+    "summary": "你在家吃了燕麦粥早餐，研究台灯接线草图，用毛巾包好坏台灯和螺丝刀套装，拿上伞和外套，出门前注意到门边有个金属小物件但没看清。",
+    "place_id": "plc_01JRQ4H8ZE0000000000HOME01",
+    "cover_frame_id": "frm_01JRQ4H8ZE0000000000000008",
+    "speaker_ids": [
+      "spk_01JRQ4H8ZE0000000000000SPA"
+    ],
+    "score": 0.72,
+    "certainty": "confident",
+    "provider": "fixture"
+  },
+  {
+    "id": "seg_01JRQ4H8ZE0000000000000002",
+    "start_ms": 1776525300000,
+    "end_ms": 1776527400000,
+    "kind": "transit",
+    "title": "乘电车前往Fernhollow",
+    "summary": "你步行到电车站，乘4路有轨电车前往Fernhollow，途中含糊地确认下车站点，录音嘈杂。",
+    "place_id": "plc_01JRQ4H8ZE0000000000TRAM04",
+    "cover_frame_id": "frm_01JRQ4H8ZE0000000000000019",
+    "speaker_ids": [
+      "spk_01JRQ4H8ZE0000000000000SPA"
+    ],
+    "score": 0.67,
+    "certainty": "uncertain",
+    "provider": "fixture"
+  },
+  {
+    "id": "seg_01JRQ4H8ZE0000000000000003",
+    "start_ms": 1776527400000,
+    "end_ms": 1776529200000,
+    "kind": "conversation",
+    "title": "修理咖啡馆登记台灯",
+    "summary": "你到达蕨谷修理咖啡馆，志愿者接待你，你在纸质登记表上填写台灯闪、开关开裂的问题。",
+    "place_id": "plc_01JRQ4H8ZE0000000000CAFE01",
+    "cover_frame_id": "frm_01JRQ4H8ZE0000000000000026",
+    "speaker_ids": [
+      "spk_01JRQ4H8ZE0000000000000SPB",
+      "spk_01JRQ4H8ZE0000000000000SPA"
+    ],
+    "score": 0.79,
+    "certainty": "confident",
+    "provider": "fixture"
+  },
+  {
+    "id": "seg_01JRQ4H8ZE0000000000000004",
+    "start_ms": 1776529200000,
+    "end_ms": 1776533400000,
+    "kind": "conversation",
+    "title": "拆开台灯检查开关",
+    "summary": "你和志愿者打开台灯底座，发现摇臂开关内部开裂并打火，电线本身正常，准备用万用表测试。",
+    "place_id": "plc_01JRQ4H8ZE0000000000CAFE01",
+    "cover_frame_id": "frm_01JRQ4H8ZE0000000000000036",
+    "speaker_ids": [
+      "spk_01JRQ4H8ZE0000000000000SPA",
+      "spk_01JRQ4H8ZE0000000000000SPB"
+    ],
+    "score": 0.78,
+    "certainty": "confident",
+    "provider": "fixture"
+  },
+  {
+    "id": "seg_01JRQ4H8ZE0000000000000005",
+    "start_ms": 1776533400000,
+    "end_ms": 1776537000000,
+    "kind": "activity",
+    "title": "万用表测试电线",
+    "summary": "志愿者教你用万用表测试电源线，结果显示通路正常，你们讨论了底座内的应力消除结的作用。",
+    "place_id": "plc_01JRQ4H8ZE0000000000CAFE01",
+    "cover_frame_id": "frm_01JRQ4H8ZE0000000000000049",
+    "speaker_ids": [
+      "spk_01JRQ4H8ZE0000000000000SPB",
+      "spk_01JRQ4H8ZE0000000000000SPA"
+    ],
+    "score": 0.76,
+    "certainty": "confident",
+    "provider": "fixture"
+  },
+  {
+    "id": "seg_01JRQ4H8ZE0000000000000006",
+    "start_ms": 1776537000000,
+    "end_ms": 1776540300000,
+    "kind": "conversation",
+    "title": "茶点区休息闲聊",
+    "summary": "在茶点区，你和志愿者聊到修理咖啡馆每周六开放、备件箱和一台烤面包机，中午前后你暂停了记录。",
+    "place_id": "plc_01JRQ4H8ZE0000000000CAFE01",
+    "cover_frame_id": "frm_01JRQ4H8ZE0000000000000061",
+    "speaker_ids": [
+      "spk_01JRQ4H8ZE0000000000000SPA",
+      "spk_01JRQ4H8ZE0000000000000SPB"
+    ],
+    "score": 0.77,
+    "certainty": "confident",
+    "provider": "fixture"
+  },
+  {
+    "id": "seg_01JRQ4H8ZE0000000000000007",
+    "start_ms": 1776542400000,
+    "end_ms": 1776544800000,
+    "kind": "conversation",
+    "title": "备件箱中找开关",
+    "summary": "午休后继续，志愿者在备件箱翻找船型开关，但现有的开关尺寸或端子方向都不匹配灯座开口。",
+    "place_id": "plc_01JRQ4H8ZE0000000000CAFE01",
+    "cover_frame_id": "frm_01JRQ4H8ZE0000000000000071",
+    "speaker_ids": [
+      "spk_01JRQ4H8ZE0000000000000SPA",
+      "spk_01JRQ4H8ZE0000000000000SPB"
+    ],
+    "score": 0.78,
+    "certainty": "confident",
+    "provider": "fixture"
+  },
+  {
+    "id": "seg_01JRQ4H8ZE0000000000000008",
+    "start_ms": 1776544800000,
+    "end_ms": 1776546600000,
+    "kind": "conversation",
+    "title": "订购替换开关",
+    "summary": "志愿者决定订购标准船型开关，预计周二到货，并会发物流单号给你；你同意把台灯留在咖啡馆直到那时。",
+    "place_id": "plc_01JRQ4H8ZE0000000000CAFE01",
+    "cover_frame_id": "frm_01JRQ4H8ZE0000000000000078",
+    "speaker_ids": [
+      "spk_01JRQ4H8ZE0000000000000SPA",
+      "spk_01JRQ4H8ZE0000000000000SPB"
+    ],
+    "score": 0.77,
+    "certainty": "confident",
+    "provider": "fixture"
+  },
+  {
+    "id": "seg_01JRQ4H8ZE0000000000000009",
+    "start_ms": 1776546600000,
+    "end_ms": 1776550800000,
+    "kind": "activity",
+    "title": "整理台灯电线",
+    "summary": "你安静地重新装好电源线，在底座内打了应力消除结，整理了内部电线，四颗底座螺丝放在小碟里。",
+    "place_id": "plc_01JRQ4H8ZE0000000000CAFE01",
+    "cover_frame_id": "frm_01JRQ4H8ZE0000000000000088",
+    "speaker_ids": [
+      "spk_01JRQ4H8ZE0000000000000SPB",
+      "spk_01JRQ4H8ZE0000000000000SPA"
+    ],
+    "score": 0.79,
+    "certainty": "confident",
+    "provider": "fixture"
+  },
+  {
+    "id": "seg_01JRQ4H8ZE0000000000000010",
+    "start_ms": 1776550800000,
+    "end_ms": 1776554400000,
+    "kind": "activity",
+    "title": "存放螺丝与台灯",
+    "summary": "你把四颗螺丝放在红色工具箱盖上，志愿者确认工具箱会留到周二；台灯挂上蓝标签放到待料架，你们告别。",
+    "place_id": "plc_01JRQ4H8ZE0000000000CAFE01",
+    "cover_frame_id": "frm_01JRQ4H8ZE0000000000000101",
+    "speaker_ids": [
+      "spk_01JRQ4H8ZE0000000000000SPA",
+      "spk_01JRQ4H8ZE0000000000000SPB"
+    ],
+    "score": 0.77,
+    "certainty": "confident",
+    "provider": "fixture"
+  },
+  {
+    "id": "seg_01JRQ4H8ZE0000000000000011",
+    "start_ms": 1776554400000,
+    "end_ms": 1776556800000,
+    "kind": "conversation",
+    "title": "面包店买肉桂卷",
+    "summary": "你步行到羽毛笔街面包房，收银员推荐刚出炉的肉桂卷，你买了一个黑麦面包和两个肉桂卷，伞靠在柜台边。",
+    "place_id": "plc_01JRQ4H8ZE0000000000BAKE01",
+    "cover_frame_id": "frm_01JRQ4H8ZE0000000000000111",
+    "speaker_ids": [
+      "spk_01JRQ4H8ZE0000000000000SPC",
+      "spk_01JRQ4H8ZE0000000000000SPA"
+    ],
+    "score": 0.75,
+    "certainty": "confident",
+    "provider": "fixture"
+  },
+  {
+    "id": "seg_01JRQ4H8ZE0000000000000012",
+    "start_ms": 1776556800000,
+    "end_ms": 1776562500000,
+    "kind": "activity",
+    "title": "图书馆预约维修手册",
+    "summary": "你到飞燕草社区图书馆取预约的小家电维修手册，工作人员说周二下午可拿并帮你续借；你在阅览室翻看了一本小家电维修书。",
+    "place_id": "plc_01JRQ4H8ZE0000000000LIBR01",
+    "cover_frame_id": "frm_01JRQ4H8ZE0000000000000124",
+    "speaker_ids": [
+      "spk_01JRQ4H8ZE0000000000000SPA",
+      "spk_01JRQ4H8ZE0000000000000SPD"
+    ],
+    "score": 0.76,
+    "certainty": "confident",
+    "provider": "fixture"
+  },
+  {
+    "id": "seg_01JRQ4H8ZE0000000000000013",
+    "start_ms": 1776562500000,
+    "end_ms": 1776564300000,
+    "kind": "transit",
+    "title": "乘电车回家",
+    "summary": "你乘4路有轨电车回家，晚上下雨，你低声提醒自己周二下午先去修理咖啡馆拿开关，再去图书馆取手册。",
+    "place_id": "plc_01JRQ4H8ZE0000000000TRAM04",
+    "cover_frame_id": "frm_01JRQ4H8ZE0000000000000137",
+    "speaker_ids": [
+      "spk_01JRQ4H8ZE0000000000000SPA"
+    ],
+    "score": 0.73,
+    "certainty": "confident",
+    "provider": "fixture"
+  },
+  {
+    "id": "seg_01JRQ4H8ZE0000000000000014",
+    "start_ms": 1776564300000,
+    "end_ms": 1776570900000,
+    "kind": "activity",
+    "title": "回家晚餐并记录备忘",
+    "summary": "你回家后把湿伞靠在门边，晚餐喝了汤配黑麦面包，吃了一个肉桂卷；录下语音备忘提醒周二取开关和手册，又在本子上列了明日清单。",
+    "place_id": "plc_01JRQ4H8ZE0000000000HOME01",
+    "cover_frame_id": "frm_01JRQ4H8ZE0000000000000151",
+    "speaker_ids": [
+      "spk_01JRQ4H8ZE0000000000000SPA"
+    ],
+    "score": 0.75,
+    "certainty": "confident",
+    "provider": "fixture"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "year_line": "记住了 312 天。暂停 41 天。你删除了 12 天。",
+  "retention_line": "保留 365 天（2025-11-21 由 14 天改为 365 天）。",
+  "egress_empty": "自 2026-03-02 起，没有任何数据离开这台设备。",
+  "uncertain_reasons": {
+    "low_detection_score": "检测分数低于 0.45",
+    "low_transcript_confidence": "语音转写置信度低",
+    "blurry_frame": "画面模糊或太暗",
+    "caption_guess_place": "地点只是根据画面推测",
+    "ambiguous_speaker": "不确定是谁说的"
+  }
+}

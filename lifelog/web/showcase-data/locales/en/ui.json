@@ -1,0 +1,12 @@
+{
+  "year_line": "312 days remembered. 41 paused. 12 deleted by you.",
+  "retention_line": "Keeping 365 days, changed from 14 on 2025-11-21.",
+  "egress_empty": "Nothing has left this device since 2026-03-02.",
+  "uncertain_reasons": {
+    "low_detection_score": "Detector score below 0.45",
+    "low_transcript_confidence": "Speech was hard to transcribe",
+    "blurry_frame": "Frame was blurry or dark",
+    "caption_guess_place": "Place guessed from the image only",
+    "ambiguous_speaker": "Not sure who said it"
+  }
+}

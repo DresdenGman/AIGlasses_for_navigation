@@ -1,0 +1,236 @@
+[
+  {
+    "id": "seg_01JRQ4H8ZE0000000000000001",
+    "start_ms": 1776520800000,
+    "end_ms": 1776525300000,
+    "kind": "activity",
+    "title": "Morning at Home and Packing the Lamp",
+    "summary": "You eat oatmeal with banana and tea while reviewing a lamp wiring sketch, then wrap the broken desk lamp in a towel and pack it with a screwdriver set. You grab an umbrella and jacket, notice something metallic by the door, pat your pockets, and leave.",
+    "place_id": "plc_01JRQ4H8ZE0000000000HOME01",
+    "cover_frame_id": "frm_01JRQ4H8ZE0000000000000008",
+    "speaker_ids": [
+      "spk_01JRQ4H8ZE0000000000000SPA"
+    ],
+    "score": 0.72,
+    "certainty": "confident",
+    "provider": "fixture"
+  },
+  {
+    "id": "seg_01JRQ4H8ZE0000000000000002",
+    "start_ms": 1776525300000,
+    "end_ms": 1776527400000,
+    "kind": "transit",
+    "title": "Tram to Fernhollow",
+    "summary": "You walk to the tram stop with an umbrella, then ride line 4 toward Fernhollow, checking the stop name and mumbling about getting off at Fernhollow.",
+    "place_id": "plc_01JRQ4H8ZE0000000000TRAM04",
+    "cover_frame_id": "frm_01JRQ4H8ZE0000000000000019",
+    "speaker_ids": [
+      "spk_01JRQ4H8ZE0000000000000SPA"
+    ],
+    "score": 0.67,
+    "certainty": "uncertain",
+    "provider": "fixture"
+  },
+  {
+    "id": "seg_01JRQ4H8ZE0000000000000003",
+    "start_ms": 1776527400000,
+    "end_ms": 1776529200000,
+    "kind": "conversation",
+    "title": "Check-In at Fernhollow Repair Cafe",
+    "summary": "At the repair cafe, a volunteer greets you and takes an intake form for the desk lamp, noting the flickering and cracked rocker switch.",
+    "place_id": "plc_01JRQ4H8ZE0000000000CAFE01",
+    "cover_frame_id": "frm_01JRQ4H8ZE0000000000000026",
+    "speaker_ids": [
+      "spk_01JRQ4H8ZE0000000000000SPB",
+      "spk_01JRQ4H8ZE0000000000000SPA"
+    ],
+    "score": 0.79,
+    "certainty": "confident",
+    "provider": "fixture"
+  },
+  {
+    "id": "seg_01JRQ4H8ZE0000000000000004",
+    "start_ms": 1776529200000,
+    "end_ms": 1776533400000,
+    "kind": "conversation",
+    "title": "Opening the Lamp and Checking the Switch",
+    "summary": "At the workbench, you and the volunteer open the lamp base and inspect the wiring; the volunteer finds the rocker switch cracked inside and arcing, and gets a multimeter to test the cord.",
+    "place_id": "plc_01JRQ4H8ZE0000000000CAFE01",
+    "cover_frame_id": "frm_01JRQ4H8ZE0000000000000036",
+    "speaker_ids": [
+      "spk_01JRQ4H8ZE0000000000000SPA",
+      "spk_01JRQ4H8ZE0000000000000SPB"
+    ],
+    "score": 0.78,
+    "certainty": "confident",
+    "provider": "fixture"
+  },
+  {
+    "id": "seg_01JRQ4H8ZE0000000000000005",
+    "start_ms": 1776533400000,
+    "end_ms": 1776537000000,
+    "kind": "activity",
+    "title": "Testing the Cord and Strain Relief",
+    "summary": "The volunteer teaches you to test the cord for continuity; the meter beeps and the cord is good. You discuss strain relief and the knot inside the base.",
+    "place_id": "plc_01JRQ4H8ZE0000000000CAFE01",
+    "cover_frame_id": "frm_01JRQ4H8ZE0000000000000049",
+    "speaker_ids": [
+      "spk_01JRQ4H8ZE0000000000000SPB",
+      "spk_01JRQ4H8ZE0000000000000SPA"
+    ],
+    "score": 0.76,
+    "certainty": "confident",
+    "provider": "fixture"
+  },
+  {
+    "id": "seg_01JRQ4H8ZE0000000000000006",
+    "start_ms": 1776537000000,
+    "end_ms": 1776540300000,
+    "kind": "conversation",
+    "title": "Coffee Break and Chat",
+    "summary": "During a coffee break, you and the volunteer chat about the repair cafe's Saturday schedule, a spare-parts bin, and a toaster someone brought; you pause recording around midday for a break, returning at one.",
+    "place_id": "plc_01JRQ4H8ZE0000000000CAFE01",
+    "cover_frame_id": "frm_01JRQ4H8ZE0000000000000061",
+    "speaker_ids": [
+      "spk_01JRQ4H8ZE0000000000000SPA",
+      "spk_01JRQ4H8ZE0000000000000SPB"
+    ],
+    "score": 0.77,
+    "certainty": "confident",
+    "provider": "fixture"
+  },
+  {
+    "id": "seg_01JRQ4H8ZE0000000000000007",
+    "start_ms": 1776542400000,
+    "end_ms": 1776544800000,
+    "kind": "conversation",
+    "title": "Searching the Spare-Parts Bin",
+    "summary": "After the break, the volunteer searches the spare-parts bin for a matching rocker switch, but none fits the lamp's cutout.",
+    "place_id": "plc_01JRQ4H8ZE0000000000CAFE01",
+    "cover_frame_id": "frm_01JRQ4H8ZE0000000000000071",
+    "speaker_ids": [
+      "spk_01JRQ4H8ZE0000000000000SPA",
+      "spk_01JRQ4H8ZE0000000000000SPB"
+    ],
+    "score": 0.78,
+    "certainty": "confident",
+    "provider": "fixture"
+  },
+  {
+    "id": "seg_01JRQ4H8ZE0000000000000008",
+    "start_ms": 1776544800000,
+    "end_ms": 1776546600000,
+    "kind": "conversation",
+    "title": "Ordering a Replacement Switch",
+    "summary": "The volunteer decides to order a replacement switch, expected Tuesday, and will text the tracking number; you agree to leave the lamp at the cafe until then.",
+    "place_id": "plc_01JRQ4H8ZE0000000000CAFE01",
+    "cover_frame_id": "frm_01JRQ4H8ZE0000000000000078",
+    "speaker_ids": [
+      "spk_01JRQ4H8ZE0000000000000SPA",
+      "spk_01JRQ4H8ZE0000000000000SPB"
+    ],
+    "score": 0.77,
+    "certainty": "confident",
+    "provider": "fixture"
+  },
+  {
+    "id": "seg_01JRQ4H8ZE0000000000000009",
+    "start_ms": 1776546600000,
+    "end_ms": 1776550800000,
+    "kind": "activity",
+    "title": "Re-Seating the Cord and Tying a Knot",
+    "summary": "Quiet focused work: you re-seat the cord, tie a strain-relief knot inside the base, and tidy the wires, keeping the four base screws in a small dish.",
+    "place_id": "plc_01JRQ4H8ZE0000000000CAFE01",
+    "cover_frame_id": "frm_01JRQ4H8ZE0000000000000088",
+    "speaker_ids": [
+      "spk_01JRQ4H8ZE0000000000000SPB",
+      "spk_01JRQ4H8ZE0000000000000SPA"
+    ],
+    "score": 0.79,
+    "certainty": "confident",
+    "provider": "fixture"
+  },
+  {
+    "id": "seg_01JRQ4H8ZE0000000000000010",
+    "start_ms": 1776550800000,
+    "end_ms": 1776554400000,
+    "kind": "activity",
+    "title": "Storing Screws and Shelving the Lamp",
+    "summary": "You put the four screws on the lid of a red toolbox for safekeeping; the volunteer confirms the toolbox stays on the bench. The lamp goes on the waiting-for-parts shelf with a blue tag until Tuesday, and you say goodbye.",
+    "place_id": "plc_01JRQ4H8ZE0000000000CAFE01",
+    "cover_frame_id": "frm_01JRQ4H8ZE0000000000000101",
+    "speaker_ids": [
+      "spk_01JRQ4H8ZE0000000000000SPA",
+      "spk_01JRQ4H8ZE0000000000000SPB"
+    ],
+    "score": 0.77,
+    "certainty": "confident",
+    "provider": "fixture"
+  },
+  {
+    "id": "seg_01JRQ4H8ZE0000000000000011",
+    "start_ms": 1776554400000,
+    "end_ms": 1776556800000,
+    "kind": "conversation",
+    "title": "Bakery Stop for Bread and Cinnamon Buns",
+    "summary": "Walking to the bakery in light drizzle, the cashier recommends the warm cinnamon buns. You buy a rye loaf and two cinnamon buns and lean the umbrella against the counter.",
+    "place_id": "plc_01JRQ4H8ZE0000000000BAKE01",
+    "cover_frame_id": "frm_01JRQ4H8ZE0000000000000111",
+    "speaker_ids": [
+      "spk_01JRQ4H8ZE0000000000000SPC",
+      "spk_01JRQ4H8ZE0000000000000SPA"
+    ],
+    "score": 0.75,
+    "certainty": "confident",
+    "provider": "fixture"
+  },
+  {
+    "id": "seg_01JRQ4H8ZE0000000000000012",
+    "start_ms": 1776556800000,
+    "end_ms": 1776562500000,
+    "kind": "activity",
+    "title": "Library Visit and Repair Manual Hold",
+    "summary": "At the library holds desk, staff says the lamp repair manual will be ready Tuesday afternoon and renews your card. In the reading room, you browse a small appliance repair book.",
+    "place_id": "plc_01JRQ4H8ZE0000000000LIBR01",
+    "cover_frame_id": "frm_01JRQ4H8ZE0000000000000124",
+    "speaker_ids": [
+      "spk_01JRQ4H8ZE0000000000000SPA",
+      "spk_01JRQ4H8ZE0000000000000SPD"
+    ],
+    "score": 0.76,
+    "certainty": "confident",
+    "provider": "fixture"
+  },
+  {
+    "id": "seg_01JRQ4H8ZE0000000000000013",
+    "start_ms": 1776562500000,
+    "end_ms": 1776564300000,
+    "kind": "transit",
+    "title": "Evening Tram Home",
+    "summary": "You ride line 4 home in evening rain, muttering a reminder to pick up the switch at the repair cafe and the manual at the library on Tuesday afternoon.",
+    "place_id": "plc_01JRQ4H8ZE0000000000TRAM04",
+    "cover_frame_id": "frm_01JRQ4H8ZE0000000000000137",
+    "speaker_ids": [
+      "spk_01JRQ4H8ZE0000000000000SPA"
+    ],
+    "score": 0.73,
+    "certainty": "confident",
+    "provider": "fixture"
+  },
+  {
+    "id": "seg_01JRQ4H8ZE0000000000000014",
+    "start_ms": 1776564300000,
+    "end_ms": 1776570900000,
+    "kind": "activity",
+    "title": "Dinner, Voice Note, and Evening Notes",
+    "summary": "You return home, lean the wet umbrella by the door, and have soup with rye bread and a cinnamon bun. You record a voice note for Tuesday and later mumble about not seeing something by the door that morning.",
+    "place_id": "plc_01JRQ4H8ZE0000000000HOME01",
+    "cover_frame_id": "frm_01JRQ4H8ZE0000000000000151",
+    "speaker_ids": [
+      "spk_01JRQ4H8ZE0000000000000SPA"
+    ],
+    "score": 0.75,
+    "certainty": "confident",
+    "provider": "fixture"
+  }
+]

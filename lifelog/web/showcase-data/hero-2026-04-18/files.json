@@ -1,0 +1,45 @@
+{
+  "contract": "aiglasses.lifelog.v1",
+  "day": "2026-04-18",
+  "timezone": "America/Los_Angeles",
+  "window": {
+    "first_ms": 1776520800000,
+    "last_ms": 1776570900000,
+    "first_local": "2026-04-18T07:00:00-07:00",
+    "last_local": "2026-04-18T20:55:00-07:00"
+  },
+  "files": {
+    "shared": {
+      "frames": "frames.json",
+      "detections": "detections.json",
+      "watchlist": "watchlist.json",
+      "audio_chunks": "audio_chunks.json",
+      "speakers": "speakers.json",
+      "pauses": "pauses.json",
+      "places": "places.json"
+    },
+    "localized": {
+      "captions": "locales/{locale}/captions.json",
+      "utterances": "locales/{locale}/utterances.json",
+      "segments": "locales/{locale}/segments.json",
+      "places_names": "locales/{locale}/places.json",
+      "speaker_names": "locales/{locale}/speakers.json",
+      "summary": "locales/{locale}/summary.json",
+      "qa_golden": "locales/{locale}/qa_golden.json"
+    }
+  },
+  "devices": "devices.json",
+  "media": {
+    "frames_dir": "media/frames",
+    "thumbs_dir": "media/thumbs",
+    "frame_format": "webp",
+    "frame_size": [
+      640,
+      480
+    ],
+    "thumb_size": [
+      320,
+      240
+    ]
+  }
+}

@@ -1,0 +1,1066 @@
+[
+  {
+    "id": "egr_01JY2026012000000000000003",
+    "ts_ms": 1768932900000,
+    "ts_local": "2026-01-20T10:15:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 2727,
+    "items": {
+      "utterances": 3,
+      "frames": 0
+    },
+    "day": "2026-01-20"
+  },
+  {
+    "id": "egr_01JY2026012000000000000002",
+    "ts_ms": 1768934700000,
+    "ts_local": "2026-01-20T10:45:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 7769,
+    "items": {
+      "utterances": 10,
+      "frames": 0
+    },
+    "day": "2026-01-20"
+  },
+  {
+    "id": "egr_01JY2026012000000000000001",
+    "ts_ms": 1768974000000,
+    "ts_local": "2026-01-20T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 23240,
+    "items": {
+      "utterances": 79,
+      "frames": 0
+    },
+    "day": "2026-01-20"
+  },
+  {
+    "id": "egr_01JY2026012100000000000002",
+    "ts_ms": 1769047020000,
+    "ts_local": "2026-01-21T17:57:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 6411,
+    "items": {
+      "utterances": 6,
+      "frames": 0
+    },
+    "day": "2026-01-21"
+  },
+  {
+    "id": "egr_01JY2026012100000000000001",
+    "ts_ms": 1769060400000,
+    "ts_local": "2026-01-21T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 25888,
+    "items": {
+      "utterances": 80,
+      "frames": 0
+    },
+    "day": "2026-01-21"
+  },
+  {
+    "id": "egr_01JY2026012200000000000003",
+    "ts_ms": 1769105400000,
+    "ts_local": "2026-01-22T10:10:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 4187,
+    "items": {
+      "utterances": 6,
+      "frames": 0
+    },
+    "day": "2026-01-22"
+  },
+  {
+    "id": "egr_01JY2026012200000000000002",
+    "ts_ms": 1769108220000,
+    "ts_local": "2026-01-22T10:57:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 7076,
+    "items": {
+      "utterances": 6,
+      "frames": 0
+    },
+    "day": "2026-01-22"
+  },
+  {
+    "id": "egr_01JY2026012200000000000001",
+    "ts_ms": 1769146800000,
+    "ts_local": "2026-01-22T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 23476,
+    "items": {
+      "utterances": 80,
+      "frames": 0
+    },
+    "day": "2026-01-22"
+  },
+  {
+    "id": "egr_01JY2026012300000000000002",
+    "ts_ms": 1769189040000,
+    "ts_local": "2026-01-23T09:24:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 3197,
+    "items": {
+      "utterances": 12,
+      "frames": 0
+    },
+    "day": "2026-01-23"
+  },
+  {
+    "id": "egr_01JY2026012300000000000003",
+    "ts_ms": 1769202000000,
+    "ts_local": "2026-01-23T13:00:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 7112,
+    "items": {
+      "utterances": 3,
+      "frames": 0
+    },
+    "day": "2026-01-23"
+  },
+  {
+    "id": "egr_01JY2026012300000000000001",
+    "ts_ms": 1769233200000,
+    "ts_local": "2026-01-23T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 23185,
+    "items": {
+      "utterances": 80,
+      "frames": 0
+    },
+    "day": "2026-01-23"
+  },
+  {
+    "id": "egr_01JY2026012400000000000003",
+    "ts_ms": 1769275140000,
+    "ts_local": "2026-01-24T09:19:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 7610,
+    "items": {
+      "utterances": 3,
+      "frames": 0
+    },
+    "day": "2026-01-24"
+  },
+  {
+    "id": "egr_01JY2026012400000000000002",
+    "ts_ms": 1769280000000,
+    "ts_local": "2026-01-24T10:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 4328,
+    "items": {
+      "utterances": 4,
+      "frames": 0
+    },
+    "day": "2026-01-24"
+  },
+  {
+    "id": "egr_01JY2026012400000000000001",
+    "ts_ms": 1769319600000,
+    "ts_local": "2026-01-24T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 27372,
+    "items": {
+      "utterances": 80,
+      "frames": 0
+    },
+    "day": "2026-01-24"
+  },
+  {
+    "id": "egr_01JY2026012500000000000002",
+    "ts_ms": 1769365680000,
+    "ts_local": "2026-01-25T10:28:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 6528,
+    "items": {
+      "utterances": 12,
+      "frames": 0
+    },
+    "day": "2026-01-25"
+  },
+  {
+    "id": "egr_01JY2026012500000000000001",
+    "ts_ms": 1769406000000,
+    "ts_local": "2026-01-25T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 25493,
+    "items": {
+      "utterances": 80,
+      "frames": 0
+    },
+    "day": "2026-01-25"
+  },
+  {
+    "id": "egr_01JY2026012600000000000002",
+    "ts_ms": 1769483820000,
+    "ts_local": "2026-01-26T19:17:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 4082,
+    "items": {
+      "utterances": 12,
+      "frames": 0
+    },
+    "day": "2026-01-26"
+  },
+  {
+    "id": "egr_01JY2026012600000000000001",
+    "ts_ms": 1769492400000,
+    "ts_local": "2026-01-26T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 25105,
+    "items": {
+      "utterances": 80,
+      "frames": 0
+    },
+    "day": "2026-01-26"
+  },
+  {
+    "id": "egr_01JY2026012700000000000003",
+    "ts_ms": 1769538780000,
+    "ts_local": "2026-01-27T10:33:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 4624,
+    "items": {
+      "utterances": 3,
+      "frames": 0
+    },
+    "day": "2026-01-27"
+  },
+  {
+    "id": "egr_01JY2026012700000000000002",
+    "ts_ms": 1769570460000,
+    "ts_local": "2026-01-27T19:21:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 4102,
+    "items": {
+      "utterances": 7,
+      "frames": 0
+    },
+    "day": "2026-01-27"
+  },
+  {
+    "id": "egr_01JY2026012700000000000001",
+    "ts_ms": 1769578800000,
+    "ts_local": "2026-01-27T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 21957,
+    "items": {
+      "utterances": 80,
+      "frames": 0
+    },
+    "day": "2026-01-27"
+  },
+  {
+    "id": "egr_01JY2026012800000000000002",
+    "ts_ms": 1769651160000,
+    "ts_local": "2026-01-28T17:46:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 3068,
+    "items": {
+      "utterances": 10,
+      "frames": 0
+    },
+    "day": "2026-01-28"
+  },
+  {
+    "id": "egr_01JY2026012800000000000003",
+    "ts_ms": 1769653980000,
+    "ts_local": "2026-01-28T18:33:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 3074,
+    "items": {
+      "utterances": 12,
+      "frames": 0
+    },
+    "day": "2026-01-28"
+  },
+  {
+    "id": "egr_01JY2026012800000000000001",
+    "ts_ms": 1769665200000,
+    "ts_local": "2026-01-28T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 24137,
+    "items": {
+      "utterances": 80,
+      "frames": 0
+    },
+    "day": "2026-01-28"
+  },
+  {
+    "id": "egr_01JY2026012900000000000002",
+    "ts_ms": 1769728920000,
+    "ts_local": "2026-01-29T15:22:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 6572,
+    "items": {
+      "utterances": 10,
+      "frames": 0
+    },
+    "day": "2026-01-29"
+  },
+  {
+    "id": "egr_01JY2026012900000000000001",
+    "ts_ms": 1769751600000,
+    "ts_local": "2026-01-29T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 22732,
+    "items": {
+      "utterances": 80,
+      "frames": 0
+    },
+    "day": "2026-01-29"
+  },
+  {
+    "id": "egr_01JY2026013000000000000002",
+    "ts_ms": 1769820480000,
+    "ts_local": "2026-01-30T16:48:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 3807,
+    "items": {
+      "utterances": 7,
+      "frames": 0
+    },
+    "day": "2026-01-30"
+  },
+  {
+    "id": "egr_01JY2026013000000000000003",
+    "ts_ms": 1769830200000,
+    "ts_local": "2026-01-30T19:30:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 2762,
+    "items": {
+      "utterances": 3,
+      "frames": 0
+    },
+    "day": "2026-01-30"
+  },
+  {
+    "id": "egr_01JY2026013000000000000001",
+    "ts_ms": 1769838000000,
+    "ts_local": "2026-01-30T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 24214,
+    "items": {
+      "utterances": 80,
+      "frames": 0
+    },
+    "day": "2026-01-30"
+  },
+  {
+    "id": "egr_01JY2026013100000000000002",
+    "ts_ms": 1769895840000,
+    "ts_local": "2026-01-31T13:44:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 7314,
+    "items": {
+      "utterances": 5,
+      "frames": 0
+    },
+    "day": "2026-01-31"
+  },
+  {
+    "id": "egr_01JY2026013100000000000001",
+    "ts_ms": 1769924400000,
+    "ts_local": "2026-01-31T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 28063,
+    "items": {
+      "utterances": 80,
+      "frames": 0
+    },
+    "day": "2026-01-31"
+  },
+  {
+    "id": "egr_01JY2026020100000000000002",
+    "ts_ms": 1769994120000,
+    "ts_local": "2026-02-01T17:02:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 7003,
+    "items": {
+      "utterances": 5,
+      "frames": 0
+    },
+    "day": "2026-02-01"
+  },
+  {
+    "id": "egr_01JY2026020100000000000001",
+    "ts_ms": 1770010800000,
+    "ts_local": "2026-02-01T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 27195,
+    "items": {
+      "utterances": 80,
+      "frames": 0
+    },
+    "day": "2026-02-01"
+  },
+  {
+    "id": "egr_01JY2026020200000000000002",
+    "ts_ms": 1770068340000,
+    "ts_local": "2026-02-02T13:39:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 4945,
+    "items": {
+      "utterances": 3,
+      "frames": 0
+    },
+    "day": "2026-02-02"
+  },
+  {
+    "id": "egr_01JY2026020200000000000001",
+    "ts_ms": 1770097200000,
+    "ts_local": "2026-02-02T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 25575,
+    "items": {
+      "utterances": 80,
+      "frames": 0
+    },
+    "day": "2026-02-02"
+  },
+  {
+    "id": "egr_01JY2026020300000000000001",
+    "ts_ms": 1770183600000,
+    "ts_local": "2026-02-03T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 23395,
+    "items": {
+      "utterances": 80,
+      "frames": 0
+    },
+    "day": "2026-02-03"
+  },
+  {
+    "id": "egr_01JY2026020400000000000002",
+    "ts_ms": 1770251040000,
+    "ts_local": "2026-02-04T16:24:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 5705,
+    "items": {
+      "utterances": 3,
+      "frames": 0
+    },
+    "day": "2026-02-04"
+  },
+  {
+    "id": "egr_01JY2026020400000000000001",
+    "ts_ms": 1770270000000,
+    "ts_local": "2026-02-04T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 24882,
+    "items": {
+      "utterances": 80,
+      "frames": 0
+    },
+    "day": "2026-02-04"
+  },
+  {
+    "id": "egr_01JY2026020500000000000002",
+    "ts_ms": 1770318600000,
+    "ts_local": "2026-02-05T11:10:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 5961,
+    "items": {
+      "utterances": 5,
+      "frames": 0
+    },
+    "day": "2026-02-05"
+  },
+  {
+    "id": "egr_01JY2026020500000000000001",
+    "ts_ms": 1770356400000,
+    "ts_local": "2026-02-05T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 19188,
+    "items": {
+      "utterances": 15,
+      "frames": 0
+    },
+    "day": "2026-02-05"
+  },
+  {
+    "id": "egr_01JY2026020600000000000001",
+    "ts_ms": 1770442800000,
+    "ts_local": "2026-02-06T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 24710,
+    "items": {
+      "utterances": 80,
+      "frames": 0
+    },
+    "day": "2026-02-06"
+  },
+  {
+    "id": "egr_01JY2026020800000000000001",
+    "ts_ms": 1770615600000,
+    "ts_local": "2026-02-08T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 25990,
+    "items": {
+      "utterances": 80,
+      "frames": 0
+    },
+    "day": "2026-02-08"
+  },
+  {
+    "id": "egr_01JY2026020900000000000001",
+    "ts_ms": 1770702000000,
+    "ts_local": "2026-02-09T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 22105,
+    "items": {
+      "utterances": 80,
+      "frames": 0
+    },
+    "day": "2026-02-09"
+  },
+  {
+    "id": "egr_01JY2026021200000000000002",
+    "ts_ms": 1770931140000,
+    "ts_local": "2026-02-12T13:19:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 2548,
+    "items": {
+      "utterances": 3,
+      "frames": 0
+    },
+    "day": "2026-02-12"
+  },
+  {
+    "id": "egr_01JY2026021200000000000001",
+    "ts_ms": 1770961200000,
+    "ts_local": "2026-02-12T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 23277,
+    "items": {
+      "utterances": 80,
+      "frames": 0
+    },
+    "day": "2026-02-12"
+  },
+  {
+    "id": "egr_01JY2026021300000000000001",
+    "ts_ms": 1771047600000,
+    "ts_local": "2026-02-13T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 24006,
+    "items": {
+      "utterances": 80,
+      "frames": 0
+    },
+    "day": "2026-02-13"
+  },
+  {
+    "id": "egr_01JY2026021400000000000001",
+    "ts_ms": 1771134000000,
+    "ts_local": "2026-02-14T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 29664,
+    "items": {
+      "utterances": 80,
+      "frames": 0
+    },
+    "day": "2026-02-14"
+  },
+  {
+    "id": "egr_01JY2026021500000000000001",
+    "ts_ms": 1771220400000,
+    "ts_local": "2026-02-15T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 26190,
+    "items": {
+      "utterances": 80,
+      "frames": 0
+    },
+    "day": "2026-02-15"
+  },
+  {
+    "id": "egr_01JY2026021600000000000002",
+    "ts_ms": 1771288320000,
+    "ts_local": "2026-02-16T16:32:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 3738,
+    "items": {
+      "utterances": 10,
+      "frames": 0
+    },
+    "day": "2026-02-16"
+  },
+  {
+    "id": "egr_01JY2026021600000000000003",
+    "ts_ms": 1771293000000,
+    "ts_local": "2026-02-16T17:50:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 2666,
+    "items": {
+      "utterances": 3,
+      "frames": 0
+    },
+    "day": "2026-02-16"
+  },
+  {
+    "id": "egr_01JY2026021600000000000001",
+    "ts_ms": 1771306800000,
+    "ts_local": "2026-02-16T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 23338,
+    "items": {
+      "utterances": 80,
+      "frames": 0
+    },
+    "day": "2026-02-16"
+  },
+  {
+    "id": "egr_01JY2026021700000000000002",
+    "ts_ms": 1771384740000,
+    "ts_local": "2026-02-17T19:19:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 3379,
+    "items": {
+      "utterances": 6,
+      "frames": 0
+    },
+    "day": "2026-02-17"
+  },
+  {
+    "id": "egr_01JY2026021700000000000001",
+    "ts_ms": 1771393200000,
+    "ts_local": "2026-02-17T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 28434,
+    "items": {
+      "utterances": 80,
+      "frames": 0
+    },
+    "day": "2026-02-17"
+  },
+  {
+    "id": "egr_01JY2026021800000000000002",
+    "ts_ms": 1771442700000,
+    "ts_local": "2026-02-18T11:25:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 3212,
+    "items": {
+      "utterances": 5,
+      "frames": 0
+    },
+    "day": "2026-02-18"
+  },
+  {
+    "id": "egr_01JY2026021800000000000003",
+    "ts_ms": 1771448580000,
+    "ts_local": "2026-02-18T13:03:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 2513,
+    "items": {
+      "utterances": 6,
+      "frames": 0
+    },
+    "day": "2026-02-18"
+  },
+  {
+    "id": "egr_01JY2026021800000000000001",
+    "ts_ms": 1771479600000,
+    "ts_local": "2026-02-18T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 23152,
+    "items": {
+      "utterances": 76,
+      "frames": 0
+    },
+    "day": "2026-02-18"
+  },
+  {
+    "id": "egr_01JY2026021900000000000003",
+    "ts_ms": 1771534800000,
+    "ts_local": "2026-02-19T13:00:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 6443,
+    "items": {
+      "utterances": 9,
+      "frames": 0
+    },
+    "day": "2026-02-19"
+  },
+  {
+    "id": "egr_01JY2026021900000000000002",
+    "ts_ms": 1771540800000,
+    "ts_local": "2026-02-19T14:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 5984,
+    "items": {
+      "utterances": 6,
+      "frames": 0
+    },
+    "day": "2026-02-19"
+  },
+  {
+    "id": "egr_01JY2026021900000000000001",
+    "ts_ms": 1771566000000,
+    "ts_local": "2026-02-19T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 23921,
+    "items": {
+      "utterances": 80,
+      "frames": 0
+    },
+    "day": "2026-02-19"
+  },
+  {
+    "id": "egr_01JY2026022000000000000002",
+    "ts_ms": 1771611000000,
+    "ts_local": "2026-02-20T10:10:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 4898,
+    "items": {
+      "utterances": 12,
+      "frames": 0
+    },
+    "day": "2026-02-20"
+  },
+  {
+    "id": "egr_01JY2026022000000000000001",
+    "ts_ms": 1771652400000,
+    "ts_local": "2026-02-20T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 26851,
+    "items": {
+      "utterances": 80,
+      "frames": 0
+    },
+    "day": "2026-02-20"
+  },
+  {
+    "id": "egr_01JY2026022300000000000002",
+    "ts_ms": 1771900800000,
+    "ts_local": "2026-02-23T18:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 5897,
+    "items": {
+      "utterances": 7,
+      "frames": 0
+    },
+    "day": "2026-02-23"
+  },
+  {
+    "id": "egr_01JY2026022300000000000003",
+    "ts_ms": 1771903800000,
+    "ts_local": "2026-02-23T19:30:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 3010,
+    "items": {
+      "utterances": 9,
+      "frames": 0
+    },
+    "day": "2026-02-23"
+  },
+  {
+    "id": "egr_01JY2026022300000000000001",
+    "ts_ms": 1771911600000,
+    "ts_local": "2026-02-23T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 23421,
+    "items": {
+      "utterances": 79,
+      "frames": 0
+    },
+    "day": "2026-02-23"
+  },
+  {
+    "id": "egr_01JY2026022400000000000003",
+    "ts_ms": 1771952580000,
+    "ts_local": "2026-02-24T09:03:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 6379,
+    "items": {
+      "utterances": 12,
+      "frames": 0
+    },
+    "day": "2026-02-24"
+  },
+  {
+    "id": "egr_01JY2026022400000000000002",
+    "ts_ms": 1771955520000,
+    "ts_local": "2026-02-24T09:52:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 7342,
+    "items": {
+      "utterances": 9,
+      "frames": 0
+    },
+    "day": "2026-02-24"
+  },
+  {
+    "id": "egr_01JY2026022400000000000001",
+    "ts_ms": 1771998000000,
+    "ts_local": "2026-02-24T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 24026,
+    "items": {
+      "utterances": 80,
+      "frames": 0
+    },
+    "day": "2026-02-24"
+  },
+  {
+    "id": "egr_01JY2026022500000000000001",
+    "ts_ms": 1772084400000,
+    "ts_local": "2026-02-25T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 21210,
+    "items": {
+      "utterances": 62,
+      "frames": 0
+    },
+    "day": "2026-02-25"
+  },
+  {
+    "id": "egr_01JY2026022600000000000002",
+    "ts_ms": 1772153580000,
+    "ts_local": "2026-02-26T16:53:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 7498,
+    "items": {
+      "utterances": 3,
+      "frames": 0
+    },
+    "day": "2026-02-26"
+  },
+  {
+    "id": "egr_01JY2026022600000000000001",
+    "ts_ms": 1772170800000,
+    "ts_local": "2026-02-26T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 23230,
+    "items": {
+      "utterances": 80,
+      "frames": 0
+    },
+    "day": "2026-02-26"
+  },
+  {
+    "id": "egr_01JY2026022700000000000002",
+    "ts_ms": 1772222760000,
+    "ts_local": "2026-02-27T12:06:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 6982,
+    "items": {
+      "utterances": 7,
+      "frames": 0
+    },
+    "day": "2026-02-27"
+  },
+  {
+    "id": "egr_01JY2026022700000000000003",
+    "ts_ms": 1772253060000,
+    "ts_local": "2026-02-27T20:31:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 2790,
+    "items": {
+      "utterances": 7,
+      "frames": 0
+    },
+    "day": "2026-02-27"
+  },
+  {
+    "id": "egr_01JY2026022700000000000001",
+    "ts_ms": 1772257200000,
+    "ts_local": "2026-02-27T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 24504,
+    "items": {
+      "utterances": 80,
+      "frames": 0
+    },
+    "day": "2026-02-27"
+  },
+  {
+    "id": "egr_01JY2026022800000000000002",
+    "ts_ms": 1772334840000,
+    "ts_local": "2026-02-28T19:14:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "ask",
+    "host": "cloud model endpoint",
+    "bytes_out": 7210,
+    "items": {
+      "utterances": 8,
+      "frames": 0
+    },
+    "day": "2026-02-28"
+  },
+  {
+    "id": "egr_01JY2026022800000000000001",
+    "ts_ms": 1772343600000,
+    "ts_local": "2026-02-28T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 29093,
+    "items": {
+      "utterances": 80,
+      "frames": 0
+    },
+    "day": "2026-02-28"
+  },
+  {
+    "id": "egr_01JY2026030100000000000001",
+    "ts_ms": 1772430000000,
+    "ts_local": "2026-03-01T21:40:00-08:00",
+    "provider_type": "cloud_model",
+    "purpose": "summary",
+    "host": "cloud model endpoint",
+    "bytes_out": 23341,
+    "items": {
+      "utterances": 80,
+      "frames": 0
+    },
+    "day": "2026-03-01"
+  }
+]

@@ -1,0 +1,2175 @@
+{
+  "day": "2026-04-18",
+  "timezone": "America/Los_Angeles",
+  "language": "zh-CN",
+  "generated_ms": 1776570900000,
+  "provider": "fixture",
+  "model": null,
+  "status": "ok",
+  "headline": {
+    "id": "si_1",
+    "section": "headline",
+    "text": "修理咖啡馆修台灯，电车出行，去面包房和图书馆",
+    "certainty": "confident",
+    "start_ms": 1776527400000,
+    "end_ms": 1776557700000,
+    "segment_ids": [
+      "seg_01JRQ4H8ZE0000000000000002",
+      "seg_01JRQ4H8ZE0000000000000003",
+      "seg_01JRQ4H8ZE0000000000000011",
+      "seg_01JRQ4H8ZE0000000000000012"
+    ],
+    "citations": [
+      {
+        "evidence_id": "cap_01JRQ4H8ZE0000000000000023",
+        "kind": "caption",
+        "day": "2026-04-18",
+        "ts_ms": 1776527400000,
+        "ts_end_ms": 1776527400000,
+        "ts_local": "2026-04-18T08:50:00-07:00",
+        "frame_id": "frm_01JRQ4H8ZE0000000000000023",
+        "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000023?variant=thumb",
+        "open_url": "/day/2026-04-18?t=1776527400000&focus=cap_01JRQ4H8ZE0000000000000023",
+        "quote": null,
+        "speaker": null,
+        "bbox": null,
+        "score": 0.8,
+        "certainty": "confident"
+      },
+      {
+        "evidence_id": "cap_01JRQ4H8ZE0000000000000110",
+        "kind": "caption",
+        "day": "2026-04-18",
+        "ts_ms": 1776555300000,
+        "ts_end_ms": 1776555300000,
+        "ts_local": "2026-04-18T16:35:00-07:00",
+        "frame_id": "frm_01JRQ4H8ZE0000000000000110",
+        "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000110?variant=thumb",
+        "open_url": "/day/2026-04-18?t=1776555300000&focus=cap_01JRQ4H8ZE0000000000000110",
+        "quote": null,
+        "speaker": null,
+        "bbox": null,
+        "score": 0.8,
+        "certainty": "confident"
+      },
+      {
+        "evidence_id": "cap_01JRQ4H8ZE0000000000000118",
+        "kind": "caption",
+        "day": "2026-04-18",
+        "ts_ms": 1776557700000,
+        "ts_end_ms": 1776557700000,
+        "ts_local": "2026-04-18T17:15:00-07:00",
+        "frame_id": "frm_01JRQ4H8ZE0000000000000118",
+        "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000118?variant=thumb",
+        "open_url": "/day/2026-04-18?t=1776557700000&focus=cap_01JRQ4H8ZE0000000000000118",
+        "quote": null,
+        "speaker": null,
+        "bbox": null,
+        "score": 0.8,
+        "certainty": "confident"
+      }
+    ]
+  },
+  "narrative": [
+    {
+      "id": "si_2",
+      "section": null,
+      "text": "早晨在家里安静地吃了早餐，边吃边看笔记本上画的台灯接线草图。出门前又看了一眼旧台灯，拨动开关明显开裂。确认底座螺丝和开关位置后，我带上伞和外套出了门。",
+      "certainty": "confident",
+      "start_ms": 1776520800000,
+      "end_ms": 1776524709100,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000001"
+      ],
+      "citations": [
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000001",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776520800000,
+          "ts_end_ms": 1776520800000,
+          "ts_local": "2026-04-18T07:00:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000001",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000001?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776520800000&focus=cap_01JRQ4H8ZE0000000000000001",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000002",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776521100000,
+          "ts_end_ms": 1776521100000,
+          "ts_local": "2026-04-18T07:05:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000002",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000002?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776521100000&focus=cap_01JRQ4H8ZE0000000000000002",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000001",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776521127000,
+          "ts_end_ms": 1776521131100,
+          "ts_local": "2026-04-18T07:05:27-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000002",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000002?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776521127000&focus=utt_01JRQ4H8ZE0000000000000001",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "你",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.82,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000007",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776522600000,
+          "ts_end_ms": 1776522600000,
+          "ts_local": "2026-04-18T07:30:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000007",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000007?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776522600000&focus=cap_01JRQ4H8ZE0000000000000007",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000012",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776524100000,
+          "ts_end_ms": 1776524100000,
+          "ts_local": "2026-04-18T07:55:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000012",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000012?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776524100000&focus=cap_01JRQ4H8ZE0000000000000012",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000010",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776524702200,
+          "ts_end_ms": 1776524709100,
+          "ts_local": "2026-04-18T08:05:02-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000014",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000014?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776524702200&focus=utt_01JRQ4H8ZE0000000000000010",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "你",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.79,
+          "certainty": "confident"
+        }
+      ]
+    },
+    {
+      "id": "si_3",
+      "section": null,
+      "text": "白天大部分时间在蕨谷修理咖啡馆。台灯的主要问题是拨动开关裂了。我们打开底座，取下四颗螺丝，用万用表测了电源线，并订了替换开关，周二到货。中午前后我暂停了记录，一点再回来。",
+      "certainty": "confident",
+      "start_ms": 1776527400000,
+      "end_ms": 1776545526500,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000002",
+        "seg_01JRQ4H8ZE0000000000000003",
+        "seg_01JRQ4H8ZE0000000000000004",
+        "seg_01JRQ4H8ZE0000000000000005",
+        "seg_01JRQ4H8ZE0000000000000006",
+        "seg_01JRQ4H8ZE0000000000000007",
+        "seg_01JRQ4H8ZE0000000000000008"
+      ],
+      "citations": [
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000023",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776527400000,
+          "ts_end_ms": 1776527400000,
+          "ts_local": "2026-04-18T08:50:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000023",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000023?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776527400000&focus=cap_01JRQ4H8ZE0000000000000023",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000019",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776527803500,
+          "ts_end_ms": 1776527806200,
+          "ts_local": "2026-04-18T08:56:43-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776527803500&focus=utt_01JRQ4H8ZE0000000000000019",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "你",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.9,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000029",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776529200000,
+          "ts_end_ms": 1776529200000,
+          "ts_local": "2026-04-18T09:20:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000029",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000029?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776529200000&focus=cap_01JRQ4H8ZE0000000000000029",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000026",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776529503700,
+          "ts_end_ms": 1776529507300,
+          "ts_local": "2026-04-18T09:25:03-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000030",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000030?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776529503700&focus=utt_01JRQ4H8ZE0000000000000026",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "你",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.76,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000028",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776529567200,
+          "ts_end_ms": 1776529572900,
+          "ts_local": "2026-04-18T09:26:07-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776529567200&focus=utt_01JRQ4H8ZE0000000000000028",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "你",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.7,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000036",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776530701900,
+          "ts_end_ms": 1776530708400,
+          "ts_local": "2026-04-18T09:45:01-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000034",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000034?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776530701900&focus=utt_01JRQ4H8ZE0000000000000036",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPB",
+            "label": "Speaker B",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.7,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000042",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776530882800,
+          "ts_end_ms": 1776530889400,
+          "ts_local": "2026-04-18T09:48:02-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776530882800&focus=utt_01JRQ4H8ZE0000000000000042",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPB",
+            "label": "Speaker B",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.74,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000055",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776533715900,
+          "ts_end_ms": 1776533722200,
+          "ts_local": "2026-04-18T10:35:15-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000044",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000044?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776533715900&focus=utt_01JRQ4H8ZE0000000000000055",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPB",
+            "label": "Speaker B",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.83,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000057",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776533773600,
+          "ts_end_ms": 1776533780600,
+          "ts_local": "2026-04-18T10:36:13-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776533773600&focus=utt_01JRQ4H8ZE0000000000000057",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPB",
+            "label": "Speaker B",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000073",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776536150500,
+          "ts_end_ms": 1776536153400,
+          "ts_local": "2026-04-18T11:15:50-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000052",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000052?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776536150500&focus=utt_01JRQ4H8ZE0000000000000073",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "你",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.7,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000100",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776539967100,
+          "ts_end_ms": 1776539974100,
+          "ts_local": "2026-04-18T12:19:27-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000065",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000065?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776539967100&focus=utt_01JRQ4H8ZE0000000000000100",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "你",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.79,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000075",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776544800000,
+          "ts_end_ms": 1776544800000,
+          "ts_local": "2026-04-18T13:40:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000075",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000075?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776544800000&focus=cap_01JRQ4H8ZE0000000000000075",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000118",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776545520000,
+          "ts_end_ms": 1776545526500,
+          "ts_local": "2026-04-18T13:52:00-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776545520000&focus=utt_01JRQ4H8ZE0000000000000118",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPB",
+            "label": "Speaker B",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.84,
+          "certainty": "confident"
+        }
+      ]
+    },
+    {
+      "id": "si_4",
+      "section": null,
+      "text": "后来我去羽毛笔街面包房买了一个黑麦面包和两个肉桂卷，又去了飞燕草社区图书馆。预约的台灯维修手册周二下午可以准备好，借书卡也续期了一年。傍晚下着雨，我坐电车回家。",
+      "certainty": "confident",
+      "start_ms": 1776554400000,
+      "end_ms": 1776562500000,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000010",
+        "seg_01JRQ4H8ZE0000000000000011",
+        "seg_01JRQ4H8ZE0000000000000012",
+        "seg_01JRQ4H8ZE0000000000000013"
+      ],
+      "citations": [
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000107",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776554400000,
+          "ts_end_ms": 1776554400000,
+          "ts_local": "2026-04-18T16:20:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000107",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000107?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776554400000&focus=cap_01JRQ4H8ZE0000000000000107",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000110",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776555300000,
+          "ts_end_ms": 1776555300000,
+          "ts_local": "2026-04-18T16:35:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000110",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000110?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776555300000&focus=cap_01JRQ4H8ZE0000000000000110",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000153",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776555686500,
+          "ts_end_ms": 1776555690400,
+          "ts_local": "2026-04-18T16:41:26-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776555686500&focus=utt_01JRQ4H8ZE0000000000000153",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "你",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.75,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000154",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776555703300,
+          "ts_end_ms": 1776555709700,
+          "ts_local": "2026-04-18T16:41:43-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776555703300&focus=utt_01JRQ4H8ZE0000000000000154",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPC",
+            "label": "Speaker C",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.75,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000118",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776557700000,
+          "ts_end_ms": 1776557700000,
+          "ts_local": "2026-04-18T17:15:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000118",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000118?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776557700000&focus=cap_01JRQ4H8ZE0000000000000118",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000163",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776558035400,
+          "ts_end_ms": 1776558037300,
+          "ts_local": "2026-04-18T17:20:35-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000119",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000119?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776558035400&focus=utt_01JRQ4H8ZE0000000000000163",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPD",
+            "label": "Speaker D",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.83,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000167",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776558135700,
+          "ts_end_ms": 1776558140500,
+          "ts_local": "2026-04-18T17:22:15-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776558135700&focus=utt_01JRQ4H8ZE0000000000000167",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPD",
+            "label": "Speaker D",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.75,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000134",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776562500000,
+          "ts_end_ms": 1776562500000,
+          "ts_local": "2026-04-18T18:35:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000134",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000134?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776562500000&focus=cap_01JRQ4H8ZE0000000000000134",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        }
+      ]
+    }
+  ],
+  "places": [
+    {
+      "id": "si_5",
+      "section": null,
+      "text": "早晨在家吃燕麦粥，看台灯接线草图。",
+      "certainty": "confident",
+      "start_ms": 1776520800000,
+      "end_ms": 1776521400000,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000001"
+      ],
+      "citations": [
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000001",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776520800000,
+          "ts_end_ms": 1776520800000,
+          "ts_local": "2026-04-18T07:00:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000001",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000001?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776520800000&focus=cap_01JRQ4H8ZE0000000000000001",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000003",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776521400000,
+          "ts_end_ms": 1776521400000,
+          "ts_local": "2026-04-18T07:10:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000003",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000003?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776521400000&focus=cap_01JRQ4H8ZE0000000000000003",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        }
+      ],
+      "place_id": "plc_01JRQ4H8ZE0000000000HOME01"
+    },
+    {
+      "id": "si_6",
+      "section": null,
+      "text": "坐4路电车穿过城区，往蕨谷方向去。",
+      "certainty": "confident",
+      "start_ms": 1776525900000,
+      "end_ms": 1776526200000,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000002"
+      ],
+      "citations": [
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000018",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776525900000,
+          "ts_end_ms": 1776525900000,
+          "ts_local": "2026-04-18T08:25:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000018",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000018?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776525900000&focus=cap_01JRQ4H8ZE0000000000000018",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000019",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776526200000,
+          "ts_end_ms": 1776526200000,
+          "ts_local": "2026-04-18T08:30:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000019",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000019?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776526200000&focus=cap_01JRQ4H8ZE0000000000000019",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        }
+      ],
+      "place_id": "plc_01JRQ4H8ZE0000000000TRAM04"
+    },
+    {
+      "id": "si_7",
+      "section": null,
+      "text": "白天大部分时间在蕨谷修理咖啡馆修台灯。",
+      "certainty": "confident",
+      "start_ms": 1776527400000,
+      "end_ms": 1776529200000,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000002",
+        "seg_01JRQ4H8ZE0000000000000003",
+        "seg_01JRQ4H8ZE0000000000000004"
+      ],
+      "citations": [
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000023",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776527400000,
+          "ts_end_ms": 1776527400000,
+          "ts_local": "2026-04-18T08:50:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000023",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000023?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776527400000&focus=cap_01JRQ4H8ZE0000000000000023",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000029",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776529200000,
+          "ts_end_ms": 1776529200000,
+          "ts_local": "2026-04-18T09:20:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000029",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000029?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776529200000&focus=cap_01JRQ4H8ZE0000000000000029",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        }
+      ],
+      "place_id": "plc_01JRQ4H8ZE0000000000CAFE01"
+    },
+    {
+      "id": "si_8",
+      "section": null,
+      "text": "在羽毛笔街面包房买了一个黑麦面包和两个肉桂卷。",
+      "certainty": "confident",
+      "start_ms": 1776555300000,
+      "end_ms": 1776555690400,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000011"
+      ],
+      "citations": [
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000110",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776555300000,
+          "ts_end_ms": 1776555300000,
+          "ts_local": "2026-04-18T16:35:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000110",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000110?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776555300000&focus=cap_01JRQ4H8ZE0000000000000110",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000153",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776555686500,
+          "ts_end_ms": 1776555690400,
+          "ts_local": "2026-04-18T16:41:26-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776555686500&focus=utt_01JRQ4H8ZE0000000000000153",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "你",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.75,
+          "certainty": "confident"
+        }
+      ],
+      "place_id": "plc_01JRQ4H8ZE0000000000BAKE01"
+    },
+    {
+      "id": "si_9",
+      "section": null,
+      "text": "去了飞燕草社区图书馆，取预约书并续期借书卡。",
+      "certainty": "confident",
+      "start_ms": 1776557700000,
+      "end_ms": 1776558140500,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000012"
+      ],
+      "citations": [
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000118",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776557700000,
+          "ts_end_ms": 1776557700000,
+          "ts_local": "2026-04-18T17:15:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000118",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000118?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776557700000&focus=cap_01JRQ4H8ZE0000000000000118",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000163",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776558035400,
+          "ts_end_ms": 1776558037300,
+          "ts_local": "2026-04-18T17:20:35-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000119",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000119?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776558035400&focus=utt_01JRQ4H8ZE0000000000000163",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPD",
+            "label": "Speaker D",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.83,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000167",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776558135700,
+          "ts_end_ms": 1776558140500,
+          "ts_local": "2026-04-18T17:22:15-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776558135700&focus=utt_01JRQ4H8ZE0000000000000167",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPD",
+            "label": "Speaker D",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.75,
+          "certainty": "confident"
+        }
+      ],
+      "place_id": "plc_01JRQ4H8ZE0000000000LIBR01"
+    }
+  ],
+  "activities": [
+    {
+      "id": "si_10",
+      "section": null,
+      "text": "在家吃早餐，同时看手绘的台灯接线草图。",
+      "certainty": "confident",
+      "start_ms": 1776520800000,
+      "end_ms": 1776521100000,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000001"
+      ],
+      "citations": [
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000001",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776520800000,
+          "ts_end_ms": 1776520800000,
+          "ts_local": "2026-04-18T07:00:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000001",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000001?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776520800000&focus=cap_01JRQ4H8ZE0000000000000001",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000002",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776521100000,
+          "ts_end_ms": 1776521100000,
+          "ts_local": "2026-04-18T07:05:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000002",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000002?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776521100000&focus=cap_01JRQ4H8ZE0000000000000002",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        }
+      ]
+    },
+    {
+      "id": "si_11",
+      "section": null,
+      "text": "带上伞和外套准备出门。",
+      "certainty": "confident",
+      "start_ms": 1776524100000,
+      "end_ms": 1776524709100,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000001"
+      ],
+      "citations": [
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000012",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776524100000,
+          "ts_end_ms": 1776524100000,
+          "ts_local": "2026-04-18T07:55:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000012",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000012?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776524100000&focus=cap_01JRQ4H8ZE0000000000000012",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000010",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776524702200,
+          "ts_end_ms": 1776524709100,
+          "ts_local": "2026-04-18T08:05:02-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000014",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000014?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776524702200&focus=utt_01JRQ4H8ZE0000000000000010",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "你",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.79,
+          "certainty": "confident"
+        }
+      ]
+    },
+    {
+      "id": "si_12",
+      "section": null,
+      "text": "坐4路电车往蕨谷方向。",
+      "certainty": "confident",
+      "start_ms": 1776525900000,
+      "end_ms": 1776526200000,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000002"
+      ],
+      "citations": [
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000018",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776525900000,
+          "ts_end_ms": 1776525900000,
+          "ts_local": "2026-04-18T08:25:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000018",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000018?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776525900000&focus=cap_01JRQ4H8ZE0000000000000018",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000019",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776526200000,
+          "ts_end_ms": 1776526200000,
+          "ts_local": "2026-04-18T08:30:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000019",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000019?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776526200000&focus=cap_01JRQ4H8ZE0000000000000019",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        }
+      ]
+    },
+    {
+      "id": "si_13",
+      "section": null,
+      "text": "在修理咖啡馆打开台灯底座，取下四颗螺丝，用万用表测电源线，并订了替换开关。",
+      "certainty": "confident",
+      "start_ms": 1776527803500,
+      "end_ms": 1776545526500,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000003",
+        "seg_01JRQ4H8ZE0000000000000004",
+        "seg_01JRQ4H8ZE0000000000000005",
+        "seg_01JRQ4H8ZE0000000000000007",
+        "seg_01JRQ4H8ZE0000000000000008"
+      ],
+      "citations": [
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000019",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776527803500,
+          "ts_end_ms": 1776527806200,
+          "ts_local": "2026-04-18T08:56:43-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776527803500&focus=utt_01JRQ4H8ZE0000000000000019",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "你",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.9,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000029",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776529200000,
+          "ts_end_ms": 1776529200000,
+          "ts_local": "2026-04-18T09:20:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000029",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000029?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776529200000&focus=cap_01JRQ4H8ZE0000000000000029",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000026",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776529503700,
+          "ts_end_ms": 1776529507300,
+          "ts_local": "2026-04-18T09:25:03-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000030",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000030?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776529503700&focus=utt_01JRQ4H8ZE0000000000000026",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "你",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.76,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000036",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776530701900,
+          "ts_end_ms": 1776530708400,
+          "ts_local": "2026-04-18T09:45:01-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000034",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000034?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776530701900&focus=utt_01JRQ4H8ZE0000000000000036",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPB",
+            "label": "Speaker B",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.7,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000042",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776530882800,
+          "ts_end_ms": 1776530889400,
+          "ts_local": "2026-04-18T09:48:02-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776530882800&focus=utt_01JRQ4H8ZE0000000000000042",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPB",
+            "label": "Speaker B",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.74,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000055",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776533715900,
+          "ts_end_ms": 1776533722200,
+          "ts_local": "2026-04-18T10:35:15-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000044",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000044?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776533715900&focus=utt_01JRQ4H8ZE0000000000000055",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPB",
+            "label": "Speaker B",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.83,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000073",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776536150500,
+          "ts_end_ms": 1776536153400,
+          "ts_local": "2026-04-18T11:15:50-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000052",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000052?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776536150500&focus=utt_01JRQ4H8ZE0000000000000073",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "你",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.7,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000075",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776544800000,
+          "ts_end_ms": 1776544800000,
+          "ts_local": "2026-04-18T13:40:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000075",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000075?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776544800000&focus=cap_01JRQ4H8ZE0000000000000075",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000118",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776545520000,
+          "ts_end_ms": 1776545526500,
+          "ts_local": "2026-04-18T13:52:00-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776545520000&focus=utt_01JRQ4H8ZE0000000000000118",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPB",
+            "label": "Speaker B",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.84,
+          "certainty": "confident"
+        }
+      ]
+    },
+    {
+      "id": "si_14",
+      "section": null,
+      "text": "把台灯放到写着“waiting for parts”的架子上，把螺丝留在红色工具箱上。",
+      "certainty": "confident",
+      "start_ms": 1776551952000,
+      "end_ms": 1776553510400,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000010"
+      ],
+      "citations": [
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000131",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776551952000,
+          "ts_end_ms": 1776551956000,
+          "ts_local": "2026-04-18T15:39:12-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000098",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000098?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776551952000&focus=utt_01JRQ4H8ZE0000000000000131",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "你",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.83,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000099",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776552000000,
+          "ts_end_ms": 1776552000000,
+          "ts_local": "2026-04-18T15:40:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000099",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000099?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776552000000&focus=cap_01JRQ4H8ZE0000000000000099",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000103",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776553200000,
+          "ts_end_ms": 1776553200000,
+          "ts_local": "2026-04-18T16:00:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000103",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000103?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776553200000&focus=cap_01JRQ4H8ZE0000000000000103",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000141",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776553505600,
+          "ts_end_ms": 1776553510400,
+          "ts_local": "2026-04-18T16:05:05-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000104",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000104?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776553505600&focus=utt_01JRQ4H8ZE0000000000000141",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPB",
+            "label": "Speaker B",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.74,
+          "certainty": "confident"
+        }
+      ]
+    },
+    {
+      "id": "si_15",
+      "section": null,
+      "text": "在羽毛笔街面包房买了黑麦面包和两个肉桂卷。",
+      "certainty": "confident",
+      "start_ms": 1776555300000,
+      "end_ms": 1776555709700,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000011"
+      ],
+      "citations": [
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000110",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776555300000,
+          "ts_end_ms": 1776555300000,
+          "ts_local": "2026-04-18T16:35:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000110",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000110?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776555300000&focus=cap_01JRQ4H8ZE0000000000000110",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000153",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776555686500,
+          "ts_end_ms": 1776555690400,
+          "ts_local": "2026-04-18T16:41:26-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776555686500&focus=utt_01JRQ4H8ZE0000000000000153",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "你",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.75,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000154",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776555703300,
+          "ts_end_ms": 1776555709700,
+          "ts_local": "2026-04-18T16:41:43-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776555703300&focus=utt_01JRQ4H8ZE0000000000000154",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPC",
+            "label": "Speaker C",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.75,
+          "certainty": "confident"
+        }
+      ]
+    },
+    {
+      "id": "si_16",
+      "section": null,
+      "text": "在图书馆得知预约的台灯维修手册周二下午可取，借书卡续期一年。",
+      "certainty": "confident",
+      "start_ms": 1776557700000,
+      "end_ms": 1776558140500,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000012"
+      ],
+      "citations": [
+        {
+          "evidence_id": "cap_01JRQ4H8ZE0000000000000118",
+          "kind": "caption",
+          "day": "2026-04-18",
+          "ts_ms": 1776557700000,
+          "ts_end_ms": 1776557700000,
+          "ts_local": "2026-04-18T17:15:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000118",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000118?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776557700000&focus=cap_01JRQ4H8ZE0000000000000118",
+          "quote": null,
+          "speaker": null,
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000163",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776558035400,
+          "ts_end_ms": 1776558037300,
+          "ts_local": "2026-04-18T17:20:35-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000119",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000119?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776558035400&focus=utt_01JRQ4H8ZE0000000000000163",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPD",
+            "label": "Speaker D",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.83,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000167",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776558135700,
+          "ts_end_ms": 1776558140500,
+          "ts_local": "2026-04-18T17:22:15-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776558135700&focus=utt_01JRQ4H8ZE0000000000000167",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPD",
+            "label": "Speaker D",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.75,
+          "certainty": "confident"
+        }
+      ]
+    }
+  ],
+  "people": [
+    {
+      "id": "si_17",
+      "section": null,
+      "text": "修理咖啡馆的志愿者帮忙判断开关开裂，测了电源线，说替换开关周二到。",
+      "certainty": "confident",
+      "start_ms": 1776530701900,
+      "end_ms": 1776545526500,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000004",
+        "seg_01JRQ4H8ZE0000000000000005",
+        "seg_01JRQ4H8ZE0000000000000008"
+      ],
+      "citations": [
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000036",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776530701900,
+          "ts_end_ms": 1776530708400,
+          "ts_local": "2026-04-18T09:45:01-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000034",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000034?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776530701900&focus=utt_01JRQ4H8ZE0000000000000036",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPB",
+            "label": "Speaker B",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.7,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000042",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776530882800,
+          "ts_end_ms": 1776530889400,
+          "ts_local": "2026-04-18T09:48:02-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776530882800&focus=utt_01JRQ4H8ZE0000000000000042",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPB",
+            "label": "Speaker B",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.74,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000055",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776533715900,
+          "ts_end_ms": 1776533722200,
+          "ts_local": "2026-04-18T10:35:15-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000044",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000044?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776533715900&focus=utt_01JRQ4H8ZE0000000000000055",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPB",
+            "label": "Speaker B",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.83,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000057",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776533773600,
+          "ts_end_ms": 1776533780600,
+          "ts_local": "2026-04-18T10:36:13-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776533773600&focus=utt_01JRQ4H8ZE0000000000000057",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPB",
+            "label": "Speaker B",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.8,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000118",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776545520000,
+          "ts_end_ms": 1776545526500,
+          "ts_local": "2026-04-18T13:52:00-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776545520000&focus=utt_01JRQ4H8ZE0000000000000118",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPB",
+            "label": "Speaker B",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.84,
+          "certainty": "confident"
+        }
+      ],
+      "speaker": {
+        "id": "spk_01JRQ4H8ZE0000000000000SPB",
+        "label": "Speaker B",
+        "display_name": null,
+        "is_self": false
+      },
+      "speech_ms": 338200
+    },
+    {
+      "id": "si_18",
+      "section": null,
+      "text": "面包房店员说肉桂卷刚出炉，还重复了点单内容。",
+      "certainty": "confident",
+      "start_ms": 1776555605100,
+      "end_ms": 1776555709700,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000011"
+      ],
+      "citations": [
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000150",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776555605100,
+          "ts_end_ms": 1776555610900,
+          "ts_local": "2026-04-18T16:40:05-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000111",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000111?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776555605100&focus=utt_01JRQ4H8ZE0000000000000150",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPC",
+            "label": "Speaker C",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.76,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000154",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776555703300,
+          "ts_end_ms": 1776555709700,
+          "ts_local": "2026-04-18T16:41:43-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776555703300&focus=utt_01JRQ4H8ZE0000000000000154",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPC",
+            "label": "Speaker C",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.75,
+          "certainty": "confident"
+        }
+      ],
+      "speaker": {
+        "id": "spk_01JRQ4H8ZE0000000000000SPC",
+        "label": "Speaker C",
+        "display_name": null,
+        "is_self": false
+      },
+      "speech_ms": 27100
+    },
+    {
+      "id": "si_19",
+      "section": null,
+      "text": "图书馆工作人员说预约的维修手册周二下午可取，并为借书卡续期一年。",
+      "certainty": "confident",
+      "start_ms": 1776558035400,
+      "end_ms": 1776558140500,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000012"
+      ],
+      "citations": [
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000163",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776558035400,
+          "ts_end_ms": 1776558037300,
+          "ts_local": "2026-04-18T17:20:35-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000119",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000119?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776558035400&focus=utt_01JRQ4H8ZE0000000000000163",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPD",
+            "label": "Speaker D",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.83,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000167",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776558135700,
+          "ts_end_ms": 1776558140500,
+          "ts_local": "2026-04-18T17:22:15-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776558135700&focus=utt_01JRQ4H8ZE0000000000000167",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPD",
+            "label": "Speaker D",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.75,
+          "certainty": "confident"
+        }
+      ],
+      "speaker": {
+        "id": "spk_01JRQ4H8ZE0000000000000SPD",
+        "label": "Speaker D",
+        "display_name": null,
+        "is_self": false
+      },
+      "speech_ms": 65200
+    }
+  ],
+  "quotes": [
+    {
+      "id": "si_20",
+      "section": null,
+      "text": "底座有四颗螺丝，开关就在拨片后面",
+      "certainty": "confident",
+      "start_ms": 1776521127000,
+      "end_ms": 1776521131100,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000001"
+      ],
+      "citations": [
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000001",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776521127000,
+          "ts_end_ms": 1776521131100,
+          "ts_local": "2026-04-18T07:05:27-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000002",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000002?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776521127000&focus=utt_01JRQ4H8ZE0000000000000001",
+          "quote": "底座有四颗螺丝，开关就在拨片后面",
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "你",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.82,
+          "certainty": "confident"
+        }
+      ],
+      "quote": "底座有四颗螺丝，开关就在拨片后面",
+      "utterance_id": "utt_01JRQ4H8ZE0000000000000001",
+      "speaker": {
+        "id": "spk_01JRQ4H8ZE0000000000000SPA",
+        "label": "Speaker A",
+        "display_name": "你",
+        "is_self": true
+      }
+    },
+    {
+      "id": "si_21",
+      "section": null,
+      "text": "主要是开关的问题，感觉松了，有时灯会突然灭掉",
+      "certainty": "confident",
+      "start_ms": 1776527803500,
+      "end_ms": 1776527806200,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000003"
+      ],
+      "citations": [
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000019",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776527803500,
+          "ts_end_ms": 1776527806200,
+          "ts_local": "2026-04-18T08:56:43-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776527803500&focus=utt_01JRQ4H8ZE0000000000000019",
+          "quote": "主要是开关的问题，感觉松了，有时灯会突然灭掉",
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "你",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.9,
+          "certainty": "confident"
+        }
+      ],
+      "quote": "主要是开关的问题，感觉松了，有时灯会突然灭掉",
+      "utterance_id": "utt_01JRQ4H8ZE0000000000000019",
+      "speaker": {
+        "id": "spk_01JRQ4H8ZE0000000000000SPA",
+        "label": "Speaker A",
+        "display_name": "你",
+        "is_self": true
+      }
+    },
+    {
+      "id": "si_22",
+      "section": null,
+      "text": "我现在暂停一下录制，休息一会儿，一点回来",
+      "certainty": "confident",
+      "start_ms": 1776539967100,
+      "end_ms": 1776539974100,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000006"
+      ],
+      "citations": [
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000100",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776539967100,
+          "ts_end_ms": 1776539974100,
+          "ts_local": "2026-04-18T12:19:27-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000065",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000065?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776539967100&focus=utt_01JRQ4H8ZE0000000000000100",
+          "quote": "我现在暂停一下录制，休息一会儿，一点回来",
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "你",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.79,
+          "certainty": "confident"
+        }
+      ],
+      "quote": "我现在暂停一下录制，休息一会儿，一点回来",
+      "utterance_id": "utt_01JRQ4H8ZE0000000000000100",
+      "speaker": {
+        "id": "spk_01JRQ4H8ZE0000000000000SPA",
+        "label": "Speaker A",
+        "display_name": "你",
+        "is_self": true
+      }
+    },
+    {
+      "id": "si_23",
+      "section": null,
+      "text": "我要一个黑麦面包和两个肉桂卷，谢谢",
+      "certainty": "confident",
+      "start_ms": 1776555686500,
+      "end_ms": 1776555690400,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000011"
+      ],
+      "citations": [
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000153",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776555686500,
+          "ts_end_ms": 1776555690400,
+          "ts_local": "2026-04-18T16:41:26-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776555686500&focus=utt_01JRQ4H8ZE0000000000000153",
+          "quote": "我要一个黑麦面包和两个肉桂卷，谢谢",
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "你",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.75,
+          "certainty": "confident"
+        }
+      ],
+      "quote": "我要一个黑麦面包和两个肉桂卷，谢谢",
+      "utterance_id": "utt_01JRQ4H8ZE0000000000000153",
+      "speaker": {
+        "id": "spk_01JRQ4H8ZE0000000000000SPA",
+        "label": "Speaker A",
+        "display_name": "你",
+        "is_self": true
+      }
+    },
+    {
+      "id": "si_24",
+      "section": null,
+      "text": "您预约的那本台灯维修手册周二下午能准备好",
+      "certainty": "confident",
+      "start_ms": 1776558035400,
+      "end_ms": 1776558037300,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000012"
+      ],
+      "citations": [
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000163",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776558035400,
+          "ts_end_ms": 1776558037300,
+          "ts_local": "2026-04-18T17:20:35-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000119",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000119?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776558035400&focus=utt_01JRQ4H8ZE0000000000000163",
+          "quote": "您预约的那本台灯维修手册周二下午能准备好",
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPD",
+            "label": "Speaker D",
+            "display_name": null,
+            "is_self": false
+          },
+          "bbox": null,
+          "score": 0.83,
+          "certainty": "confident"
+        }
+      ],
+      "quote": "您预约的那本台灯维修手册周二下午能准备好",
+      "utterance_id": "utt_01JRQ4H8ZE0000000000000163",
+      "speaker": {
+        "id": "spk_01JRQ4H8ZE0000000000000SPD",
+        "label": "Speaker D",
+        "display_name": null,
+        "is_self": false
+      }
+    }
+  ],
+  "uncertain": [
+    {
+      "id": "si_25",
+      "section": "activities",
+      "text": "出门前似乎对门后那个小金属挂钩件不太确定，不清楚是放进了口袋还是仍挂在钩上。",
+      "certainty": "uncertain",
+      "start_ms": 1776524700000,
+      "end_ms": 1776525000000,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000001"
+      ],
+      "citations": [
+        {
+          "evidence_id": "det_01JRQ4H8ZE0000000000000007",
+          "kind": "detection",
+          "day": "2026-04-18",
+          "ts_ms": 1776524700000,
+          "ts_end_ms": 1776524700000,
+          "ts_local": "2026-04-18T08:05:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000014",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000014?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776524700000&focus=det_01JRQ4H8ZE0000000000000007",
+          "quote": null,
+          "speaker": null,
+          "bbox": {
+            "x": 0.78,
+            "y": 0.3,
+            "w": 0.06,
+            "h": 0.08
+          },
+          "score": 0.34,
+          "certainty": "uncertain"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000011",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776524838500,
+          "ts_end_ms": 1776524845000,
+          "ts_local": "2026-04-18T08:07:18-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776524838500&focus=utt_01JRQ4H8ZE0000000000000011",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "你",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.29,
+          "certainty": "uncertain"
+        },
+        {
+          "evidence_id": "det_01JRQ4H8ZE0000000000000008",
+          "kind": "detection",
+          "day": "2026-04-18",
+          "ts_ms": 1776525000000,
+          "ts_end_ms": 1776525000000,
+          "ts_local": "2026-04-18T08:10:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000015",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000015?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776525000000&focus=det_01JRQ4H8ZE0000000000000008",
+          "quote": null,
+          "speaker": null,
+          "bbox": {
+            "x": 0.8,
+            "y": 0.28,
+            "w": 0.05,
+            "h": 0.07
+          },
+          "score": 0.31,
+          "certainty": "uncertain"
+        }
+      ]
+    },
+    {
+      "id": "si_26",
+      "section": "activities",
+      "text": "坐电车时对下车地点有些犹豫，语音里只有“……费恩什么……是这站下吗……”和“……可能还有两站……”。",
+      "certainty": "uncertain",
+      "start_ms": 1776526251500,
+      "end_ms": 1776526311900,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000002"
+      ],
+      "citations": [
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000013",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776526251500,
+          "ts_end_ms": 1776526257900,
+          "ts_local": "2026-04-18T08:30:51-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000019",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000019?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776526251500&focus=utt_01JRQ4H8ZE0000000000000013",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "你",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.32,
+          "certainty": "uncertain"
+        },
+        {
+          "evidence_id": "utt_01JRQ4H8ZE0000000000000014",
+          "kind": "utterance",
+          "day": "2026-04-18",
+          "ts_ms": 1776526310100,
+          "ts_end_ms": 1776526311900,
+          "ts_local": "2026-04-18T08:31:50-07:00",
+          "frame_id": null,
+          "thumb_url": null,
+          "open_url": "/day/2026-04-18?t=1776526310100&focus=utt_01JRQ4H8ZE0000000000000014",
+          "quote": null,
+          "speaker": {
+            "id": "spk_01JRQ4H8ZE0000000000000SPA",
+            "label": "Speaker A",
+            "display_name": "你",
+            "is_self": true
+          },
+          "bbox": null,
+          "score": 0.25,
+          "certainty": "uncertain"
+        }
+      ]
+    },
+    {
+      "id": "si_27",
+      "section": "activities",
+      "text": "有几帧低置信度画面显示螺丝在红色工具箱上或附近，具体位置需谨慎确认。",
+      "certainty": "uncertain",
+      "start_ms": 1776549000000,
+      "end_ms": 1776552060000,
+      "segment_ids": [
+        "seg_01JRQ4H8ZE0000000000000009",
+        "seg_01JRQ4H8ZE0000000000000010"
+      ],
+      "citations": [
+        {
+          "evidence_id": "det_01JRQ4H8ZE0000000000000019",
+          "kind": "detection",
+          "day": "2026-04-18",
+          "ts_ms": 1776549000000,
+          "ts_end_ms": 1776549000000,
+          "ts_local": "2026-04-18T14:50:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000089",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000089?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776549000000&focus=det_01JRQ4H8ZE0000000000000019",
+          "quote": null,
+          "speaker": null,
+          "bbox": {
+            "x": 0.66,
+            "y": 0.62,
+            "w": 0.12,
+            "h": 0.1
+          },
+          "score": 0.58,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "det_01JRQ4H8ZE0000000000000022",
+          "kind": "detection",
+          "day": "2026-04-18",
+          "ts_ms": 1776551400000,
+          "ts_end_ms": 1776551400000,
+          "ts_local": "2026-04-18T15:30:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000097",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000097?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776551400000&focus=det_01JRQ4H8ZE0000000000000022",
+          "quote": null,
+          "speaker": null,
+          "bbox": {
+            "x": 0.64,
+            "y": 0.6,
+            "w": 0.12,
+            "h": 0.1
+          },
+          "score": 0.52,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "det_01JRQ4H8ZE0000000000000024",
+          "kind": "detection",
+          "day": "2026-04-18",
+          "ts_ms": 1776551940000,
+          "ts_end_ms": 1776551940000,
+          "ts_local": "2026-04-18T15:39:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000098",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000098?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776551940000&focus=det_01JRQ4H8ZE0000000000000024",
+          "quote": null,
+          "speaker": null,
+          "bbox": {
+            "x": 0.14,
+            "y": 0.5,
+            "w": 0.16,
+            "h": 0.12
+          },
+          "score": 0.62,
+          "certainty": "confident"
+        },
+        {
+          "evidence_id": "det_01JRQ4H8ZE0000000000000028",
+          "kind": "detection",
+          "day": "2026-04-18",
+          "ts_ms": 1776552060000,
+          "ts_end_ms": 1776552060000,
+          "ts_local": "2026-04-18T15:41:00-07:00",
+          "frame_id": "frm_01JRQ4H8ZE0000000000000100",
+          "thumb_url": "/api/lifelog/media/frames/frm_01JRQ4H8ZE0000000000000100?variant=thumb",
+          "open_url": "/day/2026-04-18?t=1776552060000&focus=det_01JRQ4H8ZE0000000000000028",
+          "quote": null,
+          "speaker": null,
+          "bbox": {
+            "x": 0.12,
+            "y": 0.55,
+            "w": 0.18,
+            "h": 0.14
+          },
+          "score": 0.66,
+          "certainty": "confident"
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "frames": 162,
+    "audio_seconds": 9000,
+    "paused_ms": 1800000,
+    "first_ms": 1776520800000,
+    "last_ms": 1776570900000
+  },
+  "validation": {
+    "dropped_items": 0,
+    "dropped_citations": 0,
+    "dropped_quotes": 0
+  }
+}
