@@ -76,6 +76,13 @@ jobs:
       - uses: actions/setup-java@v4
         with: { distribution: temurin, java-version: 17 }
       - uses: android-actions/setup-android@v3
+        with:
+          # The action's default package list includes the obsolete `tools`
+          # package, which current cmdline-tools no longer ships — sdkmanager
+          # exits 1 on it. Install only what the Tauri Android build needs.
+          packages: "platform-tools ndk;27.2.12479018"
+      - name: Export Android NDK home
+        run: echo "ANDROID_NDK_HOME=$ANDROID_HOME/ndk/27.2.12479018" >> "$GITHUB_ENV"
       - uses: dtolnay/rust-toolchain@stable
         with:
           targets: aarch64-linux-android,armv7-linux-androideabi,i686-linux-android,x86_64-linux-android
@@ -104,8 +111,12 @@ jobs:
       - working-directory: lifelog/app
         run: |
           npm ci
-          npx tauri ios init
-          # Compiles the Rust + webview shell without code signing.
-          # For a signed .ipa add APPLE_CERTIFICATE / APPLE_PROVISIONING_PROFILE
-          # secrets and switch to `npx tauri ios build`.
-          npx tauri ios build --no-sign || echo "::warning::unsigned iOS build needs a development team id — compile check only"
+          # Unsigned compile check only: `tauri ios init` requires a real
+          # Apple development team (bundle.iOS.developmentTeam is empty
+          # until the user adds one), so verify the Rust shell compiles
+          # for iOS targets instead of generating the Xcode project.
+          # For a signed .ipa add APPLE_CERTIFICATE /
+          # APPLE_PROVISIONING_PROFILE secrets, set the development team,
+          # and switch to `npx tauri ios build`.
+          cargo check --manifest-path src-tauri/Cargo.toml --target aarch64-apple-ios
+          cargo check --manifest-path src-tauri/Cargo.toml --target aarch64-apple-ios-sim
