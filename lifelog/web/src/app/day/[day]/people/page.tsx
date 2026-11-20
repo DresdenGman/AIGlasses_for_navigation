@@ -4,7 +4,12 @@ import { PeoplePanel } from "@/components/people-panel";
 import { getClient } from "@/lib/api/client";
 import { ShowcaseNotFound } from "@/lib/api/load";
 import { t } from "@/lib/i18n";
+import { showcase } from "@/lib/api/showcase";
 import { getUi } from "@/lib/request";
+
+export function generateStaticParams() {
+  return showcase.year().days.map(({ day }) => ({ day }));
+}
 
 export default async function PeoplePage({ params }: { params: Promise<{ day: string }> }) {
   const { day } = await params;

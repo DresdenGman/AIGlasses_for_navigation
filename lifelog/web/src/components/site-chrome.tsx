@@ -81,7 +81,6 @@ export function SiteChrome({
           <span aria-hidden="true"> · </span>
           <Link href="/settings">{copy.lastSync} {sync}</Link>
           <span className="ml-auto flex flex-wrap gap-2">
-            <button type="button" className="min-h-11 px-2" aria-pressed={prefs.locale === "zh-CN"} onClick={() => prefs.setLocale("zh-CN")}>{copy.chinese}</button>
             <button type="button" className="min-h-11 px-2" aria-pressed={prefs.locale === "en"} onClick={() => prefs.setLocale("en")}>{copy.english}</button>
             <button type="button" className="min-h-11 px-2" onClick={() => prefs.setTheme(prefs.theme === "dark" ? "light" : "dark")}>{prefs.theme === "dark" ? copy.themeToLight : copy.themeToDark}</button>
             <button type="button" className="min-h-11 px-2" aria-pressed={prefs.large} onClick={prefs.toggleLarge}>{prefs.large ? copy.largeOn : copy.largeOff}</button>

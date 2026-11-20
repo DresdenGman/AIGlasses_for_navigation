@@ -3,7 +3,12 @@ import { ArchiveDay } from "@/components/archive-day";
 import { SummaryView } from "@/components/summary-view";
 import { getClient } from "@/lib/api/client";
 import { ShowcaseNotFound } from "@/lib/api/load";
+import { showcase } from "@/lib/api/showcase";
 import { getUi } from "@/lib/request";
+
+export function generateStaticParams() {
+  return showcase.year().days.map(({ day }) => ({ day }));
+}
 
 export default async function DaySummaryPage({ params }: { params: Promise<{ day: string }> }) {
   const { day } = await params;

@@ -29,6 +29,11 @@ const RegistrySchema = z.object({
 });
 
 const registry = RegistrySchema.parse(registryJson);
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
+function withBasePath(url: string): string {
+  return url.startsWith("/") ? `${basePath}${url}` : url;
+}
 
 export type FrameAsset = {
   slot: string;
@@ -46,7 +51,7 @@ export function frameAsset(frameId: string | null | undefined): FrameAsset | nul
   if (!slot) return null;
   const image = registry.slots[slot];
   if (!image) return null;
-  return { slot, src: image.src, thumb: image.thumb, width: image.width, height: image.height, alt: image.alt, srcSet: image.srcSet };
+  return { slot, src: withBasePath(image.src), thumb: withBasePath(image.thumb), width: image.width, height: image.height, alt: image.alt, srcSet: image.srcSet ? withBasePath(image.srcSet) : undefined };
 }
 
 export function frameSrc(frameId: string | null | undefined, variant: "full" | "thumb" = "full"): string | null {
@@ -64,7 +69,7 @@ export function highlightSlots(): FrameAsset[] {
   return registry.highlights.flatMap((slot) => {
     const image = registry.slots[slot];
     if (!image) return [];
-    return [{ slot, src: image.src, thumb: image.thumb, width: image.width, height: image.height, alt: image.alt, srcSet: image.srcSet }];
+    return [{ slot, src: withBasePath(image.src), thumb: withBasePath(image.thumb), width: image.width, height: image.height, alt: image.alt, srcSet: image.srcSet ? withBasePath(image.srcSet) : undefined }];
   });
 }
 

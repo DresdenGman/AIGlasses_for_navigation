@@ -3,17 +3,19 @@ import { ArchiveDay } from "@/components/archive-day";
 import { TimelineView } from "@/components/timeline-view";
 import { getClient } from "@/lib/api/client";
 import { ShowcaseNotFound } from "@/lib/api/load";
+import { showcase } from "@/lib/api/showcase";
 import { getUi } from "@/lib/request";
+
+export function generateStaticParams() {
+  return showcase.year().days.map(({ day }) => ({ day }));
+}
 
 export default async function TimelinePage({
   params,
-  searchParams,
 }: {
   params: Promise<{ day: string }>;
-  searchParams: Promise<{ t?: string; focus?: string }>;
 }) {
   const { day } = await params;
-  const query = await searchParams;
   const { locale } = await getUi();
   const client = getClient();
   try {
@@ -28,7 +30,6 @@ export default async function TimelinePage({
       client.listUtterances(day, locale),
       client.listSegments(day, locale),
     ]);
-    const initialT = query.t ? Number(query.t) : undefined;
     return (
       <TimelineView
         timeline={timeline}
@@ -36,8 +37,6 @@ export default async function TimelinePage({
         utterances={utterances.utterances}
         segments={segments.segments}
         locale={locale}
-        initialT={Number.isFinite(initialT) ? initialT : undefined}
-        focusId={query.focus}
       />
     );
   } catch (error) {

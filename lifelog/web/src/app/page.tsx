@@ -7,6 +7,8 @@ import { MONTH_PLATES, YEAR_HERO, plateAlt } from "@/lib/plates";
 import { getUi } from "@/lib/request";
 import { FEATURED_DAY, formatNumber } from "@/lib/time";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export default async function YearPage() {
   const { locale } = await getUi();
   const copy = t(locale);
@@ -76,7 +78,7 @@ export default async function YearPage() {
               <li key={month.month} className="w-[min(78vw,22rem)] shrink-0">
                 <Link href={href} className="block no-underline">
                   <img
-                    src={photo?.src ?? "/showcase/placeholders/pending.svg"}
+                    src={photo?.src ?? `${basePath}/showcase/placeholders/pending.svg`}
                     alt={photo ? plateAlt(photo, locale) : copy.plateLater}
                     width={1536}
                     height={1024}
