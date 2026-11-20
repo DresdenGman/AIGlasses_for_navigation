@@ -29,7 +29,7 @@ body {
   font-size: 1.0625rem;
   line-height: 1.6;
   text-rendering: optimizeLegibility;
-  background-image: linear-gradient(to right, color-mix(in srgb, var(--rule) 32%, transparent) 1px, transparent 1px);
+  background-image: linear-gradient(to right, color-mix(in srgb, var(--rule) 20%, transparent) 1px, transparent 1px);
   background-size: 25% 100%;
 }
 
@@ -106,9 +106,7 @@ html.dark ::selection {
 }
 
 .museum-page {
-  background:
-    linear-gradient(to bottom, transparent 0, transparent 6rem, var(--rule) 6rem, transparent 6.063rem),
-    var(--paper);
+  background: var(--paper);
 }
 
 .archive-intro {
