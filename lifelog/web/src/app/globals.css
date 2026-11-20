@@ -29,6 +29,8 @@ body {
   font-size: 1.0625rem;
   line-height: 1.6;
   text-rendering: optimizeLegibility;
+  background-image: linear-gradient(to right, color-mix(in srgb, var(--rule) 32%, transparent) 1px, transparent 1px);
+  background-size: 25% 100%;
 }
 
 ::selection {
@@ -58,6 +60,54 @@ html.dark ::selection {
 
 .plate {
   background: var(--paper);
+}
+
+.archive-hero {
+  position: relative;
+}
+
+.archive-hero::before {
+  content: "ARCHIVE / 01";
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  z-index: 1;
+  padding: 0.15rem 0.45rem;
+  color: var(--paper);
+  background: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+}
+
+.archive-hero-image {
+  filter: saturate(0.82) contrast(1.05);
+  transition: filter 240ms var(--ease), transform 240ms var(--ease);
+}
+
+.archive-hero-image:hover {
+  filter: saturate(1) contrast(1.05);
+  transform: translate(0.35rem, -0.35rem);
+}
+
+.archive-year {
+  font-size: clamp(5rem, 14vw, 11rem);
+  letter-spacing: -0.08em;
+  line-height: 0.78;
+}
+
+.archive-months li {
+  transition: transform 180ms var(--ease);
+}
+
+.archive-months li:hover {
+  transform: translateY(-0.45rem);
+}
+
+@media (max-width: 640px) {
+  body {
+    background-size: 50% 100%;
+  }
 }
 
 html.dark .plate {
