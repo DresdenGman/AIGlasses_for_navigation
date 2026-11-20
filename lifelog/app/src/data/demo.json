@@ -1,0 +1,3404 @@
+{
+ "day": "2026-04-18",
+ "today": "2026-11-18",
+ "segments": [
+  {
+   "id": "seg_01JRQ4H8ZE0000000000000001",
+   "startMs": 1776520800000,
+   "endMs": 1776525300000,
+   "start": "07:00",
+   "end": "08:15",
+   "certainty": "confident",
+   "photo": "photos/hero-01-home-desk-packing-720.jpg",
+   "title": {
+    "en": "Morning at Home and Packing the Lamp",
+    "zh": "在家准备修理台灯"
+   },
+   "summary": {
+    "en": "You eat oatmeal with banana and tea while reviewing a lamp wiring sketch, then wrap the broken desk lamp in a towel and pack it with a screwdriver set. You grab an umbrella and jacket, notice something metallic by the door, pat your pockets, and leave.",
+    "zh": "你在家吃了燕麦粥早餐，研究台灯接线草图，用毛巾包好坏台灯和螺丝刀套装，拿上伞和外套，出门前注意到门边有个金属小物件但没看清。"
+   },
+   "place": {
+    "en": "Home",
+    "zh": "家"
+   }
+  },
+  {
+   "id": "seg_01JRQ4H8ZE0000000000000002",
+   "startMs": 1776525300000,
+   "endMs": 1776527400000,
+   "start": "08:15",
+   "end": "08:50",
+   "certainty": "uncertain",
+   "photo": "photos/hero-02-home-hallway-leaving-720.jpg",
+   "title": {
+    "en": "Tram to Fernhollow",
+    "zh": "乘电车前往Fernhollow"
+   },
+   "summary": {
+    "en": "You walk to the tram stop with an umbrella, then ride line 4 toward Fernhollow, checking the stop name and mumbling about getting off at Fernhollow.",
+    "zh": "你步行到电车站，乘4路有轨电车前往Fernhollow，途中含糊地确认下车站点，录音嘈杂。"
+   },
+   "place": {
+    "en": "Tram line 4",
+    "zh": "4 路有轨电车"
+   }
+  },
+  {
+   "id": "seg_01JRQ4H8ZE0000000000000003",
+   "startMs": 1776527400000,
+   "endMs": 1776529200000,
+   "start": "08:50",
+   "end": "09:20",
+   "certainty": "confident",
+   "photo": "photos/hero-03-street-walk-to-tram-720.jpg",
+   "title": {
+    "en": "Check-In at Fernhollow Repair Cafe",
+    "zh": "修理咖啡馆登记台灯"
+   },
+   "summary": {
+    "en": "At the repair cafe, a volunteer greets you and takes an intake form for the desk lamp, noting the flickering and cracked rocker switch.",
+    "zh": "你到达蕨谷修理咖啡馆，志愿者接待你，你在纸质登记表上填写台灯闪、开关开裂的问题。"
+   },
+   "place": {
+    "en": "Fernhollow Repair Cafe",
+    "zh": "蕨谷修理咖啡馆"
+   }
+  },
+  {
+   "id": "seg_01JRQ4H8ZE0000000000000004",
+   "startMs": 1776529200000,
+   "endMs": 1776533400000,
+   "start": "09:20",
+   "end": "10:30",
+   "certainty": "confident",
+   "photo": "photos/hero-04-cafe-entrance-signin-720.jpg",
+   "title": {
+    "en": "Opening the Lamp and Checking the Switch",
+    "zh": "拆开台灯检查开关"
+   },
+   "summary": {
+    "en": "At the workbench, you and the volunteer open the lamp base and inspect the wiring; the volunteer finds the rocker switch cracked inside and arcing, and gets a multimeter to test the cord.",
+    "zh": "你和志愿者打开台灯底座，发现摇臂开关内部开裂并打火，电线本身正常，准备用万用表测试。"
+   },
+   "place": {
+    "en": "Fernhollow Repair Cafe",
+    "zh": "蕨谷修理咖啡馆"
+   }
+  },
+  {
+   "id": "seg_01JRQ4H8ZE0000000000000005",
+   "startMs": 1776533400000,
+   "endMs": 1776537000000,
+   "start": "10:30",
+   "end": "11:30",
+   "certainty": "confident",
+   "photo": "photos/hero-05-cafe-lamp-diagnosis-720.jpg",
+   "title": {
+    "en": "Testing the Cord and Strain Relief",
+    "zh": "万用表测试电线"
+   },
+   "summary": {
+    "en": "The volunteer teaches you to test the cord for continuity; the meter beeps and the cord is good. You discuss strain relief and the knot inside the base.",
+    "zh": "志愿者教你用万用表测试电源线，结果显示通路正常，你们讨论了底座内的应力消除结的作用。"
+   },
+   "place": {
+    "en": "Fernhollow Repair Cafe",
+    "zh": "蕨谷修理咖啡馆"
+   }
+  },
+  {
+   "id": "seg_01JRQ4H8ZE0000000000000006",
+   "startMs": 1776537000000,
+   "endMs": 1776540300000,
+   "start": "11:30",
+   "end": "12:25",
+   "certainty": "confident",
+   "photo": "photos/hero-06-cafe-continuity-test-720.jpg",
+   "title": {
+    "en": "Coffee Break and Chat",
+    "zh": "茶点区休息闲聊"
+   },
+   "summary": {
+    "en": "During a coffee break, you and the volunteer chat about the repair cafe's Saturday schedule, a spare-parts bin, and a toaster someone brought; you pause recording around midday for a break, returning at one.",
+    "zh": "在茶点区，你和志愿者聊到修理咖啡馆每周六开放、备件箱和一台烤面包机，中午前后你暂停了记录。"
+   },
+   "place": {
+    "en": "Fernhollow Repair Cafe",
+    "zh": "蕨谷修理咖啡馆"
+   }
+  },
+  {
+   "id": "seg_01JRQ4H8ZE0000000000000007",
+   "startMs": 1776542400000,
+   "endMs": 1776544800000,
+   "start": "13:00",
+   "end": "13:40",
+   "certainty": "confident",
+   "photo": "photos/hero-07-cafe-coffee-corner-720.jpg",
+   "title": {
+    "en": "Searching the Spare-Parts Bin",
+    "zh": "备件箱中找开关"
+   },
+   "summary": {
+    "en": "After the break, the volunteer searches the spare-parts bin for a matching rocker switch, but none fits the lamp's cutout.",
+    "zh": "午休后继续，志愿者在备件箱翻找船型开关，但现有的开关尺寸或端子方向都不匹配灯座开口。"
+   },
+   "place": {
+    "en": "Fernhollow Repair Cafe",
+    "zh": "蕨谷修理咖啡馆"
+   }
+  },
+  {
+   "id": "seg_01JRQ4H8ZE0000000000000008",
+   "startMs": 1776544800000,
+   "endMs": 1776546600000,
+   "start": "13:40",
+   "end": "14:10",
+   "certainty": "confident",
+   "photo": "photos/hero-08-cafe-parts-bin-720.jpg",
+   "title": {
+    "en": "Ordering a Replacement Switch",
+    "zh": "订购替换开关"
+   },
+   "summary": {
+    "en": "The volunteer decides to order a replacement switch, expected Tuesday, and will text the tracking number; you agree to leave the lamp at the cafe until then.",
+    "zh": "志愿者决定订购标准船型开关，预计周二到货，并会发物流单号给你；你同意把台灯留在咖啡馆直到那时。"
+   },
+   "place": {
+    "en": "Fernhollow Repair Cafe",
+    "zh": "蕨谷修理咖啡馆"
+   }
+  },
+  {
+   "id": "seg_01JRQ4H8ZE0000000000000009",
+   "startMs": 1776546600000,
+   "endMs": 1776550800000,
+   "start": "14:10",
+   "end": "15:20",
+   "certainty": "confident",
+   "photo": "photos/hero-09-cafe-rewiring-base-720.jpg",
+   "title": {
+    "en": "Re-Seating the Cord and Tying a Knot",
+    "zh": "整理台灯电线"
+   },
+   "summary": {
+    "en": "Quiet focused work: you re-seat the cord, tie a strain-relief knot inside the base, and tidy the wires, keeping the four base screws in a small dish.",
+    "zh": "你安静地重新装好电源线，在底座内打了应力消除结，整理了内部电线，四颗底座螺丝放在小碟里。"
+   },
+   "place": {
+    "en": "Fernhollow Repair Cafe",
+    "zh": "蕨谷修理咖啡馆"
+   }
+  },
+  {
+   "id": "seg_01JRQ4H8ZE0000000000000010",
+   "startMs": 1776550800000,
+   "endMs": 1776554400000,
+   "start": "15:20",
+   "end": "16:20",
+   "certainty": "confident",
+   "photo": "photos/hero-10-cafe-shelf-packup-720.jpg",
+   "title": {
+    "en": "Storing Screws and Shelving the Lamp",
+    "zh": "存放螺丝与台灯"
+   },
+   "summary": {
+    "en": "You put the four screws on the lid of a red toolbox for safekeeping; the volunteer confirms the toolbox stays on the bench. The lamp goes on the waiting-for-parts shelf with a blue tag until Tuesday, and you say goodbye.",
+    "zh": "你把四颗螺丝放在红色工具箱盖上，志愿者确认工具箱会留到周二；台灯挂上蓝标签放到待料架，你们告别。"
+   },
+   "place": {
+    "en": "Fernhollow Repair Cafe",
+    "zh": "蕨谷修理咖啡馆"
+   }
+  },
+  {
+   "id": "seg_01JRQ4H8ZE0000000000000011",
+   "startMs": 1776554400000,
+   "endMs": 1776556800000,
+   "start": "16:20",
+   "end": "17:00",
+   "certainty": "confident",
+   "photo": "photos/hero-11-library-holds-desk-720.jpg",
+   "title": {
+    "en": "Bakery Stop for Bread and Cinnamon Buns",
+    "zh": "面包店买肉桂卷"
+   },
+   "summary": {
+    "en": "Walking to the bakery in light drizzle, the cashier recommends the warm cinnamon buns. You buy a rye loaf and two cinnamon buns and lean the umbrella against the counter.",
+    "zh": "你步行到羽毛笔街面包房，收银员推荐刚出炉的肉桂卷，你买了一个黑麦面包和两个肉桂卷，伞靠在柜台边。"
+   },
+   "place": {
+    "en": "Quill Street Bakery",
+    "zh": "羽毛笔街面包房"
+   }
+  },
+  {
+   "id": "seg_01JRQ4H8ZE0000000000000012",
+   "startMs": 1776556800000,
+   "endMs": 1776562500000,
+   "start": "17:00",
+   "end": "18:35",
+   "certainty": "confident",
+   "photo": "photos/hero-12-tram-line4-evening-720.jpg",
+   "title": {
+    "en": "Library Visit and Repair Manual Hold",
+    "zh": "图书馆预约维修手册"
+   },
+   "summary": {
+    "en": "At the library holds desk, staff says the lamp repair manual will be ready Tuesday afternoon and renews your card. In the reading room, you browse a small appliance repair book.",
+    "zh": "你到飞燕草社区图书馆取预约的小家电维修手册，工作人员说周二下午可拿并帮你续借；你在阅览室翻看了一本小家电维修书。"
+   },
+   "place": {
+    "en": "Larkspur Community Library",
+    "zh": "飞燕草社区图书馆"
+   }
+  },
+  {
+   "id": "seg_01JRQ4H8ZE0000000000000013",
+   "startMs": 1776562500000,
+   "endMs": 1776564300000,
+   "start": "18:35",
+   "end": "19:05",
+   "certainty": "confident",
+   "photo": "photos/hero-13-home-kitchen-dinner-720.jpg",
+   "title": {
+    "en": "Evening Tram Home",
+    "zh": "乘电车回家"
+   },
+   "summary": {
+    "en": "You ride line 4 home in evening rain, muttering a reminder to pick up the switch at the repair cafe and the manual at the library on Tuesday afternoon.",
+    "zh": "你乘4路有轨电车回家，晚上下雨，你低声提醒自己周二下午先去修理咖啡馆拿开关，再去图书馆取手册。"
+   },
+   "place": {
+    "en": "Tram line 4",
+    "zh": "4 路有轨电车"
+   }
+  },
+  {
+   "id": "seg_01JRQ4H8ZE0000000000000014",
+   "startMs": 1776564300000,
+   "endMs": 1776570900000,
+   "start": "19:05",
+   "end": "20:55",
+   "certainty": "confident",
+   "photo": "photos/hero-14-home-desk-evening-720.jpg",
+   "title": {
+    "en": "Dinner, Voice Note, and Evening Notes",
+    "zh": "回家晚餐并记录备忘"
+   },
+   "summary": {
+    "en": "You return home, lean the wet umbrella by the door, and have soup with rye bread and a cinnamon bun. You record a voice note for Tuesday and later mumble about not seeing something by the door that morning.",
+    "zh": "你回家后把湿伞靠在门边，晚餐喝了汤配黑麦面包，吃了一个肉桂卷；录下语音备忘提醒周二取开关和手册，又在本子上列了明日清单。"
+   },
+   "place": {
+    "en": "Home",
+    "zh": "家"
+   }
+  }
+ ],
+ "summary": {
+  "en": {
+   "headline": "Repair cafe lamp fix, tram errands, bakery and library stop.",
+   "places": [
+    {
+     "text": "Morning started at home with oatmeal and notes about a lamp switch.",
+     "certainty": "confident"
+    },
+    {
+     "text": "Taken across town on tram line 4 toward Fernhollow.",
+     "certainty": "confident"
+    },
+    {
+     "text": "Spent most of the day at Fernhollow Repair Cafe working on a desk lamp.",
+     "certainty": "confident"
+    },
+    {
+     "text": "Stopped at Quill Street Bakery for a rye loaf and two cinnamon buns.",
+     "certainty": "confident"
+    },
+    {
+     "text": "Visited Larkspur Community Library for a hold and card renewal.",
+     "certainty": "confident"
+    }
+   ],
+   "activities": [
+    {
+     "text": "Had breakfast at home while reviewing a hand-drawn lamp wiring sketch.",
+     "certainty": "confident"
+    },
+    {
+     "text": "Prepared to leave with an umbrella and jacket.",
+     "certainty": "confident"
+    },
+    {
+     "text": "Rode tram line 4 toward Fernhollow.",
+     "certainty": "confident"
+    },
+    {
+     "text": "At the repair cafe, opened the desk lamp, removed four screws, tested the cord with a multimeter, and ordered a replacement switch.",
+     "certainty": "confident"
+    },
+    {
+     "text": "Left the lamp on the waiting-for-parts shelf and kept the screws on the red toolbox.",
+     "certainty": "confident"
+    },
+    {
+     "text": "Bought a rye loaf and two cinnamon buns at Quill Street Bakery.",
+     "certainty": "confident"
+    },
+    {
+     "text": "At the library, learned the reserved lamp repair manual would be ready Tuesday and the library card was renewed.",
+     "certainty": "confident"
+    }
+   ],
+   "people": [
+    {
+     "text": "The repair cafe volunteer helped diagnose the cracked switch, tested the cord, and said the replacement switch would arrive Tuesday.",
+     "certainty": "confident"
+    },
+    {
+     "text": "The bakery staff member offered warm cinnamon buns and repeated the order.",
+     "certainty": "confident"
+    },
+    {
+     "text": "The library staff member said the reserved manual would be ready Tuesday afternoon and renewed the library card.",
+     "certainty": "confident"
+    }
+   ],
+   "quotes": [
+    {
+     "text": "the base has four screws, and the switch sits right behind the rocker",
+     "certainty": "confident"
+    },
+    {
+     "text": "It's the switch, mostly. It feels loose and sometimes the light cuts out.",
+     "certainty": "confident"
+    },
+    {
+     "text": "I'm pausing the recording now for a little while, I'll be back at one.",
+     "certainty": "confident"
+    },
+    {
+     "text": "I'll take a rye loaf and two cinnamon buns, please.",
+     "certainty": "confident"
+    },
+    {
+     "text": "That lamp repair manual you reserved will be ready Tuesday afternoon.",
+     "certainty": "confident"
+    }
+   ],
+   "uncertain": [
+    {
+     "text": "There may have been uncertainty at home about whether a small metallic door-hook object was in a pocket or still on the hook.",
+     "certainty": "uncertain"
+    },
+    {
+     "text": "During the tram ride, there may have been some hesitation about the stop, with fragmentary mentions of 'Fern-something' and 'maybe two more stops'.",
+     "certainty": "uncertain"
+    },
+    {
+     "text": "Some low-confidence detections of screws on or near the red toolbox were recorded.",
+     "certainty": "uncertain"
+    }
+   ]
+  },
+  "zh": {
+   "headline": "修理咖啡馆修台灯，电车出行，去面包房和图书馆",
+   "places": [
+    {
+     "text": "早晨在家吃燕麦粥，看台灯接线草图。",
+     "certainty": "confident"
+    },
+    {
+     "text": "坐4路电车穿过城区，往蕨谷方向去。",
+     "certainty": "confident"
+    },
+    {
+     "text": "白天大部分时间在蕨谷修理咖啡馆修台灯。",
+     "certainty": "confident"
+    },
+    {
+     "text": "在羽毛笔街面包房买了一个黑麦面包和两个肉桂卷。",
+     "certainty": "confident"
+    },
+    {
+     "text": "去了飞燕草社区图书馆，取预约书并续期借书卡。",
+     "certainty": "confident"
+    }
+   ],
+   "activities": [
+    {
+     "text": "在家吃早餐，同时看手绘的台灯接线草图。",
+     "certainty": "confident"
+    },
+    {
+     "text": "带上伞和外套准备出门。",
+     "certainty": "confident"
+    },
+    {
+     "text": "坐4路电车往蕨谷方向。",
+     "certainty": "confident"
+    },
+    {
+     "text": "在修理咖啡馆打开台灯底座，取下四颗螺丝，用万用表测电源线，并订了替换开关。",
+     "certainty": "confident"
+    },
+    {
+     "text": "把台灯放到写着“waiting for parts”的架子上，把螺丝留在红色工具箱上。",
+     "certainty": "confident"
+    },
+    {
+     "text": "在羽毛笔街面包房买了黑麦面包和两个肉桂卷。",
+     "certainty": "confident"
+    },
+    {
+     "text": "在图书馆得知预约的台灯维修手册周二下午可取，借书卡续期一年。",
+     "certainty": "confident"
+    }
+   ],
+   "people": [
+    {
+     "text": "修理咖啡馆的志愿者帮忙判断开关开裂，测了电源线，说替换开关周二到。",
+     "certainty": "confident"
+    },
+    {
+     "text": "面包房店员说肉桂卷刚出炉，还重复了点单内容。",
+     "certainty": "confident"
+    },
+    {
+     "text": "图书馆工作人员说预约的维修手册周二下午可取，并为借书卡续期一年。",
+     "certainty": "confident"
+    }
+   ],
+   "quotes": [
+    {
+     "text": "底座有四颗螺丝，开关就在拨片后面",
+     "certainty": "confident"
+    },
+    {
+     "text": "主要是开关的问题，感觉松了，有时灯会突然灭掉",
+     "certainty": "confident"
+    },
+    {
+     "text": "我现在暂停一下录制，休息一会儿，一点回来",
+     "certainty": "confident"
+    },
+    {
+     "text": "我要一个黑麦面包和两个肉桂卷，谢谢",
+     "certainty": "confident"
+    },
+    {
+     "text": "您预约的那本台灯维修手册周二下午能准备好",
+     "certainty": "confident"
+    }
+   ],
+   "uncertain": [
+    {
+     "text": "出门前似乎对门后那个小金属挂钩件不太确定，不清楚是放进了口袋还是仍挂在钩上。",
+     "certainty": "uncertain"
+    },
+    {
+     "text": "坐电车时对下车地点有些犹豫，语音里只有“……费恩什么……是这站下吗……”和“……可能还有两站……”。",
+     "certainty": "uncertain"
+    },
+    {
+     "text": "有几帧低置信度画面显示螺丝在红色工具箱上或附近，具体位置需谨慎确认。",
+     "certainty": "uncertain"
+    }
+   ]
+  }
+ },
+ "answers": {
+  "en": [
+   {
+    "id": "qa_01",
+    "q": "What did I eat for breakfast?",
+    "a": "You ate oatmeal with banana slices for breakfast.",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "Frame · Home",
+      "time": "07:00",
+      "certainty": "confident",
+      "seg": 0
+     },
+     {
+      "label": "Segment",
+      "time": "07:00",
+      "certainty": "confident",
+      "seg": 0
+     },
+     {
+      "label": "Frame · Home",
+      "time": "07:10",
+      "certainty": "confident",
+      "seg": 0
+     }
+    ]
+   },
+   {
+    "id": "qa_02",
+    "q": "Which tram line did I take this morning?",
+    "a": "You took tram line 4 toward Fernhollow this morning.",
+    "status": "answered",
+    "uncertain": true,
+    "evidence": [
+     {
+      "label": "Segment",
+      "time": "08:15",
+      "certainty": "uncertain",
+      "seg": 0
+     },
+     {
+      "label": "Frame · Tram line 4",
+      "time": "08:25",
+      "certainty": "confident",
+      "seg": 1
+     },
+     {
+      "label": "Frame · Tram line 4",
+      "time": "08:30",
+      "certainty": "confident",
+      "seg": 1
+     }
+    ]
+   },
+   {
+    "id": "qa_03",
+    "q": "Where did I put the screws?",
+    "a": "You put the four screws on the lid of a red toolbox for safekeeping.",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "Segment",
+      "time": "15:20",
+      "certainty": "confident",
+      "seg": 8
+     },
+     {
+      "label": "Frame · Fernhollow Repair Cafe",
+      "time": "15:39",
+      "certainty": "confident",
+      "seg": 9
+     },
+     {
+      "label": "You · Speech",
+      "time": "15:39",
+      "certainty": "confident",
+      "seg": 9
+     }
+    ]
+   },
+   {
+    "id": "qa_04",
+    "q": "When will the replacement switch arrive?",
+    "a": "Your replacement switch should arrive Tuesday.",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "Segment",
+      "time": "13:40",
+      "certainty": "confident",
+      "seg": 6
+     },
+     {
+      "label": "Speaker B · Speech",
+      "time": "13:52",
+      "certainty": "confident",
+      "seg": 7
+     }
+    ]
+   },
+   {
+    "id": "qa_05",
+    "q": "What was wrong with my desk lamp?",
+    "a": "Your desk lamp was flickering on and off, and its rocker switch was cracked where it pivots.",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "Segment",
+      "time": "08:50",
+      "certainty": "confident",
+      "seg": 1
+     },
+     {
+      "label": "You · Speech",
+      "time": "08:57",
+      "certainty": "confident",
+      "seg": 2
+     },
+     {
+      "label": "You · Speech",
+      "time": "08:59",
+      "certainty": "confident",
+      "seg": 2
+     }
+    ]
+   },
+   {
+    "id": "qa_06",
+    "q": "How will I get the tracking number for the switch?",
+    "a": "The volunteer will text you the tracking number for the replacement switch.",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "Speaker B · Speech",
+      "time": "13:52",
+      "certainty": "confident",
+      "seg": 7
+     },
+     {
+      "label": "Speaker B · Speech",
+      "time": "13:53",
+      "certainty": "confident",
+      "seg": 7
+     }
+    ]
+   },
+   {
+    "id": "qa_07",
+    "q": "Where is my desk lamp now?",
+    "a": "Your desk lamp is now at home. It was earlier at Fernhollow Repair Cafe on the shelf labeled 'waiting for parts'.",
+    "status": "uncertain",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "Frame · Fernhollow Repair Cafe",
+      "time": "16:05",
+      "certainty": "confident",
+      "seg": 9
+     },
+     {
+      "label": "Frame · Home",
+      "time": "20:25",
+      "certainty": "confident",
+      "seg": 13
+     }
+    ]
+   },
+   {
+    "id": "qa_08",
+    "q": "What did I buy at the bakery?",
+    "a": "You bought a rye loaf and two cinnamon buns at the bakery.",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "Segment",
+      "time": "16:20",
+      "certainty": "confident",
+      "seg": 9
+     }
+    ]
+   },
+   {
+    "id": "qa_09",
+    "q": "When can I pick up the repair manual at the library?",
+    "a": "You can pick up the repair manual at the library on Tuesday afternoon.",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "Speaker D · Speech",
+      "time": "17:20",
+      "certainty": "confident",
+      "seg": 11
+     },
+     {
+      "label": "Speaker D · Speech",
+      "time": "17:30",
+      "certainty": "confident",
+      "seg": 11
+     },
+     {
+      "label": "Segment",
+      "time": "18:35",
+      "certainty": "confident",
+      "seg": 11
+     }
+    ]
+   },
+   {
+    "id": "qa_10",
+    "q": "What tool did we use to test the lamp cord?",
+    "a": "You used a multimeter to test the lamp cord.",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "Segment",
+      "time": "09:20",
+      "certainty": "confident",
+      "seg": 2
+     },
+     {
+      "label": "Speaker B · Speech",
+      "time": "09:48",
+      "certainty": "confident",
+      "seg": 3
+     },
+     {
+      "label": "Frame · Fernhollow Repair Cafe",
+      "time": "09:55",
+      "certainty": "confident",
+      "seg": 3
+     }
+    ]
+   },
+   {
+    "id": "qa_11",
+    "q": "Where was my umbrella last seen?",
+    "a": "Your umbrella was last seen at home, leaning against the wall beside the front door with its tip leaving water on the floor.",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "Frame · Home",
+      "time": "19:10",
+      "certainty": "confident",
+      "seg": 13
+     },
+     {
+      "label": "umbrella · 0.63",
+      "time": "19:10",
+      "certainty": "confident",
+      "seg": 13
+     }
+    ]
+   },
+   {
+    "id": "qa_12",
+    "q": "What did the volunteer say the knot inside the lamp base is for?",
+    "a": "The volunteer's discussion indicated the knot inside the lamp base is for strain relief; it is a strain-relief knot.",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "Segment",
+      "time": "10:30",
+      "certainty": "confident",
+      "seg": 3
+     },
+     {
+      "label": "Segment",
+      "time": "14:10",
+      "certainty": "confident",
+      "seg": 7
+     }
+    ]
+   },
+   {
+    "id": "qa_13",
+    "q": "What did I note to do on Tuesday?",
+    "a": "You noted to pick up the switch at the repair cafe, then the manual at the library on Tuesday.",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "You · Speech",
+      "time": "19:32",
+      "certainty": "confident",
+      "seg": 13
+     }
+    ]
+   },
+   {
+    "id": "qa_14",
+    "q": "What was the name on the bakery sign?",
+    "a": "The name on the bakery sign was \"Quill Street Bakery\".",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "Frame · Quill Street Bakery",
+      "time": "16:35",
+      "certainty": "confident",
+      "seg": 10
+     }
+    ]
+   },
+   {
+    "id": "qa_15",
+    "q": "What did the bakery cashier recommend?",
+    "a": "The bakery cashier recommended the warm cinnamon buns.",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "Segment",
+      "time": "16:20",
+      "certainty": "confident",
+      "seg": 9
+     }
+    ]
+   },
+   {
+    "id": "qa_16",
+    "q": "How many screws held the lamp base?",
+    "a": "Four screws held the lamp base.",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "You · Speech",
+      "time": "09:25",
+      "certainty": "confident",
+      "seg": 3
+     }
+    ]
+   },
+   {
+    "id": "qa_17",
+    "q": "Where are my keys?",
+    "a": "Earlier, you said, \"Alright, they're in my pocket, locking up now.\" But a hook by the door only showed an indistinct metallic object, so that wasn't confirmed. By evening you were unsure: you said you had patted your pockets, and you planned to \"check the door hook in the morning.\" A late detection labeled \"keys\" near the desk describes only a pencil and lamp, so the keys' location remains unclear.",
+    "status": "uncertain",
+    "uncertain": true,
+    "evidence": [
+     {
+      "label": "Frame · Home",
+      "time": "08:05",
+      "certainty": "confident",
+      "seg": 0
+     },
+     {
+      "label": "You · Speech",
+      "time": "08:08",
+      "certainty": "confident",
+      "seg": 0
+     },
+     {
+      "label": "You · Speech",
+      "time": "20:33",
+      "certainty": "confident",
+      "seg": 13
+     }
+    ]
+   },
+   {
+    "id": "qa_18",
+    "q": "What was I muttering to myself on the tram this morning?",
+    "a": "You were muttering about getting off at Fernhollow.",
+    "status": "uncertain",
+    "uncertain": true,
+    "evidence": [
+     {
+      "label": "Segment",
+      "time": "08:15",
+      "certainty": "uncertain",
+      "seg": 0
+     }
+    ]
+   },
+   {
+    "id": "qa_19",
+    "q": "What did the bakery cashier say about my passport?",
+    "a": "I couldn't find this in the records for 2026-04-18.",
+    "status": "not_found",
+    "uncertain": false,
+    "evidence": []
+   },
+   {
+    "id": "qa_20",
+    "q": "Did anyone talk about fixing a bicycle today?",
+    "a": "I couldn't find this in the records for 2026-04-18.",
+    "status": "not_found",
+    "uncertain": false,
+    "evidence": []
+   },
+   {
+    "id": "qa_21",
+    "q": "Who did I have lunch with?",
+    "a": "I couldn't find this in the records for 2026-04-18.",
+    "status": "not_found",
+    "uncertain": false,
+    "evidence": []
+   },
+   {
+    "id": "qa_22",
+    "q": "What was happening around 12:45?",
+    "a": "I couldn't find this in the records for 2026-04-18.",
+    "status": "not_found",
+    "uncertain": false,
+    "evidence": []
+   },
+   {
+    "id": "qa_23",
+    "q": "What was I doing at 10 pm?",
+    "a": "I couldn't find this in the records for 2026-04-18.",
+    "status": "not_found",
+    "uncertain": false,
+    "evidence": []
+   },
+   {
+    "id": "qa_24",
+    "q": "What did she say would be ready on Tuesday?",
+    "a": "It's unclear which person 'she' refers to. One speaker said \"The replacement switch should arrive Tuesday\" (repair cafe), while another said \"That lamp repair manual you reserved will be ready Tuesday afternoon\" (library).",
+    "status": "uncertain",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "Speaker B · Speech",
+      "time": "13:52",
+      "certainty": "confident",
+      "seg": 7
+     },
+     {
+      "label": "Speaker D · Speech",
+      "time": "17:20",
+      "certainty": "confident",
+      "seg": 11
+     }
+    ]
+   },
+   {
+    "id": "yq_01",
+    "q": "When did I last see Mira?",
+    "a": "I couldn't find this in the records for 2025-11-19 – 2026-11-18.",
+    "status": "not_found",
+    "uncertain": false,
+    "evidence": []
+   },
+   {
+    "id": "yq_02",
+    "q": "Where did I leave my reading glasses?",
+    "a": "The last clear record places the tortoiseshell reading glasses behind the jar of screws on the shelf above the bench at home. A later detection is unclear: it only possibly shows the glasses, partly hidden, on Tram line 4.",
+    "status": "uncertain",
+    "uncertain": true,
+    "evidence": [
+     {
+      "label": "Reading glasses · 0.68",
+      "time": "16:40",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "Reading glasses · 0.41",
+      "time": "07:50",
+      "certainty": "uncertain",
+      "seg": null
+     }
+    ]
+   },
+   {
+    "id": "yq_03",
+    "q": "What did the pharmacist say about my refill?",
+    "a": "I couldn't find this in the records for 2025-11-19 – 2026-11-18.",
+    "status": "not_found",
+    "uncertain": false,
+    "evidence": []
+   },
+   {
+    "id": "yq_04",
+    "q": "Where are my keys?",
+    "a": "The most recent record is only an unclear detection: it may show the keys being dropped into the canvas tote with the library card, but the keys are described as partly hidden, so it does not settle where they are. Shortly before that, they were recorded in your pocket while riding the tram.",
+    "status": "uncertain",
+    "uncertain": true,
+    "evidence": [
+     {
+      "label": "Keys · 0.67",
+      "time": "19:30",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "Keys · 0.38",
+      "time": "08:20",
+      "certainty": "uncertain",
+      "seg": null
+     }
+    ]
+   },
+   {
+    "id": "yq_05",
+    "q": "When did the replacement switch for the desk lamp arrive?",
+    "a": "Your replacement switch arrived in the post on 21 April 2026, delivered in a small padded envelope.",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "Day",
+      "time": "07:20",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "Highlight · Home",
+      "time": "08:15",
+      "certainty": "confident",
+      "seg": null
+     }
+    ]
+   },
+   {
+    "id": "yq_06",
+    "q": "What did I see on the Saltmere trip?",
+    "a": "On the Saltmere trip you saw gulls over the platform and could already hear the water. On the train you sketched the coastline out the window and wrote down three things you wanted to see. Leaving Saltmere, you watched the sea slide away.",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "Highlight · Saltmere (trip)",
+      "time": "16:45",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "Highlight · Saltmere (trip)",
+      "time": "09:20",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "Highlight · Saltmere (trip)",
+      "time": "09:10",
+      "certainty": "confident",
+      "seg": null
+     }
+    ]
+   },
+   {
+    "id": "yq_07",
+    "q": "When was the repair cafe's anniversary party?",
+    "a": "The latest record places the repair cafe's fifth-anniversary party on October 24. An earlier record had the anniversary party on October 10.",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "Day",
+      "time": "08:00",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "Day",
+      "time": "08:50",
+      "certainty": "confident",
+      "seg": null
+     }
+    ]
+   },
+   {
+    "id": "yq_08",
+    "q": "When did I last go swimming?",
+    "a": "Your last recorded swim was a morning pool session on August 30, 2026, before a long Sunday dinner later that day.",
+    "status": "uncertain",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "Day",
+      "time": "07:50",
+      "certainty": "confident",
+      "seg": null
+     }
+    ]
+   },
+   {
+    "id": "yq_09",
+    "q": "Where did I find the tape measure in August?",
+    "a": "You found the yellow tape measure under a rag in the tote; later in August, both yellow tape measures were in the drawer.",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "Highlight · Home",
+      "time": "11:00",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "Highlight · Home",
+      "time": "19:30",
+      "certainty": "confident",
+      "seg": null
+     }
+    ]
+   },
+   {
+    "id": "yq_10",
+    "q": "Who was at Thanksgiving?",
+    "a": "Thanksgiving was at your sister's house, with a toast at the family's request, but the record doesn't list who attended. A radio for Pip is mentioned, but it's unclear whether Pip was present.",
+    "status": "uncertain",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "Day",
+      "time": "08:30",
+      "certainty": "confident",
+      "seg": null
+     }
+    ]
+   },
+   {
+    "id": "yq_11",
+    "q": "What did June and I make in the bookbinding class?",
+    "a": "I couldn't find this in the records for 2025-11-19 – 2026-11-18.",
+    "status": "not_found",
+    "uncertain": false,
+    "evidence": []
+   },
+   {
+    "id": "yq_12",
+    "q": "When did I buy the multimeter?",
+    "a": "The latest record of you buying a multimeter is 17 January 2026, at the corner hardware store, where you compared two meters and took the one with the clearer dial and simpler probes. An earlier record on 2 January 2026 also has you buying a multimeter and a reel of solder on the way home, so two purchases are recorded and the later one is the most recent.",
+    "status": "uncertain",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "Day",
+      "time": "08:05",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "Highlight · Corner hardware store",
+      "time": "11:50",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "Day",
+      "time": "08:30",
+      "certainty": "confident",
+      "seg": null
+     }
+    ]
+   },
+   {
+    "id": "yq_13",
+    "q": "What did I do on June 14?",
+    "a": "I couldn't find this in the records for 2026-06-14.",
+    "status": "not_found",
+    "uncertain": false,
+    "evidence": []
+   },
+   {
+    "id": "yq_14",
+    "q": "What did I do on May 29?",
+    "a": "I couldn't find this in the records for 2026-05-29.",
+    "status": "not_found",
+    "uncertain": false,
+    "evidence": []
+   },
+   {
+    "id": "yq_15",
+    "q": "Which costumes did I fix for the Larsen kids?",
+    "a": "You repaired costumes for the kids, but the records do not name which costumes. One costume involved a robot arm and a loose wrist strap you glued.",
+    "status": "uncertain",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "Highlight · Home",
+      "time": "11:30",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "Highlight · Home",
+      "time": "16:40",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "Day",
+      "time": "08:50",
+      "certainty": "confident",
+      "seg": null
+     }
+    ]
+   },
+   {
+    "id": "yq_16",
+    "q": "What's the name of the cashier at the bakery?",
+    "a": "I couldn't find this in the records for 2025-11-19 – 2026-11-18.",
+    "status": "not_found",
+    "uncertain": false,
+    "evidence": []
+   },
+   {
+    "id": "yq_17",
+    "q": "What did Pip and I fix on his scooter?",
+    "a": "You and Pip fixed the scooter's soft wheel: the bearing was cleaned, the axle greased, and the wheel spun free; Pip did the last screw while you held the frame steady.",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "Day",
+      "time": "09:20",
+      "certainty": "confident",
+      "seg": null
+     }
+    ]
+   },
+   {
+    "id": "yq_18",
+    "q": "When did I make dumplings with the neighbors?",
+    "a": "The records show dumpling making for a neighborhood dinner on February 13, but the folding session that day names family, not neighbors; another folding session on February 17 includes other people but does not label them as neighbors.",
+    "status": "uncertain",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "Day",
+      "time": "08:30",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "Highlight · Home",
+      "time": "15:20",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "Highlight · Home",
+      "time": "18:30",
+      "certainty": "confident",
+      "seg": null
+     }
+    ]
+   },
+   {
+    "id": "yq_19",
+    "q": "What did the swim coach say about my stroke?",
+    "a": "The coach had you breathe every third stroke instead of every second, and it got easier. You were told to slow your kick in the last length, and the coach corrected your catch so you practiced a slower catch while being watched from the lane end. Most recently the coach set a slow kick drill, with you counting tiles between breaths.",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "Highlight · Community pool",
+      "time": "08:00",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "Highlight · Community pool",
+      "time": "08:15",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "Highlight · Community pool",
+      "time": "08:15",
+      "certainty": "confident",
+      "seg": null
+     }
+    ]
+   },
+   {
+    "id": "yq_20",
+    "q": "Did I finish exporting the year book?",
+    "a": "You exported a first draft of the year book earlier on. The full export later finished, with a bound copy ordered for the shelf above the bench.",
+    "status": "uncertain",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "Day",
+      "time": "07:20",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "Highlight · Home",
+      "time": "08:00",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "Day",
+      "time": "07:00",
+      "certainty": "confident",
+      "seg": null
+     }
+    ]
+   },
+   {
+    "id": "yq_21",
+    "q": "Where did I last see the red toolbox?",
+    "a": "The latest record of the red toolbox puts it in your home workshop, where you tested a radio's power cord and sanded cabinet doors. It had moved there from the Fernhollow Repair Cafe bench and, before that, the tram.",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "Highlight · Fernhollow Repair Cafe",
+      "time": "09:10",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "Highlight · Tram line 4",
+      "time": "08:05",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "Red toolbox · 0.53",
+      "time": "13:20",
+      "certainty": "confident",
+      "seg": null
+     }
+    ]
+   },
+   {
+    "id": "yq_22",
+    "q": "What did I do on New Year's Eve?",
+    "a": "You spent New Year's Eve at Sis's house, fixing a wobbly chair leg while Pip held the lamp. Dov cooked too much again, and the year ended with a countdown at the kitchen table. The tree lights stayed on through the countdown and everyone clinked glasses at the table.",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "Day",
+      "time": "15:00",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "Highlight · Sis's house",
+      "time": "23:55",
+      "certainty": "confident",
+      "seg": null
+     }
+    ]
+   }
+  ],
+  "zh": [
+   {
+    "id": "qa_01",
+    "q": "我今天早餐吃了什么？",
+    "a": "你早餐吃了加了香蕉片的燕麦粥，并配了茶。",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "画面 · 家",
+      "time": "07:00",
+      "certainty": "confident",
+      "seg": 0
+     },
+     {
+      "label": "片段",
+      "time": "07:00",
+      "certainty": "confident",
+      "seg": 0
+     }
+    ]
+   },
+   {
+    "id": "qa_02",
+    "q": "我今天早上坐的是几路电车？",
+    "a": "你早上坐的是4路有轨电车。",
+    "status": "answered",
+    "uncertain": true,
+    "evidence": [
+     {
+      "label": "片段",
+      "time": "08:15",
+      "certainty": "uncertain",
+      "seg": 0
+     },
+     {
+      "label": "画面 · 4 路有轨电车",
+      "time": "08:25",
+      "certainty": "confident",
+      "seg": 1
+     }
+    ]
+   },
+   {
+    "id": "qa_03",
+    "q": "我螺丝放哪了？",
+    "a": "你的四颗螺丝放在红色工具箱盖上。你说先把螺丝放红色工具箱上，志愿者确认工具箱会留到周二。",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "片段",
+      "time": "15:20",
+      "certainty": "confident",
+      "seg": 8
+     },
+     {
+      "label": "画面 · 蕨谷修理咖啡馆",
+      "time": "15:39",
+      "certainty": "confident",
+      "seg": 9
+     },
+     {
+      "label": "你 · 语音",
+      "time": "15:39",
+      "certainty": "confident",
+      "seg": 9
+     }
+    ]
+   },
+   {
+    "id": "qa_04",
+    "q": "替换开关什么时候到？",
+    "a": "替换开关周二到。",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "片段",
+      "time": "13:40",
+      "certainty": "confident",
+      "seg": 6
+     },
+     {
+      "label": "说话人 B · 语音",
+      "time": "13:52",
+      "certainty": "confident",
+      "seg": 7
+     }
+    ]
+   },
+   {
+    "id": "qa_05",
+    "q": "我的台灯怎么了？",
+    "a": "你的台灯会闪烁，摇臂开关在转轴处开裂。拆开检查后发现开关内部开裂并打火，电线本身正常。目前台灯因等待配件放在修理咖啡馆的架子上。",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "你 · 语音",
+      "time": "08:57",
+      "certainty": "confident",
+      "seg": 2
+     },
+     {
+      "label": "片段",
+      "time": "09:20",
+      "certainty": "confident",
+      "seg": 2
+     },
+     {
+      "label": "desk lamp · 0.73",
+      "time": "16:05",
+      "certainty": "confident",
+      "seg": 9
+     }
+    ]
+   },
+   {
+    "id": "qa_06",
+    "q": "我怎么拿到开关的快递单号？",
+    "a": "你会通过短信收到开关的物流单号，志愿者说会发短信给你，你也已表示会留意。",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "说话人 B · 语音",
+      "time": "13:52",
+      "certainty": "confident",
+      "seg": 7
+     },
+     {
+      "label": "你 · 语音",
+      "time": "16:06",
+      "certainty": "confident",
+      "seg": 9
+     }
+    ]
+   },
+   {
+    "id": "qa_07",
+    "q": "我的台灯现在在哪儿？",
+    "a": "你的台灯现在在蕨谷修理咖啡馆，贴着“waiting for parts”的架子上。",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "desk lamp · 0.73",
+      "time": "16:05",
+      "certainty": "confident",
+      "seg": 9
+     }
+    ]
+   },
+   {
+    "id": "qa_08",
+    "q": "我在面包店买了什么？",
+    "a": "你在面包店买了一个黑麦面包和两个肉桂卷。",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "片段",
+      "time": "16:20",
+      "certainty": "confident",
+      "seg": 9
+     },
+     {
+      "label": "说话人 C · 语音",
+      "time": "16:41",
+      "certainty": "confident",
+      "seg": 10
+     }
+    ]
+   },
+   {
+    "id": "qa_09",
+    "q": "我什么时候能去图书馆取维修手册？",
+    "a": "你可以在周二下午去图书馆取维修手册。",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "说话人 D · 语音",
+      "time": "17:20",
+      "certainty": "confident",
+      "seg": 11
+     },
+     {
+      "label": "片段",
+      "time": "18:35",
+      "certainty": "confident",
+      "seg": 11
+     },
+     {
+      "label": "你 · 语音",
+      "time": "18:45",
+      "certainty": "confident",
+      "seg": 12
+     }
+    ]
+   },
+   {
+    "id": "qa_10",
+    "q": "我们用哪个工具测的台灯线？",
+    "a": "你用万用表测了台灯线。",
+    "status": "uncertain",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "片段",
+      "time": "10:30",
+      "certainty": "confident",
+      "seg": 3
+     },
+     {
+      "label": "画面 · 蕨谷修理咖啡馆",
+      "time": "10:35",
+      "certainty": "confident",
+      "seg": 4
+     }
+    ]
+   },
+   {
+    "id": "qa_11",
+    "q": "我的伞最后是在哪儿看到的？",
+    "a": "你的伞最后是在家前门旁看到的，靠着一把湿伞，伞尖在地板上留下水迹。",
+    "status": "uncertain",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "画面 · 家",
+      "time": "19:10",
+      "certainty": "confident",
+      "seg": 13
+     },
+     {
+      "label": "umbrella · 0.63",
+      "time": "19:10",
+      "certainty": "confident",
+      "seg": 13
+     }
+    ]
+   },
+   {
+    "id": "qa_12",
+    "q": "志愿者说台灯底座里的结是干什么用的？",
+    "a": "记录里只提到你们讨论了底座内的“应力消除结”的作用，但没有记录志愿者具体说明这个结是干什么用的。",
+    "status": "uncertain",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "片段",
+      "time": "10:30",
+      "certainty": "confident",
+      "seg": 3
+     }
+    ]
+   },
+   {
+    "id": "qa_13",
+    "q": "我记着周二要做什么？",
+    "a": "你记着周二先去修理咖啡馆取开关，再去图书馆取手册。",
+    "status": "uncertain",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "片段",
+      "time": "19:05",
+      "certainty": "confident",
+      "seg": 12
+     },
+     {
+      "label": "你 · 语音",
+      "time": "19:32",
+      "certainty": "confident",
+      "seg": 13
+     }
+    ]
+   },
+   {
+    "id": "qa_14",
+    "q": "面包店招牌上写的什么名字？",
+    "a": "面包店招牌上写的是“Quill Street Bakery”。",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "画面 · 羽毛笔街面包房",
+      "time": "16:35",
+      "certainty": "confident",
+      "seg": 10
+     }
+    ]
+   },
+   {
+    "id": "qa_15",
+    "q": "面包店收银员推荐了什么？",
+    "a": "你在羽毛笔街面包房时，收银员推荐了刚出炉的肉桂卷。",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "片段",
+      "time": "16:20",
+      "certainty": "confident",
+      "seg": 9
+     }
+    ]
+   },
+   {
+    "id": "qa_16",
+    "q": "台灯底座有几颗螺丝固定？",
+    "a": "台灯底座有四颗螺丝固定；后来修理时四颗螺丝被拆下，底座开着。",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "你 · 语音",
+      "time": "07:05",
+      "certainty": "confident",
+      "seg": 0
+     },
+     {
+      "label": "画面 · 蕨谷修理咖啡馆",
+      "time": "15:41",
+      "certainty": "confident",
+      "seg": 9
+     }
+    ]
+   },
+   {
+    "id": "qa_17",
+    "q": "我的钥匙在哪儿？",
+    "a": "你的钥匙在兜里。",
+    "status": "uncertain",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "你 · 语音",
+      "time": "08:08",
+      "certainty": "confident",
+      "seg": 0
+     }
+    ]
+   },
+   {
+    "id": "qa_18",
+    "q": "我今天早上在电车上嘟囔了什么？",
+    "a": "你早上在电车上似乎含糊地嘟囔了确认下车站点，但录音嘈杂，具体内容不清楚。",
+    "status": "uncertain",
+    "uncertain": true,
+    "evidence": [
+     {
+      "label": "片段",
+      "time": "08:15",
+      "certainty": "uncertain",
+      "seg": 0
+     }
+    ]
+   },
+   {
+    "id": "qa_19",
+    "q": "面包店收银员提到我护照什么了？",
+    "a": "在 2026-04-18 的记录里没有找到相关内容。",
+    "status": "not_found",
+    "uncertain": false,
+    "evidence": []
+   },
+   {
+    "id": "qa_20",
+    "q": "今天有人说过修自行车吗？",
+    "a": "在 2026-04-18 的记录里没有找到相关内容。",
+    "status": "not_found",
+    "uncertain": false,
+    "evidence": []
+   },
+   {
+    "id": "qa_21",
+    "q": "我中午和谁一起吃的饭？",
+    "a": "在 2026-04-18 的记录里没有找到相关内容。",
+    "status": "not_found",
+    "uncertain": false,
+    "evidence": []
+   },
+   {
+    "id": "qa_22",
+    "q": "12点45左右发生了什么？",
+    "a": "在 2026-04-18 的记录里没有找到相关内容。",
+    "status": "not_found",
+    "uncertain": false,
+    "evidence": []
+   },
+   {
+    "id": "qa_23",
+    "q": "我晚上10点在做什么？",
+    "a": "在 2026-04-18 的记录里没有找到相关内容。",
+    "status": "not_found",
+    "uncertain": false,
+    "evidence": []
+   },
+   {
+    "id": "qa_24",
+    "q": "她说的周二会准备好的是什么？",
+    "a": "说话人 B 提到替换开关周二到；说话人 D 提到台灯维修手册周二下午能准备好。证据未标明说话人性别，无法判断“她”具体指谁，因此无法确定答案。",
+    "status": "uncertain",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "说话人 B · 语音",
+      "time": "13:52",
+      "certainty": "confident",
+      "seg": 7
+     },
+     {
+      "label": "说话人 D · 语音",
+      "time": "17:20",
+      "certainty": "confident",
+      "seg": 11
+     }
+    ]
+   },
+   {
+    "id": "yq_01",
+    "q": "我最后一次见到米拉是什么时候？",
+    "a": "在 2025-11-19 至 2026-11-18 的记录里没有找到相关内容。",
+    "status": "not_found",
+    "uncertain": false,
+    "evidence": []
+   },
+   {
+    "id": "yq_02",
+    "q": "我的老花镜放哪儿了？",
+    "a": "较近一次明确记录显示，老花镜在工作台上方架子上、螺丝罐后面。但最新画面不清晰，只说可能在4路有轨电车上，无法确认现在放哪儿。",
+    "status": "uncertain",
+    "uncertain": true,
+    "evidence": [
+     {
+      "label": "老花镜 · 0.68",
+      "time": "16:40",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "老花镜 · 0.41",
+      "time": "07:50",
+      "certainty": "uncertain",
+      "seg": null
+     }
+    ]
+   },
+   {
+    "id": "yq_03",
+    "q": "药剂师说我续药的事怎么说的？",
+    "a": "在 2025-11-19 至 2026-11-18 的记录里没有找到相关内容。",
+    "status": "not_found",
+    "uncertain": false,
+    "evidence": []
+   },
+   {
+    "id": "yq_04",
+    "q": "我钥匙在哪儿？",
+    "a": "最新记录里，你把钥匙丢进帆布袋后出门，但画面中钥匙只是可能被发现且被部分遮挡，无法确认现在具体在哪。",
+    "status": "uncertain",
+    "uncertain": true,
+    "evidence": [
+     {
+      "label": "钥匙 · 0.38",
+      "time": "08:20",
+      "certainty": "uncertain",
+      "seg": null
+     }
+    ]
+   },
+   {
+    "id": "yq_05",
+    "q": "台灯的替换开关是哪天到的？",
+    "a": "替换开关是4月21日到的，随邮件装在气泡信封里。",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "当天",
+      "time": "07:20",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "精选 · 家",
+      "time": "08:15",
+      "certainty": "confident",
+      "seg": null
+     }
+    ]
+   },
+   {
+    "id": "yq_06",
+    "q": "去盐湖镇那趟我都看了些什么？",
+    "a": "记录里有几次去盐湖镇：到站时看见海鸥在站台上空打转，也能听见水声。有一次退潮时你在潮池边看东西，中午去了鱼市。夏末在海边，你看水凉沙暖，也看风筝怎么也飞不起来，后来有人找对了角度。",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "精选 · 盐湖镇（旅行）",
+      "time": "16:45",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "当天",
+      "time": "07:30",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "当天",
+      "time": "08:30",
+      "certainty": "confident",
+      "seg": null
+     }
+    ]
+   },
+   {
+    "id": "yq_07",
+    "q": "修理咖啡馆的周年派对是哪天？",
+    "a": "按最新记录，五周年派对在10月24日，当天有蛋糕、收音机演示，工作台都满了。师傅也在当天作了简短周年致辞。",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "当天",
+      "time": "08:50",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "精选 · 蕨谷修理咖啡馆",
+      "time": "14:40",
+      "certainty": "confident",
+      "seg": null
+     }
+    ]
+   },
+   {
+    "id": "yq_08",
+    "q": "我上次去游泳是什么时候？",
+    "a": "你最近一次去游泳是在周日，到社区游泳馆游泳，教练建议放慢打腿。",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "精选 · 社区游泳馆",
+      "time": "07:35",
+      "certainty": "confident",
+      "seg": null
+     }
+    ]
+   },
+   {
+    "id": "yq_09",
+    "q": "八月那次卷尺最后是在哪儿找到的？",
+    "a": "那次卷尺最后是在工作间的帆布袋里找到的；记录说“午饭后果然在那儿找到了”。",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "当天",
+      "time": "07:40",
+      "certainty": "confident",
+      "seg": null
+     }
+    ]
+   },
+   {
+    "id": "yq_10",
+    "q": "感恩节那天都有谁在？",
+    "a": "你在姐姐家过感恩节，外甥皮皮也在。记录还提到“姐姐他们”要求祝酒时暂停，但没说明具体都有谁。",
+    "status": "uncertain",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "当天",
+      "time": "08:30",
+      "certainty": "confident",
+      "seg": null
+     }
+    ]
+   },
+   {
+    "id": "yq_11",
+    "q": "我和小琼在装订课上做了什么？",
+    "a": "你们在装订课交流缝线、胶水和本子做法：她把做的本子、新缝笔记本给你看，你们交换不裂胶心得，你也把缝线图抄在笔记页边。她还教过你补撕破修理手册的针法，并一起对照笔记本里的简单缝法图。",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "精选 · 飞燕草社区图书馆",
+      "time": "11:20",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "精选 · 飞燕草社区图书馆",
+      "time": "11:00",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "精选 · 飞燕草社区图书馆",
+      "time": "18:30",
+      "certainty": "confident",
+      "seg": null
+     }
+    ]
+   },
+   {
+    "id": "yq_12",
+    "q": "万用表是什么时候买的？",
+    "a": "证据显示你在一月买了万用表：当时在五金店比较两只表，挑了刻度更清楚、表笔更简单的那只；后来也提到是一月买的。",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "精选 · 街角五金店",
+      "time": "09:15",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "精选 · 蕨谷修理咖啡馆",
+      "time": "11:20",
+      "certainty": "confident",
+      "seg": null
+     }
+    ]
+   },
+   {
+    "id": "yq_13",
+    "q": "6月14日我做了什么？",
+    "a": "在 2026-06-14 的记录里没有找到相关内容。",
+    "status": "not_found",
+    "uncertain": false,
+    "evidence": []
+   },
+   {
+    "id": "yq_14",
+    "q": "5月29日我做了什么？",
+    "a": "在 2026-05-29 的记录里没有找到相关内容。",
+    "status": "not_found",
+    "uncertain": false,
+    "evidence": []
+   },
+   {
+    "id": "yq_15",
+    "q": "我给拉家的孩子们修了哪些万圣节服装？",
+    "a": "你给拉家的孩子们补过戏服袖子，还粘亮片补过斗篷。试机器人手臂时，你也补粘过松开的腕带。",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "精选 · 家",
+      "time": "15:20",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "精选 · 蕨谷修理咖啡馆",
+      "time": "12:30",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "精选 · 家",
+      "time": "16:40",
+      "certainty": "confident",
+      "seg": null
+     }
+    ]
+   },
+   {
+    "id": "yq_16",
+    "q": "面包房那个收银员叫什么名字？",
+    "a": "在 2025-11-19 至 2026-11-18 的记录里没有找到相关内容。",
+    "status": "not_found",
+    "uncertain": false,
+    "evidence": []
+   },
+   {
+    "id": "yq_17",
+    "q": "我和皮皮把他的滑板车修了哪儿？",
+    "a": "你们修的是滑板车轮：把轴承清干净、给车轴上油，让轮子转得顺，最后一颗螺丝由皮皮拧。",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "当天",
+      "time": "09:20",
+      "certainty": "confident",
+      "seg": null
+     }
+    ]
+   },
+   {
+    "id": "yq_18",
+    "q": "我是哪天和邻居们一起包饺子的？",
+    "a": "你是二月十七日包饺子的。邻居奥阿姨带来饺子馅并示范褶子，拉家的孩子们也一起捏。",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "当天",
+      "time": "08:30",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "当天",
+      "time": "08:00",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "精选 · 家",
+      "time": "18:30",
+      "certainty": "confident",
+      "seg": null
+     }
+    ]
+   },
+   {
+    "id": "yq_19",
+    "q": "游泳教练是怎么说我的划水动作的？",
+    "a": "教练纠正过你的划水，让你练更慢的抓水，并在泳道尽头看着你。他还让你只数划水次数、不追时间，后来要求每三划换一次气。",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "精选 · 社区游泳馆",
+      "time": "08:30",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "精选 · 社区游泳馆",
+      "time": "07:30",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "精选 · 社区游泳馆",
+      "time": "08:00",
+      "certainty": "confident",
+      "seg": null
+     }
+    ]
+   },
+   {
+    "id": "yq_20",
+    "q": "年度相册我导出完了吗？",
+    "a": "导出完了：年度册导出完成，导出也已跑完。",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "当天",
+      "time": "07:00",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "精选 · 家",
+      "time": "13:00",
+      "certainty": "confident",
+      "seg": null
+     }
+    ]
+   },
+   {
+    "id": "yq_21",
+    "q": "红色工具箱最后一次是在哪儿看到的？",
+    "a": "最后一次看到红色工具箱是在家里的工作间。",
+    "status": "uncertain",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "红色工具箱 · 0.53",
+      "time": "13:20",
+      "certainty": "confident",
+      "seg": null
+     }
+    ]
+   },
+   {
+    "id": "yq_22",
+    "q": "跨年夜那天我做了什么？",
+    "a": "你带着小工具和一盘小面包坐4路有轨电车去姐姐家。在姐姐家你修一只晃动的椅腿，外甥帮你举台灯，姐夫同时做三样菜。晚上树灯亮着，大家在厨房桌边倒数、碰杯。",
+    "status": "answered",
+    "uncertain": false,
+    "evidence": [
+     {
+      "label": "当天",
+      "time": "15:00",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "精选 · 4 路有轨电车",
+      "time": "15:20",
+      "certainty": "confident",
+      "seg": null
+     },
+     {
+      "label": "精选 · 姐姐家",
+      "time": "16:10",
+      "certainty": "confident",
+      "seg": null
+     }
+    ]
+   }
+  ]
+ },
+ "objects": [
+  {
+   "key": "KEYS",
+   "name": {
+    "en": "Keys",
+    "zh": "钥匙"
+   },
+   "note": {
+    "en": "brass ring with a blue tag",
+    "zh": "黄铜钥匙圈，挂蓝色小牌"
+   },
+   "aliases": [
+    "钥匙"
+   ],
+   "status": "seen",
+   "photo": "photos/pov-desk-keys-under-papers.jpg",
+   "last": {
+    "day": "2026-11-15",
+    "time": "19:30",
+    "place": "Tram",
+    "score": 0.67,
+    "certainty": "confident",
+    "bbox": {
+     "x": 0.26,
+     "y": 0.58,
+     "w": 0.22,
+     "h": 0.19
+    },
+    "frame": "F-1115-0151"
+   },
+   "newerUncertain": {
+    "day": "2026-11-17",
+    "time": "08:20",
+    "place": "Home",
+    "score": 0.38,
+    "certainty": "uncertain",
+    "bbox": {
+     "x": 0.35,
+     "y": 0.62,
+     "w": 0.17,
+     "h": 0.07
+    },
+    "frame": "F-1117-0004"
+   },
+   "sightings": [
+    {
+     "day": "2026-10-28",
+     "time": "08:20",
+     "place": "Tram",
+     "score": 0.87,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.12,
+      "y": 0.12,
+      "w": 0.11,
+      "h": 0.08
+     },
+     "frame": "F-1028-0005"
+    },
+    {
+     "day": "2026-11-01",
+     "time": "17:35",
+     "place": "Home",
+     "score": 0.71,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.13,
+      "y": 0.21,
+      "w": 0.1,
+      "h": 0.17
+     },
+     "frame": "F-1101-0127"
+    },
+    {
+     "day": "2026-11-09",
+     "time": "07:15",
+     "place": "Tram",
+     "score": 0.84,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.06,
+      "y": 0.11,
+      "w": 0.14,
+      "h": 0.1
+     },
+     "frame": "F-1109-0005"
+    },
+    {
+     "day": "2026-11-15",
+     "time": "19:30",
+     "place": "Tram",
+     "score": 0.67,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.26,
+      "y": 0.58,
+      "w": 0.22,
+      "h": 0.19
+     },
+     "frame": "F-1115-0151"
+    }
+   ]
+  },
+  {
+   "key": "RGLASS",
+   "name": {
+    "en": "Reading glasses",
+    "zh": "老花镜"
+   },
+   "note": {
+    "en": "tortoiseshell frame",
+    "zh": "玳瑁色镜框"
+   },
+   "aliases": [
+    "老花镜"
+   ],
+   "status": "seen",
+   "photo": "photos/year-13-sunlit-wellness-tabletop-still-life.jpg",
+   "last": {
+    "day": "2026-11-15",
+    "time": "16:40",
+    "place": "Home",
+    "score": 0.68,
+    "certainty": "confident",
+    "bbox": {
+     "x": 0.5,
+     "y": 0.62,
+     "w": 0.13,
+     "h": 0.07
+    },
+    "frame": "F-1115-0117"
+   },
+   "newerUncertain": {
+    "day": "2026-11-18",
+    "time": "07:50",
+    "place": "Tram",
+    "score": 0.41,
+    "certainty": "uncertain",
+    "bbox": {
+     "x": 0.53,
+     "y": 0.23,
+     "w": 0.24,
+     "h": 0.15
+    },
+    "frame": "F-1118-0005"
+   },
+   "sightings": [
+    {
+     "day": "2026-11-06",
+     "time": "10:30",
+     "place": "Home",
+     "score": 0.53,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.38,
+      "y": 0.18,
+      "w": 0.18,
+      "h": 0.24
+     },
+     "frame": "F-1106-0039"
+    },
+    {
+     "day": "2026-11-09",
+     "time": "08:30",
+     "place": "Shop",
+     "score": 0.62,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.51,
+      "y": 0.67,
+      "w": 0.17,
+      "h": 0.13
+     },
+     "frame": "F-1109-0020"
+    },
+    {
+     "day": "2026-11-12",
+     "time": "08:20",
+     "place": "Shop",
+     "score": 0.65,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.65,
+      "y": 0.2,
+      "w": 0.15,
+      "h": 0.23
+     },
+     "frame": "F-1112-0015"
+    },
+    {
+     "day": "2026-11-15",
+     "time": "16:40",
+     "place": "Home",
+     "score": 0.68,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.5,
+      "y": 0.62,
+      "w": 0.13,
+      "h": 0.07
+     },
+     "frame": "F-1115-0117"
+    }
+   ]
+  },
+  {
+   "key": "UMB",
+   "name": {
+    "en": "Umbrella",
+    "zh": "雨伞"
+   },
+   "note": {
+    "en": "dark folding umbrella",
+    "zh": "深色折叠伞"
+   },
+   "aliases": [
+    "雨伞"
+   ],
+   "status": "seen",
+   "photo": "photos/pov-tram-window.jpg",
+   "last": {
+    "day": "2026-11-15",
+    "time": "19:30",
+    "place": "Tram",
+    "score": 0.8,
+    "certainty": "confident",
+    "bbox": {
+     "x": 0.33,
+     "y": 0.69,
+     "w": 0.12,
+     "h": 0.14
+    },
+    "frame": "F-1115-0151"
+   },
+   "newerUncertain": null,
+   "sightings": [
+    {
+     "day": "2026-10-30",
+     "time": "18:20",
+     "place": "Home",
+     "score": 0.57,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.21,
+      "y": 0.24,
+      "w": 0.24,
+      "h": 0.13
+     },
+     "frame": "F-1030-0123"
+    },
+    {
+     "day": "2026-11-02",
+     "time": "07:20",
+     "place": "Tram",
+     "score": 0.84,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.11,
+      "y": 0.23,
+      "w": 0.14,
+      "h": 0.21
+     },
+     "frame": "F-1102-0007"
+    },
+    {
+     "day": "2026-11-03",
+     "time": "11:30",
+     "place": "Tram",
+     "score": 0.86,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.57,
+      "y": 0.23,
+      "w": 0.11,
+      "h": 0.2
+     },
+     "frame": "F-1103-0046"
+    },
+    {
+     "day": "2026-11-12",
+     "time": "13:15",
+     "place": "Tram",
+     "score": 0.7,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.25,
+      "y": 0.53,
+      "w": 0.2,
+      "h": 0.21
+     },
+     "frame": "F-1112-0074"
+    }
+   ]
+  },
+  {
+   "key": "TAPE",
+   "name": {
+    "en": "Tape measure",
+    "zh": "卷尺"
+   },
+   "note": {
+    "en": "yellow 5 m tape",
+    "zh": "黄色 5 米卷尺"
+   },
+   "aliases": [
+    "卷尺"
+   ],
+   "status": "seen",
+   "photo": "photos/pov-repair-cafe-workbench.jpg",
+   "last": {
+    "day": "2026-11-11",
+    "time": "13:00",
+    "place": "Shop",
+    "score": 0.6,
+    "certainty": "confident",
+    "bbox": {
+     "x": 0.46,
+     "y": 0.35,
+     "w": 0.2,
+     "h": 0.17
+    },
+    "frame": "F-1111-0065"
+   },
+   "newerUncertain": null,
+   "sightings": [
+    {
+     "day": "2026-10-26",
+     "time": "09:45",
+     "place": "Shop",
+     "score": 0.56,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.07,
+      "y": 0.13,
+      "w": 0.13,
+      "h": 0.14
+     },
+     "frame": "F-1026-0016"
+    },
+    {
+     "day": "2026-10-28",
+     "time": "09:30",
+     "place": "Shop",
+     "score": 0.53,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.64,
+      "y": 0.55,
+      "w": 0.17,
+      "h": 0.12
+     },
+     "frame": "F-1028-0019"
+    },
+    {
+     "day": "2026-10-28",
+     "time": "15:20",
+     "place": "Shop",
+     "score": 0.63,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.09,
+      "y": 0.52,
+      "w": 0.07,
+      "h": 0.1
+     },
+     "frame": "F-1028-0089"
+    },
+    {
+     "day": "2026-11-05",
+     "time": "15:00",
+     "place": "Shop",
+     "score": 0.86,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.66,
+      "y": 0.41,
+      "w": 0.15,
+      "h": 0.25
+     },
+     "frame": "F-1105-0097"
+    }
+   ]
+  },
+  {
+   "key": "GLUE",
+   "name": {
+    "en": "Glue gun",
+    "zh": "热熔胶枪"
+   },
+   "note": {
+    "en": "small hot-glue gun",
+    "zh": "小号热熔胶枪"
+   },
+   "aliases": [
+    "热熔胶枪"
+   ],
+   "status": "seen",
+   "photo": "photos/hero-08-cafe-parts-bin-720.jpg",
+   "last": {
+    "day": "2026-11-12",
+    "time": "13:40",
+    "place": "Hardware store",
+    "score": 0.56,
+    "certainty": "confident",
+    "bbox": {
+     "x": 0.52,
+     "y": 0.54,
+     "w": 0.07,
+     "h": 0.2
+    },
+    "frame": "F-1112-0079"
+   },
+   "newerUncertain": null,
+   "sightings": [
+    {
+     "day": "2026-10-31",
+     "time": "12:30",
+     "place": "Home",
+     "score": 0.73,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.37,
+      "y": 0.35,
+      "w": 0.13,
+      "h": 0.18
+     },
+     "frame": "F-1031-0045"
+    },
+    {
+     "day": "2026-10-31",
+     "time": "20:00",
+     "place": "Home",
+     "score": 0.81,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.35,
+      "y": 0.46,
+      "w": 0.07,
+      "h": 0.08
+     },
+     "frame": "F-1031-0135"
+    },
+    {
+     "day": "2026-11-04",
+     "time": "11:40",
+     "place": "Shop",
+     "score": 0.68,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.31,
+      "y": 0.41,
+      "w": 0.16,
+      "h": 0.22
+     },
+     "frame": "F-1104-0051"
+    },
+    {
+     "day": "2026-11-11",
+     "time": "10:30",
+     "place": "Shop",
+     "score": 0.77,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.22,
+      "y": 0.16,
+      "w": 0.21,
+      "h": 0.21
+     },
+     "frame": "F-1111-0035"
+    }
+   ]
+  },
+  {
+   "key": "TOOLB",
+   "name": {
+    "en": "Red toolbox",
+    "zh": "红色工具箱"
+   },
+   "note": {
+    "en": "lives at the repair cafe bench",
+    "zh": "放在修理咖啡馆的工作台"
+   },
+   "aliases": [
+    "红色工具箱"
+   ],
+   "status": "seen",
+   "photo": "photos/hero-08-cafe-parts-bin-720.jpg",
+   "last": {
+    "day": "2026-11-17",
+    "time": "13:20",
+    "place": "Shop",
+    "score": 0.53,
+    "certainty": "confident",
+    "bbox": {
+     "x": 0.54,
+     "y": 0.69,
+     "w": 0.25,
+     "h": 0.12
+    },
+    "frame": "F-1117-0064"
+   },
+   "newerUncertain": null,
+   "sightings": [
+    {
+     "day": "2026-11-07",
+     "time": "08:40",
+     "place": "Café",
+     "score": 0.81,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.27,
+      "y": 0.56,
+      "w": 0.08,
+      "h": 0.06
+     },
+     "frame": "F-1107-0008"
+    },
+    {
+     "day": "2026-11-07",
+     "time": "15:10",
+     "place": "Café",
+     "score": 0.86,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.44,
+      "y": 0.35,
+      "w": 0.09,
+      "h": 0.2
+     },
+     "frame": "F-1107-0086"
+    },
+    {
+     "day": "2026-11-11",
+     "time": "13:00",
+     "place": "Shop",
+     "score": 0.69,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.4,
+      "y": 0.22,
+      "w": 0.12,
+      "h": 0.23
+     },
+     "frame": "F-1111-0065"
+    },
+    {
+     "day": "2026-11-14",
+     "time": "08:30",
+     "place": "Café",
+     "score": 0.6,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.31,
+      "y": 0.56,
+      "w": 0.18,
+      "h": 0.15
+     },
+     "frame": "F-1114-0003"
+    }
+   ]
+  },
+  {
+   "key": "LAMP",
+   "name": {
+    "en": "Desk lamp",
+    "zh": "台灯"
+   },
+   "note": {
+    "en": "the repaired metal desk lamp",
+    "zh": "修好的金属台灯"
+   },
+   "aliases": [
+    "台灯"
+   ],
+   "status": "seen",
+   "photo": "photos/hero-05-cafe-lamp-diagnosis-720.jpg",
+   "last": {
+    "day": "2026-11-18",
+    "time": "16:10",
+    "place": "Home",
+    "score": 0.73,
+    "certainty": "confident",
+    "bbox": {
+     "x": 0.22,
+     "y": 0.22,
+     "w": 0.08,
+     "h": 0.22
+    },
+    "frame": "F-1118-0105"
+   },
+   "newerUncertain": null,
+   "sightings": [
+    {
+     "day": "2026-11-01",
+     "time": "20:30",
+     "place": "Home",
+     "score": 0.55,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.59,
+      "y": 0.6,
+      "w": 0.15,
+      "h": 0.17
+     },
+     "frame": "F-1101-0162"
+    },
+    {
+     "day": "2026-11-09",
+     "time": "11:50",
+     "place": "Shop",
+     "score": 0.83,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.54,
+      "y": 0.55,
+      "w": 0.18,
+      "h": 0.19
+     },
+     "frame": "F-1109-0060"
+    },
+    {
+     "day": "2026-11-14",
+     "time": "15:30",
+     "place": "Café",
+     "score": 0.55,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.18,
+      "y": 0.46,
+      "w": 0.09,
+      "h": 0.16
+     },
+     "frame": "F-1114-0087"
+    },
+    {
+     "day": "2026-11-18",
+     "time": "09:20",
+     "place": "Home",
+     "score": 0.56,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.41,
+      "y": 0.32,
+      "w": 0.19,
+      "h": 0.12
+     },
+     "frame": "F-1118-0023"
+    }
+   ]
+  },
+  {
+   "key": "WALLET",
+   "name": {
+    "en": "Wallet",
+    "zh": "钱包"
+   },
+   "note": {
+    "en": "brown leather wallet",
+    "zh": "棕色皮钱包"
+   },
+   "aliases": [
+    "钱包"
+   ],
+   "status": "seen",
+   "photo": "photos/year-14-sunlit-entryway-with-everyday-essentials.jpg",
+   "last": {
+    "day": "2026-11-10",
+    "time": "19:30",
+    "place": "Home",
+    "score": 0.55,
+    "certainty": "confident",
+    "bbox": {
+     "x": 0.39,
+     "y": 0.58,
+     "w": 0.23,
+     "h": 0.09
+    },
+    "frame": "F-1110-0125"
+   },
+   "newerUncertain": null,
+   "sightings": [
+    {
+     "day": "2026-10-28",
+     "time": "17:40",
+     "place": "Home",
+     "score": 0.71,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.37,
+      "y": 0.26,
+      "w": 0.11,
+      "h": 0.11
+     },
+     "frame": "F-1028-0117"
+    },
+    {
+     "day": "2026-10-29",
+     "time": "10:40",
+     "place": "Bakery",
+     "score": 0.66,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.12,
+      "y": 0.44,
+      "w": 0.17,
+      "h": 0.17
+     },
+     "frame": "F-1029-0025"
+    },
+    {
+     "day": "2026-10-31",
+     "time": "10:40",
+     "place": "Bakery",
+     "score": 0.68,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.65,
+      "y": 0.48,
+      "w": 0.22,
+      "h": 0.09
+     },
+     "frame": "F-1031-0023"
+    },
+    {
+     "day": "2026-11-09",
+     "time": "07:15",
+     "place": "Tram",
+     "score": 0.73,
+     "certainty": "confident",
+     "bbox": {
+      "x": 0.12,
+      "y": 0.31,
+      "w": 0.17,
+      "h": 0.24
+     },
+     "frame": "F-1109-0005"
+    }
+   ]
+  }
+ ],
+ "guideFeed": [
+  {
+   "time": "07:00",
+   "text": "A small wooden kitchen table set for breakfast holds a bowl of oatmeal with banana slices, a ceramic mug of tea, and an open notebook showing a hand-drawn lamp wiring sketch.",
+   "certainty": "confident",
+   "score": 0.8
+  },
+  {
+   "time": "07:05",
+   "text": "A close view of the bowl of oatmeal with banana slices; a spoon is lifted above it, while the notebook page with the wiring sketch stays open beside the mug.",
+   "certainty": "confident",
+   "score": 0.8
+  },
+  {
+   "time": "07:10",
+   "text": "A ceramic coffee mug is clearly visible next to the half-eaten bowl of oatmeal; the open notebook with the lamp wiring sketch lies just beyond the mug.",
+   "certainty": "confident",
+   "score": 0.8
+  },
+  {
+   "time": "07:15",
+   "text": "The coffee mug takes up the right side of the frame, with a spoon resting in the oatmeal and the hand-drawn lamp sketch partially visible in the open notebook.",
+   "certainty": "confident",
+   "score": 0.8
+  },
+  {
+   "time": "07:20",
+   "text": "A hand reaches for the coffee mug as the other hand flips a page in the notebook, exposing more of the lamp wiring sketch.",
+   "certainty": "confident",
+   "score": 0.8
+  },
+  {
+   "time": "07:25",
+   "text": "The bowl is nearly empty, the spoon rests on a folded napkin, and the coffee mug sits beside the closed notebook as morning light falls across the table.",
+   "certainty": "confident",
+   "score": 0.8
+  },
+  {
+   "time": "07:30",
+   "text": "An old metal desk lamp with a cracked rocker switch lies on a folded towel on a cluttered desk, with a canvas tote and small screwdriver set beside it.",
+   "certainty": "confident",
+   "score": 0.8
+  },
+  {
+   "time": "07:35",
+   "text": "Hands fold the towel over the desk lamp, leaving the cracked rocker switch visible near one edge.",
+   "certainty": "confident",
+   "score": 0.8
+  },
+  {
+   "time": "07:40",
+   "text": "The lamp is now wrapped in the towel, only the neck and cracked switch exposed on the desk.",
+   "certainty": "confident",
+   "score": 0.8
+  },
+  {
+   "time": "07:45",
+   "text": "Hands lower the towel-wrapped lamp into a canvas tote, next to a small screwdriver set.",
+   "certainty": "confident",
+   "score": 0.8
+  },
+  {
+   "time": "07:50",
+   "text": "A hand smooths the top of the tote over the wrapped lamp and screwdriver set, the desk clear in front.",
+   "certainty": "confident",
+   "score": 0.8
+  },
+  {
+   "time": "07:55",
+   "text": "A folded dark umbrella is held in one hand near a narrow hallway coat rack, with the front door slightly open and soft morning light falling across the floor.",
+   "certainty": "confident",
+   "score": 0.8
+  },
+  {
+   "time": "08:00",
+   "text": "A hand reaches toward a jacket on a coat rack in a narrow hallway; a folded umbrella is tucked under the other arm, and the front door stands partly open.",
+   "certainty": "confident",
+   "score": 0.8
+  },
+  {
+   "time": "08:05",
+   "text": "A small wall hook by the door holds an indistinct metallic object, out of focus in the soft morning light; one hand pats a jacket pocket.",
+   "certainty": "confident",
+   "score": 0.8
+  }
+ ],
+ "backups": [
+  {
+   "started": "2026-11-18 02:30",
+   "state": "ok",
+   "target": "nas",
+   "files": 227,
+   "bytes": 44000000
+  },
+  {
+   "started": "2026-11-17 02:30",
+   "state": "ok",
+   "target": "nas",
+   "files": 160,
+   "bytes": 47000000
+  },
+  {
+   "started": "2026-11-16 02:30",
+   "state": "ok",
+   "target": "nas",
+   "files": 188,
+   "bytes": 39000000
+  },
+  {
+   "started": "2026-11-15 02:30",
+   "state": "ok",
+   "target": "nas",
+   "files": 206,
+   "bytes": 43000000
+  },
+  {
+   "started": "2026-11-14 02:30",
+   "state": "ok",
+   "target": "nas",
+   "files": 386,
+   "bytes": 45000000
+  },
+  {
+   "started": "2026-11-13 02:30",
+   "state": "ok",
+   "target": "nas",
+   "files": 340,
+   "bytes": 43000000
+  },
+  {
+   "started": "2026-11-12 02:30",
+   "state": "ok",
+   "target": "nas",
+   "files": 339,
+   "bytes": 35000000
+  },
+  {
+   "started": "2026-11-11 02:30",
+   "state": "ok",
+   "target": "nas",
+   "files": 320,
+   "bytes": 17000000
+  }
+ ],
+ "egress": [
+  {
+   "ts": "2026-03-01 21:40",
+   "purpose": "summary",
+   "host": "cloud model endpoint",
+   "bytes": 23341,
+   "items": {
+    "utterances": 80,
+    "frames": 0
+   }
+  },
+  {
+   "ts": "2026-02-28 21:40",
+   "purpose": "summary",
+   "host": "cloud model endpoint",
+   "bytes": 29093,
+   "items": {
+    "utterances": 80,
+    "frames": 0
+   }
+  },
+  {
+   "ts": "2026-02-28 19:14",
+   "purpose": "ask",
+   "host": "cloud model endpoint",
+   "bytes": 7210,
+   "items": {
+    "utterances": 8,
+    "frames": 0
+   }
+  },
+  {
+   "ts": "2026-02-27 21:40",
+   "purpose": "summary",
+   "host": "cloud model endpoint",
+   "bytes": 24504,
+   "items": {
+    "utterances": 80,
+    "frames": 0
+   }
+  },
+  {
+   "ts": "2026-02-27 20:31",
+   "purpose": "ask",
+   "host": "cloud model endpoint",
+   "bytes": 2790,
+   "items": {
+    "utterances": 7,
+    "frames": 0
+   }
+  },
+  {
+   "ts": "2026-02-27 12:06",
+   "purpose": "ask",
+   "host": "cloud model endpoint",
+   "bytes": 6982,
+   "items": {
+    "utterances": 7,
+    "frames": 0
+   }
+  },
+  {
+   "ts": "2026-02-26 21:40",
+   "purpose": "summary",
+   "host": "cloud model endpoint",
+   "bytes": 23230,
+   "items": {
+    "utterances": 80,
+    "frames": 0
+   }
+  },
+  {
+   "ts": "2026-02-26 16:53",
+   "purpose": "ask",
+   "host": "cloud model endpoint",
+   "bytes": 7498,
+   "items": {
+    "utterances": 3,
+    "frames": 0
+   }
+  },
+  {
+   "ts": "2026-02-25 21:40",
+   "purpose": "summary",
+   "host": "cloud model endpoint",
+   "bytes": 21210,
+   "items": {
+    "utterances": 62,
+    "frames": 0
+   }
+  },
+  {
+   "ts": "2026-02-24 21:40",
+   "purpose": "summary",
+   "host": "cloud model endpoint",
+   "bytes": 24026,
+   "items": {
+    "utterances": 80,
+    "frames": 0
+   }
+  }
+ ],
+ "purges": [
+  {
+   "ts": "2026-11-18 21:23",
+   "trigger": "owner_day",
+   "days": [
+    "2026-11-16"
+   ],
+   "frames": 161,
+   "bytes": 19116000
+  },
+  {
+   "ts": "2026-11-07 22:10",
+   "trigger": "owner_range",
+   "days": [
+    "2026-11-07"
+   ],
+   "frames": 9,
+   "bytes": 1084000
+  },
+  {
+   "ts": "2026-10-14 19:49",
+   "trigger": "owner_day",
+   "days": [
+    "2026-10-06"
+   ],
+   "frames": 138,
+   "bytes": 17138000
+  },
+  {
+   "ts": "2026-09-26 22:10",
+   "trigger": "owner_range",
+   "days": [
+    "2026-09-26"
+   ],
+   "frames": 4,
+   "bytes": 654000
+  },
+  {
+   "ts": "2026-09-11 21:13",
+   "trigger": "owner_day",
+   "days": [
+    "2026-09-05"
+   ],
+   "frames": 102,
+   "bytes": 17142000
+  }
+ ],
+ "settings": {
+  "timezone": "America/Los_Angeles",
+  "retention_days": 365,
+  "local_first": true,
+  "audio_enabled": true,
+  "audio_consent_ack_ms": 1763568120000,
+  "keep_raw_audio": false,
+  "face_blur": true,
+  "location_enabled": true,
+  "cloud_vision_enabled": false,
+  "capture_paused": false,
+  "frame_interval_s": 300,
+  "backup": {
+   "enabled": true,
+   "target_type": "nas",
+   "encrypted": true,
+   "since_ms": 1765092600000,
+   "schedule_local": "02:30"
+  }
+ },
+ "year": {
+  "first_day": "2025-11-19",
+  "last_day": "2026-11-18",
+  "days_total": 365,
+  "days_captured": 312,
+  "days_paused": 41,
+  "days_deleted": 12,
+  "days_with_uncertain": 94,
+  "uncertain_items": 115,
+  "hours_captured": 3616.9,
+  "frames": 43705,
+  "utterances": 45003,
+  "audio_hours": 436.3,
+  "questions_asked": 655,
+  "objects_found": 283,
+  "highlights": 1472,
+  "people_met_total": 1126,
+  "pause_minutes_within_days": 5634,
+  "egress_events": 76,
+  "egress_bytes": 1088013,
+  "last_egress_day": "2026-03-01",
+  "purges": 15,
+  "tracked_objects": 8,
+  "backups_ok_last_30": 29,
+  "top_places": [
+   {
+    "place": "HOME",
+    "days": 260
+   },
+   {
+    "place": "TRAM",
+    "days": 184
+   },
+   {
+    "place": "SHOP",
+    "days": 165
+   },
+   {
+    "place": "BAKE",
+    "days": 113
+   },
+   {
+    "place": "HWARE",
+    "days": 72
+   },
+   {
+    "place": "LIB",
+    "days": 59
+   },
+   {
+    "place": "CAFE",
+    "days": 47
+   },
+   {
+    "place": "PARK",
+    "days": 46
+   }
+  ],
+  "per_month": {
+   "2025-11": {
+    "captured": 9,
+    "hours": 114.2,
+    "questions_asked": 14,
+    "objects_found": 7,
+    "paused": 2,
+    "deleted": 1
+   },
+   "2025-12": {
+    "captured": 24,
+    "hours": 269.2,
+    "questions_asked": 55,
+    "objects_found": 36,
+    "paused": 6,
+    "deleted": 1
+   },
+   "2026-01": {
+    "captured": 31,
+    "hours": 328.1,
+    "questions_asked": 65,
+    "objects_found": 38
+   },
+   "2026-02": {
+    "captured": 23,
+    "hours": 242.2,
+    "questions_asked": 22,
+    "objects_found": 13,
+    "deleted": 1,
+    "paused": 4
+   },
+   "2026-03": {
+    "captured": 20,
+    "hours": 233.3,
+    "questions_asked": 13,
+    "objects_found": 9,
+    "paused": 10,
+    "deleted": 1
+   },
+   "2026-04": {
+    "captured": 29,
+    "hours": 357.2,
+    "questions_asked": 87,
+    "objects_found": 23,
+    "deleted": 1
+   },
+   "2026-05": {
+    "captured": 27,
+    "hours": 317.3,
+    "questions_asked": 52,
+    "objects_found": 33,
+    "paused": 3,
+    "deleted": 1
+   },
+   "2026-06": {
+    "captured": 21,
+    "hours": 282.4,
+    "questions_asked": 45,
+    "objects_found": 23,
+    "paused": 8,
+    "deleted": 1
+   },
+   "2026-07": {
+    "captured": 28,
+    "hours": 369.3,
+    "questions_asked": 77,
+    "objects_found": 25,
+    "deleted": 1,
+    "paused": 2
+   },
+   "2026-08": {
+    "captured": 26,
+    "hours": 277.5,
+    "questions_asked": 51,
+    "objects_found": 11,
+    "paused": 4,
+    "deleted": 1
+   },
+   "2026-09": {
+    "captured": 28,
+    "hours": 321.3,
+    "questions_asked": 58,
+    "objects_found": 19,
+    "deleted": 1,
+    "paused": 1
+   },
+   "2026-10": {
+    "captured": 29,
+    "hours": 299.4,
+    "questions_asked": 60,
+    "objects_found": 28,
+    "deleted": 1,
+    "paused": 1
+   },
+   "2026-11": {
+    "captured": 17,
+    "hours": 205.9,
+    "questions_asked": 56,
+    "objects_found": 18,
+    "deleted": 1
+   }
+  }
+ },
+ "framesTotal": 162
+}

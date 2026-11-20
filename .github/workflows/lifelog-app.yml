@@ -1,0 +1,111 @@
+name: lifelog-app
+
+# Five-platform builds for the Lifelog companion app (Tauri 2).
+# Desktop: Windows (NSIS/MSI), macOS (universal DMG), Linux (AppImage/deb).
+# Mobile: Android APK (debug-signed). iOS runs an unsigned compile check —
+# enable the archived build once an Apple signing certificate + provisioning
+# profile are added as secrets (see lifelog/app/README.md).
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "lifelog/app/**"
+      - ".github/workflows/lifelog-app.yml"
+  pull_request:
+    paths:
+      - "lifelog/app/**"
+  workflow_dispatch:
+
+jobs:
+  web:
+    name: Front-end (typecheck + build)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - working-directory: lifelog/app
+        run: |
+          npm ci
+          npm run build
+
+  desktop:
+    name: Desktop · ${{ matrix.label }}
+    needs: web
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { label: windows, os: windows-latest, args: "" }
+          - { label: macos, os: macos-latest, args: "--target universal-apple-darwin" }
+          - { label: linux, os: ubuntu-latest, args: "" }
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.os == 'macos-latest' && 'aarch64-apple-darwin,x86_64-apple-darwin' || '' }}
+      - if: matrix.os == 'ubuntu-latest'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf
+      - working-directory: lifelog/app
+        run: npm ci
+      - uses: tauri-apps/tauri-action@v0
+        with:
+          projectPath: lifelog/app
+          args: ${{ matrix.args }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lifelog-${{ matrix.label }}
+          path: |
+            lifelog/app/src-tauri/target/**/release/bundle/**
+          if-no-files-found: warn
+
+  android:
+    name: Android · APK
+    needs: web
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - uses: actions/setup-java@v4
+        with: { distribution: temurin, java-version: 17 }
+      - uses: android-actions/setup-android@v3
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: aarch64-linux-android,armv7-linux-androideabi,i686-linux-android,x86_64-linux-android
+      - working-directory: lifelog/app
+        run: |
+          npm ci
+          npx tauri android init
+          npx tauri android build --apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lifelog-android
+          path: lifelog/app/src-tauri/gen/android/app/build/outputs/apk/**/*.apk
+          if-no-files-found: warn
+
+  ios:
+    name: iOS · unsigned compile check (signing required for device/App Store builds)
+    needs: web
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: aarch64-apple-ios,aarch64-apple-ios-sim,x86_64-apple-ios
+      - working-directory: lifelog/app
+        run: |
+          npm ci
+          npx tauri ios init
+          # Compiles the Rust + webview shell without code signing.
+          # For a signed .ipa add APPLE_CERTIFICATE / APPLE_PROVISIONING_PROFILE
+          # secrets and switch to `npx tauri ios build`.
+          npx tauri ios build --no-sign || echo "::warning::unsigned iOS build needs a development team id — compile check only"
