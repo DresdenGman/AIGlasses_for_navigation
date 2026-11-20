@@ -26,13 +26,13 @@ export default async function YearPage() {
   const findings = stats.top_places.slice(0, 3);
   return (
     <article>
-      <header className="mx-auto grid max-w-page grid-cols-1 gap-8 px-4 pb-8 pt-10 md:px-8 lg:grid-cols-12 lg:pt-16">
+      <header className="archive-hero mx-auto grid max-w-page grid-cols-1 gap-8 px-4 pb-8 pt-10 md:px-8 lg:grid-cols-12 lg:pt-16">
         <div className="lg:col-span-8">
-          <img src={YEAR_HERO.src} alt={plateAlt(YEAR_HERO, locale)} width={1536} height={1024} className="plate aspect-[3/2] w-full object-cover" />
+          <img src={YEAR_HERO.src} alt={plateAlt(YEAR_HERO, locale)} width={1536} height={1024} className="archive-hero-image plate aspect-[3/2] w-full object-cover" />
         </div>
         <div className="flex flex-col justify-end lg:col-span-4">
           <p className="eyebrow">{copy.yearEyebrow} / {year.to.slice(0, 4)}</p>
-          <h1 className="serif mt-4 text-display">{year.to.slice(0, 4)}</h1>
+          <h1 className="archive-year serif mt-4 text-display">{year.to.slice(0, 4)}</h1>
           <p className="serif mt-6 text-xl italic leading-snug">{ui.year_line}</p>
           <p className="mt-8">
             <Link href={`/day/${FEATURED_DAY}/summary`} className="inline-flex min-h-11 items-center underline">{copy.readDay}</Link>
@@ -108,7 +108,7 @@ export default async function YearPage() {
         <div className="mx-auto mb-8 grid max-w-page grid-cols-1 gap-4 px-4 md:px-8 lg:grid-cols-12">
           <h2 id="months-title" className="eyebrow lg:col-span-3">{copy.monthsTitle}</h2>
         </div>
-        <ul className="flex gap-6 overflow-x-auto px-4 pb-4 md:px-8">
+        <ul className="archive-months flex gap-6 overflow-x-auto px-4 pb-4 md:px-8">
           {months.map((month) => {
             const photo = MONTH_PLATES[month.month];
             const href = month.day === FEATURED_DAY ? `/day/${FEATURED_DAY}/summary` : `/day/${month.day}`;
