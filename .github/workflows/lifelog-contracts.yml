@@ -1,0 +1,235 @@
+name: Lifelog contracts
+
+on:
+  push:
+    paths:
+      - "lifelog/**"
+      - ".github/workflows/lifelog-contracts.yml"
+  pull_request:
+    paths:
+      - "lifelog/**"
+      - ".github/workflows/lifelog-contracts.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  contracts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Validate OpenAPI
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install 'openapi-spec-validator>=0.7,<1'
+          python -m openapi_spec_validator lifelog/contracts/openapi.yaml
+
+      - name: Load schema.sql twice
+        run: |
+          python - <<'PY'
+          import os
+          import sqlite3
+          import tempfile
+          from pathlib import Path
+
+          sql = Path("lifelog/contracts/schema.sql").read_text(encoding="utf-8")
+          fd, name = tempfile.mkstemp(prefix="lifelog-schema-", suffix=".sqlite")
+          os.close(fd)
+          conn = sqlite3.connect(name)
+          try:
+              conn.executescript(sql)
+              after_first = conn.execute("select count(*) from sqlite_master").fetchone()[0]
+              conn.executescript(sql)
+              after_second = conn.execute("select count(*) from sqlite_master").fetchone()[0]
+              if after_first != after_second:
+                  raise SystemExit(
+                      f"schema.sql is not idempotent ({after_first} objects then {after_second})"
+                  )
+              version = conn.execute(
+                  "select value from meta where key = 'schema_version'"
+              ).fetchone()
+              contract = conn.execute(
+                  "select value from meta where key = 'contract'"
+              ).fetchone()
+              if version != ("1",) or contract != ("aiglasses.lifelog.v1",):
+                  raise SystemExit(f"unexpected meta rows: {version!r} {contract!r}")
+              tables = {
+                  row[0]
+                  for row in conn.execute(
+                      "select name from sqlite_master where type = 'table'"
+                  )
+              }
+              missing = {"frames", "utterances", "fts_text", "jobs", "egress_log"} - tables
+              if missing:
+                  raise SystemExit(f"schema missing tables: {sorted(missing)}")
+              print(f"schema loaded twice ({after_second} sqlite_master rows)")
+          finally:
+              conn.close()
+              os.remove(name)
+          PY
+
+      - name: Validate design tokens and sample-day manifest
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          tokens = json.loads(
+              Path("lifelog/contracts/design-tokens.json").read_text(encoding="utf-8")
+          )
+          for key in ("color", "font", "motion", "badge"):
+              if key not in tokens:
+                  raise SystemExit(f"design-tokens.json missing {key}")
+          for mode in ("light", "dark"):
+              palette = tokens["color"][mode]
+              for name in ("paper", "ink", "uncertain-fg", "focus"):
+                  if name not in palette:
+                      raise SystemExit(f"design-tokens.json {mode} missing {name}")
+          if tokens["motion"]["max_ms"] > 200:
+              raise SystemExit("design-tokens.json motion.max_ms exceeds 200")
+
+          manifest = json.loads(
+              Path("lifelog/contracts/sample_day.manifest.example.json").read_text(
+                  encoding="utf-8"
+              )
+          )
+          if manifest.get("schema") != "aiglasses.lifelog.sample_day":
+              raise SystemExit("sample-day manifest schema mismatch")
+          if manifest.get("version") != 1:
+              raise SystemExit("sample-day manifest version mismatch")
+          if manifest.get("synthetic") is not True:
+              raise SystemExit("sample-day manifest must be synthetic")
+          if manifest.get("contract") != "aiglasses.lifelog.v1":
+              raise SystemExit("sample-day manifest contract mismatch")
+          for group in ("shared", "localized"):
+              if group not in manifest.get("files", {}):
+                  raise SystemExit(f"sample-day manifest missing files.{group}")
+          print("design tokens and sample-day manifest ok")
+          PY
+
+      - name: Fence check
+        env:
+          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          set -euo pipefail
+          if [ "${GITHUB_EVENT_NAME}" = "pull_request" ]; then
+            git fetch --no-tags origin "${BASE_REF}"
+            if ! git rev-parse --verify --quiet "${PR_HEAD_SHA}^{commit}" >/dev/null; then
+              git fetch --no-tags origin "pull/${PR_NUMBER}/head"
+            fi
+          else
+            git fetch --no-tags origin main
+          fi
+          python - <<'PY'
+          import ast
+          import os
+          import subprocess
+          import sys
+          from pathlib import Path
+
+          ROOT = Path(".")
+          FORBIDDEN_PREFIXES = ("aiglasses/", "tests/", "static/")
+          FORBIDDEN_EXACT = {".github/workflows/test.yml"}
+
+
+          def rev_parse(rev: str) -> str:
+              if not rev:
+                  return ""
+              probe = subprocess.run(
+                  ["git", "rev-parse", "--verify", "--quiet", rev + "^{commit}"],
+                  text=True,
+                  capture_output=True,
+              )
+              if probe.returncode != 0:
+                  return ""
+              return probe.stdout.strip()
+
+
+          event = os.environ.get("GITHUB_EVENT_NAME", "local")
+          if event == "pull_request":
+              base = rev_parse(os.environ.get("PR_BASE_SHA", ""))
+              head = rev_parse(os.environ.get("PR_HEAD_SHA", "")) or rev_parse("HEAD")
+          elif event == "push":
+              base = rev_parse("origin/main")
+              head = rev_parse("HEAD")
+          else:
+              base = rev_parse("origin/main") or rev_parse("main")
+              head = rev_parse("HEAD")
+          if not base or not head:
+              sys.exit(f"fence check could not resolve base/head (event={event})")
+
+          merge_base = subprocess.check_output(
+              ["git", "merge-base", base, head], text=True
+          ).strip()
+          diff = subprocess.check_output(
+              ["git", "diff", "--name-status", "-M", merge_base, head], text=True
+          )
+          path_errors = []
+          for line in diff.splitlines():
+              if not line.strip():
+                  continue
+              parts = line.split("\t")
+              for path in parts[1:]:
+                  if path in FORBIDDEN_EXACT or path.startswith(FORBIDDEN_PREFIXES):
+                      path_errors.append(f"{parts[0]} {path}")
+          if path_errors:
+              print("lifelog fence: forbidden path changes:", file=sys.stderr)
+              for item in path_errors:
+                  print(f"  {item}", file=sys.stderr)
+              sys.exit(1)
+
+
+          def imported_modules(path: Path) -> list[str]:
+              tree = ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
+              modules = []
+              for node in ast.walk(tree):
+                  if isinstance(node, ast.Import):
+                      for alias in node.names:
+                          modules.append(alias.name.split(".", 1)[0])
+                  elif isinstance(node, ast.ImportFrom) and node.module:
+                      modules.append(node.module.split(".", 1)[0])
+              return modules
+
+
+          def scan(base_dir: Path, forbidden: str) -> list[str]:
+              if not base_dir.exists():
+                  return []
+              found = []
+              for path in base_dir.rglob("*.py"):
+                  if "__pycache__" in path.parts:
+                      continue
+                  try:
+                      modules = imported_modules(path)
+                  except SyntaxError as exc:
+                      found.append(f"{path}: syntax error: {exc}")
+                      continue
+                  if forbidden in modules:
+                      found.append(f"{path}: imports {forbidden}")
+              return found
+
+
+          import_errors = []
+          import_errors.extend(scan(ROOT / "lifelog", "aiglasses"))
+          for rel in ("aiglasses", "tests", "scripts"):
+              import_errors.extend(scan(ROOT / rel, "aiglasses_lifelog"))
+          main_py = ROOT / "main.py"
+          if main_py.exists() and "aiglasses_lifelog" in imported_modules(main_py):
+              import_errors.append("main.py: imports aiglasses_lifelog")
+          if import_errors:
+              print("lifelog fence: cross-import:", file=sys.stderr)
+              for item in import_errors:
+                  print(f"  {item}", file=sys.stderr)
+              sys.exit(1)
+
+          print(f"fence ok ({merge_base[:12]}..{head[:12]})")
+          PY
