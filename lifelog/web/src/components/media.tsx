@@ -35,10 +35,25 @@ export function FramePlate({
   const asset = frameAsset(frameId);
   const described = alt === "No description" || alt === "无描述" ? "" : alt;
   if (!asset) {
+    if (variant === "thumb") {
+      return (
+        <span className={`plate relative flex aspect-[3/2] items-end overflow-hidden border border-rule bg-paper p-3 ${className}`}>
+          <span className="sr-only">{described || alt}</span>
+          {time ? <span className="eyebrow">{time}</span> : <span className="eyebrow">{described || alt}</span>}
+        </span>
+      );
+    }
+    // No photograph was kept for this frame. Say so visibly — a big blank
+    // box reads as a broken image to sighted low-vision readers, and the
+    // description must not be screen-reader-only.
+    const copy = t(locale ?? "en");
     return (
-      <span className={`plate relative flex aspect-[3/2] items-end overflow-hidden border border-rule bg-paper p-3 ${className}`}>
-        <span className="sr-only">{described || alt}</span>
-        {time ? <span className="eyebrow">{time}</span> : <span className="eyebrow">{described || alt}</span>}
+      <span className={`plate hatch relative flex aspect-[3/2] flex-col justify-between overflow-hidden border border-rule p-4 ${className}`}>
+        {time ? <span className="time-chip mono self-start px-1.5 py-0.5 text-xs">{time}</span> : <span />}
+        <span>
+          <span className="eyebrow block">{copy.noPhotoKept}</span>
+          {described ? <span className="serif mt-2 block text-lg italic leading-snug">{described}</span> : null}
+        </span>
       </span>
     );
   }
