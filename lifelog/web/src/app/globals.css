@@ -6,9 +6,10 @@
   --font-serif: var(--font-newsreader), var(--font-noto-serif), "Source Serif 4", serif;
   --font-sans: var(--font-inter), var(--font-noto-sans), system-ui, sans-serif;
   --font-mono: var(--font-jetbrains), ui-monospace, monospace;
-  --motion-fast: 120ms;
-  --motion-base: 180ms;
-  --ease: cubic-bezier(0.2, 0, 0, 1);
+  --motion-fast: 160ms;
+  --motion-base: 220ms;
+  --ease-archive: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease: var(--ease-archive);
   color-scheme: light;
 }
 
@@ -28,19 +29,20 @@ body {
   font-family: var(--font-sans);
   font-size: 1.0625rem;
   line-height: 1.6;
+  font-variant-numeric: tabular-nums;
   text-rendering: optimizeLegibility;
   background-image: linear-gradient(to right, color-mix(in srgb, var(--rule) 20%, transparent) 1px, transparent 1px);
   background-size: 25% 100%;
 }
 
 ::selection {
-  background: #d9d4c7;
-  color: #111111;
+  background: #d5cfc2;
+  color: #161513;
 }
 
 html.dark ::selection {
-  background: #34322d;
-  color: #edeae2;
+  background: #312e28;
+  color: #eae5da;
 }
 
 :focus {
@@ -48,8 +50,8 @@ html.dark ::selection {
 }
 
 :focus-visible {
-  outline: 2px solid var(--focus);
-  outline-offset: 2px;
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
 }
 
 .wordmark {
@@ -66,19 +68,8 @@ html.dark ::selection {
   position: relative;
 }
 
-.archive-hero::before {
-  content: "ARCHIVE / 01";
-  position: absolute;
-  top: 0;
-  left: 1rem;
-  z-index: 1;
-  padding: 0.15rem 0.45rem;
-  color: var(--paper);
-  background: var(--ink);
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.12em;
-}
+/* The ARCHIVE / EDITION plate label lives in the hero's right-hand
+   metadata stack (page.tsx), never overlaid on the photograph. */
 
 .archive-hero-image {
   filter: saturate(0.82) contrast(1.05);
@@ -95,14 +86,18 @@ html.dark ::selection {
   letter-spacing: 0.01em;
 }
 
+.museum-nav a[aria-current="page"] {
+  font-weight: 600;
+}
+
 .museum-nav a[aria-current="page"]::after {
   content: "";
   position: absolute;
   right: 0;
-  bottom: 0.4rem;
+  bottom: 0.35rem;
   left: 0;
-  height: 1px;
-  background: var(--ink);
+  height: 2px;
+  background: var(--accent);
 }
 
 .museum-page {
@@ -236,8 +231,9 @@ html.dark .wordmark {
 }
 
 .time-chip {
-  background: rgba(17, 17, 17, 0.78);
-  color: #f4f1ea;
+  background: rgba(22, 21, 19, 0.85);
+  color: #f6f3ec;
+  border-radius: 999px;
 }
 
 .skip {
@@ -292,7 +288,7 @@ html.dark .wordmark {
 .badge-uncertain {
   color: var(--uncertain-fg);
   background: var(--uncertain-bg);
-  border: 1px dashed var(--uncertain-rule);
+  border: 1.5px dashed var(--uncertain-rule);
 }
 
 .badge-missing {
@@ -335,15 +331,15 @@ html.dark .wordmark {
   flex: none;
 }
 
-.level-1 { background: #e4dfd2; color: #111111; }
-.level-2 { background: #c9c2b0; color: #111111; }
-.level-3 { background: #5e5a52; color: #f4f1ea; }
-.level-4 { background: #232220; color: #f4f1ea; }
+.level-1 { background: #cbc5b7; color: #161513; }
+.level-2 { background: #9b9485; color: #161513; }
+.level-3 { background: #645e53; color: #f6f3ec; }
+.level-4 { background: #2d2a24; color: #f6f3ec; }
 
-html.dark .level-1 { background: #2a2926; color: #edeae2; }
-html.dark .level-2 { background: #3a3833; color: #edeae2; }
-html.dark .level-3 { background: #b7b1a4; color: #121211; }
-html.dark .level-4 { background: #e4dfd4; color: #121211; }
+html.dark .level-1 { background: #36332c; color: #eae5da; }
+html.dark .level-2 { background: #575247; color: #eae5da; }
+html.dark .level-3 { background: #847b6a; color: #131210; }
+html.dark .level-4 { background: #b8a98e; color: #131210; }
 
 .day-cell {
   display: flex;
@@ -352,7 +348,7 @@ html.dark .level-4 { background: #e4dfd4; color: #121211; }
   min-width: 1.75rem;
   min-height: 1.75rem;
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   line-height: 1;
   text-decoration: none;
   border-radius: 2px;
@@ -481,16 +477,41 @@ html[lang="zh-CN"] .eyebrow {
 .status-line {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem 0.15rem;
-  align-items: center;
+  gap: 0;
+  align-items: stretch;
   max-width: 1440px;
   margin-inline: auto;
-  padding: 0.35rem 1rem 0.55rem;
+  padding: 0 1rem;
   border-top: 1px solid var(--rule);
   font-family: var(--font-mono);
   font-size: 0.8125rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+}
+
+.status-line > a {
+  border-left: 1px solid var(--rule);
+  padding-inline: 0.75rem;
+}
+
+.status-line > a:first-of-type {
+  border-left: 0;
+  padding-left: 0;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 0.5rem;
+  border-radius: 999px;
+  background: var(--accent);
+  flex: none;
+}
+
+.status-dot.is-paused {
+  background: transparent;
+  border: 1.5px dashed var(--ink-muted);
 }
 
 html[lang="zh-CN"] .status-line {
@@ -535,8 +556,8 @@ html[lang="zh-CN"] .status-line {
 }
 
 .film-frame-current {
-  outline: 2px solid var(--ink);
-  outline-offset: 2px;
+  outline: 2.5px solid var(--accent);
+  outline-offset: 3px;
 }
 
 .sprocket {
@@ -586,6 +607,136 @@ main {
 @media (max-width: 640px) {
   .text-display {
     font-size: 2.5rem;
+  }
+}
+
+/* ---------- studio polish (2026-11-20) ---------- */
+
+.editorial-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--rule-strong);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+  transition: color var(--motion-fast) var(--ease-archive), text-decoration-color var(--motion-fast) var(--ease-archive);
+}
+
+.editorial-link:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+
+/* A whole answer / transcript block whose evidence is weak gets a
+   3px dashed amber left bar, on top of the chip treatment. */
+.uncertain-block {
+  border-left: 3px dashed var(--uncertain-rule);
+}
+
+/* Archive mount for a day's main frame: hairline, mat, surface. */
+.frame-mount {
+  border: 1px solid var(--rule);
+  background: var(--paper-raised);
+  padding: 0.5rem;
+}
+
+/* Transcript panel: bordered, internally scrolling, with a paper
+   fade at the bottom edge so the cut reads as intentional. */
+.transcript-panel {
+  position: relative;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+}
+
+.transcript-panel::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2.5rem;
+  background: linear-gradient(to bottom, transparent, var(--paper));
+  pointer-events: none;
+}
+
+.transcript-scroll {
+  max-height: 520px;
+  overflow-y: auto;
+}
+
+/* Ask suggestions: two-column ledger index, hairline-separated. */
+.ask-index {
+  columns: 2;
+  column-gap: 2.5rem;
+}
+
+.ask-index li {
+  break-inside: avoid;
+  border-top: 1px solid var(--rule);
+}
+
+.ask-index button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 48px;
+  padding-block: 0.35rem;
+  text-align: left;
+}
+
+/* Keyboard help, demoted to a compact hairline strip under the day. */
+.keyboard-note {
+  border-top: 1px solid var(--rule);
+  padding-top: 0.75rem;
+}
+
+.keyboard-note summary {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+html[lang="zh-CN"] .keyboard-note summary {
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.site-footer {
+  border-top: 3px double var(--rule-strong);
+}
+
+.status-line > span {
+  border-left: 1px solid var(--rule);
+  padding-left: 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .museum-nav {
+    order: 3;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .museum-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .museum-nav a {
+    white-space: nowrap;
+  }
+
+  .status-optional {
+    display: none !important;
+  }
+
+  .ask-index {
+    columns: 1;
   }
 }
 

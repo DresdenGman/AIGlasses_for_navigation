@@ -116,10 +116,9 @@ export function TimelineView({
         <DayNav day={timeline.day} locale={locale} />
       </div>
       <p className="mt-4 max-w-measure text-sm text-ink-muted">{copy.timelineIntro}</p>
-      <p className="mt-2 max-w-measure text-sm">{copy.keyboardHelp}</p>
       <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-12">
         <div className="min-w-0 lg:col-span-8">
-          <div className="relative">
+          <div className="frame-mount relative">
             {paused || !frame || frame.quality !== "ok" ? (
               <FramePlate frameId={null} alt={paused ? copy.pausedPlate : alt} className="aspect-[3/2]" />
             ) : (
@@ -131,14 +130,14 @@ export function TimelineView({
             </p>
           </div>
           <div className="mt-3 flex items-center gap-2">
-            <button type="button" className="min-h-11 border border-rule px-3" onClick={() => {
+            <button type="button" className="min-h-12 flex-1 border border-rule px-3 sm:flex-none" onClick={() => {
               const index = frame ? ordered.findIndex((item) => item.id === frame.id) : 0;
               const next = ordered[index - 1];
               if (next) setTime(next.ts_ms);
             }}>
               {copy.prevFrame}
             </button>
-            <button type="button" className="min-h-11 border border-rule px-3" onClick={() => {
+            <button type="button" className="min-h-12 flex-1 border border-rule px-3 sm:flex-none" onClick={() => {
               const index = frame ? ordered.findIndex((item) => item.id === frame.id) : -1;
               const next = ordered[index + 1];
               if (next) setTime(next.ts_ms);
@@ -147,12 +146,15 @@ export function TimelineView({
             </button>
             {segment ? <p className="text-sm">{segment.title}{segment.place ? ` · ${segment.place.name}` : ""}</p> : null}
           </div>
-          <ul className="mt-4 flex gap-2 overflow-x-auto pb-2" aria-label={copy.filmstrip}>
-            {strip.map((item) => (
-              <li key={item.id}>
+          <ul className="mt-4 flex snap-x gap-2 overflow-x-auto pb-2" aria-label={copy.filmstrip}>
+            {strip.map((item, index) => (
+              <li key={item.id} className="snap-start">
                 <button type="button" className="w-28 text-left" onClick={() => setTime(item.ts_ms)} aria-current={frame?.id === item.id ? "true" : undefined}>
-                  <FramePlate frameId={item.id} alt={item.caption ?? noDescription(locale)} className="aspect-[3/2]" />
-                  <span className="mono mt-1 block text-xs">{formatClock(item.ts_ms, locale)}</span>
+                  <FramePlate frameId={item.id} alt={item.caption ?? noDescription(locale)} className={`aspect-[4/3] ${frame?.id === item.id ? "film-frame-current" : ""}`} />
+                  <span className="mt-1 flex items-baseline justify-between">
+                    <span className="mono text-xs">{String(index + 1).padStart(2, "0")}</span>
+                    <span className="mono text-xs">{formatClock(item.ts_ms, locale)}</span>
+                  </span>
                 </button>
               </li>
             ))}
@@ -169,7 +171,8 @@ export function TimelineView({
         <section className="min-w-0 lg:col-span-4" aria-labelledby="transcript-title">
           <h2 id="transcript-title" className="serif text-2xl">{copy.transcript}</h2>
           <p className="mt-1 text-sm text-ink-muted">{copy.rawAudio}</p>
-          <div ref={transcriptRef} className="mt-4 max-h-[32rem] overflow-auto pr-1">
+          <div className="transcript-panel mt-4">
+            <div ref={transcriptRef} className="transcript-scroll pr-1">
             {utterances.length === 0 ? <p>{copy.emptyTranscript}</p> : null}
             <ol className="flex flex-col gap-3">
               {utterances.map((utterance) => {
@@ -180,7 +183,7 @@ export function TimelineView({
                     <button
                       type="button"
                       data-current={current ? "true" : "false"}
-                      className={`w-full px-2 py-2 text-left ${current ? "bg-paper-raised" : ""}`}
+                      className={`w-full px-2 py-2 text-left ${current ? "bg-paper-raised" : ""} ${utterance.certainty === "uncertain" ? "uncertain-block" : ""}`}
                       onClick={() => setTime(utterance.start_ms)}
                     >
                       <span className="mono text-xs">{formatClock(utterance.start_ms, locale)}</span>{" "}
@@ -196,11 +199,12 @@ export function TimelineView({
                 );
               })}
             </ol>
+            </div>
           </div>
         </section>
       </div>
       <section className="mt-10 border-t border-rule pt-4" aria-label={copy.timeOfDay}>
-        <div className="mb-2 flex flex-wrap gap-4 text-xs">
+        <div className="mb-2 flex flex-wrap gap-4 text-[0.8125rem]">
           <span className="inline-flex items-center gap-2"><i className="inline-block h-2 w-6 bg-speech" aria-hidden="true" />{copy.transcript}</span>
           <span className="inline-flex items-center gap-2"><i className="inline-block h-2 w-6 bg-detection" aria-hidden="true" />{copy.objects}</span>
           <span className="inline-flex items-center gap-2"><i className="hatch inline-block h-2 w-6 border border-rule" aria-hidden="true" />{copy.paused}</span>
@@ -213,7 +217,7 @@ export function TimelineView({
           aria-valuemax={86400000}
           aria-valuenow={Math.round(time - midnight)}
           aria-valuetext={formatClock(time, locale)}
-          className="relative h-10 cursor-pointer overflow-hidden"
+          className="relative h-11 cursor-pointer overflow-hidden"
           onClick={(event) => {
             const rect = event.currentTarget.getBoundingClientRect();
             const ratio = (event.clientX - rect.left) / rect.width;
@@ -224,35 +228,39 @@ export function TimelineView({
             if (event.key === "ArrowLeft") setTime((current) => Math.max(midnight, current - (event.shiftKey ? 300_000 : 60_000)));
           }}
         >
-          <div className="absolute inset-x-0 top-4 h-2 bg-rule" />
+          <div className="absolute inset-x-0 top-1/2 h-3 -translate-y-1/2 bg-rule" />
           {utterances.map((utterance) => (
             <span
               key={utterance.id}
-              className="absolute top-4 h-2 bg-speech"
+              className="absolute top-1/2 h-3 -translate-y-1/2 bg-speech"
               style={{ left: `${fraction(utterance.start_ms) * 100}%`, width: `${Math.max(0.4, fraction(utterance.end_ms) - fraction(utterance.start_ms)) * 100}%` }}
             />
           ))}
           {ordered.flatMap((item) =>
             item.detection_list.filter((detection) => detection.certainty === "confident").map((detection) => (
-              <span key={detection.id} className="absolute top-3 h-4 w-1 bg-detection" style={{ left: `${fraction(item.ts_ms) * 100}%` }} />
+              <span key={detection.id} className="absolute top-1/2 h-[18px] w-[3px] -translate-y-1/2 bg-detection" style={{ left: `${fraction(item.ts_ms) * 100}%` }} />
             )),
           )}
           {timeline.pauses.map((pause) => (
             <span
               key={pause.start_ms}
-              className="hatch absolute top-3 h-4"
+              className="hatch absolute top-1/2 h-[18px] -translate-y-1/2"
               style={{ left: `${fraction(pause.start_ms) * 100}%`, width: `${(fraction(pause.end_ms ?? midnight + 86_400_000) - fraction(pause.start_ms)) * 100}%` }}
             />
           ))}
-          <span className="absolute top-1 h-6 w-px bg-ink" style={{ left: `${fraction(time) * 100}%` }} />
-          <span className="absolute top-0 h-3 w-3 -translate-x-1/2 rounded-full border-2 border-ink bg-paper" style={{ left: `${fraction(time) * 100}%` }} />
+          <span className="absolute top-1/2 h-7 w-px -translate-y-1/2 bg-ink" style={{ left: `${fraction(time) * 100}%` }} />
+          <span className="absolute top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-ink bg-paper" style={{ left: `${fraction(time) * 100}%`, boxShadow: "0 0 0 3px var(--paper)" }} />
         </div>
-        <div className="mono mt-1 flex justify-between text-xs text-ink-muted">
+        <div className="mono mt-1 flex justify-between text-[0.8125rem] text-ink-muted">
           {hours.map((hour) => (
             <span key={hour}>{String(hour).padStart(2, "0")}:00</span>
           ))}
         </div>
       </section>
+      <details className="keyboard-note mt-8">
+        <summary>{copy.keyboardControls}</summary>
+        <p className="mt-2 max-w-measure text-sm">{copy.keyboardHelp}</p>
+      </details>
     </article>
   );
 }

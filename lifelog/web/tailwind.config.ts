@@ -9,9 +9,13 @@ const config: Config = {
       colors: {
         paper: "var(--paper)",
         "paper-raised": "var(--paper-raised)",
+        "paper-inset": "var(--paper-inset)",
         ink: "var(--ink)",
         "ink-muted": "var(--ink-muted)",
+        "ink-faint": "var(--ink-faint)",
         rule: "var(--rule)",
+        "rule-strong": "var(--rule-strong)",
+        accent: "var(--accent)",
         focus: "var(--focus)",
         "uncertain-fg": "var(--uncertain-fg)",
         "uncertain-bg": "var(--uncertain-bg)",
@@ -45,11 +49,11 @@ const config: Config = {
         measure: "68ch",
       },
       transitionDuration: {
-        fast: "120ms",
-        base: "180ms",
+        fast: "160ms",
+        base: "220ms",
       },
       transitionTimingFunction: {
-        museum: "cubic-bezier(0.2, 0, 0, 1)",
+        museum: "cubic-bezier(0.2, 0.8, 0.2, 1)",
       },
     },
   },

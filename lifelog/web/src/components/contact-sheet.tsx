@@ -1,19 +1,37 @@
 "use client";
 
-import { cloneElement, useState } from "react";
+import { cloneElement, useEffect, useRef, useState } from "react";
 import { ActivityCalendar, type Activity } from "react-activity-calendar";
+import tokens from "../../design-tokens.json";
 import type { ArchiveDay, Locale } from "@/lib/api/schemas";
 import { t } from "@/lib/i18n";
 import { usePrefs } from "@/lib/prefs";
 import { FEATURED_DAY, formatKawara, formatNumber } from "@/lib/time";
 
-const light = ["#F4F1EA", "#E2DFD9", "#ABA9A5", "#82817D", "#4A4947"];
-const dark = ["#121211", "#3F3E3A", "#6A6862", "#A39E94", "#EDEAE2"];
+// Five-step archive heat scale (design-tokens.json "heat"). The dark
+// scale tops out at warm taupe (#B8A98E), never near-white, so the
+// busiest days do not glare for low-vision readers.
+const light = tokens.heat.light;
+const dark = tokens.heat.dark;
 
 export function ContactSheet({ days, locale }: { days: ArchiveDay[]; locale: Locale }) {
   const copy = t(locale);
   const theme = usePrefs().theme;
   const [list, setList] = useState(false);
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  // The year overflows horizontally on narrow screens; start at the
+  // most recent days (far right) instead of January. The scrollable
+  // element is the calendar library's own inner container. Scoped to
+  // small viewports: an unconditional jump on desktop can shift cells
+  // under the pointer while the page is settling.
+  useEffect(() => {
+    if (window.innerWidth > 640) return;
+    const scroller = scrollRef.current?.querySelector<HTMLElement>(".react-activity-calendar__scroll-container");
+    if (scroller && scroller.scrollWidth > scroller.clientWidth) {
+      scroller.scrollLeft = scroller.scrollWidth;
+    }
+  }, [list]);
   const byDate = new Map(days.map((day) => [day.day, day]));
   const data: Activity[] = days.map((day) => ({
     date: day.day,
@@ -38,7 +56,9 @@ export function ContactSheet({ days, locale }: { days: ArchiveDay[]; locale: Loc
         <li className="inline-flex items-center gap-2"><i className="amber-tick" aria-hidden="true" />{copy.legendUncertain}</li>
       </ul>
       {list ? <DayTable days={days} locale={locale} /> : (
-        <div className="overflow-x-auto">
+        <div>
+          <p className="mono mb-2 text-xs text-ink-muted md:hidden" aria-hidden="true">&larr; {copy.scrollYear}</p>
+          <div ref={scrollRef} className="overflow-x-auto">
           <svg width="0" height="0" aria-hidden="true">
             <defs>
               <pattern id="cell-hatch" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
@@ -85,6 +105,7 @@ export function ContactSheet({ days, locale }: { days: ArchiveDay[]; locale: Loc
               );
             }}
           />
+          </div>
         </div>
       )}
     </section>

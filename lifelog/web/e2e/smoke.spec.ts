@@ -42,6 +42,9 @@ test.describe("showcase pages", () => {
     await page.getByRole("button", { name: /E\d/ }).first().click();
     await expect(page.getByRole("dialog")).toBeVisible();
     await page.keyboard.press("Escape");
+    // Suggestion groups fold past the first 10 into a "More questions"
+    // details block; expand the day group before clicking folded items.
+    await page.getByText(/More questions/).first().click();
     await page.getByRole("button", { name: "Where are my keys?", exact: true }).first().click();
     await expect(page.locator(".border-dashed.border-uncertain-rule")).toBeVisible();
     await expect(page.locator(".bg-uncertain-bg")).toHaveCount(0);

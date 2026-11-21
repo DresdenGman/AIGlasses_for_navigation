@@ -84,7 +84,7 @@ export function SummaryView({
       </header>
       {highlight ? (
         <figure className="mt-10 grid grid-cols-1 gap-4 lg:grid-cols-12">
-          <div className="lg:col-span-9">
+          <div className="frame-mount lg:col-span-9">
             <FramePlate frameId={highlight.id} alt={highlight.caption ?? noDescription(locale)} time={formatClock(highlight.ts_ms, locale)} className="aspect-[3/2]" />
           </div>
           <figcaption className="eyebrow lg:col-span-3">
@@ -136,7 +136,7 @@ export function SummaryView({
               const best = item.citations.reduce((max, citation) => Math.max(max, citation.score), 0);
               const reason = locale === "zh-CN" ? `证据偏弱（最高 ${best.toFixed(2)}）。` : `Evidence is weak (best match ${best.toFixed(2)}).`;
               return (
-                <li key={item.id} className="border border-dashed border-uncertain-rule bg-paper p-5">
+                <li key={item.id} className="uncertain-block border border-dashed border-uncertain-rule bg-paper p-5">
                   <UncertainBadge locale={locale} />
                   <p className="mt-3 text-sm text-uncertain-fg">{reason}</p>
                   <p className="mt-3 max-w-measure">

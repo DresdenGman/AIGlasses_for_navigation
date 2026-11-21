@@ -49,7 +49,7 @@ export function FramePlate({
     const copy = t(locale ?? "en");
     return (
       <span className={`plate hatch relative flex aspect-[3/2] flex-col justify-between overflow-hidden border border-rule p-4 ${className}`}>
-        {time ? <span className="time-chip mono self-start px-1.5 py-0.5 text-xs">{time}</span> : <span />}
+        {time ? <span className="time-chip mono self-start px-2 py-0.5 text-sm">{time}</span> : <span />}
         <span>
           <span className="eyebrow block">{copy.noPhotoKept}</span>
           {described ? <span className="serif mt-2 block text-lg italic leading-snug">{described}</span> : null}
@@ -70,7 +70,11 @@ export function FramePlate({
         className="h-full w-full object-cover"
       />
       {time ? (
-        <span className="time-chip mono absolute left-2 top-2 px-1.5 py-0.5 text-xs">{time}</span>
+        variant === "full" ? (
+          <span className="time-chip mono absolute bottom-2 left-2 px-2 py-0.5 text-sm">{time}</span>
+        ) : (
+          <span className="time-chip mono absolute left-2 top-2 px-1.5 py-0.5 text-xs">{time}</span>
+        )
       ) : null}
     </span>
   );

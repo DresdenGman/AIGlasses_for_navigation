@@ -79,7 +79,7 @@ export function AskPanel({
         <section aria-label={copy.answerRegion} aria-live="polite" className="ask-answer mt-8 max-w-measure border border-rule bg-paper-raised p-6">
           <p className="eyebrow">{response.status === "answered" ? copy.answeredEyebrow : response.status === "uncertain" ? copy.uncertain : copy.notInRecords} · {label}</p>
           {response.status === "uncertain" ? (
-            <div className="mt-4 border border-dashed border-uncertain-rule bg-paper p-4">
+            <div className="uncertain-block mt-4 border border-dashed border-uncertain-rule bg-paper p-4">
               <UncertainBadge locale={locale} />
               <p className="mt-3 text-sm text-uncertain-fg">{response.reason_text ?? `${copy.weakEvidence} ${response.score.toFixed(2)}`}</p>
               <p className="serif mt-3 text-2xl leading-snug">{response.answer}</p>
@@ -120,25 +120,36 @@ export function AskPanel({
             className="min-h-11 w-full border border-rule bg-transparent px-3"
           />
         </label>
-        {[{ title: copy.suggestedDay, items: filteredHero }, { title: copy.suggestedYear, items: filteredYear }].map((group) => (
-          <div key={group.title} className="mt-8">
-            <h3 className="text-sm text-ink-muted">{group.title}</h3>
-            <ul className="mt-3 flex flex-col gap-2">
-              {group.items.map((item) => (
-                <li key={item.id ?? item.question}>
-                  <button
-                    type="button"
-                    className="min-h-11 text-left underline decoration-rule underline-offset-4"
-                    aria-pressed={response !== null && response.id === item.id}
-                    onClick={() => show(item)}
-                  >
-                    {item.question}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+        {[{ title: copy.suggestedDay, items: filteredHero }, { title: copy.suggestedYear, items: filteredYear }].map((group) => {
+          const fold = suggestedQuery.trim() === "" && group.items.length > 10;
+          const head = fold ? group.items.slice(0, 10) : group.items;
+          const rest = fold ? group.items.slice(10) : [];
+          const renderItem = (item: AskResponse) => (
+            <li key={item.id ?? item.question}>
+              <button
+                type="button"
+                aria-pressed={response !== null && response.id === item.id}
+                onClick={() => show(item)}
+              >
+                {item.question}
+              </button>
+            </li>
+          );
+          return (
+            <div key={group.title} className="mt-8">
+              <h3 className="eyebrow">{group.title}</h3>
+              <ul className="ask-index mt-3">{head.map(renderItem)}</ul>
+              {rest.length > 0 ? (
+                <details className="mt-2">
+                  <summary className="flex min-h-11 cursor-pointer items-center text-sm underline">
+                    {copy.moreQuestions} ({rest.length})
+                  </summary>
+                  <ul className="ask-index mt-1">{rest.map(renderItem)}</ul>
+                </details>
+              ) : null}
+            </div>
+          );
+        })}
       </section>
     </div>
   );
