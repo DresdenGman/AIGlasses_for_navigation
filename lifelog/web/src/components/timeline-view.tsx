@@ -110,8 +110,8 @@ export function TimelineView({
   const hours = Array.from({ length: 7 }, (_, index) => index * 4);
 
   return (
-    <article className="museum-page mx-auto max-w-page px-6 py-12">
-      <h1 className="serif text-display">{formatDate(timeline.day, locale)}</h1>
+    <article className="museum-page mx-auto max-w-page px-4 py-12 md:px-8">
+      <h1 className="enter serif text-display">{formatDate(timeline.day, locale)}</h1>
       <div className="mt-6">
         <DayNav day={timeline.day} locale={locale} />
       </div>
@@ -130,14 +130,14 @@ export function TimelineView({
             </p>
           </div>
           <div className="mt-3 flex items-center gap-2">
-            <button type="button" className="min-h-12 flex-1 border border-rule px-3 sm:flex-none" onClick={() => {
+            <button type="button" className="btn-outline min-h-12 flex-1 border border-rule px-3 sm:flex-none" onClick={() => {
               const index = frame ? ordered.findIndex((item) => item.id === frame.id) : 0;
               const next = ordered[index - 1];
               if (next) setTime(next.ts_ms);
             }}>
               {copy.prevFrame}
             </button>
-            <button type="button" className="min-h-12 flex-1 border border-rule px-3 sm:flex-none" onClick={() => {
+            <button type="button" className="btn-outline min-h-12 flex-1 border border-rule px-3 sm:flex-none" onClick={() => {
               const index = frame ? ordered.findIndex((item) => item.id === frame.id) : -1;
               const next = ordered[index + 1];
               if (next) setTime(next.ts_ms);

@@ -71,7 +71,7 @@ export function AskPanel({
             placeholder={copy.askPlaceholder}
             className="serif w-full bg-transparent text-3xl leading-tight outline-none"
           />
-          <button type="submit" className="min-h-11 min-w-11 border border-ink px-3" aria-label={copy.askSubmit}>
+          <button type="submit" className="btn-outline min-h-11 min-w-11 border border-ink px-3" aria-label={copy.askSubmit}>
             {copy.askSubmit}
           </button>
         </div>

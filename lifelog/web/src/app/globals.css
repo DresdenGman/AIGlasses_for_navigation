@@ -8,7 +8,17 @@
   --font-mono: var(--font-jetbrains), ui-monospace, monospace;
   --motion-fast: 160ms;
   --motion-base: 220ms;
+  /* tasteskill motion tokens (motion.md): one set of times for every
+     hover, press and entrance on the site. */
+  --m-in: 150ms;
+  --m-out: 120ms;
+  --m-press: 90ms;
+  --m-card: 180ms;
+  --m-slide: 240ms;
+  --m-image-in: 600ms;
+  --m-image-out: 400ms;
   --ease-archive: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-enter: cubic-bezier(0.22, 1, 0.36, 1);
   --ease: var(--ease-archive);
   color-scheme: light;
 }
@@ -45,7 +55,7 @@ html.dark ::selection {
   color: #eae5da;
 }
 
-:focus {
+:focus:not(:focus-visible) {
   outline: none;
 }
 
@@ -73,7 +83,7 @@ html.dark ::selection {
 
 .archive-hero-image {
   filter: saturate(0.82) contrast(1.05);
-  transition: filter 240ms var(--ease), transform 240ms var(--ease);
+  transition: filter var(--m-slide) var(--ease);
 }
 
 .museum-header {
@@ -86,18 +96,35 @@ html.dark ::selection {
   letter-spacing: 0.01em;
 }
 
-.museum-nav a[aria-current="page"] {
-  font-weight: 600;
-}
-
-.museum-nav a[aria-current="page"]::after {
+/* The drawn underline (motion.md): a 1px ink line scales in from the
+   left under a hovered or focused nav word. The current page keeps
+   its 2px accent bar instead. */
+.museum-nav a::after {
   content: "";
   position: absolute;
   right: 0;
   bottom: 0.35rem;
   left: 0;
+  height: 1px;
+  background: var(--ink);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--m-in) var(--ease);
+}
+
+.museum-nav a:hover::after,
+.museum-nav a:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.museum-nav a[aria-current="page"] {
+  font-weight: 600;
+}
+
+.museum-nav a[aria-current="page"]::after {
   height: 2px;
   background: var(--accent);
+  transform: scaleX(1);
 }
 
 .museum-page {
@@ -160,17 +187,13 @@ html.dark ::selection {
 
 .object-archive img {
   filter: saturate(0.82);
-  transition: filter 180ms var(--ease), transform 180ms var(--ease);
+  transition: filter var(--m-out) var(--ease), transform var(--m-image-in) var(--ease);
 }
 
-.object-archive li:hover img {
+.object-archive a:hover img,
+.object-archive a:focus-visible img {
   filter: saturate(1);
-  transform: scale(1.008);
-}
-
-.archive-hero-image:hover {
-  filter: saturate(1) contrast(1.05);
-  transform: translate(0.35rem, -0.35rem);
+  transform: scale(1.02);
 }
 
 .archive-year {
@@ -179,12 +202,20 @@ html.dark ::selection {
   line-height: 0.78;
 }
 
-.archive-months li {
-  transition: transform 180ms var(--ease);
+/* Month plates: the photograph zooms inside its frame on hover
+   (motion.md, 1.02-1.03); the plate itself never moves. */
+.month-plate {
+  display: block;
+  overflow: hidden;
 }
 
-.archive-months li:hover {
-  transform: translateY(-0.45rem);
+.month-plate img {
+  transition: transform var(--m-image-in) var(--ease), filter var(--m-out) var(--ease);
+}
+
+.month-plate:hover img,
+.month-plate:focus-visible img {
+  transform: scale(1.03);
 }
 
 @media (max-width: 640px) {
@@ -316,11 +347,14 @@ html.dark .wordmark {
   background: var(--paper-raised);
   color: inherit;
   text-decoration: none;
-  transition: border-color var(--motion-fast) var(--ease);
+  transition: border-color var(--m-in) var(--ease), transform var(--m-card) var(--ease);
 }
 
-.chip:hover {
-  border-color: var(--ink);
+@media (hover: hover) and (pointer: fine) {
+  .chip:hover {
+    border-color: var(--ink);
+    transform: translateY(-2px);
+  }
 }
 
 .chip img {
@@ -612,18 +646,24 @@ main {
 
 /* ---------- studio polish (2026-11-20) ---------- */
 
+/* The resting line is the hairline; on hover an accent line draws
+   over it from the left (motion.md, Link). Drawn with background
+   gradients so the line can travel; every use is a single-line link. */
 .editorial-link {
   color: inherit;
-  text-decoration: underline;
-  text-decoration-color: var(--rule-strong);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.22em;
-  transition: color var(--motion-fast) var(--ease-archive), text-decoration-color var(--motion-fast) var(--ease-archive);
+  text-decoration: none;
+  background-image: linear-gradient(var(--accent), var(--accent)), linear-gradient(var(--rule-strong), var(--rule-strong));
+  background-size: 0% 1px, 100% 1px;
+  background-position: 0 calc(100% - 0.08em), 0 calc(100% - 0.08em);
+  background-repeat: no-repeat;
+  padding-bottom: 0.14em;
+  transition: background-size var(--m-slide) var(--ease-archive), color var(--m-in) var(--ease-archive);
 }
 
-.editorial-link:hover {
+.editorial-link:hover,
+.editorial-link:focus-visible {
   color: var(--accent);
-  text-decoration-color: var(--accent);
+  background-size: 100% 1px, 100% 1px;
 }
 
 /* A whole answer / transcript block whose evidence is weak gets a
@@ -681,6 +721,16 @@ main {
   min-height: 48px;
   padding-block: 0.35rem;
   text-align: left;
+  transition: background-color var(--m-in) var(--ease);
+}
+
+.ask-index button:hover {
+  background: var(--paper-raised);
+}
+
+.ask-index button[aria-pressed="true"] {
+  background: var(--paper-raised);
+  box-shadow: inset 3px 0 0 var(--accent);
 }
 
 /* Keyboard help, demoted to a compact hairline strip under the day. */
@@ -740,11 +790,128 @@ html[lang="zh-CN"] .keyboard-note summary {
   }
 }
 
+/* ---------- tasteskill motion layer (2026-11-21) ----------
+   One hover/press system for the whole site, on the skill's tokens
+   (motion.md): buttons step 1px on hover and sink on press, linked
+   cards lift 2px, and every page head enters once on load. Transform,
+   scale and opacity only; the reduced-motion block below rests it. */
+
+.btn-solid,
+.btn-outline {
+  transition: transform var(--m-in) var(--ease), background-color var(--m-in) var(--ease), border-color var(--m-in) var(--ease), color var(--m-in) var(--ease);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-solid:hover {
+    background: color-mix(in srgb, var(--ink) 86%, var(--paper));
+    transform: translateY(-1px);
+  }
+
+  .btn-outline:hover {
+    border-color: var(--ink);
+    background: color-mix(in srgb, var(--ink) 5%, transparent);
+    transform: translateY(-1px);
+  }
+}
+
+.btn-solid:active,
+.btn-outline:active {
+  transform: translateY(1px) scale(0.985);
+  transition-duration: var(--m-press);
+}
+
+/* A linked card answers the pointer with a 2px lift. */
+@media (hover: hover) and (pointer: fine) {
+  .card-lift {
+    transition: transform var(--m-card) var(--ease), background-color var(--m-in) var(--ease);
+  }
+
+  .card-lift:hover {
+    transform: translateY(-2px);
+  }
+}
+
+/* The loop cards: the title takes the drawn underline with the card. */
+.cap-card h3 {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.18em;
+  transition: text-decoration-color var(--m-in) var(--ease);
+}
+
+.cap-card:hover h3,
+.cap-card:focus-within h3 {
+  text-decoration-color: var(--accent);
+}
+
+/* Entrance, once on load (motion.md, The hero's entrance): the words
+   rise 12px and settle, the picture settles from 1.05. Pure CSS, so
+   the page is whole without script; the delays are the stagger. */
+@keyframes enter-rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes enter-settle {
+  from {
+    transform: scale(1.05);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.enter {
+  animation: enter-rise 520ms var(--ease-enter) both;
+}
+
+.enter-1 {
+  animation-delay: 70ms;
+}
+
+.enter-2 {
+  animation-delay: 140ms;
+}
+
+.enter-3 {
+  animation-delay: 210ms;
+}
+
+.enter-media {
+  overflow: hidden;
+}
+
+.enter-media > img {
+  animation: enter-settle 1100ms var(--ease-enter) both;
+}
+
+/* The dealt moment (word-highlight): the loop statement lights word
+   by word as its section crosses the screen. Unlit words sit in
+   ink-muted (8.5:1 on paper), lit words in ink; without script or
+   under reduced motion the component renders every word lit. */
+.wh-word {
+  transition: color 200ms linear;
+}
+
+@media (min-width: 768px) {
+  .status-line {
+    padding: 0 2rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
   *::after {
     animation-duration: 0ms !important;
+    animation-delay: 0ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0ms !important;
     scroll-behavior: auto !important;

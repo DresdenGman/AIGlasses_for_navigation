@@ -51,7 +51,7 @@ function PersonRow({ speaker, locale }: { speaker: SpeakerDay; locale: Locale })
               <span className="text-sm">{copy.nameLabel}</span>
               <input value={name} onChange={(event) => setName(event.target.value)} className="mt-1 w-full border border-rule bg-transparent px-3 py-2" />
             </label>
-            <button type="submit" className="min-h-11 border border-ink px-3">
+            <button type="submit" className="btn-outline min-h-11 border border-ink px-3">
               {copy.saveName}
             </button>
             <button

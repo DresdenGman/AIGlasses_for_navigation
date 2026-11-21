@@ -9,8 +9,8 @@ export default async function PrivacyPage() {
   const copy = t(locale);
   const privacy = await getClient().getPrivacy();
   return (
-    <article className="mx-auto max-w-page px-6 py-10">
-      <h1 className="serif text-display">{copy.privacyTitle}</h1>
+    <article className="mx-auto max-w-page px-4 py-12 md:px-8">
+      <h1 className="enter serif text-display">{copy.privacyTitle}</h1>
       <div className="mt-8">
         <PrivacyPanel locale={locale} baseline={privacy} retentionLine={showcase.ui(locale).retention_line} egressNote={showcase.ui(locale).egress_empty} egress={showcase.egress()} purges={showcase.purges()} />
       </div>

@@ -20,9 +20,9 @@ export default async function PeoplePage({ params }: { params: Promise<{ day: st
     if (!(await client.hasDay(day))) notFound();
     const speakers = await client.listSpeakers(day, locale);
     return (
-      <article className="mx-auto max-w-page px-6 py-10">
+      <article className="mx-auto max-w-page px-4 py-12 md:px-8">
         <DayNav day={day} locale={locale} />
-        <h1 className="serif mt-8 text-display">{copy.peopleTitle}</h1>
+        <h1 className="enter serif mt-8 text-display">{copy.peopleTitle}</h1>
         <div className="mt-6">
           <PeoplePanel locale={locale} speakers={speakers.speakers} />
         </div>

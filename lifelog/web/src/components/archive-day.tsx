@@ -8,9 +8,9 @@ export function ArchiveDay({ day, locale }: { day: DayInfo; locale: Locale }) {
   const copy = t(locale);
   const hours = hoursBetween(day.first_ms, day.last_ms);
   return (
-    <article className="museum-page mx-auto max-w-page px-6 py-12">
+    <article className="museum-page mx-auto max-w-page px-4 py-12 md:px-8">
       <DayNav day={day.day} locale={locale} />
-      <h1 className="serif mt-8 text-display">{formatDate(day.day, locale)}</h1>
+      <h1 className="enter serif mt-8 text-display">{formatDate(day.day, locale)}</h1>
       <p className="mt-6 max-w-measure text-xl">{copy.archiveTitle}</p>
       <p className="mt-3 max-w-measure">{copy.archiveBody}</p>
       <dl className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-4">

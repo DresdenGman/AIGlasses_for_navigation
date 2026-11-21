@@ -17,10 +17,10 @@ export default async function AskPage() {
   ]);
   const docs = documentsFromDay(FEATURED_DAY, frames.frames, utterances.utterances);
   return (
-    <article className="ask-page mx-auto max-w-page px-6 py-14">
+    <article className="ask-page mx-auto max-w-page px-4 py-12 md:px-8">
       <header className="ask-intro">
-        <p className="eyebrow">Question / evidence</p>
-        <h1 className="serif mt-5 text-display">{copy.askTitle}</h1>
+        <p className="eyebrow">{copy.askEyebrow}</p>
+        <h1 className="enter serif mt-5 text-display">{copy.askTitle}</h1>
         <p className="mt-6 max-w-measure text-xl leading-snug">{copy.askLede}</p>
       </header>
       <div>

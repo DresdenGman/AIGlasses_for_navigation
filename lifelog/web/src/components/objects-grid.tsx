@@ -41,7 +41,9 @@ export function ObjectsGrid({
               ) : (
                 <Link href={sighting.open_url} className="mt-4 block no-underline">
                   {plate ? (
-                    <img src={plate.src} alt={plateAlt(plate, locale)} width={1536} height={1024} className="plate aspect-[3/2] w-full object-cover" />
+                    <span className="block overflow-hidden">
+                      <img src={plate.src} alt={plateAlt(plate, locale)} width={1536} height={1024} className="plate aspect-[3/2] w-full object-cover" />
+                    </span>
                   ) : (
                     <FramePlate frameId={sighting.frame_id} alt={sighting.caption ?? item.watch_item.display_name} time={formatClock(sighting.ts_ms, locale)} locale={locale} className="aspect-[3/2]" />
                   )}

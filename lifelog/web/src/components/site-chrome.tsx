@@ -71,7 +71,7 @@ export function SiteChrome({
           </nav>
           <button
             type="button"
-            className={`inline-flex min-h-11 items-center gap-2 border-2 border-ink px-3 ${prefs.overrides.paused ? "hatch" : "bg-ink text-paper"}`}
+            className={`inline-flex min-h-11 items-center gap-2 border-2 border-ink px-3 ${prefs.overrides.paused ? "btn-outline hatch" : "btn-solid bg-ink text-paper"}`}
             onClick={() => (prefs.overrides.paused ? prefs.askResume() : prefs.pause())}
           >
             <Pause aria-hidden="true" size={16} strokeWidth={1.5} />
@@ -89,6 +89,7 @@ export function SiteChrome({
           <Link href="/settings" className="status-optional">{copy.lastSync} {sync}</Link>
           <span className="ml-auto flex flex-wrap gap-2">
             <button type="button" className="min-h-11 px-2" aria-pressed={prefs.locale === "en"} onClick={() => prefs.setLocale("en")}>{copy.english}</button>
+            <button type="button" className="min-h-11 px-2" aria-pressed={prefs.locale === "zh-CN"} onClick={() => prefs.setLocale("zh-CN")}>{copy.chinese}</button>
             <button type="button" className="min-h-11 px-2" onClick={() => prefs.setTheme(prefs.theme === "dark" ? "light" : "dark")}>{prefs.theme === "dark" ? copy.themeToLight : copy.themeToDark}</button>
             <button type="button" className="min-h-11 px-2" aria-pressed={prefs.large} onClick={prefs.toggleLarge}>{prefs.large ? copy.largeOn : copy.largeOff}</button>
           </span>
@@ -141,7 +142,7 @@ function ConfirmDialog() {
           <div className="mt-6 flex flex-wrap gap-3">
             <button
               type="button"
-              className="min-h-11 border border-ink bg-ink px-4 text-paper disabled:opacity-40"
+              className="btn-solid min-h-11 border border-ink bg-ink px-4 text-paper disabled:opacity-40"
               disabled={prefs.dialog === "audio" && !ack}
               onClick={() => {
                 if (prefs.dialog === "resume") prefs.confirmResume();
@@ -152,7 +153,7 @@ function ConfirmDialog() {
             >
               {prefs.dialog === "audio" ? copy.enableAudio : copy.confirm}
             </button>
-            <Dialog.Close className="min-h-11 border border-rule px-4">{copy.cancel}</Dialog.Close>
+            <Dialog.Close className="btn-outline min-h-11 border border-rule px-4">{copy.cancel}</Dialog.Close>
           </div>
         </Dialog.Content>
       </Dialog.Portal>

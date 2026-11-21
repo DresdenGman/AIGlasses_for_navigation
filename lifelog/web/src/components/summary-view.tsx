@@ -55,7 +55,7 @@ export function SummaryView({
       <header className="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-12">
         <div className="lg:col-span-8">
           <p className="eyebrow">{copy.day}</p>
-          <h1 className="serif mt-3 text-display">{formatKawara(summary.day, locale)}</h1>
+          <h1 className="enter serif mt-3 text-display">{formatKawara(summary.day, locale)}</h1>
           {summary.headline ? <p className="serif mt-6 max-w-measure text-xl italic">{summary.headline.text}</p> : null}
         </div>
         <div className="lg:col-span-4">

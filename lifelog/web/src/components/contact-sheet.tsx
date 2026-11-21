@@ -59,7 +59,7 @@ export function ContactSheet({ days, locale }: { days: ArchiveDay[]; locale: Loc
             <button
               key={name}
               type="button"
-              className={`min-h-11 border px-3 text-sm ${view === name ? "border-ink bg-paper-raised" : "border-rule"}`}
+              className={`btn-outline min-h-11 border px-3 text-sm ${view === name ? "border-ink bg-paper-raised" : "border-rule"}`}
               aria-pressed={view === name}
               onClick={() => setView(name)}
             >

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ContactSheet } from "@/components/contact-sheet";
+import { WordHighlight } from "@/components/word-highlight";
 import { getClient } from "@/lib/api/client";
 import { showcase } from "@/lib/api/showcase";
 import { t } from "@/lib/i18n";
@@ -27,17 +28,21 @@ export default async function YearPage() {
   return (
     <article className="museum-page">
       <header className="archive-hero mx-auto grid max-w-page grid-cols-1 gap-8 px-4 pb-8 pt-10 md:px-8 lg:grid-cols-12 lg:pt-16">
-        <div className="lg:col-span-8">
+        <div className="enter-media lg:col-span-8">
           <img src={YEAR_HERO.src} alt={plateAlt(YEAR_HERO, locale)} width={1536} height={1024} className="archive-hero-image plate aspect-[3/2] w-full object-cover" />
         </div>
-        <div className="archive-intro flex flex-col justify-end lg:col-span-4">
-          <p className="eyebrow">Archive / 01 · Edition {year.to.slice(0, 4)}</p>
-          <p className="eyebrow mt-2">{copy.yearEyebrow} / {year.to.slice(0, 4)}</p>
-          <h1 className="archive-year serif mt-4 text-display">{year.to.slice(0, 4)}</h1>
-          <p className="serif mt-6 text-xl italic leading-snug">{ui.year_line}</p>
-          <p className="mt-8">
-            <Link href={`/day/${FEATURED_DAY}/summary`} className="editorial-link inline-flex min-h-11 items-center">{copy.readDay}</Link>
-          </p>
+        <div className="archive-intro flex flex-col justify-between gap-10 lg:col-span-4">
+          <div className="enter">
+            <p className="eyebrow">Archive / 01 · Edition {year.to.slice(0, 4)}</p>
+            <p className="eyebrow mt-2">{copy.yearEyebrow} / {year.to.slice(0, 4)}</p>
+          </div>
+          <div className="enter enter-1">
+            <h1 className="archive-year serif mt-4 text-display">{year.to.slice(0, 4)}</h1>
+            <p className="serif mt-6 text-xl italic leading-snug">{ui.year_line}</p>
+            <p className="mt-8">
+              <Link href={`/day/${FEATURED_DAY}/summary`} className="editorial-link inline-flex min-h-11 items-center">{copy.readDay}</Link>
+            </p>
+          </div>
         </div>
       </header>
 
@@ -78,52 +83,51 @@ export default async function YearPage() {
       <section className="mx-auto mt-24 max-w-page px-4 md:px-8" aria-labelledby="capabilities-title">
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-12">
           <div className="lg:col-span-3">
-            <h2 id="capabilities-title" className="eyebrow">The complete loop</h2>
+            <h2 id="capabilities-title" className="eyebrow">{copy.loopTitle}</h2>
           </div>
           <div className="lg:col-span-9">
             <p className="serif max-w-measure text-2xl leading-snug">
-              Capture, keep, understand, and find a moment again — with uncertainty visible at every step.
+              <WordHighlight text={copy.loopStatement} locale={locale} />
             </p>
             <ul className="mt-8 grid grid-cols-1 gap-px border border-rule bg-rule sm:grid-cols-2">
-              {[
-                ["01", "Timed capture", "A five-minute frame rhythm and watch transcript form the day.", `/day/${FEATURED_DAY}`],
-                ["02", "Cloud or NAS backup", "A visible backup ledger keeps the destination and failures explicit.", "/settings"],
-                ["03", "Daily summary", "Places, activities, people, and speech are arranged into a readable day.", `/day/${FEATURED_DAY}/summary`],
-                ["04", "Timeline playback", "Scrub the full day, jump to a frame, or follow the transcript.", `/day/${FEATURED_DAY}`],
-                ["05", "Evidence-first answers", "Ask a question and open the exact cited moment.", "/ask"],
-                ["06", "Last-seen objects", "Search watched objects without turning a weak sighting into certainty.", "/objects"],
-                ["07", "Uncertainty markers", "Weak evidence is labeled instead of being polished into a claim.", "/ask"],
-                ["08", "Privacy controls", "Pause capture, choose retention, and keep the record local-first.", "/privacy"],
-              ].map(([number, title, description, href]) => (
-                <li key={number} className="flex bg-paper p-7">
-                  <Link href={href} className="flex w-full flex-col no-underline">
-                    <span className="eyebrow">{number}</span>
-                    <h3 className="serif mt-4 text-2xl">{title}</h3>
-                    <p className="mt-2 text-sm text-ink-muted">{description}</p>
-                    <span className="mt-auto inline-block pt-5 text-sm underline">Open view</span>
-                  </Link>
-                </li>
-              ))}
+              {copy.caps.map(([title, description], index) => {
+                const href = [
+                  `/day/${FEATURED_DAY}`,
+                  "/settings",
+                  `/day/${FEATURED_DAY}/summary`,
+                  `/day/${FEATURED_DAY}`,
+                  "/ask",
+                  "/objects",
+                  "/ask",
+                  "/privacy",
+                ][index];
+                return (
+                  <li key={title} className="cap-card card-lift flex bg-paper p-6">
+                    <Link href={href} className="flex w-full flex-col no-underline">
+                      <span className="eyebrow">{String(index + 1).padStart(2, "0")}</span>
+                      <h3 className="serif mt-4 text-2xl">{title}</h3>
+                      <p className="mt-2 text-sm text-ink-muted">{description}</p>
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
-            <p className="mt-5 max-w-measure text-sm text-ink-muted">
-              This public page is a synthetic showcase. The interface and contracts are implemented; live camera,
-              Apple Watch, storage credentials, and model keys still need to be connected for a real deployment.
-            </p>
+            <p className="mt-5 max-w-measure text-sm text-ink-muted">{copy.loopNote}</p>
           </div>
         </div>
       </section>
 
-      <section className="mt-24" aria-labelledby="months-title">
-        <div className="mx-auto mb-8 grid max-w-page grid-cols-1 gap-4 px-4 md:px-8 lg:grid-cols-12">
+      <section className="mx-auto mt-24 max-w-page px-4 md:px-8" aria-labelledby="months-title">
+        <div className="mb-8 grid grid-cols-1 gap-4 lg:grid-cols-12">
           <h2 id="months-title" className="eyebrow lg:col-span-3">{copy.monthsTitle}</h2>
         </div>
-        <ul className="archive-months flex gap-6 overflow-x-auto px-4 pb-4 md:px-8">
+        <ul className="archive-months grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {months.map((month) => {
             const photo = MONTH_PLATES[month.month];
             const href = month.day === FEATURED_DAY ? `/day/${FEATURED_DAY}/summary` : `/day/${month.day}`;
             return (
-              <li key={month.month} className="w-[min(78vw,22rem)] shrink-0">
-                <Link href={href} className="block no-underline">
+              <li key={month.month}>
+                <Link href={href} className="month-plate no-underline">
                   <img
                     src={photo?.src ?? `${basePath}/showcase/placeholders/pending.svg`}
                     alt={photo ? plateAlt(photo, locale) : copy.plateLater}

@@ -20,8 +20,8 @@ export default async function AboutPage() {
         "Type can grow. Pictures have descriptions. The day moves from the keyboard: arrows for a frame, shift plus arrows for five minutes, J and K for a stretch, slash for Ask, P to pause.",
       ];
   return (
-    <article className="mx-auto max-w-page px-6 py-10">
-      <h1 className="serif text-display">{copy.aboutTitle}</h1>
+    <article className="mx-auto max-w-page px-4 py-12 md:px-8">
+      <h1 className="enter serif text-display">{copy.aboutTitle}</h1>
       <div className="mt-8 max-w-measure space-y-5 text-lg">
         {paragraphs.map((paragraph) => (
           <p key={paragraph}>{paragraph}</p>

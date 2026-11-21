@@ -14,8 +14,8 @@ export default async function SettingsPage() {
     client.getBackupStatus(),
   ]);
   return (
-    <article className="mx-auto max-w-page px-6 py-10">
-      <h1 className="serif text-display">{copy.settingsTitle}</h1>
+    <article className="mx-auto max-w-page px-4 py-12 md:px-8">
+      <h1 className="enter serif text-display">{copy.settingsTitle}</h1>
       <div className="mt-8">
         <SettingsPanel locale={locale} devices={devices.devices} backup={backup} status={status} runs={showcase.backupRuns()} />
       </div>

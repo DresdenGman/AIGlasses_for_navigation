@@ -10,9 +10,9 @@ export default async function VoicesPage() {
   return (
     <article className="mx-auto max-w-page px-4 py-12 md:px-8">
       <p className="eyebrow">{copy.voicesTitle}</p>
-      <h1 className="serif mt-4 text-display">{copy.readAllVoices}</h1>
+      <h1 className="enter serif mt-4 text-display">{copy.readAllVoices}</h1>
       <p className="mt-6">
-        <Link href="/" className="underline">{copy.year}</Link>
+        <Link href="/" className="editorial-link">{copy.year}</Link>
       </p>
       <ul className="mt-16 flex flex-col gap-16">
         {voices.map((voice) => (

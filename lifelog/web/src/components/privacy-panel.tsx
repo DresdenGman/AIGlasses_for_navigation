@@ -38,15 +38,15 @@ export function PrivacyPanel({
         <p className="mt-3 max-w-measure">{copy.pauseHelp}</p>
         <div className="mt-4 flex flex-wrap gap-6">
           <div>
-            <button type="button" className="min-h-11 border border-rule px-4" onClick={() => prefs.pauseFor(15 * 60)}>{copy.fifteen}</button>
+            <button type="button" className="btn-outline min-h-11 border border-rule px-4" onClick={() => prefs.pauseFor(15 * 60)}>{copy.fifteen}</button>
             <p className="mt-2 max-w-44 text-sm text-ink-muted">{copy.fifteenNote}</p>
           </div>
           <div>
-            <button type="button" className="min-h-11 border border-rule px-4" onClick={() => prefs.pauseFor(60 * 60)}>{copy.oneHour}</button>
+            <button type="button" className="btn-outline min-h-11 border border-rule px-4" onClick={() => prefs.pauseFor(60 * 60)}>{copy.oneHour}</button>
             <p className="mt-2 max-w-44 text-sm text-ink-muted">{copy.oneHourNote}</p>
           </div>
           <div>
-            <button type="button" className="min-h-11 border border-ink px-4" onClick={() => (state.paused ? prefs.askResume() : prefs.pause())}>{copy.untilResume}</button>
+            <button type="button" className="btn-outline min-h-11 border border-ink px-4" onClick={() => (state.paused ? prefs.askResume() : prefs.pause())}>{copy.untilResume}</button>
             <p className="mt-2 max-w-44 text-sm text-ink-muted">{copy.untilNote}</p>
           </div>
         </div>
@@ -55,7 +55,7 @@ export function PrivacyPanel({
         <h2 className="serif text-3xl">{state.paused ? copy.paused : copy.pause}</h2>
         <button
           type="button"
-          className="mt-6 min-h-14 border border-ink bg-ink px-6 text-lg text-paper"
+          className="btn-solid mt-6 min-h-14 border border-ink bg-ink px-6 text-lg text-paper"
           onClick={() => (state.paused ? prefs.askResume() : prefs.pause())}
         >
           {state.paused ? copy.resume : copy.pause}
@@ -78,7 +78,6 @@ export function PrivacyPanel({
           step={1}
           value={[state.retentionDays]}
           onValueChange={(value) => prefs.update({ retentionDays: value[0] ?? state.retentionDays })}
-          aria-label={copy.retention}
         >
           <Slider.Track className="slider-track">
             <Slider.Range className="slider-range" />
