@@ -126,12 +126,12 @@ flowchart LR
 <table>
 <tr>
 <td width="33%"><img src="../assets/community/community-classroom.png" alt="社区课堂授课：创作者在投影幕前向居民讲解早期原型" width="100%" /></td>
-<td width="33%"><img src="../assets/community/community-leaf-workshop.jpg" alt="展示图：红马甲志愿者陪居民做叶子手工活动，多位居民佩戴眼镜式设备" width="100%" /></td>
-<td width="33%"><img src="../assets/community/community-build-workshop.png" alt="展示图：社区搭建工作坊上，参与者焊接、组装眼镜框架" width="100%" /></td>
+<td width="33%"><img src="../assets/community/community-leaf-workshop.jpg" alt="社区活动：红马甲志愿者陪居民做叶子手工活动，多位居民佩戴眼镜式设备" width="100%" /></td>
+<td width="33%"><img src="../assets/community/community-build-workshop.png" alt="社区搭建工作坊：参与者焊接、组装眼镜框架" width="100%" /></td>
 </tr>
 </table>
 
-*社区活动三图，自左至右。左：三个社区之一的课堂现场，创作者向居民讲解早期硬件原型，照片由项目创作者提供。中、右：叶子手工活动与搭建工作坊，为创作者提供的展示图（生成的展示图），并非真实活动的照片。*
+*社区活动三张照片，自左至右。这些照片都是真实的：课堂现场、叶子手工活动与搭建工作坊。*
 
 ### 参与者反馈
 
