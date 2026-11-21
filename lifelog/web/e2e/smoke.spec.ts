@@ -64,7 +64,10 @@ test.describe("showcase pages", () => {
     await expect(playhead).not.toHaveText(before);
 
     await page.getByRole("button", { name: "Pause capture" }).click();
-    await expect(page.getByRole("button", { name: /Paused/ })).toBeVisible();
+    // The header toggle reads "Paused · 00:00:00 · Resume capture"; the
+    // timeline's pause chip ("Paused 12:30–13:00") would also match a
+    // bare /Paused/, so scope to the header's separator.
+    await expect(page.getByRole("button", { name: /Paused ·/ })).toBeVisible();
 
     await page.goto("/");
     await expect(page.getByRole("img", { name: "Guide dog walk by the lake" })).toBeVisible();

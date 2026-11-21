@@ -36,10 +36,19 @@ export function PrivacyPanel({
       <section className="mt-8">
         <h2 className="serif text-3xl">{copy.pauseNow}</h2>
         <p className="mt-3 max-w-measure">{copy.pauseHelp}</p>
-        <div className="mt-4 flex flex-wrap gap-3">
-          <button type="button" className="min-h-11 border border-rule px-4" onClick={() => prefs.pauseFor(15 * 60)}>{copy.fifteen}</button>
-          <button type="button" className="min-h-11 border border-rule px-4" onClick={() => prefs.pauseFor(60 * 60)}>{copy.oneHour}</button>
-          <button type="button" className="min-h-11 border border-ink px-4" onClick={() => (state.paused ? prefs.askResume() : prefs.pause())}>{copy.untilResume}</button>
+        <div className="mt-4 flex flex-wrap gap-6">
+          <div>
+            <button type="button" className="min-h-11 border border-rule px-4" onClick={() => prefs.pauseFor(15 * 60)}>{copy.fifteen}</button>
+            <p className="mt-2 max-w-44 text-sm text-ink-muted">{copy.fifteenNote}</p>
+          </div>
+          <div>
+            <button type="button" className="min-h-11 border border-rule px-4" onClick={() => prefs.pauseFor(60 * 60)}>{copy.oneHour}</button>
+            <p className="mt-2 max-w-44 text-sm text-ink-muted">{copy.oneHourNote}</p>
+          </div>
+          <div>
+            <button type="button" className="min-h-11 border border-ink px-4" onClick={() => (state.paused ? prefs.askResume() : prefs.pause())}>{copy.untilResume}</button>
+            <p className="mt-2 max-w-44 text-sm text-ink-muted">{copy.untilNote}</p>
+          </div>
         </div>
       </section>
       <section className="mt-8 border border-ink p-6">
@@ -80,6 +89,9 @@ export function PrivacyPanel({
         <p className="mt-2 max-w-measure text-sm">{retentionLine}</p>
         <p className="mono mt-2 text-sm">
           {copy.nextPurge} {formatDateTime(baseline.next_purge_ms, locale)}
+        </p>
+        <p className="mono mt-2 text-sm">
+          {copy.purgeRemoves} {formatDateTime(baseline.next_purge_ms - state.retentionDays * 86_400_000, locale)} {copy.andEarlier}.
         </p>
       </section>
       <section className="mt-6">

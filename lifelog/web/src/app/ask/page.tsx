@@ -9,10 +9,11 @@ export default async function AskPage() {
   const { locale } = await getUi();
   const copy = t(locale);
   const client = getClient();
-  const [prepared, frames, utterances] = await Promise.all([
+  const [prepared, frames, utterances, timeline] = await Promise.all([
     client.preparedAsks(locale),
     client.listFrames(FEATURED_DAY, locale),
     client.listUtterances(FEATURED_DAY, locale),
+    client.getTimeline(FEATURED_DAY, locale),
   ]);
   const docs = documentsFromDay(FEATURED_DAY, frames.frames, utterances.utterances);
   return (
@@ -23,7 +24,7 @@ export default async function AskPage() {
         <p className="mt-6 max-w-measure text-xl leading-snug">{copy.askLede}</p>
       </header>
       <div>
-      <AskPanel locale={locale} prepared={prepared} docs={docs} />
+      <AskPanel locale={locale} prepared={prepared} docs={docs} pauses={timeline.pauses} />
       </div>
     </article>
   );

@@ -25,7 +25,7 @@ import type {
 } from "@/lib/api/schemas";
 import { DaySummarySchema, ShowcaseAnswersFileSchema } from "@/lib/api/schemas";
 import { ShowcaseNotFound } from "@/lib/api/load";
-import { answerQuestion, documentsFromDay } from "@/lib/search";
+import { ANSWER_GATE, answerQuestion, documentsFromDay } from "@/lib/search";
 import { FEATURED_DAY, TIMEZONE } from "@/lib/time";
 
 const DATA = path.join(process.cwd(), "showcase-data");
@@ -398,6 +398,12 @@ function toAsk(item: ReturnType<typeof answers>["answers"][number]): AskResponse
     mode: item.mode,
     ui_tone: item.ui_tone,
     reason_text: item.reason_text,
+    audit: {
+      scanned: item.evidence_considered,
+      matched: null,
+      above_floor: null,
+      gate: ANSWER_GATE,
+    },
   };
 }
 
@@ -427,6 +433,8 @@ export const showcase = {
       questions_asked: number;
       objects_found: number;
       days_captured: number;
+      days_with_uncertain: number;
+      uncertain_items: number;
       audio_hours: number;
       top_places: Array<{ place: string; days: number }>;
     }>("year/stats.json");
@@ -750,7 +758,8 @@ export const showcase = {
     const prepared = day === FEATURED_DAY ? this.preparedAsks(locale) : [];
     const frames = day === FEATURED_DAY ? frameDetails(locale) : [];
     const utterances = day === FEATURED_DAY ? this.listUtterances(day, locale).utterances : [];
-    return answerQuestion(request, prepared, documentsFromDay(day, frames, utterances));
+    const pauses = day === FEATURED_DAY ? this.getTimeline(day, locale).pauses : [];
+    return answerQuestion(request, prepared, documentsFromDay(day, frames, utterances), pauses);
   },
 };
 

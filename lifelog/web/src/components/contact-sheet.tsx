@@ -14,10 +14,13 @@ import { FEATURED_DAY, formatKawara, formatNumber } from "@/lib/time";
 const light = tokens.heat.light;
 const dark = tokens.heat.dark;
 
+type YearView = "grid" | "calendar" | "list";
+
 export function ContactSheet({ days, locale }: { days: ArchiveDay[]; locale: Locale }) {
   const copy = t(locale);
   const theme = usePrefs().theme;
-  const [list, setList] = useState(false);
+  const [view, setView] = useState<YearView>("grid");
+  const list = view === "list";
   const scrollRef = useRef<HTMLDivElement>(null);
 
   // The year overflows horizontally on narrow screens; start at the
@@ -45,9 +48,25 @@ export function ContactSheet({ days, locale }: { days: ArchiveDay[]; locale: Loc
         <h2 id="contact-sheet" className="sr-only">
           {copy.heatmapLabel}
         </h2>
-        <button type="button" className="min-h-11 border border-rule px-3 text-sm" aria-pressed={list} onClick={() => setList((value) => !value)}>
-          {list ? copy.gridView : copy.listView}
-        </button>
+        <div className="flex gap-2" role="group" aria-label={copy.gridView}>
+          {(
+            [
+              ["grid", copy.gridView],
+              ["calendar", copy.calendarView],
+              ["list", copy.listView],
+            ] as Array<[YearView, string]>
+          ).map(([name, label]) => (
+            <button
+              key={name}
+              type="button"
+              className={`min-h-11 border px-3 text-sm ${view === name ? "border-ink bg-paper-raised" : "border-rule"}`}
+              aria-pressed={view === name}
+              onClick={() => setView(name)}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
       </div>
       <ul className="mb-4 flex flex-wrap gap-x-5 gap-y-2 text-sm">
         <li className="inline-flex items-center gap-2"><i className="hatch inline-block h-3 w-3 border border-rule" aria-hidden="true" />{copy.legendPaused}</li>
@@ -55,7 +74,9 @@ export function ContactSheet({ days, locale }: { days: ArchiveDay[]; locale: Loc
         <li className="inline-flex items-center gap-2"><i className="dash-cell" aria-hidden="true" />{copy.legendExpired}</li>
         <li className="inline-flex items-center gap-2"><i className="amber-tick" aria-hidden="true" />{copy.legendUncertain}</li>
       </ul>
-      {list ? <DayTable days={days} locale={locale} /> : (
+      {view === "list" ? <DayTable days={days} locale={locale} /> : view === "calendar" ? (
+        <CalendarView days={days} locale={locale} theme={theme} />
+      ) : (
         <div>
           <p className="mono mb-2 text-xs text-ink-muted md:hidden" aria-hidden="true">&larr; {copy.scrollYear}</p>
           <div ref={scrollRef} className="overflow-x-auto">
@@ -117,6 +138,79 @@ function cellName(day: ArchiveDay, locale: Locale, copy: ReturnType<typeof t>): 
   const state = day.cell_state === "paused" ? copy.legendPaused : day.cell_state === "deleted" ? copy.legendDeleted : day.cell_state === "expired" ? copy.legendExpired : `${formatNumber(day.frames, locale)} ${copy.framesWord}`;
   const uncertain = day.uncertain_items > 0 ? `, ${day.uncertain_items} ${copy.uncertain}` : "";
   return `${date}, ${state}${uncertain}`;
+}
+
+/**
+ * Second view of the year: one card per month, every day a numbered
+ * cell. The contact sheet stays the default — this view trades the
+ * density of the heatmap for dates you can read at a glance. Cell
+ * states reuse the same encodings as the grid (hatch = paused,
+ * struck number = deleted, dashed = expired, amber dot = uncertain).
+ */
+function CalendarView({ days, locale, theme }: { days: ArchiveDay[]; locale: Locale; theme: "light" | "dark" }) {
+  const copy = t(locale);
+  const heat = theme === "dark" ? dark : light;
+  const intl = locale === "zh-CN" ? "zh-CN" : "en-GB";
+  const months = [...new Set(days.map((day) => day.day.slice(0, 7)))];
+  const weekdays = Array.from({ length: 7 }, (_, i) =>
+    new Intl.DateTimeFormat(intl, { weekday: "short", timeZone: "UTC" }).format(new Date(Date.UTC(2026, 0, 5 + i))),
+  );
+  return (
+    <div className="grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3">
+      {months.map((month) => {
+        const rows = days.filter((day) => day.day.startsWith(month));
+        const first = rows[0];
+        if (!first) return null;
+        const [y, m] = month.split("-").map(Number);
+        const offset = (new Date(Date.UTC(y ?? 2026, (m ?? 1) - 1, 1)).getUTCDay() + 6) % 7;
+        const title = new Intl.DateTimeFormat(intl, { month: "long", year: "numeric", timeZone: "UTC" }).format(
+          new Date(Date.UTC(y ?? 2026, (m ?? 1) - 1, 1)),
+        );
+        return (
+          <section key={month} aria-label={title} className="border border-rule p-4">
+            <h3 className="eyebrow">{title}</h3>
+            <div className="mt-3 grid grid-cols-7 gap-1 text-center text-[0.8125rem] text-ink-muted" aria-hidden="true">
+              {weekdays.map((name, i) => (
+                <span key={i} className="py-1">{name}</span>
+              ))}
+            </div>
+            <div className="grid grid-cols-7 gap-1">
+              {Array.from({ length: offset }, (_, i) => (
+                <span key={`blank-${i}`} aria-hidden="true" />
+              ))}
+              {rows.map((day) => {
+                const level = Math.min(4, Math.max(0, day.level));
+                const recorded = day.cell_state === "recorded";
+                const onDarkCell = recorded && ((theme === "light" && level >= 3) || (theme === "dark" && level <= 2));
+                return (
+                  <a
+                    key={day.day}
+                    href={day.has_summary ? `/day/${day.day}/summary` : `/day/${day.day}`}
+                    aria-label={cellName(day, locale, copy)}
+                    className={`relative flex h-11 items-start justify-start border p-1 no-underline sm:h-12 ${
+                      day.day === FEATURED_DAY
+                        ? "border-2 border-ink"
+                        : day.cell_state === "expired"
+                          ? "border-dashed border-rule"
+                          : "border-rule"
+                    } ${day.cell_state === "paused" ? "hatch" : ""}`}
+                    style={recorded ? { background: heat[level], color: onDarkCell ? "var(--paper)" : "var(--ink)" } : undefined}
+                  >
+                    <span className={`mono text-[0.8125rem] ${day.cell_state === "deleted" ? "text-ink-muted line-through" : ""}`}>
+                      {Number(day.day.slice(8))}
+                    </span>
+                    {day.uncertain_items > 0 ? (
+                      <span className="absolute right-1 top-1 h-1.5 w-1.5 rounded-full bg-uncertain-rule" aria-hidden="true" />
+                    ) : null}
+                  </a>
+                );
+              })}
+            </div>
+          </section>
+        );
+      })}
+    </div>
+  );
 }
 
 function DayTable({ days, locale }: { days: ArchiveDay[]; locale: Locale }) {

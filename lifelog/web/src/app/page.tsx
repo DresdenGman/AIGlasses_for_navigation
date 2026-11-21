@@ -47,7 +47,7 @@ export default async function YearPage() {
           <p className="max-w-measure lg:col-span-6">{copy.heatmapLabel}</p>
         </div>
         <ContactSheet days={year.days} locale={locale} />
-        <dl className="mt-10 grid grid-cols-2 gap-8 border-t border-rule pt-8 lg:grid-cols-4">
+        <dl className="mt-10 grid grid-cols-2 gap-8 border-t border-rule pt-8 lg:grid-cols-6">
           <div>
             <dt className="eyebrow">{copy.framesWord}</dt>
             <dd className="serif mt-2 text-3xl">{formatNumber(stats.frames, locale)}</dd>
@@ -63,6 +63,14 @@ export default async function YearPage() {
           <div>
             <dt className="eyebrow">{copy.statObjects}</dt>
             <dd className="serif mt-2 text-3xl">{formatNumber(stats.objects_found, locale)}</dd>
+          </div>
+          <div className="border border-dashed border-uncertain-rule bg-uncertain-bg px-4 py-3">
+            <dt className="eyebrow text-uncertain-fg">{copy.statUncertainDays}</dt>
+            <dd className="serif mt-2 text-3xl text-uncertain-fg">{formatNumber(stats.days_with_uncertain, locale)}</dd>
+          </div>
+          <div className="border border-dashed border-uncertain-rule bg-uncertain-bg px-4 py-3">
+            <dt className="eyebrow text-uncertain-fg">{copy.statUncertainItems}</dt>
+            <dd className="serif mt-2 text-3xl text-uncertain-fg">{formatNumber(stats.uncertain_items, locale)}</dd>
           </div>
         </dl>
       </section>

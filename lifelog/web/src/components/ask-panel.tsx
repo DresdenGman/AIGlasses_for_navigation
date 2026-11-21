@@ -5,17 +5,19 @@ import type { AskResponse, Locale } from "@/lib/api/schemas";
 import { EvidenceChip } from "@/components/evidence";
 import { MissingBadge, UncertainBadge } from "@/components/media";
 import { t } from "@/lib/i18n";
-import { answerQuestion, type SearchDoc } from "@/lib/search";
+import { answerQuestion, type PauseWindow, type SearchDoc } from "@/lib/search";
 import { FEATURED_DAY } from "@/lib/time";
 
 export function AskPanel({
   locale,
   prepared,
   docs,
+  pauses,
 }: {
   locale: Locale;
   prepared: AskResponse[];
   docs: SearchDoc[];
+  pauses: PauseWindow[];
 }) {
   const copy = t(locale);
   const [question, setQuestion] = useState("");
@@ -37,7 +39,7 @@ export function AskPanel({
   };
 
   const ask = (text: string) => {
-    const next = answerQuestion({ question: text, locale, day: FEATURED_DAY }, prepared, docs);
+    const next = answerQuestion({ question: text, locale, day: FEATURED_DAY }, prepared, docs, pauses);
     setQuestion(text);
     setResponse(next);
   };
@@ -99,13 +101,44 @@ export function AskPanel({
               ))}
             </p>
           ) : null}
-          <details className="mt-5 text-sm">
-            <summary>{copy.evidence}</summary>
-            <p className="mt-2 text-ink-muted">
-              {copy.provider}: {label}. {response.evidence_considered} {copy.considered}. {copy.score} {response.score.toFixed(2)}.
-              {response.validation.reasons.length ? ` ${copy.reason}: ${response.validation.reasons.join(", ")}.` : ""}
-            </p>
-          </details>
+          <div className="mt-6 border-t border-rule pt-4">
+            <p className="eyebrow">{copy.evidence}</p>
+            <dl className="mono mt-3 grid grid-cols-2 gap-x-6 gap-y-3 text-[0.8125rem] sm:grid-cols-3">
+              <div>
+                <dt className="text-ink-muted">{copy.provider}</dt>
+                <dd className="mt-1">{label}</dd>
+              </div>
+              <div>
+                <dt className="text-ink-muted">{copy.consideredLabel}</dt>
+                <dd className="mt-1">{response.evidence_considered}</dd>
+              </div>
+              {response.audit?.matched != null ? (
+                <div>
+                  <dt className="text-ink-muted">{copy.auditMatched}</dt>
+                  <dd className="mt-1">{response.audit.matched}</dd>
+                </div>
+              ) : null}
+              {response.audit?.above_floor != null ? (
+                <div>
+                  <dt className="text-ink-muted">{copy.auditAboveFloor}</dt>
+                  <dd className="mt-1">{response.audit.above_floor}</dd>
+                </div>
+              ) : null}
+              <div>
+                <dt className="text-ink-muted">{copy.score} / {copy.auditGate}</dt>
+                <dd className="mt-1">{response.score.toFixed(2)} / {(response.audit?.gate ?? 0.7).toFixed(2)}</dd>
+              </div>
+              {response.validation.dropped_citations + response.validation.dropped_quotes > 0 ? (
+                <div>
+                  <dt className="text-ink-muted">{copy.auditDropped}</dt>
+                  <dd className="mt-1">{response.validation.dropped_citations + response.validation.dropped_quotes}</dd>
+                </div>
+              ) : null}
+            </dl>
+            {response.validation.reasons.length ? (
+              <p className="mt-3 text-sm text-ink-muted">{copy.reason}: {response.validation.reasons.join(", ")}.</p>
+            ) : null}
+          </div>
         </section>
       ) : null}
       <section className="mt-10" aria-label={copy.suggested}>

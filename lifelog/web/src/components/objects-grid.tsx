@@ -56,6 +56,11 @@ export function ObjectsGrid({
                   <span className="mt-2 block text-sm text-uncertain-fg">
                     {copy.newer} {low.score.toFixed(2)} · {low.place?.name}
                   </span>
+                  {item.last_confident ? (
+                    <span className="mt-2 block border-t border-dashed border-uncertain-rule pt-2 text-sm text-uncertain-fg">
+                      {copy.newerNote}
+                    </span>
+                  ) : null}
                 </p>
               ) : null}
             </li>

@@ -64,6 +64,13 @@ export const ValidationSchema = z.object({
   ),
 });
 
+export const AuditSchema = z.object({
+  scanned: z.number().int(),
+  matched: z.number().int().nullable(),
+  above_floor: z.number().int().nullable(),
+  gate: z.number(),
+});
+
 export const AskResponseSchema = z.object({
   id: z.string().optional(),
   question: z.string(),
@@ -76,6 +83,7 @@ export const AskResponseSchema = z.object({
   model: z.string().nullable(),
   local_first: z.boolean(),
   validation: ValidationSchema,
+  audit: AuditSchema.optional(),
   latency_ms: z.number().int(),
   mode: z.enum(["hero", "year"]).optional(),
   ui_tone: z.enum(["neutral", "amber"]).optional(),

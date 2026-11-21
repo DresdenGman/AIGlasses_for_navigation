@@ -42,9 +42,17 @@ export function SiteChrome({
     return () => window.clearInterval(id);
   }, [prefs.overrides.paused]);
   const elapsed = prefs.overrides.pausedAt ? Math.max(0, Math.floor((now - prefs.overrides.pausedAt) / 1000)) : 0;
-  const clock = [Math.floor(elapsed / 3600), Math.floor((elapsed % 3600) / 60), elapsed % 60].map((part) => String(part).padStart(2, "0")).join(":");
+  const remaining = prefs.overrides.pausedUntil ? Math.max(0, Math.floor((prefs.overrides.pausedUntil - now) / 1000)) : null;
+  const hms = (total: number) =>
+    [Math.floor(total / 3600), Math.floor((total % 3600) / 60), total % 60].map((part) => String(part).padStart(2, "0")).join(":");
+  const clock = hms(elapsed);
   const consent = consentMs ? formatDate(new Date(consentMs).toISOString().slice(0, 10), prefs.locale) : "—";
   const sync = lastSyncMs ? formatClock(lastSyncMs, prefs.locale) : "—";
+  const pauseLabel = prefs.overrides.paused
+    ? remaining !== null
+      ? `${copy.paused} · ${hms(remaining)} ${copy.remaining} · ${copy.resume}`
+      : `${copy.paused} · ${clock} · ${copy.resume}`
+    : copy.pause;
   return (
     <EvidenceProvider frames={frames} utterances={utterances} locale={prefs.locale}>
       <a className="skip" href="#content">{copy.skip}</a>
@@ -67,7 +75,7 @@ export function SiteChrome({
             onClick={() => (prefs.overrides.paused ? prefs.askResume() : prefs.pause())}
           >
             <Pause aria-hidden="true" size={16} strokeWidth={1.5} />
-            {prefs.overrides.paused ? `${copy.paused} · ${clock} · ${copy.resume}` : copy.pause}
+            {pauseLabel}
           </button>
         </div>
         <p className="status-line" aria-live={prefs.overrides.paused ? "assertive" : "polite"}>

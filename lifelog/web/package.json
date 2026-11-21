@@ -10,6 +10,7 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "validate": "tsx scripts/validate-showcase.ts",
+    "test:unit": "tsx --test tests/engine.test.ts",
     "generate:showcase": "node scripts/generate-showcase-data.mjs",
     "test:e2e": "playwright test",
     "screenshots": "playwright test --config=playwright.screenshots.config.ts"

@@ -204,6 +204,33 @@ export function TimelineView({
         </section>
       </div>
       <section className="mt-10 border-t border-rule pt-4" aria-label={copy.timeOfDay}>
+        <div className="mb-4 flex flex-wrap gap-2" role="group" aria-label={copy.segments}>
+          {segments.map((item) => (
+            <button
+              key={item.id}
+              type="button"
+              aria-current={segment?.id === item.id ? "true" : undefined}
+              onClick={() => setTime(item.start_ms)}
+              className={`inline-flex min-h-11 max-w-full items-center gap-2 border px-3 text-left text-sm ${segment?.id === item.id ? "border-ink bg-paper-raised" : "border-rule"}`}
+            >
+              <span className="mono text-[0.8125rem]">{formatClock(item.start_ms, locale)}</span>
+              <span className="truncate">{item.title}</span>
+            </button>
+          ))}
+          {timeline.pauses.map((pause) => (
+            <button
+              key={pause.start_ms}
+              type="button"
+              aria-current={paused && time >= pause.start_ms && (pause.end_ms === null || time < pause.end_ms) ? "true" : undefined}
+              onClick={() => setTime(pause.start_ms)}
+              className="hatch inline-flex min-h-11 items-center gap-2 border border-rule px-3 text-left text-sm"
+            >
+              <span className="mono text-[0.8125rem]">
+                {copy.paused} {formatClock(pause.start_ms, locale)}{pause.end_ms ? `–${formatClock(pause.end_ms, locale)}` : ""}
+              </span>
+            </button>
+          ))}
+        </div>
         <div className="mb-2 flex flex-wrap gap-4 text-[0.8125rem]">
           <span className="inline-flex items-center gap-2"><i className="inline-block h-2 w-6 bg-speech" aria-hidden="true" />{copy.transcript}</span>
           <span className="inline-flex items-center gap-2"><i className="inline-block h-2 w-6 bg-detection" aria-hidden="true" />{copy.objects}</span>

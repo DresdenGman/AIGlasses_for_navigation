@@ -1,5 +1,14 @@
 import type { AskRequest, AskResponse, Citation, FrameDetail, Locale, Utterance } from "@/lib/api/schemas";
-import { FEATURED_DAY } from "@/lib/time";
+import { FEATURED_DAY, formatClock, isInsidePause, midnightMs } from "@/lib/time";
+
+/** Minimum share of question terms a record must match to be considered at all. */
+export const EVIDENCE_FLOOR = 0.34;
+/** Best evidence score a record must reach before the engine answers directly. */
+export const ANSWER_GATE = 0.7;
+/** How far either side of a time named in the question the search looks. */
+const TIME_WINDOW_MS = 30 * 60_000;
+
+export type PauseWindow = { start_ms: number; end_ms: number | null };
 
 export type SearchDoc = {
   evidence_id: string;
@@ -39,9 +48,58 @@ export function normalizeQuestion(input: string): string {
 function tokensOf(input: string): string[] {
   const norm = normalizeQuestion(input);
   if (/[\u3400-\u9fff]/.test(norm)) {
-    return [...norm.replace(/\s/g, "")].filter((ch) => ch.trim() && !ZH_STOP.has(ch));
+    // Chinese has no word spaces: match on single characters plus the
+    // two-character bigrams between them. Bigrams keep a shared character
+    // in an unrelated word from counting as a match on its own.
+    const chars = [...norm.replace(/\s/g, "")];
+    const out = new Set<string>();
+    for (const ch of chars) {
+      if (ch.trim() && !ZH_STOP.has(ch)) out.add(ch);
+    }
+    for (let i = 0; i + 1 < chars.length; i++) {
+      const a = chars[i] ?? "";
+      const b = chars[i + 1] ?? "";
+      if (a && b && !ZH_STOP.has(a) && !ZH_STOP.has(b)) out.add(a + b);
+    }
+    return [...out];
   }
   return norm.split(" ").filter((word) => word.length > 1 && !EN_STOP.has(word));
+}
+
+/**
+ * Resolve a time of day named in the question ("12:45", "3 pm",
+ * "下午3点半") to an epoch ms inside `day`, or null when the question
+ * names no time. Deliberately small: one clock time, read literally.
+ */
+export function parseQuestionTime(question: string, day: string): number | null {
+  const raw = question.toLowerCase();
+  const pm = /(pm|下午|晚上|中午)/.test(raw);
+  const am = /(am|上午|早上|凌晨)/.test(raw);
+  const adjust = (hour: number) => {
+    if (pm && hour < 12) return hour + 12;
+    if (am && hour === 12) return 0;
+    return hour;
+  };
+  const at = (hour: number, minute: number) => {
+    if (hour < 0 || hour > 23 || minute < 0 || minute > 59) return null;
+    return midnightMs(day) + hour * 3_600_000 + minute * 60_000;
+  };
+  const colon = raw.match(/(\d{1,2}):(\d{2})/);
+  if (colon) return at(adjust(Number(colon[1])), Number(colon[2]));
+  const dotted = raw.match(/(?:^|\D)(\d{1,2})\s*(?:点|时)(?:\s*(\d{1,2})\s*分|\s*(半))?/);
+  if (dotted) {
+    const minute = dotted[2] ? Number(dotted[2]) : dotted[3] ? 30 : 0;
+    return at(adjust(Number(dotted[1])), minute);
+  }
+  const meridiem = raw.match(/(\d{1,2})\s*(?:am|pm)\b/);
+  if (meridiem) return at(adjust(Number(meridiem[1])), 0);
+  return null;
+}
+
+function pausedAnswer(day: string, ms: number, locale: Locale): string {
+  const clock = formatClock(ms, locale);
+  if (locale === "zh-CN") return `${clock} 采集处于暂停。那段时间没有存下任何东西，无从查找。`;
+  return `Capture was paused at ${clock} on ${day}. Nothing was stored then, so there is nothing to find.`;
 }
 
 export function notFoundAnswer(day: string, locale: Locale): string {
@@ -140,6 +198,7 @@ export function answerQuestion(
   request: AskRequest,
   precomputed: AskResponse[],
   docs: SearchDoc[],
+  pauses: PauseWindow[] = [],
 ): AskResponse {
   const locale: Locale = request.locale === "en" ? "en" : "zh-CN";
   const day = request.day ?? FEATURED_DAY;
@@ -149,7 +208,46 @@ export function answerQuestion(
     return { ...match, question: request.question };
   }
 
-  const wanted = tokensOf(request.question);
+  const audit = (matched: number, aboveFloor: number) => ({
+    scanned: docs.length,
+    matched,
+    above_floor: aboveFloor,
+    gate: ANSWER_GATE,
+  });
+
+  // A question that names a moment inside a paused interval is answered
+  // by the pause itself: nothing was stored then, so there is nothing
+  // to search. This is decided before any record is ranked.
+  const askedMs = parseQuestionTime(request.question, day);
+  if (askedMs !== null && isInsidePause(askedMs, pauses)) {
+    return {
+      ...base(request.question),
+      status: "not_found",
+      answer: pausedAnswer(day, askedMs, locale),
+      score: 0,
+      citations: [],
+      evidence_considered: docs.length,
+      provider: "extractive",
+      validation: {
+        dropped_citations: 0,
+        dropped_quotes: 0,
+        forced_status: "not_found",
+        reasons: ["paused_window"],
+      },
+      audit: audit(0, 0),
+    };
+  }
+
+  // A question that names a moment is about that moment: only records
+  // near it are ranked. Questions without a time search the whole day.
+  const pool =
+    askedMs === null
+      ? docs
+      : docs.filter((doc) => doc.ts_end_ms >= askedMs - TIME_WINDOW_MS && doc.ts_ms <= askedMs + TIME_WINDOW_MS);
+
+  // The digits of a named time are not search terms; drop them so they
+  // cannot dilute the match against record text.
+  const wanted = tokensOf(request.question).filter((token) => askedMs === null || !/\d/.test(token));
   const empty: AskResponse = {
     ...base(request.question),
     status: "not_found",
@@ -164,10 +262,11 @@ export function answerQuestion(
       forced_status: "not_found",
       reasons: ["no_evidence"],
     },
+    audit: audit(0, 0),
   };
   if (wanted.length === 0) return empty;
 
-  const ranked = docs
+  const ranked = pool
     .map((doc) => {
       const hay = new Set(tokensOf(doc.text));
       const matched = wanted.filter((token) => hay.has(token));
@@ -177,7 +276,10 @@ export function answerQuestion(
     .filter((row) => row.matched > 0)
     .sort((a, b) => b.evidence - a.evidence || a.doc.ts_ms - b.doc.ts_ms);
 
-  if (ranked.length === 0 || (ranked[0]?.overlap ?? 0) < 0.34) return empty;
+  const aboveFloor = ranked.filter((row) => row.overlap >= EVIDENCE_FLOOR).length;
+  if (ranked.length === 0 || (ranked[0]?.overlap ?? 0) < EVIDENCE_FLOOR) {
+    return { ...empty, audit: audit(ranked.length, aboveFloor) };
+  }
 
   const top = ranked.slice(0, 3);
   const best = top[0];
@@ -187,7 +289,7 @@ export function answerQuestion(
     best.overlap >= 0.6 &&
     best.matched >= 2 &&
     best.doc.certainty === "confident" &&
-    best.evidence >= 0.7;
+    best.evidence >= ANSWER_GATE;
 
   if (strong) {
     return {
@@ -199,6 +301,7 @@ export function answerQuestion(
       evidence_considered: docs.length,
       provider: "extractive",
       validation: { dropped_citations: 0, dropped_quotes: 0, forced_status: null, reasons: [] },
+      audit: audit(ranked.length, aboveFloor),
     };
   }
 
@@ -216,5 +319,6 @@ export function answerQuestion(
       forced_status: "uncertain",
       reasons: ["below_answer_min"],
     },
+    audit: audit(ranked.length, aboveFloor),
   };
 }

@@ -72,6 +72,10 @@ export function SummaryView({
               <dt>{copy.expires}</dt>
               <dd>{summary.day.replace("2026", "2027")}</dd>
             </div>
+            <div>
+              <dt>{copy.validationWord}</dt>
+              <dd>{summary.validation.dropped_items} {copy.droppedNote}</dd>
+            </div>
           </dl>
           {homeAccents.length > 0 ? (
             <div className="mt-6 grid grid-cols-2 gap-3">
@@ -156,7 +160,6 @@ export function SummaryView({
         <Link href={`/day/${summary.day}`} className="inline-flex min-h-11 items-center underline">{copy.openTimeline}</Link>
         <Link href="/ask" className="inline-flex min-h-11 items-center underline">{copy.askThisDay}</Link>
       </p>
-      <p className="mt-4 text-sm text-ink-muted">{summary.validation.dropped_items} {copy.droppedNote}</p>
     </article>
   );
 }
