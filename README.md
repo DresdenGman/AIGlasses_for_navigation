@@ -133,12 +133,6 @@ Two sets of numbers, kept separate on purpose: **deployment** (units, users, res
 
 *Three images of community work, left to right. Left: a classroom session in one of the three communities — the creator presenting the earlier hardware prototype to residents; a photograph supplied by the project creator. Centre and right: a leaf-craft activity and a build workshop; these two are creator-supplied showcase images (generated display images), not photographs of actual sessions.*
 
-<p align="center">
-  <img src="assets/community/community-pair.png" alt="Two photographs from community sessions: an outdoor Q&A booth with a blue table, and a volunteer-assisted activity with residents wearing headband devices" width="860" />
-</p>
-
-*Two photographs from community sessions — an outdoor Q&A booth, and a volunteer-assisted activity. Faces are softened for privacy. (A smaller, more heavily blurred copy of the original four-panel set is kept at [assets/community/in-person-session.png](assets/community/in-person-session.png).)*
-
 ### What participants reported
 
 In August–November 2026, an anonymous bilingual survey collected **85 responses** (49 in Chinese, 36 in English) from people who had encountered the project — at assembly sessions, through trying or keeping the earlier prototype, at presentations, or via the online guide. Full results, method and limitations: [Participant feedback](docs/FEEDBACK.md), with the [raw responses](data/feedback/participant-feedback-survey-responses-2026.csv) and a script that recomputes every number.
