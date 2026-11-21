@@ -1,11 +1,10 @@
 import type { Locale } from "@/lib/api/schemas";
+import { withBasePath } from "@/lib/base-path";
 
 export type Plate = { src: string; alt: { en: string; "zh-CN": string } };
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-
 function plate(file: string, en: string, zh: string): Plate {
-  return { src: `${basePath}/showcase/photos/${file}`, alt: { en, "zh-CN": zh } };
+  return { src: withBasePath(`/showcase/photos/${file}`), alt: { en, "zh-CN": zh } };
 }
 
 /** Seasonal plates for the year. April is the hero-day workbench, not one of these. */

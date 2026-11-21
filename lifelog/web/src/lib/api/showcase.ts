@@ -29,7 +29,7 @@ import { ANSWER_GATE, answerQuestion, documentsFromDay } from "@/lib/search";
 import { FEATURED_DAY, TIMEZONE } from "@/lib/time";
 
 const DATA = path.join(process.cwd(), "showcase-data");
-const HERO = "hero-2026-04-18";
+const HERO = `hero-${FEATURED_DAY}`;
 
 type RawFrame = {
   id: string;
@@ -682,7 +682,11 @@ export const showcase = {
       face_blur: current.face_blur,
       location_enabled: current.location_enabled,
       cloud_vision_enabled: current.cloud_vision_enabled,
-      next_purge_ms: Date.parse("2026-11-19T03:30:00-08:00"),
+      next_purge_ms: (() => {
+        const last = yearDays()[yearDays().length - 1]?.day ?? FEATURED_DAY;
+        const next = new Date(Date.parse(`${last}T00:00:00Z`) + 86_400_000).toISOString().slice(0, 10);
+        return Date.parse(`${next}T03:30:00-08:00`);
+      })(),
     };
   },
   getSettings(): GeneralSettings {

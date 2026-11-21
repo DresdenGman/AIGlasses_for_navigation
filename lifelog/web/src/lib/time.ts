@@ -1,7 +1,18 @@
 import type { Locale } from "@/lib/api/schemas";
+import metaJson from "../../showcase-data/meta.json";
 
 export const TIMEZONE = "America/Los_Angeles";
-export const FEATURED_DAY = "2026-04-18";
+
+/**
+ * The archive's calendar anchors live in exactly one place:
+ * showcase-data/meta.json ("today" = the archive's present day,
+ * "hero_day" = the featured day with full detail). Everything else —
+ * routes, links, the hero data directory — derives from these, and
+ * scripts/validate-showcase.ts fails the build if they ever drift out
+ * of the archive's day list.
+ */
+export const FEATURED_DAY = metaJson.hero_day;
+export const ARCHIVE_TODAY = metaJson.today;
 
 function nthSunday(year: number, monthIndex: number, n: number): number {
   const first = new Date(Date.UTC(year, monthIndex, 1));

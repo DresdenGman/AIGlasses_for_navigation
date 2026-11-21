@@ -7,6 +7,7 @@ import type { ArchiveDay, Locale } from "@/lib/api/schemas";
 import { t } from "@/lib/i18n";
 import { usePrefs } from "@/lib/prefs";
 import { FEATURED_DAY, formatKawara, formatNumber } from "@/lib/time";
+import { withBasePath } from "@/lib/base-path";
 
 // Five-step archive heat scale (design-tokens.json "heat"). The dark
 // scale tops out at warm taupe (#B8A98E), never near-white, so the
@@ -108,7 +109,7 @@ export function ContactSheet({ days, locale }: { days: ArchiveDay[]; locale: Loc
               const size = Number(block.props.width ?? 22);
               const fill = day.cell_state === "paused" ? "url(#cell-hatch)" : day.cell_state === "deleted" || day.cell_state === "expired" ? "transparent" : undefined;
               return (
-                <a href={day.has_summary ? `/day/${day.day}/summary` : `/day/${day.day}`} aria-label={name}>
+                <a href={withBasePath(day.has_summary ? `/day/${day.day}/summary` : `/day/${day.day}`)} aria-label={name}>
                   {cloneElement(block, {
                     fill: fill ?? block.props.fill,
                     stroke: day.day === FEATURED_DAY ? "var(--ink)" : day.cell_state === "expired" ? "var(--ink-muted)" : "var(--rule)",
@@ -185,7 +186,7 @@ function CalendarView({ days, locale, theme }: { days: ArchiveDay[]; locale: Loc
                 return (
                   <a
                     key={day.day}
-                    href={day.has_summary ? `/day/${day.day}/summary` : `/day/${day.day}`}
+                    href={withBasePath(day.has_summary ? `/day/${day.day}/summary` : `/day/${day.day}`)}
                     aria-label={cellName(day, locale, copy)}
                     className={`relative flex h-11 items-start justify-start border p-1 no-underline sm:h-12 ${
                       day.day === FEATURED_DAY
@@ -232,7 +233,7 @@ function DayTable({ days, locale }: { days: ArchiveDay[]; locale: Locale }) {
             {days.filter((day) => day.day.startsWith(month)).map((day) => (
               <tr key={day.day} className="border-t border-rule">
                 <th scope="row" className="py-2 text-left font-normal">
-                  <a href={day.has_summary ? `/day/${day.day}/summary` : `/day/${day.day}`} className="underline">
+                  <a href={withBasePath(day.has_summary ? `/day/${day.day}/summary` : `/day/${day.day}`)} className="underline">
                     {formatKawara(day.day, locale)}
                   </a>
                 </th>
