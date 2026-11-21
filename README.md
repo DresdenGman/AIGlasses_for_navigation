@@ -6,9 +6,7 @@
 *A research prototype for low-vision navigation and daily recall — not a medical device.*
 
 [![Test prototype](https://img.shields.io/github/actions/workflow/status/DresdenGman/AIGlasses_for_navigation/test.yml?branch=main&label=Test%20prototype&style=flat-square)](https://github.com/DresdenGman/AIGlasses_for_navigation/actions/workflows/test.yml)
-[![MIT License](https://img.shields.io/github/license/DresdenGman/AIGlasses_for_navigation?style=flat-square)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/DresdenGman/AIGlasses_for_navigation?style=flat-square)](https://github.com/DresdenGman/AIGlasses_for_navigation/stargazers)
-[![Release](https://img.shields.io/github/v/release/DresdenGman/AIGlasses_for_navigation?label=Release&style=flat-square)](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/latest)
 [![Lifelog demo](https://img.shields.io/badge/Lifelog_demo-live-1D4E46?style=flat-square)](https://dresdengman.github.io/AIGlasses_for_navigation/)
 [![App v0.1.1](https://img.shields.io/badge/App-v0.1.1-1D4E46?style=flat-square)](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.1)
 
@@ -92,10 +90,10 @@ The two halves are fenced apart on purpose: the navigation package stores **no f
 
 | Area | 🟢 Real today | 🟡 Demonstration | 🔵 Planned |
 |---|---|---|---|
-| **Navigation software** | Guidance engine, dashboard, REST/WebSocket API, JSONL replay and device gateway, all runnable from this repository | Laptop webcam / video / still-image path with a lamp heuristic; synthetic perception eval | ESP32 wearable integration; distance sensing; street evaluation |
-| **Hardware** | Earlier prototype built and donated (20 units); v0.4 enclosure as editable geometry with checks | Blender renders and staged scenes of v0.4 (labelled as renders wherever shown) | v0.4 physical fabrication, fit, fastening and assembly validation |
-| **Community** | Making instruction in 3 communities; an 85-response participant survey published with raw data (§5) | Build guide mirrored on OER Commons, MERLOT, Instructables, Thingiverse | Continued sessions; accuracy, battery and audio fixes in the order the survey demands |
-| **Lifelog** | Frozen contracts (OpenAPI, SQLite schema, architecture, data boundaries); demo website live; app v0.1.1 installers for Windows, macOS, Linux, Android | Everything the website and app display runs on **fictional showcase data**, labelled in the interface | Real capture, sync and inference wired into the app; a signed iOS build (needs an Apple Developer certificate) |
+| **[Navigation software](#6-extension-one--navigation-glasses)** | Guidance engine, dashboard, REST/WebSocket API, JSONL replay and device gateway, all [runnable from this repository](#65-run-the-software-demo) | [Laptop webcam / video / still-image path](#61-how-the-guidance-works) with a lamp heuristic; synthetic perception eval | ESP32 wearable integration; distance sensing; [street evaluation](#61-how-the-guidance-works) |
+| **[Hardware](#62-the-physical-glasses)** | [Earlier prototype built and donated (20 units)](#62-the-physical-glasses); v0.4 enclosure as editable geometry with checks | [Blender renders and staged scenes of v0.4](#62-the-physical-glasses) (labelled as renders wherever shown) | [v0.4 physical fabrication, fit, fastening and assembly validation](#62-the-physical-glasses) |
+| **[Community](#5-evidence-at-a-glance)** | Making instruction in 3 communities; an 85-response participant survey published with raw data [(§5)](#5-evidence-at-a-glance) | [Build guide mirrored on OER Commons, MERLOT, Instructables, Thingiverse](#64-build-one-yourself) | Continued sessions; accuracy, battery and audio fixes in the order [the survey](#what-participants-reported) demands |
+| **[Lifelog](#7-extension-two--lifelog)** | [Frozen contracts (OpenAPI, SQLite schema, architecture, data boundaries)](#contracts-and-the-fence); demo website live; [app v0.1.1 installers for Windows, macOS, Linux, Android](#get-the-app) | Everything the website and app display runs on [**fictional showcase data**](#7-extension-two--lifelog), labelled in the interface | Real capture, sync and inference wired into the app; [a signed iOS build (needs an Apple Developer certificate)](#get-the-app) |
 
 **Tested with 64 field users across 3 communities → [See Evidence](#5-evidence-at-a-glance)**
 

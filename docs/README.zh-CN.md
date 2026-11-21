@@ -6,9 +6,7 @@
 *为低视力导航与日常回忆而做的研究原型——不是医疗器械。*
 
 [![Test prototype](https://img.shields.io/github/actions/workflow/status/DresdenGman/AIGlasses_for_navigation/test.yml?branch=main&label=Test%20prototype&style=flat-square)](https://github.com/DresdenGman/AIGlasses_for_navigation/actions/workflows/test.yml)
-[![MIT License](https://img.shields.io/github/license/DresdenGman/AIGlasses_for_navigation?style=flat-square)](../LICENSE)
 [![Stars](https://img.shields.io/github/stars/DresdenGman/AIGlasses_for_navigation?style=flat-square)](https://github.com/DresdenGman/AIGlasses_for_navigation/stargazers)
-[![Release](https://img.shields.io/github/v/release/DresdenGman/AIGlasses_for_navigation?label=Release&style=flat-square)](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/latest)
 [![Lifelog demo](https://img.shields.io/badge/Lifelog_%E6%BC%94%E7%A4%BA%E7%AB%99-%E5%9C%A8%E7%BA%BF-1D4E46?style=flat-square)](https://dresdengman.github.io/AIGlasses_for_navigation/)
 [![App v0.1.1](https://img.shields.io/badge/App-v0.1.1-1D4E46?style=flat-square)](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.1)
 
@@ -92,10 +90,10 @@ flowchart LR
 
 | 领域 | 🟢 真实 | 🟡 演示 | 🔵 计划 |
 |---|---|---|---|
-| **导航软件** | 引导引擎、演示台、REST/WebSocket 接口、JSONL 回放、设备观察入口，全部可从本仓库运行 | 笔记本摄像头 / 视频 / 图片路径（红绿灯启发式）；合成感知评测 | ESP32 可穿戴集成；距离传感；街道实测 |
-| **硬件** | 早期原型已制作并捐赠 20 台；v0.4 外壳为可编辑几何文件，带几何检查 | v0.4 的 Blender 渲染图与布景图（凡展示处均标注为渲染图） | v0.4 的实物制作、佩戴贴合、固定与装配验证 |
-| **社区** | 3 个社区做过制作授课；85 份参与者问卷连同原始数据一并发布（第 5 节） | 建造指南同步发布于 OER Commons、MERLOT、Instructables、Thingiverse | 持续开展活动；按问卷排出的顺序修准确度、续航与音频 |
-| **Lifelog** | 冻结合约（OpenAPI、SQLite schema、架构、数据边界）；演示站在运行；App v0.1.1 安装包覆盖 Windows、macOS、Linux、Android | 网站与 App 展示的一切都跑在**虚构展示数据**上，界面中有明确标注 | 把真实采集、同步与推理接入 App；签名的 iOS 版本（需要 Apple 开发者证书） |
+| **[导航软件](#6-延伸一导航眼镜)** | 引导引擎、演示台、REST/WebSocket 接口、JSONL 回放、设备观察入口，全部[可从本仓库运行](#65-运行软件演示) | [笔记本摄像头 / 视频 / 图片路径](#61-引导如何工作)（红绿灯启发式）；合成感知评测 | ESP32 可穿戴集成；距离传感；[街道实测](#61-引导如何工作) |
+| **[硬件](#62-实物眼镜)** | [早期原型已制作并捐赠 20 台](#62-实物眼镜)；v0.4 外壳为可编辑几何文件，带几何检查 | [v0.4 的 Blender 渲染图与布景图](#62-实物眼镜)（凡展示处均标注为渲染图） | [v0.4 的实物制作、佩戴贴合、固定与装配验证](#62-实物眼镜) |
+| **[社区](#5-证据速览)** | 3 个社区做过制作授课；85 份参与者问卷连同原始数据一并发布[（第 5 节）](#5-证据速览) | [建造指南同步发布于 OER Commons、MERLOT、Instructables、Thingiverse](#64-自己动手做一副) | 持续开展活动；按[问卷](#参与者反馈)排出的顺序修准确度、续航与音频 |
+| **[Lifelog](#7-延伸二lifelog-全天记忆)** | [冻结合约（OpenAPI、SQLite schema、架构、数据边界）](#合约与隔离)；演示站在运行；[App v0.1.1 安装包覆盖 Windows、macOS、Linux、Android](#下载-app) | 网站与 App 展示的一切都跑在[**虚构展示数据**](#7-延伸二lifelog-全天记忆)上，界面中有明确标注 | 把真实采集、同步与推理接入 App；[签名的 iOS 版本（需要 Apple 开发者证书）](#下载-app) |
 
 **经 3 个社区、64 位实地使用者检验 → [看证据](#5-证据速览)**
 
