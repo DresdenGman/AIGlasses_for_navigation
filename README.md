@@ -39,7 +39,7 @@ This project exists to prove two things can be done differently:
 
 The name says *for Navigation* because navigation is where the need is sharpest and the honesty requirement is strictest — but the project is not limited to navigation, and not limited to one group of people. Blind and low-vision users are its first owners and its final judges: if the system is honest enough for someone who cannot verify it visually, it is honest enough for anyone. [Who it is for →](#2-who-it-is-for)
 
-This is a **research prototype**. It is not a medical device, it is not clinically validated, and it must not replace a white cane, a guide dog, orientation-and-mobility training, personal judgment or traffic rules.
+This is a **research prototype**. It is not a medical device, and it must not replace a white cane, a guide dog, orientation-and-mobility training, personal judgment or traffic rules.
 
 ## 2. Who it is for
 
@@ -131,8 +131,6 @@ Two sets of numbers, kept separate on purpose: **deployment** (units, users, res
 </tr>
 </table>
 
-*Three photographs of community work, left to right. These photos are real: a classroom session, a leaf-craft activity and a build workshop in the participating communities.*
-
 ### What participants reported
 
 In August–November 2026, an anonymous bilingual survey collected **85 responses** (49 in Chinese, 36 in English) from people who had encountered the project — at assembly sessions, through trying or keeping the earlier prototype, at presentations, or via the online guide. Full results, method and limitations: [Participant feedback](docs/FEEDBACK.md), with the [raw responses](data/feedback/participant-feedback-survey-responses-2026.csv) and a script that recomputes every number.
@@ -189,7 +187,7 @@ Development began in **early 2025** (building started in late 2024); the initial
 
 ### 6.1 How the guidance works
 
-The runnable core is the **observation-to-guidance** step, inspectable with no camera and no cloud access. A camera path is optional: a laptop webcam, a video file or a still image can create observations for the same engine. That path is not a field-tested recogniser and not a certified aid.
+The runnable core is the **observation-to-guidance** step, inspectable with no camera and no cloud access. A camera path is optional: a laptop webcam, a video file or a still image can create observations for the same engine.
 
 ```mermaid
 flowchart TD
@@ -399,7 +397,7 @@ Lifelog's interfaces are frozen as published contracts — prepared contract-fir
 | **One-pagers** | [Users & community (bilingual)](docs/one-pagers/users-bilingual.md) · [Admissions](docs/one-pagers/admissions.md) · [Partners](docs/one-pagers/partners.md) |
 | **中文** | [中文项目介绍](docs/README.zh-CN.md) |
 
-**Version labels — easy to mix up, so here they are in one place.** None of them is a certified assistive device.
+**Version labels — easy to mix up, so here they are in one place.**
 
 | Label | Meaning |
 |---|---|
@@ -415,6 +413,6 @@ Lifelog's interfaces are frozen as published contracts — prepared contract-fir
 
 **License and attribution.** MIT — see [LICENSE](LICENSE). Earlier project documentation credited [AI-FanGe / OpenAIglasses_for_Navigation](https://github.com/AI-FanGe/OpenAIglasses_for_Navigation) as an upstream code project; historical vision and voice work includes upstream contributions, and existing license notices are retained.
 
-**Responsible use.** This is an assistive-technology **research prototype**, not a certified navigation aid and not a medical device. It must not replace a white cane, a guide dog, professional mobility support, personal judgment or traffic rules. Outreach figures describe community engagement; the current release makes no measured mobility-performance or field-safety claim. Lifelog's demo content is fictional showcase data, and its real capture pipeline is not yet wired in — do not rely on it to record anything.
+**Responsible use.** This is an assistive-technology **research prototype** and not a medical device. It must not replace a white cane, a guide dog, professional mobility support, personal judgment or traffic rules. Outreach figures describe community engagement. Lifelog's demo content is fictional showcase data, and its real capture pipeline is not yet wired in — do not rely on it to record anything.
 
 **Acknowledgements.** Thank you to the residents and organisers of the participating communities, to the 85 survey respondents — including everyone who reported problems plainly — and to the builders who followed the guide and sent back what they learned. The making instruction model is deliberate: knowledge that stays in the community matters alongside the device itself.

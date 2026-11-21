@@ -1,6 +1,6 @@
 # Project release v1.8
 
-This note records the first GitHub release of the **project as a whole**. v1.8 is a project-level label, chosen so the release can cover the software, the enclosure design, the community build kit and the feedback evidence together. It does not replace the labels inside the repository: the runnable package remains **0.1.0** in `pyproject.toml`, and the enclosure remains **Continuous Facets v0.4**. Nothing in this release is a certified assistive device.
+This note records the first GitHub release of the **project as a whole**. v1.8 is a project-level label, chosen so the release can cover the software, the enclosure design, the community build kit and the feedback evidence together. It does not replace the labels inside the repository: the runnable package remains **0.1.0** in `pyproject.toml`, and the enclosure remains **Continuous Facets v0.4**.
 
 ## Included
 

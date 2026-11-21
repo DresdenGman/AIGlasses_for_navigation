@@ -2,7 +2,7 @@
 
 This is a regression harness for the laptop perception path. It draws a few synthetic frames, runs them through the existing vision adapter and `GuidanceEngine`, and counts false prompts, misses, latency, and repeat suppression.
 
-It is not street validation. It is not a certified navigation aid. It does not justify a claim about road crossing, mobility, or how the prototype behaves around real people.
+It is not street validation. It does not justify a claim about road crossing, mobility, or how the prototype behaves around real people.
 
 Recorded-video evaluation is a separate command, `python -m aiglasses.eval.recorded`. It scores a private local clip only when a gitignored labels file attests consent and redaction, and it skips when that file is absent. This synthetic command does not read those clips. Do not commit street recordings, bystander video, or other personal data to make either harness look more real. Consent and redaction checklists (中文核对清单在文首) are in [RECORDED_EVAL.md](RECORDED_EVAL.md). No consented field collection has been run in this repository.
 

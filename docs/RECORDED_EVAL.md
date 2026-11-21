@@ -2,7 +2,7 @@
 
 中文核对清单在下面两节，英文操作说明在其后。这不是法律意见，也不能代替一次面对面的知情同意。
 
-This command scores a **short local clip** the operator already has. It is ready to run. It is not a finished field study: this repository does not contain consented recordings, and a run here is not street validation, not a mobility measurement, and not a certified navigation aid.
+This command scores a **short local clip** the operator already has. It is ready to run. It is not a finished field study: this repository does not contain consented recordings, and a run here is not street validation or a mobility measurement.
 
 `python -m aiglasses.eval` stays on generated drawings. `python -m aiglasses.eval.recorded` is the recorded-video command. They do not share a labels file. The synthetic pack must not point at a video.
 

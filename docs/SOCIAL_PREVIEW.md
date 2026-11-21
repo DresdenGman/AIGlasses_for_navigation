@@ -25,7 +25,6 @@ The lines are the ones already on the README's first screen, shortened only so t
 - Lower-cost visual assistance. Shared making knowledge. Community participation.
 - Under $35 to build
 - Research prototype · Open source
-- Not a certified navigation aid
 - Digital enclosure render. Not a manufactured product.
 
 "Under $35 to build" is the existing phrase for the creator's US hardware estimate. It does not add a supplier quotation or a cost for fabricating v0.4. Scope stays as written in [Hardware cost](COMMUNITY_AND_COST.md#hardware-cost).

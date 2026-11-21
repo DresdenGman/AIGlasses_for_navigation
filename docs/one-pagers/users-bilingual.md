@@ -28,7 +28,7 @@ AI glasses that speak what the camera sees — traffic lights, signs and door nu
 
 - **它不是认证辅具，不能替代盲杖、导盲犬和你自己的判断。** 过马路时它只报信号，不替你下"可以走"的结论；看不准时它会说"不确定"——这正是设计的一部分。
 - 光线太暗、人太挤、声音太吵时，它会漏报或听不清。
-- It is not a certified mobility aid and does not replace a cane, a guide dog, or your own judgment. At crossings it reports the signal; it never tells you "go". When it is unsure, it says so — by design.
+- It does not replace a cane, a guide dog, or your own judgment. At crossings it reports the signal; it never tells you "go". When it is unsure, it says so — by design.
 
 ## 想试试或自己做 / Try it or build it
 

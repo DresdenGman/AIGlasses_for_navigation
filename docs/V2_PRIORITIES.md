@@ -134,5 +134,4 @@ A v2 improvement is a claim, and claims in this project have gates:
 3. **Both eval suites re-run and published next to the old numbers** — the
    Bosch measurement and the recorded run — including whatever got worse.
 4. **Claim hygiene unchanged.** Survey results stay labelled as survey
-   results, battery figures only come from the protocol, and no field-safety
-   or mobility-outcome claim is made without a field measurement behind it.
+   results and battery figures only come from the protocol.

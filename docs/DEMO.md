@@ -1,6 +1,6 @@
 # Demo, replay, and local camera
 
-This repository is a research prototype. It is not a certified navigation aid and it does not replace a white cane, a guide dog, professional mobility support, or the person's own judgment.
+This repository is a research prototype. It does not replace a white cane, a guide dog, professional mobility support, or the person's own judgment.
 
 Requires Python 3.10 or newer (`requires-python` in `pyproject.toml`). Install the runtime package with `requirements.txt`. Tests need `requirements-dev.txt`.
 
@@ -112,7 +112,7 @@ This repository does not ship a screen recording or a GIF of the dashboard. Capt
 1. Start `python main.py` and open the dashboard, or run `python -m aiglasses.live --synthetic` in a terminal.
 2. Exercise a scenario button and, if the vision extra is installed, one camera frame or still image.
 3. Record a short clip with the operating system, Peek, or `ffmpeg`. Keep it short.
-4. Do not record people who have not agreed to appear, and do not present the clip as a certified navigation aid or as evidence of street performance.
+4. Do not record people who have not agreed to appear, and do not present the clip as evidence of street performance.
 
 Example, adjusted for the local display:
 

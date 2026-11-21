@@ -1,6 +1,6 @@
 # Project release v1.9
 
-This release snapshots the project after its first evidence round. Like v1.8, v1.9 is a project-level label: the runnable package remains **0.1.0** in `pyproject.toml`, and the enclosure remains **Continuous Facets v0.4**. Nothing in this release is a certified assistive device.
+This release snapshots the project after its first evidence round. Like v1.8, v1.9 is a project-level label: the runnable package remains **0.1.0** in `pyproject.toml`, and the enclosure remains **Continuous Facets v0.4**.
 
 ## What changed since v1.8
 

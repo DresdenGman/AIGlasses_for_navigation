@@ -6,7 +6,7 @@ AI Glasses for Navigation combines a wearable hardware experiment, a software gu
 
 **Wearable design.** A camera-bearing, lensless wraparound frame provides a housing concept for electronics. The latest design is v0.4, Continuous Facets: a straighter brow, clipped corners and broad planar temple surfaces. The original source assembly remains available as a reference. The new shell is an editable Blender mesh and a geometric enclosure study; it has not passed physical assembly or mobility testing.
 
-**Software.** The runnable package is version **0.1.0** (`pyproject.toml`). That number is not the enclosure label. The repository implements a FastAPI service whose default demo is hardware-free. Structured observations are validated and passed through deterministic guidance rules for traffic lights, nearby obstacles and crosswalks. Low-confidence observations produce uncertainty messages; repeated prompts are throttled. The browser dashboard, API and replay command use the same guidance implementation. An optional laptop camera, video, or still-image adapter can produce those observations locally, and optional speech can read the resulting text. An optional authenticated, rate-limited device endpoint accepts observations in controlled development environments. None of this is a certified navigation aid.
+**Software.** The runnable package is version **0.1.0** (`pyproject.toml`). That number is not the enclosure label. The repository implements a FastAPI service whose default demo is hardware-free. Structured observations are validated and passed through deterministic guidance rules for traffic lights, nearby obstacles and crosswalks. Low-confidence observations produce uncertainty messages; repeated prompts are throttled. The browser dashboard, API and replay command use the same guidance implementation. An optional laptop camera, video, or still-image adapter can produce those observations locally, and optional speech can read the resulting text. An optional authenticated, rate-limited device endpoint accepts observations in controlled development environments.
 
 **Community work.** The creator reports contact with four communities and nearly 60 blind or visually impaired people, plus making instruction in three communities intended to support continuation without ongoing personal funding or material donations. See [scope and cost](COMMUNITY_AND_COST.md) for precise definitions.
 
@@ -55,7 +55,7 @@ The v0.4 shell was rebuilt for this project from the Continuous Facets concept, 
 
 ## Responsible use
 
-This remains an assistive-technology research prototype. It is not a certified navigation device and must not replace a white cane, guide dog, professional orientation-and-mobility support, personal judgment or traffic rules. No field-safety, clinical or mobility-performance claim is made by this release.
+This remains an assistive-technology research prototype. It must not replace a white cane, guide dog, professional orientation-and-mobility support, personal judgment or traffic rules.
 
 ## Presentation renders
 

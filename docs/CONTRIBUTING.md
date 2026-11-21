@@ -1,7 +1,7 @@
 # Contributing
 
 This repository ships a navigation-assistance research prototype. The default
-demo is hardware-free. It is not a safety-certified mobility device.
+demo is hardware-free.
 
 ## Local setup
 

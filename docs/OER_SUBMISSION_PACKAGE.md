@@ -17,7 +17,7 @@ This build guide documents a low-cost, open-source AI navigation glasses prototy
 - A one-page troubleshooting sheet;
 - A Low-Confidence Behavior Code: five rules requiring the device to report uncertainty as non-actionable when confidence is below 0.70 — never issuing directional commands when unsure.
 
-Honest context: this is a pilot community project, not an evaluated program. The author made contact with 4 residential communities in China (reaching nearly 60 visually impaired or low-vision residents through neighborhood committees) and ran hands-on build workshops in 3 of them; a structured follow-up is in progress. The device is a research prototype — not clinically validated, not certified, and not a replacement for a white cane, guide dog, or orientation-and-mobility training. It serves a specific population, not a general audience, and the guide does not overclaim safety or efficacy.
+Honest context: this is a pilot community project, not an evaluated program. The author made contact with 4 residential communities in China (reaching nearly 60 visually impaired or low-vision residents through neighborhood committees) and ran hands-on build workshops in 3 of them; a structured follow-up is in progress. The device is a research prototype and not a replacement for a white cane, guide dog, or orientation-and-mobility training. It serves a specific population, not a general audience, and the guide does not overclaim safety or efficacy.
 
 ## 链接 URL
 https://github.com/DresdenGman/AIGlasses_for_navigation/blob/main/docs/BOM_BILINGUAL.md
@@ -48,5 +48,5 @@ Openly available via GitHub (repository: MIT License). Build guide text free for
 - [ ] 主链接填 BOM_BILINGUAL.md（2026-09-25 验证 200）
 - [ ] 学科分类按各站下拉菜单选择最接近项（Engineering / Assistive Technology / Education）
 - [ ] 受众选 Higher Education / Community；语言标注 Chinese, English
-- [ ] 描述中"pilot community project、非临床验证、服务特定人群"三句不许删改弱化
+- [ ] 描述中"pilot community project、服务特定人群"两句不许删改弱化
 - [ ] 提交后记录公开链接，回填到本专线 outbox/ 进展记录
