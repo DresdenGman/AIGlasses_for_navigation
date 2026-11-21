@@ -123,11 +123,15 @@ flowchart LR
 |:---:|:---:|
 | 通过外展接触 | 触达的盲人及低视力人士 |
 
-<p align="center">
-  <img src="../assets/community/community-classroom.png" alt="社区课堂授课：创作者在投影幕前向居民讲解早期原型" width="860" />
-</p>
+<table>
+<tr>
+<td width="33%"><img src="../assets/community/community-classroom.png" alt="社区课堂授课：创作者在投影幕前向居民讲解早期原型" width="100%" /></td>
+<td width="33%"><img src="../assets/community/community-leaf-workshop.jpg" alt="展示图：红马甲志愿者陪居民做叶子手工活动，多位居民佩戴眼镜式设备" width="100%" /></td>
+<td width="33%"><img src="../assets/community/community-build-workshop.png" alt="展示图：社区搭建工作坊上，参与者焊接、组装眼镜框架" width="100%" /></td>
+</tr>
+</table>
 
-*三个社区之一的课堂现场：创作者向居民讲解早期硬件原型。照片由项目创作者提供。*
+*社区活动三图，自左至右。左：三个社区之一的课堂现场，创作者向居民讲解早期硬件原型，照片由项目创作者提供。中、右：叶子手工活动与搭建工作坊，为创作者提供的展示图（生成的展示图），并非真实活动的照片。*
 
 <p align="center">
   <img src="../assets/community/community-pair.png" alt="社区活动照片两张：户外咨询摊位（蓝色桌布）、志愿者陪同的手工活动（多位居民佩戴头带式设备）" width="860" />

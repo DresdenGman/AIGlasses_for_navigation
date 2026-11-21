@@ -123,11 +123,15 @@ Two sets of numbers, kept separate on purpose: **deployment** (units, users, res
 |:---:|:---:|
 | Engaged through outreach | Blind or visually impaired people reached |
 
-<p align="center">
-  <img src="assets/community/community-classroom.png" alt="Community classroom session: the creator presenting the earlier prototype to residents in front of a projection screen" width="860" />
-</p>
+<table>
+<tr>
+<td width="33%"><img src="assets/community/community-classroom.png" alt="Community classroom session: the creator presenting the earlier prototype to residents in front of a projection screen" width="100%" /></td>
+<td width="33%"><img src="assets/community/community-leaf-workshop.jpg" alt="Showcase image: volunteers in red vests helping residents with a leaf-craft activity, several people wearing glasses-style frames" width="100%" /></td>
+<td width="33%"><img src="assets/community/community-build-workshop.png" alt="Showcase image: participants soldering and assembling glasses frames at a community build workshop" width="100%" /></td>
+</tr>
+</table>
 
-*A classroom session in one of the three communities: the creator presenting the earlier hardware prototype to residents. Photograph supplied by the project creator.*
+*Three images of community work, left to right. Left: a classroom session in one of the three communities — the creator presenting the earlier hardware prototype to residents; a photograph supplied by the project creator. Centre and right: a leaf-craft activity and a build workshop; these two are creator-supplied showcase images (generated display images), not photographs of actual sessions.*
 
 <p align="center">
   <img src="assets/community/community-pair.png" alt="Two photographs from community sessions: an outdoor Q&A booth with a blue table, and a volunteer-assisted activity with residents wearing headband devices" width="860" />
