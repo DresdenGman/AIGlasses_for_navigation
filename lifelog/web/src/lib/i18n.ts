@@ -71,6 +71,8 @@ const copy = {
     timelineIntro: "A full day, from midnight to midnight. Hatched bands were paused. Nothing was stored there.",
     keyboardHelp:
       "Left and right move one frame. Shift plus left or right moves five minutes. Home and End reach the ends of the day. J and K move between segments. Slash opens Ask. P pauses, and asks before resuming.",
+    keyboardControls: "Keyboard controls",
+    scrollYear: "Scroll year",
     prevFrame: "Previous frame",
     nextFrame: "Next frame",
     pausedPlate: "Paused. Nothing was stored in this interval.",
@@ -87,6 +89,7 @@ const copy = {
     suggested: "Suggested questions",
     suggestedDay: "This day",
     suggestedYear: "The year",
+    moreQuestions: "More questions",
     precomputed: "Precomputed showcase answer",
     offline: "Offline search",
     offlineNote: "Searches the transcript and captions in this browser. Labelled so it is not mistaken for the prepared answers.",
@@ -288,6 +291,8 @@ const copy = {
     timelineIntro: "从午夜到午夜的一整天。斜线是暂停。那段时间没有存下任何东西。",
     keyboardHelp:
       "左右方向键移动一帧。按住 Shift 再按左右，移动五分钟。Home 与 End 到一天的两端。J 与 K 在段落之间移动。斜线键打开询问。P 暂停；恢复前会再问一次。",
+    keyboardControls: "键盘控制",
+    scrollYear: "滚动查看全年",
     prevFrame: "上一帧",
     nextFrame: "下一帧",
     pausedPlate: "已暂停。这段时间没有存下任何东西。",
@@ -303,6 +308,7 @@ const copy = {
     suggested: "建议的问题",
     suggestedDay: "这一天",
     suggestedYear: "这一年",
+    moreQuestions: "更多问题",
     precomputed: "预计算的展示回答",
     offline: "离线检索",
     offlineNote: "在这台浏览器里检索转写和画面说明，并标明来源，以免和准备好的回答混淆。",

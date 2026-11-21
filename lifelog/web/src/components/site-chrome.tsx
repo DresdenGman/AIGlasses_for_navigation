@@ -63,7 +63,7 @@ export function SiteChrome({
           </nav>
           <button
             type="button"
-            className={`inline-flex min-h-11 items-center gap-2 border border-ink px-3 ${prefs.overrides.paused ? "hatch" : "bg-ink text-paper"}`}
+            className={`inline-flex min-h-11 items-center gap-2 border-2 border-ink px-3 ${prefs.overrides.paused ? "hatch" : "bg-ink text-paper"}`}
             onClick={() => (prefs.overrides.paused ? prefs.askResume() : prefs.pause())}
           >
             <Pause aria-hidden="true" size={16} strokeWidth={1.5} />
@@ -71,15 +71,14 @@ export function SiteChrome({
           </button>
         </div>
         <p className="status-line" aria-live={prefs.overrides.paused ? "assertive" : "polite"}>
-          <Link href="/privacy">{prefs.overrides.paused ? `${copy.paused} · ${formatClock(prefs.overrides.pausedAt ?? now, prefs.locale)}` : prefs.overrides.localFirst ? "LOCAL-FIRST ON" : "LOCAL-FIRST OFF"}</Link>
-          <span aria-hidden="true"> · </span>
+          <Link href="/privacy">
+            <span className={`status-dot ${prefs.overrides.paused ? "is-paused" : ""}`} aria-hidden="true" />
+            {prefs.overrides.paused ? `${copy.paused} · ${formatClock(prefs.overrides.pausedAt ?? now, prefs.locale)}` : prefs.overrides.localFirst ? "LOCAL-FIRST ON" : "LOCAL-FIRST OFF"}
+          </Link>
           <Link href="/privacy">{prefs.overrides.audioEnabled ? `AUDIO ON` : "AUDIO OFF"} {consent}</Link>
-          <span aria-hidden="true"> · </span>
-          <Link href="/privacy">{prefs.overrides.locationEnabled ? "LOCATION ON" : "LOCATION OFF"}</Link>
-          <span aria-hidden="true"> · </span>
-          <Link href="/privacy">{copy.keepDays} {prefs.overrides.retentionDays}</Link>
-          <span aria-hidden="true"> · </span>
-          <Link href="/settings">{copy.lastSync} {sync}</Link>
+          <Link href="/privacy" className="status-optional">{prefs.overrides.locationEnabled ? "LOCATION ON" : "LOCATION OFF"}</Link>
+          <Link href="/privacy" className="status-optional">{copy.keepDays} {prefs.overrides.retentionDays}</Link>
+          <Link href="/settings" className="status-optional">{copy.lastSync} {sync}</Link>
           <span className="ml-auto flex flex-wrap gap-2">
             <button type="button" className="min-h-11 px-2" aria-pressed={prefs.locale === "en"} onClick={() => prefs.setLocale("en")}>{copy.english}</button>
             <button type="button" className="min-h-11 px-2" onClick={() => prefs.setTheme(prefs.theme === "dark" ? "light" : "dark")}>{prefs.theme === "dark" ? copy.themeToLight : copy.themeToDark}</button>
@@ -88,11 +87,11 @@ export function SiteChrome({
         </p>
       </header>
       <main id="content">{children}</main>
-      <footer className="mt-24 border-t border-rule">
-        <p className="mx-auto flex max-w-page flex-wrap gap-4 px-4 py-8 text-sm md:px-8">
-          <span>{copy.ethic}</span>
-          <Link href="/about" className="underline">{copy.about}</Link>
-          <Link href="/settings" className="underline">{copy.settings}</Link>
+      <footer className="site-footer mt-24">
+        <p className="mx-auto flex max-w-page flex-wrap items-baseline gap-4 px-4 py-8 text-sm md:px-8">
+          <span className="serif text-lg italic">{copy.ethic}</span>
+          <Link href="/about" className="editorial-link">{copy.about}</Link>
+          <Link href="/settings" className="editorial-link">{copy.settings}</Link>
         </p>
       </footer>
       <ConfirmDialog />

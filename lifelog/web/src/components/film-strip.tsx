@@ -9,7 +9,7 @@ import { formatClock } from "@/lib/time";
 import { noDescription } from "@/lib/text";
 
 type StripItem =
-  | { kind: "frame"; frame: FrameDetail; key: string }
+  | { kind: "frame"; frame: FrameDetail; key: string; n: number }
   | { kind: "pause"; start: number; end: number; key: string };
 
 export function FilmStrip({
@@ -33,7 +33,11 @@ export function FilmStrip({
     if (pause.end_ms === null) continue;
     items.push({ kind: "pause", start: pause.start_ms, end: pause.end_ms, key: `p-${pause.start_ms}` });
   }
-  for (const frame of ordered) items.push({ kind: "frame", frame, key: frame.id });
+  let frameCount = 0;
+  for (const frame of ordered) {
+    frameCount += 1;
+    items.push({ kind: "frame", frame, key: frame.id, n: frameCount });
+  }
   items.sort((a, b) => (a.kind === "pause" ? a.start : a.frame.ts_ms) - (b.kind === "pause" ? b.start : b.frame.ts_ms));
 
   const virtualizer = useVirtualizer({
@@ -75,7 +79,7 @@ export function FilmStrip({
                 onClick={() => onSeek(item.frame.ts_ms)}
               >
                 <FramePlate frameId={item.frame.id} alt={item.frame.caption ?? noDescription(locale)} variant="thumb" locale={locale} className="h-[72px] w-[96px]" />
-                <span className="eyebrow mt-1 block">{formatClock(item.frame.ts_ms, locale)}</span>
+                <span className="eyebrow mt-1 block">{String(item.n).padStart(2, "0")} · {formatClock(item.frame.ts_ms, locale)}</span>
               </button>
             );
           })}
