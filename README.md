@@ -45,7 +45,13 @@ The same enclosure study opened up: the upper cover lifted to show the internal 
   <img src="assets/concept/worn-concept-front.jpg" alt="Concept render of the wraparound bar worn, front view" width="560" />
 </p>
 
-*Worn concept study — front. A generated design-study image exploring how a future one-piece enclosure could look when worn: not a photograph, and the person shown is not a project participant. The matching side view is shown much further down, after [Affordability by design](#affordability-by-design).*
+*Worn concept study — front. A generated design-study image exploring how a future one-piece enclosure could look when worn: not a photograph, and the person shown is not a project participant. The matching side view is shown directly below.*
+
+<p align="center">
+  <img src="assets/concept/worn-concept-side.jpg" alt="Concept render of the wraparound bar worn, side view" width="560" />
+</p>
+
+*Worn concept study — side. The matching front view is shown directly above. Both are generated design-study images, not photographs: the person shown is not a project participant, and the current hardware remains the earlier prototype and the v0.4 enclosure study documented below.*
 
 ## Evidence at a glance
 
@@ -309,12 +315,6 @@ Reducing hardware cost is central to the project, alongside sharing the knowledg
 | **New v0.4 enclosure** | **Not separately costed** | Digital design awaiting fabrication and assembly validation. |
 
 These amounts exclude a phone or computer, cloud services, tools, labor and other non-hardware expenses. The earlier prototype's cost is not a verified cost for manufacturing v0.4. An itemised bill of materials for the reference build is published in [BOM_PRICING.md](docs/BOM_PRICING.md); shipping, taxes and enclosure fabrication are not included in the $32.29 parts total. [Cost details →](docs/COMMUNITY_AND_COST.md#hardware-cost)
-
-<p align="center">
-  <img src="assets/concept/worn-concept-side.jpg" alt="Concept render of the wraparound bar worn, side view" width="560" />
-</p>
-
-*Worn concept study — side. The matching front view appears near the top of this README. Both are generated design-study images, not photographs: the person shown is not a project participant, and the current hardware remains the earlier prototype and the v0.4 enclosure study documented above.*
 
 ## Current status and continuing work
 
