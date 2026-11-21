@@ -1,1 +1,63 @@
-{"$schema":"https://schema.tauri.app/config/2","app":{"security":{"csp":null},"windows":[{"height":860,"minHeight":600,"minWidth":360,"resizable":true,"title":"Lifelog — AI Glasses","width":1280}]},"build":{"beforeBuildCommand":"npm run build","beforeDevCommand":"npm run dev","devUrl":"http://localhost:5273","frontendDist":"../dist"},"bundle":{"active":true,"android":{"minSdkVersion":24},"category":"Utility","iOS":{"developmentTeam":""},"icon":["icons/32x32.png","icons/128x128.png","icons/128x128@2x.png","icons/icon.icns","icons/icon.ico"],"longDescription":"Front-end demo of the AI Glasses Lifelog companion app. All records shown are fictional showcase data. Research prototype — not a medical device.","macOS":{"minimumSystemVersion":"11.0"},"shortDescription":"AI Glasses Lifelog companion — timeline, summaries, ask-your-day, object finder.","targets":["app","dmg","nsis","msi","appimage","deb","rpm"],"windows":{"nsis":{"installMode":"currentUser"}}},"identifier":"com.dresdengoehner.lifelog","productName":"Lifelog","version":"0.1.0"}
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "app": {
+    "security": {
+      "csp": null
+    },
+    "windows": [
+      {
+        "height": 860,
+        "minHeight": 600,
+        "minWidth": 360,
+        "resizable": true,
+        "title": "Lifelog — AI Glasses",
+        "width": 1280
+      }
+    ]
+  },
+  "build": {
+    "beforeBuildCommand": "npm run build",
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:5273",
+    "frontendDist": "../dist"
+  },
+  "bundle": {
+    "active": true,
+    "android": {
+      "minSdkVersion": 24
+    },
+    "category": "Utility",
+    "iOS": {
+      "developmentTeam": ""
+    },
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "longDescription": "Front-end demo of the AI Glasses Lifelog companion app. All records shown are fictional showcase data. Research prototype — not a medical device.",
+    "macOS": {
+      "minimumSystemVersion": "11.0"
+    },
+    "shortDescription": "AI Glasses Lifelog companion — timeline, summaries, ask-your-day, object finder.",
+    "targets": [
+      "app",
+      "dmg",
+      "nsis",
+      "msi",
+      "appimage",
+      "deb",
+      "rpm"
+    ],
+    "windows": {
+      "nsis": {
+        "installMode": "currentUser"
+      }
+    }
+  },
+  "identifier": "com.dresdengoehner.lifelog",
+  "productName": "Lifelog",
+  "version": "0.1.1"
+}

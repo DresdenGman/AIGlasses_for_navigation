@@ -102,7 +102,7 @@ Lifelog 是与导航演示严格隔离的实验性子项目（[`lifelog/`](../li
 
 设计功能共八项：①全天记录（眼镜定时抓帧 + 手表录音，自动同步）②云端 / 家用 NAS 备份 ③AI 日总结（去了哪、做了什么、见了谁、说了什么）④时间线回看 ⑤带证据时间戳的问答检索（答案必须引用记录，无证据不编造）⑥物品定位（最后一次确认出现的时间、地点与画面）⑦置信标记（低于置信门槛一律标 *uncertain*，与眼镜 0.70 门控同一原则：看不准就说不确定，不猜）⑧隐私控制（一键暂停、到期自动删除、本地优先开关）。
 
-**App 下载**：一套 Tauri 2 代码、五个平台，源码在 [`lifelog/app/`](../lifelog/app/)；前端已完整可交互，真实采集/同步/推理尚未接入，当前以同一套虚构展示数据演示。**[下载 Lifelog v0.1.0 →](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.0)**
+**App 下载**：一套 Tauri 2 代码、五个平台，源码在 [`lifelog/app/`](../lifelog/app/)；前端已完整可交互，真实采集/同步/推理尚未接入，当前以同一套虚构展示数据演示。**[下载 Lifelog v0.1.0 →](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.1)**
 
 | 平台 | 发布内容 | 说明 |
 |---|---|---|

@@ -190,7 +190,7 @@ Lifelog is an experimental, opt-in companion that lives in a fenced subproject, 
 
 One Tauri 2 codebase in [`lifelog/app/`](lifelog/app/) ships all five platforms. The front-end is complete and fully interactive; capture, sync and inference are simulated over the same fictional showcase data until the real pipeline is wired into the shell.
 
-**[Download Lifelog v0.1.0 →](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.0)**
+**[Download Lifelog v0.1.0 →](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.1)**
 
 | Platform | In the release | Notes |
 |---|---|---|
@@ -313,7 +313,7 @@ These numbers are easy to mix up. They are not one product release, and none of 
 | **Package 0.1.0** | `ai-glasses-navigation-prototype` in [`pyproject.toml`](pyproject.toml), also shown in the API metadata. This is the runnable guidance demo. |
 | **Design v0.4** | Continuous Facets enclosure study. [`design/LATEST.json`](design/LATEST.json) records `0.4.0` for that geometry and its renders, not for the Python package. |
 | **Python 3.10+** | `requires-python` in `pyproject.toml`. CI runs the test suite on 3.10, 3.11, and 3.12. |
-| **Lifelog app 0.1.0** | The companion app release from [`lifelog/app/`](lifelog/app/), versioned independently of the navigation package. Its installers are published as the GitHub release [lifelog-v0.1.0](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.0). |
+| **Lifelog app 0.1.1** | The companion app release from [`lifelog/app/`](lifelog/app/), versioned independently of the navigation package. Its installers are published as the GitHub release [lifelog-v0.1.0](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.1). |
 | **Project release v1.9.1** | Project-level releases of the whole repository. v1.8 (November 2026) was the first: the software demo, the laptop camera path, the v0.4 design, the build kit and the participant feedback report under one label. v1.9 adds the first measured camera evaluation, a priced reference build, and the replication and battery-test protocols; v1.9.1 adds the recorded demo and Zenodo archiving. These labels do not replace the package or design labels above. [v1.9.1 notes](docs/RELEASE_v1.9.1.md) · [v1.9 notes](docs/RELEASE_v1.9.md) · [v1.8 notes](docs/RELEASE_v1.8.md) |
 
 ## Run the demo

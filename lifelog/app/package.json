@@ -1,1 +1,27 @@
-{"dependencies":{"@tauri-apps/api":"^2.0.0","lucide-react":"^0.469.0","react":"^18.3.1","react-dom":"^18.3.1"},"description":"AI Glasses Lifelog — cross-platform companion app (Tauri 2 + React). Front-end demo build with fictional showcase data.","devDependencies":{"@tauri-apps/cli":"^2.0.0","@types/react":"^18.3.12","@types/react-dom":"^18.3.1","@vitejs/plugin-react":"^4.3.4","typescript":"^5.7.2","vite":"^6.0.3"},"name":"aiglasses-lifelog-app","private":true,"scripts":{"build":"tsc --noEmit && vite build","dev":"vite","preview":"vite preview","tauri":"tauri"},"type":"module","version":"0.1.0"}
+{
+  "dependencies": {
+    "@tauri-apps/api": "^2.0.0",
+    "lucide-react": "^0.469.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "description": "AI Glasses Lifelog — cross-platform companion app (Tauri 2 + React). Front-end demo build with fictional showcase data.",
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.0.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3"
+  },
+  "name": "aiglasses-lifelog-app",
+  "private": true,
+  "scripts": {
+    "build": "tsc --noEmit && vite build",
+    "dev": "vite",
+    "preview": "vite preview",
+    "tauri": "tauri"
+  },
+  "type": "module",
+  "version": "0.1.1"
+}
