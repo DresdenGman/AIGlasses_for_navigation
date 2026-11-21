@@ -12,7 +12,7 @@ The purpose is to make assistive technology more accessible through a low-cost d
 
 The creator reports providing **practical explanations of how to make the device in three communities**, with the intention that local participants can continue making it without ongoing funding or material donations from the creator. The model focuses on transferring know-how instead of requiring recurring personal sponsorship.
 
-Instruction has been reported; ongoing independent production volume and long-term outcomes have not been quantified here. A [session photograph](../assets/community/in-person-session.png) supplied by the project creator appears in the README. Participant names and health records are not included.
+Instruction has been reported; ongoing independent production volume and long-term outcomes have not been quantified here. A [classroom session photograph](../assets/community/community-classroom.png) supplied by the project creator appears in the README. Participant names and health records are not included.
 
 ## Devices built and shared
 

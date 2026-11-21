@@ -13,6 +13,10 @@
 
 <img src="../assets/renders/01_hero.png" alt="连续折面 v0.4" width="860" />
 
+<img src="../assets/renders/07_open_housing.png" alt="连续折面 v0.4 打开外壳：上盖掀起，露出内部腔体" width="860" />
+
+*v0.4 外壳打开状态：上盖掀起，露出将来容纳电子部件的内部腔体。同为 Blender 渲染的设计原型图，不是实物照片。*
+
 </div>
 
 ## 数据速览
@@ -29,13 +33,19 @@
 
 同一份问卷也直说了最主要的问题：**48% 的使用者认为提示不准确**。[参与者反馈详情 →](#参与者反馈2026)
 
+<p align="center">
+  <img src="../assets/concept/worn-concept-front.jpg" alt="佩戴概念图正面" width="560" />
+</p>
+
+*佩戴概念图（正面）：探讨未来一体式外壳佩戴效果的生成设计图，不是照片，图中人物不是项目参与者。侧面图在本页靠后、成本一节之后。*
+
 ## 社区工作
 
 <p align="center">
-  <img src="../assets/community/in-person-session.png" alt="社区活动四宫格：户外咨询台、课堂讲解、小组动手活动与户外座谈" width="860" />
+  <img src="../assets/community/community-classroom.png" alt="社区课堂授课：创作者在投影幕前向居民讲解早期原型" width="860" />
 </p>
 
-*项目创作者提供的现场交流照片。*
+*项目创作者提供的现场照片：社区课堂上向居民讲解早期硬件原型。（多个场次的四宫格拼图保留在 ../assets/community/in-person-session.png。）*
 
 根据项目创作者的介绍，项目已接触 **4 个社区、近 60 位盲障人士**；并在 **3 个社区**提供了制作方法的讲解，希望参与者能够在不依靠创作者持续提供资金或物资的情况下继续制作。
 
@@ -63,6 +73,12 @@
 - 不含手机/电脑、云服务、工具、人工及其他非硬件费用。已有设备与工具可能减少额外支出，但不保证其他制作者零额外成本。
 - 本次新外壳 v0.4 尚未实物制作，不能直接将旧版成本当作新版已验证成本。
 
+<p align="center">
+  <img src="../assets/concept/worn-concept-side.jpg" alt="佩戴概念图侧面" width="560" />
+</p>
+
+*佩戴概念图（侧面）：与本页上方正面图同为生成设计图，不是照片；图中人物不是项目参与者。当前社区部署的是早期硬件原型，v0.4 是设计概念外壳，尚未作为实物部署。*
+
 ## 最新外观与 3D 文件
 
 v0.4 采用一体化连续折面：更轻薄的前框、斜切转角和收紧的镜腿；替换原来的六块外表皮，保留其余参照几何。所有展示角度与桌面场景均由同一套 Blender 模型渲染。它们是设计效果图，不是成品或社区活动实拍。
@@ -71,14 +87,7 @@ v0.4 采用一体化连续折面：更轻薄的前框、斜切转角和收紧的
 
 原装配被单独保留，新壳围绕其空间包络构造。当前原始文件的实际单位、电池/主板/线缆尺寸与固定方式仍未核实，因此只发布可编辑设计原型，不承诺可直接打印装配或真实佩戴安全。
 
-佩戴概念图（正面 / 侧面）：
-
-<table>
-<tr><td><img src="../assets/concept/worn-concept-front.jpg" alt="佩戴概念图正面" /></td><td><img src="../assets/concept/worn-concept-side.jpg" alt="佩戴概念图侧面" /></td></tr>
-<tr><td align="center">正面</td><td align="center">侧面</td></tr>
-</table>
-
-*这两张是探讨未来一体式外壳佩戴效果的概念渲染图（生成图），不是照片：图中人物不是项目参与者；当前社区部署的是早期硬件原型，v0.4 是设计概念外壳，尚未作为实物部署。*
+佩戴概念图（正面 / 侧面）已拆开放置：正面图在本页上方数据速览之后，侧面图在成本一节之后。两张均为探讨未来一体式外壳佩戴效果的概念渲染图（生成图），不是照片，图中人物不是项目参与者。
 
 ## 软件与项目范围
 
@@ -102,7 +111,9 @@ Lifelog 是与导航演示严格隔离的实验性子项目（[`lifelog/`](../li
 
 设计功能共八项：①全天记录（眼镜定时抓帧 + 手表录音，自动同步）②云端 / 家用 NAS 备份 ③AI 日总结（去了哪、做了什么、见了谁、说了什么）④时间线回看 ⑤带证据时间戳的问答检索（答案必须引用记录，无证据不编造）⑥物品定位（最后一次确认出现的时间、地点与画面）⑦置信标记（低于置信门槛一律标 *uncertain*，与眼镜 0.70 门控同一原则：看不准就说不确定，不猜）⑧隐私控制（一键暂停、到期自动删除、本地优先开关）。
 
-**App 下载**：一套 Tauri 2 代码、五个平台，源码在 [`lifelog/app/`](../lifelog/app/)；前端已完整可交互，真实采集/同步/推理尚未接入，当前以同一套虚构展示数据演示。**[下载 Lifelog v0.1.0 →](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.1)**
+2026-11-20，演示站完成一轮全面设计打磨：方案来自 Google AI Studio（Gemini）设计咨询、经项目自身口径裁决后实施——全站文字下限 13px、深色模式热力图色阶重做、Ask 页索引吸附，打磨后 axe 无障碍扫描 0 违规；App 同步了同一套设计令牌。
+
+**App 下载**：一套 Tauri 2 代码、五个平台，源码在 [`lifelog/app/`](../lifelog/app/)；前端已完整可交互，真实采集/同步/推理尚未接入，当前以同一套虚构展示数据演示。**[下载 Lifelog v0.1.1 →](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.1)** 首个安装包版本为 [lifelog-v0.1.0](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.0)（2026-11-20），同日发布 v0.1.1（设计打磨版）；每个版本含 Windows、macOS、Linux、Android 共 7 个安装包。
 
 | 平台 | 发布内容 | 说明 |
 |---|---|---|
@@ -114,7 +125,19 @@ Lifelog 是与导航演示严格隔离的实验性子项目（[`lifelog/`](../li
 
 隐私默认为最严格的一档：本地优先开启（无云端模型调用、无云备份）；录音默认关、须本人确认同意；定位关；人脸只检测用于模糊、无人脸识别；原始录音转写成功后删除；默认保留 14 天；备份默认关。导航包本身不存任何画面、录音与位置——两个包互不引用（CI 有测试强制），使用者媒体只存在使用者自己的数据目录，永不进入本仓库。接口已冻结为公开合约：[架构（英文）](../lifelog/docs/ARCHITECTURE.md) · [合约（英文）](../lifelog/docs/CONTRACTS.md) · [数据边界（英文）](../lifelog/docs/LIFELOG_DATA_BOUNDARIES.md) · [OpenAPI](../lifelog/contracts/openapi.yaml) · [SQLite schema](../lifelog/contracts/schema.sql)
 
+## 近期更新
+
+- **2026-11-20**：Lifelog App 合并并发布安装包（GitHub Release lifelog-v0.1.0 与 lifelog-v0.1.1，各 7 个安装包，覆盖 Windows、macOS、Linux、Android；Android 为未签名 APK，iOS 暂无安装包）；演示站与 App 完成上述设计打磨。
+- **2026-11-19**：Lifelog 演示站发布；冻结合约（OpenAPI、SQLite schema、架构与数据边界文档）以合约先行方式于 2026-11-19 备好，并于 2026-11-20 凌晨以 PR #18 合并，先于 App 实现。
+- **2026-11-18**：已向 HCB（Hack Club 财政赞助）提交财政赞助申请，目前审核中，尚未获批。
+
 ## 展示资料
+
+<p align="center">
+  <img src="../assets/social-preview-legacy.png" alt="项目早期社交分享图（浅色版）：35 美元以内即可制作" width="640" />
+</p>
+
+*项目早期的社交分享图（浅色版），留存备查；现行分享图为 ../assets/social-preview.png。*
 
 [展示渲染与可编辑场景](../design/v0.4/presentation/README.md) · [项目概述（英文）](PROJECT_OVERVIEW.md) · 一页纸：[使用者与社区（双语）](one-pagers/users-bilingual.md)、[招生版（英文）](one-pagers/admissions.md)、[合作方版（英文）](one-pagers/partners.md)
 

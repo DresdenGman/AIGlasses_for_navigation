@@ -11,18 +11,25 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23977544.svg)](https://doi.org/10.5281/zenodo.23977544)
 [![中文](https://img.shields.io/badge/%E4%B8%AD%E6%96%87-6e7781?style=flat-square)](docs/README.zh-CN.md)
 
-[Project](#the-project) · [Timeline](#project-timeline) · [Community](#worn-concept-study) · [Feedback](#participant-feedback) · [How it works](#how-the-system-works) · [Lifelog](#lifelog--an-all-day-memory-companion-experimental) · [Design](#wearable-design--continuous-facets-v04) · [Run the demo](#run-the-demo) · [中文](docs/README.zh-CN.md)
+[Project](#the-project) · [Timeline](#project-timeline) · [Community](#community-work-and-deployment) · [Feedback](#participant-feedback) · [How it works](#how-the-system-works) · [Lifelog](#lifelog--an-all-day-memory-companion-experimental) · [Design](#wearable-design--continuous-facets-v04) · [Run the demo](#run-the-demo) · [中文](docs/README.zh-CN.md)
 
 An open-source, under-$35 navigation-glasses direction for blind and low-vision people — the current release is a safety-first guidance demo and a printable enclosure study, not a certified aid.
 
 [Demo →](#run-the-demo) · [Build →](design/v0.4/README.md) · [Feedback results →](docs/FEEDBACK.md) · [Lifelog demo →](https://dresdengman.github.io/AIGlasses_for_navigation/) · [Join →](docs/CONTRIBUTING.md)
 
-**440+ stars** · **Under $35 to build** · **Nearly 60 people reached** · **85 feedback responses**
+**450+ stars** · **Under $35 to build** · **Nearly 60 people reached** · **85 feedback responses**
 
 <img src="assets/renders/01_hero.png" alt="Continuous Facets v0.4 — three-quarter studio render" width="860" />
 
 **CONTINUOUS FACETS / DESIGN v0.4**<br>
 An editable, lensless wraparound enclosure with a straighter brow, clipped corners and integrated temple surfaces.
+
+*Blender render of the digital enclosure prototype; not a photograph of a manufactured product.*
+
+<img src="assets/renders/07_open_housing.png" alt="Continuous Facets v0.4 with the upper cover lifted, showing the internal cavity" width="860" />
+
+**CONTINUOUS FACETS / DESIGN v0.4 — OPEN HOUSING**<br>
+The same enclosure study opened up: the upper cover lifted to show the internal cavity the electronics would occupy.
 
 *Blender render of the digital enclosure prototype; not a photograph of a manufactured product.*
 
@@ -33,6 +40,12 @@ An editable, lensless wraparound enclosure with a straighter brow, clipped corne
 </p>
 
 *The included demo in four scenes: the dashboard's sample observations and the guidance engine's actual answers, translated from the shipped Chinese interface. The last scene is the point of the project — a low-confidence detection is surfaced as uncertainty, never as a command. An unedited recording of the shipped dashboard is kept with [Run the demo](#run-the-demo).*
+
+<p align="center">
+  <img src="assets/concept/worn-concept-front.jpg" alt="Concept render of the wraparound bar worn, front view" width="560" />
+</p>
+
+*Worn concept study — front. A generated design-study image exploring how a future one-piece enclosure could look when worn: not a photograph, and the person shown is not a project participant. The matching side view is shown much further down, after [Affordability by design](#affordability-by-design).*
 
 ## Evidence at a glance
 
@@ -66,7 +79,7 @@ Today, this repository contains a runnable guidance demo, an optional laptop web
 | **July 29, 2026** | Reproducible software prototype | A hardware-free FastAPI core, interactive dashboard, JSONL replay and in-memory event history were added. An authenticated device-observation gateway, per-device rate limiting, packaging and CI test configuration followed in the same iteration. |
 | **September 18, 2026** | Continuous Facets v0.4 | The lightweight enclosure direction was published with editable Blender files, GLB/STL exports, geometry checks, multiple rendered views and clearer community and cost documentation. |
 | **August–November 2026** | Participant feedback survey | 85 bilingual responses were collected from session participants, people who tried or kept the earlier prototype, and online-guide builders. Results — including the problems and the continued-use figures — are published with the raw data and a reproducible analysis in [Participant feedback](docs/FEEDBACK.md). |
-| **November 2026** | Lifelog companion published | The fenced `lifelog/` subproject shipped a public demo website and a five-platform companion app (v0.1.0) for reviewing a recorded day — timeline, AI day summary, evidence-cited questions and object search — presented over fictional showcase data. Its API and storage contracts are frozen and published with it. [Lifelog ↓](#lifelog--an-all-day-memory-companion-experimental) |
+| **November 2026** | Lifelog companion published | The fenced `lifelog/` subproject shipped a public demo website and a five-platform companion app (v0.1.0, then v0.1.1) for reviewing a recorded day — timeline, AI day summary, evidence-cited questions and object search — presented over fictional showcase data. Its API and storage contracts are frozen and published with it. [Lifelog ↓](#lifelog--an-all-day-memory-companion-experimental) |
 | **Late 2025–present** | Continuing community engagement | Outreach has reached four communities and nearly 60 blind or visually impaired people; three communities received practical explanations of how to make the device. Technical development and community engagement continue in parallel. |
 
 The early development dates and community history are provided by the project creator. Publication and software milestones are documented in the [commit history](https://github.com/DresdenGman/AIGlasses_for_navigation/commits/main/). The nearly one-year period refers to initial development during 2025; subsequent iteration continues beyond that period.
@@ -175,6 +188,8 @@ Lifelog is an experimental, opt-in companion that lives in a fenced subproject, 
 
 **[Open the Lifelog demo site →](https://dresdengman.github.io/AIGlasses_for_navigation/)** — the website and the app below present **fictional showcase data** (a synthetic sample day), clearly labelled as such in the interface. Lifelog is a research prototype: not a navigation aid, not a medical device, and not a certified assistive product.
 
+On 2026-11-20 the website received a full design polish: the plan came from a Google AI Studio (Gemini) design consultation and was adjudicated against this project's own constraints before implementation — a 13 px minimum text size across the site, a reworked dark-mode heatmap scale, a sticky index on the Ask page, and a post-polish axe accessibility scan reporting zero violations. The app carries the same design tokens.
+
 ### What it is designed to do
 
 1. **All-day capture** — the glasses take timed frames and the watch records audio in chunks; both sync automatically to the owner's own machine.
@@ -190,7 +205,9 @@ Lifelog is an experimental, opt-in companion that lives in a fenced subproject, 
 
 One Tauri 2 codebase in [`lifelog/app/`](lifelog/app/) ships all five platforms. The front-end is complete and fully interactive; capture, sync and inference are simulated over the same fictional showcase data until the real pipeline is wired into the shell.
 
-**[Download Lifelog v0.1.0 →](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.1)**
+**[Download Lifelog v0.1.1 →](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.1)**
+
+The first installer release was [lifelog-v0.1.0](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.0) (2026-11-20); v0.1.1, published the same day, carries the design polish described above. Each release contains seven installer packages across Windows, macOS, Linux and Android.
 
 | Platform | In the release | Notes |
 |---|---|---|
@@ -212,7 +229,7 @@ The default configuration is the most private one (full statement in [`lifelog/R
 
 ### The fence, and the contracts
 
-The navigation package in this repository stores **no frames, audio or location** — that is its documented contract. Lifelog stores media, so the two are kept strictly separate: neither package imports the other (enforced by a test in CI), owner media stays in the owner's own data directory and never enters this repository, and Lifelog carries its own data-boundary document. Its interfaces are frozen as published contracts, so the website, app and server can be built and tested independently:
+The navigation package in this repository stores **no frames, audio or location** — that is its documented contract. Lifelog stores media, so the two are kept strictly separate: neither package imports the other (enforced by a test in CI), owner media stays in the owner's own data directory and never enters this repository, and Lifelog carries its own data-boundary document. Its interfaces are frozen as published contracts — prepared contract-first and merged ahead of the implementations (PR #18) — so the website, app and server can be built and tested independently:
 
 - [Architecture](lifelog/docs/ARCHITECTURE.md) · [Frozen contracts](lifelog/docs/CONTRACTS.md) · [Lifelog data boundaries](lifelog/docs/LIFELOG_DATA_BOUNDARIES.md)
 - Machine-readable: [OpenAPI](lifelog/contracts/openapi.yaml) · [SQLite schema](lifelog/contracts/schema.sql) · [Design tokens](lifelog/contracts/design-tokens.json) · [Sample-day manifest example](lifelog/contracts/sample_day.manifest.example.json)
@@ -246,18 +263,21 @@ Geometry checks cover shell topology, surface intersections and containment agai
 
 *These are synthetic Blender scenes of the same v0.4 model, rather than records of device use or community activities. The tools are generic props, not supplied accessories or a brand partnership.*
 
+<p align="center">
+  <img src="assets/social-preview-legacy.png" alt="Earlier social share card for the project, light design: 'Under $35 to build'" width="860" />
+</p>
+
+*The project's earlier social share card (light design), kept for the record. The current share image is [assets/social-preview.png](assets/social-preview.png); see [Social preview](docs/SOCIAL_PREVIEW.md).*
+
 [All 11 views and image provenance](docs/GALLERY.md) · [Editable presentation scenes](design/v0.4/presentation/README.md)
 
-### Worn concept study
+### Community work and deployment
 
-<table>
-<tr>
-<td valign="middle"><img src="assets/community/in-person-session.png" alt="Four panels from community sessions: an outdoor information table, a classroom presentation, a hands-on group activity, and an outdoor discussion" width="500" /></td>
-<td align="center"><img src="assets/concept/worn-concept-front.jpg" alt="Concept render of the wraparound bar worn, front view" width="340" /><br />Front<br /><br /><img src="assets/concept/worn-concept-side.jpg" alt="Concept render of the wraparound bar worn, side view" width="340" /><br />Side</td>
-</tr>
-</table>
+<p align="center">
+  <img src="assets/community/community-classroom.png" alt="Community classroom session: the creator presenting the earlier prototype to residents in front of a projection screen" width="860" />
+</p>
 
-*Concept renders exploring how a future one-piece enclosure could look when worn. These are generated design-study images, not photographs: the person shown is not a project participant, and the current hardware remains the 3D-printed v0.4 enclosure documented above.*
+*A classroom session in one of the three communities that received making instruction: the creator presenting the earlier hardware prototype to residents. Photograph supplied by the project creator. (A four-panel collage from several sessions is kept at [assets/community/in-person-session.png](assets/community/in-person-session.png).)*
 
 | **4 communities** | **Nearly 60 people** | **3 communities** |
 |:---:|:---:|:---:|
@@ -290,6 +310,12 @@ Reducing hardware cost is central to the project, alongside sharing the knowledg
 
 These amounts exclude a phone or computer, cloud services, tools, labor and other non-hardware expenses. The earlier prototype's cost is not a verified cost for manufacturing v0.4. An itemised bill of materials for the reference build is published in [BOM_PRICING.md](docs/BOM_PRICING.md); shipping, taxes and enclosure fabrication are not included in the $32.29 parts total. [Cost details →](docs/COMMUNITY_AND_COST.md#hardware-cost)
 
+<p align="center">
+  <img src="assets/concept/worn-concept-side.jpg" alt="Concept render of the wraparound bar worn, side view" width="560" />
+</p>
+
+*Worn concept study — side. The matching front view appears near the top of this README. Both are generated design-study images, not photographs: the person shown is not a project participant, and the current hardware remains the earlier prototype and the v0.4 enclosure study documented above.*
+
 ## Current status and continuing work
 
 The repository provides a working software demonstration and inspectable design assets. It does not yet establish a fully integrated, field-validated navigation device.
@@ -300,7 +326,13 @@ The repository provides a working software demonstration and inspectable design 
 | **Enclosure** | Editable v0.4 geometry, exports, render scenes and source-geometry checks. | Physical scale calibration, measured components, mounting, cable routing, fabrication and fit. |
 | **Evaluation** | Repeatable structured-observation scenarios, repository tests, a synthetic perception eval (false prompts, misses, host latency, and repeat suppression on generated lamps), a first labeled real-frame traffic-light measurement ([Evaluation](docs/EVALUATION.md)), and a local recorded-video command that scores a private clip only after consent and redaction are attested. | Consented field collection, message comprehension, and physical-prototype testing. The recorded-video command does not by itself supply a street result. |
 | **Community** | Outreach across four communities and making instruction in three, reaching nearly 60 people; 20 finished units with accessory kits donated (creator-reported); a completed 85-response participant survey with published raw data. | Continued engagement; accuracy, battery and audio work prioritised from the survey findings. |
-| **Lifelog** | Public demo website and a five-platform app (v0.1.0) over fictional showcase data; frozen API and storage contracts; privacy-first defaults. | Wiring the real capture, sync and inference pipeline into the app shell; a signed iOS build once an Apple Developer certificate is available. |
+| **Lifelog** | Public demo website and a five-platform app (v0.1.1; first installer release v0.1.0) over fictional showcase data; frozen API and storage contracts; privacy-first defaults. | Wiring the real capture, sync and inference pipeline into the app shell; a signed iOS build once an Apple Developer certificate is available. |
+
+### Recent updates
+
+- **2026-11-20** — Lifelog app merged and released: installers published as GitHub releases [lifelog-v0.1.0](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.0) and [lifelog-v0.1.1](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.1) — seven packages each across Windows, macOS, Linux and Android; the Android APK is unsigned, and iOS has no installer yet. The demo website and the app received the design polish described in the [Lifelog](#lifelog--an-all-day-memory-companion-experimental) section (AI Studio consultation, adjudicated in-house; axe scan: zero violations).
+- **2026-11-19** — Lifelog demo website published. The frozen contracts (OpenAPI, SQLite schema, architecture and data-boundary documents) were prepared contract-first on 2026-11-19 and merged as PR #18 early on 2026-11-20, ahead of the app implementation.
+- **2026-11-18** — A fiscal sponsorship application was submitted to HCB (Hack Club's fiscal sponsorship programme). It is currently under review and has not been approved.
 
 [Development roadmap →](docs/ROADMAP.md)
 
@@ -313,7 +345,7 @@ These numbers are easy to mix up. They are not one product release, and none of 
 | **Package 0.1.0** | `ai-glasses-navigation-prototype` in [`pyproject.toml`](pyproject.toml), also shown in the API metadata. This is the runnable guidance demo. |
 | **Design v0.4** | Continuous Facets enclosure study. [`design/LATEST.json`](design/LATEST.json) records `0.4.0` for that geometry and its renders, not for the Python package. |
 | **Python 3.10+** | `requires-python` in `pyproject.toml`. CI runs the test suite on 3.10, 3.11, and 3.12. |
-| **Lifelog app 0.1.1** | The companion app release from [`lifelog/app/`](lifelog/app/), versioned independently of the navigation package. Its installers are published as the GitHub release [lifelog-v0.1.0](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.1). |
+| **Lifelog app 0.1.1** | The companion app from [`lifelog/app/`](lifelog/app/), versioned independently of the navigation package. Its installers are published as GitHub releases [lifelog-v0.1.0](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.0) (the first installer release) and [lifelog-v0.1.1](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.1), seven packages each across Windows, macOS, Linux and Android; there is no iOS installer yet. |
 | **Project release v1.9.1** | Project-level releases of the whole repository. v1.8 (November 2026) was the first: the software demo, the laptop camera path, the v0.4 design, the build kit and the participant feedback report under one label. v1.9 adds the first measured camera evaluation, a priced reference build, and the replication and battery-test protocols; v1.9.1 adds the recorded demo and Zenodo archiving. These labels do not replace the package or design labels above. [v1.9.1 notes](docs/RELEASE_v1.9.1.md) · [v1.9 notes](docs/RELEASE_v1.9.md) · [v1.8 notes](docs/RELEASE_v1.8.md) |
 
 ## Run the demo

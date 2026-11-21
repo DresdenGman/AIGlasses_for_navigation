@@ -3,7 +3,7 @@
 One codebase, five platforms: **iOS · Android · macOS · Windows · Linux**.
 Tauri 2 native shell + React + Vite + TypeScript front-end.
 
-> **Front-end demo (v0.1.0).** Every screen is fully interactive, but capture,
+> **Front-end demo (v0.1.1; first released as v0.1.0).** Every screen is fully interactive, but capture,
 > sync and inference are simulated: the app ships with the same **fictional
 > showcase data** as the website (sample day 2026-04-18), clearly labelled
 > "Demo data" in the UI. The real pipeline (glasses frame capture, watch

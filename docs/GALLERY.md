@@ -48,3 +48,5 @@ The concept drawing was made during design exploration. Every image above was su
 ## Social preview
 
 [`assets/social-preview.png`](../assets/social-preview.png) is a 1280×640 card for link previews. It uses the hero render above, with the project name and the README's tagline set beside it. The enclosure is that Blender image, not a photograph of a manufactured product. GitHub does not take the file from the repository tree; upload steps are in [Social preview](SOCIAL_PREVIEW.md).
+
+An earlier light-design card is kept at [`assets/social-preview-legacy.png`](../assets/social-preview-legacy.png) for the record and shown in the README; it is not the current share image.
