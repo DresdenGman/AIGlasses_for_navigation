@@ -1,6 +1,6 @@
 # Participant feedback — survey results
 
-**85 responses · 49 in Chinese, 36 in English · collected 26 August – 4 November 2026**
+Survey: 85 responses (self-selected, non-random sample). Of the 64 people who had used the glasses, 9 were still using them; 48% reported inaccurate prompts; mean helpfulness 3.47 out of 5. Full methodology and raw CSV: docs/FEEDBACK.md.
 
 > **Data note (5 November 2026).** This page first reported 72 responses. A fuller export of the same survey then added 13 responses — all from the Chinese-language path, all inside the same collection window — and every figure below has been recomputed from the complete export. The mean helpfulness score did not move (3.47); most counts did. The earlier figures remain in the repository history and in the archived v1.9.1 release.
 
