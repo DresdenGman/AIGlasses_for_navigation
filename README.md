@@ -1,7 +1,7 @@
 <div align="center">
 
 # AI Glasses for Navigation
-### Open-source AI navigation glasses under $35 — they say what they see, and say 'uncertain' instead of guessing.
+### Open-source AI glasses under $35 — built for navigation first, open to everyone, and honest about how sure they are.
 
 [![Test prototype](https://img.shields.io/github/actions/workflow/status/DresdenGman/AIGlasses_for_navigation/test.yml?branch=main&label=Test%20prototype&style=flat-square)](https://github.com/DresdenGman/AIGlasses_for_navigation/actions/workflows/test.yml)
 [![MIT License](https://img.shields.io/github/license/DresdenGman/AIGlasses_for_navigation?style=flat-square)](LICENSE)
@@ -9,94 +9,334 @@
 [![Stars](https://img.shields.io/github/stars/DresdenGman/AIGlasses_for_navigation?style=flat-square)](https://github.com/DresdenGman/AIGlasses_for_navigation/stargazers)
 [![Release](https://img.shields.io/github/v/release/DresdenGman/AIGlasses_for_navigation?label=Release&style=flat-square)](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/latest)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23977544.svg)](https://doi.org/10.5281/zenodo.23977544)
+[![Lifelog demo](https://img.shields.io/badge/Lifelog_demo-live-1D4E46?style=flat-square)](https://dresdengman.github.io/AIGlasses_for_navigation/)
+[![App v0.1.1](https://img.shields.io/badge/App-v0.1.1-1D4E46?style=flat-square)](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.1)
 [![中文](https://img.shields.io/badge/%E4%B8%AD%E6%96%87-6e7781?style=flat-square)](docs/README.zh-CN.md)
 
-[Project](#the-project) · [Timeline](#project-timeline) · [Community](#community-work-and-deployment) · [Feedback](#participant-feedback) · [How it works](#how-the-system-works) · [Lifelog](#lifelog--an-all-day-memory-companion-experimental) · [Design](#wearable-design--continuous-facets-v04) · [Run the demo](#run-the-demo) · [中文](docs/README.zh-CN.md)
+**[▶ Open the Lifelog demo site](https://dresdengman.github.io/AIGlasses_for_navigation/) · [⬇ Download the app — v0.1.1](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.1) · [🔧 Build guide](#54-build-one-yourself) · [中文版](docs/README.zh-CN.md)**
 
-An open-source, under-$35 navigation-glasses direction for blind and low-vision people — the current release is a safety-first guidance demo and a printable enclosure study, not a certified aid.
-
-[Demo →](#run-the-demo) · [Build →](design/v0.4/README.md) · [Feedback results →](docs/FEEDBACK.md) · [Lifelog demo →](https://dresdengman.github.io/AIGlasses_for_navigation/) · [Join →](docs/CONTRIBUTING.md)
-
-**450+ stars** · **Under $35 to build** · **Nearly 60 people reached** · **85 feedback responses**
+**450+ stars** · **Under $35 to build** · **20 units donated** · **64 people have used them** · **85 feedback responses** · **3 communities taught to build them**
 
 <img src="assets/renders/01_hero.png" alt="Continuous Facets v0.4 — three-quarter studio render" width="860" />
 
-**CONTINUOUS FACETS / DESIGN v0.4**<br>
-An editable, lensless wraparound enclosure with a straighter brow, clipped corners and integrated temple surfaces.
+*Continuous Facets v0.4, the current enclosure study. Blender render of a digital design prototype — not a photograph of a manufactured product. The physical glasses people actually used are the earlier prototype, shown in [§5.2](#52-the-physical-glasses).*
 
-*Blender render of the digital enclosure prototype; not a photograph of a manufactured product.*
+<img src="assets/project-map.png" alt="Project map: AI Glasses for Navigation — why (under $35 to build, honest about uncertainty), navigation (0.70 confidence gate; says uncertain, never guesses), Lifelog (all-day memory, answers with evidence), evidence (20 units donated, 64 users, 85 responses), open source (full build guide, parts list US$32.29)" width="860" />
 
-<img src="assets/renders/07_open_housing.png" alt="Continuous Facets v0.4 with the upper cover lifted, showing the internal cavity" width="860" />
-
-**CONTINUOUS FACETS / DESIGN v0.4 — OPEN HOUSING**<br>
-The same enclosure study opened up: the upper cover lifted to show the internal cavity the electronics would occupy.
-
-*Blender render of the digital enclosure prototype; not a photograph of a manufactured product.*
+*The whole project on one map. Every number on it is detailed and sourced in [§7](#7-evidence-at-a-glance).*
 
 </div>
+
+**Contents** — [1. Why this project exists](#1-why-this-project-exists) · [2. Who it is for](#2-who-it-is-for) · [3. One principle, two extensions](#3-one-principle-two-extensions) · [4. Honest status](#4-honest-status) · [5. Extension one — navigation glasses](#5-extension-one--navigation-glasses) · [6. Extension two — Lifelog](#6-extension-two--lifelog) · [7. Evidence at a glance](#7-evidence-at-a-glance) · [8. Repository map](#8-repository-map) · [9. Contributing, license, responsible use](#9-contributing-license-responsible-use)
+
+---
+
+## 1. Why this project exists
+
+Commercial AI glasses cost hundreds or thousands of dollars, and most AI systems share a quieter flaw: they sound equally confident whether they are right or guessing. For someone who cannot double-check a claim with their own eyes, both problems are decisive — the device is unaffordable, and its confidence is worthless.
+
+This project exists to prove two things can be done differently:
+
+| # | Claim | What it means in practice | Where to check it |
+|:---:|---|---|---|
+| 1 | **Cheap enough to copy** | A complete pair builds for **under US$35** in the US — **US$32.29** itemised part by part — and **under US$20** built in China. Everything needed to replicate it is published. | [BOM table](#53-cost-what-a-build-actually-runs) |
+| 2 | **Honest by design** | The system always says how sure it is. Below a **0.70 confidence gate**, navigation output is *"uncertain"* — never a command. Lifelog answers must cite evidence, or be labelled *uncertain*, or refuse. | [Guidance rules](#51-how-the-guidance-works) · [Lifelog](#6-extension-two--lifelog) |
+
+The name says *for Navigation* because navigation is where the need is sharpest and the honesty requirement is strictest — but the project is not limited to navigation, and not limited to one group of people. Blind and low-vision users are its first owners and its final judges: if the system is honest enough for someone who cannot verify it visually, it is honest enough for anyone. [Who it is for →](#2-who-it-is-for)
+
+This is a **research prototype**. It is not a medical device, it is not clinically validated, and it must not replace a white cane, a guide dog, orientation-and-mobility training, personal judgment or traffic rules.
+
+## 2. Who it is for
+
+**Everyone — designed from the hardest case outward.** A curb cut is built for wheelchair users and ends up serving every parent with a stroller and every traveller with a suitcase. The same logic runs here: hands-free, voice-first, and explicit about uncertainty are requirements for a blind user — and conveniences for everybody else. Need decides the order below, never permission.
+
+| Need | Who | What this project gives them | Where it stands today |
+|:---:|---|---|---|
+| 🔴 **Strongest** | **Blind and low-vision people** | Spoken guidance that says what it sees and refuses to guess; labels and signs read aloud; a day that can be asked back, with evidence | The design centre. 20 finished units of the earlier prototype donated; 64 people have used the glasses (§7) |
+| 🔴 **Strong** | **Older adults living independently** | "Reading medicine labels and bus stop signs for me" — the survey's 5/5 use case, in a respondent's own words; finding lost objects; recalling what was said | Served in community sessions; the memory questions above are exactly what Lifelog is designed to answer (§6) |
+| 🟡 **Everyday** | **Caregivers and busy people** | A searchable own day: *what did the doctor say? where did I leave the wallet?* — answered from the record, not from a model's imagination | Shown end-to-end in the Lifelog demo, over fictional showcase data (§6) |
+| 🟢 **Open** | **Anyone who wants a memory that answers** | The same record and the same honesty rules, for a day that blurs: students, parents, anyone | Same demo; the real capture pipeline is planned (§4) |
+| 🟢 **Build it** | **Makers, researchers, community groups** | A full build guide, a priced bill of materials, an enclosure to print and modify, and frozen Lifelog contracts to build against | Published here and on OER Commons, MERLOT, Instructables and Thingiverse (§5.4) |
+
+## 3. One principle, two extensions
+
+**The principle:** a system that extends a person must say how sure it is — in its architecture, not as an afterthought. Confidence, evidence and refusal are core mechanisms here, not disclaimers.
+
+**The two extensions** apply that one principle to the two things a wearable can extend:
+
+| | 👁 **Perception — the navigation glasses** | 🕐 **Memory — Lifelog** |
+|---|---|---|
+| **Question it answers** | *What is in front of me right now?* | *What happened in my day?* |
+| **Honesty mechanism** | **0.70 confidence gate** — below it, the output is "uncertain", never a command | **Evidence rule** — an answer cites a timestamped record; weak evidence is labelled *uncertain*; a gap is stated, never filled in |
+| **Status** | Runnable guidance demo in this repository; earlier hardware prototype built, donated and used (§5, §7) | Demo website and app over **fictional showcase data**; API and storage contracts frozen (§6) |
+
+```mermaid
+flowchart LR
+    OBS["Live observations<br/>lights · obstacles · crosswalks"] --> GATE{"Confidence<br/>≥ 0.70?"}
+    GATE -->|yes| GUIDE["Spoken / shown guidance"]
+    GATE -->|no| UNC["'Uncertain' —<br/>never a command"]
+    CAM["Glasses frames<br/>+ watch audio (consent first)"] --> SYNC["Sync to the owner's<br/>own hardware"]
+    SYNC --> STORE["Local-first day store"]
+    STORE --> SUM["AI day summary"]
+    STORE --> ASK["Ask your day"]
+    STORE --> FIND["Object finder"]
+    ASK --> CITE["Answer cites evidence<br/>or is labelled uncertain"]
+```
+
+The two halves are fenced apart on purpose: the navigation package stores **no frames, audio or location**, and Lifelog — which does store media, on the owner's own hardware — never changes navigation guidance. Neither package imports the other; a CI test enforces it.
+
+## 4. Honest status
+
+🟢 **Real** = built and in use · 🟡 **Demo** = works as a demonstration, over sample data · 🔵 **Planned** = not built yet
+
+| Area | 🟢 Real today | 🟡 Demonstration | 🔵 Planned |
+|---|---|---|---|
+| **Navigation software** | Guidance engine, dashboard, REST/WebSocket API, JSONL replay and device gateway, all runnable from this repository | Laptop webcam / video / still-image path with a lamp heuristic; synthetic perception eval | ESP32 wearable integration; distance sensing; street evaluation |
+| **Hardware** | Earlier prototype built and donated (20 units); v0.4 enclosure as editable geometry with checks | Blender renders and staged scenes of v0.4 (labelled as renders wherever shown) | v0.4 physical fabrication, fit, fastening and assembly validation |
+| **Community** | Making instruction in 3 communities; an 85-response participant survey published with raw data (§7) | Build guide mirrored on OER Commons, MERLOT, Instructables, Thingiverse | Continued sessions; accuracy, battery and audio fixes in the order the survey demands |
+| **Lifelog** | Frozen contracts (OpenAPI, SQLite schema, architecture, data boundaries); demo website live; app v0.1.1 installers for Windows, macOS, Linux, Android | Everything the website and app display runs on **fictional showcase data**, labelled in the interface | Real capture, sync and inference wired into the app; a signed iOS build (needs an Apple Developer certificate) |
+
+**Recent updates**
+
+- **2026-11-20** — Lifelog app released: [lifelog-v0.1.0](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.0) and [lifelog-v0.1.1](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.1), seven installer packages each across Windows, macOS, Linux and Android (Android APK unsigned; no iOS installer yet). The demo website and app received a full design polish the same day (plan from a Google AI Studio / Gemini consultation, adjudicated against this project's constraints; post-polish axe accessibility scan: zero violations).
+- **2026-11-19** — Lifelog demo website published. The frozen contracts were prepared contract-first on 2026-11-19 and merged as PR #18 early on 2026-11-20, ahead of the implementations.
+- **2026-11-18** — A fiscal sponsorship application was submitted to HCB (Hack Club's fiscal sponsorship programme). It is **under review and has not been approved**.
+
+[Development roadmap →](docs/ROADMAP.md)
+
+---
+
+## 5. Extension one — navigation glasses
+
+### 5.1 How the guidance works
+
+The runnable core is the **observation-to-guidance** step, inspectable with no camera and no cloud access. A camera path is optional: a laptop webcam, a video file or a still image can create observations for the same engine. That path is not a field-tested recogniser and not a certified aid.
+
+```mermaid
+flowchart TD
+    A[Demo scenarios or recorded JSONL observations] --> C[Validate structured observation]
+    B[Authenticated device observation gateway] --> C
+    W[Laptop webcam, video file, or still image] --> P[Local vision adapter]
+    P --> C
+    C --> D[Guidance engine]
+    D --> E[Confidence checks and repeated-message suppression]
+    E --> F[Text on the dashboard, REST, WebSocket, or CLI]
+    E --> S[Optional local or browser speech]
+    E --> G[Temporary in-memory event history]
+    H[ESP32 and wearable audio] -.-> B
+```
 
 <p align="center">
   <img src="assets/demo.gif" alt="Animation cycling through the demo's four scenes: a red light — 'Red light. Please stop and wait.'; an obstacle close ahead — 'Slow down and steer around it.'; a crosswalk — 'Keep your heading and confirm the signal.'; and a low-confidence detection — 'The situation ahead is uncertain', explicitly not a command" width="860" />
 </p>
 
-*The included demo in four scenes: the dashboard's sample observations and the guidance engine's actual answers, translated from the shipped Chinese interface. The last scene is the point of the project — a low-confidence detection is surfaced as uncertainty, never as a command. An unedited recording of the shipped dashboard is kept with [Run the demo](#run-the-demo).*
+*The included demo in four scenes: sample observations and the guidance engine's actual answers, translated from the shipped Chinese interface. The last scene is the point of the project — a low-confidence detection is surfaced as uncertainty, never as a command.*
+
+**Guidance behaviour** — observations carry a category and a confidence value, plus fields such as traffic-light state, obstacle distance or object label. Deterministic rules then apply:
+
+- **Traffic lights:** red produces a stop-and-wait message. Green is informational and non-actionable — the engine cannot decide whether crossing is possible. An unknown state produces an uncertainty message.
+- **Obstacles:** at 1.5 metres or less, a nearby-obstacle warning; otherwise a general caution. (The laptop camera adapter attaches no distance, so a bounding box can never become the nearby-obstacle warning.)
+- **Crosswalks:** a message about orientation and checking the signal.
+- **Low confidence:** anything below the **0.70** threshold produces an uncertainty message marked non-actionable.
+- **Repetition:** the same guidance category is suppressed within a three-second cooldown.
+- **Invalid distances:** negative or non-finite obstacle distances produce a non-actionable status message, including from replay files.
+
+These rules respond to supplied observations; they do not prove a camera read the scene correctly. Guidance messages and the demo interface are in Chinese, as shipped; the documentation is primarily in English. **Data handling:** the demo keeps the latest 100 guidance events in process memory (timestamp, category, confidence, severity, actionability, message text) and clears them on restart; it retains no raw frames, audio, location or device IDs. [Architecture](docs/ARCHITECTURE.md) · [Device gateway](docs/HARDWARE_GATEWAY.md) · [Data boundaries](docs/DATA_BOUNDARIES.md)
+
+**What the glasses are intended to help with** — and what this repository actually implements:
+
+| Workflow | Intended assistance | Current repository scope |
+|---|---|---|
+| **Tactile-paving navigation** | Recognise a path, describe alignment, identify nearby obstacles | Earlier materials describe YOLO segmentation experiments. The current demo handles obstacle observations; it does not implement a complete tactile-path pipeline |
+| **Crosswalk and traffic-light awareness** | Identify a crosswalk; communicate light observations with uncertainty | The engine handles structured crosswalk and red/green/unknown inputs. Live recognition accuracy and safe crossing are not established |
+| **Object search** | Find a named object; give location cues | Earlier materials describe YOLO-E detection and MediaPipe hand cues. Not integrated into the current demo (Lifelog's object finder, §6, covers the memory side) |
+| **Voice interaction** | Ask and receive spoken help without a visual display | Optional local or browser speech reads a guidance sentence aloud. It does not hold a conversation, and low-confidence vision never becomes a spoken command |
+
+### 5.2 The physical glasses
+
+<p align="center">
+  <img src="assets/hardware-six-panel.png" alt="Six photographs of the physical earlier-prototype glasses: grey 3D-printed frame on a wooden desk, front view showing the camera, side view, top-down on a cutting mat with a ruler, and beside a notebook with calipers and a spool of cable" width="860" />
+</p>
+
+*The earlier hardware prototype — the one that was donated and used — photographed in six views. These are photographs of the physical unit.*
+
+The current enclosure direction, **Continuous Facets v0.4**, is a lensless wraparound design study: a straighter brow, clipped corners and integrated temple surfaces, published as editable Blender geometry with GLB/STL exports and geometry checks. It has **not** been fabricated or deployed; the checks cover topology, intersections and containment, not calibrated units, component fit, thermal behaviour or assembly tolerances.
+
+<p align="center">
+  <img src="assets/renders/07_open_housing.png" alt="Continuous Facets v0.4 with the upper cover lifted, showing the internal cavity" width="860" />
+</p>
+
+*v0.4 with the upper cover lifted, showing the internal cavity the electronics would occupy. Blender render — not a photograph.*
+
+<table>
+<tr><td><img src="assets/renders/02_front.png" alt="Front view of v0.4 with the camera aperture and nose supports" /></td><td><img src="assets/renders/03_side.png" alt="Side view showing the continuous faceted temple" /></td></tr>
+<tr><td align="center">Front / integrated brow</td><td align="center">Side / continuous surfaces</td></tr>
+<tr><td><img src="assets/renders/04_top.png" alt="Top view of the U-shaped lensless housing" /></td><td><img src="assets/renders/05_rear.png" alt="Rear three-quarter view of the housing" /></td></tr>
+<tr><td align="center">Top / wraparound layout</td><td align="center">Rear / interior access</td></tr>
+</table>
 
 <p align="center">
   <img src="assets/concept/worn-concept-front.jpg" alt="Concept render of the wraparound bar worn, front view" width="560" />
 </p>
 
-*Worn concept study — front. A generated design-study image exploring how a future one-piece enclosure could look when worn: not a photograph, and the person shown is not a project participant. The matching side view is shown directly below.*
+*Worn concept study — front. A generated design-study image exploring how a future one-piece enclosure could look when worn: not a photograph, and the person shown is not a project participant. The matching side view is directly below.*
 
 <p align="center">
   <img src="assets/concept/worn-concept-side.jpg" alt="Concept render of the wraparound bar worn, side view" width="560" />
 </p>
 
-*Worn concept study — side. The matching front view is shown directly above. Both are generated design-study images, not photographs: the person shown is not a project participant, and the current hardware remains the earlier prototype and the v0.4 enclosure study documented below.*
+*Worn concept study — side. The matching front view is directly above. Both are generated design-study images, not photographs: the person shown is not a project participant, and the current hardware remains the earlier prototype and the v0.4 enclosure study documented here.*
 
-## Evidence at a glance
+<p align="center">
+  <img src="assets/scenes/08_everyday_desk.png" alt="v0.4 on a staged everyday desk" width="860" />
+</p>
 
-From the participant feedback survey (August–November 2026) — the full results, raw data and limitations are in the [feedback report](docs/FEEDBACK.md):
+*A synthetic Blender scene of the v0.4 model on a staged desk — not a record of device use. [All views and image provenance →](docs/GALLERY.md) · [Open the model and inspect the checks →](design/v0.4/README.md)*
+
+### 5.3 Cost: what a build actually runs
+
+| Build context | Hardware-only cost | Basis |
+|---|---|---|
+| **Earlier prototype built in China** | **Under US$20 per unit** | The creator's reported cost for the earlier build |
+| **Estimated US build** | **Under US$35 per unit** | The creator's estimate; not yet verified against a supplier quotation |
+| **US reference build, itemised** | **US$32.29 in parts** | The speaker reference build priced part by part on 2026-11-05; conditions — and the configurations that exceed $35 — are stated in [BOM_PRICING.md](docs/BOM_PRICING.md) |
+| **New v0.4 enclosure** | **Not separately costed** | Digital design awaiting fabrication and assembly validation |
+
+Amounts exclude a phone or computer, cloud services, tools, labour and other non-hardware expenses; shipping, taxes and enclosure fabrication are not in the $32.29 parts total. The earlier prototype's cost is not a verified cost for manufacturing v0.4. [Cost details →](docs/COMMUNITY_AND_COST.md#hardware-cost)
+
+### 5.4 Build one yourself
+
+- **Enclosure:** [v0.4 model, downloads and geometry checks](design/v0.4/README.md) — Blender assembly, GLB preview, STL exports, construction scripts.
+- **Software:** run the demo below (§5.5); the guidance engine needs no hardware.
+- **The bilingual build guide, mirrored:** [OER Commons](https://oercommons.org/courses/low-cost-ai-navigation-glasses-bilingual-build-guide-for-assistive-makers) · [MERLOT](https://www.merlot.org/merlot/viewMaterial.htm?id=824240304) · [Instructables](https://www.instructables.com/Low-Cost-AI-Navigation-Glasses-Build-an-Open-Sourc/) · [Thingiverse model](https://www.thingiverse.com/thing:7414404)
+
+### 5.5 Run the software demo
+
+Python 3.10 or later (the floor is `requires-python` in `pyproject.toml`). Demo mode needs no camera, ESP32, model weights or cloud keys.
+
+```bash
+git clone https://github.com/DresdenGman/AIGlasses_for_navigation.git
+cd AIGlasses_for_navigation
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+python -m pip install -r requirements.txt
+cp .env.example .env
+python main.py
+```
+
+Open the [local dashboard](http://127.0.0.1:8081/) or the [interactive API docs](http://127.0.0.1:8081/docs). The dashboard sends sample observations through the guidance engine; its interface and guidance text are in Chinese, as shipped. An unedited screen recording of a live run is kept at [assets/demo-recording.gif](assets/demo-recording.gif).
+
+```bash
+python -m aiglasses.replay demo/events.jsonl        # replay the included observations
+python -m pip install -r requirements-dev.txt       # dev + test tooling
+python -m pip install -e '.[vision]'                # optional camera path
+python -m pytest
+python -m aiglasses.eval                            # synthetic lamp eval — not a street test
+python -m aiglasses.eval.recorded                   # local clip scoring; skips without a labelled private set
+```
+
+Optional live path (still a research prototype; low confidence never becomes a command, distance is never invented):
+
+```bash
+python -m aiglasses.live --synthetic
+python -m aiglasses.live --source 0                 # webcam, or a path to a video file
+python -m pip install -e '.[audio]'
+python -m aiglasses.live --synthetic --tts pyttsx3  # spoken output, off unless requested
+```
+
+[Full demo guide →](docs/DEMO.md) · [Perception eval →](docs/EVAL.md) · [Recorded-video eval →](docs/RECORDED_EVAL.md)
+
+---
+
+## 6. Extension two — Lifelog
+
+Lifelog is the memory extension, an opt-in companion in the fenced subproject [`lifelog/`](lifelog/). The glasses answer *"what is in front of me right now?"*; Lifelog explores *"what happened in my day?"* — on hardware the owner controls, with the same honesty rule: evidence or *uncertain*, never invention.
+
+> ⚠️ **Read this first:** the website and the app present **fictional showcase data** — a synthetic sample day, labelled as such in the interface. Lifelog is a research prototype: not a navigation aid, not a medical device, not a certified assistive product.
+
+**[▶ Open the Lifelog demo site](https://dresdengman.github.io/AIGlasses_for_navigation/)**
+
+### The eight functions
+
+| # | Function | What it does |
+|:---:|---|---|
+| 1 | **All-day capture** | The glasses take timed frames; the watch records audio in chunks — only after an explicit consent acknowledgement. Both sync automatically to the owner's own machine |
+| 2 | **Cloud / NAS backup** | Backup to a home NAS, or to a cloud target only when local-first is switched off |
+| 3 | **AI day summary** | A four-part summary of the day: where you went, what you did, who you met, what was said |
+| 4 | **Timeline review** | The day replayed hour by hour, with a film strip of scene frames |
+| 5 | **Ask your day** | Questions answered from the stored record; every answer cites evidence with a timestamp that jumps to the moment — and shows its audit trail (how many records were considered, how many cleared the evidence bar). No evidence, no invented answer |
+| 6 | **Object finder** | Everyday items tracked to their last confirmed sighting: time, place, and the frame itself. A later, weaker sighting never overwrites the last confirmed position |
+| 7 | **Uncertainty, marked** | Anything below the confidence bar is labelled *uncertain* — the same principle as the navigation gate, applied to memory |
+| 8 | **Privacy controls** | One-tap pause (with a countdown in the header), automatic deletion after a set retention period, and a local-first switch that keeps media and processing on the owner's hardware |
+
+### Get the app
+
+One Tauri 2 codebase in [`lifelog/app/`](lifelog/app/). The front end is complete and fully interactive; capture, sync and inference are simulated over the same fictional showcase data until the real pipeline is wired into the shell (§4).
+
+**[⬇ Download Lifelog v0.1.1](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.1)** · first installer release: [lifelog-v0.1.0](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.0) (both 2026-11-20)
+
+| Platform | In the release | Notes |
+|---|---|---|
+| **Windows** | `.exe` (NSIS) and `.msi` installers | |
+| **macOS** | Universal `.dmg` | Intel and Apple Silicon in one build |
+| **Linux** | `.AppImage`, `.deb`, `.rpm` | |
+| **Android** | `.apk` | Unsigned — sign it yourself before installing |
+| **iOS** | — | No installable package yet: an `.ipa` requires an Apple Developer signing certificate and provisioning profile; CI currently runs an unsigned compile check |
+
+### Privacy defaults
+
+The default configuration is the most private one (full statement in [`lifelog/README.md`](lifelog/README.md)):
+
+- **Local-first is on** — no cloud model calls, no cloud backup.
+- **Audio is off** until the owner acknowledges a consent notice; **location is off**.
+- **Face blur is on** — faces are detected only so they can be blurred; there is no face recognition.
+- **Raw audio is deleted** after a successful transcription.
+- **Retention defaults to 14 days**; backup is off until the owner turns it on.
+
+### Contracts and the fence
+
+Lifelog's interfaces are frozen as published contracts — prepared contract-first and merged ahead of the implementations (PR #18) — so the website, app and server can be built and tested independently. Owner media stays in the owner's own data directory and never enters this repository.
+
+- [Architecture](lifelog/docs/ARCHITECTURE.md) · [Frozen contracts](lifelog/docs/CONTRACTS.md) · [Lifelog data boundaries](lifelog/docs/LIFELOG_DATA_BOUNDARIES.md)
+- Machine-readable: [OpenAPI](lifelog/contracts/openapi.yaml) · [SQLite schema](lifelog/contracts/schema.sql) · [Design tokens](lifelog/contracts/design-tokens.json)
+
+---
+
+## 7. Evidence at a glance
+
+Two sets of numbers, kept separate on purpose: **deployment** (units, users, responses) and **outreach** (communities contacted, people reached). Neither set counts daily active users; both are creator-reported project history, not an independently audited study.
+
+**Deployment — in the three communities that received making instruction:**
+
+| **20 finished units** | **64 people** | **85 responses** | **3 communities** |
+|:---:|:---:|:---:|:---:|
+| Donated with accessory kits (earlier prototype, not v0.4) | Used the glasses at least once | Feedback responses collected | Received practical making instruction |
+
+**Outreach — the wider contact set:**
+
+| **4 communities** | **Nearly 60 people** |
+|:---:|:---:|
+| Engaged through outreach | Blind or visually impaired people reached |
+
+<p align="center">
+  <img src="assets/community/community-classroom.png" alt="Community classroom session: the creator presenting the earlier prototype to residents in front of a projection screen" width="860" />
+</p>
+
+*A classroom session in one of the three communities: the creator presenting the earlier hardware prototype to residents. Photograph supplied by the project creator.*
+
+<p align="center">
+  <img src="assets/community/community-collage.png" alt="Four panels from community sessions: an outdoor Q&A booth, a classroom session, a volunteer-assisted activity with residents wearing headband devices, and an outdoor table discussion" width="860" />
+</p>
+
+*Four panels from community sessions — an outdoor Q&A booth, a classroom session, a volunteer-assisted activity, and an outdoor discussion. Faces are softened for privacy. (A smaller, more heavily blurred copy is kept at [assets/community/in-person-session.png](assets/community/in-person-session.png).)*
+
+### What participants reported
+
+In August–November 2026, an anonymous bilingual survey collected **85 responses** (49 in Chinese, 36 in English) from people who had encountered the project — at assembly sessions, through trying or keeping the earlier prototype, at presentations, or via the online guide. Full results, method and limitations: [Participant feedback](docs/FEEDBACK.md), with the [raw responses](data/feedback/participant-feedback-survey-responses-2026.csv) and a script that recomputes every number.
 
 | **85** | **64** | **3.47 / 5** | **9 of 64** |
 |:---:|:---:|:---:|:---:|
 | Survey responses | Had used the glasses at least once | Mean helpfulness, rated by those users | Still using them at survey time |
-
-
-The same survey names the top problem plainly: **48% of users said the prompts were inaccurate**. [What participants reported →](#participant-feedback)
-
-## The project
-
-AI Glasses for Navigation explores affordable, wearable visual assistance for blind and visually impaired people. It brings together three parts: a hardware and enclosure project, software that translates observations into guidance, and community outreach that shares how the device can be made.
-
-Development began in **early 2025**. The initial building and development phase spanned **nearly a year**, before the project was uploaded to GitHub in **December 2025**. Community work began in **late 2025** and has continued alongside technical iteration. The project therefore predates this repository: GitHub records the published work, while the earlier building process and community activities form part of the broader project history.
-
-The aim is to make visual-assistance hardware more affordable and its construction more understandable. Sharing the making process matters alongside the device itself: participants can learn how it works and build local knowledge that can continue beyond a single visit or donation.
-
-Today, this repository contains a runnable guidance demo, an optional laptop webcam / video / still-image path into that same guidance engine, optional spoken playback of the resulting text, an editable v0.4 enclosure and its render gallery, plus documentation of community work and hardware costs. A fenced experimental companion, [Lifelog](#lifelog--an-all-day-memory-companion-experimental), adds a public demo website and a five-platform app for reviewing a recorded day; it never changes navigation guidance. An ESP32 wearable and a certified navigation aid are not part of this release.
-
-## Project timeline
-
-| Period | Milestone | What changed |
-|---|---|---|
-| **Late 2024** | Building began | Initial development of the AI glasses project started, before publication on GitHub. |
-| **Throughout 2025** | Nearly a year of initial development | Building and development continued across the year, forming the early prototype and project direction. |
-| **Late 2025** | Community work began | The project moved into community outreach and practical explanation, beginning an ongoing effort to broaden participation and share making knowledge. |
-| **December 2025** | First GitHub publication | The [initial repository commit](https://github.com/DresdenGman/AIGlasses_for_navigation/commit/12b121a3) was recorded on December 9, 2025 (UTC). Early documentation described tactile-paving navigation, crosswalk assistance, object search and voice interaction. |
-| **July 29, 2026** | Reproducible software prototype | A hardware-free FastAPI core, interactive dashboard, JSONL replay and in-memory event history were added. An authenticated device-observation gateway, per-device rate limiting, packaging and CI test configuration followed in the same iteration. |
-| **September 18, 2026** | Continuous Facets v0.4 | The lightweight enclosure direction was published with editable Blender files, GLB/STL exports, geometry checks, multiple rendered views and clearer community and cost documentation. |
-| **August–November 2026** | Participant feedback survey | 85 bilingual responses were collected from session participants, people who tried or kept the earlier prototype, and online-guide builders. Results — including the problems and the continued-use figures — are published with the raw data and a reproducible analysis in [Participant feedback](docs/FEEDBACK.md). |
-| **November 2026** | Lifelog companion published | The fenced `lifelog/` subproject shipped a public demo website and a five-platform companion app (v0.1.0, then v0.1.1) for reviewing a recorded day — timeline, AI day summary, evidence-cited questions and object search — presented over fictional showcase data. Its API and storage contracts are frozen and published with it. [Lifelog ↓](#lifelog--an-all-day-memory-companion-experimental) |
-| **Late 2025–present** | Continuing community engagement | Outreach has reached four communities and nearly 60 blind or visually impaired people; three communities received practical explanations of how to make the device. Technical development and community engagement continue in parallel. |
-
-The early development dates and community history are provided by the project creator. Publication and software milestones are documented in the [commit history](https://github.com/DresdenGman/AIGlasses_for_navigation/commits/main/). The nearly one-year period refers to initial development during 2025; subsequent iteration continues beyond that period.
-
-## Participant feedback
-
-In August–November 2026, an anonymous bilingual survey collected **85 responses** (49 in Chinese, 36 in English) from people who had encountered the project — at assembly sessions, through trying or keeping the earlier prototype, at presentations, or via the online guide. The full results, method and limitations are published in [Participant feedback](docs/FEEDBACK.md), together with the [raw responses](data/feedback/participant-feedback-survey-responses-2026.csv) and a script that recomputes every number.
-
-| **85** | **64** | **3.47 / 5** | **9 of 64** |
-|:---:|:---:|:---:|:---:|
-| Survey responses | Had used the glasses at least once | Mean helpfulness among those 64 users | Still using them at survey time |
 
 <table>
 <tr>
@@ -113,9 +353,9 @@ In August–November 2026, an anonymous bilingual survey collected **85 response
 
 Three findings set the project's priorities:
 
-- **Prompt accuracy is the central problem.** 48% of users said prompts were inaccurate or missed important information, and "more accurate prompts" was the single most-chosen improvement (29 of 85 respondents). A synthetic fixture eval counts false prompts and misses on generated lamps ([EVAL.md](docs/EVAL.md)). A separate local command can score a consented, redacted clip on one machine ([RECORDED_EVAL.md](docs/RECORDED_EVAL.md)); no such field set is in this repository, so no stronger field claim is warranted — see the [roadmap](docs/ROADMAP.md).
+- **Prompt accuracy is the central problem.** 48% of users said prompts were inaccurate or missed important information, and "more accurate prompts" was the single most-chosen improvement (29 of 85). A synthetic fixture eval counts false prompts and misses on generated lamps ([EVAL.md](docs/EVAL.md)); a separate local command can score a consented, redacted clip on one machine ([RECORDED_EVAL.md](docs/RECORDED_EVAL.md)). No stronger field claim is warranted — see the [roadmap](docs/ROADMAP.md).
 - **Battery and audio follow.** 38% of users found the battery did not last long enough (one reported under an hour of continuous use), and 30% found the audio or instructions unclear.
-- **Continued use is weak, and it is reported here rather than smoothed over.** Of the 64 users, 9 still use the glasses, 19 use them less than before and 35 have stopped (one further response contradicts itself and is flagged in the full report). The survey's job was to surface exactly this.
+- **Continued use is weak, and it is reported here rather than smoothed over.** Of the 64 users, 9 still use the glasses, 19 use them less than before and 35 have stopped (one further response contradicts itself and is flagged in the full report).
 
 > "Reading medicine labels and bus stop signs for me."
 > — Survey respondent who kept a pair, rated the glasses 5/5, still using (quoted with permission; 68 of 85 respondents agreed to anonymous quotation)
@@ -123,302 +363,56 @@ Three findings set the project's priorities:
 > "Walking along the corridor, it told me about the stacked boxes ahead in time — I felt them, and they were there — so I did not trip over them."
 > — Respondent who kept a pair, rated 5/5, still using
 
-The survey covers the broader project and the earlier prototype, not the v0.4 enclosure. It was run by the project itself with a self-selected sample, and 51 of the 85 responses were not filled in on the form directly by the respondent — 34 were entered by a family member or volunteer, 14 were recorded by an organiser, and 3 were completed another way. The [full report](docs/FEEDBACK.md#limitations-of-this-data) explains what that means for reading the numbers.
+The survey covers the broader project and the earlier prototype, not the v0.4 enclosure. It was run by the project itself with a self-selected sample, and 51 of the 85 responses were not filled in on the form directly by the respondent — 34 were entered by a family member or volunteer, 14 were recorded by an organiser, and 3 were completed another way. The [full report](docs/FEEDBACK.md#limitations-of-this-data) explains what that means for reading the numbers. Individual moments behind the numbers: [Outcome cases](docs/OUTCOME_CASES.md) — seven cases from consenting respondents, each with the friction the same respondent reported.
 
-[Full results, method and limitations →](docs/FEEDBACK.md) · [Raw data →](data/feedback/) · [Reproduce the analysis →](data/feedback/analyze_feedback.py)
-Individual moments behind the numbers: [Outcome cases](docs/OUTCOME_CASES.md) — seven cases from consenting respondents, each with the friction the same respondent reported.
+### Timeline
 
-## What the glasses are intended to help with
+Development began in **early 2025** (building started in late 2024); the initial phase spanned nearly a year before the first GitHub publication in December 2025. The project predates this repository: GitHub records the published work, while the earlier building process and community activities are creator-reported history.
 
-The broader project explores four everyday assistance workflows. These informed the earlier prototype documentation and remain the context for the current work.
-
-| Workflow | Intended assistance | Current repository scope |
-|---|---|---|
-| **Tactile-paving navigation** | Recognize a path, describe alignment and identify nearby obstacles. | Earlier materials describe YOLO segmentation and path-guidance experiments. The current demo handles obstacle observations; it does not implement a complete tactile-path navigation pipeline. |
-| **Crosswalk and traffic-light awareness** | Identify a crosswalk and communicate traffic-light observations with uncertainty. | The guidance engine handles structured crosswalk and red/green/unknown light inputs. Live recognition accuracy and safe crossing have not been established by this demo. |
-| **Object search** | Find a named object and provide cues about its location. | Earlier materials describe YOLO-E detection, tracking and MediaPipe hand cues. These are not integrated into the current demo. |
-| **Voice interaction** | Ask questions and receive spoken assistance without relying on a visual display. | Optional local or browser speech can read a guidance sentence aloud. It does not hold a conversation, and low-confidence vision is not turned into a spoken command. |
-
-## How the system works
-
-The intended wearable pipeline starts with a camera, turns visual input into observations, applies guidance rules and communicates the result through audio. The runnable core is still the **observation-to-guidance** step, which can be inspected with no camera and no cloud access. An optional laptop path can create observations from a webcam, a video file, or a still image and can speak the resulting sentence. That path is not a field-tested recognizer and not a certified aid.
-
-```mermaid
-flowchart TD
-    A[Demo scenarios or recorded JSONL observations] --> C[Validate structured observation]
-    B[Authenticated device observation gateway] --> C
-    W[Laptop webcam, video file, or still image] --> P[Local vision adapter]
-    P --> C
-    C --> D[Guidance engine]
-    D --> E[Confidence checks and repeated-message suppression]
-    E --> F[Text on the dashboard, REST, WebSocket, or CLI]
-    E --> S[Optional local or browser speech]
-    E --> G[Temporary in-memory event history]
-    H[ESP32 and wearable audio] -.-> B
-```
-
-### Guidance behavior
-
-Observations include a category and confidence value, plus fields such as traffic-light state, obstacle distance or object label. The engine then applies deterministic rules:
-
-- **Traffic lights:** a red-light observation produces a stop-and-wait message. A green-light observation is informational and non-actionable: the engine cannot decide whether crossing is possible. An unknown state produces an uncertainty message. Informational green-light messages retain repeated-message suppression.
-- **Obstacles:** an observation at 1.5 meters or less produces a nearby-obstacle warning; other obstacle observations produce a general caution.
-- **Crosswalks:** a crosswalk observation produces a message about orientation and checking the signal.
-- **Low confidence:** observations below the default 0.70 confidence threshold produce an uncertainty message marked as non-actionable.
-- **Repeated messages:** the same guidance category is suppressed within the default three-second cooldown.
-- **Invalid distances:** negative or non-finite obstacle distances produce a non-actionable status message, including observations loaded directly from replay files.
-
-The laptop camera adapter does not attach a distance. A bounding box therefore cannot become the nearby-obstacle warning. These rules respond to supplied observations; they do not prove that a camera detected the scene correctly. Current guidance messages and the demo interface are in Chinese. The project documentation is primarily in English.
-
-### Software and hardware responsibilities
-
-| Component | Role and status |
+| Period | Milestone |
 |---|---|
-| **FastAPI service** | Validates observations and exposes the demo dashboard, REST endpoints and WebSocket interface. |
-| **Guidance engine** | Converts traffic-light, obstacle and crosswalk observations into text guidance, with confidence and repetition handling. |
-| **Replay tool** | Runs recorded JSONL observations through the same guidance rules for reproducible inspection. |
-| **Device gateway** | Accepts observations with a matching token in hardware mode; defaults to 120 requests per minute per device. Intended for controlled development networks. |
-| **Camera and perception** | A laptop webcam, video file, or still image can feed an OpenCV lamp heuristic. An optional Apache-2.0 YOLOX file adds a short COCO allowlist. Neither path measures distance or establishes street accuracy. ESP32 capture remains future work. |
-| **Audio and interaction** | Optional edge-tts or pyttsx3 reads the guidance sentence. The dashboard can use the browser's speech API. This is not a conversational assistant or a wearable speaker. |
-| **Power and enclosure** | The design provides an enclosure study. Measured electronic-part dimensions, power requirements, fastening and physical assembly still require verification. |
+| **Late 2024 – throughout 2025** | Building and initial development; the early prototype and project direction take shape |
+| **Late 2025** | Community work begins — outreach and practical explanation, continuing since |
+| **December 2025** | First GitHub publication ([initial commit](https://github.com/DresdenGman/AIGlasses_for_navigation/commit/12b121a3), December 9, 2025 UTC) |
+| **July 29, 2026** | Reproducible software prototype: FastAPI core, interactive dashboard, JSONL replay, authenticated device gateway, CI |
+| **September 18, 2026** | Continuous Facets v0.4 enclosure published with editable files, exports and geometry checks |
+| **August–November 2026** | Participant feedback survey: 85 bilingual responses, published with raw data and reproducible analysis |
+| **November 2026** | Lifelog companion published: demo website and five-platform app (v0.1.0, then v0.1.1) over fictional showcase data; contracts frozen (PR #18) |
+| **Late 2025 – present** | Continuing community engagement in parallel with technical iteration |
 
-Setting hardware mode enables the observation endpoint; it does not automatically connect an ESP32, run a vision model or produce speech. [Architecture](docs/ARCHITECTURE.md) · [Device gateway](docs/HARDWARE_GATEWAY.md) · [Project overview](docs/PROJECT_OVERVIEW.md)
+---
 
-### Data handling
+## 8. Repository map
 
-The demo stores the latest **100 guidance events** in process memory: timestamp, observation category, confidence, severity, actionability and message text. Restarting the service clears that history. This event store does not retain raw frames, audio, location or device IDs; device IDs are used separately for in-memory rate limiting. Future camera, recording or cloud integrations have separate data-handling requirements. [Data boundaries →](docs/DATA_BOUNDARIES.md)
+| Area | Start here |
+|---|---|
+| **Project scope** | [Overview](docs/PROJECT_OVERVIEW.md) · [Roadmap](docs/ROADMAP.md) |
+| **Navigation software** | [Architecture](docs/ARCHITECTURE.md) · [Demo guide](docs/DEMO.md) · [Perception eval](docs/EVAL.md) · [Recorded-video eval](docs/RECORDED_EVAL.md) · [Device gateway](docs/HARDWARE_GATEWAY.md) · [Data boundaries](docs/DATA_BOUNDARIES.md) |
+| **Enclosure design** | [v0.4 model and downloads](design/v0.4/README.md) · [Geometry provenance](design/v0.4/PROVENANCE.md) · [Release notes](docs/RELEASE_v0.4.md) |
+| **Images** | [Render gallery](docs/GALLERY.md) · [Editable presentation scenes](design/v0.4/presentation/README.md) |
+| **Community and cost** | [Reach, instruction and hardware costs](docs/COMMUNITY_AND_COST.md) · [Priced BOM](docs/BOM_PRICING.md) |
+| **Participant feedback** | [Results, method and limitations](docs/FEEDBACK.md) · [Raw responses and analysis](data/feedback/) · [Outcome cases](docs/OUTCOME_CASES.md) |
+| **Lifelog companion** | [Overview](lifelog/README.md) · [Demo site](https://dresdengman.github.io/AIGlasses_for_navigation/) · [App and downloads](lifelog/app/README.md) · [Architecture](lifelog/docs/ARCHITECTURE.md) · [Contracts](lifelog/docs/CONTRACTS.md) · [Data boundaries](lifelog/docs/LIFELOG_DATA_BOUNDARIES.md) |
+| **Build guide elsewhere** | [OER Commons](https://oercommons.org/courses/low-cost-ai-navigation-glasses-bilingual-build-guide-for-assistive-makers) · [MERLOT](https://www.merlot.org/merlot/viewMaterial.htm?id=824240304) · [Instructables](https://www.instructables.com/Low-Cost-AI-Navigation-Glasses-Build-an-Open-Sourc/) · [Thingiverse model](https://www.thingiverse.com/thing:7414404) |
+| **One-pagers** | [Users & community (bilingual)](docs/one-pagers/users-bilingual.md) · [Admissions](docs/one-pagers/admissions.md) · [Partners](docs/one-pagers/partners.md) |
+| **中文** | [中文项目介绍](docs/README.zh-CN.md) |
 
-## Lifelog — an all-day memory companion (experimental)
-
-Lifelog is an experimental, opt-in companion that lives in a fenced subproject, [`lifelog/`](lifelog/). Where the navigation demo answers "what is in front of me right now?", Lifelog explores a second question for the same wearer: "what happened in my day?" On hardware the owner controls, it keeps a personal day — timed frames from the glasses, and audio from a paired watch only after an explicit consent acknowledgement — and makes that day reviewable. It never changes navigation guidance.
-
-**[Open the Lifelog demo site →](https://dresdengman.github.io/AIGlasses_for_navigation/)** — the website and the app below present **fictional showcase data** (a synthetic sample day), clearly labelled as such in the interface. Lifelog is a research prototype: not a navigation aid, not a medical device, and not a certified assistive product.
-
-On 2026-11-20 the website received a full design polish: the plan came from a Google AI Studio (Gemini) design consultation and was adjudicated against this project's own constraints before implementation — a 13 px minimum text size across the site, a reworked dark-mode heatmap scale, a sticky index on the Ask page, and a post-polish axe accessibility scan reporting zero violations. The app carries the same design tokens.
-
-### What it is designed to do
-
-1. **All-day capture** — the glasses take timed frames and the watch records audio in chunks; both sync automatically to the owner's own machine.
-2. **Cloud / NAS backup** — backup to a home NAS or, only when local-first is switched off, a cloud target.
-3. **AI day summary** — a four-part summary of the day: where you went, what you did, who you met, what was said.
-4. **Timeline review** — the day replayed hour by hour, with a film strip of scene frames.
-5. **Ask your day** — questions answered from the stored record; each answer cites evidence with a timestamp that jumps to the moment. No evidence, no invented answer.
-6. **Object finder** — everyday items tracked to their last confirmed sighting: time, place, and the frame itself.
-7. **Uncertainty, marked** — anything below the confidence bar is labelled *uncertain* (the amber dashed treatment), in the same spirit as the glasses' 0.70 guidance threshold: the system says "uncertain" instead of guessing.
-8. **Privacy controls** — one-tap pause, automatic deletion after a set retention period, and a local-first switch that keeps media and processing on the owner's hardware.
-
-### Get the app
-
-One Tauri 2 codebase in [`lifelog/app/`](lifelog/app/) ships all five platforms. The front-end is complete and fully interactive; capture, sync and inference are simulated over the same fictional showcase data until the real pipeline is wired into the shell.
-
-**[Download Lifelog v0.1.1 →](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.1)**
-
-The first installer release was [lifelog-v0.1.0](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.0) (2026-11-20); v0.1.1, published the same day, carries the design polish described above. Each release contains seven installer packages across Windows, macOS, Linux and Android.
-
-| Platform | In the release | Notes |
-|---|---|---|
-| **Windows** | `.exe` (NSIS) and `.msi` installers | |
-| **macOS** | Universal `.dmg` | Intel and Apple Silicon in one build |
-| **Linux** | `.AppImage`, `.deb`, `.rpm` | |
-| **Android** | `.apk` | Unsigned — sign it yourself before installing |
-| **iOS** | — | No installable package yet: an `.ipa` requires an Apple Developer signing certificate and provisioning profile; CI currently runs an unsigned compile check |
-
-### Privacy defaults
-
-The default configuration is the most private one (full statement in [`lifelog/README.md`](lifelog/README.md)):
-
-- **Local-first is on** — no cloud model calls, no cloud backup.
-- **Audio is off** until the owner acknowledges a consent notice; location is off.
-- **Face blur is on** — faces are detected only so they can be blurred; there is no face recognition.
-- **Raw audio is deleted** after a successful transcription.
-- **Retention defaults to 14 days**; backup is off until the owner turns it on.
-
-### The fence, and the contracts
-
-The navigation package in this repository stores **no frames, audio or location** — that is its documented contract. Lifelog stores media, so the two are kept strictly separate: neither package imports the other (enforced by a test in CI), owner media stays in the owner's own data directory and never enters this repository, and Lifelog carries its own data-boundary document. Its interfaces are frozen as published contracts — prepared contract-first and merged ahead of the implementations (PR #18) — so the website, app and server can be built and tested independently:
-
-- [Architecture](lifelog/docs/ARCHITECTURE.md) · [Frozen contracts](lifelog/docs/CONTRACTS.md) · [Lifelog data boundaries](lifelog/docs/LIFELOG_DATA_BOUNDARIES.md)
-- Machine-readable: [OpenAPI](lifelog/contracts/openapi.yaml) · [SQLite schema](lifelog/contracts/schema.sql) · [Design tokens](lifelog/contracts/design-tokens.json) · [Sample-day manifest example](lifelog/contracts/sample_day.manifest.example.json)
-
-## Wearable design — Continuous Facets v0.4
-
-The current enclosure is a lensless wraparound design with a straighter brow, clipped corners and tightened temples. Its continuous surfaces come from the housing itself. Six original exterior skin patches were replaced, while the original assembly remains available in a separate reference collection.
-
-<table>
-<tr><td><img src="assets/renders/02_front.png" alt="Front view of v0.4 with the camera aperture and nose supports" /></td><td><img src="assets/renders/03_side.png" alt="Side view showing the continuous faceted temple" /></td></tr>
-<tr><td align="center">Front / integrated brow</td><td align="center">Side / continuous surfaces</td></tr>
-<tr><td><img src="assets/renders/04_top.png" alt="Top view of the U-shaped lensless housing" /></td><td><img src="assets/renders/05_rear.png" alt="Rear three-quarter view of the housing" /></td></tr>
-<tr><td align="center">Top / wraparound layout</td><td align="center">Rear / interior access</td></tr>
-</table>
-
-The lower body and upper cover are editable parts. The package includes a Blender assembly, a preserved source reference, GLB preview, shell STL exports, construction scripts and reproducible render scenes. The initial concept board set the visual direction; the published product views are rendered from the editable Blender geometry.
-
-Geometry checks cover shell topology, surface intersections and containment against the protected source geometry. They do not establish calibrated physical units, actual battery/PCB/cable fit, thermal performance, fastening or assembly tolerances. The v0.4 enclosure is a digital design prototype; its STL exports are not production-validated printing files.
-
-[Open the model and inspect the checks →](design/v0.4/README.md)
-
-### Design in context
-
-<p align="center">
-  <img src="assets/scenes/08_everyday_desk.png" alt="v0.4 on a staged everyday desk" width="860" />
-</p>
-
-<p align="center">
-  <img src="design/v0.4/presentation/10_workbench_photography.png" alt="v0.4 workbench render with generic precision tools" width="860" />
-</p>
-
-*These are synthetic Blender scenes of the same v0.4 model, rather than records of device use or community activities. The tools are generic props, not supplied accessories or a brand partnership.*
-
-<p align="center">
-  <img src="assets/social-preview-legacy.png" alt="Earlier social share card for the project, light design: 'Under $35 to build'" width="860" />
-</p>
-
-*The project's earlier social share card (light design), kept for the record. The current share image is [assets/social-preview.png](assets/social-preview.png); see [Social preview](docs/SOCIAL_PREVIEW.md).*
-
-[All 11 views and image provenance](docs/GALLERY.md) · [Editable presentation scenes](design/v0.4/presentation/README.md)
-
-### Community work and deployment
-
-<p align="center">
-  <img src="assets/community/community-classroom.png" alt="Community classroom session: the creator presenting the earlier prototype to residents in front of a projection screen" width="860" />
-</p>
-
-*A classroom session in one of the three communities that received making instruction: the creator presenting the earlier hardware prototype to residents. Photograph supplied by the project creator. (A four-panel collage from several sessions is kept at [assets/community/in-person-session.png](assets/community/in-person-session.png).)*
-
-| **4 communities** | **Nearly 60 people** | **3 communities** |
-|:---:|:---:|:---:|
-| Engaged through outreach | Blind or visually impaired people reached | Received practical making instruction |
-
-Beginning in late 2025, the project expanded from building the device to sharing it through community engagement. The project creator reports reaching nearly 60 blind or visually impaired people across four communities and providing explanations of how to make the device in three communities.
-
-The emphasis is on **affordable hardware and knowledge that communities can retain**. Making instruction is intended to help local participants continue without relying on the creator for ongoing funding or material donations. Community engagement remains an ongoing part of the project as its reach develops.
-
-Outreach is only part of the record. Separately from the contact-and-instruction figures above, the creator reports a deployment step in the same three communities that received build sessions:
-
-| **20 finished units** | **64 people** | **85 responses** |
-|:---:|:---:|:---:|
-| Donated with accessory kits | Used the glasses at least once | Feedback responses collected |
-
-The donated units were the earlier hardware prototype, not the v0.4 enclosure, and the 64 users and 85 responses are the same set analysed in [Participant feedback](#participant-feedback). These deployment figures are creator-reported project history, not an independently audited deployment study; neither set of figures counts daily active users, and independent production volume, long-term use and improvements in mobility have not been quantified. This remains a research prototype — not a medical device, and not clinically validated.
-
-[More on community work and reporting scope →](docs/COMMUNITY_AND_COST.md)
-
-## Affordability by design
-
-Reducing hardware cost is central to the project, alongside sharing the knowledge needed to make it.
-
-| Build context | Hardware-only cost | Basis |
-|---|---|---|
-| **Earlier prototype built in China** | **Under US$20 per unit** | The creator's reported cost for the earlier build. |
-| **Estimated US build** | **Under US$35 per unit** | The creator's estimate; not yet verified against a supplier quotation. |
-| **US reference build, itemised** | **US$32.29 in parts** | The speaker reference build priced part by part on 2026-11-05; the conditions — and the configurations that exceed $35 — are stated in [BOM_PRICING.md](docs/BOM_PRICING.md). |
-| **New v0.4 enclosure** | **Not separately costed** | Digital design awaiting fabrication and assembly validation. |
-
-These amounts exclude a phone or computer, cloud services, tools, labor and other non-hardware expenses. The earlier prototype's cost is not a verified cost for manufacturing v0.4. An itemised bill of materials for the reference build is published in [BOM_PRICING.md](docs/BOM_PRICING.md); shipping, taxes and enclosure fabrication are not included in the $32.29 parts total. [Cost details →](docs/COMMUNITY_AND_COST.md#hardware-cost)
-
-## Current status and continuing work
-
-The repository provides a working software demonstration and inspectable design assets. It does not yet establish a fully integrated, field-validated navigation device.
-
-| Area | Available now | Continuing work |
-|---|---|---|
-| **Software** | Guidance rules, dashboard, REST/WebSocket interfaces, replay, device ingestion, and an optional laptop camera / speech path. | Street-video evaluation, distance sensing, and ESP32 integration. |
-| **Enclosure** | Editable v0.4 geometry, exports, render scenes and source-geometry checks. | Physical scale calibration, measured components, mounting, cable routing, fabrication and fit. |
-| **Evaluation** | Repeatable structured-observation scenarios, repository tests, a synthetic perception eval (false prompts, misses, host latency, and repeat suppression on generated lamps), a first labeled real-frame traffic-light measurement ([Evaluation](docs/EVALUATION.md)), and a local recorded-video command that scores a private clip only after consent and redaction are attested. | Consented field collection, message comprehension, and physical-prototype testing. The recorded-video command does not by itself supply a street result. |
-| **Community** | Outreach across four communities and making instruction in three, reaching nearly 60 people; 20 finished units with accessory kits donated (creator-reported); a completed 85-response participant survey with published raw data. | Continued engagement; accuracy, battery and audio work prioritised from the survey findings. |
-| **Lifelog** | Public demo website and a five-platform app (v0.1.1; first installer release v0.1.0) over fictional showcase data; frozen API and storage contracts; privacy-first defaults. | Wiring the real capture, sync and inference pipeline into the app shell; a signed iOS build once an Apple Developer certificate is available. |
-
-### Recent updates
-
-- **2026-11-20** — Lifelog app merged and released: installers published as GitHub releases [lifelog-v0.1.0](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.0) and [lifelog-v0.1.1](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.1) — seven packages each across Windows, macOS, Linux and Android; the Android APK is unsigned, and iOS has no installer yet. The demo website and the app received the design polish described in the [Lifelog](#lifelog--an-all-day-memory-companion-experimental) section (AI Studio consultation, adjudicated in-house; axe scan: zero violations).
-- **2026-11-19** — Lifelog demo website published. The frozen contracts (OpenAPI, SQLite schema, architecture and data-boundary documents) were prepared contract-first on 2026-11-19 and merged as PR #18 early on 2026-11-20, ahead of the app implementation.
-- **2026-11-18** — A fiscal sponsorship application was submitted to HCB (Hack Club's fiscal sponsorship programme). It is currently under review and has not been approved.
-
-[Development roadmap →](docs/ROADMAP.md)
-
-## Version labels
-
-These numbers are easy to mix up. They are not one product release, and none of them is a certified assistive device.
+**Version labels — easy to mix up, so here they are in one place.** None of them is a certified assistive device.
 
 | Label | Meaning |
 |---|---|
-| **Package 0.1.0** | `ai-glasses-navigation-prototype` in [`pyproject.toml`](pyproject.toml), also shown in the API metadata. This is the runnable guidance demo. |
-| **Design v0.4** | Continuous Facets enclosure study. [`design/LATEST.json`](design/LATEST.json) records `0.4.0` for that geometry and its renders, not for the Python package. |
-| **Python 3.10+** | `requires-python` in `pyproject.toml`. CI runs the test suite on 3.10, 3.11, and 3.12. |
-| **Lifelog app 0.1.1** | The companion app from [`lifelog/app/`](lifelog/app/), versioned independently of the navigation package. Its installers are published as GitHub releases [lifelog-v0.1.0](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.0) (the first installer release) and [lifelog-v0.1.1](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.1), seven packages each across Windows, macOS, Linux and Android; there is no iOS installer yet. |
-| **Project release v1.9.1** | Project-level releases of the whole repository. v1.8 (November 2026) was the first: the software demo, the laptop camera path, the v0.4 design, the build kit and the participant feedback report under one label. v1.9 adds the first measured camera evaluation, a priced reference build, and the replication and battery-test protocols; v1.9.1 adds the recorded demo and Zenodo archiving. These labels do not replace the package or design labels above. [v1.9.1 notes](docs/RELEASE_v1.9.1.md) · [v1.9 notes](docs/RELEASE_v1.9.md) · [v1.8 notes](docs/RELEASE_v1.8.md) |
+| **Package 0.1.0** | `ai-glasses-navigation-prototype` in [`pyproject.toml`](pyproject.toml) — the runnable guidance demo |
+| **Design v0.4** | The Continuous Facets enclosure study ([`design/LATEST.json`](design/LATEST.json) records `0.4.0` for the geometry and its renders, not for the Python package) |
+| **Python 3.10+** | `requires-python` in `pyproject.toml`; CI tests 3.10, 3.11 and 3.12 |
+| **Lifelog app 0.1.1** | The companion app in [`lifelog/app/`](lifelog/app/), versioned independently; installers published as [lifelog-v0.1.0](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.0) and [lifelog-v0.1.1](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.1) |
+| **Project release v1.9.1** | Project-level releases of the whole repository: v1.8 (November 2026) first bundled the software demo, laptop camera path, v0.4 design, build kit and feedback report; v1.9 added the first measured camera evaluation, the priced reference build, and replication and battery-test protocols; v1.9.1 added the recorded demo and Zenodo archiving. [v1.9.1 notes](docs/RELEASE_v1.9.1.md) · [v1.9 notes](docs/RELEASE_v1.9.md) · [v1.8 notes](docs/RELEASE_v1.8.md) |
 
-## Run the demo
+## 9. Contributing, license, responsible use
 
-Use Python 3.10 or later. That floor is `requires-python` in `pyproject.toml`. Demo mode requires no camera, ESP32, model weights, or cloud keys.
+**Contributing.** Issues and pull requests are welcome — start with the [contributor guide](docs/CONTRIBUTING.md) and the [issue tracker](https://github.com/DresdenGman/AIGlasses_for_navigation/issues). The most useful contributions follow the survey's own priorities: prompt accuracy, battery life, and audio clarity.
 
-```bash
-git clone https://github.com/DresdenGman/AIGlasses_for_navigation.git
-cd AIGlasses_for_navigation
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
-python -m pip install -r requirements.txt
-cp .env.example .env
-python main.py
-```
+**License and attribution.** MIT — see [LICENSE](LICENSE). Earlier project documentation credited [AI-FanGe / OpenAIglasses_for_Navigation](https://github.com/AI-FanGe/OpenAIglasses_for_Navigation) as an upstream code project; historical vision and voice work includes upstream contributions, and existing license notices are retained.
 
-Open the [local dashboard](http://127.0.0.1:8081/) or [interactive API docs](http://127.0.0.1:8081/docs). The dashboard sends sample observations through the guidance engine. Its interface and guidance text are in Chinese, as shipped; an unedited screen recording of a live run through the four sample observations is kept at [assets/demo-recording.gif](assets/demo-recording.gif).
+**Responsible use.** This is an assistive-technology **research prototype**, not a certified navigation aid and not a medical device. It must not replace a white cane, a guide dog, professional mobility support, personal judgment or traffic rules. Outreach figures describe community engagement; the current release makes no measured mobility-performance or field-safety claim. Lifelog's demo content is fictional showcase data, and its real capture pipeline is not yet wired in — do not rely on it to record anything.
 
-`requirements.txt` installs the runtime package only. Replay the included observations, or install the dev and vision extras and run the tests. The suite uses synthetic frames and does not download weights:
-
-```bash
-python -m aiglasses.replay demo/events.jsonl
-python -m pip install -r requirements-dev.txt
-python -m pip install -e '.[vision]'
-python -m pytest
-python -m aiglasses.eval
-python -m aiglasses.eval.recorded
-```
-
-`python -m aiglasses.eval` locks the synthetic lamp counts. `python -m aiglasses.eval.recorded` skips unless `data/private_eval/labels.json` is present on that machine. Neither command is a street test. Consent, redaction, and the private-clip flags are in [RECORDED_EVAL.md](docs/RECORDED_EVAL.md).
-
-`requirements-dev.txt` is the same install as `python -m pip install -e '.[dev]'` (pytest and httpx). It is not required to start the demo. Camera tests also need the `vision` extra shown above. The same pair is `python -m pip install -e '.[dev,vision]'`.
-
-The current entry point is `main.py`, with implementation under `aiglasses/`. Earlier prototype instructions referring to other entry points describe a different stage of the project.
-
-### Laptop camera or a video file
-
-This path is optional. The classic demo above does not install it. It is still a research prototype: low confidence does not become a command, distance is not invented, and nothing here is a certified navigation aid. No ESP32 is required.
-
-```bash
-python -m pip install -e '.[vision]'
-python -m aiglasses.live --synthetic
-python -m aiglasses.live --source 0
-python -m aiglasses.live --source path/to/clip.mp4
-```
-
-The dashboard can also send one camera frame or one image after the vision extra is installed. Speech stays off unless you install the audio extra and pass `--tts edge` or `--tts pyttsx3`, or enable the browser-speech checkbox. `edge-tts` sends the sentence, not the picture, to an online speech service.
-
-```bash
-python -m pip install -e '.[audio]'
-python -m aiglasses.live --synthetic --tts pyttsx3
-```
-
-Details, limits, and how to record a short demo clip: [Demo guide →](docs/DEMO.md)
-
-## Explore the repository
-
-| Area | Files and documentation |
-|---|---|
-| Project scope | [Overview](docs/PROJECT_OVERVIEW.md) · [Roadmap](docs/ROADMAP.md) |
-| Software | [Architecture](docs/ARCHITECTURE.md) · [Demo](docs/DEMO.md) · [Perception eval](docs/EVAL.md) · [Recorded-video eval](docs/RECORDED_EVAL.md) · [Device gateway](docs/HARDWARE_GATEWAY.md) · [Data boundaries](docs/DATA_BOUNDARIES.md) |
-| Design | [v0.4 model and downloads](design/v0.4/README.md) · [Geometry provenance](design/v0.4/PROVENANCE.md) · [Release notes](docs/RELEASE_v0.4.md) |
-| Images | [Render gallery](docs/GALLERY.md) · [Editable presentation scenes](design/v0.4/presentation/README.md) |
-| Community and cost | [Reach, instruction and hardware costs](docs/COMMUNITY_AND_COST.md) |
-| Participant feedback | [Results, method and limitations](docs/FEEDBACK.md) · [Raw responses and analysis](data/feedback/) |
-| Lifelog companion | [Overview](lifelog/README.md) · [Demo site](https://dresdengman.github.io/AIGlasses_for_navigation/) · [App and downloads](lifelog/app/README.md) · [Architecture](lifelog/docs/ARCHITECTURE.md) · [Contracts](lifelog/docs/CONTRACTS.md) · [Data boundaries](lifelog/docs/LIFELOG_DATA_BOUNDARIES.md) |
-| Build guide elsewhere | [OER Commons](https://oercommons.org/courses/low-cost-ai-navigation-glasses-bilingual-build-guide-for-assistive-makers) · [MERLOT](https://www.merlot.org/merlot/viewMaterial.htm?id=824240304) · [Instructables](https://www.instructables.com/Low-Cost-AI-Navigation-Glasses-Build-an-Open-Sourc/) · [Thingiverse model](https://www.thingiverse.com/thing:7414404) |
-| One-pagers | [Users & community (bilingual)](docs/one-pagers/users-bilingual.md) · [Admissions](docs/one-pagers/admissions.md) · [Partners](docs/one-pagers/partners.md) |
-| Contributions | [Contributor guide](docs/CONTRIBUTING.md) · [Issues](https://github.com/DresdenGman/AIGlasses_for_navigation/issues) |
-| 中文 | [中文项目介绍](docs/README.zh-CN.md) |
-
-## Attribution & responsible use
-
-Earlier project documentation credited [AI-FanGe / OpenAIglasses_for_Navigation](https://github.com/AI-FanGe/OpenAIglasses_for_Navigation) as an upstream code project. Historical vision and voice work includes upstream contributions; attribution and existing license notices are retained. See the [MIT license](LICENSE).
-
-This is an assistive-technology **research prototype**, not a certified navigation aid. It must not replace a white cane, guide dog, professional mobility support, personal judgment or traffic rules. Outreach figures describe community engagement; the current release makes no measured mobility-performance or field-safety claim.
+**Acknowledgements.** Thank you to the residents and organisers of the participating communities, to the 85 survey respondents — including everyone who reported problems plainly — and to the builders who followed the guide and sent back what they learned. The making instruction model is deliberate: knowledge that stays in the community matters alongside the device itself.
