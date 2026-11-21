@@ -39,6 +39,8 @@
 
 根据项目创作者的介绍，项目已接触 **4 个社区、近 60 位盲障人士**；并在 **3 个社区**提供了制作方法的讲解，希望参与者能够在不依靠创作者持续提供资金或物资的情况下继续制作。
 
+与上面的接触口径分开记录：创作者另报告，在开展制作讲解的 3 个社区共**捐赠 20 台成品眼镜及配件包**（捐赠的是早期硬件原型，不是 v0.4 外壳）；**64 位**参与者实际使用过眼镜，项目共收集 **85 份**反馈（见下节）。以上为创作者报告的项目整体数据，未经独立审计；本项目仍为研究原型，非医疗器械、未经临床验证。
+
 这里的“近 60 人”是接触与交流范围，不等于发放设备数量、持续使用人数或经过测量的出行改善人数。三地制作讲解与后续独立生产的长期成效也分开记录。[社区工作详情](COMMUNITY_AND_COST.md)
 
 ## 参与者反馈（2026）
@@ -76,7 +78,7 @@ v0.4 采用一体化连续折面：更轻薄的前框、斜切转角和收紧的
 <tr><td align="center">正面</td><td align="center">侧面</td></tr>
 </table>
 
-*这两张是探讨未来一体式外壳佩戴效果的概念渲染图（生成图），不是照片：图中人物不是项目参与者；当前实物仍为上文的 v0.4 3D 打印外壳。*
+*这两张是探讨未来一体式外壳佩戴效果的概念渲染图（生成图），不是照片：图中人物不是项目参与者；当前社区部署的是早期硬件原型，v0.4 是设计概念外壳，尚未作为实物部署。*
 
 ## 软件与项目范围
 
@@ -92,6 +94,28 @@ v0.4 采用一体化连续折面：更轻薄的前框、斜切转角和收紧的
 
 本项目保留原文档对 [AI-FanGe / OpenAIglasses_for_Navigation](https://github.com/AI-FanGe/OpenAIglasses_for_Navigation) 的上游署名。项目是研发原型，不可替代白杖、导盲犬、个人判断和交通规则。
 
+## Lifelog 全天记录伴侣（实验性）
+
+Lifelog 是与导航演示严格隔离的实验性子项目（[`lifelog/`](../lifelog/)）：眼镜负责回答"眼前有什么"，Lifelog 探索另一个问题——"我今天都经历了什么"。在使用者自己的设备上，它保存一整天的记录（眼镜定时抓帧；手表录音须经本人明确同意后才开启），并让这一天可以回看。它不改变导航引导的任何行为。
+
+**[打开 Lifelog 演示站 →](https://dresdengman.github.io/AIGlasses_for_navigation/)**——网站与下方 App 展示的都是**虚构的展示数据**（合成示例日），界面中有明确标注。Lifelog 是研究原型：不是导航辅具、不是医疗器械、未经临床验证，不替代白杖、导盲犬与定向行走训练。
+
+设计功能共八项：①全天记录（眼镜定时抓帧 + 手表录音，自动同步）②云端 / 家用 NAS 备份 ③AI 日总结（去了哪、做了什么、见了谁、说了什么）④时间线回看 ⑤带证据时间戳的问答检索（答案必须引用记录，无证据不编造）⑥物品定位（最后一次确认出现的时间、地点与画面）⑦置信标记（低于置信门槛一律标 *uncertain*，与眼镜 0.70 门控同一原则：看不准就说不确定，不猜）⑧隐私控制（一键暂停、到期自动删除、本地优先开关）。
+
+**App 下载**：一套 Tauri 2 代码、五个平台，源码在 [`lifelog/app/`](../lifelog/app/)；前端已完整可交互，真实采集/同步/推理尚未接入，当前以同一套虚构展示数据演示。**[下载 Lifelog v0.1.0 →](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.0)**
+
+| 平台 | 发布内容 | 说明 |
+|---|---|---|
+| **Windows** | `.exe`（NSIS）与 `.msi` 安装包 | |
+| **macOS** | 通用 `.dmg` | Intel 与 Apple Silicon 合一 |
+| **Linux** | `.AppImage`、`.deb`、`.rpm` | |
+| **Android** | `.apk` | 未签名，安装前需自行签名 |
+| **iOS** | — | 暂无安装包：`.ipa` 需要 Apple 开发者签名证书与描述文件，CI 目前只做未签名编译检查 |
+
+隐私默认为最严格的一档：本地优先开启（无云端模型调用、无云备份）；录音默认关、须本人确认同意；定位关；人脸只检测用于模糊、无人脸识别；原始录音转写成功后删除；默认保留 14 天；备份默认关。导航包本身不存任何画面、录音与位置——两个包互不引用（CI 有测试强制），使用者媒体只存在使用者自己的数据目录，永不进入本仓库。接口已冻结为公开合约：[架构（英文）](../lifelog/docs/ARCHITECTURE.md) · [合约（英文）](../lifelog/docs/CONTRACTS.md) · [数据边界（英文）](../lifelog/docs/LIFELOG_DATA_BOUNDARIES.md) · [OpenAPI](../lifelog/contracts/openapi.yaml) · [SQLite schema](../lifelog/contracts/schema.sql)
+
 ## 展示资料
 
 [展示渲染与可编辑场景](../design/v0.4/presentation/README.md) · [项目概述（英文）](PROJECT_OVERVIEW.md) · 一页纸：[使用者与社区（双语）](one-pagers/users-bilingual.md)、[招生版（英文）](one-pagers/admissions.md)、[合作方版（英文）](one-pagers/partners.md)
+
+制作指南在其他平台：[OER Commons](https://oercommons.org/courses/low-cost-ai-navigation-glasses-bilingual-build-guide-for-assistive-makers) · [MERLOT](https://www.merlot.org/merlot/viewMaterial.htm?id=824240304) · [Instructables](https://www.instructables.com/Low-Cost-AI-Navigation-Glasses-Build-an-Open-Sourc/) · [Thingiverse 模型](https://www.thingiverse.com/thing:7414404)
