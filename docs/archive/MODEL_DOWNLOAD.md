@@ -200,7 +200,7 @@ To update models to the latest version:
 modelscope download --model archifancy/AIGlasses_for_navigation --force
 
 # Using Git
-cd AIGlasses_for_navigation
+cd QuietFrame
 git pull
 git lfs pull
 ```

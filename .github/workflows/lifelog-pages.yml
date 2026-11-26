@@ -36,7 +36,7 @@ jobs:
       - run: npm run lint
       - run: npm run build
         env:
-          NEXT_PUBLIC_BASE_PATH: /AIGlasses_for_navigation
+          NEXT_PUBLIC_BASE_PATH: /QuietFrame
       - uses: actions/upload-pages-artifact@v3
         with:
           path: lifelog/web/out

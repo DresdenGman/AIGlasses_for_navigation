@@ -5,12 +5,12 @@
 
 *为低视力导航与日常回忆而做的研究原型——不是医疗器械。*
 
-[![Test prototype](https://img.shields.io/github/actions/workflow/status/DresdenGman/AIGlasses_for_navigation/test.yml?branch=main&label=Test%20prototype&style=flat-square)](https://github.com/DresdenGman/AIGlasses_for_navigation/actions/workflows/test.yml)
-[![Stars](https://img.shields.io/github/stars/DresdenGman/AIGlasses_for_navigation?style=flat-square)](https://github.com/DresdenGman/AIGlasses_for_navigation/stargazers)
-[![Lifelog demo](https://img.shields.io/badge/Lifelog_%E6%BC%94%E7%A4%BA%E7%AB%99-%E5%9C%A8%E7%BA%BF-1D4E46?style=flat-square)](https://dresdengman.github.io/AIGlasses_for_navigation/)
-[![App v0.1.1](https://img.shields.io/badge/App-v0.1.1-1D4E46?style=flat-square)](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.1)
+[![Test prototype](https://img.shields.io/github/actions/workflow/status/DresdenGman/QuietFrame/test.yml?branch=main&label=Test%20prototype&style=flat-square)](https://github.com/DresdenGman/QuietFrame/actions/workflows/test.yml)
+[![Stars](https://img.shields.io/github/stars/DresdenGman/QuietFrame?style=flat-square)](https://github.com/DresdenGman/QuietFrame/stargazers)
+[![Lifelog demo](https://img.shields.io/badge/Lifelog_%E6%BC%94%E7%A4%BA%E7%AB%99-%E5%9C%A8%E7%BA%BF-1D4E46?style=flat-square)](https://dresdengman.github.io/QuietFrame/)
+[![App v0.1.1](https://img.shields.io/badge/App-v0.1.1-1D4E46?style=flat-square)](https://github.com/DresdenGman/QuietFrame/releases/tag/lifelog-v0.1.1)
 
-**[▶ 打开 Lifelog 演示站](https://dresdengman.github.io/AIGlasses_for_navigation/) · [⬇ 下载 App v0.1.1](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.1) · [🔧 建造指南](#64-自己动手做一副) · [English](../README.md)**
+**[▶ 打开 Lifelog 演示站](https://dresdengman.github.io/QuietFrame/) · [⬇ 下载 App v0.1.1](https://github.com/DresdenGman/QuietFrame/releases/tag/lifelog-v0.1.1) · [🔧 建造指南](#64-自己动手做一副) · [English](../README.md)**
 
 **快速跳转：** [自己做一副](#6-延伸一导航眼镜) · [试用 Lifelog](#7-延伸二lifelog-全天记忆) · [当前状态](#4-诚实状态)
 
@@ -99,7 +99,7 @@ flowchart LR
 
 **近期更新**
 
-- **2026-11-20**：Lifelog App 发布安装包（[lifelog-v0.1.0](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.0) 与 [lifelog-v0.1.1](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.1)，每版 7 个安装包，覆盖 Windows、macOS、Linux、Android；Android 为未签名 APK，iOS 暂无安装包）。同日，演示站与 App 完成一轮全面设计打磨（方案来自 Google AI Studio / Gemini 设计咨询、经项目自身口径裁决后实施；打磨后 axe 无障碍扫描 0 违规）。
+- **2026-11-20**：Lifelog App 发布安装包（[lifelog-v0.1.0](https://github.com/DresdenGman/QuietFrame/releases/tag/lifelog-v0.1.0) 与 [lifelog-v0.1.1](https://github.com/DresdenGman/QuietFrame/releases/tag/lifelog-v0.1.1)，每版 7 个安装包，覆盖 Windows、macOS、Linux、Android；Android 为未签名 APK，iOS 暂无安装包）。同日，演示站与 App 完成一轮全面设计打磨（方案来自 Google AI Studio / Gemini 设计咨询、经项目自身口径裁决后实施；打磨后 axe 无障碍扫描 0 违规）。
 - **2026-11-19**：Lifelog 演示站发布。冻结合约以合约先行方式于 2026-11-19 备好，并于 2026-11-20 凌晨以 PR #18 合并，先于 App 实现。
 - **2026-11-18**：已向 HCB（Hack Club 财政赞助）提交财政赞助申请，目前**审核中，尚未获批**。
 
@@ -174,7 +174,7 @@ flowchart LR
 |---|---|
 | **2024 年末 – 2025 年全年** | 开始搭建与初期开发；早期原型与项目方向成形 |
 | **2025 年末** | 社区工作开始——外展与实际讲解，此后持续进行 |
-| **2025 年 12 月** | 首次发布到 GitHub（[首个提交](https://github.com/DresdenGman/AIGlasses_for_navigation/commit/12b121a3)，2025-12-09 UTC） |
+| **2025 年 12 月** | 首次发布到 GitHub（[首个提交](https://github.com/DresdenGman/QuietFrame/commit/12b121a3)，2025-12-09 UTC） |
 | **2026-07-29** | 可复现的软件原型：FastAPI 核心、交互演示台、JSONL 回放、带鉴权的设备入口、CI |
 | **2026-09-18** | 连续折面 v0.4 外壳发布，带可编辑文件、导出与几何检查 |
 | **2026 年 8–11 月** | 参与者反馈问卷：85 份双语回复，连同原始数据与可复现分析一并发布 |
@@ -292,8 +292,8 @@ flowchart TD
 需要 Python 3.10 或更新版本（以 `pyproject.toml` 的 `requires-python` 为准）。演示模式不需要摄像头、ESP32、模型文件或云密钥。
 
 ```bash
-git clone https://github.com/DresdenGman/AIGlasses_for_navigation.git
-cd AIGlasses_for_navigation
+git clone https://github.com/DresdenGman/QuietFrame.git
+cd QuietFrame
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 python -m pip install -r requirements.txt
@@ -325,7 +325,7 @@ Lifelog 是记忆延伸，一个与导航严格隔离、自愿启用的子项目
 > [!CAUTION]
 > **虚构展示数据。**网站与 App 展示的都是合成的示例日，界面中有明确标注。Lifelog 是研究原型：不是导航辅具、不是医疗器械，不替代白杖、导盲犬与定向行走训练。
 
-**[▶ 打开 Lifelog 演示站](https://dresdengman.github.io/AIGlasses_for_navigation/)**
+**[▶ 打开 Lifelog 演示站](https://dresdengman.github.io/QuietFrame/)**
 
 ### 八项功能
 
@@ -344,7 +344,7 @@ Lifelog 是记忆延伸，一个与导航严格隔离、自愿启用的子项目
 
 一套 Tauri 2 代码，源码在 [`lifelog/app/`](../lifelog/app/)；前端已完整可交互，真实采集/同步/推理尚未接入，当前以同一套虚构展示数据演示（第 4 节）。
 
-**[⬇ 下载 Lifelog v0.1.1](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.1)** · 首个安装包版本：[lifelog-v0.1.0](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.0)（均为 2026-11-20）
+**[⬇ 下载 Lifelog v0.1.1](https://github.com/DresdenGman/QuietFrame/releases/tag/lifelog-v0.1.1)** · 首个安装包版本：[lifelog-v0.1.0](https://github.com/DresdenGman/QuietFrame/releases/tag/lifelog-v0.1.0)（均为 2026-11-20）
 
 | 平台 | 发布内容 | 说明 |
 |---|---|---|
@@ -383,7 +383,7 @@ Lifelog 的接口已冻结为公开合约，以合约先行方式备好、先于
 | **图片** | [渲染图集（英文）](GALLERY.md) · [可编辑展示场景（英文）](../design/v0.4/presentation/README.md) |
 | **社区与成本** | [接触、授课与硬件成本](COMMUNITY_AND_COST.md) · [逐项标价 BOM](BOM_PRICING.md) |
 | **参与者反馈** | [结果、方法与局限（英文）](FEEDBACK.md) · [原始数据与分析](../data/feedback/) · [个案集](OUTCOME_CASES.md) |
-| **Lifelog 伴侣** | [概述（英文）](../lifelog/README.md) · [演示站](https://dresdengman.github.io/AIGlasses_for_navigation/) · [App 与下载（英文）](../lifelog/app/README.md) · [架构（英文）](../lifelog/docs/ARCHITECTURE.md) · [合约（英文）](../lifelog/docs/CONTRACTS.md) · [数据边界（英文）](../lifelog/docs/LIFELOG_DATA_BOUNDARIES.md) |
+| **Lifelog 伴侣** | [概述（英文）](../lifelog/README.md) · [演示站](https://dresdengman.github.io/QuietFrame/) · [App 与下载（英文）](../lifelog/app/README.md) · [架构（英文）](../lifelog/docs/ARCHITECTURE.md) · [合约（英文）](../lifelog/docs/CONTRACTS.md) · [数据边界（英文）](../lifelog/docs/LIFELOG_DATA_BOUNDARIES.md) |
 | **其他平台的建造指南** | [OER Commons](https://oercommons.org/courses/low-cost-ai-navigation-glasses-bilingual-build-guide-for-assistive-makers) · [MERLOT](https://www.merlot.org/merlot/viewMaterial.htm?id=824240304) · [Instructables](https://www.instructables.com/Low-Cost-AI-Navigation-Glasses-Build-an-Open-Sourc/) · [Thingiverse 模型](https://www.thingiverse.com/thing:7414404) |
 | **一页纸** | [使用者与社区（双语）](one-pagers/users-bilingual.md) · [招生版（英文）](one-pagers/admissions.md) · [合作方版（英文）](one-pagers/partners.md) |
 | **English** | [English README](../README.md) |
@@ -395,12 +395,12 @@ Lifelog 的接口已冻结为公开合约，以合约先行方式备好、先于
 | **软件包 0.1.0** | [`pyproject.toml`](../pyproject.toml) 里的 `ai-glasses-navigation-prototype`——可运行的引导演示 |
 | **设计 v0.4** | 连续折面外壳研究（[`design/LATEST.json`](../design/LATEST.json) 记录的 `0.4.0` 指几何与渲染图，不是 Python 包） |
 | **Python 3.10+** | `pyproject.toml` 的 `requires-python`；CI 覆盖 3.10、3.11、3.12 |
-| **Lifelog App 0.1.1** | [`lifelog/app/`](../lifelog/app/) 里的伴侣 App，独立编号；安装包发布为 [lifelog-v0.1.0](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.0) 与 [lifelog-v0.1.1](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.1) |
+| **Lifelog App 0.1.1** | [`lifelog/app/`](../lifelog/app/) 里的伴侣 App，独立编号；安装包发布为 [lifelog-v0.1.0](https://github.com/DresdenGman/QuietFrame/releases/tag/lifelog-v0.1.0) 与 [lifelog-v0.1.1](https://github.com/DresdenGman/QuietFrame/releases/tag/lifelog-v0.1.1) |
 | **项目发布 v1.9.1** | 整个仓库的项目级发布：v1.8（2026 年 11 月）首次把软件演示、笔记本摄像头路径、v0.4 设计、建造包与反馈报告合到一个标签下；v1.9 加入首个实测摄像头评测、逐项标价的参考版与复现/续航测试协议；v1.9.1 加入演示录屏与 Zenodo 存档。[v1.9.1 说明（英文）](RELEASE_v1.9.1.md) · [v1.9 说明（英文）](RELEASE_v1.9.md) · [v1.8 说明（英文）](RELEASE_v1.8.md) |
 
 ## 9. 贡献、许可与负责任使用
 
-**参与贡献。**欢迎提交 Issue 与 PR——先看[贡献指南（英文）](CONTRIBUTING.md)与[Issue 列表](https://github.com/DresdenGman/AIGlasses_for_navigation/issues)。最有用的贡献方向正是问卷排出的优先级：提示准确度、续航、音频清晰度。
+**参与贡献。**欢迎提交 Issue 与 PR——先看[贡献指南（英文）](CONTRIBUTING.md)与[Issue 列表](https://github.com/DresdenGman/QuietFrame/issues)。最有用的贡献方向正是问卷排出的优先级：提示准确度、续航、音频清晰度。
 
 **许可与署名。**MIT 许可，见 [LICENSE](../LICENSE)。项目早期文档将 [AI-FanGe / OpenAIglasses_for_Navigation](https://github.com/AI-FanGe/OpenAIglasses_for_Navigation) 记为上游代码项目；历史上的视觉与语音工作包含上游贡献，原有许可声明均予保留。
 

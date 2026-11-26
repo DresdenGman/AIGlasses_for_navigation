@@ -61,7 +61,7 @@ export default function Settings() {
         </p>
         <p className="mono dim">
           {zh ? "版本 0.1.0 · 前端演示版 · 数据：虚构示例（示例日 2026-04-18）" : "Version 0.1.0 · front-end demo · data: fictional showcase set (sample day 2026-04-18)"}
-          <br />{zh ? "开源仓库" : "Open source"}: github.com/DresdenGman/AIGlasses_for_navigation
+          <br />{zh ? "开源仓库" : "Open source"}: github.com/DresdenGman/QuietFrame
         </p>
       </section>
     </div>

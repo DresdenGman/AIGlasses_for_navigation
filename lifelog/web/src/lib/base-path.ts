@@ -2,7 +2,7 @@
  * Single source of truth for the deployment base path.
  *
  * The showcase is served from a subpath on GitHub Pages
- * (/AIGlasses_for_navigation). Next's <Link> applies the configured
+ * (/QuietFrame). Next's <Link> applies the configured
  * basePath automatically, but hand-built URLs (raw <a> hrefs, img srcSet
  * strings, media URLs) do not — every such URL must go through
  * withBasePath or it escapes the site prefix and 404s.

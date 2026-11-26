@@ -8,8 +8,8 @@ demo is hardware-free.
 Python **3.10 or newer**, matching `requires-python` in `pyproject.toml`. CI runs 3.10, 3.11, and 3.12.
 
 ```bash
-git clone https://github.com/DresdenGman/AIGlasses_for_navigation.git
-cd AIGlasses_for_navigation
+git clone https://github.com/DresdenGman/QuietFrame.git
+cd QuietFrame
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\\Scripts\\activate
 python -m pip install -r requirements-dev.txt

@@ -33,5 +33,5 @@ AI glasses that speak what the camera sees — traffic lights, signs and door nu
 ## 想试试或自己做 / Try it or build it
 
 - 免费双语制作指南（OER Commons，CC BY）：https://oercommons.org/courses/low-cost-ai-navigation-glasses-bilingual-build-guide-for-assistive-makers
-- 代码与图纸：https://github.com/DresdenGman/AIGlasses_for_navigation
+- 代码与图纸：https://github.com/DresdenGman/QuietFrame
 - 完整的问卷结果（包括不好的数字）都在仓库的 docs/FEEDBACK.md 里，任何人可查。

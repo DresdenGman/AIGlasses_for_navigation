@@ -20,7 +20,7 @@ This build guide documents a low-cost, open-source AI navigation glasses prototy
 Honest context: this is a pilot community project, not an evaluated program. The author made contact with 4 residential communities in China (reaching nearly 60 visually impaired or low-vision residents through neighborhood committees) and ran hands-on build workshops in 3 of them; a structured follow-up is in progress. The device is a research prototype and not a replacement for a white cane, guide dog, or orientation-and-mobility training. It serves a specific population, not a general audience, and the guide does not overclaim safety or efficacy.
 
 ## 链接 URL
-https://github.com/DresdenGman/AIGlasses_for_navigation/blob/main/docs/BOM_BILINGUAL.md
+https://github.com/DresdenGman/QuietFrame/blob/main/docs/BOM_BILINGUAL.md
 （同目录配套文件：ASSEMBLY_CARD.md 组装步骤卡、TROUBLESHOOTING.md 故障一页纸、SAFETY_NOTE.md 低置信度行为准则）
 
 ## 学科分类 Subject

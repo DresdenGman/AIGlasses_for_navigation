@@ -1,5 +1,5 @@
 **Open-source AI navigation glasses under US$35 that say what they see — and say "uncertain" instead of guessing.**
-Dresden Goehner — https://github.com/DresdenGman/AIGlasses_for_navigation · Archived: DOI 10.5281/zenodo.23977544
+Dresden Goehner — https://github.com/DresdenGman/QuietFrame · Archived: DOI 10.5281/zenodo.23977544
 
 ## The build
 

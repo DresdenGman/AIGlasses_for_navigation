@@ -1,6 +1,6 @@
 # 低置信度行为准则 | Low-Confidence Behavior Code
 
-**AI Glasses for Navigation — Safety Note v0.1**
+**QuietFrame — Safety Note v0.1**
 日期 Date: 2026-09-25 ｜ 状态：草稿，欢迎社区反馈后修订
 
 ## 一句话原则

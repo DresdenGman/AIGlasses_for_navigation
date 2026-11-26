@@ -21,7 +21,7 @@ The card places that render on the right and extends the render's own studio ton
 
 The lines are the ones already on the README's first screen, shortened only so they stay readable when a share card is shown around 600 pixels wide:
 
-- AI Glasses for Navigation
+- QuietFrame
 - Lower-cost visual assistance. Shared making knowledge. Community participation.
 - Under $35 to build
 - Research prototype · Open source

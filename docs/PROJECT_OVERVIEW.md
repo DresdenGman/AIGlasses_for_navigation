@@ -1,6 +1,6 @@
 # Project overview
 
-AI Glasses for Navigation combines a wearable hardware experiment, a software guidance prototype and community-oriented making. Its objective is to explore lower-cost visual assistance while making the design easier to understand and reproduce.
+QuietFrame combines a wearable hardware experiment, a software guidance prototype and community-oriented making. Its objective is to explore lower-cost visual assistance while making the design easier to understand and reproduce.
 
 ## Three connected strands
 

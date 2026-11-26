@@ -1,16 +1,16 @@
 <div align="center">
 
-# AI Glasses for Navigation
+# QuietFrame
 ### Open-source, sub-$35 AI glasses and an all-day memory app built on one rule: stay silent or admit uncertainty rather than guess.
 
 *A research prototype for low-vision navigation and daily recall — not a medical device.*
 
-[![Test prototype](https://img.shields.io/github/actions/workflow/status/DresdenGman/AIGlasses_for_navigation/test.yml?branch=main&label=Test%20prototype&style=flat-square)](https://github.com/DresdenGman/AIGlasses_for_navigation/actions/workflows/test.yml)
-[![Stars](https://img.shields.io/github/stars/DresdenGman/AIGlasses_for_navigation?style=flat-square)](https://github.com/DresdenGman/AIGlasses_for_navigation/stargazers)
-[![Lifelog demo](https://img.shields.io/badge/Lifelog_demo-live-1D4E46?style=flat-square)](https://dresdengman.github.io/AIGlasses_for_navigation/)
-[![App v0.1.1](https://img.shields.io/badge/App-v0.1.1-1D4E46?style=flat-square)](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.1)
+[![Test prototype](https://img.shields.io/github/actions/workflow/status/DresdenGman/QuietFrame/test.yml?branch=main&label=Test%20prototype&style=flat-square)](https://github.com/DresdenGman/QuietFrame/actions/workflows/test.yml)
+[![Stars](https://img.shields.io/github/stars/DresdenGman/QuietFrame?style=flat-square)](https://github.com/DresdenGman/QuietFrame/stargazers)
+[![Lifelog demo](https://img.shields.io/badge/Lifelog_demo-live-1D4E46?style=flat-square)](https://dresdengman.github.io/QuietFrame/)
+[![App v0.1.1](https://img.shields.io/badge/App-v0.1.1-1D4E46?style=flat-square)](https://github.com/DresdenGman/QuietFrame/releases/tag/lifelog-v0.1.1)
 
-**[▶ Open the Lifelog demo site](https://dresdengman.github.io/AIGlasses_for_navigation/) · [⬇ Download the app — v0.1.1](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.1) · [🔧 Build guide](#64-build-one-yourself) · [中文版](docs/README.zh-CN.md)**
+**[▶ Open the Lifelog demo site](https://dresdengman.github.io/QuietFrame/) · [⬇ Download the app — v0.1.1](https://github.com/DresdenGman/QuietFrame/releases/tag/lifelog-v0.1.1) · [🔧 Build guide](#64-build-one-yourself) · [中文版](docs/README.zh-CN.md)**
 
 **Jump to:** [Build the glasses](#6-extension-one--navigation-glasses) · [Try Lifelog](#7-extension-two--lifelog) · [Current status](#4-honest-status)
 
@@ -55,7 +55,7 @@ This is a **research prototype**. It is not a medical device, and it must not re
 
 ## 3. One principle, two extensions
 
-<img src="assets/project-map.png" alt="Project map: AI Glasses for Navigation — why (under $35 to build, honest about uncertainty), navigation (0.70 confidence gate; says uncertain, never guesses), Lifelog (all-day memory, answers with evidence), evidence (20 units donated, 64 users, 85 responses), open source (full build guide, parts list US$32.29)" width="860" />
+<img src="assets/project-map.png" alt="Project map: QuietFrame — why (under $35 to build, honest about uncertainty), navigation (0.70 confidence gate; says uncertain, never guesses), Lifelog (all-day memory, answers with evidence), evidence (20 units donated, 64 users, 85 responses), open source (full build guide, parts list US$32.29)" width="860" />
 
 *The whole project on one map. Every number on it is detailed and sourced in [§5](#5-evidence-at-a-glance).*
 
@@ -99,7 +99,7 @@ The two halves are fenced apart on purpose: the navigation package stores **no f
 
 **Recent updates**
 
-- **2026-11-20** — Lifelog app released: [lifelog-v0.1.0](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.0) and [lifelog-v0.1.1](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.1), seven installer packages each across Windows, macOS, Linux and Android (Android APK unsigned; no iOS installer yet). The demo website and app received a full design polish the same day (plan from a Google AI Studio / Gemini consultation, adjudicated against this project's constraints; post-polish axe accessibility scan: zero violations).
+- **2026-11-20** — Lifelog app released: [lifelog-v0.1.0](https://github.com/DresdenGman/QuietFrame/releases/tag/lifelog-v0.1.0) and [lifelog-v0.1.1](https://github.com/DresdenGman/QuietFrame/releases/tag/lifelog-v0.1.1), seven installer packages each across Windows, macOS, Linux and Android (Android APK unsigned; no iOS installer yet). The demo website and app received a full design polish the same day (plan from a Google AI Studio / Gemini consultation, adjudicated against this project's constraints; post-polish axe accessibility scan: zero violations).
 - **2026-11-19** — Lifelog demo website published. The frozen contracts were prepared contract-first on 2026-11-19 and merged as PR #18 early on 2026-11-20, ahead of the implementations.
 - **2026-11-18** — A fiscal sponsorship application was submitted to HCB (Hack Club's fiscal sponsorship programme). It is **under review and has not been approved**.
 
@@ -174,7 +174,7 @@ Development began in **early 2025** (building started in late 2024); the initial
 |---|---|
 | **Late 2024 – throughout 2025** | Building and initial development; the early prototype and project direction take shape |
 | **Late 2025** | Community work begins — outreach and practical explanation, continuing since |
-| **December 2025** | First GitHub publication ([initial commit](https://github.com/DresdenGman/AIGlasses_for_navigation/commit/12b121a3), December 9, 2025 UTC) |
+| **December 2025** | First GitHub publication ([initial commit](https://github.com/DresdenGman/QuietFrame/commit/12b121a3), December 9, 2025 UTC) |
 | **July 29, 2026** | Reproducible software prototype: FastAPI core, interactive dashboard, JSONL replay, authenticated device gateway, CI |
 | **September 18, 2026** | Continuous Facets v0.4 enclosure published with editable files, exports and geometry checks |
 | **August–November 2026** | Participant feedback survey: 85 bilingual responses, published with raw data and reproducible analysis |
@@ -292,8 +292,8 @@ Amounts exclude a phone or computer, cloud services, tools, labour and other non
 Python 3.10 or later (the floor is `requires-python` in `pyproject.toml`). Demo mode needs no camera, ESP32, model weights or cloud keys.
 
 ```bash
-git clone https://github.com/DresdenGman/AIGlasses_for_navigation.git
-cd AIGlasses_for_navigation
+git clone https://github.com/DresdenGman/QuietFrame.git
+cd QuietFrame
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 python -m pip install -r requirements.txt
@@ -334,7 +334,7 @@ Lifelog is the memory extension, an opt-in companion in the fenced subproject [`
 > [!CAUTION]
 > **Fictional showcase data.** The website and the app present a synthetic sample day, labelled as such in the interface. Lifelog is a research prototype: not a navigation aid, not a medical device, not a certified assistive product.
 
-**[▶ Open the Lifelog demo site](https://dresdengman.github.io/AIGlasses_for_navigation/)**
+**[▶ Open the Lifelog demo site](https://dresdengman.github.io/QuietFrame/)**
 
 ### The eight functions
 
@@ -353,7 +353,7 @@ Lifelog is the memory extension, an opt-in companion in the fenced subproject [`
 
 One Tauri 2 codebase in [`lifelog/app/`](lifelog/app/). The front end is complete and fully interactive; capture, sync and inference are simulated over the same fictional showcase data until the real pipeline is wired into the shell (§4).
 
-**[⬇ Download Lifelog v0.1.1](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.1)** · first installer release: [lifelog-v0.1.0](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.0) (both 2026-11-20)
+**[⬇ Download Lifelog v0.1.1](https://github.com/DresdenGman/QuietFrame/releases/tag/lifelog-v0.1.1)** · first installer release: [lifelog-v0.1.0](https://github.com/DresdenGman/QuietFrame/releases/tag/lifelog-v0.1.0) (both 2026-11-20)
 
 | Platform | In the release | Notes |
 |---|---|---|
@@ -392,7 +392,7 @@ Lifelog's interfaces are frozen as published contracts — prepared contract-fir
 | **Images** | [Render gallery](docs/GALLERY.md) · [Editable presentation scenes](design/v0.4/presentation/README.md) |
 | **Community and cost** | [Reach, instruction and hardware costs](docs/COMMUNITY_AND_COST.md) · [Priced BOM](docs/BOM_PRICING.md) |
 | **Participant feedback** | [Results, method and limitations](docs/FEEDBACK.md) · [Raw responses and analysis](data/feedback/) · [Outcome cases](docs/OUTCOME_CASES.md) |
-| **Lifelog companion** | [Overview](lifelog/README.md) · [Demo site](https://dresdengman.github.io/AIGlasses_for_navigation/) · [App and downloads](lifelog/app/README.md) · [Architecture](lifelog/docs/ARCHITECTURE.md) · [Contracts](lifelog/docs/CONTRACTS.md) · [Data boundaries](lifelog/docs/LIFELOG_DATA_BOUNDARIES.md) |
+| **Lifelog companion** | [Overview](lifelog/README.md) · [Demo site](https://dresdengman.github.io/QuietFrame/) · [App and downloads](lifelog/app/README.md) · [Architecture](lifelog/docs/ARCHITECTURE.md) · [Contracts](lifelog/docs/CONTRACTS.md) · [Data boundaries](lifelog/docs/LIFELOG_DATA_BOUNDARIES.md) |
 | **Build guide elsewhere** | [OER Commons](https://oercommons.org/courses/low-cost-ai-navigation-glasses-bilingual-build-guide-for-assistive-makers) · [MERLOT](https://www.merlot.org/merlot/viewMaterial.htm?id=824240304) · [Instructables](https://www.instructables.com/Low-Cost-AI-Navigation-Glasses-Build-an-Open-Sourc/) · [Thingiverse model](https://www.thingiverse.com/thing:7414404) |
 | **One-pagers** | [Users & community (bilingual)](docs/one-pagers/users-bilingual.md) · [Admissions](docs/one-pagers/admissions.md) · [Partners](docs/one-pagers/partners.md) |
 | **中文** | [中文项目介绍](docs/README.zh-CN.md) |
@@ -404,12 +404,12 @@ Lifelog's interfaces are frozen as published contracts — prepared contract-fir
 | **Package 0.1.0** | `ai-glasses-navigation-prototype` in [`pyproject.toml`](pyproject.toml) — the runnable guidance demo |
 | **Design v0.4** | The Continuous Facets enclosure study ([`design/LATEST.json`](design/LATEST.json) records `0.4.0` for the geometry and its renders, not for the Python package) |
 | **Python 3.10+** | `requires-python` in `pyproject.toml`; CI tests 3.10, 3.11 and 3.12 |
-| **Lifelog app 0.1.1** | The companion app in [`lifelog/app/`](lifelog/app/), versioned independently; installers published as [lifelog-v0.1.0](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.0) and [lifelog-v0.1.1](https://github.com/DresdenGman/AIGlasses_for_navigation/releases/tag/lifelog-v0.1.1) |
+| **Lifelog app 0.1.1** | The companion app in [`lifelog/app/`](lifelog/app/), versioned independently; installers published as [lifelog-v0.1.0](https://github.com/DresdenGman/QuietFrame/releases/tag/lifelog-v0.1.0) and [lifelog-v0.1.1](https://github.com/DresdenGman/QuietFrame/releases/tag/lifelog-v0.1.1) |
 | **Project release v1.9.1** | Project-level releases of the whole repository: v1.8 (November 2026) first bundled the software demo, laptop camera path, v0.4 design, build kit and feedback report; v1.9 added the first measured camera evaluation, the priced reference build, and replication and battery-test protocols; v1.9.1 added the recorded demo and Zenodo archiving. [v1.9.1 notes](docs/RELEASE_v1.9.1.md) · [v1.9 notes](docs/RELEASE_v1.9.md) · [v1.8 notes](docs/RELEASE_v1.8.md) |
 
 ## 9. Contributing, license, responsible use
 
-**Contributing.** Issues and pull requests are welcome — start with the [contributor guide](docs/CONTRIBUTING.md) and the [issue tracker](https://github.com/DresdenGman/AIGlasses_for_navigation/issues). The most useful contributions follow the survey's own priorities: prompt accuracy, battery life, and audio clarity.
+**Contributing.** Issues and pull requests are welcome — start with the [contributor guide](docs/CONTRIBUTING.md) and the [issue tracker](https://github.com/DresdenGman/QuietFrame/issues). The most useful contributions follow the survey's own priorities: prompt accuracy, battery life, and audio clarity.
 
 **License and attribution.** MIT — see [LICENSE](LICENSE). Earlier project documentation credited [AI-FanGe / OpenAIglasses_for_Navigation](https://github.com/AI-FanGe/OpenAIglasses_for_Navigation) as an upstream code project; historical vision and voice work includes upstream contributions, and existing license notices are retained.
 
