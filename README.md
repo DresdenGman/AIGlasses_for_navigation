@@ -14,7 +14,7 @@
 
 **Jump to:** [Build the glasses](#6-extension-one--navigation-glasses) · [Try Lifelog](#7-extension-two--lifelog) · [Current status](#4-honest-status)
 
-**500+ stars** · **Under $35 to build** · **20 units donated** · **64 people have used them** · **85 feedback responses** · **3 communities taught to build them**
+**550+ stars** · **Under $35 to build** · **20 units donated** · **64 people have used them** · **85 feedback responses** · **3 communities taught to build them**
 
 <img src="assets/renders/01_hero.png" alt="Continuous Facets v0.4 — three-quarter studio render" width="860" />
 
